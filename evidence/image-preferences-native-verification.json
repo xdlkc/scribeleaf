@@ -1,0 +1,227 @@
+{
+  "checks": [
+    {
+      "name": "global-assets",
+      "passed": true
+    },
+    {
+      "name": "global-current-folder",
+      "passed": true
+    },
+    {
+      "name": "per-file-strips-last-extension",
+      "passed": true
+    },
+    {
+      "name": "custom-all-filename-tokens",
+      "passed": true
+    },
+    {
+      "name": "yaml-copy-overrides-global",
+      "passed": true
+    },
+    {
+      "name": "yaml-local-gate",
+      "passed": true
+    },
+    {
+      "name": "raw-data-gets-global-rule",
+      "passed": true
+    },
+    {
+      "name": "yaml-online-gate",
+      "passed": true
+    },
+    {
+      "name": "yaml-upload-denied-retains-reference",
+      "passed": true
+    },
+    {
+      "name": "global-upload-ignores-yaml-permission",
+      "passed": true
+    },
+    {
+      "name": "yaml-ipic-forces-provider",
+      "passed": true
+    },
+    {
+      "name": "unknown-folder-token-prompts",
+      "passed": true
+    },
+    {
+      "name": "untitled-filename-token-prompts",
+      "passed": true
+    },
+    {
+      "name": "root-folder-rejected",
+      "passed": true
+    },
+    {
+      "name": "relative-dot-syntax",
+      "passed": true
+    },
+    {
+      "name": "outside-document-keeps-absolute",
+      "passed": true
+    },
+    {
+      "name": "absolute-preference",
+      "passed": true
+    },
+    {
+      "name": "atomic-collision-unique",
+      "passed": true
+    },
+    {
+      "name": "copy-byte-exact",
+      "passed": true
+    },
+    {
+      "name": "no-staging-files",
+      "passed": true
+    },
+    {
+      "name": "batch-rollback-on-write-failure",
+      "passed": true
+    },
+    {
+      "name": "failed-batch-preserves-existing",
+      "passed": true
+    },
+    {
+      "name": "cancel-before-file-write",
+      "passed": true
+    },
+    {
+      "name": "cancel-created-no-file",
+      "passed": true
+    },
+    {
+      "name": "custom-real-process-url",
+      "passed": true
+    },
+    {
+      "name": "document-macros-and-image-argv-literal",
+      "passed": true
+    },
+    {
+      "name": "path-shell-injection-not-executed",
+      "passed": true
+    },
+    {
+      "name": "stdout-last-contiguous-group",
+      "passed": true
+    },
+    {
+      "name": "single-image-last-url",
+      "passed": true
+    },
+    {
+      "name": "wrong-output-count-fails",
+      "passed": true
+    },
+    {
+      "name": "missing-uploader-real-error",
+      "passed": true
+    },
+    {
+      "name": "nonzero-command-fails",
+      "passed": true
+    },
+    {
+      "name": "command-timeout",
+      "passed": true
+    },
+    {
+      "name": "timeout-bounded",
+      "passed": true
+    },
+    {
+      "name": "command-active-cancel",
+      "passed": true
+    },
+    {
+      "name": "cancel-bounded",
+      "passed": true
+    },
+    {
+      "name": "online-request-actual-urlsession-local-protocol",
+      "passed": true
+    },
+    {
+      "name": "online-http-error",
+      "passed": true
+    },
+    {
+      "name": "online-cancel-before-request",
+      "passed": true
+    },
+    {
+      "name": "explicit-uploader-test-real-two-urls",
+      "passed": true
+    },
+    {
+      "name": "explicit-uploader-test-temp-cleaned",
+      "passed": true
+    },
+    {
+      "name": "explicit-uploader-test-cancel-no-ui-result",
+      "passed": true
+    },
+    {
+      "name": "native-queued-copy-actual-file",
+      "passed": true
+    },
+    {
+      "name": "native-target-same-folder-no-extra-copy",
+      "passed": true
+    },
+    {
+      "name": "native-local-gate-no-copy",
+      "passed": true
+    },
+    {
+      "name": "native-raw-global-rule-consumer",
+      "passed": true
+    },
+    {
+      "name": "native-online-disabled-no-network",
+      "passed": true
+    },
+    {
+      "name": "native-cancel-suppresses-old-result-and-drains-queue",
+      "passed": true
+    },
+    {
+      "name": "original-markdown-file-byte-exact",
+      "passed": true
+    },
+    {
+      "name": "original-image-file-byte-exact",
+      "passed": true
+    }
+  ],
+  "generatedAt": "2026-10-19T18:45:19Z",
+  "limitations": [
+    "Third-party app live installation/account/protocol roundtrips not executed.",
+    "iPic keyed archive IPC not implemented; selecting it returns an unavailable error.",
+    "Raw screenshot native Typora gate not proven; replica preserves existing raw-image save/copy behavior.",
+    "Project image settings/root-url not implemented."
+  ],
+  "passed": true,
+  "scope": "Real Foundation file/process/network-protocol tests and production Clipboard queue. URLSession is intercepted locally; no system clipboard or cloud uploads.",
+  "sourceHashes": {
+    "native/Clipboard.swift": "0b16a99f0d8ebcaea225f4c6350eb1bc2947bfb30b9209a095eeaad66235c6d7",
+    "native/ImagePreferences.swift": "8f5046f1094bb9fed3cef240fcaee3fb35768262d5624d8c6e31b4fb734aad8d",
+    "native/ExportSettings.swift": "f29a38d1dac18dd575193ee95431bbaf8e0d5016f8c892c93cd787c8367f96ff",
+    "native/DocumentConversion.swift": "927cc47716dd5cab06fcc042dfe4a0abb4725f209bc066591dbdad76c84c5d41",
+    "scripts/verify-image-preferences.swift": "6e9f5ff97c559f3c685ec27a3231d1021d3f57c6f7cb23627dcd98ed59643fc5"
+  },
+  "sourceMatchesCurrent": {
+    "native/Clipboard.swift": true,
+    "native/ImagePreferences.swift": true,
+    "native/ExportSettings.swift": true,
+    "native/DocumentConversion.swift": true,
+    "scripts/verify-image-preferences.swift": true
+  }
+}

@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+.cache/
+.DS_Store
+.*.log
+test-results/
+
+# Local tooling and credentials
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*-HARNESS.jsonl

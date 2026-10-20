@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-19T17:56:24.225Z",
+  "environment": "Real CodeMirror in JSDOM; no browser layout",
+  "browserVerified": false,
+  "browserStatus": "blocked before launch: agent-browser nested-qa socket directory /Users/lkc/.agent-browser is not writable in sandbox; no escalation repeated",
+  "referenceEvidence": {
+    "path": "/Applications/Typora.app/Contents/Resources/TypeMark/appsrc/main.js",
+    "function": "toggleTaskStatus(e)",
+    "offset": 700005,
+    "behavior": "Uses selection startContainer closest .md-task-list-item; collapsed selection changes that owning task; selected range uses its starting task state."
+  },
+  "harness": {
+    "implementation": "Grok 4.6 low bounded prompt attempted once; automatic approval review model at capacity, action not executed. Implementation completed locally.",
+    "globalConfigurationChanged": false
+  },
+  "results": [
+    {
+      "name": "Nested quote task/list widgets use parsed marker positions and hide task numbers (JSDOM)",
+      "passed": true,
+      "detail": {
+        "checkboxes": [
+          true,
+          false,
+          true,
+          false
+        ],
+        "bullets": 1,
+        "numbers": [
+          "13."
+        ]
+      }
+    },
+    {
+      "name": "Nested checkbox clicks edit one exact state character and support undo/redo (JSDOM)",
+      "passed": true,
+      "detail": {
+        "clicked": 4,
+        "changedUnitsPerClick": 1
+      }
+    },
+    {
+      "name": "Quoted/list-contained fences, indented code and HTML never create fake task widgets (JSDOM)",
+      "passed": true,
+      "detail": {
+        "fakeTaskWidgets": 0
+      }
+    },
+    {
+      "name": "Repeated live/source switches retain exact nested source and selection (JSDOM)",
+      "passed": true,
+      "detail": {
+        "switches": 16,
+        "sourceLength": 243,
+        "selection": {
+          "ranges": [
+            {
+              "anchor": 52,
+              "head": 52
+            }
+          ],
+          "main": 0
+        }
+      }
+    },
+    {
+      "name": "Task continuation caret modifies its owner, including nested ordered tasks (JSDOM)",
+      "passed": true,
+      "detail": {
+        "cases": 4
+      }
+    },
+    {
+      "name": "Plain text, fake tasks and adjacent unowned paragraphs remain unchanged (JSDOM)",
+      "passed": true,
+      "detail": {
+        "unchangedCarets": 4
+      }
+    },
+    {
+      "name": "Unclosed nested fences end with their quote/list container and do not mask later tasks (JSDOM)",
+      "passed": true,
+      "detail": {
+        "realTaskWidgets": 1,
+        "quotedCodeUnchanged": true
+      }
+    },
+    {
+      "name": "Selection starting on a continuation uses its owner state for all selected tasks (JSDOM)",
+      "passed": true,
+      "detail": {
+        "forwardAndReverseSelections": true,
+        "excludedFinalTask": true
+      }
+    },
+    {
+      "name": "Multiple carets on one task deduplicate its state edit (JSDOM)",
+      "passed": true,
+      "detail": {
+        "edits": 1
+      }
+    },
+    {
+      "name": "CRLF serialization and unknown source survive nested task commands and modes (JSDOM)",
+      "passed": true,
+      "detail": {
+        "serializedCRLF": true,
+        "bomRetained": true
+      }
+    },
+    {
+      "name": "Reference allocation sees nested quote/list definitions, case and parsed labels (JSDOM)",
+      "passed": true,
+      "detail": {
+        "references": [
+          "REF",
+          "REF-2",
+          "REF-3",
+          "REF\\-4"
+        ],
+        "generated": "ref-4"
+      }
+    },
+    {
+      "name": "Reference allocation ignores code, comments, metadata, escaped brackets and invalid definitions (JSDOM)",
+      "passed": true,
+      "detail": {
+        "generated": "ref",
+        "excludedScopes": [
+          "metadata",
+          "quote fence",
+          "list fence",
+          "indented code",
+          "comment",
+          "escaped bracket",
+          "invalid definition"
+        ]
+      }
+    },
+    {
+      "name": "Reference definition command avoids quoted names and selects only URL (JSDOM)",
+      "passed": true,
+      "detail": {
+        "generated": "ref-2"
+      }
+    },
+    {
+      "name": "Character input and real Enter preserve nested marker bounds, DOM/state parity and tail (JSDOM)",
+      "passed": true,
+      "detail": {
+        "variants": [
+          {
+            "mode": "state",
+            "source": "> > - [ ] task\n> > - [ ] child\n> > TAIL",
+            "inputCharacters": 26,
+            "printableAdvances": true,
+            "handledEnters": true
+          },
+          {
+            "mode": "dom",
+            "source": "> > - [ ] task\n> > - [ ] child\n> > TAIL",
+            "inputCharacters": 26,
+            "printableAdvances": true,
+            "handledEnters": true
+          }
+        ],
+        "note": "Enter intentionally continues Markdown prefixes; loaded-source checks are byte exact."
+      }
+    }
+  ]
+}

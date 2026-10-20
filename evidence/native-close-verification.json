@@ -1,0 +1,14 @@
+{
+  "buttons": [
+    "",
+    "",
+    "",
+    "Save",
+    "Don’t Save",
+    "Cancel"
+  ],
+  "cancelKeepsDocumentOpen": true,
+  "ok": true,
+  "unsavedReview": true,
+  "fileUnchangedAfterCancel": true
+}

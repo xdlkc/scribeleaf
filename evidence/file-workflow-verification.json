@@ -1,0 +1,409 @@
+{
+  "checks": [
+    {
+      "name": "custom-controller-is-native-shared-controller",
+      "passed": true
+    },
+    {
+      "name": "native-open-source.notes",
+      "passed": true
+    },
+    {
+      "name": "native-open-completion-source.notes",
+      "passed": true
+    },
+    {
+      "name": "custom-extension-real-document-read",
+      "passed": true
+    },
+    {
+      "name": "native-auto-open-recording-disabled",
+      "passed": true
+    },
+    {
+      "actual": "Untitled.notes",
+      "name": "actual-save-panel-default-extension",
+      "passed": true
+    },
+    {
+      "name": "native-document-extension-policy",
+      "passed": true
+    },
+    {
+      "name": "native-open-panel-allows-custom-extension",
+      "passed": true
+    },
+    {
+      "name": "native-save-completion-saved.notes",
+      "passed": true
+    },
+    {
+      "name": "custom-extension-real-save",
+      "passed": true
+    },
+    {
+      "name": "native-auto-save-recording-disabled",
+      "passed": true
+    },
+    {
+      "name": "native-open-compound.note.book",
+      "passed": true
+    },
+    {
+      "name": "native-open-completion-compound.note.book",
+      "passed": true
+    },
+    {
+      "name": "native-controller-opens-configured-complete-multi-dot-extension",
+      "passed": true
+    },
+    {
+      "name": "multi-dot-extension-does-not-rewrite-proven-sidebar-last-suffix-rule",
+      "passed": true
+    },
+    {
+      "name": "custom-extension-still-validates-real-text-bytes",
+      "passed": true
+    },
+    {
+      "name": "native-open-source.notes",
+      "passed": true
+    },
+    {
+      "name": "native-open-completion-source.notes",
+      "passed": true
+    },
+    {
+      "name": "native-auto-open-recorded",
+      "passed": true
+    },
+    {
+      "name": "native-save-completion-source.notes",
+      "passed": true
+    },
+    {
+      "name": "native-save-recorded",
+      "passed": true
+    },
+    {
+      "name": "disabled-recents-hidden-without-erasing-prior-list",
+      "passed": true
+    },
+    {
+      "name": "clear-recent-native-entrypoint",
+      "passed": true
+    },
+    {
+      "name": "clear-recent-also-clears-renderer-list",
+      "passed": true
+    },
+    {
+      "name": "clear-recent-keeps-launch-session-independent",
+      "passed": true
+    },
+    {
+      "name": "live-app-monitor-initial",
+      "passed": true
+    },
+    {
+      "name": "editor-preference-notification-rescans-native-folder",
+      "passed": true
+    },
+    {
+      "name": "switch-completion-target.md",
+      "passed": true
+    },
+    {
+      "name": "saved-sidebar-switch-autosaves-real-old-source",
+      "passed": true
+    },
+    {
+      "name": "same-document-switch-retains-root-and-bom",
+      "passed": true
+    },
+    {
+      "name": "native-controller-association-follows-same-document-switch",
+      "passed": true
+    },
+    {
+      "name": "switch-clears-recovery-and-edit-state",
+      "passed": true
+    },
+    {
+      "name": "switch-preserves-repeat-format-without-overwrite",
+      "passed": true
+    },
+    {
+      "name": "load-includes-native-document-identity",
+      "passed": true
+    },
+    {
+      "name": "native-save-completion-target.md",
+      "passed": true
+    },
+    {
+      "name": "switched-document-save-keeps-encoding-bom",
+      "passed": true
+    },
+    {
+      "name": "saved-includes-native-document-identity",
+      "passed": true
+    },
+    {
+      "name": "switch-completion-source.notes",
+      "passed": true
+    },
+    {
+      "name": "sidebar-cancel-preserves-current-document",
+      "passed": true
+    },
+    {
+      "name": "sidebar-cancel-preserves-recovery-and-disk",
+      "passed": true
+    },
+    {
+      "name": "switch-completion-source.notes",
+      "passed": true
+    },
+    {
+      "name": "sidebar-discard-switch-does-not-write-old-source",
+      "passed": true
+    },
+    {
+      "name": "switch-completion-target.md",
+      "passed": true
+    },
+    {
+      "name": "unsaved-save-then-switch-retains-saved-document",
+      "passed": true
+    },
+    {
+      "name": "switch-completion-target.md",
+      "passed": true
+    },
+    {
+      "name": "failed-auto-save-keeps-current-document",
+      "passed": true
+    },
+    {
+      "name": "identity-change-cancels-pending-sidebar-switch",
+      "passed": true
+    },
+    {
+      "name": "switch-completion-target.md",
+      "passed": true
+    },
+    {
+      "name": "system-save-override-consumed-by-real-switch",
+      "passed": true
+    },
+    {
+      "name": "absent-system-key-does-not-authorize-auto-save",
+      "passed": true
+    },
+    {
+      "name": "system-forced-checkbox-policy",
+      "passed": true
+    },
+    {
+      "name": "native-drop-links-separate-images",
+      "passed": true
+    },
+    {
+      "name": "native-drop-folder-image-suffix-is-still-directory",
+      "passed": true
+    },
+    {
+      "name": "native-drop-echoes-both-identities",
+      "passed": true
+    },
+    {
+      "name": "native-drop-uses-only-supplied-drag-reader-when-no-path",
+      "passed": true
+    },
+    {
+      "name": "native-drop-does-not-read-board-with-explicit-path",
+      "passed": true
+    },
+    {
+      "name": "native-drop-merges-missing-drag-paths-and-deduplicates",
+      "passed": true
+    },
+    {
+      "name": "native-drop-stale-source-blocked",
+      "passed": true
+    },
+    {
+      "name": "native-drop-open-creates-real-markdown-document",
+      "passed": true
+    },
+    {
+      "name": "native-drop-folder-open-changes-real-root",
+      "passed": true
+    },
+    {
+      "name": "native-drop-import-produces-real-independent-document",
+      "passed": true
+    },
+    {
+      "name": "native-drop-import-keeps-source-and-root",
+      "passed": true
+    },
+    {
+      "name": "native-drop-error-returned-with-request",
+      "passed": true
+    },
+    {
+      "name": "launch-mode-one-actual-folder-document",
+      "passed": true
+    },
+    {
+      "actual": 2,
+      "name": "launch-mode-two-opens-real-files-no-duplicate-folder-window",
+      "passed": true
+    },
+    {
+      "name": "restored-file-retains-associated-folder",
+      "passed": true
+    },
+    {
+      "name": "launch-mode-three-opens-pin-folder",
+      "passed": true
+    },
+    {
+      "name": "opening-same-folder-reuses-window-document",
+      "passed": true
+    },
+    {
+      "name": "explicit-pin-folder-opens-despite-system-close-restore-policy",
+      "passed": true
+    },
+    {
+      "name": "explicit-open-suppresses-session-mode-0",
+      "passed": true
+    },
+    {
+      "name": "explicit-open-suppresses-session-mode-1",
+      "passed": true
+    },
+    {
+      "name": "explicit-open-suppresses-session-mode-2",
+      "passed": true
+    },
+    {
+      "name": "explicit-open-suppresses-session-mode-3",
+      "passed": true
+    },
+    {
+      "name": "recovery-suppresses-session",
+      "passed": true
+    },
+    {
+      "name": "system-close-overrides-session",
+      "passed": true
+    },
+    {
+      "name": "session-rejects-invalid-and-missing-paths",
+      "passed": true
+    },
+    {
+      "actual": "SESSION_READ_JSON:{\"documentCount\":2,\"files\":[\"\\/var\\/folders\\/yl\\/hrd826h10vgbd05jhs9yjvhr0000gn\\/T\\/typora-file-workflow-zltxrtx0\\/documents\\/dropped.md\",\"\\/var\\/folders\\/yl\\/hrd826h10vgbd05jhs9yjvhr0000gn\\/T\\/typora-file-workflow-zltxrtx0\\/documents\\/folder\\/target.md\"],\"passed\":true}\n",
+      "name": "session-restores-real-documents-across-two-independent-processes",
+      "passed": true
+    },
+    {
+      "name": "export-prepare-freezes-current-markdown-preferences",
+      "passed": true
+    },
+    {
+      "name": "renderer-export-entry-snapshot-overrides-later-native-store",
+      "passed": true
+    },
+    {
+      "name": "repeat-freezes-new-preferences-without-changing-base-schema",
+      "passed": true
+    },
+    {
+      "name": "last-window-close-default-stays-running",
+      "passed": true
+    },
+    {
+      "name": "last-window-close-setting-consumed",
+      "passed": true
+    },
+    {
+      "name": "isolated-defaults-domain-cleaned",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "Actual headless AppKit NSDocumentController/NSDocument save/read, live folder notification, same-document switching, isolated session restoration and native drop/import/export request branches. Modal Save/Don't Save/Cancel choices are injected; actual sheets, GUI focus and pixels are not claimed.",
+  "systemSettingsModified": false,
+  "temporaryFilesOnly": true,
+  "uniqueDefaultsSuite": "local.typora-replica.file-workflow-qa.34503ca047fd47c2848d989115cf2a8e",
+  "visibleWindowsCreated": false,
+  "compileSucceeded": true,
+  "exitCode": 0,
+  "elapsedSeconds": 31.69,
+  "sourceHashes": {
+    "native/App.swift": "250b1a1ff8486333dd6852ea3d16d75b96b2e504dc460ef2c18122f79abd81c5",
+    "native/Clipboard.swift": "0b16a99f0d8ebcaea225f4c6350eb1bc2947bfb30b9209a095eeaad66235c6d7",
+    "native/DocumentConversion.swift": "927cc47716dd5cab06fcc042dfe4a0abb4725f209bc066591dbdad76c84c5d41",
+    "native/ExportAssets.swift": "8c689c854b72431d08379d090ae71a189dcd8b14527bd5ff44e00a743660e9c5",
+    "native/ExportSettings.swift": "f29a38d1dac18dd575193ee95431bbaf8e0d5016f8c892c93cd787c8367f96ff",
+    "native/FileImport.swift": "13e0abfbb3633f402bd633e6132b00dd44b20659fa1fb143cbae10574a994481",
+    "native/FilePreferences.swift": "0769b0bb375015e003dba4a7cf90140dc3088a2f65cdd3cc57a2e77627c2d014",
+    "native/FileWorkflow.swift": "a00b00bc98d397eed20b044e3cc35e871757b50e8030c8fb772718f0e367c3bb",
+    "native/FolderMonitor.swift": "d848eb59e826e51536be68df517fe136312522406da29966c56da1917970d172",
+    "native/ImageExport.swift": "b11106d85f4fc0af9aaf679eb5ef33e4fbb7903d878e59b46f12672d9ae6d03f",
+    "native/ImagePreferences.swift": "8f5046f1094bb9fed3cef240fcaee3fb35768262d5624d8c6e31b4fb734aad8d",
+    "native/Localization.swift": "01b6278da4d8df4c9287dc161dc2ae4300ba5a55aa9777f8d635af99c3b4256a",
+    "native/PDFExportOptions.swift": "5c48e7a7f3a2fe240af4d906a46192a47a1654726ce0f7f0155019ae0f1d9cc6",
+    "native/PreferencesController.swift": "5370307ed9142ee2375939ddef736e2d9dd1d49254697279ddd5c12ca2fb737b",
+    "native/RepeatExport.swift": "8aecaa922cdbd34064f9feb2f8f5061f4a1d09518e7c99676a20dc22594dc3a4",
+    "scripts/verify-file-workflow.swift": "0913e46184f5a631cb1226222816f5965958e0ff5e79671dcfdcd0d65b16bf4d",
+    "native/Info.plist": "cfdc7f91e1d91df6bdb1ffb724df8a26728bd5d3f213647796ef7a3062fcbd31"
+  },
+  "sourceMatchesCurrent": {
+    "native/App.swift": true,
+    "native/Clipboard.swift": true,
+    "native/DocumentConversion.swift": true,
+    "native/ExportAssets.swift": true,
+    "native/ExportSettings.swift": true,
+    "native/FileImport.swift": true,
+    "native/FilePreferences.swift": true,
+    "native/FileWorkflow.swift": true,
+    "native/FolderMonitor.swift": true,
+    "native/ImageExport.swift": true,
+    "native/ImagePreferences.swift": true,
+    "native/Localization.swift": true,
+    "native/PDFExportOptions.swift": true,
+    "native/PreferencesController.swift": true,
+    "native/RepeatExport.swift": true,
+    "scripts/verify-file-workflow.swift": true,
+    "native/Info.plist": true
+  },
+  "testCopyChanges": [
+    "Remove production @main only",
+    "Redirect Recovery.folder to generated temporary directory"
+  ],
+  "bundleMetadata": "Production CFBundleDocumentTypes declarations embedded in a bare CLI Mach-O __TEXT/__info_plist section, with unique QA identity/name/executable. No .app is opened.",
+  "command": "python3 scripts/verify-file-workflow.py",
+  "diagnostics": "",
+  "total": 83,
+  "passedCount": 83,
+  "ownedDefaultsCleanup": [
+    {
+      "domain": "local.typora-replica.file-workflow-qa.34503ca047fd47c2848d989115cf2a8e",
+      "fileAbsent": true
+    },
+    {
+      "domain": "local.typora-replica.file-workflow-qa.34503ca047fd47c2848d989115cf2a8e.bundle",
+      "fileAbsent": true
+    },
+    {
+      "domain": "local.typora-replica.file-workflow-qa.34503ca047fd47c2848d989115cf2a8e.system-policy",
+      "fileAbsent": true
+    }
+  ]
+}

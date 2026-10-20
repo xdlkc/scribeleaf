@@ -1,0 +1,592 @@
+{
+  "generatedAt": "2026-10-19T18:35:07.044Z",
+  "command": "node scripts/verify-markdown-preferences.mjs",
+  "scope": "Real CodeMirror state/view, input handlers and DOM widgets in jsdom; real shared MarkdownIt/KaTeX/HLJS HTML; standalone export request snapshot. No GUI/geometry or full Typora parser parity claim.",
+  "sourceHashes": {
+    "src/markdown-preferences.ts": "a6b3c00f653a3b547ae0157f1e037b1559247fbabc69c6e9ae5476d3c6a74f5f",
+    "src/markdown-renderer.ts": "9318cfc297d58de00fa12021e539661d05b72bf292d7904dbec9f80ebdef5dcb",
+    "src/editor/setup.ts": "19ccb15912cb44b2dbf793a2d48768f9fae63d78fce0a6897930cf90db7748c5",
+    "src/editor/preferences.ts": "9622b86fa39909dccc86ec4011f0fd38dc7474f1339ce82568a5baf2b4fe9e4d",
+    "src/editor/format.ts": "c61fc6eff72162bfbc2a2829b1d77bbcb6e1e3e39d5f210d643b802e31c17599",
+    "src/editor/mathparser.ts": "ec6784dee399140efe74ee22f9f22fd34321e19577432b9aff9614c35e7eac52",
+    "src/editor/widgets.ts": "9f4bebcafd4f75a1853d916da30ce2a65add47c288370535c4e508f9ad5111b1",
+    "src/editor/livepreview.ts": "dfdeb19da45e58309619ee2bfbb60777261e8836735886d473c38a289e85e470",
+    "src/editor/product-markdown.ts": "17e4871efca6bb0ce9d26a77075c749887090b209e222ef1ed9b95a5bad6cf89",
+    "src/editor/product-markdown.css": "45132698c81e9776abbf26c5bba28c62256a2c715e88a83a84f8eb46d91ddcc7",
+    "src/export.ts": "473a880c6c24f6b20d83aacfbf6e8900c1301609a33889256903e9378b4b1865"
+  },
+  "passed": true,
+  "checks": [
+    {
+      "name": "old-prefs-preserve-enabled-syntax",
+      "passed": true
+    },
+    {
+      "name": "invalid-enums-normalize",
+      "passed": true
+    },
+    {
+      "name": "language-does-not-inject-lines",
+      "passed": true
+    },
+    {
+      "name": "snapshot-independent-and-frozen",
+      "passed": true
+    },
+    {
+      "name": "html-enableSubscript-on",
+      "passed": true
+    },
+    {
+      "name": "html-enableSubscript-off",
+      "passed": true
+    },
+    {
+      "name": "html-enableSuperscript-on",
+      "passed": true
+    },
+    {
+      "name": "html-enableSuperscript-off",
+      "passed": true
+    },
+    {
+      "name": "html-enableHighlight-on",
+      "passed": true
+    },
+    {
+      "name": "html-enableHighlight-off",
+      "passed": true
+    },
+    {
+      "name": "html-enableInlineMath-on",
+      "passed": true
+    },
+    {
+      "name": "html-enableInlineMath-off",
+      "passed": true
+    },
+    {
+      "name": "html-autolink-on",
+      "passed": true
+    },
+    {
+      "name": "html-autolink-off",
+      "passed": true
+    },
+    {
+      "name": "explicit-link-stays-when-autolink-off",
+      "passed": true
+    },
+    {
+      "name": "alert-on",
+      "passed": true
+    },
+    {
+      "name": "alert-off",
+      "passed": true
+    },
+    {
+      "name": "diagram-queued-only-when-enabled",
+      "passed": true
+    },
+    {
+      "name": "diagram-off-is-code",
+      "passed": true
+    },
+    {
+      "name": "mermaid-queues-are-request-local",
+      "passed": true
+    },
+    {
+      "name": "code-math-enabled",
+      "passed": true
+    },
+    {
+      "name": "code-math-disabled",
+      "passed": true
+    },
+    {
+      "name": "legacy-delimiter-on-\"\\\\(x+1\\\\)\"",
+      "passed": true
+    },
+    {
+      "name": "legacy-delimiter-off-\"\\\\(x+1\\\\)\"",
+      "passed": true
+    },
+    {
+      "name": "legacy-delimiter-on-\"\\\\[x+1\\\\]\"",
+      "passed": true
+    },
+    {
+      "name": "legacy-delimiter-off-\"\\\\[x+1\\\\]\"",
+      "passed": true
+    },
+    {
+      "name": "legacy-delimiter-on-\"\\\\[\\nx+1\\n\\\\]\"",
+      "passed": true
+    },
+    {
+      "name": "legacy-delimiter-off-\"\\\\[\\nx+1\\n\\\\]\"",
+      "passed": true
+    },
+    {
+      "name": "strict-heading-requires-space",
+      "passed": true
+    },
+    {
+      "name": "relaxed-heading-allows-no-space",
+      "passed": true
+    },
+    {
+      "name": "relaxed-heading-does-not-rewrite-code",
+      "passed": true
+    },
+    {
+      "name": "outline-scanner-reads-strict-mode",
+      "passed": true
+    },
+    {
+      "name": "outline-disabled-syntax-remains-literal",
+      "passed": true
+    },
+    {
+      "name": "smart-quotes-rendered-independently",
+      "passed": true
+    },
+    {
+      "name": "smart-dashes-rendered-independently",
+      "passed": true
+    },
+    {
+      "name": "smart-render-skips-inline-code",
+      "passed": true
+    },
+    {
+      "name": "unicode-punctuation-parses-quote",
+      "passed": true
+    },
+    {
+      "name": "unicode-punctuation-off-keeps-text",
+      "passed": true
+    },
+    {
+      "name": "unicode-remap-does-not-change-code",
+      "passed": true
+    },
+    {
+      "name": "unicode-remap-preserves-multi-tick-code",
+      "passed": true
+    },
+    {
+      "name": "html-code-line-numbers",
+      "passed": true
+    },
+    {
+      "name": "html-code-line-numbers-off",
+      "passed": true
+    },
+    {
+      "name": "html-code-wrapping-setting",
+      "passed": true
+    },
+    {
+      "name": "html-first-line-indent",
+      "passed": true
+    },
+    {
+      "name": "html-export-whitespace-independent",
+      "passed": true
+    },
+    {
+      "name": "clipboard-writing-whitespace-independent",
+      "passed": true
+    },
+    {
+      "name": "clipboard-writing-sequential-spaces-preserved",
+      "passed": true
+    },
+    {
+      "name": "clipboard-latex-source-option",
+      "passed": true
+    },
+    {
+      "name": "display-equation-numbering",
+      "passed": true,
+      "actual": "a(1)a\\tag{1}\nb(2)b\\tag{2}\n"
+    },
+    {
+      "name": "export-request-freezes-syntax",
+      "passed": true
+    },
+    {
+      "name": "export-request-freezes-style",
+      "passed": true
+    },
+    {
+      "name": "export-preserves-root-font-contract",
+      "passed": true
+    },
+    {
+      "name": "export-preserves-image-width-contract",
+      "passed": true
+    },
+    {
+      "name": "native-print-does-not-restore-css-page-margins",
+      "passed": true
+    },
+    {
+      "name": "unstyled-export-keeps-zero-style-contract",
+      "passed": true
+    },
+    {
+      "name": "unstyled-latex-math-remains-source",
+      "passed": true
+    },
+    {
+      "name": "cm-enableSubscript-on",
+      "passed": true,
+      "actual": "Document(Paragraph(Subscript(SubscriptMark,SubscriptMark)))"
+    },
+    {
+      "name": "cm-enableSubscript-off-after-live-change",
+      "passed": true,
+      "actual": "Document(Paragraph)"
+    },
+    {
+      "name": "cm-syntax-toggle-source-lossless-enableSubscript",
+      "passed": true
+    },
+    {
+      "name": "cm-enableSuperscript-on",
+      "passed": true,
+      "actual": "Document(Paragraph(Superscript(SuperscriptMark,SuperscriptMark)))"
+    },
+    {
+      "name": "cm-enableSuperscript-off-after-live-change",
+      "passed": true,
+      "actual": "Document(Paragraph)"
+    },
+    {
+      "name": "cm-syntax-toggle-source-lossless-enableSuperscript",
+      "passed": true
+    },
+    {
+      "name": "cm-enableHighlight-on",
+      "passed": true,
+      "actual": "Document(Paragraph(HighlightMark(HighlightMarkMark,HighlightMarkMark)))"
+    },
+    {
+      "name": "cm-enableHighlight-off-after-live-change",
+      "passed": true,
+      "actual": "Document(Paragraph)"
+    },
+    {
+      "name": "cm-syntax-toggle-source-lossless-enableHighlight",
+      "passed": true
+    },
+    {
+      "name": "cm-enableInlineMath-on",
+      "passed": true,
+      "actual": "Document(Paragraph(InlineMath(InlineMathMark,InlineMathMark)))"
+    },
+    {
+      "name": "cm-enableInlineMath-off-after-live-change",
+      "passed": true,
+      "actual": "Document(Paragraph)"
+    },
+    {
+      "name": "cm-syntax-toggle-source-lossless-enableInlineMath",
+      "passed": true
+    },
+    {
+      "name": "cm-autolink-on",
+      "passed": true
+    },
+    {
+      "name": "cm-autolink-off",
+      "passed": true
+    },
+    {
+      "name": "cm-relaxed-heading",
+      "passed": true
+    },
+    {
+      "name": "cm-strict-heading",
+      "passed": true
+    },
+    {
+      "name": "cm-remapped-quote",
+      "passed": true,
+      "actual": "Document(Blockquote(QuoteMark,Paragraph))"
+    },
+    {
+      "name": "cm-remap-source-lossless",
+      "passed": true
+    },
+    {
+      "name": "heading-style-0",
+      "passed": true,
+      "actual": "# Title"
+    },
+    {
+      "name": "heading-style-to-paragraph-0",
+      "passed": true
+    },
+    {
+      "name": "heading-style-1",
+      "passed": true,
+      "actual": "Title\n==="
+    },
+    {
+      "name": "heading-style-to-paragraph-1",
+      "passed": true
+    },
+    {
+      "name": "heading-style-2",
+      "passed": true,
+      "actual": "# Title #"
+    },
+    {
+      "name": "heading-style-to-paragraph-2",
+      "passed": true
+    },
+    {
+      "name": "heading-style-3",
+      "passed": true,
+      "actual": "Title\n====="
+    },
+    {
+      "name": "heading-style-to-paragraph-3",
+      "passed": true
+    },
+    {
+      "name": "setext-h1-raise-noop",
+      "passed": true
+    },
+    {
+      "name": "setext-heading-lowers-to-h2",
+      "passed": true
+    },
+    {
+      "name": "setext-h2-lowers-to-atx-h3",
+      "passed": true
+    },
+    {
+      "name": "unordered-style-0",
+      "passed": true
+    },
+    {
+      "name": "unordered-style-1",
+      "passed": true
+    },
+    {
+      "name": "unordered-style-2",
+      "passed": true
+    },
+    {
+      "name": "ordered-repeated-one-style",
+      "passed": true
+    },
+    {
+      "name": "default-code-language-menu-mask-1",
+      "passed": true
+    },
+    {
+      "name": "default-code-language-markdown-mask-1",
+      "passed": true,
+      "actual": "```python\n"
+    },
+    {
+      "name": "default-code-language-menu-mask-2",
+      "passed": true
+    },
+    {
+      "name": "default-code-language-markdown-mask-2",
+      "passed": true,
+      "actual": "```\n"
+    },
+    {
+      "name": "default-code-language-menu-mask-3",
+      "passed": true
+    },
+    {
+      "name": "default-code-language-markdown-mask-3",
+      "passed": true,
+      "actual": "```python\n"
+    },
+    {
+      "name": "default-code-language-last-used",
+      "passed": true
+    },
+    {
+      "name": "fence-indent-size-2",
+      "passed": true
+    },
+    {
+      "name": "fence-outdent-size-2",
+      "passed": true
+    },
+    {
+      "name": "fence-indent-size-3",
+      "passed": true
+    },
+    {
+      "name": "fence-outdent-size-3",
+      "passed": true
+    },
+    {
+      "name": "fence-indent-size-4",
+      "passed": true
+    },
+    {
+      "name": "fence-outdent-size-4",
+      "passed": true
+    },
+    {
+      "name": "fence-indent-size-5",
+      "passed": true
+    },
+    {
+      "name": "fence-outdent-size-5",
+      "passed": true
+    },
+    {
+      "name": "shift-tab-auto-indent-uses-language-and-code-size",
+      "passed": true,
+      "actual": "```js\nif (ok) {\n    x();\n}\n```"
+    },
+    {
+      "name": "shift-tab-auto-indent-undo",
+      "passed": true
+    },
+    {
+      "name": "shift-tab-disabled-outdents-instead",
+      "passed": true,
+      "actual": "```js\nif (ok) {\nx();\n}\n```"
+    },
+    {
+      "name": "smart-quote-on-input-stores-unicode",
+      "passed": true
+    },
+    {
+      "name": "smart-en-dash-input",
+      "passed": true
+    },
+    {
+      "name": "smart-em-dash-input",
+      "passed": true
+    },
+    {
+      "name": "smart-render-preview-unicode",
+      "passed": true,
+      "actual": "“hello” – world"
+    },
+    {
+      "name": "smart-render-preserves-ascii-source",
+      "passed": true
+    },
+    {
+      "name": "cm-code-line-numbers",
+      "passed": true
+    },
+    {
+      "name": "cm-code-wrap-class",
+      "passed": true
+    },
+    {
+      "name": "cm-code-line-numbers-live-off",
+      "passed": true
+    },
+    {
+      "name": "cm-code-math-widget",
+      "passed": true
+    },
+    {
+      "name": "cm-code-math-disables-to-code",
+      "passed": true
+    },
+    {
+      "name": "cm-latex-display-widget",
+      "passed": true
+    },
+    {
+      "name": "cm-latex-display-disabled",
+      "passed": true
+    },
+    {
+      "name": "cm-ams-skips-plain-display-number",
+      "passed": true,
+      "actual": [
+        "plainplain",
+        "a=bc=d(1)\n\\begin{align}\na&=b\\\\\nc&=d\n\\end{align}\n\\tag{1}"
+      ]
+    },
+    {
+      "name": "cm-br-visible-mark",
+      "passed": true
+    },
+    {
+      "name": "cm-br-hidden-mark",
+      "passed": true
+    },
+    {
+      "name": "cm-br-toggle-lossless",
+      "passed": true
+    },
+    {
+      "name": "cm-writing-softbreak-collapses",
+      "passed": true,
+      "actual": "<div class=\"cm-line cm-markdown-paragraph-first\" style=\"white-space: normal;\">one<img class=\"cm-widgetBuffer\" aria-hidden=\"true\"><span class=\"\"> </span><img class=\"cm-widgetBuffer\" aria-hidden=\"true\">two</div><div class=\"cm-line cm-blank-line\"><br></div><div class=\"cm-line cm-activeLine cm-markdown-paragraph-first\" style=\"white-space: normal;\">end</div>"
+    },
+    {
+      "name": "cm-writing-sequential-spaces-collapses-style",
+      "passed": true
+    },
+    {
+      "name": "cm-first-paragraph-indent-class",
+      "passed": true
+    },
+    {
+      "name": "cm-whitespace-view-is-lossless",
+      "passed": true
+    }
+  ],
+  "knownGaps": {
+    "amsMultiline": {
+      "source": "$$\n\\begin{align}\na&=b\\\\\nc&=d\n\\end{align}\n$$",
+      "outputText": "a=bc=d(1)\\begin{align}\na&=b\\\\\nc&=d\n\\end{align}\\tag{1}\n",
+      "hasKatexError": false,
+      "scope": "Actual current pipeline witness; original Typora uses MathJax AMS tags. No equivalence claim."
+    }
+  },
+  "total": 127,
+  "passedCount": 127,
+  "unsupported": [
+    "complete physics macros",
+    "precise legacy inline-math regex compatibility",
+    "SVG math clipboard output"
+  ],
+  "partial": [
+    "strict-mode fidelity beyond no-space ATX headings and CommonMark list rules",
+    "AMS equation environment/cross-reference parity",
+    "native system smart-quote patterns"
+  ],
+  "regressions": {
+    "editor": {
+      "command": "node scripts/verify-editor-preferences.mjs",
+      "passed": 138,
+      "total": 138,
+      "exitCode": 0
+    },
+    "export": {
+      "command": "node scripts/verify-export.mjs",
+      "passed": 14,
+      "total": 14,
+      "exitCode": 0
+    },
+    "typecheck": {
+      "command": "npm run typecheck",
+      "exitCode": 0
+    }
+  }
+}

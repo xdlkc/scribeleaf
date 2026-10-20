@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-19T17:56:22.670Z",
+  "environment": "jsdom-CodeMirror (not browser verification)",
+  "browserVerified": false,
+  "referenceEvidence": {
+    "path": "/Applications/Typora.app/Contents/Resources/TypeMark/appsrc/main.js",
+    "headingFunction": "changeHeadingLevel(e,t,n)",
+    "headingOffset": 705820,
+    "headingBehavior": "Paragraph increase→H6; paragraph decrease→unchanged; H1 increase→unchanged; H1 decrease→H2; H6 decrease→paragraph.",
+    "alertFunction": "insertAlert(e,t)",
+    "alertOffset": 696677,
+    "alertBehavior": "Existing alert changes type; same type removes alert marker and retains quote content; normal caret inserts a new alert."
+  },
+  "harness": {
+    "implementation": "Grok 4.6 low attempted; session permission denied; escalation was not executed because automatic approval review model was at capacity. Implementation completed in workspace by agent.",
+    "globalConfigurationChanged": false
+  },
+  "results": [
+    {
+      "name": "YAML inserts at the start, preserves BOM and source, and has one undo step",
+      "passed": true
+    },
+    {
+      "name": "Existing and unfinished YAML are entered without duplication",
+      "passed": true
+    },
+    {
+      "name": "TOC insertion keeps selected source and is independently undoable",
+      "passed": true
+    },
+    {
+      "name": "Paragraph commands respect fenced blocks with blank inner lines",
+      "passed": true
+    },
+    {
+      "name": "Paragraph commands reuse adjacent empty paragraphs and preserve metadata",
+      "passed": true
+    },
+    {
+      "name": "Reference link preserves selected label, avoids collisions, selects URL and has one undo step",
+      "passed": true
+    },
+    {
+      "name": "Reference link insertion at empty EOF uses valid positions",
+      "passed": true
+    },
+    {
+      "name": "Reference definition inserts a block and selects only its URL",
+      "passed": true
+    },
+    {
+      "name": "Comment toggle preserves unknown syntax, spaces, and multi-selection",
+      "passed": true
+    },
+    {
+      "name": "Task state preserves nested markers and ignores plain, fake, fenced and metadata lines",
+      "passed": true
+    },
+    {
+      "name": "Task multi-selection excludes following unselected lines",
+      "passed": true
+    },
+    {
+      "name": "Five alert types insert without losing the current paragraph",
+      "passed": true
+    },
+    {
+      "name": "Alert conversion retains nested source and toggles the same type off",
+      "passed": true
+    },
+    {
+      "name": "Alert multi-selection wraps only selected lines and keeps existing quote prefixes",
+      "passed": true
+    },
+    {
+      "name": "CRLF survives YAML, references, comment, task status and alert edits",
+      "passed": true
+    },
+    {
+      "name": "Heading changes follow installed Typora boundaries and exact selected lines",
+      "passed": true
+    },
+    {
+      "name": "Input and foreign contenteditable focus cannot edit an old CodeMirror caret",
+      "passed": true
+    },
+    {
+      "name": "Mixed task selection follows its first task instead of always completing all",
+      "passed": true
+    },
+    {
+      "name": "Dialog button focus cannot send paragraph commands to the old editor caret",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+[
+  {
+    "file": "didact-gothic-c-ext.woff2",
+    "sha256": "4c3ce7d5fb8b7082e11d6ba6972cedd58875573387f32525630a25a78f32507e",
+    "unchanged_from_reference": true,
+    "name_table": {
+      "0": [
+        "Copyright 2016 The Didact Gothic Project Authors (il.basso.buffo@gmail.com)"
+      ],
+      "1": [
+        "Didact Gothic"
+      ],
+      "2": [
+        "Regular"
+      ],
+      "3": [
+        "2.101;CYRE;DidactGothic-Regular"
+      ],
+      "5": [
+        "Version 2.101"
+      ],
+      "8": [],
+      "9": [],
+      "11": [],
+      "13": [],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ]
+    }
+  },
+  {
+    "file": "didact-gothic-c.woff2",
+    "sha256": "bba9bd182bb9dc301b7fb8890ba108b38ab17ea94132253b6f344d3a4f4b86f5",
+    "unchanged_from_reference": true,
+    "name_table": {
+      "0": [
+        "Copyright 2016 The Didact Gothic Project Authors (il.basso.buffo@gmail.com)"
+      ],
+      "1": [
+        "Didact Gothic"
+      ],
+      "2": [
+        "Regular"
+      ],
+      "3": [
+        "2.101;CYRE;DidactGothic-Regular"
+      ],
+      "5": [
+        "Version 2.101"
+      ],
+      "8": [],
+      "9": [],
+      "11": [],
+      "13": [],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ]
+    }
+  },
+  {
+    "file": "texgyreadventor-bold.woff",
+    "sha256": "66ec1b68a5b9121a11e6e67914084bbba10698257a7efa5a22b4f6dcd29f5882",
+    "unchanged_from_reference": true,
+    "name_table": {
+      "0": [
+        "Copyright (URW)++, copyright 1999 by (URW)++ Design & Development; Cyrillic glyphs added by Valek Filippov, copyright 2001-2002; Vietnamese characters were added by Han The Thanh; copyright 2006, 2008 for TeX Gyre extensions by B. Jackowski and J.M. Nowacki (on behalf of TeX users groups). This work is released under the GUST Font License --  see http://tug.org/fonts/licenses/GUST-FONT-LICENSE.txt for details."
+      ],
+      "1": [
+        "TeXGyreAdventor"
+      ],
+      "2": [
+        "Bold"
+      ],
+      "3": [
+        "1.104;URW ;TeXGyreAdventor-Bold"
+      ],
+      "5": [
+        "Version 1.104;PS 1.104;hotconv 1.0.49;makeotf.lib2.0.14853"
+      ],
+      "8": [],
+      "9": [],
+      "11": [],
+      "13": [],
+      "14": []
+    }
+  },
+  {
+    "file": "texgyreadventor-bolditalic.woff",
+    "sha256": "95c7d7e03da6219a85e4a3ac1dc9ff327fdb8646fc18b889afacfd49a6947e8d",
+    "unchanged_from_reference": true,
+    "name_table": {
+      "0": [
+        "Copyright (URW)++, copyright 1999 by (URW)++ Design & Development; Cyrillic glyphs added by Valek Filippov, copyright 2001-2002; Vietnamese characters were added by Han The Thanh; copyright 2006, 2008 for TeX Gyre extensions by B. Jackowski and J.M. Nowacki (on behalf of TeX users groups). This work is released under the GUST Font License --  see http://tug.org/fonts/licenses/GUST-FONT-LICENSE.txt for details."
+      ],
+      "1": [
+        "TeXGyreAdventor"
+      ],
+      "2": [
+        "Bold Italic"
+      ],
+      "3": [
+        "1.104;URW ;TeXGyreAdventor-BoldItalic"
+      ],
+      "5": [
+        "Version 1.104;PS 1.104;hotconv 1.0.49;makeotf.lib2.0.14853"
+      ],
+      "8": [],
+      "9": [],
+      "11": [],
+      "13": [],
+      "14": []
+    }
+  },
+  {
+    "file": "texgyreadventor-italic.woff",
+    "sha256": "5f9817cc442fa3a02872c297a074fd713dc7a2194e5d67b424b0dcf3ffb06860",
+    "unchanged_from_reference": true,
+    "name_table": {
+      "0": [
+        "Copyright (URW)++, copyright 1999 by (URW)++ Design & Development; Cyrillic glyphs added by Valek Filippov, copyright 2001-2002; Vietnamese characters were added by Han The Thanh; copyright 2006, 2008 for TeX Gyre extensions by B. Jackowski and J.M. Nowacki (on behalf of TeX users groups). This work is released under the GUST Font License --  see http://tug.org/fonts/licenses/GUST-FONT-LICENSE.txt for details."
+      ],
+      "1": [
+        "TeXGyreAdventor"
+      ],
+      "2": [
+        "Italic"
+      ],
+      "3": [
+        "1.104;URW ;TeXGyreAdventor-Italic"
+      ],
+      "5": [
+        "Version 1.104;PS 1.104;hotconv 1.0.49;makeotf.lib2.0.14853"
+      ],
+      "8": [],
+      "9": [],
+      "11": [],
+      "13": [],
+      "14": []
+    }
+  },
+  {
+    "file": "texgyreadventor-regular.woff",
+    "sha256": "a05e1db555ee9870a8a59cd13599d3452fbba2fc2a7ec708c34503067734e410",
+    "unchanged_from_reference": true,
+    "name_table": {
+      "0": [
+        "Copyright (URW)++, copyright 1999 by (URW)++ Design & Development; Cyrillic glyphs added by Valek Filippov, copyright 2001-2002; Vietnamese characters were added by Han The Thanh; copyright 2006, 2008 for TeX Gyre extensions by B. Jackowski and J.M. Nowacki (on behalf of TeX users groups). This work is released under the GUST Font License --  see http://tug.org/fonts/licenses/GUST-FONT-LICENSE.txt for details."
+      ],
+      "1": [
+        "TeXGyreAdventor"
+      ],
+      "2": [
+        "Regular"
+      ],
+      "3": [
+        "1.104;URW ;TeXGyreAdventor-Regular"
+      ],
+      "5": [
+        "Version 1.104;PS 1.104;hotconv 1.0.49;makeotf.lib2.0.14853"
+      ],
+      "8": [],
+      "9": [],
+      "11": [],
+      "13": [],
+      "14": []
+    }
+  }
+]

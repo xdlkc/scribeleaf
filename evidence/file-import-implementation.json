@@ -1,0 +1,103 @@
+{
+  "generatedAt": "2026-10-19T18:36:29.197Z",
+  "passed": true,
+  "fullProductParity": false,
+  "api": {
+    "supports": "FileImporter.supports(_ url:URL)->Bool",
+    "import": "FileImporter.importMarkdown(source:URL,pandocURL:URL?=nil,timeout:TimeInterval=60,mediaCacheURL:URL?=nil) async throws ->String"
+  },
+  "readers": {
+    "docx": "docx",
+    "odt": "odt",
+    "epub": "epub",
+    "rtf": "rtf",
+    "html": "html+raw_html",
+    "htm": "html+raw_html",
+    "xhtml": "html+raw_html",
+    "rst": "rst",
+    "rest": "rst",
+    "textile": "textile",
+    "tex": "latex",
+    "latex": "latex",
+    "opml": "opml",
+    "org": "org",
+    "wiki": "mediawiki",
+    "mediawiki": "mediawiki",
+    "adoc": "asciidoc",
+    "asciidoc": "asciidoc",
+    "fb2": "fb2",
+    "fodt": "fodt",
+    "ipynb": "ipynb",
+    "typ": "typst",
+    "typst": "typst"
+  },
+  "productionSourceSHA256": "13e0abfbb3633f402bd633e6132b00dd44b20659fa1fb143cbae10574a994481",
+  "verification": {
+    "path": "file-import-verification.json",
+    "passed": 86,
+    "total": 86,
+    "sourceMatchesCurrent": {
+      "native/FileImport.swift": true,
+      "native/DocumentConversion.swift": true,
+      "native/ExportSettings.swift": true,
+      "scripts/verify-file-import.swift": true
+    },
+    "formatsActuallyImported": [
+      "docx",
+      "odt",
+      "epub",
+      "rtf",
+      "html",
+      "rst",
+      "textile",
+      "tex",
+      "opml",
+      "org",
+      "adoc",
+      "fb2",
+      "fodt",
+      "ipynb",
+      "typ"
+    ],
+    "embeddedImageBytesReadBack": [
+      "docx",
+      "odt",
+      "epub",
+      "rtf",
+      "fb2",
+      "ipynb"
+    ],
+    "notebookCellScopedSameNameAttachments": true,
+    "rawHTMLAttachmentCodeExamplesPreserved": true
+  },
+  "behavior": {
+    "source": "Read-only local file, converted on a worker queue; source extension determines a fixed reader.",
+    "argv": "Structured argv with -- before source; fixed Lua filter; no shell interpolation.",
+    "media": "Existing Pandoc mediabag images and explicit notebook cell attachments are retained in a request staging directory, then committed to Application Support/<bundleID>/ImportedMedia/<UUID>. Markdown/raw HTML references use percent-encoded absolute file:// URLs.",
+    "notebook": "A private read-only snapshot adds cell-scoped attachment mappings. Raw HTML image references preserve distinct same-name attachments in different cells.",
+    "cancellation": "Task cancellation signals the existing process-group launcher; failed/cancelled jobs remove their staging/cache directory and temporary output.",
+    "network": "--sandbox + html+raw_html; filter never calls mediabag.fetch/fill or --extract-media. Remote image references remain references.",
+    "noMedia": "No persistent request directory remains when an import has no embedded media."
+  },
+  "sources": [
+    {
+      "url": "https://pandoc.org/lua-filters.html#module-pandoc.mediabag",
+      "supports": "Mediabag lookup and fixed Lua AST Image transformations; actual bundled 3.12.1 execution validates the API."
+    },
+    {
+      "url": "https://pandoc.org/MANUAL.html#general-options",
+      "supports": "--sandbox constrains reader/writer IO."
+    },
+    {
+      "path": ".cache/pandoc/pandoc-3.12.1-x86_64/share/man/man1/pandoc.1",
+      "supports": "Pinned local documentation of sandbox and html+raw_html iframe behavior."
+    }
+  ],
+  "limits": [
+    "Persistent ImportedMedia absolute URLs are not a portable Markdown folder. Original Typora media placement still needs a behavior comparison.",
+    "The caller must create a separate unsaved MarkdownDocument and keep resourceOriginURL set to the source; App/UI integration is owned by file_preferences.",
+    "Local referenced HTML/LaTeX images remain relative to resourceOriginURL; they are not copied unless embedded in the source.",
+    "The API exposes supported reader formats, not a proof that every source feature or original Typora import format is 1:1.",
+    "Custom Pandoc versions can differ from the pinned bundled reader set."
+  ]
+}

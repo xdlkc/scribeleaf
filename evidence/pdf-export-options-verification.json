@@ -1,0 +1,311 @@
+{
+  "scope": "Real NSPrintInfo plus real CoreGraphics/CoreText/PDFKit source/output pages",
+  "originalVisualParity": "Header/footer native layout not established in original reference; independent public implementation, pending visual comparison.",
+  "geometryPolicy": "For this app print PDFs, public PDFKit normalizes nonzero MediaBox origins; preserve page dimensions/rotation and translate body, annotations and destinations together. CJK extraction comparisons use Unicode NFKC.",
+  "reference": "evidence/export-settings-reference.json",
+  "sourceSHA256": "5c48e7a7f3a2fe240af4d906a46192a47a1654726ce0f7f0155019ae0f1d9cc6",
+  "compiler": {
+    "passed": true,
+    "diagnostics": ""
+  },
+  "execution": {
+    "returnCode": 0,
+    "stderr": "CoreGraphics PDF has logged an error. Set environment variable \"CG_PDF_VERBOSE\" to learn more.\n"
+  },
+  "actualPDF": {
+    "checks": [
+      {
+        "detail": {
+          "margins": [
+            21,
+            22,
+            23,
+            24
+          ],
+          "paper": [
+            777,
+            555
+          ]
+        },
+        "name": "Empty paper and margins retain actual NSPrintInfo defaults",
+        "passed": true
+      },
+      {
+        "detail": {
+          "note": "NSPrintInfo quantizes known printer papers to whole points.",
+          "size": [
+            595,
+            842
+          ]
+        },
+        "name": "Named paper A4 uses public NSPrintInfo size",
+        "passed": true
+      },
+      {
+        "detail": {
+          "note": "NSPrintInfo quantizes known printer papers to whole points.",
+          "size": [
+            612,
+            792
+          ]
+        },
+        "name": "Named paper Letter uses public NSPrintInfo size",
+        "passed": true
+      },
+      {
+        "detail": {
+          "note": "NSPrintInfo quantizes known printer papers to whole points.",
+          "size": [
+            612,
+            1008
+          ]
+        },
+        "name": "Named paper Legal uses public NSPrintInfo size",
+        "passed": true
+      },
+      {
+        "detail": {
+          "margins": [
+            28.34645669291339,
+            31.181102362204726,
+            34.01574803149607,
+            36.85039370078741
+          ],
+          "size": [
+            340.15748031496065,
+            510.236220472441
+          ]
+        },
+        "name": "Custom millimetres and all four margins reach actual NSPrintInfo",
+        "passed": true
+      },
+      {
+        "detail": {
+          "rejected": 5
+        },
+        "name": "Invalid dimensions, paper names and impossible margins are rejected",
+        "passed": true
+      },
+      {
+        "detail": {
+          "normalization": "Public PDFKit normalizes MediaBox origins; body and interaction coordinates receive the same translation.",
+          "pages": [
+            {
+              "mediaBox": [
+                0,
+                0,
+                612,
+                792
+              ],
+              "rotation": 0,
+              "sourceMediaBox": [
+                0,
+                0,
+                612,
+                792
+              ],
+              "sourceRotation": 0,
+              "text": "HDR 中⽂标题 作者 2026-10-19 1/2\nBODY\n_\n1 中⽂正⽂\nFTR 1/2"
+            },
+            {
+              "mediaBox": [
+                0,
+                0,
+                500,
+                700
+              ],
+              "rotation": 90,
+              "sourceMediaBox": [
+                13,
+                17,
+                500,
+                700
+              ],
+              "sourceRotation": 90,
+              "text": "HDR 中⽂标题 作者 2026-10-19 2/2\nBODY\n_\n2 中⽂正⽂\nFTR 2/2"
+            }
+          ]
+        },
+        "name": "Two real PDF pages retain body Unicode, page sizes and rotation with normalized origins",
+        "passed": true
+      },
+      {
+        "detail": {
+          "pages": [
+            {
+              "mediaBox": [
+                0,
+                0,
+                612,
+                792
+              ],
+              "rotation": 0,
+              "sourceMediaBox": [
+                0,
+                0,
+                612,
+                792
+              ],
+              "sourceRotation": 0,
+              "text": "HDR 中⽂标题 作者 2026-10-19 1/2\nBODY\n_\n1 中⽂正⽂\nFTR 1/2"
+            },
+            {
+              "mediaBox": [
+                0,
+                0,
+                500,
+                700
+              ],
+              "rotation": 90,
+              "sourceMediaBox": [
+                13,
+                17,
+                500,
+                700
+              ],
+              "sourceRotation": 90,
+              "text": "HDR 中⽂标题 作者 2026-10-19 2/2\nBODY\n_\n2 中⽂正⽂\nFTR 2/2"
+            }
+          ]
+        },
+        "name": "Metadata and pageNo/totalPages tokens are drawn as extractable text",
+        "passed": true
+      },
+      {
+        "detail": {
+          "linkCount": 2,
+          "url": "https://example.com/pdf-link"
+        },
+        "name": "URL annotation remains interactive",
+        "passed": true
+      },
+      {
+        "detail": {
+          "page": 1,
+          "point": [
+            87,
+            483
+          ],
+          "zoom": 1.25
+        },
+        "name": "GoTo annotation keeps target page, normalized point and zoom",
+        "passed": true
+      },
+      {
+        "detail": {
+          "label": "Second 中文",
+          "page": 1,
+          "point": [
+            87,
+            483
+          ]
+        },
+        "name": "Outline keeps label and normalized GoTo destination",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Successful finalization replaces old target and leaves source bytes intact",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "No header/footer is an exact atomic byte copy",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Source==destination is rejected without changing source",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "A malformed source preserves both prior target and source",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "A destination symlink to source is rejected",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "independentPDFDecode": {
+    "urlAnnotation": true,
+    "goToAnnotation": true,
+    "outline": true,
+    "vectorBodyWithoutRasterImages": true
+  },
+  "bodyVisualGeometry": [
+    {
+      "page": 1,
+      "passed": true,
+      "sourceColoredBodyBounds": [
+        57,
+        730,
+        147,
+        831
+      ],
+      "outputColoredBodyBounds": [
+        57,
+        730,
+        147,
+        831
+      ],
+      "renderedSize": [
+        696,
+        900
+      ]
+    },
+    {
+      "page": 2,
+      "passed": true,
+      "sourceColoredBodyBounds": [
+        77,
+        64,
+        192,
+        166
+      ],
+      "outputColoredBodyBounds": [
+        77,
+        64,
+        192,
+        166
+      ],
+      "renderedSize": [
+        900,
+        643
+      ]
+    }
+  ],
+  "proofPDF": "/Users/lkc/Code/typora-replica/evidence/pdf-export-options-proof.pdf",
+  "renderedPages": [
+    "/Users/lkc/Code/typora-replica/evidence/pdf-export-options-proof-1.png",
+    "/Users/lkc/Code/typora-replica/evidence/pdf-export-options-proof-2.png"
+  ],
+  "harness": {
+    "model": "grok-4.6",
+    "reasoningEffort": "low",
+    "maxTurns": 36,
+    "sessionId": "01a1547b-5fa3-7030-b2b2-7a3cbea38796",
+    "stopReason": "end_turn",
+    "turns": 9,
+    "usage": {
+      "input_tokens": 77722,
+      "cache_read_input_tokens": 344192,
+      "cache_creation_input_tokens": 0,
+      "output_tokens": 13482,
+      "reasoning_tokens": 3548,
+      "total_tokens": 435396
+    },
+    "exitCode": 0,
+    "followedToTerminal": true,
+    "activeProcess": false,
+    "globalConfigurationChanged": false,
+    "localReviewFixes": [
+      "Public PDFKit page geometry normalization, annotation and outline remapping, removal of stale GoTo /Dest",
+      "Independent real NSPrintInfo/PDFKit/CoreText/pypdf/Poppler validation; real WebKit scale sampling and PIL validation"
+    ]
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "generatedAt": "2026-10-19T18:46:09.812Z",
+  "passed": true,
+  "checks": [
+    {
+      "name": "pure-nonimage-native-contract",
+      "passed": true,
+      "detail": {
+        "type": "fileDrop",
+        "requestId": "file-drop-2",
+        "documentId": "native-doc-A",
+        "rendererDocumentId": "file-document-1",
+        "documentPath": "/workspace/原稿.md",
+        "paths": [
+          "/workspace/doc.md"
+        ],
+        "useDraggingPasteboard": false
+      }
+    },
+    {
+      "name": "drop-caret-maps-through-async-edits",
+      "passed": true,
+      "detail": "ZZab[doc.md](<doc.md>)cdef"
+    },
+    {
+      "name": "duplicate-result-ignored",
+      "passed": true
+    },
+    {
+      "name": "mixed-drop-both-native-pipelines",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "mixed-nonimage-never-enqueued-as-image",
+      "passed": true
+    },
+    {
+      "name": "empty-image-result-is-no-op-and-drains-pending",
+      "passed": true
+    },
+    {
+      "name": "uri-percent-hash-unicode-decoded-once",
+      "passed": true,
+      "detail": {
+        "type": "fileDrop",
+        "requestId": "file-drop-5",
+        "documentId": "native-doc-A",
+        "rendererDocumentId": "file-document-4",
+        "documentPath": "/workspace/原稿.md",
+        "paths": [
+          "/workspace/子目录/文档 #100% (a)[b].md"
+        ],
+        "useDraggingPasteboard": false
+      }
+    },
+    {
+      "name": "markdown-link-special-path-roundtrip",
+      "passed": true,
+      "detail": "<p>x<a href=\"%E5%AD%90%E7%9B%AE%E5%BD%95/%E6%96%87%E6%A1%A3%20%23100%25%20(a)%5Bb%5D.md\">文档 [a] \\ b</a>y</p>\n"
+    },
+    {
+      "name": "markdown-label-brackets-backslash-safe",
+      "passed": true
+    },
+    {
+      "name": "uri-directory-image-extension-is-file-drop",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "directory-result-trailing-slash",
+      "passed": true
+    },
+    {
+      "name": "webkit-directory-before-extension",
+      "passed": true
+    },
+    {
+      "name": "known-directory-not-in-image-pipeline",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "mixed-directory-image-skips-known-folder",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "unknown-image-extension-reaches-native-classification-and-image",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "partial-missing-path-requests-native-drag-snapshot",
+      "passed": true,
+      "detail": {
+        "type": "fileDrop",
+        "requestId": "file-drop-10",
+        "documentId": "native-doc-A",
+        "rendererDocumentId": "file-document-4",
+        "documentPath": "/workspace/原稿.md",
+        "paths": [
+          "/workspace/a.md"
+        ],
+        "useDraggingPasteboard": true
+      }
+    },
+    {
+      "name": "complete-uri-mapping-needs-no-pasteboard",
+      "passed": true,
+      "detail": {
+        "type": "fileDrop",
+        "requestId": "file-drop-11",
+        "documentId": "native-doc-A",
+        "rendererDocumentId": "file-document-4",
+        "documentPath": "/workspace/原稿.md",
+        "paths": [
+          "/workspace/a.md"
+        ],
+        "useDraggingPasteboard": false
+      }
+    },
+    {
+      "name": "directory-entry-without-file-uses-native-drag-snapshot",
+      "passed": true
+    },
+    {
+      "name": "colon-in-file-name-does-not-become-uri-scheme",
+      "passed": true
+    },
+    {
+      "name": "wrong-renderer-generation-ignored",
+      "passed": true
+    },
+    {
+      "name": "changed-native-document-ignored",
+      "passed": true
+    },
+    {
+      "name": "result-must-match-captured-native-id",
+      "passed": true
+    },
+    {
+      "name": "save-as-or-path-change-invalidates-old-request",
+      "passed": true
+    },
+    {
+      "name": "new-editor-state-rejects-old-result",
+      "passed": true
+    },
+    {
+      "name": "destroyed-editor-result-harmless",
+      "passed": true
+    },
+    {
+      "name": "native-error-does-not-change-markdown",
+      "passed": true
+    },
+    {
+      "name": "failed-request-is-settled",
+      "passed": true
+    },
+    {
+      "name": "browser-without-native-retains-original-flow",
+      "passed": true
+    },
+    {
+      "name": "failed-native-send-retains-browser-flow",
+      "passed": true
+    },
+    {
+      "name": "failed-native-send-leaves-no-pending-result",
+      "passed": true
+    },
+    {
+      "name": "not-hydrated-native-id-does-not-consume-drop",
+      "passed": true
+    }
+  ],
+  "scope": "Actual CodeMirror State/View and DOM drop handlers in JSDOM. Native is a message recorder; no OS clipboard/drag board or GUI is read. Position hit-testing is a fixed test coordinate; async mapping uses actual CodeMirror transactions.",
+  "sourceHashes": {
+    "src/editor/file-drop.ts": "d6c5fb9628e82cffb7b2e705c9f3104420517ae6bd1f2115c6d59d48ff804ebb",
+    "src/editor/clipboard.ts": "233ab25b8accd84eef50779e47aadcff8482ac2d8a0bdbb4f44b0c651a8bd3c0",
+    "native/Clipboard.swift": "0b16a99f0d8ebcaea225f4c6350eb1bc2947bfb30b9209a095eeaad66235c6d7",
+    "native/ImagePreferences.swift": "8f5046f1094bb9fed3cef240fcaee3fb35768262d5624d8c6e31b4fb734aad8d",
+    "native/ExportSettings.swift": "f29a38d1dac18dd575193ee95431bbaf8e0d5016f8c892c93cd787c8367f96ff",
+    "native/DocumentConversion.swift": "927cc47716dd5cab06fcc042dfe4a0abb4725f209bc066591dbdad76c84c5d41",
+    "scripts/verify-file-drop.mjs": "20930c196c2767a06cfa34b8c9ad66eaf749106e73dfea157ce9f42c7e4f95c6"
+  },
+  "sourceMatchesCurrent": {
+    "src/editor/file-drop.ts": true,
+    "src/editor/clipboard.ts": true,
+    "native/Clipboard.swift": true,
+    "native/ImagePreferences.swift": true,
+    "native/ExportSettings.swift": true,
+    "native/DocumentConversion.swift": true,
+    "scripts/verify-file-drop.mjs": true
+  }
+}

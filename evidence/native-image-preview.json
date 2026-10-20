@@ -1,0 +1,14 @@
+{
+  "productionApp": true,
+  "visualCheckerRendered": true,
+  "fixture": "fixtures/image paths #100%/image-check.md",
+  "reservedFilenameCharacters": [
+    "space",
+    "%",
+    "#",
+    "?",
+    "parentheses"
+  ],
+  "pairedBracketAlt": true,
+  "screenshot": "replica-image-paths.png"
+}

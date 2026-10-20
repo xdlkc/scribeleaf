@@ -1,0 +1,815 @@
+{
+  "actualProductionNative" : true,
+  "actualProductionRenderer" : true,
+  "automaticScopePassed" : false,
+  "bundleIdentifier" : "com.typora-replica.export-settings-verifier.de49ba4df3864980b4dbeb77365d15fe",
+  "checks" : [
+    {
+      "detail" : {
+        "content" : {
+          "h" : 480,
+          "w" : 720
+        },
+        "frame" : {
+          "h" : 480,
+          "w" : 720
+        }
+      },
+      "name" : "PreferencesController window content 720x480",
+      "passed" : true,
+      "stage" : 0
+    },
+    {
+      "detail" : {
+        "reason" : "manual probe"
+      },
+      "name" : "manual focus\/font probe of Preferences UI",
+      "passed" : false,
+      "pending" : true,
+      "stage" : 0
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Custom pandoc + export folder persisted",
+      "passed" : true,
+      "stage" : 0
+    },
+    {
+      "detail" : {
+        "a" : "newsprint",
+        "b" : "newsprint"
+      },
+      "name" : "Two-document theme dataset probe after broadcast",
+      "passed" : true,
+      "stage" : 0
+    },
+    {
+      "detail" : {
+        "reason" : "manual probe"
+      },
+      "name" : "manual focus mode probe",
+      "passed" : false,
+      "pending" : true,
+      "stage" : 0
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 0 source identity preserved",
+      "passed" : true,
+      "stage" : 0
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 0 unsaved editor retained",
+      "passed" : true,
+      "stage" : 0
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "styled HTML markers\/theme\/outline",
+      "passed" : true,
+      "stage" : 1
+    },
+    {
+      "detail" : {
+        "fileSpy" : 1,
+        "folderSpy" : 1,
+        "log" : 1
+      },
+      "name" : "post command log exactly 1 and spies",
+      "passed" : true,
+      "stage" : 1
+    },
+    {
+      "detail" : {
+        "a" : "newsprint",
+        "b" : "newsprint"
+      },
+      "name" : "Export theme leaves both editor themes unchanged",
+      "passed" : true,
+      "stage" : 1
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 1 source identity preserved",
+      "passed" : true,
+      "stage" : 1
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 1 unsaved editor retained",
+      "passed" : true,
+      "stage" : 1
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "plain HTML additions, current Chinese, no built-in styles",
+      "passed" : true,
+      "stage" : 2
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 2 source identity preserved",
+      "passed" : true,
+      "stage" : 2
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 2 unsaved editor retained",
+      "passed" : true,
+      "stage" : 2
+    },
+    {
+      "detail" : {
+        "width" : 640
+      },
+      "name" : "PNG physical width 640 (320x quality2)",
+      "passed" : true,
+      "stage" : 3
+    },
+    {
+      "detail" : {
+        "reason" : "manual probe"
+      },
+      "name" : "PNG font-size probe",
+      "passed" : false,
+      "pending" : true,
+      "stage" : 3
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 3 source identity preserved",
+      "passed" : true,
+      "stage" : 3
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 3 unsaved editor retained",
+      "passed" : true,
+      "stage" : 3
+    },
+    {
+      "detail" : {
+        "h" : 420,
+        "w" : 595
+      },
+      "name" : "PDF custom mediaBox 210x148mm",
+      "passed" : true,
+      "stage" : 4
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "PDF text top\/bottom\/header\/footer\/author",
+      "passed" : true,
+      "stage" : 4
+    },
+    {
+      "detail" : {
+        "reason" : "manual probe"
+      },
+      "name" : "manual PDF margin geometry",
+      "passed" : false,
+      "pending" : true,
+      "stage" : 4
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 4 source identity preserved",
+      "passed" : true,
+      "stage" : 4
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 4 unsaved editor retained",
+      "passed" : true,
+      "stage" : 4
+    },
+    {
+      "detail" : {
+        "path" : "\/Users\/lkc\/Code\/typora-replica\/.cache\/export-settings-native-verifier\/output\/custom.docx"
+      },
+      "name" : "DOCX written",
+      "passed" : true,
+      "stage" : 5
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 5 source identity preserved",
+      "passed" : true,
+      "stage" : 5
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 5 unsaved editor retained",
+      "passed" : true,
+      "stage" : 5
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "ODT written",
+      "passed" : true,
+      "stage" : 6
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 6 source identity preserved",
+      "passed" : true,
+      "stage" : 6
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 6 unsaved editor retained",
+      "passed" : true,
+      "stage" : 6
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "EPUB written",
+      "passed" : true,
+      "stage" : 7
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 7 source identity preserved",
+      "passed" : true,
+      "stage" : 7
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 7 unsaved editor retained",
+      "passed" : true,
+      "stage" : 7
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "custom copy unsaved Chinese, source unchanged",
+      "passed" : true,
+      "stage" : 8
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "qa-copy log records input\/output\/cwd",
+      "passed" : true,
+      "stage" : 8
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 8 source identity preserved",
+      "passed" : true,
+      "stage" : 8
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 8 unsaved editor retained",
+      "passed" : true,
+      "stage" : 8
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "folder failure leaves keep\/existing target and no new-file",
+      "passed" : true,
+      "stage" : 9
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 9 source identity preserved",
+      "passed" : true,
+      "stage" : 9
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 9 unsaved editor retained",
+      "passed" : true,
+      "stage" : 9
+    },
+    {
+      "detail" : {
+        "log" : "NODIALOG in=\/var\/folders\/yl\/hrd826h10vgbd05jhs9yjvhr0000gn\/T\/typora-cmd-440F61A9-F14A-4846-AB2D-0230F98D94C6\/snapshot.md out=\n"
+      },
+      "name" : "noDialog output arg empty\/not source",
+      "passed" : true,
+      "stage" : 10
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "repeatHistory after noDialog",
+      "passed" : true,
+      "stage" : 10
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 10 source identity preserved",
+      "passed" : true,
+      "stage" : 10
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 10 unsaved editor retained",
+      "passed" : true,
+      "stage" : 10
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "noDialog history canExportPrevious and not canOverwrite",
+      "passed" : true,
+      "stage" : 11
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "noDialog previous ran command twice, no overwrite dialog",
+      "passed" : true,
+      "stage" : 11
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 11 source identity preserved",
+      "passed" : true,
+      "stage" : 11
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 11 unsaved editor retained",
+      "passed" : true,
+      "stage" : 11
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Save cancel keeps old target",
+      "passed" : true,
+      "stage" : 12
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Save cancel keeps previous history",
+      "passed" : true,
+      "stage" : 12
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 12 source identity preserved",
+      "passed" : true,
+      "stage" : 12
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 12 unsaved editor retained",
+      "passed" : true,
+      "stage" : 12
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "command failure leaves the confirmed existing target",
+      "passed" : true,
+      "stage" : 13
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "failure has no successful spies",
+      "passed" : true,
+      "stage" : 13
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 13 source identity preserved",
+      "passed" : true,
+      "stage" : 13
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 13 unsaved editor retained",
+      "passed" : true,
+      "stage" : 13
+    },
+    {
+      "detail" : {
+        "h" : 420,
+        "w" : 595
+      },
+      "name" : "PDF first mediaBox 210x148mm",
+      "passed" : true,
+      "stage" : 14
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "first repeat PDF contains YAML headerBar",
+      "passed" : true,
+      "stage" : 14
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 14 source identity preserved",
+      "passed" : true,
+      "stage" : 14
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 14 unsaved editor retained",
+      "passed" : true,
+      "stage" : 14
+    },
+    {
+      "detail" : {
+        "h" : 420,
+        "w" : 595
+      },
+      "name" : "PDF repeat mediaBox 210x148mm",
+      "passed" : true,
+      "stage" : 15
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "repeated PDF frozen BASE headerFoo, no Baz",
+      "passed" : true,
+      "stage" : 15
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 15 source identity preserved",
+      "passed" : true,
+      "stage" : 15
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "Stage 15 unsaved editor retained",
+      "passed" : true,
+      "stage" : 15
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "restart sentinel persisted in QA domain",
+      "passed" : false,
+      "stage" : 16
+    },
+    {
+      "detail" : {
+
+      },
+      "name" : "restart export options hydrated",
+      "passed" : true,
+      "stage" : 16
+    },
+    {
+      "detail" : {
+        "a" : "night",
+        "b" : "night"
+      },
+      "name" : "two renderer hydrations after restart",
+      "passed" : true,
+      "stage" : 16
+    }
+  ],
+  "completedStages" : [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    99
+  ],
+  "defaultPanel" : {
+
+  },
+  "domainCleaned" : true,
+  "fixtures" : "\/Users\/lkc\/Code\/typora-replica\/.cache\/export-settings-native-verifier\/fixtures",
+  "output" : "\/Users\/lkc\/Code\/typora-replica\/.cache\/export-settings-native-verifier\/output",
+  "pdfInfo" : {
+    "custom" : {
+      "height" : 420,
+      "normalizedMarkerText" : "QA_PDF_HEADER QA_AUTHORQA_PDF_TOP 中⽂SEC_1paragraph 1 QA_SECTION 中⽂。SEC_2paragraph 2 QA_SECTION 中⽂。QA_PDF_FOOTER 1QA_PDF_HEADER QA_AUTHORSEC_3paragraph 3 QA_SECTION 中⽂。SEC_4paragraph 4 QA_SECTION 中⽂。SEC_5paragraph 5 QA_SECTION 中⽂。QA_PDF_FOOTER 2QA_PDF_HEADER QA_AUTHORSEC_6paragraph 6 QA_SECTION 中⽂。SEC_7paragraph 7 QA_SECTION 中⽂。SEC_8paragraph 8 QA_SECTION 中⽂。QA_PDF_FOOTER 3QA_PDF_HEADER QA_AUTHORSEC_9paragraph 9 QA_SECTION 中⽂。SEC_10paragraph 10 QA_SECTION 中⽂。QA_PDF_BOTTOM 中⽂QA_PDF_FOOTER 4",
+      "pageCount" : 4,
+      "pageSizes" : [
+        [
+          595,
+          420
+        ],
+        [
+          595,
+          420
+        ],
+        [
+          595,
+          420
+        ],
+        [
+          595,
+          420
+        ]
+      ],
+      "text" : "QA_\nPDF\n_HEADER QA_\nAUTHOR\nQA_PDF_TOP 中⽂\nSEC_1\nparagraph 1 QA_SECTION 中⽂。\nSEC_2\nparagraph 2 QA_SECTION 中⽂。\nQA_\nPDF\n_\nFOOTER 1\nQA_\nPDF\n_HEADER QA_\nAUTHOR\nSEC_3\nparagraph 3 QA_SECTION 中⽂。\nSEC_4\nparagraph 4 QA_SECTION 中⽂。\nSEC_5\nparagraph 5 QA_SECTION 中⽂。\nQA_\nPDF\n_\nFOOTER 2\nQA_\nPDF\n_HEADER QA_\nAUTHOR\nSEC_6\nparagraph 6 QA_SECTION 中⽂。\nSEC_7\nparagraph 7 QA_SECTION 中⽂。\nSEC_8\nparagraph 8 QA_SECTION 中⽂。\nQA_\nPDF\n_\nFOOTER 3\nQA_\nPDF\n_HEADER QA_\nAUTHOR\nSEC_9\nparagraph 9 QA_SECTION 中⽂。\nSEC_10\nparagraph 10 QA_SECTION 中⽂。\nQA_PDF_BOTTOM 中⽂\nQA_\nPDF\n_\nFOOTER 4",
+      "width" : 595
+    },
+    "first" : {
+      "height" : 420,
+      "normalizedMarkerText" : "headerBarQA_PDF_TOP 中⽂SEC_1paragraph 1 QA_SECTION 中⽂。headerBarSEC_2paragraph 2 QA_SECTION 中⽂。SEC_3paragraph 3 QA_SECTION 中⽂。headerBarSEC_4paragraph 4 QA_SECTION 中⽂。SEC_5paragraph 5 QA_SECTION 中⽂。headerBarSEC_6paragraph 6 QA_SECTION 中⽂。SEC_7paragraph 7 QA_SECTION 中⽂。headerBarSEC_8paragraph 8 QA_SECTION 中⽂。SEC_9paragraph 9 QA_SECTION 中⽂。headerBarSEC_10paragraph 10 QA_SECTION 中⽂。QA_PDF_BOTTOM 中⽂",
+      "pageCount" : 6,
+      "pageSizes" : [
+        [
+          595,
+          420
+        ],
+        [
+          595,
+          420
+        ],
+        [
+          595,
+          420
+        ],
+        [
+          595,
+          420
+        ],
+        [
+          595,
+          420
+        ],
+        [
+          595,
+          420
+        ]
+      ],
+      "text" : "headerBar\nQA_PDF_TOP 中⽂\nSEC_1\nparagraph 1 QA_SECTION 中⽂。\nheaderBar\nSEC_2\nparagraph 2 QA_SECTION 中⽂。\nSEC_3\nparagraph 3 QA_SECTION 中⽂。\nheaderBar\nSEC_4\nparagraph 4 QA_SECTION 中⽂。\nSEC_5\nparagraph 5 QA_SECTION 中⽂。\nheaderBar\nSEC_6\nparagraph 6 QA_SECTION 中⽂。\nSEC_7\nparagraph 7 QA_SECTION 中⽂。\nheaderBar\nSEC_8\nparagraph 8 QA_SECTION 中⽂。\nSEC_9\nparagraph 9 QA_SECTION 中⽂。\nheaderBar\nSEC_10\nparagraph 10 QA_SECTION 中⽂。\nQA_PDF_BOTTOM 中⽂",
+      "width" : 595
+    },
+    "repeat" : {
+      "height" : 420,
+      "normalizedMarkerText" : "headerFooNO_YAML 中⽂repeat body",
+      "pageCount" : 1,
+      "pageSizes" : [
+        [
+          595,
+          420
+        ]
+      ],
+      "text" : "headerFoo\nNO_YAML 中⽂\nrepeat body",
+      "width" : 595
+    }
+  },
+  "pending" : [
+    "manual focus\/font probe of Preferences UI",
+    "manual focus mode probe",
+    "PNG font-size probe",
+    "manual PDF margin geometry"
+  ],
+  "pid" : 30807,
+  "pngWidth" : 640,
+  "restartVerified" : false,
+  "sheets" : [
+    {
+      "directory" : "\/Users\/lkc\/Code\/typora-replica\/.cache\/export-settings-native-verifier\/output",
+      "kind" : "save",
+      "name" : "source-a.html",
+      "stage" : 1
+    },
+    {
+      "directory" : "\/Users\/lkc\/Code\/typora-replica\/.cache\/export-settings-native-verifier\/output",
+      "kind" : "save",
+      "name" : "source-a.html",
+      "stage" : 2
+    },
+    {
+      "directory" : "\/Users\/lkc\/Code\/typora-replica\/.cache\/export-settings-native-verifier\/output",
+      "kind" : "save",
+      "name" : "source-a.png",
+      "stage" : 3
+    },
+    {
+      "directory" : "\/Users\/lkc\/Code\/typora-replica\/.cache\/export-settings-native-verifier\/output",
+      "kind" : "save",
+      "name" : "source-a.pdf",
+      "stage" : 4
+    },
+    {
+      "directory" : "\/Users\/lkc\/Code\/typora-replica\/.cache\/export-settings-native-verifier\/output",
+      "kind" : "save",
+      "name" : "source-a.docx",
+      "stage" : 5
+    },
+    {
+      "directory" : "\/Users\/lkc\/Code\/typora-replica\/.cache\/export-settings-native-verifier\/output",
+      "kind" : "save",
+      "name" : "source-a.odt",
+      "stage" : 6
+    },
+    {
+      "directory" : "\/Users\/lkc\/Code\/typora-replica\/.cache\/export-settings-native-verifier\/output",
+      "kind" : "save",
+      "name" : "source-a.epub",
+      "stage" : 7
+    },
+    {
+      "directory" : "\/Users\/lkc\/Code\/typora-replica\/.cache\/export-settings-native-verifier\/output",
+      "kind" : "save",
+      "name" : "source-a.txt",
+      "stage" : 8
+    },
+    {
+      "directory" : "\/Users\/lkc\/Code\/typora-replica\/.cache\/export-settings-native-verifier\/output",
+      "kind" : "open",
+      "stage" : 9
+    },
+    {
+      "kind" : "alert",
+      "stage" : 9,
+      "title" : ""
+    },
+    {
+      "directory" : "\/Users\/lkc\/Code\/typora-replica\/.cache\/export-settings-native-verifier\/output",
+      "kind" : "save",
+      "name" : "source-a.html",
+      "stage" : 12
+    },
+    {
+      "directory" : "\/Users\/lkc\/Code\/typora-replica\/.cache\/export-settings-native-verifier\/output",
+      "kind" : "save",
+      "name" : "source-a.txt",
+      "stage" : 13
+    },
+    {
+      "kind" : "alert",
+      "stage" : 13,
+      "title" : ""
+    },
+    {
+      "directory" : "\/Users\/lkc\/Code\/typora-replica\/.cache\/export-settings-native-verifier\/output",
+      "kind" : "save",
+      "name" : "source-a.pdf",
+      "stage" : 14
+    },
+    {
+      "directory" : "\/Users\/lkc\/Code\/typora-replica\/.cache\/export-settings-native-verifier\/output",
+      "kind" : "save",
+      "name" : "repeat.pdf",
+      "stage" : 15
+    }
+  ],
+  "sourceHashes" : {
+    "native\/App.swift" : "f08a41d69d6702c987cd6ea8ffff73013e90aefea230a5862bc6c8b38aa88a99",
+    "native\/Clipboard.swift" : "069978ada014364b22007d7a271cd0af8ccf87ca8f9841a5abe6ea541a10c879",
+    "native\/DocumentConversion.swift" : "927cc47716dd5cab06fcc042dfe4a0abb4725f209bc066591dbdad76c84c5d41",
+    "native\/ExportAssets.swift" : "8c689c854b72431d08379d090ae71a189dcd8b14527bd5ff44e00a743660e9c5",
+    "native\/ExportSettings.swift" : "f29a38d1dac18dd575193ee95431bbaf8e0d5016f8c892c93cd787c8367f96ff",
+    "native\/FolderMonitor.swift" : "ce107a134183a6fb5d7dca3c369ec060c561991155a16f3255318672dcf4a49a",
+    "native\/ImageExport.swift" : "b11106d85f4fc0af9aaf679eb5ef33e4fbb7903d878e59b46f12672d9ae6d03f",
+    "native\/Localization.swift" : "a0b62d4c5796a7df7080798c2299985cd51c2e3ce44d6d75720370c5df7a7c21",
+    "native\/PDFExportOptions.swift" : "5c48e7a7f3a2fe240af4d906a46192a47a1654726ce0f7f0155019ae0f1d9cc6",
+    "native\/PreferencesController.swift" : "0a7efd42008e5fdc79e1d8b05d11be2af14552972d69e8cc29d2dcd671a0ab35",
+    "native\/RepeatExport.swift" : "8aecaa922cdbd34064f9feb2f8f5061f4a1d09518e7c99676a20dc22594dc3a4",
+    "src\/bridge.ts" : "d78d3063843c550b51c2bcdd38ce997a6c20e9751cb7f39842303911189bf94e",
+    "src\/commands.ts" : "3fbd9ec01191e4d518804c82559e448d972b3be0afd748b96a3a82ddfc0a4c8d",
+    "src\/editor\/clipboard-gfm.d.ts" : "e16d6233e10d55ed14326eb30be9534e36ad5ec2d58993fbcd78e13660ae7675",
+    "src\/editor\/clipboard.ts" : "a21e6432dcf8828d89438ea2e5c9d9b82de11e9d7382823898a0526aa57af055",
+    "src\/editor\/format.ts" : "3fe42c351e1e514adc1a5c7bb8e37a8119e107192fef511e3ca36beb4af35261",
+    "src\/editor\/livepreview.ts" : "86799dd924805ae31cdb6643be2a1dc4cbaa3d8850eaf33d39102cb11b69e41d",
+    "src\/editor\/mathparser.ts" : "6629a121bfa724101a34d120dec070ae1af55ea2f1a441cfb22fd95446c3fc50",
+    "src\/editor\/product-commands.ts" : "ec21c635904a4f5a8896909b75089c6d23e5e524e0fa30b44bd43c2e686b54d6",
+    "src\/editor\/product-markdown.css" : "f0e9d3020bc104f5bbf28ae8d817fffad9038eff9fbe648f55004d05ecac60c4",
+    "src\/editor\/product-markdown.ts" : "82a0e9f41859265fdbde1b9ad7f8a01455d44c5121d8b27eab1e22f5132db166",
+    "src\/editor\/searchpanel.ts" : "9d946e180c8adcf65c749157527e79a917ba3a50253d6239ee4d658b4d2f193d",
+    "src\/editor\/setup.ts" : "b75fc5b1023a27379729d849664853e3218c3ac8f044b961f06068fc75f8a4e3",
+    "src\/editor\/table-editor.css" : "729f46ace5382928ba304743fab10ab463bf2d17e688ecc4ed1edea1c88539cf",
+    "src\/editor\/table-editor.ts" : "e8e3a42621eefeb7044200966e5d7cdfdb4458112a70b3a1de53fc5fcc79ecaf",
+    "src\/editor\/widgets.ts" : "ac8d6259759b45c3eb7f62b032810888513e7eb19f8e11c6475c8ba09b8fb994",
+    "src\/export-formats.ts" : "9087e812b768ae966171fbddd734149c8ba84a4a95a06defc1237aaa60ea9fe5",
+    "src\/export-settings.ts" : "7c7b443d298ebb2b14ce5f6c69957bcc4eb95463db4a98659be40ff1da201e12",
+    "src\/export.ts" : "c4796d67c106a88d57522414717e7042d27d73c6e8bf430ccf240023553da070",
+    "src\/i18n.ts" : "947d0f923a192f39824baa17db24c6c2587c69e525ffd3cf2b3e4830053440f4",
+    "src\/main.ts" : "ff36b5c472b8d2267c3411d901a9e98280a028594a20090487af1de57ff04073",
+    "src\/markdown-tables.ts" : "b723d1a99cc3a69271b6abdbc6c1963da33f18e9f00be2d0766ebc1ec6c7348f",
+    "src\/outline.ts" : "41237e862a90429c99545131a6edb71c039774bcac2193ba11aae752b40ffb05",
+    "src\/store.ts" : "4029a9cad83cc60f130a9bc3a8fea9e1c7e49b808d3d13ccb855333b21f1eb44",
+    "src\/styles\/base.css" : "3fdd32a99743d4b571e17169b16f6a922fef553519234a5a8cfdd0121053a215",
+    "src\/themes\/github.css" : "218624520efb461420e4c3100eefbe8181783512445b8aeb8e7a77377b3b5b3e",
+    "src\/themes\/gothic.css" : "092df00dd103640d685729a40dc423f33330651f241110eb5cd6e6955602eac4",
+    "src\/themes\/newsprint.css" : "c1bc170dd7235a026f127b276991da616748020bbe8352e47537387c9a37dc3b",
+    "src\/themes\/night.css" : "73ef9e72cc3ce8f2d224dc4cc1d953574943afdb2676ca1f5416e69e6f47b33c",
+    "src\/themes\/pixyll.css" : "e3a5e8a4aa2dd5466f08690abb0aa4eb385da379bf290fd15147a234786b02ed",
+    "src\/themes\/whitey.css" : "a08b7656ac60187915e87dede9433ee4a6dc9113daddf575bce86bb268ed625e",
+    "src\/types.ts" : "df7ebc14b07c74903e79ea4dff0bea24e96ee5c76e1beb28dc9a67315161d7a2",
+    "src\/ui\/dialogs.ts" : "1180a6318ec3413184d8bf0d27be04b3c79c7f60a0fe3758eb4f0d43e500a84f",
+    "src\/ui\/menubar.ts" : "1c9fce648216f8f728c6c59eaaf366cb1647ef0131b7557f95f1c80d8d378479",
+    "src\/ui\/menuspec.ts" : "24268c6bb02f0999aacc500418c085fccb11b0d6708be6125eacf85bf68d9d1d",
+    "src\/ui\/preferences.css" : "fa800fadf4bb97a4ed83d872762f579e333a6f6b29c9c142fe09c306c17ab36d",
+    "src\/ui\/preferences.ts" : "664e71c14336d5c5e8f62190080c066cce4a4787639f2d9c732275f71956a422",
+    "src\/ui\/sidebar-tree.css" : "621104067ee3293647d62478e2f3d9e33a2c7b7212eac2fa1e03d2e7f3419bd9",
+    "src\/ui\/sidebar.ts" : "a95019f8e0486dc51a347486f232f5852155a48e08e0e40cb0e4126853d55011",
+    "src\/ui\/statusbar.ts" : "ff4c4f055a495737d6f231b6efd34eb5f4e93f3bbc7d8edb8abca3264629b645",
+    "src\/ui\/ui.css" : "e14807ca4342f1f3fdde6da3d00738b785aa6f548bc7bae87fd45d75aeffe751",
+    "src\/wordcount.ts" : "56abfce3c5a0e78c8ad64bee589bdc8ac6340aea88ed74dbb8608b5c290b044f"
+  },
+  "status" : "closed",
+  "step" : 16
+}

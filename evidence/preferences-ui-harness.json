@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-10-19T17:16:57.769342+00:00",
+  "scope": "Only public UI measurements were supplied. No project source was transmitted; model tools and implicit context were disabled. No global authentication/configuration changes.",
+  "pi": {
+    "model": "deepseek/deepseek-flash",
+    "exitCode": 1,
+    "reason": "No API key found for deepseek",
+    "modelInvoked": false
+  },
+  "deepseekHarness": {
+    "model": "deepseek-official/deepseek-v4-flash",
+    "exitCode": 1,
+    "reason": "Local loader failed: api-gateway module missing; credentials version type incompatible. No credentials edited.",
+    "modelInvoked": false
+  },
+  "kimi": {
+    "model": "kimi-code/k3",
+    "timeoutSeconds": 150,
+    "tools": [],
+    "subagents": [],
+    "OSDeniedProjectReads": true,
+    "outputBytes": 58,
+    "codeGenerated": false,
+    "reason": "No content before bounded timeout. No background followup promised."
+  },
+  "implementation": "Local implementation after bounded harness failures; no generated code incorporated."
+}

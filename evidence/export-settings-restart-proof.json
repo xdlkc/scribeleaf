@@ -1,0 +1,76 @@
+{
+  "generatedAt": "2026-10-19T16:45:13.749832+00:00",
+  "bundleIdentifier": "com.typora-replica.export-settings-verifier.de49ba4df3864980b4dbeb77365d15fe",
+  "compiler": {
+    "passed": true,
+    "exitCode": 0,
+    "target": "Swift5 / macOS13",
+    "diagnostics": ""
+  },
+  "productionSourceSHA256": {
+    "native/App.swift": "f08a41d69d6702c987cd6ea8ffff73013e90aefea230a5862bc6c8b38aa88a99",
+    "native/Clipboard.swift": "069978ada014364b22007d7a271cd0af8ccf87ca8f9841a5abe6ea541a10c879",
+    "native/DocumentConversion.swift": "927cc47716dd5cab06fcc042dfe4a0abb4725f209bc066591dbdad76c84c5d41",
+    "native/ExportAssets.swift": "8c689c854b72431d08379d090ae71a189dcd8b14527bd5ff44e00a743660e9c5",
+    "native/ExportSettings.swift": "f29a38d1dac18dd575193ee95431bbaf8e0d5016f8c892c93cd787c8367f96ff",
+    "native/FolderMonitor.swift": "ce107a134183a6fb5d7dca3c369ec060c561991155a16f3255318672dcf4a49a",
+    "native/ImageExport.swift": "b11106d85f4fc0af9aaf679eb5ef33e4fbb7903d878e59b46f12672d9ae6d03f",
+    "native/Localization.swift": "a0b62d4c5796a7df7080798c2299985cd51c2e3ce44d6d75720370c5df7a7c21",
+    "native/PDFExportOptions.swift": "5c48e7a7f3a2fe240af4d906a46192a47a1654726ce0f7f0155019ae0f1d9cc6",
+    "native/PreferencesController.swift": "0a7efd42008e5fdc79e1d8b05d11be2af14552972d69e8cc29d2dcd671a0ab35",
+    "native/RepeatExport.swift": "8aecaa922cdbd34064f9feb2f8f5061f4a1d09518e7c99676a20dc22594dc3a4"
+  },
+  "proofSourceSHA256": "bed0793935478c395e129ef621d353e05e32eae3640397b5428548a49b06369d",
+  "rawRunner": {
+    "path": "evidence/export-settings-native-raw-runner.json",
+    "sha256": "fe2a776d5fc964ea181f1ddafc0ad06e485f78253b52398ff989391de9e7391e",
+    "pid": 30807,
+    "automaticScopePassed": false,
+    "restartVerified": false,
+    "preservedUnchanged": true
+  },
+  "knownVerifierDefect": "Same-bundle suite is nil. QA writer falls back to standard, but its optional-chained reader does not. Production store already falls back.",
+  "scope": "Read existing unique QA domain only; no GUI, no NSApplication initialization, no defaults writes.",
+  "passed": true,
+  "binarySHA256": "d55a346d26d61c0ece3022c5fbd2d938822b56b0da068b6cf91782f9c430fa6b",
+  "actual": {
+    "bundleIdentifier": "com.typora-replica.export-settings-verifier.de49ba4df3864980b4dbeb77365d15fe",
+    "bundlePath": "/Users/lkc/Code/typora-replica/.cache/export-settings-restart-proof/RestartProof.app",
+    "checks": {
+      "editorThemeNight": true,
+      "editorWitness": true,
+      "exactQAOutputPath": true,
+      "exactQAPandocPath": true,
+      "explicitHTMLThemeNight": true,
+      "exportFolderCustom": true,
+      "newProcess": true,
+      "sameRealBundleIdentifier": true,
+      "sentinelThroughProductionStore": true
+    },
+    "fields": {
+      "general": {
+        "customExportPath": "/Users/lkc/Code/typora-replica/.cache/export-settings-native-verifier/output",
+        "exportFolder": "custom",
+        "openExportLocation": false
+      },
+      "htmlExportTheme": "night",
+      "pandocPath": "/Users/lkc/Code/typora-replica/.cache/export-settings-native-verifier/ExportSettingsVerifier.app/Contents/Resources/Converters/pandoc",
+      "qaPersist": "1",
+      "sentinel": "QA_RESTART_SENTINEL",
+      "theme": "night"
+    },
+    "passed": true,
+    "pid": 31689,
+    "previousQAPID": 30807,
+    "scope": "New Foundation-only process. Actual production AppPreferencesStore reads. No NSApplication, no defaults writes."
+  },
+  "execution": {
+    "exitCode": 0,
+    "diagnostics": "2026-10-20 00:45:14.792 RestartProof[31689:4227945] Using your own bundle identifier as an NSUserDefaults suite name does not make sense and will not work. Break on _NSUserDefaults_Log_Nonsensical_Suites to find this\n"
+  },
+  "defaultsReadOnly": {
+    "beforeSHA256": "414b54c55a0315beec931baf646088382e724cb9e08802ac79f8c84619185d6e",
+    "afterSHA256": "414b54c55a0315beec931baf646088382e724cb9e08802ac79f8c84619185d6e",
+    "unchanged": true
+  }
+}

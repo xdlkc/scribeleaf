@@ -1,0 +1,3871 @@
+{
+  "bundleID" : "abnerworks.Typora",
+  "capturedAt" : "2026-10-19T13:44:51Z",
+  "executable" : "\/Applications\/Typora.app\/Contents\/MacOS\/Typora",
+  "menu" : {
+    "children" : [
+      {
+        "children" : [
+          {
+            "children" : [
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "关于"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "我的许可证…"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : ",",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "设置…"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "检查更新"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "dynamicChildrenOmitted" : true,
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "服务"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "H",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "隐藏 Typora"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "H",
+                "modifiers" : 2,
+                "role" : "AXMenuItem",
+                "title" : "隐藏其他"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "全部显示"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "Q",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "退出"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 2,
+                "role" : "AXMenuItem",
+                "title" : "退出并保留窗口"
+              }
+            ],
+            "enabled" : true,
+            "role" : "AXMenu"
+          }
+        ],
+        "enabled" : true,
+        "modifiers" : 8,
+        "role" : "AXMenuBarItem",
+        "title" : "Typora"
+      },
+      {
+        "children" : [
+          {
+            "children" : [
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "N",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "新建"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "key" : "T",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "新建标签页"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "N",
+                "modifiers" : 1,
+                "role" : "AXMenuItem",
+                "title" : "新建窗口"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "O",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "打开…"
+              },
+              {
+                "dynamicChildrenOmitted" : true,
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "打开最近文件"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "key" : "O",
+                "modifiers" : 1,
+                "role" : "AXMenuItem",
+                "title" : "快速打开…"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "显示简介…"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "在文档列表中显示"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "在文件树中显示"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "打开文件位置"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "删除…"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "key" : "W",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "关闭"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "W",
+                "modifiers" : 2,
+                "role" : "AXMenuItem",
+                "title" : "全部关闭"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "key" : "S",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "保存…"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "key" : "S",
+                "modifiers" : 3,
+                "role" : "AXMenuItem",
+                "title" : "保存为…"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "key" : "S",
+                "modifiers" : 1,
+                "role" : "AXMenuItem",
+                "title" : "复制"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "重新命名…"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "移到…"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "无文稿"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "复原到"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "从磁盘重新加载"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "无文稿"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "共享"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "导入…"
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "key" : "P",
+                        "modifiers" : 4,
+                        "role" : "AXMenuItem",
+                        "title" : "PDF"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "HTML"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "HTML (without styles)"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "图像"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "Word (.docx)"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "OpenOffice"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "RTF"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "Epub"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "LaTeX"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "Media Wiki"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "reStructuredText"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "Textile"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "OPML"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "E",
+                        "modifiers" : 4,
+                        "role" : "AXMenuItem",
+                        "title" : "使用上一次设置导出"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "导出并覆盖上一次导出的文件"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "导出设置…"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "导出"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "P",
+                "modifiers" : 1,
+                "role" : "AXMenuItem",
+                "title" : "页面设置…"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "key" : "P",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "打印…"
+              }
+            ],
+            "enabled" : true,
+            "role" : "AXMenu"
+          }
+        ],
+        "enabled" : true,
+        "modifiers" : 8,
+        "role" : "AXMenuBarItem",
+        "title" : "文件"
+      },
+      {
+        "children" : [
+          {
+            "children" : [
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "key" : "Z",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "撤消"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "key" : "Z",
+                "modifiers" : 1,
+                "role" : "AXMenuItem",
+                "title" : "重做"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "X",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "剪切"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "C",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "拷贝"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "拷贝图片"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "V",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "粘贴"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "复制为纯文本"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "key" : "C",
+                "modifiers" : 1,
+                "role" : "AXMenuItem",
+                "title" : "复制为 Markdown"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "复制为 HTML 代码"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "复制内容并简化格式"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "V",
+                "modifiers" : 1,
+                "role" : "AXMenuItem",
+                "title" : "粘贴为纯文本"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "V",
+                "modifiers" : 3,
+                "role" : "AXMenuItem",
+                "title" : "Paste and Match Style"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "key" : "A",
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "全选"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "P",
+                        "modifiers" : 2,
+                        "role" : "AXMenuItem",
+                        "title" : "选择段落或块"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "L",
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "选中当前行或句"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "E",
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "选中当前格式文本"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "D",
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "选中当前词"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "",
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "跳转到文首",
+                        "virtualKey" : 126
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "J",
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "跳转到所选内容"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "",
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "跳转到文末",
+                        "virtualKey" : 125
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "A",
+                        "modifiers" : 12,
+                        "role" : "AXMenuItem",
+                        "title" : "跳转到行首"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "E",
+                        "modifiers" : 12,
+                        "role" : "AXMenuItem",
+                        "title" : "跳转到行尾"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "选择"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "",
+                "modifiers" : 10,
+                "role" : "AXMenuItem",
+                "title" : "上移该行",
+                "virtualKey" : 126
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "",
+                "modifiers" : 10,
+                "role" : "AXMenuItem",
+                "title" : "下移该行",
+                "virtualKey" : 125
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "删除"
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "P",
+                        "modifiers" : 3,
+                        "role" : "AXMenuItem",
+                        "title" : "删除块"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "L",
+                        "modifiers" : 3,
+                        "role" : "AXMenuItem",
+                        "title" : "删除当前行或句"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "E",
+                        "modifiers" : 3,
+                        "role" : "AXMenuItem",
+                        "title" : "删除当前格式文本"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "D",
+                        "modifiers" : 1,
+                        "role" : "AXMenuItem",
+                        "title" : "删除当前词"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "删除范围"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "刷新所有数学公式"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "数学工具"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "Windows 换行符 (CRLF)"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "mark" : "✓",
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "Unix 换行符 (LF)"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "mark" : "✓",
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "保存时在文末添加空行"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "换行符"
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "首行缩进"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "mark" : "✓",
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "显示 <br\/>"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "mark" : "✓",
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "保留单换行符"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "了解更多…"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "空格与换行"
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "mark" : "✓",
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "输入时转换"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "渲染时转换"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "智能引号"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "智能破折号"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "mark" : "✓",
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "文本替换"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "解析 Markdown 时允许并转化 Unicode 标点"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "更多选项…"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "替换"
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "key" : ":",
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "显示拼写和语法"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : ";",
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "立即检查文稿"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "键入时检查拼写"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "检查拼写和语法"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "自动纠正拼写"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "拼写和语法检查"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "F",
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "查找…"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "G",
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "查找下一个"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "G",
+                        "modifiers" : 1,
+                        "role" : "AXMenuItem",
+                        "title" : "查找上一个"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "F",
+                        "modifiers" : 2,
+                        "role" : "AXMenuItem",
+                        "title" : "查找和替换…"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "E",
+                        "modifiers" : 2,
+                        "role" : "AXMenuItem",
+                        "title" : "替换下一个"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "J",
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "跳转到所选内容"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "查找"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "开始朗读"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "结束朗读"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "语音"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "通讯录…"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "密码…"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "信用卡…"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "自动填充"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "D",
+                "modifiers" : 24,
+                "role" : "AXMenuItem",
+                "title" : "开始听写…"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "E",
+                "modifiers" : 24,
+                "role" : "AXMenuItem",
+                "title" : "表情与符号"
+              }
+            ],
+            "enabled" : true,
+            "role" : "AXMenu"
+          }
+        ],
+        "enabled" : true,
+        "modifiers" : 8,
+        "role" : "AXMenuBarItem",
+        "title" : "编辑"
+      },
+      {
+        "children" : [
+          {
+            "children" : [
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "1",
+                "mark" : "✓",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "一级标题"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "2",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "二级标题"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "3",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "三级标题"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "4",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "四级标题"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "5",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "五级标题"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "6",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "六级标题"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "0",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "段落"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "+",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "提升标题级别"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "-",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "降低标题级别"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "key" : "T",
+                        "modifiers" : 2,
+                        "role" : "AXMenuItem",
+                        "title" : "插入表格"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "上方插入行"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "\r",
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "下方插入行",
+                        "virtualKey" : 36
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "左侧插入列"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "右侧插入列"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "",
+                        "modifiers" : 4,
+                        "role" : "AXMenuItem",
+                        "title" : "向上移动表格行",
+                        "virtualKey" : 126
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "",
+                        "modifiers" : 4,
+                        "role" : "AXMenuItem",
+                        "title" : "向下移动表格行",
+                        "virtualKey" : 125
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "",
+                        "modifiers" : 4,
+                        "role" : "AXMenuItem",
+                        "title" : "向左移动表格列",
+                        "virtualKey" : 123
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "",
+                        "modifiers" : 4,
+                        "role" : "AXMenuItem",
+                        "title" : "向右移动表格列",
+                        "virtualKey" : 124
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "\b",
+                        "modifiers" : 1,
+                        "role" : "AXMenuItem",
+                        "title" : "删除行",
+                        "virtualKey" : 51
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "删除列"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "复制表格"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "格式化表格源码"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "删除表格"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "表格"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "B",
+                "modifiers" : 2,
+                "role" : "AXMenuItem",
+                "title" : "公式块"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "C",
+                "modifiers" : 2,
+                "role" : "AXMenuItem",
+                "title" : "代码块"
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "复制代码块内容"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "为选中内容调整缩进"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "为整个代码块调整缩进"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "代码工具"
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "提醒内容"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "建议内容"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "重要内容"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "警告内容"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "注意内容"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "警告框"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "Q",
+                "modifiers" : 2,
+                "role" : "AXMenuItem",
+                "title" : "引用"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "O",
+                "modifiers" : 2,
+                "role" : "AXMenuItem",
+                "title" : "有序列表"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "U",
+                "modifiers" : 2,
+                "role" : "AXMenuItem",
+                "title" : "无序列表"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "X",
+                "modifiers" : 2,
+                "role" : "AXMenuItem",
+                "title" : "任务列表"
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "X",
+                        "modifiers" : 12,
+                        "role" : "AXMenuItem",
+                        "title" : "切换任务状态"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "标记为已完成"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "标记为未完成"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "任务状态"
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "]",
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "增加缩进"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "[",
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "减少缩进"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "列表缩进"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "在上方插入段落"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "在下方插入段落"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "L",
+                "modifiers" : 2,
+                "role" : "AXMenuItem",
+                "title" : "链接引用"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "R",
+                "modifiers" : 2,
+                "role" : "AXMenuItem",
+                "title" : "脚注"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "-",
+                "modifiers" : 2,
+                "role" : "AXMenuItem",
+                "title" : "水平分割线"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "内容目录"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "YAML Front Matter"
+              }
+            ],
+            "enabled" : true,
+            "role" : "AXMenu"
+          }
+        ],
+        "enabled" : true,
+        "modifiers" : 8,
+        "role" : "AXMenuBarItem",
+        "title" : "段落"
+      },
+      {
+        "children" : [
+          {
+            "children" : [
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "B",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "加粗"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "I",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "斜体"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "U",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "下划线"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "`",
+                "modifiers" : 12,
+                "role" : "AXMenuItem",
+                "title" : "代码"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "`",
+                "modifiers" : 13,
+                "role" : "AXMenuItem",
+                "title" : "删除线"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "-",
+                "modifiers" : 12,
+                "role" : "AXMenuItem",
+                "title" : "注释"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "K",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "超链接"
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "打开链接"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "复制链接地址"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "链接操作"
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "key" : "I",
+                        "modifiers" : 4,
+                        "role" : "AXMenuItem",
+                        "title" : "插入图片"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "插入本地图片…"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "打开图片位置…"
+                      },
+                      {
+                        "children" : [
+                          {
+                            "children" : [
+                              {
+                                "children" : [
+
+                                ],
+                                "enabled" : false,
+                                "modifiers" : 8,
+                                "role" : "AXMenuItem",
+                                "title" : "25%"
+                              },
+                              {
+                                "children" : [
+
+                                ],
+                                "enabled" : false,
+                                "modifiers" : 8,
+                                "role" : "AXMenuItem",
+                                "title" : "33%"
+                              },
+                              {
+                                "children" : [
+
+                                ],
+                                "enabled" : false,
+                                "modifiers" : 8,
+                                "role" : "AXMenuItem",
+                                "title" : "50%"
+                              },
+                              {
+                                "children" : [
+
+                                ],
+                                "enabled" : false,
+                                "modifiers" : 8,
+                                "role" : "AXMenuItem",
+                                "title" : "67%"
+                              },
+                              {
+                                "children" : [
+
+                                ],
+                                "enabled" : false,
+                                "modifiers" : 8,
+                                "role" : "AXMenuItem",
+                                "title" : "80%"
+                              },
+                              {
+                                "children" : [
+
+                                ],
+                                "enabled" : false,
+                                "modifiers" : 8,
+                                "role" : "AXMenuItem",
+                                "title" : ""
+                              },
+                              {
+                                "children" : [
+
+                                ],
+                                "enabled" : false,
+                                "modifiers" : 8,
+                                "role" : "AXMenuItem",
+                                "title" : "100%"
+                              },
+                              {
+                                "children" : [
+
+                                ],
+                                "enabled" : false,
+                                "modifiers" : 8,
+                                "role" : "AXMenuItem",
+                                "title" : ""
+                              },
+                              {
+                                "children" : [
+
+                                ],
+                                "enabled" : false,
+                                "modifiers" : 8,
+                                "role" : "AXMenuItem",
+                                "title" : "150%"
+                              },
+                              {
+                                "children" : [
+
+                                ],
+                                "enabled" : false,
+                                "modifiers" : 8,
+                                "role" : "AXMenuItem",
+                                "title" : "200%"
+                              }
+                            ],
+                            "enabled" : true,
+                            "role" : "AXMenu"
+                          }
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "缩放图片"
+                      },
+                      {
+                        "children" : [
+                          {
+                            "children" : [
+                              {
+                                "children" : [
+
+                                ],
+                                "enabled" : false,
+                                "modifiers" : 8,
+                                "role" : "AXMenuItem",
+                                "title" : "Markdown 格式"
+                              },
+                              {
+                                "children" : [
+
+                                ],
+                                "enabled" : false,
+                                "modifiers" : 8,
+                                "role" : "AXMenuItem",
+                                "title" : "HTML 格式"
+                              }
+                            ],
+                            "enabled" : true,
+                            "role" : "AXMenu"
+                          }
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "转换图片语法"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "删除图片文件"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "复制图片到…"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "重命名 \/ 移动图片到…"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "上传图片"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "复制所有图片到…"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "移动所有图片到…"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "上传所有本地图片"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "重新加载所有图片"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+                          {
+                            "children" : [
+                              {
+                                "children" : [
+
+                                ],
+                                "enabled" : false,
+                                "mark" : "✓",
+                                "modifiers" : 8,
+                                "role" : "AXMenuItem",
+                                "title" : "复制图片到文件夹…"
+                              },
+                              {
+                                "children" : [
+
+                                ],
+                                "enabled" : false,
+                                "modifiers" : 8,
+                                "role" : "AXMenuItem",
+                                "title" : "上传图片"
+                              }
+                            ],
+                            "enabled" : true,
+                            "role" : "AXMenu"
+                          }
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "当插入本地图片时"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "设置图片根目录"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : true,
+                        "modifiers" : 8,
+                        "role" : "AXMenuItem",
+                        "title" : "全局图像设置…"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "图像"
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "<<Import From Device - unlocalized>>"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "\\",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "清除样式"
+              }
+            ],
+            "enabled" : true,
+            "role" : "AXMenu"
+          }
+        ],
+        "enabled" : true,
+        "modifiers" : 8,
+        "role" : "AXMenuBarItem",
+        "title" : "格式"
+      },
+      {
+        "children" : [
+          {
+            "children" : [
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "显示标签页栏"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "key" : "\\",
+                "modifiers" : 1,
+                "role" : "AXMenuItem",
+                "title" : "显示所有标签页"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "自定义触控栏…"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 2,
+                "role" : "AXMenuItem",
+                "title" : "自定义触控栏…"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "\/",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "源代码模式"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "只读模式"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "",
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "专注模式",
+                "virtualKey" : 100
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "",
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "打字机模式",
+                "virtualKey" : 101
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "工具栏"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "L",
+                "modifiers" : 1,
+                "role" : "AXMenuItem",
+                "title" : "显示／隐藏侧边栏"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "1",
+                "modifiers" : 4,
+                "role" : "AXMenuItem",
+                "title" : "大纲"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "2",
+                "modifiers" : 4,
+                "role" : "AXMenuItem",
+                "title" : "文档列表"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "3",
+                "mark" : "✓",
+                "modifiers" : 4,
+                "role" : "AXMenuItem",
+                "title" : "文件树"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "F",
+                "modifiers" : 1,
+                "role" : "AXMenuItem",
+                "title" : "搜索"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "字数统计窗口"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "大纲窗口"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "mark" : "✓",
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "双指缩放"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "0",
+                "modifiers" : 1,
+                "role" : "AXMenuItem",
+                "title" : "实际大小"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "=",
+                "modifiers" : 1,
+                "role" : "AXMenuItem",
+                "title" : "放大"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "-",
+                "modifiers" : 1,
+                "role" : "AXMenuItem",
+                "title" : "缩小"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "保持窗口在最前端"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "F",
+                "modifiers" : 24,
+                "role" : "AXMenuItem",
+                "title" : "全屏"
+              }
+            ],
+            "enabled" : true,
+            "role" : "AXMenu"
+          }
+        ],
+        "enabled" : true,
+        "modifiers" : 8,
+        "role" : "AXMenuBarItem",
+        "title" : "显示"
+      },
+      {
+        "children" : [
+          {
+            "children" : [
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "mark" : "✓",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "Github"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "Gothic"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "Newsprint"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "Night"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "Pixyll"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "Whitey"
+              }
+            ],
+            "enabled" : true,
+            "role" : "AXMenu"
+          }
+        ],
+        "enabled" : true,
+        "modifiers" : 8,
+        "role" : "AXMenuBarItem",
+        "title" : "主题"
+      },
+      {
+        "children" : [
+          {
+            "children" : [
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "key" : "M",
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "最小化"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "key" : "M",
+                "modifiers" : 2,
+                "role" : "AXMenuItem",
+                "title" : "全部最小化"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "缩放"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 10,
+                "role" : "AXMenuItem",
+                "title" : "全部缩放"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "key" : "F",
+                "modifiers" : 28,
+                "role" : "AXMenuItem",
+                "title" : "填充"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "key" : "C",
+                "modifiers" : 28,
+                "role" : "AXMenuItem",
+                "title" : "居中"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "二等分"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 28,
+                        "role" : "AXMenuItem",
+                        "title" : "左侧",
+                        "virtualKey" : 123
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 28,
+                        "role" : "AXMenuItem",
+                        "title" : "右侧",
+                        "virtualKey" : 124
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 28,
+                        "role" : "AXMenuItem",
+                        "title" : "顶部",
+                        "virtualKey" : 126
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 28,
+                        "role" : "AXMenuItem",
+                        "title" : "底部",
+                        "virtualKey" : 125
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "四等分"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "左上"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "右上"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "左下"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "右下"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "排列"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 29,
+                        "role" : "AXMenuItem",
+                        "title" : "左侧与右侧",
+                        "virtualKey" : 123
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 31,
+                        "role" : "AXMenuItem",
+                        "title" : "左侧与四等分",
+                        "virtualKey" : 123
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 29,
+                        "role" : "AXMenuItem",
+                        "title" : "右侧与左侧",
+                        "virtualKey" : 124
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 31,
+                        "role" : "AXMenuItem",
+                        "title" : "右侧与四等分",
+                        "virtualKey" : 124
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 29,
+                        "role" : "AXMenuItem",
+                        "title" : "顶部与底部",
+                        "virtualKey" : 126
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 31,
+                        "role" : "AXMenuItem",
+                        "title" : "顶部与四等分",
+                        "virtualKey" : 126
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 29,
+                        "role" : "AXMenuItem",
+                        "title" : "底部与顶部",
+                        "virtualKey" : 125
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 31,
+                        "role" : "AXMenuItem",
+                        "title" : "底部与四等分",
+                        "virtualKey" : 125
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : "四等分"
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "modifiers" : 0,
+                        "role" : "AXMenuItem",
+                        "title" : ""
+                      },
+                      {
+                        "children" : [
+
+                        ],
+                        "enabled" : false,
+                        "key" : "R",
+                        "modifiers" : 28,
+                        "role" : "AXMenuItem",
+                        "title" : "恢复上一个大小"
+                      }
+                    ],
+                    "enabled" : true,
+                    "role" : "AXMenu"
+                  }
+                ],
+                "enabled" : true,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "移动与调整大小"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "全屏幕平铺"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "从组中移除窗口"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "前置全部窗口"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "key" : "\t",
+                "modifiers" : 13,
+                "role" : "AXMenuItem",
+                "title" : "显示上一个标签页",
+                "virtualKey" : 48
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "key" : "\t",
+                "modifiers" : 12,
+                "role" : "AXMenuItem",
+                "title" : "显示下一个标签页",
+                "virtualKey" : 48
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "将标签页移到新窗口"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "合并所有窗口"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "偏好设置"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "其他账号.md"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "acceptance.md"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "lecture_notes.md"
+              }
+            ],
+            "enabled" : true,
+            "role" : "AXMenu"
+          }
+        ],
+        "enabled" : true,
+        "modifiers" : 8,
+        "role" : "AXMenuBarItem",
+        "title" : "窗口"
+      },
+      {
+        "children" : [
+          {
+            "children" : [
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "What's New…"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 0,
+                "role" : "AXMenuItem",
+                "title" : "Quick Start"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "Markdown Reference"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "Install and Use Pandoc"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "Custom Themes"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "Use Images in Typora"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "More Topics..."
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : false,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : ""
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "鸣谢"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "更新日志"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "隐私条款"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "官方网站"
+              },
+              {
+                "children" : [
+
+                ],
+                "enabled" : true,
+                "modifiers" : 8,
+                "role" : "AXMenuItem",
+                "title" : "反馈"
+              }
+            ],
+            "enabled" : true,
+            "role" : "AXMenu"
+          }
+        ],
+        "enabled" : true,
+        "modifiers" : 8,
+        "role" : "AXMenuBarItem",
+        "title" : "帮助"
+      }
+    ],
+    "enabled" : true,
+    "role" : "AXMenuBar"
+  },
+  "pid" : 544
+}

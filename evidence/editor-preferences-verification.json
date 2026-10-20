@@ -1,0 +1,669 @@
+{
+  "generatedAt": "2026-10-19T18:35:25.524Z",
+  "scope": "Real CodeMirror 6 state/view/input handlers, autocomplete, DOM clipboard events, history and live-preview DOM in jsdom. No native GUI, system clipboard, geometry, IME candidate UI or full Typora parity claim.",
+  "command": "node scripts/verify-editor-preferences.mjs",
+  "sourceHashes": {
+    "src/types.ts": "24883f2e44ac9d037164fcb869e1ff3b6b4bbbf8ef9973f6f41f2f188cbeaac3",
+    "src/store.ts": "859fc9b374f2d5a2eff2ca22a393cd5af32e6785f70dbbb68df2c7aafcc6c49c",
+    "src/editor/preferences.ts": "9622b86fa39909dccc86ec4011f0fd38dc7474f1339ce82568a5baf2b4fe9e4d",
+    "src/editor/setup.ts": "19ccb15912cb44b2dbf793a2d48768f9fae63d78fce0a6897930cf90db7748c5",
+    "src/editor/format.ts": "c61fc6eff72162bfbc2a2829b1d77bbcb6e1e3e39d5f210d643b802e31c17599",
+    "src/editor/livepreview.ts": "dfdeb19da45e58309619ee2bfbb60777261e8836735886d473c38a289e85e470",
+    "src/editor/clipboard.ts": "f9c00b2b11921ff8ce8395cb423ccbf44067bf5b30b5b3bfd61bfeebc6842733",
+    "src/editor/emoji-data.ts": "a380dcc08373be4e6bd329282c653b5e241aba8b4950a81ff2643367f85ef1da"
+  },
+  "passed": true,
+  "checks": [
+    {
+      "name": "legacy-prefs-theme-preserved",
+      "passed": true,
+      "actual": "night"
+    },
+    {
+      "name": "legacy-prefs-zoom-preserved",
+      "passed": true,
+      "actual": 125
+    },
+    {
+      "name": "legacy-prefs-new-flags-filled",
+      "passed": true
+    },
+    {
+      "name": "invalid-indent-normalized",
+      "passed": true
+    },
+    {
+      "name": "invalid-boolean-not-truthy",
+      "passed": true
+    },
+    {
+      "name": "bracket-input-produces-pair",
+      "passed": true
+    },
+    {
+      "name": "closer-skips-existing-pair",
+      "passed": true
+    },
+    {
+      "name": "pair-undo",
+      "passed": true
+    },
+    {
+      "name": "backspace-deletes-pair-before-markup",
+      "passed": true
+    },
+    {
+      "name": "bracket-surrounds-selection",
+      "passed": true
+    },
+    {
+      "name": "cjk-brackets-pair",
+      "passed": true
+    },
+    {
+      "name": "pair-setting-reconfigures-live-editor",
+      "passed": true
+    },
+    {
+      "name": "pair-setting-can-reenable",
+      "passed": true
+    },
+    {
+      "name": "markdown-pair-off-leaves-single-symbol",
+      "passed": true
+    },
+    {
+      "name": "markdown-pair-on-42",
+      "passed": true,
+      "actual": "**"
+    },
+    {
+      "name": "markdown-pair-on-95",
+      "passed": true,
+      "actual": "__"
+    },
+    {
+      "name": "markdown-pair-on-126",
+      "passed": true,
+      "actual": "~~"
+    },
+    {
+      "name": "markdown-pair-on-96",
+      "passed": true,
+      "actual": "``"
+    },
+    {
+      "name": "markdown-pair-on-36",
+      "passed": true,
+      "actual": "$$"
+    },
+    {
+      "name": "markdown-pair-depends-on-brackets",
+      "passed": true
+    },
+    {
+      "name": "markdown-symbol-not-paired-in-code",
+      "passed": true,
+      "actual": "```js\n*\n```"
+    },
+    {
+      "name": "emoji-open-data-vocabulary",
+      "passed": true,
+      "actual": 1903
+    },
+    {
+      "name": "emoji-real-completion-popup",
+      "passed": true,
+      "actual": [
+        ":small_airplane:",
+        ":small_blue_diamond:",
+        ":small_orange_diamond:",
+        ":small_red_triangle_down:",
+        ":small_red_triangle:"
+      ]
+    },
+    {
+      "name": "emoji-real-accept",
+      "passed": true
+    },
+    {
+      "name": "emoji-inserts-unicode",
+      "passed": true,
+      "actual": "😄"
+    },
+    {
+      "name": "emoji-insertion-undo",
+      "passed": true
+    },
+    {
+      "name": "emoji-disable-removes-completions",
+      "passed": true
+    },
+    {
+      "name": "emoji-source-honors-disable",
+      "passed": true
+    },
+    {
+      "name": "emoji-not-offered-in-code",
+      "passed": true
+    },
+    {
+      "name": "emoji-not-triggered-in-url",
+      "passed": true
+    },
+    {
+      "name": "list-indent-2",
+      "passed": true,
+      "actual": "  - item"
+    },
+    {
+      "name": "list-outdent-2",
+      "passed": true
+    },
+    {
+      "name": "list-indent-3",
+      "passed": true,
+      "actual": "   - item"
+    },
+    {
+      "name": "list-outdent-3",
+      "passed": true
+    },
+    {
+      "name": "list-indent-4",
+      "passed": true,
+      "actual": "    - item"
+    },
+    {
+      "name": "list-outdent-4",
+      "passed": true
+    },
+    {
+      "name": "list-indent-5",
+      "passed": true,
+      "actual": "     - item"
+    },
+    {
+      "name": "list-outdent-5",
+      "passed": true
+    },
+    {
+      "name": "list-indent--1",
+      "passed": true,
+      "actual": "\t- item"
+    },
+    {
+      "name": "list-outdent--1",
+      "passed": true
+    },
+    {
+      "name": "tab-uses-list-indent-setting",
+      "passed": true
+    },
+    {
+      "name": "shift-tab-outdents-list",
+      "passed": true
+    },
+    {
+      "name": "auto-indent-detects-four-spaces",
+      "passed": true
+    },
+    {
+      "name": "auto-indent-detects-tab",
+      "passed": true
+    },
+    {
+      "name": "auto-indent-ignores-fenced-list",
+      "passed": true
+    },
+    {
+      "name": "pretty-bullet-marker-padding",
+      "passed": true,
+      "actual": "-   one\n-   two"
+    },
+    {
+      "name": "pretty-ordered-marker-padding",
+      "passed": true
+    },
+    {
+      "name": "pretty-quote-marker-padding",
+      "passed": true
+    },
+    {
+      "name": "pretty-quote-toggle-roundtrip",
+      "passed": true
+    },
+    {
+      "name": "plain-quote-padding",
+      "passed": true
+    },
+    {
+      "name": "rendered-copy-plain-removes-markup",
+      "passed": true,
+      "actual": "Title\n\nbold link"
+    },
+    {
+      "name": "rendered-copy-html-keeps-format",
+      "passed": true
+    },
+    {
+      "name": "markdown-copy-source-exact",
+      "passed": true
+    },
+    {
+      "name": "source-mode-copy-stays-source",
+      "passed": true
+    },
+    {
+      "name": "no-selection-copy-disabled",
+      "passed": true
+    },
+    {
+      "name": "no-selection-cut-disabled-preserves-document",
+      "passed": true
+    },
+    {
+      "name": "no-selection-line-copy-enabled",
+      "passed": true,
+      "actual": {
+        "text/plain": "first\n",
+        "text/html": "<p style=\"white-space:pre-wrap\">first</p>\n"
+      }
+    },
+    {
+      "name": "no-selection-line-cut-enabled",
+      "passed": true
+    },
+    {
+      "name": "line-cut-real-undo",
+      "passed": true
+    },
+    {
+      "name": "multi-line-copy-no-added-newline-lf-unterminated-1-2",
+      "passed": true,
+      "actual": "first\nsecond\n"
+    },
+    {
+      "name": "multi-line-copy-source-unchanged-lf-unterminated-1-2",
+      "passed": true,
+      "actual": "first\nsecond\ntail"
+    },
+    {
+      "name": "multi-line-cut-no-added-newline-lf-unterminated-1-2",
+      "passed": true,
+      "actual": "first\nsecond\n"
+    },
+    {
+      "name": "multi-line-cut-exact-source-lf-unterminated-1-2",
+      "passed": true,
+      "actual": "tail"
+    },
+    {
+      "name": "multi-line-cut-undo-exact-source-lf-unterminated-1-2",
+      "passed": true,
+      "actual": "first\nsecond\ntail"
+    },
+    {
+      "name": "multi-line-copy-no-added-newline-lf-unterminated-1-3",
+      "passed": true,
+      "actual": "first\ntail"
+    },
+    {
+      "name": "multi-line-copy-source-unchanged-lf-unterminated-1-3",
+      "passed": true,
+      "actual": "first\nsecond\ntail"
+    },
+    {
+      "name": "multi-line-cut-no-added-newline-lf-unterminated-1-3",
+      "passed": true,
+      "actual": "first\ntail"
+    },
+    {
+      "name": "multi-line-cut-exact-source-lf-unterminated-1-3",
+      "passed": true,
+      "actual": "second\n"
+    },
+    {
+      "name": "multi-line-cut-undo-exact-source-lf-unterminated-1-3",
+      "passed": true,
+      "actual": "first\nsecond\ntail"
+    },
+    {
+      "name": "multi-line-copy-no-added-newline-lf-unterminated-1-2-3",
+      "passed": true,
+      "actual": "first\nsecond\ntail"
+    },
+    {
+      "name": "multi-line-copy-source-unchanged-lf-unterminated-1-2-3",
+      "passed": true,
+      "actual": "first\nsecond\ntail"
+    },
+    {
+      "name": "multi-line-cut-no-added-newline-lf-unterminated-1-2-3",
+      "passed": true,
+      "actual": "first\nsecond\ntail"
+    },
+    {
+      "name": "multi-line-cut-exact-source-lf-unterminated-1-2-3",
+      "passed": true,
+      "actual": ""
+    },
+    {
+      "name": "multi-line-cut-undo-exact-source-lf-unterminated-1-2-3",
+      "passed": true,
+      "actual": "first\nsecond\ntail"
+    },
+    {
+      "name": "multi-line-copy-no-added-newline-lf-trailing-1-2",
+      "passed": true,
+      "actual": "first\nsecond\n"
+    },
+    {
+      "name": "multi-line-copy-source-unchanged-lf-trailing-1-2",
+      "passed": true,
+      "actual": "first\nsecond\ntail\n"
+    },
+    {
+      "name": "multi-line-cut-no-added-newline-lf-trailing-1-2",
+      "passed": true,
+      "actual": "first\nsecond\n"
+    },
+    {
+      "name": "multi-line-cut-exact-source-lf-trailing-1-2",
+      "passed": true,
+      "actual": "tail\n"
+    },
+    {
+      "name": "multi-line-cut-undo-exact-source-lf-trailing-1-2",
+      "passed": true,
+      "actual": "first\nsecond\ntail\n"
+    },
+    {
+      "name": "multi-line-copy-no-added-newline-lf-trailing-1-3",
+      "passed": true,
+      "actual": "first\ntail\n"
+    },
+    {
+      "name": "multi-line-copy-source-unchanged-lf-trailing-1-3",
+      "passed": true,
+      "actual": "first\nsecond\ntail\n"
+    },
+    {
+      "name": "multi-line-cut-no-added-newline-lf-trailing-1-3",
+      "passed": true,
+      "actual": "first\ntail\n"
+    },
+    {
+      "name": "multi-line-cut-exact-source-lf-trailing-1-3",
+      "passed": true,
+      "actual": "second\n"
+    },
+    {
+      "name": "multi-line-cut-undo-exact-source-lf-trailing-1-3",
+      "passed": true,
+      "actual": "first\nsecond\ntail\n"
+    },
+    {
+      "name": "multi-line-copy-no-added-newline-lf-trailing-1-2-3",
+      "passed": true,
+      "actual": "first\nsecond\ntail\n"
+    },
+    {
+      "name": "multi-line-copy-source-unchanged-lf-trailing-1-2-3",
+      "passed": true,
+      "actual": "first\nsecond\ntail\n"
+    },
+    {
+      "name": "multi-line-cut-no-added-newline-lf-trailing-1-2-3",
+      "passed": true,
+      "actual": "first\nsecond\ntail\n"
+    },
+    {
+      "name": "multi-line-cut-exact-source-lf-trailing-1-2-3",
+      "passed": true,
+      "actual": ""
+    },
+    {
+      "name": "multi-line-cut-undo-exact-source-lf-trailing-1-2-3",
+      "passed": true,
+      "actual": "first\nsecond\ntail\n"
+    },
+    {
+      "name": "multi-cursor-same-line-copy-dedup-\"\\n\"",
+      "passed": true,
+      "actual": "first\n"
+    },
+    {
+      "name": "multi-cursor-same-line-cut-dedup-\"\\n\"",
+      "passed": true
+    },
+    {
+      "name": "multi-cursor-same-line-cut-undo-\"\\n\"",
+      "passed": true
+    },
+    {
+      "name": "multi-line-copy-no-added-newline-crlf-unterminated-1-2",
+      "passed": true,
+      "actual": "first\r\nsecond\r\n"
+    },
+    {
+      "name": "multi-line-copy-source-unchanged-crlf-unterminated-1-2",
+      "passed": true,
+      "actual": "first\r\nsecond\r\ntail"
+    },
+    {
+      "name": "multi-line-cut-no-added-newline-crlf-unterminated-1-2",
+      "passed": true,
+      "actual": "first\r\nsecond\r\n"
+    },
+    {
+      "name": "multi-line-cut-exact-source-crlf-unterminated-1-2",
+      "passed": true,
+      "actual": "tail"
+    },
+    {
+      "name": "multi-line-cut-undo-exact-source-crlf-unterminated-1-2",
+      "passed": true,
+      "actual": "first\r\nsecond\r\ntail"
+    },
+    {
+      "name": "multi-line-copy-no-added-newline-crlf-unterminated-1-3",
+      "passed": true,
+      "actual": "first\r\ntail"
+    },
+    {
+      "name": "multi-line-copy-source-unchanged-crlf-unterminated-1-3",
+      "passed": true,
+      "actual": "first\r\nsecond\r\ntail"
+    },
+    {
+      "name": "multi-line-cut-no-added-newline-crlf-unterminated-1-3",
+      "passed": true,
+      "actual": "first\r\ntail"
+    },
+    {
+      "name": "multi-line-cut-exact-source-crlf-unterminated-1-3",
+      "passed": true,
+      "actual": "second\r\n"
+    },
+    {
+      "name": "multi-line-cut-undo-exact-source-crlf-unterminated-1-3",
+      "passed": true,
+      "actual": "first\r\nsecond\r\ntail"
+    },
+    {
+      "name": "multi-line-copy-no-added-newline-crlf-unterminated-1-2-3",
+      "passed": true,
+      "actual": "first\r\nsecond\r\ntail"
+    },
+    {
+      "name": "multi-line-copy-source-unchanged-crlf-unterminated-1-2-3",
+      "passed": true,
+      "actual": "first\r\nsecond\r\ntail"
+    },
+    {
+      "name": "multi-line-cut-no-added-newline-crlf-unterminated-1-2-3",
+      "passed": true,
+      "actual": "first\r\nsecond\r\ntail"
+    },
+    {
+      "name": "multi-line-cut-exact-source-crlf-unterminated-1-2-3",
+      "passed": true,
+      "actual": ""
+    },
+    {
+      "name": "multi-line-cut-undo-exact-source-crlf-unterminated-1-2-3",
+      "passed": true,
+      "actual": "first\r\nsecond\r\ntail"
+    },
+    {
+      "name": "multi-line-copy-no-added-newline-crlf-trailing-1-2",
+      "passed": true,
+      "actual": "first\r\nsecond\r\n"
+    },
+    {
+      "name": "multi-line-copy-source-unchanged-crlf-trailing-1-2",
+      "passed": true,
+      "actual": "first\r\nsecond\r\ntail\r\n"
+    },
+    {
+      "name": "multi-line-cut-no-added-newline-crlf-trailing-1-2",
+      "passed": true,
+      "actual": "first\r\nsecond\r\n"
+    },
+    {
+      "name": "multi-line-cut-exact-source-crlf-trailing-1-2",
+      "passed": true,
+      "actual": "tail\r\n"
+    },
+    {
+      "name": "multi-line-cut-undo-exact-source-crlf-trailing-1-2",
+      "passed": true,
+      "actual": "first\r\nsecond\r\ntail\r\n"
+    },
+    {
+      "name": "multi-line-copy-no-added-newline-crlf-trailing-1-3",
+      "passed": true,
+      "actual": "first\r\ntail\r\n"
+    },
+    {
+      "name": "multi-line-copy-source-unchanged-crlf-trailing-1-3",
+      "passed": true,
+      "actual": "first\r\nsecond\r\ntail\r\n"
+    },
+    {
+      "name": "multi-line-cut-no-added-newline-crlf-trailing-1-3",
+      "passed": true,
+      "actual": "first\r\ntail\r\n"
+    },
+    {
+      "name": "multi-line-cut-exact-source-crlf-trailing-1-3",
+      "passed": true,
+      "actual": "second\r\n"
+    },
+    {
+      "name": "multi-line-cut-undo-exact-source-crlf-trailing-1-3",
+      "passed": true,
+      "actual": "first\r\nsecond\r\ntail\r\n"
+    },
+    {
+      "name": "multi-line-copy-no-added-newline-crlf-trailing-1-2-3",
+      "passed": true,
+      "actual": "first\r\nsecond\r\ntail\r\n"
+    },
+    {
+      "name": "multi-line-copy-source-unchanged-crlf-trailing-1-2-3",
+      "passed": true,
+      "actual": "first\r\nsecond\r\ntail\r\n"
+    },
+    {
+      "name": "multi-line-cut-no-added-newline-crlf-trailing-1-2-3",
+      "passed": true,
+      "actual": "first\r\nsecond\r\ntail\r\n"
+    },
+    {
+      "name": "multi-line-cut-exact-source-crlf-trailing-1-2-3",
+      "passed": true,
+      "actual": ""
+    },
+    {
+      "name": "multi-line-cut-undo-exact-source-crlf-trailing-1-2-3",
+      "passed": true,
+      "actual": "first\r\nsecond\r\ntail\r\n"
+    },
+    {
+      "name": "multi-cursor-same-line-copy-dedup-\"\\r\\n\"",
+      "passed": true,
+      "actual": "first\r\n"
+    },
+    {
+      "name": "multi-cursor-same-line-cut-dedup-\"\\r\\n\"",
+      "passed": true
+    },
+    {
+      "name": "multi-cursor-same-line-cut-undo-\"\\r\\n\"",
+      "passed": true
+    },
+    {
+      "name": "selected-cut-exact-range",
+      "passed": true
+    },
+    {
+      "name": "selected-cut-undo",
+      "passed": true
+    },
+    {
+      "name": "nested-cell-is-real-table-widget",
+      "passed": true
+    },
+    {
+      "name": "nested-cell-copy-not-intercepted",
+      "passed": true
+    },
+    {
+      "name": "simple-heading-source-hidden-on-focus",
+      "passed": true
+    },
+    {
+      "name": "simple-heading-source-visible-on-focus",
+      "passed": true
+    },
+    {
+      "name": "simple-source-toggle-is-lossless",
+      "passed": true
+    },
+    {
+      "name": "setext-source-hidden-on-focus",
+      "passed": true
+    },
+    {
+      "name": "setext-source-expands-as-one-block",
+      "passed": true
+    },
+    {
+      "name": "setext-source-toggle-is-lossless",
+      "passed": true
+    },
+    {
+      "name": "replacement-editor-reads-latest-settings",
+      "passed": true
+    },
+    {
+      "name": "editor-fields-persist-through-existing-store",
+      "passed": true
+    },
+    {
+      "name": "native-hydrate-normalizes-and-applies-editor-fields",
+      "passed": true
+    }
+  ],
+  "total": 138,
+  "passedCount": 138,
+  "externalData": "evidence/emoji-data-source.json",
+  "limitations": [
+    "Typora native factory defaults are not proven by renderer baselines.",
+    "Emoji aliases come from MIT markdown-it-emoji 3.0.0, not Typora; exact vocabulary parity remains unproven.",
+    "Clipboard HTML uses independent MarkdownIt/product rendering; math/diagram/style clipboard fidelity remains unproven.",
+    "typewriterAlwaysCenter consumer in main.ts is coordinated and verified separately."
+  ]
+}

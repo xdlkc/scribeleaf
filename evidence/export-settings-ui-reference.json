@@ -1,0 +1,507 @@
+{
+  "capturedAt": "2026-10-19T14:12:55.491Z",
+  "app": "abnerworks.Typora",
+  "version": "1.14.10",
+  "window": {
+    "title": "偏好设置",
+    "logicalSize": [
+      720,
+      480
+    ],
+    "screenshotPixels": [
+      1440,
+      960
+    ],
+    "mainSidebarWidthApprox": 190,
+    "formatSidebarWidthApprox": 150
+  },
+  "scope": "Read-only current UI configuration; not proof of factory defaults or export behavior.",
+  "actions": {
+    "openedOwnPreferences": true,
+    "searchEnteredThenCleared": true,
+    "settingsControlsEdited": false,
+    "formatNavigationOnly": true,
+    "method": "Native MCP snapshots; public AX label coordinates and CGEvent click with 0.12s down/up interval because direct static-text clicks did not select.",
+    "ownPreferencesClosed": true
+  },
+  "states": [
+    {
+      "label": "General",
+      "slug": "general",
+      "ax": "App=abnerworks.Typora (pid 544)\nWindow: \"偏好设置\", App: Typora.\n\t0 标准窗口 偏好设置, Secondary Actions: Raise\n\t\t1 滚动区 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t2 html内容 (selectable, collapsed) Description: Preferences, Help:  Secondary Actions: Scroll To Visible\n\t\t\t\t3 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t4 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t5 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t6 搜索文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t\t7 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t\t\t8 文本 (selectable, collapsed) Description:  查找… Secondary Actions: Scroll To Visible\n\t\t\t\t\t9 组 (selectable, collapsed) Description:  Value: 文件 编辑器 图像 Markdown 导出 外观 通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t10 文本 (selectable, collapsed) Description:  文件 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t11 文本 (selectable, collapsed) Description:  编辑器 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t12 文本 (selectable, collapsed) Description:  图像 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t13 文本 (selectable, collapsed) Description:  Markdown Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t14 文本 (selectable, collapsed) Description:  导出 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t15 文本 (selectable, collapsed) Description:  外观 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t16 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t17 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t18 组 (selectable, collapsed) Description:  Value: 通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t19 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t20 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t21 组 (selectable, collapsed) Description:  Value: PDF HTML HTML (without Styles) Image Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t22 文本 (selectable, collapsed) Description:  PDF Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t23 文本 (selectable, collapsed) Description:  HTML Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t24 文本 (selectable, collapsed) Description:  HTML (without Styles) Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t25 文本 (selectable, collapsed) Description:  Image Secondary Actions: Scroll To Visible\n\t\t\t\t\t26 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t27 文本 (selectable, collapsed) Description:  Word (.docx) Secondary Actions: Scroll To Visible\n\t\t\t\t\t28 文本 (selectable, collapsed) Description:  OpenOffice Secondary Actions: Scroll To Visible\n\t\t\t\t\t29 文本 (selectable, collapsed) Description:  RTF Secondary Actions: Scroll To Visible\n\t\t\t\t\t30 文本 (selectable, collapsed) Description:  Epub Secondary Actions: Scroll To Visible\n\t\t\t\t\t31 文本 (selectable, collapsed) Description:  LaTeX Secondary Actions: Scroll To Visible\n\t\t\t\t\t32 文本 (selectable, collapsed) Description:  Media Wiki Secondary Actions: Scroll To Visible\n\t\t\t\t\t33 文本 (selectable, collapsed) Description:  reStructuredText Secondary Actions: Scroll To Visible\n\t\t\t\t\t34 文本 (selectable, collapsed) Description:  Textile Secondary Actions: Scroll To Visible\n\t\t\t\t\t35 文本 (selectable, collapsed) Description:  OPML Secondary Actions: Scroll To Visible\n\t\t\t\t36 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t37 按钮 (selectable, collapsed) 添加, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t38 按钮 (selectable, collapsed) 删除, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t39 按钮 (selectable, collapsed) 重命名, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t40 按钮 (selectable, collapsed) 下移, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t41 按钮 (selectable, collapsed) 上移, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t42 标题 (selectable, collapsed) 默认的导出文件夹 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t43 文本 (selectable, collapsed) Description:  默认的导出文件夹 Secondary Actions: Scroll To Visible\n\t\t\t\t44 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t45 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t46 弹出式按钮 (selectable, collapsed) Description:  Value: 自动 Secondary Actions: Scroll To Visible\n\t\t\t\t47 标题 (selectable, collapsed) Pandoc 路径了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t48 文本 (selectable, collapsed) Description:  Pandoc 路径 Secondary Actions: Scroll To Visible\n\t\t\t\t\t49 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t50 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t51 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t52 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t53 文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t54 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t55 按钮 (selectable, collapsed) 选择, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t56 标题 (selectable, collapsed) 导出后 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t57 文本 (selectable, collapsed) Description:  导出后 Secondary Actions: Scroll To Visible\n\t\t\t\t58 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t59 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t60 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t61 复选框 (selectable, collapsed) 打开导出文件所在目录 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t62 文本 (selectable, collapsed) Description:  打开导出文件所在目录 Secondary Actions: Scroll To Visible\n\t\t\t\t\t63 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t64 关闭按钮\n\t\t65 缩放按钮 (disabled)\n\t\t\t66 组\n\t\t67 最小化按钮 (disabled)\n\nThe focused UI element is 2 html内容.",
+      "screenshot": "evidence/typora-export-settings-general.png"
+    },
+    {
+      "label": "PDF",
+      "slug": "pdf",
+      "ax": "App=abnerworks.Typora (pid 544)\nWindow: \"偏好设置\", App: Typora.\n\t0 标准窗口 偏好设置, Secondary Actions: Raise\n\t\t1 滚动区 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t2 html内容 (selectable, collapsed) Description: Preferences, Help:  Secondary Actions: Scroll To Visible\n\t\t\t\t3 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t4 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t5 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t6 搜索文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t\t7 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t\t\t8 文本 (selectable, collapsed) Description:  查找… Secondary Actions: Scroll To Visible\n\t\t\t\t\t9 组 (selectable, collapsed) Description:  Value: 文件 编辑器 图像 Markdown 导出 外观 通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t10 文本 (selectable, collapsed) Description:  文件 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t11 文本 (selectable, collapsed) Description:  编辑器 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t12 文本 (selectable, collapsed) Description:  图像 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t13 文本 (selectable, collapsed) Description:  Markdown Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t14 文本 (selectable, collapsed) Description:  导出 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t15 文本 (selectable, collapsed) Description:  外观 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t16 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t17 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t18 组 (selectable, collapsed) Description:  Value: 通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t19 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t20 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t21 组 (selectable, collapsed) Description:  Value: PDF HTML HTML (without Styles) Image Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t22 文本 (selectable, collapsed) Description:  PDF Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t23 文本 (selectable, collapsed) Description:  HTML Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t24 文本 (selectable, collapsed) Description:  HTML (without Styles) Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t25 文本 (selectable, collapsed) Description:  Image Secondary Actions: Scroll To Visible\n\t\t\t\t\t26 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t27 文本 (selectable, collapsed) Description:  Word (.docx) Secondary Actions: Scroll To Visible\n\t\t\t\t\t28 文本 (selectable, collapsed) Description:  OpenOffice Secondary Actions: Scroll To Visible\n\t\t\t\t\t29 文本 (selectable, collapsed) Description:  RTF Secondary Actions: Scroll To Visible\n\t\t\t\t\t30 文本 (selectable, collapsed) Description:  Epub Secondary Actions: Scroll To Visible\n\t\t\t\t\t31 文本 (selectable, collapsed) Description:  LaTeX Secondary Actions: Scroll To Visible\n\t\t\t\t\t32 文本 (selectable, collapsed) Description:  Media Wiki Secondary Actions: Scroll To Visible\n\t\t\t\t\t33 文本 (selectable, collapsed) Description:  reStructuredText Secondary Actions: Scroll To Visible\n\t\t\t\t\t34 文本 (selectable, collapsed) Description:  Textile Secondary Actions: Scroll To Visible\n\t\t\t\t\t35 文本 (selectable, collapsed) Description:  OPML Secondary Actions: Scroll To Visible\n\t\t\t\t36 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t37 按钮 (selectable, collapsed) 添加, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t38 按钮 (selectable, collapsed) 删除, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t39 按钮 (selectable, collapsed) 重命名, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t40 按钮 (selectable, collapsed) 下移, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t41 按钮 (selectable, collapsed) 上移, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t42 标题 (selectable, collapsed) 页面大小 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t43 文本 (selectable, collapsed) Description:  页面大小 Secondary Actions: Scroll To Visible\n\t\t\t\t44 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t45 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t46 弹出式按钮 (selectable, collapsed) Description:  Value: 默认 Secondary Actions: Scroll To Visible\n\t\t\t\t47 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t48 文本 (selectable, collapsed) Description:  页边距 Secondary Actions: Scroll To Visible\n\t\t\t\t49 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t50 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t51 弹出式按钮 (selectable, collapsed) Description:  Value: 默认 Secondary Actions: Scroll To Visible\n\t\t\t\t52 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t53 文本 (selectable, collapsed) Description:  宽 x 高 Secondary Actions: Scroll To Visible\n\t\t\t\t54 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t55 数字栏 (selectable, collapsed) Description:  Value: 210 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t56 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t57 步进器 (selectable, collapsed) Description:  Value: 0 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t58 未知 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t59 未知 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t60 文本 (selectable, collapsed) Description:  mm x Secondary Actions: Scroll To Visible\n\t\t\t\t\t61 数字栏 (selectable, collapsed) Description:  Value: 297 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t62 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t63 步进器 (selectable, collapsed) Description:  Value: 0 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t64 未知 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t65 未知 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t66 文本 (selectable, collapsed) Description:  mm Secondary Actions: Scroll To Visible\n\t\t\t\t67 标题 (selectable, collapsed) 主题 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t68 文本 (selectable, collapsed) Description:  主题 Secondary Actions: Scroll To Visible\n\t\t\t\t69 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t70 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t71 弹出式按钮 (selectable, collapsed) Description:  Value: 自动使用当前主题 Secondary Actions: Scroll To Visible\n\t\t\t\t72 标题 (selectable, collapsed) 分页 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t73 文本 (selectable, collapsed) Description:  分页 Secondary Actions: Scroll To Visible\n\t\t\t\t74 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t75 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t76 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t77 复选框 (selectable, collapsed) 按一级标题分页 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t78 文本 (selectable, collapsed) Description:  按一级标题分页 Secondary Actions: Scroll To Visible\n\t\t\t\t\t79 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t80 标题 (selectable, collapsed) 页首了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t81 文本 (selectable, collapsed) Description:  页首 Secondary Actions: Scroll To Visible\n\t\t\t\t\t82 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t83 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t84 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t85 文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t86 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t87 按钮 (selectable, collapsed)  Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t88 弹出式按钮 (selectable, collapsed) Description:  Value: 无 Secondary Actions: Scroll To Visible\n\t\t\t\t89 标题 (selectable, collapsed) 页尾了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t90 文本 (selectable, collapsed) Description:  页尾 Secondary Actions: Scroll To Visible\n\t\t\t\t\t91 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t92 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t93 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t94 文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t95 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t96 按钮 (selectable, collapsed)  Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t97 弹出式按钮 (selectable, collapsed) Description:  Value: 无 Secondary Actions: Scroll To Visible\n\t\t\t\t98 标题 (selectable, collapsed) 作者了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t99 文本 (selectable, collapsed) Description:  作者 Secondary Actions: Scroll To Visible\n\t\t\t\t\t100 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t101 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t102 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t103 文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t104 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t105 标题 (selectable, collapsed) 插入额外内容 (HTML)了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t106 文本 (selectable, collapsed) Description:  插入额外内容 (HTML) Secondary Actions: Scroll To Visible\n\t\t\t\t\t107 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t108 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t109 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t110 文本输入区 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t111 标题 (selectable, collapsed) 通用了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t112 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t113 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t114 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t115 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t116 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t117 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t118 复选框 (selectable, collapsed) 允许 YAML front matters 覆盖当前设置 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t119 文本 (selectable, collapsed) Description:  允许 YAML front matters 覆盖当前设置 Secondary Actions: Scroll To Visible\n\t\t\t\t\t120 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t121 标题 (selectable, collapsed) 导出后 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t122 文本 (selectable, collapsed) Description:  导出后 Secondary Actions: Scroll To Visible\n\t\t\t\t123 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t124 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t125 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t126 复选框 (selectable, collapsed) 打开导出文件所在目录 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t127 文本 (selectable, collapsed) Description:  打开导出文件所在目录 Secondary Actions: Scroll To Visible\n\t\t\t\t\t128 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t129 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t130 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t131 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t132 复选框 (selectable, collapsed) 打开导出文件 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t133 文本 (selectable, collapsed) Description:  打开导出文件 Secondary Actions: Scroll To Visible\n\t\t\t\t\t134 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t135 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t136 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t137 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t138 复选框 (selectable, collapsed) 运行自定义命令 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t139 文本 (selectable, collapsed) Description:  运行自定义命令 Secondary Actions: Scroll To Visible\n\t\t\t\t\t140 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t141 关闭按钮\n\t\t142 缩放按钮 (disabled)\n\t\t\t143 组\n\t\t144 最小化按钮 (disabled)\n\nThe focused UI element is 2 html内容.",
+      "screenshot": "evidence/typora-export-settings-pdf.png"
+    },
+    {
+      "label": "HTML",
+      "slug": "html",
+      "ax": "App=abnerworks.Typora (pid 544)\nWindow: \"偏好设置\", App: Typora.\n\t0 标准窗口 偏好设置, Secondary Actions: Raise\n\t\t1 滚动区 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t2 html内容 (selectable, collapsed) Description: Preferences, Help:  Secondary Actions: Scroll To Visible\n\t\t\t\t3 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t4 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t5 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t6 搜索文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t\t7 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t\t\t8 文本 (selectable, collapsed) Description:  查找… Secondary Actions: Scroll To Visible\n\t\t\t\t\t9 组 (selectable, collapsed) Description:  Value: 文件 编辑器 图像 Markdown 导出 外观 通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t10 文本 (selectable, collapsed) Description:  文件 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t11 文本 (selectable, collapsed) Description:  编辑器 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t12 文本 (selectable, collapsed) Description:  图像 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t13 文本 (selectable, collapsed) Description:  Markdown Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t14 文本 (selectable, collapsed) Description:  导出 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t15 文本 (selectable, collapsed) Description:  外观 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t16 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t17 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t18 组 (selectable, collapsed) Description:  Value: 通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t19 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t20 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t21 组 (selectable, collapsed) Description:  Value: PDF HTML HTML (without Styles) Image Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t22 文本 (selectable, collapsed) Description:  PDF Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t23 文本 (selectable, collapsed) Description:  HTML Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t24 文本 (selectable, collapsed) Description:  HTML (without Styles) Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t25 文本 (selectable, collapsed) Description:  Image Secondary Actions: Scroll To Visible\n\t\t\t\t\t26 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t27 文本 (selectable, collapsed) Description:  Word (.docx) Secondary Actions: Scroll To Visible\n\t\t\t\t\t28 文本 (selectable, collapsed) Description:  OpenOffice Secondary Actions: Scroll To Visible\n\t\t\t\t\t29 文本 (selectable, collapsed) Description:  RTF Secondary Actions: Scroll To Visible\n\t\t\t\t\t30 文本 (selectable, collapsed) Description:  Epub Secondary Actions: Scroll To Visible\n\t\t\t\t\t31 文本 (selectable, collapsed) Description:  LaTeX Secondary Actions: Scroll To Visible\n\t\t\t\t\t32 文本 (selectable, collapsed) Description:  Media Wiki Secondary Actions: Scroll To Visible\n\t\t\t\t\t33 文本 (selectable, collapsed) Description:  reStructuredText Secondary Actions: Scroll To Visible\n\t\t\t\t\t34 文本 (selectable, collapsed) Description:  Textile Secondary Actions: Scroll To Visible\n\t\t\t\t\t35 文本 (selectable, collapsed) Description:  OPML Secondary Actions: Scroll To Visible\n\t\t\t\t36 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t37 按钮 (selectable, collapsed) 添加, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t38 按钮 (selectable, collapsed) 删除, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t39 按钮 (selectable, collapsed) 重命名, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t40 按钮 (selectable, collapsed) 下移, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t41 按钮 (selectable, collapsed) 上移, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t42 标题 (selectable, collapsed) 大纲 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t43 文本 (selectable, collapsed) Description:  大纲 Secondary Actions: Scroll To Visible\n\t\t\t\t44 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t45 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t46 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t47 复选框 (selectable, collapsed) 保留大纲侧边栏 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t48 文本 (selectable, collapsed) Description:  保留大纲侧边栏 Secondary Actions: Scroll To Visible\n\t\t\t\t\t49 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t50 标题 (selectable, collapsed) 主题 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t51 文本 (selectable, collapsed) Description:  主题 Secondary Actions: Scroll To Visible\n\t\t\t\t52 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t53 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t54 弹出式按钮 (selectable, collapsed) Description:  Value: 自动使用当前主题 Secondary Actions: Scroll To Visible\n\t\t\t\t55 标题 (selectable, collapsed) 在 <head /> 中添加了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t56 文本 (selectable, collapsed) Description:  在 <head /> 中添加 Secondary Actions: Scroll To Visible\n\t\t\t\t\t57 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t58 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t59 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t60 文本输入区 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t61 标题 (selectable, collapsed) 在 <body /> 中添加了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t62 文本 (selectable, collapsed) Description:  在 <body /> 中添加 Secondary Actions: Scroll To Visible\n\t\t\t\t\t63 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t64 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t65 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t66 文本输入区 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t67 标题 (selectable, collapsed) 通用了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t68 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t69 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t70 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t71 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t72 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t73 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t74 复选框 (selectable, collapsed) 允许 YAML front matters 覆盖当前设置 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t75 文本 (selectable, collapsed) Description:  允许 YAML front matters 覆盖当前设置 Secondary Actions: Scroll To Visible\n\t\t\t\t\t76 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t77 标题 (selectable, collapsed) 导出后 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t78 文本 (selectable, collapsed) Description:  导出后 Secondary Actions: Scroll To Visible\n\t\t\t\t79 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t80 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t81 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t82 复选框 (selectable, collapsed) 打开导出文件所在目录 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t83 文本 (selectable, collapsed) Description:  打开导出文件所在目录 Secondary Actions: Scroll To Visible\n\t\t\t\t\t84 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t85 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t86 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t87 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t88 复选框 (selectable, collapsed) 打开导出文件 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t89 文本 (selectable, collapsed) Description:  打开导出文件 Secondary Actions: Scroll To Visible\n\t\t\t\t\t90 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t91 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t92 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t93 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t94 复选框 (selectable, collapsed) 运行自定义命令 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t95 文本 (selectable, collapsed) Description:  运行自定义命令 Secondary Actions: Scroll To Visible\n\t\t\t\t\t96 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t97 关闭按钮\n\t\t98 缩放按钮 (disabled)\n\t\t\t99 组\n\t\t100 最小化按钮 (disabled)\n\nThe focused UI element is 2 html内容.",
+      "screenshot": "evidence/typora-export-settings-html.png"
+    },
+    {
+      "label": "HTML (without Styles)",
+      "slug": "html-plain",
+      "ax": "App=abnerworks.Typora (pid 544)\nWindow: \"偏好设置\", App: Typora.\n\t0 标准窗口 偏好设置, Secondary Actions: Raise\n\t\t1 滚动区 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t2 html内容 (selectable, collapsed) Description: Preferences, Help:  Secondary Actions: Scroll To Visible\n\t\t\t\t3 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t4 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t5 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t6 搜索文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t\t7 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t\t\t8 文本 (selectable, collapsed) Description:  查找… Secondary Actions: Scroll To Visible\n\t\t\t\t\t9 组 (selectable, collapsed) Description:  Value: 文件 编辑器 图像 Markdown 导出 外观 通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t10 文本 (selectable, collapsed) Description:  文件 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t11 文本 (selectable, collapsed) Description:  编辑器 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t12 文本 (selectable, collapsed) Description:  图像 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t13 文本 (selectable, collapsed) Description:  Markdown Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t14 文本 (selectable, collapsed) Description:  导出 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t15 文本 (selectable, collapsed) Description:  外观 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t16 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t17 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t18 组 (selectable, collapsed) Description:  Value: 通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t19 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t20 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t21 组 (selectable, collapsed) Description:  Value: PDF HTML HTML (without Styles) Image Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t22 文本 (selectable, collapsed) Description:  PDF Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t23 文本 (selectable, collapsed) Description:  HTML Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t24 文本 (selectable, collapsed) Description:  HTML (without Styles) Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t25 文本 (selectable, collapsed) Description:  Image Secondary Actions: Scroll To Visible\n\t\t\t\t\t26 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t27 文本 (selectable, collapsed) Description:  Word (.docx) Secondary Actions: Scroll To Visible\n\t\t\t\t\t28 文本 (selectable, collapsed) Description:  OpenOffice Secondary Actions: Scroll To Visible\n\t\t\t\t\t29 文本 (selectable, collapsed) Description:  RTF Secondary Actions: Scroll To Visible\n\t\t\t\t\t30 文本 (selectable, collapsed) Description:  Epub Secondary Actions: Scroll To Visible\n\t\t\t\t\t31 文本 (selectable, collapsed) Description:  LaTeX Secondary Actions: Scroll To Visible\n\t\t\t\t\t32 文本 (selectable, collapsed) Description:  Media Wiki Secondary Actions: Scroll To Visible\n\t\t\t\t\t33 文本 (selectable, collapsed) Description:  reStructuredText Secondary Actions: Scroll To Visible\n\t\t\t\t\t34 文本 (selectable, collapsed) Description:  Textile Secondary Actions: Scroll To Visible\n\t\t\t\t\t35 文本 (selectable, collapsed) Description:  OPML Secondary Actions: Scroll To Visible\n\t\t\t\t36 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t37 按钮 (selectable, collapsed) 添加, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t38 按钮 (selectable, collapsed) 删除, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t39 按钮 (selectable, collapsed) 重命名, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t40 按钮 (selectable, collapsed) 下移, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t41 按钮 (selectable, collapsed) 上移, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t42 标题 (selectable, collapsed) 在 <head /> 中添加了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t43 文本 (selectable, collapsed) Description:  在 <head /> 中添加 Secondary Actions: Scroll To Visible\n\t\t\t\t\t44 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t45 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t46 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t47 文本输入区 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t48 标题 (selectable, collapsed) 在 <body /> 中添加了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t49 文本 (selectable, collapsed) Description:  在 <body /> 中添加 Secondary Actions: Scroll To Visible\n\t\t\t\t\t50 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t51 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t52 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t53 文本输入区 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t54 标题 (selectable, collapsed) 通用了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t55 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t56 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t57 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t58 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t59 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t60 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t61 复选框 (selectable, collapsed) 允许 YAML front matters 覆盖当前设置 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t62 文本 (selectable, collapsed) Description:  允许 YAML front matters 覆盖当前设置 Secondary Actions: Scroll To Visible\n\t\t\t\t\t63 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t64 标题 (selectable, collapsed) 导出后 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t65 文本 (selectable, collapsed) Description:  导出后 Secondary Actions: Scroll To Visible\n\t\t\t\t66 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t67 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t68 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t69 复选框 (selectable, collapsed) 打开导出文件所在目录 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t70 文本 (selectable, collapsed) Description:  打开导出文件所在目录 Secondary Actions: Scroll To Visible\n\t\t\t\t\t71 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t72 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t73 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t74 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t75 复选框 (selectable, collapsed) 打开导出文件 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t76 文本 (selectable, collapsed) Description:  打开导出文件 Secondary Actions: Scroll To Visible\n\t\t\t\t\t77 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t78 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t79 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t80 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t81 复选框 (selectable, collapsed) 运行自定义命令 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t82 文本 (selectable, collapsed) Description:  运行自定义命令 Secondary Actions: Scroll To Visible\n\t\t\t\t\t83 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t84 关闭按钮\n\t\t85 缩放按钮 (disabled)\n\t\t\t86 组\n\t\t87 最小化按钮 (disabled)\n\nThe focused UI element is 2 html内容.",
+      "screenshot": "evidence/typora-export-settings-html-plain.png"
+    },
+    {
+      "label": "Image",
+      "slug": "image",
+      "ax": "App=abnerworks.Typora (pid 544)\nWindow: \"偏好设置\", App: Typora.\n\t0 标准窗口 偏好设置, Secondary Actions: Raise\n\t\t1 滚动区 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t2 html内容 (selectable, collapsed) Description: Preferences, Help:  Secondary Actions: Scroll To Visible\n\t\t\t\t3 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t4 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t5 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t6 搜索文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t\t7 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t\t\t8 文本 (selectable, collapsed) Description:  查找… Secondary Actions: Scroll To Visible\n\t\t\t\t\t9 组 (selectable, collapsed) Description:  Value: 文件 编辑器 图像 Markdown 导出 外观 通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t10 文本 (selectable, collapsed) Description:  文件 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t11 文本 (selectable, collapsed) Description:  编辑器 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t12 文本 (selectable, collapsed) Description:  图像 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t13 文本 (selectable, collapsed) Description:  Markdown Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t14 文本 (selectable, collapsed) Description:  导出 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t15 文本 (selectable, collapsed) Description:  外观 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t16 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t17 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t18 组 (selectable, collapsed) Description:  Value: 通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t19 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t20 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t21 组 (selectable, collapsed) Description:  Value: PDF HTML HTML (without Styles) Image Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t22 文本 (selectable, collapsed) Description:  PDF Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t23 文本 (selectable, collapsed) Description:  HTML Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t24 文本 (selectable, collapsed) Description:  HTML (without Styles) Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t25 文本 (selectable, collapsed) Description:  Image Secondary Actions: Scroll To Visible\n\t\t\t\t\t26 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t27 文本 (selectable, collapsed) Description:  Word (.docx) Secondary Actions: Scroll To Visible\n\t\t\t\t\t28 文本 (selectable, collapsed) Description:  OpenOffice Secondary Actions: Scroll To Visible\n\t\t\t\t\t29 文本 (selectable, collapsed) Description:  RTF Secondary Actions: Scroll To Visible\n\t\t\t\t\t30 文本 (selectable, collapsed) Description:  Epub Secondary Actions: Scroll To Visible\n\t\t\t\t\t31 文本 (selectable, collapsed) Description:  LaTeX Secondary Actions: Scroll To Visible\n\t\t\t\t\t32 文本 (selectable, collapsed) Description:  Media Wiki Secondary Actions: Scroll To Visible\n\t\t\t\t\t33 文本 (selectable, collapsed) Description:  reStructuredText Secondary Actions: Scroll To Visible\n\t\t\t\t\t34 文本 (selectable, collapsed) Description:  Textile Secondary Actions: Scroll To Visible\n\t\t\t\t\t35 文本 (selectable, collapsed) Description:  OPML Secondary Actions: Scroll To Visible\n\t\t\t\t36 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t37 按钮 (selectable, collapsed) 添加, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t38 按钮 (selectable, collapsed) 删除, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t39 按钮 (selectable, collapsed) 重命名, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t40 按钮 (selectable, collapsed) 下移, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t41 按钮 (selectable, collapsed) 上移, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t42 标题 (selectable, collapsed) 宽度 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t43 文本 (selectable, collapsed) Description:  宽度 Secondary Actions: Scroll To Visible\n\t\t\t\t44 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t45 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t46 数字栏 (selectable, collapsed, settable, string) Description:  Value: 640 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t47 步进器 (selectable, collapsed) Description:  Value: 0 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t48 未知 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t49 未知 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t50 文本 (selectable, collapsed) Description:  px Secondary Actions: Scroll To Visible\n\t\t\t\t\t51 按钮 (selectable, collapsed) 重置, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t52 标题 (selectable, collapsed) 图片质量了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t53 文本 (selectable, collapsed) Description:  图片质量 Secondary Actions: Scroll To Visible\n\t\t\t\t\t54 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t55 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t56 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t57 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t58 弹出式按钮 (selectable, collapsed) Description:  Value: 自动 Secondary Actions: Scroll To Visible\n\t\t\t\t59 标题 (selectable, collapsed) 字体大小 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t60 文本 (selectable, collapsed) Description:  字体大小 Secondary Actions: Scroll To Visible\n\t\t\t\t61 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t62 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t63 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t64 单选按钮 (selectable, collapsed) 使用自定义的字体大小 Description:  Value: 1, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t65 文本 (selectable, collapsed) Description:  使用自定义的字体大小 Secondary Actions: Scroll To Visible\n\t\t\t\t\t66 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t67 单选按钮 (selectable, collapsed) 使用主题的字体大小 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t68 文本 (selectable, collapsed) Description:  使用主题的字体大小 Secondary Actions: Scroll To Visible\n\t\t\t\t69 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t70 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t71 数字栏 (selectable, collapsed, settable, string) Description:  Value: 24 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t72 步进器 (selectable, collapsed) Description:  Value: 0 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t73 未知 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t74 未知 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t75 文本 (selectable, collapsed) Description:  px Secondary Actions: Scroll To Visible\n\t\t\t\t\t76 按钮 (selectable, collapsed) 重置, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t77 标题 (selectable, collapsed) 主题 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t78 文本 (selectable, collapsed) Description:  主题 Secondary Actions: Scroll To Visible\n\t\t\t\t79 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t80 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t81 弹出式按钮 (selectable, collapsed) Description:  Value: 自动使用当前主题 Secondary Actions: Scroll To Visible\n\t\t\t\t82 标题 (selectable, collapsed) 导出后 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t83 文本 (selectable, collapsed) Description:  导出后 Secondary Actions: Scroll To Visible\n\t\t\t\t84 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t85 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t86 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t87 复选框 (selectable, collapsed) 打开导出文件所在目录 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t88 文本 (selectable, collapsed) Description:  打开导出文件所在目录 Secondary Actions: Scroll To Visible\n\t\t\t\t\t89 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t90 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t91 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t92 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t93 复选框 (selectable, collapsed) 打开导出文件 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t94 文本 (selectable, collapsed) Description:  打开导出文件 Secondary Actions: Scroll To Visible\n\t\t\t\t\t95 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t96 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t97 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t98 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t99 复选框 (selectable, collapsed) 运行自定义命令 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t100 文本 (selectable, collapsed) Description:  运行自定义命令 Secondary Actions: Scroll To Visible\n\t\t\t\t\t101 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t102 关闭按钮\n\t\t103 缩放按钮 (disabled)\n\t\t\t104 组\n\t\t105 最小化按钮 (disabled)\n\nThe focused UI element is 2 html内容.",
+      "screenshot": "evidence/typora-export-settings-image.png"
+    },
+    {
+      "label": "Word (.docx)",
+      "slug": "docx",
+      "ax": "App=abnerworks.Typora (pid 544)\nWindow: \"偏好设置\", App: Typora.\n\t0 标准窗口 偏好设置, Secondary Actions: Raise\n\t\t1 滚动区 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t2 html内容 (selectable, collapsed) Description: Preferences, Help:  Secondary Actions: Scroll To Visible\n\t\t\t\t3 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t4 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t5 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t6 搜索文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t\t7 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t\t\t8 文本 (selectable, collapsed) Description:  查找… Secondary Actions: Scroll To Visible\n\t\t\t\t\t9 组 (selectable, collapsed) Description:  Value: 文件 编辑器 图像 Markdown 导出 外观 通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t10 文本 (selectable, collapsed) Description:  文件 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t11 文本 (selectable, collapsed) Description:  编辑器 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t12 文本 (selectable, collapsed) Description:  图像 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t13 文本 (selectable, collapsed) Description:  Markdown Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t14 文本 (selectable, collapsed) Description:  导出 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t15 文本 (selectable, collapsed) Description:  外观 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t16 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t17 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t18 组 (selectable, collapsed) Description:  Value: 通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t19 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t20 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t21 组 (selectable, collapsed) Description:  Value: PDF HTML HTML (without Styles) Image Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t22 文本 (selectable, collapsed) Description:  PDF Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t23 文本 (selectable, collapsed) Description:  HTML Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t24 文本 (selectable, collapsed) Description:  HTML (without Styles) Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t25 文本 (selectable, collapsed) Description:  Image Secondary Actions: Scroll To Visible\n\t\t\t\t\t26 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t27 文本 (selectable, collapsed) Description:  Word (.docx) Secondary Actions: Scroll To Visible\n\t\t\t\t\t28 文本 (selectable, collapsed) Description:  OpenOffice Secondary Actions: Scroll To Visible\n\t\t\t\t\t29 文本 (selectable, collapsed) Description:  RTF Secondary Actions: Scroll To Visible\n\t\t\t\t\t30 文本 (selectable, collapsed) Description:  Epub Secondary Actions: Scroll To Visible\n\t\t\t\t\t31 文本 (selectable, collapsed) Description:  LaTeX Secondary Actions: Scroll To Visible\n\t\t\t\t\t32 文本 (selectable, collapsed) Description:  Media Wiki Secondary Actions: Scroll To Visible\n\t\t\t\t\t33 文本 (selectable, collapsed) Description:  reStructuredText Secondary Actions: Scroll To Visible\n\t\t\t\t\t34 文本 (selectable, collapsed) Description:  Textile Secondary Actions: Scroll To Visible\n\t\t\t\t\t35 文本 (selectable, collapsed) Description:  OPML Secondary Actions: Scroll To Visible\n\t\t\t\t36 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t37 按钮 (selectable, collapsed) 添加, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t38 按钮 (selectable, collapsed) 删除, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t39 按钮 (selectable, collapsed) 重命名, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t40 按钮 (selectable, collapsed) 下移, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t41 按钮 (selectable, collapsed) 上移, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t42 标题 (selectable, collapsed) 参数 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t43 文本 (selectable, collapsed) Description:  参数 Secondary Actions: Scroll To Visible\n\t\t\t\t44 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t45 文本栏 (selectable, collapsed, disabled, settable, string) Description:  Value: -f native -s -o ${outputPath} -t docx Secondary Actions: Scroll To Visible\n\t\t\t\t\t46 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t47 标题 (selectable, collapsed) 自定义参数了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t48 文本 (selectable, collapsed) Description:  自定义参数 Secondary Actions: Scroll To Visible\n\t\t\t\t\t49 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t50 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t51 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t52 文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t53 标题 (selectable, collapsed) 样式文件了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t54 文本 (selectable, collapsed) Description:  样式文件 Secondary Actions: Scroll To Visible\n\t\t\t\t\t55 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t56 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t57 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t58 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t59 文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t60 按钮 (selectable, collapsed) 选择, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t61 标题 (selectable, collapsed) 导出后 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t62 文本 (selectable, collapsed) Description:  导出后 Secondary Actions: Scroll To Visible\n\t\t\t\t63 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t64 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t65 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t66 复选框 (selectable, collapsed) 打开导出文件所在目录 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t67 文本 (selectable, collapsed) Description:  打开导出文件所在目录 Secondary Actions: Scroll To Visible\n\t\t\t\t\t68 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t69 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t70 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t71 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t72 复选框 (selectable, collapsed) 打开导出文件 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t73 文本 (selectable, collapsed) Description:  打开导出文件 Secondary Actions: Scroll To Visible\n\t\t\t\t\t74 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t75 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t76 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t77 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t78 复选框 (selectable, collapsed) 运行自定义命令 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t79 文本 (selectable, collapsed) Description:  运行自定义命令 Secondary Actions: Scroll To Visible\n\t\t\t\t\t80 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t81 关闭按钮\n\t\t82 缩放按钮 (disabled)\n\t\t\t83 组\n\t\t84 最小化按钮 (disabled)\n\nThe focused UI element is 2 html内容.",
+      "screenshot": "evidence/typora-export-settings-docx.png"
+    },
+    {
+      "label": "OpenOffice",
+      "slug": "odt",
+      "ax": "App=abnerworks.Typora (pid 544)\nWindow: \"偏好设置\", App: Typora.\n\t0 标准窗口 偏好设置, Secondary Actions: Raise\n\t\t1 滚动区 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t2 html内容 (selectable, collapsed) Description: Preferences, Help:  Secondary Actions: Scroll To Visible\n\t\t\t\t3 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t4 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t5 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t6 搜索文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t\t7 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t\t\t8 文本 (selectable, collapsed) Description:  查找… Secondary Actions: Scroll To Visible\n\t\t\t\t\t9 组 (selectable, collapsed) Description:  Value: 文件 编辑器 图像 Markdown 导出 外观 通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t10 文本 (selectable, collapsed) Description:  文件 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t11 文本 (selectable, collapsed) Description:  编辑器 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t12 文本 (selectable, collapsed) Description:  图像 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t13 文本 (selectable, collapsed) Description:  Markdown Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t14 文本 (selectable, collapsed) Description:  导出 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t15 文本 (selectable, collapsed) Description:  外观 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t16 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t17 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t18 组 (selectable, collapsed) Description:  Value: 通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t19 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t20 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t21 组 (selectable, collapsed) Description:  Value: PDF HTML HTML (without Styles) Image Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t22 文本 (selectable, collapsed) Description:  PDF Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t23 文本 (selectable, collapsed) Description:  HTML Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t24 文本 (selectable, collapsed) Description:  HTML (without Styles) Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t25 文本 (selectable, collapsed) Description:  Image Secondary Actions: Scroll To Visible\n\t\t\t\t\t26 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t27 文本 (selectable, collapsed) Description:  Word (.docx) Secondary Actions: Scroll To Visible\n\t\t\t\t\t28 文本 (selectable, collapsed) Description:  OpenOffice Secondary Actions: Scroll To Visible\n\t\t\t\t\t29 文本 (selectable, collapsed) Description:  RTF Secondary Actions: Scroll To Visible\n\t\t\t\t\t30 文本 (selectable, collapsed) Description:  Epub Secondary Actions: Scroll To Visible\n\t\t\t\t\t31 文本 (selectable, collapsed) Description:  LaTeX Secondary Actions: Scroll To Visible\n\t\t\t\t\t32 文本 (selectable, collapsed) Description:  Media Wiki Secondary Actions: Scroll To Visible\n\t\t\t\t\t33 文本 (selectable, collapsed) Description:  reStructuredText Secondary Actions: Scroll To Visible\n\t\t\t\t\t34 文本 (selectable, collapsed) Description:  Textile Secondary Actions: Scroll To Visible\n\t\t\t\t\t35 文本 (selectable, collapsed) Description:  OPML Secondary Actions: Scroll To Visible\n\t\t\t\t36 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t37 按钮 (selectable, collapsed) 添加, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t38 按钮 (selectable, collapsed) 删除, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t39 按钮 (selectable, collapsed) 重命名, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t40 按钮 (selectable, collapsed) 下移, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t41 按钮 (selectable, collapsed) 上移, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t42 标题 (selectable, collapsed) 参数 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t43 文本 (selectable, collapsed) Description:  参数 Secondary Actions: Scroll To Visible\n\t\t\t\t44 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t45 文本栏 (selectable, collapsed, disabled, settable, string) Description:  Value: -f native -s -o ${outputPath} -t odt Secondary Actions: Scroll To Visible\n\t\t\t\t\t46 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t47 标题 (selectable, collapsed) 自定义参数了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t48 文本 (selectable, collapsed) Description:  自定义参数 Secondary Actions: Scroll To Visible\n\t\t\t\t\t49 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t50 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t51 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t52 文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t53 标题 (selectable, collapsed) 模板了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t54 文本 (selectable, collapsed) Description:  模板 Secondary Actions: Scroll To Visible\n\t\t\t\t\t55 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t56 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t57 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t58 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t59 文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t60 按钮 (selectable, collapsed) 选择, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t61 标题 (selectable, collapsed) 导出后 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t62 文本 (selectable, collapsed) Description:  导出后 Secondary Actions: Scroll To Visible\n\t\t\t\t63 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t64 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t65 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t66 复选框 (selectable, collapsed) 打开导出文件所在目录 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t67 文本 (selectable, collapsed) Description:  打开导出文件所在目录 Secondary Actions: Scroll To Visible\n\t\t\t\t\t68 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t69 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t70 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t71 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t72 复选框 (selectable, collapsed) 打开导出文件 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t73 文本 (selectable, collapsed) Description:  打开导出文件 Secondary Actions: Scroll To Visible\n\t\t\t\t\t74 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t75 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t76 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t77 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t78 复选框 (selectable, collapsed) 运行自定义命令 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t79 文本 (selectable, collapsed) Description:  运行自定义命令 Secondary Actions: Scroll To Visible\n\t\t\t\t\t80 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t81 关闭按钮\n\t\t82 缩放按钮 (disabled)\n\t\t\t83 组\n\t\t84 最小化按钮 (disabled)\n\nThe focused UI element is 2 html内容.",
+      "screenshot": "evidence/typora-export-settings-odt.png"
+    },
+    {
+      "label": "Epub",
+      "slug": "epub",
+      "ax": "App=abnerworks.Typora (pid 544)\nWindow: \"偏好设置\", App: Typora.\n\t0 标准窗口 偏好设置, Secondary Actions: Raise\n\t\t1 滚动区 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t2 html内容 (selectable, collapsed) Description: Preferences, Help:  Secondary Actions: Scroll To Visible\n\t\t\t\t3 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t4 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t5 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t6 搜索文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t\t7 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t\t\t\t8 文本 (selectable, collapsed) Description:  查找… Secondary Actions: Scroll To Visible\n\t\t\t\t\t9 组 (selectable, collapsed) Description:  Value: 文件 编辑器 图像 Markdown 导出 外观 通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t10 文本 (selectable, collapsed) Description:  文件 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t11 文本 (selectable, collapsed) Description:  编辑器 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t12 文本 (selectable, collapsed) Description:  图像 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t13 文本 (selectable, collapsed) Description:  Markdown Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t14 文本 (selectable, collapsed) Description:  导出 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t15 文本 (selectable, collapsed) Description:  外观 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t16 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t17 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t18 组 (selectable, collapsed) Description:  Value: 通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t19 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible\n\t\t\t\t\t20 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t21 组 (selectable, collapsed) Description:  Value: PDF HTML HTML (without Styles) Image Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t22 文本 (selectable, collapsed) Description:  PDF Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t23 文本 (selectable, collapsed) Description:  HTML Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t24 文本 (selectable, collapsed) Description:  HTML (without Styles) Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t25 文本 (selectable, collapsed) Description:  Image Secondary Actions: Scroll To Visible\n\t\t\t\t\t26 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t27 文本 (selectable, collapsed) Description:  Word (.docx) Secondary Actions: Scroll To Visible\n\t\t\t\t\t28 文本 (selectable, collapsed) Description:  OpenOffice Secondary Actions: Scroll To Visible\n\t\t\t\t\t29 文本 (selectable, collapsed) Description:  RTF Secondary Actions: Scroll To Visible\n\t\t\t\t\t30 文本 (selectable, collapsed) Description:  Epub Secondary Actions: Scroll To Visible\n\t\t\t\t\t31 文本 (selectable, collapsed) Description:  LaTeX Secondary Actions: Scroll To Visible\n\t\t\t\t\t32 文本 (selectable, collapsed) Description:  Media Wiki Secondary Actions: Scroll To Visible\n\t\t\t\t\t33 文本 (selectable, collapsed) Description:  reStructuredText Secondary Actions: Scroll To Visible\n\t\t\t\t\t34 文本 (selectable, collapsed) Description:  Textile Secondary Actions: Scroll To Visible\n\t\t\t\t\t35 文本 (selectable, collapsed) Description:  OPML Secondary Actions: Scroll To Visible\n\t\t\t\t36 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t37 按钮 (selectable, collapsed) 添加, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t38 按钮 (selectable, collapsed) 删除, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t39 按钮 (selectable, collapsed) 重命名, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t40 按钮 (selectable, collapsed) 下移, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t41 按钮 (selectable, collapsed) 上移, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t42 标题 (selectable, collapsed) 参数 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t43 文本 (selectable, collapsed) Description:  参数 Secondary Actions: Scroll To Visible\n\t\t\t\t44 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t45 文本栏 (selectable, collapsed, disabled, settable, string) Description:  Value: -f native -s -o ${outputPath} -t epub Secondary Actions: Scroll To Visible\n\t\t\t\t\t46 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t47 标题 (selectable, collapsed) 自定义参数了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t48 文本 (selectable, collapsed) Description:  自定义参数 Secondary Actions: Scroll To Visible\n\t\t\t\t\t49 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t50 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t51 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t52 文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t53 标题 (selectable, collapsed) 自定义 CSS了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t54 文本 (selectable, collapsed) Description:  自定义 CSS Secondary Actions: Scroll To Visible\n\t\t\t\t\t55 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t56 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t57 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t58 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t59 文本栏 (selectable, collapsed, settable, string) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t60 按钮 (selectable, collapsed) 选择, Help: , Secondary Actions: Scroll To Visible\n\t\t\t\t61 标题 (selectable, collapsed) 目录显示的标题层数了解更多… Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t62 文本 (selectable, collapsed) Description:  目录显示的标题层数 Secondary Actions: Scroll To Visible\n\t\t\t\t\t63 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t64 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible\n\t\t\t\t65 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t66 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t67 弹出式按钮 (selectable, collapsed) Description:  Value: 3 Secondary Actions: Scroll To Visible\n\t\t\t\t68 标题 (selectable, collapsed) 导出后 Description:  Value: 5, Secondary Actions: Scroll To Visible\n\t\t\t\t\t69 文本 (selectable, collapsed) Description:  导出后 Secondary Actions: Scroll To Visible\n\t\t\t\t70 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t71 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t72 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t73 复选框 (selectable, collapsed) 打开导出文件所在目录 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t74 文本 (selectable, collapsed) Description:  打开导出文件所在目录 Secondary Actions: Scroll To Visible\n\t\t\t\t\t75 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t76 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t77 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t78 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t79 复选框 (selectable, collapsed) 打开导出文件 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t80 文本 (selectable, collapsed) Description:  打开导出文件 Secondary Actions: Scroll To Visible\n\t\t\t\t\t81 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t82 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t83 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t84 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t85 复选框 (selectable, collapsed) 运行自定义命令 Description:  Value: 0, Secondary Actions: Scroll To Visible\n\t\t\t\t\t\t86 文本 (selectable, collapsed) Description:  运行自定义命令 Secondary Actions: Scroll To Visible\n\t\t\t\t\t87 文本 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible\n\t\t88 关闭按钮\n\t\t89 缩放按钮 (disabled)\n\t\t\t90 组\n\t\t91 最小化按钮 (disabled)\n\nThe focused UI element is 2 html内容.",
+      "screenshot": "evidence/typora-export-settings-epub.png"
+    }
+  ],
+  "limits": [
+    "Current user-visible values are distinct from factory defaults.",
+    "Custom paper numeric fallback fields can exist in AX even when the default paper is selected.",
+    "Native print actual defaults and per-format output behavior need separate verification."
+  ],
+  "sourceVerification": {
+    "at": "2026-10-19T14:17:58.194481+00:00",
+    "checks": [
+      {
+        "id": "E_schemaMap",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 222933
+      },
+      {
+        "id": "E_builtinTabs",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 234496
+      },
+      {
+        "id": "E_convertersX",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 223341
+      },
+      {
+        "id": "E_persistKeys",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 225255
+      },
+      {
+        "id": "E_generalUI",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 225384
+      },
+      {
+        "id": "E_pdfSchemaJ",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 211143
+      },
+      {
+        "id": "E_htmlPlainL",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 212300
+      },
+      {
+        "id": "E_htmlF",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 212766
+      },
+      {
+        "id": "E_imageM",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 212998
+      },
+      {
+        "id": "E_customA",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 213710
+      },
+      {
+        "id": "E_extraArgsD",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 214530
+      },
+      {
+        "id": "E_pandocR",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 215406
+      },
+      {
+        "id": "E_nativeI",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 214666
+      },
+      {
+        "id": "E_docxV",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 217223
+      },
+      {
+        "id": "E_odtW",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 217653
+      },
+      {
+        "id": "E_rtfU",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 218043
+      },
+      {
+        "id": "E_epubB",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 218159
+      },
+      {
+        "id": "E_simplePandocConverters",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 219012
+      },
+      {
+        "id": "E_latexPdfZ",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 216235
+      },
+      {
+        "id": "E_markdownJ",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 220866
+      },
+      {
+        "id": "E_paperControl",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 230600
+      },
+      {
+        "id": "E_ae",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 226594
+      },
+      {
+        "id": "E_afterExportPerType",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 227684
+      },
+      {
+        "id": "E_customListCRUD",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 234819
+      },
+      {
+        "id": "E_loadExportOption",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 229602
+      },
+      {
+        "id": "E_whitelist",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 229418
+      },
+      {
+        "id": "E_getSetting",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 229185
+      },
+      {
+        "id": "E_metaKeysO",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 228163
+      },
+      {
+        "id": "E_clientExport",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 785922
+      },
+      {
+        "id": "E_suggestedName",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 634130
+      },
+      {
+        "id": "E_defaultPath",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 1314160
+      },
+      {
+        "id": "E_pandocSpawn",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 1433414
+      },
+      {
+        "id": "E_pandocArgvX",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 1438296
+      },
+      {
+        "id": "E_imageConsumer",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 781983
+      },
+      {
+        "id": "E_pdfCssConsumer",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 766166
+      },
+      {
+        "id": "E_afterExportConsumer",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 746824
+      },
+      {
+        "id": "E_simple_latex",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 219012
+      },
+      {
+        "id": "E_simple_wiki",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 219130
+      },
+      {
+        "id": "E_simple_rst",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 219252
+      },
+      {
+        "id": "E_simple_textile",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 219368
+      },
+      {
+        "id": "E_simple_opml",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 219488
+      },
+      {
+        "id": "E_headerFooterOptions",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 211440
+      },
+      {
+        "id": "E_allowPerFileSchema",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 212101
+      },
+      {
+        "id": "E_imageFontControls",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 213259
+      },
+      {
+        "id": "E_paperCustomSize",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 231663
+      },
+      {
+        "id": "E_paperMargins",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 230963
+      },
+      {
+        "id": "E_themeOptions",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 210712
+      },
+      {
+        "id": "E_themeConsumer",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 766477
+      },
+      {
+        "id": "E_pandocStructuredFlags",
+        "sourceExists": true,
+        "verbatim": true,
+        "anchorOffsetMatches": true,
+        "snippetOffset": 1439125
+      }
+    ]
+  },
+  "additionalSourceFacts": {
+    "paperTable": {
+      "source": "/Applications/Typora.app/Contents/Resources/TypeMark/page-dist/static/js/Preferences.962926a4.0b4e81f7.js",
+      "sha256": "8871c9599b875e23cbe80127450ad6222a1f5b40e6669231347444815507a7a0",
+      "characterOffset": 183334,
+      "snippet": "var a={A5:{name:\"A5\",pt:[420,595],mm:[148,210]},A4:{name:\"A4\",pt:[595,842],mm:[210,297]},A3:{name:\"A3\",pt:[842,1191],mm:[297,420]},Letter:{name:\"US Letter\",pt:[612,791],mm:[216,279]},Legal:{name:\"US Legal\",pt:[612,1009],mm:[216,356]},Tabloid:{name:\"Tabloid\",pt:[791,1225],mm:[279,432]}}}",
+      "rows": {
+        "A5": {
+          "name": "A5",
+          "pt": [
+            420,
+            595
+          ],
+          "mm": [
+            148,
+            210
+          ]
+        },
+        "A4": {
+          "name": "A4",
+          "pt": [
+            595,
+            842
+          ],
+          "mm": [
+            210,
+            297
+          ]
+        },
+        "A3": {
+          "name": "A3",
+          "pt": [
+            842,
+            1191
+          ],
+          "mm": [
+            297,
+            420
+          ]
+        },
+        "Letter": {
+          "name": "US Letter",
+          "pt": [
+            612,
+            791
+          ],
+          "mm": [
+            216,
+            279
+          ]
+        },
+        "Legal": {
+          "name": "US Legal",
+          "pt": [
+            612,
+            1009
+          ],
+          "mm": [
+            216,
+            356
+          ]
+        },
+        "Tabloid": {
+          "name": "Tabloid",
+          "pt": [
+            791,
+            1225
+          ],
+          "mm": [
+            279,
+            432
+          ]
+        }
+      },
+      "scope": "Original JS/UI table. Final native print dimensions remain separately unverified."
+    }
+  }
+}

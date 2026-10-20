@@ -1,0 +1,302 @@
+{
+  "archivedAt": "2026-10-19T17:00:31.591422+00:00",
+  "scope": "Byte-identical final QA output, fixtures, original reviewed runner and failed infrastructure attempts. Cache paths in original evidence describe execution locations. Production source hashes are in native-build-verification.json. Reproduction should run --prepare again.",
+  "files": {
+    "ReviewedRunner.swift": {
+      "sha256": "e0ce6da84238642018d0b97bc322c82c8bc3ba6f11eabd889e91b3590b5ecfce",
+      "bytes": 39445
+    },
+    "collector-original.py": {
+      "sha256": "10410806874b27d69c06d0d3ba313fe510ec1b667d1efd59152981959e374302",
+      "bytes": 65310
+    },
+    "source-hashes.json": {
+      "sha256": "b81123670d80420c4f0a84c58dc8ff8150352383950d72c79266d934d2b58995",
+      "bytes": 4961
+    },
+    "result.json": {
+      "sha256": "eb5b07cdcb0be06663b728eaca33435f75c80c21c5b1a118ab5e24e5414da19a",
+      "bytes": 22292
+    },
+    "manual-probes.json": {
+      "sha256": "a0e260caf540507edf015e31fbe0a1b148eb63509aa0b75f45d82617c5b6bf52",
+      "bytes": 1228
+    },
+    "failed-attempt-44ee.tar.gz": {
+      "sha256": "0f941ec50f580c5e39636992b40d566792e4e5bfdaad282fa4b271089b2f308c",
+      "bytes": 1126978
+    },
+    "failed-attempt-895c.tar.gz": {
+      "sha256": "409e13a6e8c5d3c6d4f05f9ca7024494d4de41ddfbdacf3352b25f9e57371a08",
+      "bytes": 1130155
+    },
+    "phase.json": {
+      "sha256": "d01c4a1bdd7d459d26b7d6d82a791a59e7222353e02378a2e546f16dfbecdcef",
+      "bytes": 128
+    },
+    "output/failure-target.txt": {
+      "sha256": "0acc7ba63d7f4946c88b67e076a33243d3f555d336757a1f2fdcd473126b7201",
+      "bytes": 16
+    },
+    "output/cancel-target.html": {
+      "sha256": "0acc7ba63d7f4946c88b67e076a33243d3f555d336757a1f2fdcd473126b7201",
+      "bytes": 16
+    },
+    "output/repeat-2.pdf": {
+      "sha256": "6b9bd9f42da0977b8c956e3c20de8f04642cefcef1c3d189afd42aa3c57b3287",
+      "bytes": 14614
+    },
+    "output/custom.pdf": {
+      "sha256": "2f8f652b85cf625ad177858d90ed6a6d4586e0764c4d9c3415b8ceff7803033f",
+      "bytes": 22269
+    },
+    "output/custom.odt": {
+      "sha256": "17110be4bc78d98e354711f4a37308fca1d3c875507fd2bc088c0e6decffca5a",
+      "bytes": 7507
+    },
+    "output/custom.txt": {
+      "sha256": "20a6f6f9b7765d2e7c2c701a80858b9af1de19dc3b310e5ff0a5f647c664bfd1",
+      "bytes": 26
+    },
+    "output/repeat.pdf": {
+      "sha256": "4d812e69fd840be20d65d3a9bdc9d858aabe41228ac990ef8c7a98c63a559164",
+      "bytes": 22238
+    },
+    "output/styled.html": {
+      "sha256": "d7f820adcd83853df21e6248367e8873d7e3d6dd48d20a5ae24022ba9d776d7c",
+      "bytes": 1274049
+    },
+    "output/custom.docx": {
+      "sha256": "c9ac9f48e384fd6922f3990c0e7afd661513a0485730a483c443fa58d06f626a",
+      "bytes": 10533
+    },
+    "output/custom.epub": {
+      "sha256": "2631431749d45c6ae22d5c33a601378c5bff2bde9f67f9c7beaf9d6b38015183",
+      "bytes": 3636
+    },
+    "output/plain.html": {
+      "sha256": "49313e7ffe6f5d35c413121f8a2bb06c338a1beb1338c91a7e395cc77add9a5b",
+      "bytes": 423
+    },
+    "output/image.png": {
+      "sha256": "c7b63b9fed315033ef1287373cae5e68b1863f08c24b31f0d0cf48d0000b143b",
+      "bytes": 87595
+    },
+    "restart-proof-sources/PDFExportOptions.swift": {
+      "sha256": "5c48e7a7f3a2fe240af4d906a46192a47a1654726ce0f7f0155019ae0f1d9cc6",
+      "bytes": 18824
+    },
+    "restart-proof-sources/ImageExport.swift": {
+      "sha256": "b11106d85f4fc0af9aaf679eb5ef33e4fbb7903d878e59b46f12672d9ae6d03f",
+      "bytes": 25501
+    },
+    "restart-proof-sources/Localization.swift": {
+      "sha256": "a0b62d4c5796a7df7080798c2299985cd51c2e3ce44d6d75720370c5df7a7c21",
+      "bytes": 5295
+    },
+    "restart-proof-sources/ExportAssets.swift": {
+      "sha256": "8c689c854b72431d08379d090ae71a189dcd8b14527bd5ff44e00a743660e9c5",
+      "bytes": 13856
+    },
+    "restart-proof-sources/RestartProof.swift": {
+      "sha256": "bed0793935478c395e129ef621d353e05e32eae3640397b5428548a49b06369d",
+      "bytes": 2810
+    },
+    "restart-proof-sources/ExportSettings.swift": {
+      "sha256": "f29a38d1dac18dd575193ee95431bbaf8e0d5016f8c892c93cd787c8367f96ff",
+      "bytes": 40883
+    },
+    "restart-proof-sources/DocumentConversion.swift": {
+      "sha256": "927cc47716dd5cab06fcc042dfe4a0abb4725f209bc066591dbdad76c84c5d41",
+      "bytes": 28820
+    },
+    "restart-proof-sources/FolderMonitor.swift": {
+      "sha256": "ce107a134183a6fb5d7dca3c369ec060c561991155a16f3255318672dcf4a49a",
+      "bytes": 11446
+    },
+    "restart-proof-sources/Clipboard.swift": {
+      "sha256": "069978ada014364b22007d7a271cd0af8ccf87ca8f9841a5abe6ea541a10c879",
+      "bytes": 19021
+    },
+    "restart-proof-sources/App.swift": {
+      "sha256": "2cfa5bc531f3d525068c2d9e0c791c488fc92759bc67ec84d921898e72124a3c",
+      "bytes": 72174
+    },
+    "restart-proof-sources/RepeatExport.swift": {
+      "sha256": "8aecaa922cdbd34064f9feb2f8f5061f4a1d09518e7c99676a20dc22594dc3a4",
+      "bytes": 4747
+    },
+    "restart-proof-sources/PreferencesController.swift": {
+      "sha256": "0a7efd42008e5fdc79e1d8b05d11be2af14552972d69e8cc29d2dcd671a0ab35",
+      "bytes": 6962
+    },
+    "fixtures/markdown-options.json": {
+      "sha256": "51e3e622d7a2a443f64aa5f32da35904fdb12a0620f932c5a09f9fb527859390",
+      "bytes": 1044
+    },
+    "fixtures/qa-fail.sh": {
+      "sha256": "4bcba27af1b5979d4c9169278e5251f368585d667fad6ea02cfdae13d20a4637",
+      "bytes": 118
+    },
+    "fixtures/source-crlf.md": {
+      "sha256": "da52ded3613b68c98771fdfabccb7d079431a3dd70c89e34aff28d8df4f2ea0a",
+      "bytes": 640
+    },
+    "fixtures/font-probe.md": {
+      "sha256": "3881d8fb245742b2df225b5a0296b5e3e4cd14860fc298590a1ec46f673e3855",
+      "bytes": 347
+    },
+    "fixtures/epub 样式 #%.css": {
+      "sha256": "f00ac4826ff1903b4526329a36eca0d57eb62d573a66ac821cae58b98b99981e",
+      "bytes": 92
+    },
+    "fixtures/nodialog-fixed.txt": {
+      "sha256": "8da094db11b561ab1a06edfd5ff888fb353c67c9fd76d5e75f691297561dd480",
+      "bytes": 31
+    },
+    "fixtures/qa-fail.log": {
+      "sha256": "51e3414ff7540466a66e5f966504d9a6ec2280bf4672628ecd80b3da05f11569",
+      "bytes": 15
+    },
+    "fixtures/source.md": {
+      "sha256": "94a49a28d3bce5c0f178d91c6de14ba1c33d82a872211d747b302c79554db6e6",
+      "bytes": 609
+    },
+    "fixtures/source-a.md": {
+      "sha256": "94a49a28d3bce5c0f178d91c6de14ba1c33d82a872211d747b302c79554db6e6",
+      "bytes": 609
+    },
+    "fixtures/qa-copy.log": {
+      "sha256": "ec5773e7c67c9ced0444efe92cbd563954722a0c872faf3d4d90bec99fe0c7c6",
+      "bytes": 436
+    },
+    "fixtures/qa-nodialog.sh": {
+      "sha256": "eff8b733b2870e8e959f65cf49e1ed281bbaf44915d0ffcdac1c9d1e6810bcb6",
+      "bytes": 146
+    },
+    "fixtures/custom.opendocument": {
+      "sha256": "5f8f71b58b4ab5abd50a11ba24d6c130d1b9d183e00ca8be71cc06c1806af0ac",
+      "bytes": 8086
+    },
+    "fixtures/qa-folder-fail.log": {
+      "sha256": "b8f8d547fdc234fe74cbc38b35047387c8494e0625c9afe308dabe181e1bad48",
+      "bytes": 17
+    },
+    "fixtures/yaml-whitelist.md": {
+      "sha256": "991bd29253f94aaa8159827d0cc11dfb2aca4b4dccc012c785627974eaee0e41",
+      "bytes": 647
+    },
+    "fixtures/qa-post.sh": {
+      "sha256": "0d4efb8eb08a8df4705e10ad4e038702f7fa6bb62507f07db9540adc2a734db1",
+      "bytes": 78
+    },
+    "fixtures/qa-post.log": {
+      "sha256": "6f6f4686079a355e30ed482ecf6e45e20763c90316cb354a7fe514ab96657504",
+      "bytes": 91
+    },
+    "fixtures/long-document.md": {
+      "sha256": "e7d673b9962e2d137f31d55e309ffbfc25e842d3ac1221ff3c41d3cf7995ae43",
+      "bytes": 56724
+    },
+    "fixtures/qa-folder-fail.sh": {
+      "sha256": "db076457b3fb56f3be33aa1072e71d389f83b7b5e25e3dd4174d9b042b4bfd08",
+      "bytes": 216
+    },
+    "fixtures/source-b.md": {
+      "sha256": "94a49a28d3bce5c0f178d91c6de14ba1c33d82a872211d747b302c79554db6e6",
+      "bytes": 609
+    },
+    "fixtures/qa-nodialog.log": {
+      "sha256": "aa3109d9fe38156ebad85f8d0eeb329d75d24de4a4cb1d08497de130df31f675",
+      "bytes": 252
+    },
+    "fixtures/markdown-options-source.md": {
+      "sha256": "05f896e7aaf27ddc117d77329c20ca84d91fa395a3935430938628a46df98276",
+      "bytes": 538
+    },
+    "fixtures/pandoc-version.txt": {
+      "sha256": "44716b1559866c5db06c178075506f8120bb5fa39c98261cf20c5f3effd496ef",
+      "bytes": 331
+    },
+    "fixtures/qa-copy.sh": {
+      "sha256": "42be74010dc592d74bb6d481cf211eb2a44d6b2d6d6e0434e13b4d2908961ef3",
+      "bytes": 146
+    },
+    "fixtures/reference.docx": {
+      "sha256": "d162fcf57213e0bc1b6eaeccee7ec427b8ab2d4eec4a8f972770722436af0876",
+      "bytes": 11007
+    },
+    "fixtures/pandoc-help.txt": {
+      "sha256": "c769623c1e9fe5845f1b17b08cb9511f4b8ab0b53a0e53452e761ad9778d17f8",
+      "bytes": 5359
+    },
+    "fixtures/assets 特殊 # % ' $(fixture-literal); [qa]/image 图 #%.png": {
+      "sha256": "b6dcaee0bfa64588623820029667d9398585b6c8a8a311a1ed2aff9d1734f2f4",
+      "bytes": 102
+    },
+    "fixtures/baseline-output/source-lf.json": {
+      "sha256": "c42e7a63da8dfce28b467ae4b06871f7de84672fad181d7111e0b837996671c3",
+      "bytes": 1959
+    },
+    "fixtures/baseline-output/markdown-crlf.md": {
+      "sha256": "f8aa8f163f70c116e632a23e5445abb8b4d25d689069a076749f2636309d5294",
+      "bytes": 562
+    },
+    "fixtures/baseline-output/markdown-auto.md": {
+      "sha256": "bf0655917f19adee3af14a7db48789806840dd49336cf3865dd8b6080a1feebe",
+      "bytes": 551
+    },
+    "fixtures/baseline-output/source-crlf.json": {
+      "sha256": "c42e7a63da8dfce28b467ae4b06871f7de84672fad181d7111e0b837996671c3",
+      "bytes": 1959
+    },
+    "fixtures/baseline-output/markdown-preserve.md": {
+      "sha256": "93dcba0a010d726a4da20b9228ff2187a616fd8bb03b1bde600a1e3488b48342",
+      "bytes": 551
+    },
+    "fixtures/baseline-output/yaml-whitelist.json": {
+      "sha256": "7676bcfbc32cf40320b4772ff1598e020a45754d9a2b9836b8487a4152c3bbe9",
+      "bytes": 1984
+    },
+    "fixtures/baseline-output/epub-depth2-split2.epub": {
+      "sha256": "ab2db3e82fd3377194ae1497b39fda9ead191ad20e309893ed7fb124b8129948",
+      "bytes": 5905
+    },
+    "fixtures/baseline-output/markdown-ascii.md": {
+      "sha256": "4ad5f35aae6f3e314759451cc37e60fdc93b14e1efe5cb86f5966681315dafdc",
+      "bytes": 567
+    },
+    "fixtures/baseline-output/docx-reference.docx": {
+      "sha256": "84159c9150ac1aa72b8c0319e3535042bddf1ec13830ae714a3df01d047484d8",
+      "bytes": 11846
+    },
+    "fixtures/baseline-output/long-document.html": {
+      "sha256": "339d510fd72c4062c2efdff5dea7a9780f46fcbc79fd21afa80f0439139456b8",
+      "bytes": 63729
+    },
+    "fixtures/baseline-output/template-and-metadata.odt": {
+      "sha256": "36bd088d30c2f6f5aaa4710a56fc9d23667f0230c4486cee76a5d8668ae3d352",
+      "bytes": 8413
+    },
+    "fixtures/baseline-output/markdown-none.md": {
+      "sha256": "14c5eda3cd6dc77c98dc4119f6b8fa784197269b40c46bb45f6e6c890283ead0",
+      "bytes": 551
+    },
+    "fixtures/baseline-output/docx-default.docx": {
+      "sha256": "8d644da133ec12b52386fea65e4531d6f601d59fd19b8288b3348406bbbd51db",
+      "bytes": 11837
+    },
+    "fixtures/baseline-output/epub-depth1-split1.epub": {
+      "sha256": "cfdfa17bb6f8ba6ecb5ccd7b87fbcb82c3008c490773e430f1787779acf275e8",
+      "bytes": 4960
+    },
+    "output/folder/existing-target.txt": {
+      "sha256": "ee800f438f30ad00d9f69cbbcc9368786aba9e395b123a167ec39af8166f8b33",
+      "bytes": 16
+    },
+    "output/folder/keep.txt": {
+      "sha256": "d5815a8a4e588b634ec5524f83b2ee0625306d17059a552dcf014bf6d6566dd1",
+      "bytes": 14
+    }
+  }
+}

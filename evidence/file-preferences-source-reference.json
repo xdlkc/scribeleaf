@@ -1,0 +1,89 @@
+{
+  "generatedAt": "2026-10-19T18:13:52.158501+00:00",
+  "productVersion": "1.14.10",
+  "method": {
+    "resourcesReadOnly": true,
+    "originalApplicationLaunched": false,
+    "userPreferencesRead": false,
+    "originalSourceExecuted": false,
+    "originalSourceEmbeddedInRuntime": false
+  },
+  "references": [
+    {
+      "source": "preferences",
+      "path": "/Applications/Typora.app/Contents/Resources/TypeMark/page-dist/static/js/Preferences.962926a4.0b4e81f7.js",
+      "sha256": "8871c9599b875e23cbe80127450ad6222a1f5b40e6669231347444815507a7a0",
+      "utf16Offset": 262858,
+      "byteOffset": 263342,
+      "anchor": "be=function(e){var t=e.value",
+      "summary": "defaultExtension stores the final extension. The custom select value is a temporary presentation state, not a separate customExtension option. Blur lowercases, trims, selects the leading dot-separated [a-z0-9_-] prefix and removes one leading dot."
+    },
+    {
+      "source": "renderer",
+      "path": "/Applications/Typora.app/Contents/Resources/TypeMark/appsrc/window/frame.js",
+      "sha256": "b08c94bab8e9994363fcf928a4ea927d7bbbcd1e84d70ac41eef55475089fae1",
+      "utf16Offset": 1318769,
+      "byteOffset": 1324118,
+      "anchor": "b={},w=function(e)",
+      "summary": "Glob syntax is *, **, **/, ?, bracket classes; slash patterns match mount-relative paths, other patterns basename. Supported files are the initial inclusion. Any matching ! exclusion wins regardless of order. Mac matching is case-sensitive. Invalid classes can throw in original; replica ignores invalid patterns."
+    },
+    {
+      "source": "renderer",
+      "path": "/Applications/Typora.app/Contents/Resources/TypeMark/appsrc/window/frame.js",
+      "sha256": "b08c94bab8e9994363fcf928a4ea927d7bbbcd1e84d70ac41eef55475089fae1",
+      "utf16Offset": 705758,
+      "byteOffset": 706079,
+      "anchor": "e=[\"md\",\"markdown\",\"mmd\",\"mkd\",\"mdwn\",\"mdown\",\"mdx\"]",
+      "summary": "SupportedFiles consists of 15 Markdown/plain text extensions plus empty extension. defaultExtension is appended by setDefaultExtension. Thus a multi-dot custom extension is used for save names but matching still uses the final extension component."
+    },
+    {
+      "source": "renderer",
+      "path": "/Applications/Typora.app/Contents/Resources/TypeMark/appsrc/window/frame.js",
+      "sha256": "b08c94bab8e9994363fcf928a4ea927d7bbbcd1e84d70ac41eef55475089fae1",
+      "utf16Offset": 1323673,
+      "byteOffset": 1329024,
+      "anchor": "t.statWrapper=function(e,t,n)",
+      "summary": "Non-hidden files/directories are admitted before mode filtering. Directories remain visible independent of file pattern matches. node_modules is ignored except tree all. Current replica keeps existing package/symlink traversal rather than claiming full filesystem parity."
+    },
+    {
+      "source": "renderer",
+      "path": "/Applications/Typora.app/Contents/Resources/TypeMark/appsrc/window/frame.js",
+      "sha256": "b08c94bab8e9994363fcf928a4ea927d7bbbcd1e84d70ac41eef55475089fae1",
+      "utf16Offset": 630759,
+      "byteOffset": 631076,
+      "anchor": "setCanCollapsePinnedOutline:function",
+      "summary": "can_collapse_outline_panel toggles the no-collapse-outline class and updates the live outline."
+    },
+    {
+      "source": "renderer",
+      "path": "/Applications/Typora.app/Contents/Resources/TypeMark/appsrc/window/frame.js",
+      "sha256": "b08c94bab8e9994363fcf928a4ea927d7bbbcd1e84d70ac41eef55475089fae1",
+      "utf16Offset": 373826,
+      "byteOffset": 374065,
+      "anchor": "useCollapsibleOutline(){",
+      "summary": "The outline has independent expander and label actions. Label navigation opens its branch. The hidden outline filter is a context-menu action, not a default-visible extra input."
+    },
+    {
+      "source": "renderer",
+      "path": "/Applications/Typora.app/Contents/Resources/TypeMark/appsrc/window/frame.js",
+      "sha256": "b08c94bab8e9994363fcf928a4ea927d7bbbcd1e84d70ac41eef55475089fae1",
+      "utf16Offset": 378781,
+      "byteOffset": 379020,
+      "anchor": "updateOutlineHtml(e,t){",
+      "summary": "On first collapsible outline population, only a single root is opened automatically. Existing open branch state is retained during refresh."
+    },
+    {
+      "source": "renderer",
+      "path": "/Applications/Typora.app/Contents/Resources/TypeMark/appsrc/window/frame.js",
+      "sha256": "b08c94bab8e9994363fcf928a4ea927d7bbbcd1e84d70ac41eef55475089fae1",
+      "utf16Offset": 379915,
+      "byteOffset": 380154,
+      "anchor": "highlightVisibleHeader(e,t,n,i){",
+      "summary": "When the active heading is within a collapsed branch, the visible ancestor is highlighted. Explicit highlight can expand ancestors."
+    }
+  ],
+  "fieldReference": "evidence/preferences-panels-reference.json files panel (14 persisted fields)",
+  "scope": "Read-only behavior references for independent Files preferences/sidebar implementation. This is not full GUI or native-factory-default proof.",
+  "macFactoryDefaults": "not-proven",
+  "independentFallbacks": "src/file-preferences.ts DEFAULT_FILE_PREFERENCES; native/FilePreferences.swift"
+}

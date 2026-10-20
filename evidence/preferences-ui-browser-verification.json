@@ -1,0 +1,86 @@
+{
+  "observedAt": "2026-10-19T17:40:06.313483+00:00",
+  "method": "Actual in-app browser UI actions. Production development renderer at http://127.0.0.1:5182, explicit 720x480 viewport. No synthetic DOM events or hidden-state mutation.",
+  "checks": [
+    {
+      "name": "Preferences renders without runtime errors",
+      "passed": true
+    },
+    {
+      "name": "Pandoc search presents one relevant result",
+      "passed": true
+    },
+    {
+      "name": "Enter clears search and highlights exact Pandoc section",
+      "passed": true
+    },
+    {
+      "name": "Editor page exposes all nine real settings",
+      "passed": true
+    },
+    {
+      "name": "Bracket off disables and visually unchecks dependent Markdown pairing",
+      "passed": true
+    },
+    {
+      "name": "Bracket on restores retained Markdown choice",
+      "passed": true
+    },
+    {
+      "name": "Indent selection retains 4 and focus remains after state rerender",
+      "passed": true
+    },
+    {
+      "name": "Line-copy checkbox retains state and focus",
+      "passed": true
+    },
+    {
+      "name": "Fresh editor loads changed settings from this browser origin",
+      "passed": true
+    },
+    {
+      "name": "Actual bracket input wraps selected text",
+      "passed": true
+    },
+    {
+      "name": "Actual asterisk input creates Markdown pair",
+      "passed": true
+    },
+    {
+      "name": "Actual :smile input opens real completion list",
+      "passed": true
+    },
+    {
+      "name": "Click exact smile candidate inserts Unicode 😄 and closes completion",
+      "passed": true
+    },
+    {
+      "name": "No error-level logs in Preferences or editor tabs",
+      "passed": true
+    },
+    {
+      "name": "Default paper preview uses retained A4 with readonly enabled controls",
+      "passed": true
+    },
+    {
+      "name": "Custom margins render four numeric controls vertically aligned at x461.5",
+      "passed": true
+    },
+    {
+      "name": "Custom paper selection changes dimension inputs to editable; reverting restores readonly",
+      "passed": true
+    },
+    {
+      "name": "Pretty indentation is searchable and navigates to a visible highlighted parent section",
+      "passed": true
+    },
+    {
+      "name": "Second grouped Markdown pairing search result locates its exact visible row and highlights the group",
+      "passed": true
+    }
+  ],
+  "consoleErrors": [],
+  "scope": "Real browser interaction on new settings and consumer paths. No native persistence, clipboard system contents or pixel-parity claim; native tests and old exports are recorded separately.",
+  "passed": true,
+  "total": 19
+}

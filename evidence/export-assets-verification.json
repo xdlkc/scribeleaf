@@ -1,0 +1,231 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "path_0_embeds_exact_bytes",
+      "ok": true
+    },
+    {
+      "name": "path_0_png_decodes",
+      "ok": true
+    },
+    {
+      "name": "path_0_unrelated_html_exact",
+      "ok": true
+    },
+    {
+      "name": "path_1_embeds_exact_bytes",
+      "ok": true
+    },
+    {
+      "name": "path_1_png_decodes",
+      "ok": true
+    },
+    {
+      "name": "path_1_unrelated_html_exact",
+      "ok": true
+    },
+    {
+      "name": "path_2_embeds_exact_bytes",
+      "ok": true
+    },
+    {
+      "name": "path_2_png_decodes",
+      "ok": true
+    },
+    {
+      "name": "path_2_unrelated_html_exact",
+      "ok": true
+    },
+    {
+      "name": "path_3_embeds_exact_bytes",
+      "ok": true
+    },
+    {
+      "name": "path_3_png_decodes",
+      "ok": true
+    },
+    {
+      "name": "path_3_unrelated_html_exact",
+      "ok": true
+    },
+    {
+      "name": "path_4_embeds_exact_bytes",
+      "ok": true
+    },
+    {
+      "name": "path_4_png_decodes",
+      "ok": true
+    },
+    {
+      "name": "path_4_unrelated_html_exact",
+      "ok": true
+    },
+    {
+      "name": "path_5_embeds_exact_bytes",
+      "ok": true
+    },
+    {
+      "name": "path_5_png_decodes",
+      "ok": true
+    },
+    {
+      "name": "path_5_unrelated_html_exact",
+      "ok": true
+    },
+    {
+      "name": "path_6_embeds_exact_bytes",
+      "ok": true
+    },
+    {
+      "name": "path_6_png_decodes",
+      "ok": true
+    },
+    {
+      "name": "path_6_unrelated_html_exact",
+      "ok": true
+    },
+    {
+      "name": "path_7_embeds_exact_bytes",
+      "ok": true
+    },
+    {
+      "name": "path_7_png_decodes",
+      "ok": true
+    },
+    {
+      "name": "path_7_unrelated_html_exact",
+      "ok": true
+    },
+    {
+      "name": "path_8_embeds_exact_bytes",
+      "ok": true
+    },
+    {
+      "name": "path_8_png_decodes",
+      "ok": true
+    },
+    {
+      "name": "path_8_unrelated_html_exact",
+      "ok": true
+    },
+    {
+      "name": "path_9_embeds_exact_bytes",
+      "ok": true
+    },
+    {
+      "name": "path_9_png_decodes",
+      "ok": true
+    },
+    {
+      "name": "path_9_unrelated_html_exact",
+      "ok": true
+    },
+    {
+      "name": "remote_0_unchanged",
+      "ok": true
+    },
+    {
+      "name": "remote_1_unchanged",
+      "ok": true
+    },
+    {
+      "name": "remote_2_unchanged",
+      "ok": true
+    },
+    {
+      "name": "remote_3_unchanged",
+      "ok": true
+    },
+    {
+      "name": "remote_4_unchanged",
+      "ok": true
+    },
+    {
+      "name": "remote_5_unchanged",
+      "ok": true
+    },
+    {
+      "name": "remote_6_unchanged",
+      "ok": true
+    },
+    {
+      "name": "duplicate_two_embeddings",
+      "ok": true
+    },
+    {
+      "name": "missing_preserves_original_and_reports",
+      "ok": true
+    },
+    {
+      "name": "unsaved_relative_preserves_and_reports",
+      "ok": true
+    },
+    {
+      "name": "unquoted_attribute_safely_quoted",
+      "ok": true
+    },
+    {
+      "name": "raw_text_comments_declarations_unchanged",
+      "ok": true
+    },
+    {
+      "name": "srcset_density_mixed_remote",
+      "ok": true
+    },
+    {
+      "name": "srcset_existing_data_preserved",
+      "ok": true
+    },
+    {
+      "name": "srcset_width_descriptors",
+      "ok": true
+    },
+    {
+      "name": "srcset_missing_item_preserved",
+      "ok": true
+    },
+    {
+      "name": "srcset_raw_space_rejected_without_corruption",
+      "ok": true
+    },
+    {
+      "name": "srcset_descriptorless_supported",
+      "ok": true
+    },
+    {
+      "name": "srcset_ambiguous_comma_preserved",
+      "ok": true
+    },
+    {
+      "name": "srcset_late_invalid_candidate_no_phantom_embeds",
+      "ok": true
+    },
+    {
+      "name": "image_url_fragment_preserved",
+      "ok": true
+    },
+    {
+      "name": "actual_standalone_fonts_css_preserved",
+      "ok": true
+    },
+    {
+      "name": "src_nested_entity_decoded_once",
+      "ok": true
+    },
+    {
+      "name": "srcset_nested_entity_decoded_once",
+      "ok": true
+    },
+    {
+      "name": "different_output_directory_after_source_removed",
+      "ok": true
+    }
+  ],
+  "passed": 55,
+  "swiftCompiled": true,
+  "imageDecoder": "AppKit NSBitmapImageRep 2x2 PNG",
+  "sourceDirectoryRemovedBeforeReopen": true,
+  "networkRequests": 0,
+  "scope": "img src; img/source srcset standard x/w/h descriptors. Raw spaces/commas in srcset URLs are preserved with a report. Named HTML entities cover common path punctuation; all valid numeric entities are supported."
+}

@@ -1,0 +1,293 @@
+{
+  "task": "repeat-export-reference",
+  "method": "read-only resource inspection of Typora 1.14.10 TypeMark JS, locales, MainMenu.nib string table, and Mach-O selector/string table. No GUI, no runtime tests, no replica source edits.",
+  "replica_gap": {
+    "native/App.swift": "File Export submenu builds PDF/HTML/html-plain/Image/conversion formats only (around export: prefix send). No Export with Previous / Overwrite items. validateMenuItem does not gate on last export. exportDocument always presents NSSavePanel; no last path/format store.",
+    "src/main.ts": "Native 'export' payload is a format string; runCommand('exportFormat'). No lastExport / exportLast command. exportFinished only notices.",
+    "src/export-formats.ts": "Format union only; no last-export keys."
+  },
+  "observed_original": {
+    "menu_labels": {
+      "sources": [
+        "/Applications/Typora.app/Contents/Resources/TypeMark/locales/Base.lproj/Menu.json keys 'Export with Previous', 'Export and Overwrite with Previous', 'Export Setting'",
+        "/Applications/Typora.app/Contents/Resources/Base.lproj/Menu.strings (UTF-16) same English keys",
+        "zh-Hans Menu.strings: '使用上一次设置导出' / overwrite sibling in same file around line 318"
+      ],
+      "native_string_table": {
+        "file": "/Applications/Typora.app/Contents/MacOS/Typora",
+        "offset": 796601,
+        "snippet": "HTML (without styles).HTML.PDF....OPML.export.general.Export.p....Export with Previous.e.Export and Overwrite with Previous",
+        "note": "Adjacent key-equivalent letters: PDF 'p', Export with Previous 'e'. Overwrite item has no following single-letter key in this table. Modifier masks not established from resources."
+      },
+      "nib": "/Applications/Typora.app/Contents/Resources/Base.lproj/MainMenu.nib contains exportMenuItem / 'Export' only; Previous items are built in native code, not static nib labels."
+    },
+    "native_selectors": {
+      "class": "TyWindowController(Export)",
+      "methods": [
+        "exportWithPrevious:",
+        "exportAndOverwriteWithPrevious:",
+        "setLastExport:to:",
+        "setLastExport:",
+        "setLastExportNoOverwrite:",
+        "lastExport",
+        "lastExportNoOverwrite",
+        "_exportWithOption:"
+      ],
+      "ivars": {
+        "TyWindowController.lastExport": "T@\"NSDictionary\",C,VlastExport (copy dict, per window)",
+        "TyWindowController._lastExportNoOverwrite": "BOOL",
+        "other_class.lastExport": "T@\"NSMutableDictionary\",&,VlastExport (retain mutable; class name not fully resolved from strings)"
+      },
+      "js_bridge_channel": "export.recordLastExport (native string table offset 814867)"
+    },
+    "js_commands": {
+      "file": "/Applications/Typora.app/Contents/Resources/TypeMark/appsrc/window/frame.js",
+      "ClientCommand.exportLast": {
+        "offset": 785741,
+        "code": "c.exportLast=function(e){var t=i.option.lastExport||i.option._lastExport,e=!i.option.lastExportNoOverwrite&&e&&t.path&&i.option.lastExport;c.export(Object.assign({overwrite:e},t))}",
+        "meaning": "Argument e is the overwrite request. Effective overwrite is true only when lastExportNoOverwrite is false AND e is truthy AND last object has path AND File.option.lastExport is truthy (not merely _lastExport)."
+      },
+      "ClientCommand.export": {
+        "offset": 785904,
+        "dispatch": "type html|html-plain|image|pdf|custom else pandoc/native l.export(t,e); loadExportOption after loadFromFile"
+      }
+    },
+    "setting_keys": {
+      "File.option.lastExport": "object: last export options plus path. Written in recordLastExport.",
+      "File.option.lastExportNoOverwrite": "boolean. false after recordLastExport; set true on document init/switch when lastExport already exists (offset 712494).",
+      "File.option._lastExport": "read as fallback format/options in exportLast only; no assignment found in frame.js (count 1).",
+      "File.option.noWarningForExportOverwrite": "suppress overwrite confirm. Persisted JSBridge.putSetting('noWarningForExportOverwrite', true) and execForAll other windows.",
+      "File.option.lastSaveLocation": "directory of last chosen export/save path on Node dialog branch; Mac showSaveDialog branch in showExportDialog does not assign this in JS.",
+      "export option.exportFolder": "'same' | 'custom' used for default directory when no lastSaveLocation/path.",
+      "export option.customExportPath": "custom folder; defaults to window._options.documentsPath",
+      "export option.allowPerFileSetting": "selects per-file vs global key lists inside loadExportOption"
+    },
+    "recordLastExport": {
+      "offset": 749143,
+      "code": "recordLastExport(e,t){delete e.overwrite,delete e.path;t=Object.assign({path:t},e);JSBridge.invoke(\"export.recordLastExport\",t),File.option.lastExport=t,File.option.lastExportNoOverwrite=!1}",
+      "call_sites_record_after_dialog_ok_before_or_regardless_of_write": [
+        "exportAndSaveHTML offset 752353: n&& record then write",
+        "exportPDF offset 781472: r? record then write : n() cancel",
+        "exportToImage offset 783589: if !t cleanup no record; else record then capture",
+        "exportWithCommand offset 775025: if !n&&saveDialog cancel no record; else record even before customExport",
+        "pandoc/native conversion offset 1440669: dialog ok then record then File.blockUI"
+      ]
+    },
+    "enablement_js": {
+      "overwrite_repeat": "Requires File.option.lastExport (truthy), t.path, and lastExportNoOverwrite===false. File switch sets lastExportNoOverwrite=true if lastExport still present, disabling overwrite while leaving last format object.",
+      "export_with_previous_without_overwrite": "exportLast(false) still Object.assign last options; overwrite forced false. If lastExport missing, uses _lastExport if any; if both missing, exports {overwrite:false} with no type — behavior then undefined. Menu disable for empty lastExport is native (unknown exact predicate).",
+      "per_document_vs_global": "lastExport lives on File.option and TyWindowController (per window). Same-window file switch keeps lastExport, sets lastExportNoOverwrite. Format/options therefore follow the window's last successful dialog-accepted export, not a separate per-file store. Output overwrite path is blocked after switch until a new recordLastExport. loadExportOption merges current file/global typora-* settings on each export. lastSaveLocation is process-level File.option (global-ish) on Node; Mac native directory memory unknown."
+    },
+    "save_panel": {
+      "file": "frame.js showExportDialog offset 1312668",
+      "overwrite_true_and_path": "Skip panel. If noWarningForExportOverwrite, return path. Else showWarningDialog Panel string '\"Export and Overwrite with Previous\" will overwrite file at %@, would you continue?' with checkbox. response!=0 => null (cancel). checkboxChecked => putSetting noWarningForExportOverwrite.",
+      "otherwise_mac": "bridge.callHandler('path.showSaveDialog', {defaultPath, filters}) or path.selectFolderOrFile if selectFolder. Analytics.record('export',{format}).",
+      "defaultPath_helper_offset": 1314280,
+      "defaultPath_rules": [
+        "If option.path set: if !lastExport OR lastExportNoOverwrite then dirname(path)+sep+suggestedName.ext else full option.path",
+        "Else if lastSaveLocation: that dir + suggested name",
+        "Else exportFolder==='same': current file folder + name",
+        "Else exportFolder==='custom': customExportPath + name",
+        "Else File.mountFolder_ + name",
+        "Else suggested name only (Mac may pass empty defaultPath via r flag)"
+      ]
+    },
+    "cancel_and_failure_update_rules": {
+      "save_panel_or_overwrite_warning_cancel": "showExportDialog returns null/undefined. Callers do not recordLastExport. lastExport unchanged. export.onExportCanceled (offset 749668) only h.hideNotification().",
+      "record_then_write_fail": "HTML/PDF record before write: lastExport already updated even if write fails. onExportFailed shows dialog, does not clear lastExport.",
+      "image_dialog_cancel": "no record; hide notification via _(!0).",
+      "native_mac_handler_after_cancel": "unknown beyond JS handlers registered for export.onExportCanceled / onExportFailed / onExportSuccess."
+    },
+    "commands_from_native_menu": {
+      "established": "ObjC actions exportWithPrevious: and exportAndOverwriteWithPrevious: on TyWindowController(Export). JS API they must drive is ClientCommand.exportLast(false|true). Bridge record channel export.recordLastExport.",
+      "not_established": "Exact evaluateJavaScript / WK script text native uses to invoke exportLast is not in TypeMark as a native-injected string (no 'exportLast' in Typora Mach-O). Do not guess the eval payload."
+    }
+  },
+  "proposed_minimal_independent_implementation": {
+    "menu": "Under File > Export, after format items: 'Export with Previous' and 'Export and Overwrite with Previous' (localize via same English keys). Do not copy Typora binaries.",
+    "state": "Per MarkdownDocument/window: lastExport {type, path, ...format options} and lastExportNoOverwrite. On successful save-panel OK (or overwrite confirm OK), set lastExport and lastExportNoOverwrite=false. On document replace/load in same window, if lastExport exists set lastExportNoOverwrite=true. Optional process-level lastSaveLocation for default dir.",
+    "enable": "Both items disabled when lastExport missing or type empty. Overwrite item also disabled when lastExportNoOverwrite or !path.",
+    "commands": "Independent native commands e.g. exportLast / exportLastOverwrite that reuse existing exportDocument(format) with stored type; replica should not send original ObjC selectors. Web: extend exportFormat or add exportLast payload {overwrite:boolean}.",
+    "panel": "Non-overwrite: NSSavePanel defaulting to rules above (prefer stored path dir+new name after switch; full last path only when overwrite allowed). Overwrite: no panel; confirm with same warning string unless user opted out (replica-owned defaults key, not Typora's container).",
+    "update_rules": "Update lastExport only after user confirms destination (panel OK or overwrite confirm), matching original record-after-dialog-ok even if later write fails. Panel cancel / warning cancel: no state change. Failure UI: keep lastExport.",
+    "out_of_scope_here": "ImageExport capture internals owned by another worker; reuse existing png export path only."
+  },
+  "unknowns": [
+    "Exact native JS eval or bridge call from exportWithPrevious: / exportAndOverwriteWithPrevious: (no exportLast string in Mach-O).",
+    "Exact NSMenuItem enabled/hidden predicate (lastExport nil vs empty dict vs lastExportNoOverwrite); validateMenuItem body not in resources.",
+    "Key-equivalent modifier for 'e' (Command vs Control vs other).",
+    "Whether TyWindowController.lastExport is mirrored to JS File.option._lastExport.",
+    "Mac path.showSaveDialog implementation: whether it writes lastSaveLocation or remembers directory natively.",
+    "Whether overwrite confirm checkbox default and button index mapping of showWarningDialog.response (code treats 0 as continue).",
+    "Whether lastExport is serialized across app relaunch.",
+    "GUI behavior never observed; all facts are static resource reads."
+  ],
+  "coordinatorVerification": {
+    "method": "Independent static source lookup; not native GUI verification",
+    "timestamp": "2026-10-19T12:46:55.535298+00:00",
+    "frameSHA256": "b08c94bab8e9994363fcf928a4ea927d7bbbcd1e84d70ac41eef55475089fae1",
+    "checks": [
+      {
+        "name": "exportLast",
+        "found": true,
+        "characterOffset": 785741,
+        "snippet": "c.exportLast=function(e){var t=i.option.lastExport||i.option._lastExport,e=!i.option.lastExportNoOverwrite&&e&&t.path&&i.option.lastExport;c.export(Object.assign({overwrite:e},t))},c.export=function(e){var t;i.bundle.unsupported||(t=e.type,i.editor.export.beforeExport(),i.editor.export.showExportNotification(),i.editor.localSettingBridge.loadFromFi"
+      },
+      {
+        "name": "recordLastExport",
+        "found": true,
+        "characterOffset": 749143,
+        "snippet": "recordLastExport(e,t){delete e.overwrite,delete e.path;t=Object.assign({path:t},e);JSBridge.invoke(\"export.recordLastExport\",t),File.option.lastExport=t,File.option.lastExportNoOverwrite=!1}registerBridge(){var i;File.isMac&&(i=this,bridge.registerHandler(\"export.exportToNative\",function(e,n){i.exportToNative(e.target,function(e,t){n({native:e,opti"
+      },
+      {
+        "name": "overwriteWarning",
+        "found": true,
+        "characterOffset": 1312761,
+        "snippet": "noWarningForExportOverwrite?s.path:0!=(e=await d.showWarningDialog($.localize.getString('\"Export and Overwrite with Previous\" will overwrite file at %@, would you continue?',\"Panel\").replace(\"%@\",s.path),!0)).response?null:(e.checkboxChecked&&(JSBridge.execForAll(\"window.File && File.option && (File.option.noWarningForExportOverwrite = true)\"),JSBr"
+      },
+      {
+        "name": "saveDialog",
+        "found": true,
+        "characterOffset": 752317,
+        "snippet": "showExportDialog(\"html\",t);n&&(this.recordLastExport(t,n),e=await this.exportToHTML(t),File.fs.writeFile(n,e,e=>{e?(h.showDialog({title:R.localize.getString(\"Error\"),html:R.localize.getString(\"Failed to export file to <em>{0}</em>\",\"Panel\").format(A.escape(n))+\"<br/>\"+A.escape(e.message),backdrop:\"static\",type:\"error\"}),console.sendError(e,\"warn\"))"
+      }
+    ]
+  },
+  "harness": {
+    "model": "grok-4.6",
+    "reasoningEffort": "low",
+    "executed": true,
+    "exitCode": 0,
+    "runtimeSourceModified": false,
+    "followedToCompletion": true,
+    "generationCalls": 18,
+    "usageReportedPerCall": [
+      {
+        "input_tokens": 19512,
+        "output_tokens": 265,
+        "cache_read_input_tokens": 128,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 90
+      },
+      {
+        "input_tokens": 24343,
+        "output_tokens": 132,
+        "cache_read_input_tokens": 128,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 20
+      },
+      {
+        "input_tokens": 30847,
+        "output_tokens": 394,
+        "cache_read_input_tokens": 128,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 36
+      },
+      {
+        "input_tokens": 6451,
+        "output_tokens": 485,
+        "cache_read_input_tokens": 30848,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 26
+      },
+      {
+        "input_tokens": 10214,
+        "output_tokens": 498,
+        "cache_read_input_tokens": 37248,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 63
+      },
+      {
+        "input_tokens": 5508,
+        "output_tokens": 571,
+        "cache_read_input_tokens": 47360,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 25
+      },
+      {
+        "input_tokens": 6177,
+        "output_tokens": 345,
+        "cache_read_input_tokens": 52864,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 31
+      },
+      {
+        "input_tokens": 2317,
+        "output_tokens": 584,
+        "cache_read_input_tokens": 59008,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 20
+      },
+      {
+        "input_tokens": 3357,
+        "output_tokens": 505,
+        "cache_read_input_tokens": 61312,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 21
+      },
+      {
+        "input_tokens": 2766,
+        "output_tokens": 640,
+        "cache_read_input_tokens": 64640,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 35
+      },
+      {
+        "input_tokens": 2603,
+        "output_tokens": 697,
+        "cache_read_input_tokens": 67328,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 303
+      },
+      {
+        "input_tokens": 1416,
+        "output_tokens": 271,
+        "cache_read_input_tokens": 69888,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 9
+      },
+      {
+        "input_tokens": 410,
+        "output_tokens": 471,
+        "cache_read_input_tokens": 71296,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 106
+      },
+      {
+        "input_tokens": 808,
+        "output_tokens": 425,
+        "cache_read_input_tokens": 71680,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 167
+      },
+      {
+        "input_tokens": 1024,
+        "output_tokens": 961,
+        "cache_read_input_tokens": 72448,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 935
+      },
+      {
+        "input_tokens": 1590,
+        "output_tokens": 76,
+        "cache_read_input_tokens": 73472,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 10
+      },
+      {
+        "input_tokens": 202,
+        "output_tokens": 2851,
+        "cache_read_input_tokens": 75008,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 30
+      },
+      {
+        "input_tokens": 2960,
+        "output_tokens": 318,
+        "cache_read_input_tokens": 75136,
+        "cache_creation_input_tokens": 0,
+        "reasoning_tokens": 15
+      }
+    ]
+  }
+}

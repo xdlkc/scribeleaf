@@ -1,0 +1,483 @@
+{
+  "checks": [
+    {
+      "name": "supports-known-pinned-readers",
+      "passed": true
+    },
+    {
+      "name": "supports-is-case-insensitive",
+      "passed": true
+    },
+    {
+      "name": "unsupported-binary-doc-and-pdf-not-guessed",
+      "passed": true
+    },
+    {
+      "name": "non-file-url-not-supported",
+      "passed": true
+    },
+    {
+      "detail": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<img src=\"file:///var/folders/yl",
+      "name": "real-docx-text-import",
+      "passed": true
+    },
+    {
+      "name": "real-docx-source-byte-preserved",
+      "passed": true
+    },
+    {
+      "detail": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<img src=\"file:///var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-file-import-check-opeUpd/fixtures/managed%20media%20%23100%25%20%E4%B8%AD%E6%96%87/964d5bc8-467f-4b45-bb61-7ce167d21383/image-1.png\" alt=\"KEEPIMAGE\" />\n<figcaption aria-hidden=\"true\"><p>KEEPIMAGE</p></figcaption>\n</figure>\n",
+      "name": "real-docx-embedded-image-persistent-path",
+      "passed": true
+    },
+    {
+      "name": "real-docx-embedded-image-byte-preserved",
+      "passed": true
+    },
+    {
+      "name": "real-docx-media-uri-utf8-hash-percent-safe",
+      "passed": true
+    },
+    {
+      "name": "real-docx-no-temporary-media-reference",
+      "passed": true
+    },
+    {
+      "detail": "# <span id=\"anchor\"></span>IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<img src=\"file:/",
+      "name": "real-odt-text-import",
+      "passed": true
+    },
+    {
+      "name": "real-odt-source-byte-preserved",
+      "passed": true
+    },
+    {
+      "detail": "# <span id=\"anchor\"></span>IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<img src=\"file:///var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-file-import-check-opeUpd/fixtures/managed%20media%20%23100%25%20%E4%B8%AD%E6%96%87/1c018a59-056e-4410-b068-999d87ec00d4/image-1.png\" style=\"width:1pt;height:1pt\" />\n\nKEEPIMAGE\n",
+      "name": "real-odt-embedded-image-persistent-path",
+      "passed": true
+    },
+    {
+      "name": "real-odt-embedded-image-byte-preserved",
+      "passed": true
+    },
+    {
+      "name": "real-odt-media-uri-utf8-hash-percent-safe",
+      "passed": true
+    },
+    {
+      "name": "real-odt-no-temporary-media-reference",
+      "passed": true
+    },
+    {
+      "detail": "<span id=\"ch001.xhtml\"></span>\n\n<div id=\"ch001.xhtml_importprobeheading-中文\" class=\"section level1\">\n\n# IMPORTPROBEHEADIN",
+      "name": "real-epub-text-import",
+      "passed": true
+    },
+    {
+      "name": "real-epub-source-byte-preserved",
+      "passed": true
+    },
+    {
+      "detail": "<span id=\"ch001.xhtml\"></span>\n\n<div id=\"ch001.xhtml_importprobeheading-中文\" class=\"section level1\">\n\n# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<img src=\"file:///var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-file-import-check-opeUpd/fixtures/managed%20media%20%23100%25%20%E4%B8%AD%E6%96%87/5d16ef10-7ed3-4860-95e3-7d32ce43433a/image-1.png\" alt=\"KEEPIMAGE\" />\n<figcaption aria-hidden=\"true\">KEEPIMAGE</figcaption>\n</figure>\n\n</div>\n",
+      "name": "real-epub-embedded-image-persistent-path",
+      "passed": true
+    },
+    {
+      "name": "real-epub-embedded-image-byte-preserved",
+      "passed": true
+    },
+    {
+      "name": "real-epub-media-uri-utf8-hash-percent-safe",
+      "passed": true
+    },
+    {
+      "name": "real-epub-no-temporary-media-reference",
+      "passed": true
+    },
+    {
+      "detail": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** <u>[local](other.md)</u>.\n\n<img src=\"file:///var/folders/yl/h",
+      "name": "real-rtf-text-import",
+      "passed": true
+    },
+    {
+      "name": "real-rtf-source-byte-preserved",
+      "passed": true
+    },
+    {
+      "detail": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** <u>[local](other.md)</u>.\n\n<img src=\"file:///var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-file-import-check-opeUpd/fixtures/managed%20media%20%23100%25%20%E4%B8%AD%E6%96%87/9a1d408a-b5d8-4d51-bf11-8b94d33b055f/image-1.png\" alt=\"image\" />\n\nKEEPIMAGE\n",
+      "name": "real-rtf-embedded-image-persistent-path",
+      "passed": true
+    },
+    {
+      "name": "real-rtf-embedded-image-byte-preserved",
+      "passed": true
+    },
+    {
+      "name": "real-rtf-media-uri-utf8-hash-percent-safe",
+      "passed": true
+    },
+    {
+      "name": "real-rtf-no-temporary-media-reference",
+      "passed": true
+    },
+    {
+      "detail": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<img src=\"图片%20%23100%25.png\" al",
+      "name": "real-html-text-import",
+      "passed": true
+    },
+    {
+      "name": "real-html-source-byte-preserved",
+      "passed": true
+    },
+    {
+      "detail": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<img src=\"图片%20%23100%25.png\" al",
+      "name": "real-rst-text-import",
+      "passed": true
+    },
+    {
+      "name": "real-rst-source-byte-preserved",
+      "passed": true
+    },
+    {
+      "detail": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n\n<figcaption>\n\nKEEPIMAGE\n\n</figc",
+      "name": "real-textile-text-import",
+      "passed": true
+    },
+    {
+      "name": "real-textile-source-byte-preserved",
+      "passed": true
+    },
+    {
+      "detail": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<p> </p>\n<figcaption>KEEPIMAGE</",
+      "name": "real-tex-text-import",
+      "passed": true
+    },
+    {
+      "name": "real-tex-source-byte-preserved",
+      "passed": true
+    },
+    {
+      "detail": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<img src=\"图片%20%23100%25.png\" al",
+      "name": "real-opml-text-import",
+      "passed": true
+    },
+    {
+      "name": "real-opml-source-byte-preserved",
+      "passed": true
+    },
+    {
+      "detail": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<img src=\"图片%20%23100%25.png\" />",
+      "name": "real-org-text-import",
+      "passed": true
+    },
+    {
+      "name": "real-org-source-byte-preserved",
+      "passed": true
+    },
+    {
+      "detail": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<img src=\"图片%20%23100%25.png\" al",
+      "name": "real-adoc-text-import",
+      "passed": true
+    },
+    {
+      "name": "real-adoc-source-byte-preserved",
+      "passed": true
+    },
+    {
+      "detail": "# \n\n<div id=\"importprobeheading-中文\" class=\"section\">\n\n## IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local",
+      "name": "real-fb2-text-import",
+      "passed": true
+    },
+    {
+      "name": "real-fb2-source-byte-preserved",
+      "passed": true
+    },
+    {
+      "detail": "# \n\n<div id=\"importprobeheading-中文\" class=\"section\">\n\n## IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n![KEEPIMAGE](file:///var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-file-import-check-opeUpd/fixtures/managed%20media%20%23100%25%20%E4%B8%AD%E6%96%87/6dbde4e4-c44d-457e-a7c6-0091de7b068a/image-1.png)\n\n</div>\n",
+      "name": "real-fb2-embedded-image-persistent-path",
+      "passed": true
+    },
+    {
+      "name": "real-fb2-embedded-image-byte-preserved",
+      "passed": true
+    },
+    {
+      "name": "real-fb2-media-uri-utf8-hash-percent-safe",
+      "passed": true
+    },
+    {
+      "name": "real-fb2-no-temporary-media-reference",
+      "passed": true
+    },
+    {
+      "detail": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER\n",
+      "name": "real-fodt-text-import",
+      "passed": true
+    },
+    {
+      "name": "real-fodt-source-byte-preserved",
+      "passed": true
+    },
+    {
+      "detail": "<div id=\"typora-import-cell-790c704c-7923-4b65-9000-aed9b1f5a4b1\" class=\"cell markdown\">\n\n# IMPORTPROBEHEADING 中文\n\nORIGI",
+      "name": "real-ipynb-text-import",
+      "passed": true
+    },
+    {
+      "name": "real-ipynb-source-byte-preserved",
+      "passed": true
+    },
+    {
+      "detail": "<div id=\"typora-import-cell-790c704c-7923-4b65-9000-aed9b1f5a4b1\" class=\"cell markdown\">\n\n# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<img src=\"file:///var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-file-import-check-opeUpd/fixtures/managed%20media%20%23100%25%20%E4%B8%AD%E6%96%87/4be10141-1366-4c1a-b969-b699f755aaf5/image-1.png\" alt=\"KEEPIMAGE\" />\n<figcaption aria-hidden=\"true\">KEEPIMAGE</figcaption>\n</figure>\n\n</div>\n",
+      "name": "real-ipynb-embedded-image-persistent-path",
+      "passed": true
+    },
+    {
+      "name": "real-ipynb-embedded-image-byte-preserved",
+      "passed": true
+    },
+    {
+      "name": "real-ipynb-media-uri-utf8-hash-percent-safe",
+      "passed": true
+    },
+    {
+      "name": "real-ipynb-no-temporary-media-reference",
+      "passed": true
+    },
+    {
+      "detail": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** .\n\n<figure>\n<p><img src=\"/var/folders/yl/hrd826h10vgbd05jhs9y",
+      "name": "real-typ-text-import",
+      "passed": true
+    },
+    {
+      "name": "real-typ-source-byte-preserved",
+      "passed": true
+    },
+    {
+      "name": "unpacked-media-still-readable-after-another-import",
+      "passed": true
+    },
+    {
+      "detail": "<div id=\"typora-import-cell-35c48f4f-93d3-454a-a905-fea1e77d7e63\" class=\"cell markdown\">\n\n<img src='file:///var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-file-import-check-opeUpd/fixtures/managed%20media%20%23100%25%20%E4%B8%AD%E6%96%87/8ac4cd20-f950-43d5-aafc-3c55e5c29864/image-1.png'>\n\n``` html\n<img src='attachment:same%20name.png'>\n```\n\n</div>\n\n<div id=\"typora-import-cell-833b519c-c13c-4ad8-a73a-48211e5643c6\" class=\"cell markdown\">\n\n<img src=\"file:///var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-file-import-check-opeUpd/fixtures/managed%20media%20%23100%25%20%E4%B8%AD%E6%96%87/8ac4cd20-f950-43d5-aafc-3c55e5c29864/image-2.png\">\n\n</div>\n",
+      "name": "notebook-cell-scoped-same-name-attachments",
+      "passed": true
+    },
+    {
+      "name": "notebook-raw-html-code-example-untouched",
+      "passed": true
+    },
+    {
+      "name": "notebook-source-byte-preserved",
+      "passed": true
+    },
+    {
+      "name": "no-media-document-import",
+      "passed": true
+    },
+    {
+      "name": "no-media-no-persistent-request-folder",
+      "passed": true
+    },
+    {
+      "name": "remote-image-url-retained-without-fetch",
+      "passed": true
+    },
+    {
+      "name": "remote-iframe-preserved-as-raw-html",
+      "passed": true
+    },
+    {
+      "name": "real-reader-failure",
+      "passed": true
+    },
+    {
+      "name": "real-reader-failure-cleans-cache",
+      "passed": true
+    },
+    {
+      "name": "real-reader-failure-source-byte-preserved",
+      "passed": true
+    },
+    {
+      "name": "timeout-throws",
+      "passed": true
+    },
+    {
+      "name": "timeout-bounded",
+      "passed": true
+    },
+    {
+      "name": "timeout-removes-partial-media",
+      "passed": true
+    },
+    {
+      "name": "timeout-kills-descendant-before-side-effect",
+      "passed": true
+    },
+    {
+      "name": "active-cancel-throws",
+      "passed": true
+    },
+    {
+      "name": "active-cancel-removes-partial-media",
+      "passed": true
+    },
+    {
+      "name": "active-cancel-kills-descendant-before-side-effect",
+      "passed": true
+    },
+    {
+      "name": "pre-cancel-throws",
+      "passed": true
+    },
+    {
+      "name": "all-failures-source-markdown-byte-preserved",
+      "passed": true
+    },
+    {
+      "name": "all-failures-source-image-byte-preserved",
+      "passed": true
+    },
+    {
+      "name": "no-staging-directory-leaks",
+      "passed": true
+    },
+    {
+      "detail": 16384,
+      "name": "nonzero-stderr-bounded",
+      "passed": true
+    },
+    {
+      "name": "nonzero-failure-cleans-partial-media",
+      "passed": true
+    },
+    {
+      "name": "invalid-cache-throws",
+      "passed": true
+    },
+    {
+      "name": "invalid-cache-file-preserved",
+      "passed": true
+    },
+    {
+      "name": "unsupported-input-throws",
+      "passed": true
+    },
+    {
+      "name": "source-folder-no-extracted-media-side-effects",
+      "passed": true
+    }
+  ],
+  "generatedAt": "2026-10-19T18:36:11Z",
+  "limitations": [
+    "Original Typora import directory/media placement is not proven. Managed ImportedMedia absolute references are not a portable Markdown folder.",
+    "GUI new-document routing and resourceOriginURL belong to coordinator integration.",
+    "Third-party custom Pandoc versions may differ from bundled 3.12.1."
+  ],
+  "outputSamples": {
+    "adoc": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<img src=\"图片%20%23100%25.png\" alt=\"KEEPIMAGE\" />\n<figcaption aria-hidden=\"true\">KEEPIMAGE</figcaption>\n</figure>\n",
+    "docx": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<img src=\"file:///var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-file-import-check-opeUpd/fixtures/managed%20media%20%23100%25%20%E4%B8%AD%E6%96%87/964d5bc8-467f-4b45-bb61-7ce167d21383/image-1.png\" alt=\"KEEPIMAGE\" />\n<figcaption aria-hidden=\"true\"><p>KEEPIMAGE</p></figcaption>\n</figure>\n",
+    "epub": "<span id=\"ch001.xhtml\"></span>\n\n<div id=\"ch001.xhtml_importprobeheading-中文\" class=\"section level1\">\n\n# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<img src=\"file:///var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-file-import-check-opeUpd/fixtures/managed%20media%20%23100%25%20%E4%B8%AD%E6%96%87/5d16ef10-7ed3-4860-95e3-7d32ce43433a/image-1.png\" alt=\"KEEPIMAGE\" />\n<figcaption aria-hidden=\"true\">KEEPIMAGE</figcaption>\n</figure>\n\n</div>\n",
+    "fb2": "# \n\n<div id=\"importprobeheading-中文\" class=\"section\">\n\n## IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n![KEEPIMAGE](file:///var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-file-import-check-opeUpd/fixtures/managed%20media%20%23100%25%20%E4%B8%AD%E6%96%87/6dbde4e4-c44d-457e-a7c6-0091de7b068a/image-1.png)\n\n</div>\n",
+    "fodt": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER\n",
+    "html": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<img src=\"图片%20%23100%25.png\" alt=\"KEEPIMAGE\" />\n<figcaption aria-hidden=\"true\">KEEPIMAGE</figcaption>\n</figure>\n",
+    "ipynb": "<div id=\"typora-import-cell-790c704c-7923-4b65-9000-aed9b1f5a4b1\" class=\"cell markdown\">\n\n# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<img src=\"file:///var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-file-import-check-opeUpd/fixtures/managed%20media%20%23100%25%20%E4%B8%AD%E6%96%87/4be10141-1366-4c1a-b969-b699f755aaf5/image-1.png\" alt=\"KEEPIMAGE\" />\n<figcaption aria-hidden=\"true\">KEEPIMAGE</figcaption>\n</figure>\n\n</div>\n",
+    "odt": "# <span id=\"anchor\"></span>IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<img src=\"file:///var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-file-import-check-opeUpd/fixtures/managed%20media%20%23100%25%20%E4%B8%AD%E6%96%87/1c018a59-056e-4410-b068-999d87ec00d4/image-1.png\" style=\"width:1pt;height:1pt\" />\n\nKEEPIMAGE\n",
+    "opml": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<img src=\"图片%20%23100%25.png\" alt=\"KEEPIMAGE\" />\n<figcaption aria-hidden=\"true\">KEEPIMAGE</figcaption>\n</figure>\n",
+    "org": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<img src=\"图片%20%23100%25.png\" />\n<figcaption>KEEPIMAGE</figcaption>\n</figure>\n",
+    "rst": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<img src=\"图片%20%23100%25.png\" alt=\"KEEPIMAGE\" />\n<figcaption aria-hidden=\"true\">KEEPIMAGE</figcaption>\n</figure>\n",
+    "rtf": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** <u>[local](other.md)</u>.\n\n<img src=\"file:///var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-file-import-check-opeUpd/fixtures/managed%20media%20%23100%25%20%E4%B8%AD%E6%96%87/9a1d408a-b5d8-4d51-bf11-8b94d33b055f/image-1.png\" alt=\"image\" />\n\nKEEPIMAGE\n",
+    "tex": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n<p> </p>\n<figcaption>KEEPIMAGE</figcaption>\n</figure>\n",
+    "textile": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** [local](other.md).\n\n<figure>\n\n<figcaption>\n\nKEEPIMAGE\n\n</figcaption>\n\n![KEEPIMAGE](图片%20%23100%25.png \"KEEPIMAGE\")\n\n</figure>\n",
+    "typ": "# IMPORTPROBEHEADING 中文\n\nORIGINALPROBEMARKER text **bold** .\n\n<figure>\n<p><img src=\"/var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-file-import-check-opeUpd/fixtures/source documents #100% 中文/图片 #100%.png\" alt=\"KEEPIMAGE\" /></p>\n<figcaption><p>KEEPIMAGE</p></figcaption>\n</figure>\n"
+  },
+  "passed": true,
+  "scope": "Actual pinned Pandoc imports from self-generated documents and embedded PNG. Real process timeout/cancellation. All media is test-override managed storage; source bytes remain unchanged.",
+  "sourceWitnesses": {
+    "adoc": "PT0gSU1QT1JUUFJPQkVIRUFE",
+    "docx": "UEsDBBQAAAgIAIGUU13a/M4v",
+    "epub": "UEsDBBQAAAgAAIKUU11vYass",
+    "fb2": "PD94bWwgdmVyc2lvbj0iMS4w",
+    "fodt": "PG9mZmljZTpkb2N1bWVudCB4",
+    "html": "PCFET0NUWVBFIGh0bWw+Cjxo",
+    "ipynb": "ewogImNlbGxzIjogWwogIHsK",
+    "odt": "UEsDBBQAAAgAAIKUU11exjIM",
+    "opml": "PD94bWwgdmVyc2lvbj0iMS4w",
+    "org": "KiBJTVBPUlRQUk9CRUhFQURJ",
+    "rst": "SU1QT1JUUFJPQkVIRUFESU5H",
+    "rtf": "e1xydGYxXGFuc2lcZGVmZjB7",
+    "tex": "JSBPcHRpb25zIGZvciBwYWNr",
+    "textile": "aDEoI2ltcG9ydHByb2JlaGVh",
+    "typ": "I3NldCB0ZXJtcyhoYW5naW5n"
+  },
+  "sourceHashes": {
+    "native/FileImport.swift": "13e0abfbb3633f402bd633e6132b00dd44b20659fa1fb143cbae10574a994481",
+    "native/DocumentConversion.swift": "927cc47716dd5cab06fcc042dfe4a0abb4725f209bc066591dbdad76c84c5d41",
+    "native/ExportSettings.swift": "f29a38d1dac18dd575193ee95431bbaf8e0d5016f8c892c93cd787c8367f96ff",
+    "scripts/verify-file-import.swift": "9b3462512c01bbe836bb80a7abbc3c12f1fe7dfeca5dd309045345ac42dd847b"
+  },
+  "sourceMatchesCurrent": {
+    "native/FileImport.swift": true,
+    "native/DocumentConversion.swift": true,
+    "native/ExportSettings.swift": true,
+    "scripts/verify-file-import.swift": true
+  },
+  "pandoc": {
+    "path": "/Users/lkc/Code/typora-replica/.cache/pandoc/pandoc-3.12.1-x86_64/bin/pandoc",
+    "sha256": "287e725a56ed196e1820d25acaecc48b769f9489221bd86ad2d44932e98e9af7",
+    "inputFormats": [
+      "asciidoc",
+      "biblatex",
+      "bibtex",
+      "bits",
+      "commonmark",
+      "commonmark_x",
+      "creole",
+      "csljson",
+      "csv",
+      "djot",
+      "docbook",
+      "docx",
+      "dokuwiki",
+      "endnotexml",
+      "epub",
+      "fb2",
+      "fodt",
+      "gfm",
+      "haddock",
+      "html",
+      "ipynb",
+      "jats",
+      "jira",
+      "json",
+      "latex",
+      "man",
+      "markdown",
+      "markdown_github",
+      "markdown_mmd",
+      "markdown_phpextra",
+      "markdown_strict",
+      "mdoc",
+      "mediawiki",
+      "muse",
+      "native",
+      "odt",
+      "opml",
+      "org",
+      "pod",
+      "pptx",
+      "ris",
+      "rst",
+      "rtf",
+      "t2t",
+      "textile",
+      "tikiwiki",
+      "tsv",
+      "twiki",
+      "typst",
+      "vimwiki",
+      "xlsx",
+      "xml"
+    ]
+  }
+}

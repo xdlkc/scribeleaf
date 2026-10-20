@@ -1,0 +1,321 @@
+{
+  "generatedAt": "2026-10-19T16:32:55.309696+00:00",
+  "bundleIdentifier": "com.typora-replica.export-settings-verifier.de49ba4df3864980b4dbeb77365d15fe",
+  "checks": [
+    {
+      "name": "Native PNG has 320 CSS px at quality2",
+      "passed": true,
+      "detail": {
+        "dimensions": [
+          640,
+          1768
+        ]
+      }
+    },
+    {
+      "name": "The fixed 100 CSS px image is 200 physical px",
+      "passed": true,
+      "detail": {
+        "pixelBox": [
+          48,
+          1548,
+          248,
+          1676
+        ],
+        "sourceColors": [
+          [
+            27,
+            111,
+            90
+          ],
+          [
+            238,
+            177,
+            37
+          ]
+        ],
+        "pixelTolerance": 1
+      }
+    },
+    {
+      "name": "PDF page 1 paper is landscape 210x148mm",
+      "passed": true,
+      "detail": {
+        "points": [
+          595.0,
+          420.0
+        ],
+        "tolerancePoints": 1
+      }
+    },
+    {
+      "name": "PDF page 1 header, author and page number are present",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "PDF page 1 body clip consumes all four custom margins",
+      "passed": true,
+      "detail": {
+        "actualClip": [
+          36.8504,
+          34.01575,
+          518.0,
+          354.0
+        ],
+        "expectedClip": [
+          36.85039370078741,
+          34.01574803149607,
+          518.4645669291339,
+          354.8031496062992
+        ],
+        "errorsPoints": [
+          6.2992125933192256e-06,
+          1.9685039305272767e-06,
+          0.4645669291338663,
+          0.8031496062992005
+        ],
+        "tolerancePoints": 1.2
+      }
+    },
+    {
+      "name": "PDF page 2 paper is landscape 210x148mm",
+      "passed": true,
+      "detail": {
+        "points": [
+          595.0,
+          420.0
+        ],
+        "tolerancePoints": 1
+      }
+    },
+    {
+      "name": "PDF page 2 header, author and page number are present",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "PDF page 2 body clip consumes all four custom margins",
+      "passed": true,
+      "detail": {
+        "actualClip": [
+          36.8504,
+          34.01575,
+          518.0,
+          354.0
+        ],
+        "expectedClip": [
+          36.85039370078741,
+          34.01574803149607,
+          518.4645669291339,
+          354.8031496062992
+        ],
+        "errorsPoints": [
+          6.2992125933192256e-06,
+          1.9685039305272767e-06,
+          0.4645669291338663,
+          0.8031496062992005
+        ],
+        "tolerancePoints": 1.2
+      }
+    },
+    {
+      "name": "PDF page 3 paper is landscape 210x148mm",
+      "passed": true,
+      "detail": {
+        "points": [
+          595.0,
+          420.0
+        ],
+        "tolerancePoints": 1
+      }
+    },
+    {
+      "name": "PDF page 3 header, author and page number are present",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "PDF page 3 body clip consumes all four custom margins",
+      "passed": true,
+      "detail": {
+        "actualClip": [
+          36.8504,
+          34.01575,
+          518.0,
+          354.0
+        ],
+        "expectedClip": [
+          36.85039370078741,
+          34.01574803149607,
+          518.4645669291339,
+          354.8031496062992
+        ],
+        "errorsPoints": [
+          6.2992125933192256e-06,
+          1.9685039305272767e-06,
+          0.4645669291338663,
+          0.8031496062992005
+        ],
+        "tolerancePoints": 1.2
+      }
+    },
+    {
+      "name": "PDF page 4 paper is landscape 210x148mm",
+      "passed": true,
+      "detail": {
+        "points": [
+          595.0,
+          420.0
+        ],
+        "tolerancePoints": 1
+      }
+    },
+    {
+      "name": "PDF page 4 header, author and page number are present",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "PDF page 4 body clip consumes all four custom margins",
+      "passed": true,
+      "detail": {
+        "actualClip": [
+          36.8504,
+          34.01575,
+          518.0,
+          354.0
+        ],
+        "expectedClip": [
+          36.85039370078741,
+          34.01574803149607,
+          518.4645669291339,
+          354.8031496062992
+        ],
+        "errorsPoints": [
+          6.2992125933192256e-06,
+          1.9685039305272767e-06,
+          0.4645669291338663,
+          0.8031496062992005
+        ],
+        "tolerancePoints": 1.2
+      }
+    },
+    {
+      "name": "PDF contains first and last body markers",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "PDF page 1 header and footer lie in separate margin bands",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "PDF page 2 header and footer lie in separate margin bands",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "PDF page 3 header and footer lie in separate margin bands",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "PDF page 4 header and footer lie in separate margin bands",
+      "passed": true,
+      "detail": {}
+    }
+  ],
+  "passed": true,
+  "pages": [
+    {
+      "page": 1,
+      "points": [
+        595.0,
+        420.0
+      ],
+      "bodyClip": [
+        36.8504,
+        34.01575,
+        518.0,
+        354.0
+      ],
+      "text": "QA_PDF_TOP 中⽂\nSEC_1\nparagraph 1 QA_SECTION 中⽂。\nSEC_2\nparagraph 2 QA_SECTION 中⽂。\nQA_PDF_HEADER QA_AUTHOR\nQA_PDF_FOOTER 1",
+      "bodyWordBounds": [
+        40.05079,
+        50.0472621696,
+        228.8742956,
+        326.772951824
+      ]
+    },
+    {
+      "page": 2,
+      "points": [
+        595.0,
+        420.0
+      ],
+      "bodyClip": [
+        36.8504,
+        34.01575,
+        518.0,
+        354.0
+      ],
+      "text": "SEC_3\nparagraph 3 QA_SECTION 中⽂。\nSEC_4\nparagraph 4 QA_SECTION 中⽂。\nSEC_5\nparagraph 5 QA_SECTION 中⽂。\nQA_PDF_HEADER QA_AUTHOR\nQA_PDF_FOOTER 2",
+      "bodyWordBounds": [
+        40.05079,
+        39.649166568,
+        228.8742956,
+        378.77943182399997
+      ]
+    },
+    {
+      "page": 3,
+      "points": [
+        595.0,
+        420.0
+      ],
+      "bodyClip": [
+        36.8504,
+        34.01575,
+        518.0,
+        354.0
+      ],
+      "text": "SEC_6\nparagraph 6 QA_SECTION 中⽂。\nSEC_7\nparagraph 7 QA_SECTION 中⽂。\nSEC_8\nparagraph 8 QA_SECTION 中⽂。\nQA_PDF_HEADER QA_AUTHOR\nQA_PDF_FOOTER 3",
+      "bodyWordBounds": [
+        40.05079,
+        39.649166568,
+        228.8742956,
+        378.77943182399997
+      ]
+    },
+    {
+      "page": 4,
+      "points": [
+        595.0,
+        420.0
+      ],
+      "bodyClip": [
+        36.8504,
+        34.01575,
+        518.0,
+        354.0
+      ],
+      "text": "SEC_9\nparagraph 9 QA_SECTION 中⽂。\nSEC_10\nparagraph 10 QA_SECTION 中⽂。\nQA_PDF_BOTTOM 中⽂\nQA_PDF_HEADER QA_AUTHOR\nQA_PDF_FOOTER 4",
+      "bodyWordBounds": [
+        40.05079,
+        39.649166568,
+        235.6975449888,
+        285.967841824
+      ]
+    }
+  ],
+  "pypdfDiagnostics": [
+    "Ignoring wrong pointing object 7 0 (offset 0)"
+  ],
+  "sourceHashes": {
+    "custom.pdf": "2f8f652b85cf625ad177858d90ed6a6d4586e0764c4d9c3415b8ceff7803033f",
+    "image.png": "c7b63b9fed315033ef1287373cae5e68b1863f08c24b31f0d0cf48d0000b143b"
+  },
+  "scope": "Independent decode of real native QA artifacts. Four custom margins are checked on the first body clip, with point rounding tolerance; header/footer positions and body markers are decoded independently. PNG fixed-image size comes from its unique source color pattern. This is not Typora pixel parity or general PDF conformance."
+}

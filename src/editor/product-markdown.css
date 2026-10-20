@@ -1,0 +1,39 @@
+/* Product syntax shared by live preview and standalone HTML/PDF. Colors match
+   Typora 1.14.10's alert palette; all structure is implemented independently. */
+.md-alert-note,.cm-alert-note { --alert-color:#0969da; }
+.md-alert-tip,.cm-alert-tip { --alert-color:#1f883d; }
+.md-alert-important,.cm-alert-important { --alert-color:#8250df; }
+.md-alert-warning,.cm-alert-warning { --alert-color:#9a6700; }
+.md-alert-caution,.cm-alert-caution { --alert-color:#cf222e; }
+.md-alert { color:var(--text,inherit); border-left:.25em solid var(--alert-color); padding:0 1em; margin:1em 0; }
+.md-alert-title { color:var(--alert-color); font-size:.9em; font-weight:700; }
+.cm-line.cm-alert { color:var(--text,inherit); border-left:4px solid var(--alert-color); padding-left:16px; margin-top:0; margin-bottom:0; }
+.cm-line.cm-alert-first { padding-top:8px; }
+.cm-line.cm-alert-last { padding-bottom:8px; }
+.md-toc { margin:1em 0; font-size:.9em; }
+.md-toc-item { display:block; color:var(--link,#4183c4); line-height:1.7; text-decoration:none; cursor:pointer; }
+.md-toc-item:hover { text-decoration:underline; }
+.md-toc-h1 { font-weight:700; }
+.md-toc-h2 { margin-inline-start:2em; }
+.md-toc-h3 { margin-inline-start:4em; }
+.md-toc-h4 { margin-inline-start:6em; }
+.md-toc-h5 { margin-inline-start:8em; }
+.md-toc-h6 { margin-inline-start:10em; }
+.lp-toc { white-space:normal; }
+.lp-toc-edit { font:inherit; color:var(--quote-text,#656d76); border:0; background:transparent; padding:2px 0; cursor:pointer; opacity:.6; }
+.lp-frontmatter { border:1px solid var(--border,#d0d7de); background:var(--code-bg,#f6f8fa); border-radius:4px; padding:8px 12px; margin:8px 0; cursor:text; }
+.lp-frontmatter-label { font-size:10px; font-weight:600; opacity:.55; letter-spacing:.08em; }
+.lp-frontmatter pre { font-family:var(--font-mono,monospace); font-size:.8em; margin:4px 0; white-space:pre-wrap; }
+.cm-frontmatter-source-line { background:var(--code-bg,#f6f8fa); font-family:var(--font-mono,monospace); font-size:.85em; }
+.cm-comment-source { color:#a27f03; opacity:.7; font-family:var(--font-mono,monospace); }
+.lp-comment { display:inline-block; color:#a27f03; opacity:.65; font-family:var(--font-mono,monospace); padding:0 3px; cursor:text; }
+.md-numbered-code { display:flex; gap:1em; }
+.md-code-gutter { opacity:.45; user-select:none; white-space:pre; text-align:right; }
+.md-numbered-code code { min-width:0; flex:1; }
+.cm-code-line-number { display:inline-block; min-width:2em; margin-right:1em; opacity:.45; font-size:.8em; user-select:none; }
+.cm-content.markdown-indent-first .cm-line.cm-markdown-paragraph-first { text-indent:2em; }
+.cm-content.markdown-indent-first .cm-markdown-paragraph-first * { text-indent:0; }
+.cm-content.markdown-indent-first .cm-list-line { margin-left:2em; }
+.cm-content.markdown-code-nowrap .cm-codeblock-line { white-space:pre; overflow:visible; }
+.cm-br-mark { opacity:.4; font-size:.8em; }
+@media print { .md-toc a { color:inherit; } .md-alert { break-inside:avoid; } }

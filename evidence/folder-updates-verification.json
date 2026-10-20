@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-19T04:16:17.442Z",
+  "environment": "JSDOM real application boot/bridge/sidebar",
+  "browserVerified": false,
+  "results": [
+    {
+      "name": "Initial directory metadata shows empty and asset-only directories",
+      "passed": true
+    },
+    {
+      "name": "A folder update preserves the edited document identity and bytes",
+      "passed": true
+    },
+    {
+      "name": "Background updates keep the outline tab and editor focus",
+      "passed": true
+    },
+    {
+      "name": "Background updates do not reopen a hidden sidebar",
+      "passed": true
+    },
+    {
+      "name": "Live update preserves filter value, focus and backward selection",
+      "passed": true
+    },
+    {
+      "name": "New nested empty directory appears under an expanded folder",
+      "passed": true
+    },
+    {
+      "name": "Directory row focus survives a refreshed snapshot",
+      "passed": true
+    },
+    {
+      "name": "Deleted directory metadata disappears without rewriting the document",
+      "passed": true
+    },
+    {
+      "name": "Legacy files payload remains valid without directory metadata",
+      "passed": true
+    }
+  ]
+}

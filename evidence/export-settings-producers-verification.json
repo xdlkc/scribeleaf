@@ -1,0 +1,174 @@
+{
+  "generatedAt": "2026-10-19T15:54:39.415364+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "EPUB user --toc-depth=2 overrides structured depth1",
+      "passed": true,
+      "actualNavLabels": [
+        "QA_PRODUCER_H1 中文",
+        "QA_PRODUCER_H2"
+      ],
+      "deepHeadingRetainedInBody": true
+    },
+    {
+      "name": "Generic Markdown user columns40 overrides structured130",
+      "passed": true,
+      "observed": {
+        "wordParagraphMax40": true,
+        "wrappedIntoMultipleLines": true,
+        "currentSnapshot": true,
+        "crlfOnly": true,
+        "ascii": true,
+        "referenceLinks": true
+      },
+      "maxWordParagraphLine": 34,
+      "paragraphLineCount": 12
+    },
+    {
+      "name": "Generic Pandoc empty targetFormat auto-detects HTML destination",
+      "passed": true,
+      "destination": "/Users/lkc/Code/typora-replica/.cache/export-settings-producers/auto.html",
+      "htmlSHA256": "164d87c9118c501d94ca75b4958592060369278810670dca14a4c7caf0400b10"
+    },
+    {
+      "name": "Actual completion, source identity and bytes retained; no visible windows",
+      "passed": true
+    }
+  ],
+  "scope": "Real production MarkdownDocument.performExport directly builds flags and dispatches EPUB, generic Markdown, and automatic-writer HTML producers.",
+  "limits": [
+    "No renderer bridge, native save panel, request vault, history, custom command, visible window or original Typora parity claim.",
+    "Only QA App.swift annotation and showError display body differ; all producer code is retained verbatim.",
+    "Three cases only. Existing raw-format/strip-comments suite is not repeated."
+  ],
+  "bounds": {
+    "cases": 3,
+    "producerSecondsPerCase": 30,
+    "processSeconds": 105
+  },
+  "nativeSourceSHA256": {
+    "App.swift": "f08a41d69d6702c987cd6ea8ffff73013e90aefea230a5862bc6c8b38aa88a99",
+    "Clipboard.swift": "069978ada014364b22007d7a271cd0af8ccf87ca8f9841a5abe6ea541a10c879",
+    "DocumentConversion.swift": "927cc47716dd5cab06fcc042dfe4a0abb4725f209bc066591dbdad76c84c5d41",
+    "ExportAssets.swift": "8c689c854b72431d08379d090ae71a189dcd8b14527bd5ff44e00a743660e9c5",
+    "ExportSettings.swift": "f29a38d1dac18dd575193ee95431bbaf8e0d5016f8c892c93cd787c8367f96ff",
+    "FolderMonitor.swift": "ce107a134183a6fb5d7dca3c369ec060c561991155a16f3255318672dcf4a49a",
+    "ImageExport.swift": "b11106d85f4fc0af9aaf679eb5ef33e4fbb7903d878e59b46f12672d9ae6d03f",
+    "Localization.swift": "a0b62d4c5796a7df7080798c2299985cd51c2e3ce44d6d75720370c5df7a7c21",
+    "PDFExportOptions.swift": "5c48e7a7f3a2fe240af4d906a46192a47a1654726ce0f7f0155019ae0f1d9cc6",
+    "PreferencesController.swift": "0a7efd42008e5fdc79e1d8b05d11be2af14552972d69e8cc29d2dcd671a0ab35",
+    "RepeatExport.swift": "8aecaa922cdbd34064f9feb2f8f5061f4a1d09518e7c99676a20dc22594dc3a4"
+  },
+  "copiedNativeSHA256": {
+    "App.swift": "caa68807733368c77ef66a5b54034ebdc7b007aa872423f22d78f2576b437313",
+    "Clipboard.swift": "069978ada014364b22007d7a271cd0af8ccf87ca8f9841a5abe6ea541a10c879",
+    "DocumentConversion.swift": "927cc47716dd5cab06fcc042dfe4a0abb4725f209bc066591dbdad76c84c5d41",
+    "ExportAssets.swift": "8c689c854b72431d08379d090ae71a189dcd8b14527bd5ff44e00a743660e9c5",
+    "ExportSettings.swift": "f29a38d1dac18dd575193ee95431bbaf8e0d5016f8c892c93cd787c8367f96ff",
+    "FolderMonitor.swift": "ce107a134183a6fb5d7dca3c369ec060c561991155a16f3255318672dcf4a49a",
+    "ImageExport.swift": "b11106d85f4fc0af9aaf679eb5ef33e4fbb7903d878e59b46f12672d9ae6d03f",
+    "Localization.swift": "a0b62d4c5796a7df7080798c2299985cd51c2e3ce44d6d75720370c5df7a7c21",
+    "PDFExportOptions.swift": "5c48e7a7f3a2fe240af4d906a46192a47a1654726ce0f7f0155019ae0f1d9cc6",
+    "PreferencesController.swift": "0a7efd42008e5fdc79e1d8b05d11be2af14552972d69e8cc29d2dcd671a0ab35",
+    "RepeatExport.swift": "8aecaa922cdbd34064f9feb2f8f5061f4a1d09518e7c99676a20dc22594dc3a4"
+  },
+  "performExportVerbatimSHA256": "359d400c104a3ef0372197347e277271178598867e087642cded2f3d1ac3e4df",
+  "performExportBodyUnchanged": true,
+  "otherNativeCopiesVerbatim": true,
+  "compiler": {
+    "passed": true,
+    "diagnostics": ""
+  },
+  "process": {
+    "exitCode": 0,
+    "stderr": "2026-10-19 23:55:11.651 producer-probe[89996:4063084] Failure on line 688 in function id scheduleApplicationNotification(LSNotificationCode, NSWorkspaceNotificationCenter *): noErr == _LSModifyNotification(notificationID, 1, &code, 0, NULL, NULL, NULL)\n2026-10-19 23:55:12.143 producer-probe[89996:4063119] Connection Invalid error for service com.apple.hiservices-xpcservice.\n2026-10-19 23:55:12.143 producer-probe[89996:4063084] Error received in message reply handler: Connection invalid\n"
+  },
+  "actualProducers": {
+    "cases": [
+      {
+        "editorTextPreserved": true,
+        "name": "override.epub",
+        "options": {
+          "extraArguments": "--toc-depth=2",
+          "toc-depth": 1,
+          "type": "epub"
+        },
+        "pendingCommands": [
+          "exportFinished"
+        ],
+        "readyWasFalse": true,
+        "snapshot": "---\ntitle: QA_PRODUCER\n---\n\n# QA_PRODUCER_H1 中文\n\n## QA_PRODUCER_H2\n\n### QA_PRODUCER_H3\n\nCURRENT_EPUB_SNAPSHOT 中文\n",
+        "sourceIdentityPreserved": true,
+        "target": "/Users/lkc/Code/typora-replica/.cache/export-settings-producers/override.epub",
+        "tasksEmpty": true
+      },
+      {
+        "editorTextPreserved": true,
+        "name": "override.md",
+        "options": {
+          "ascii": true,
+          "columns": 130,
+          "eol": "crlf",
+          "extraArguments": "--columns=40",
+          "hardLineWrap": true,
+          "markdown-headings": "atx",
+          "reference-links": true,
+          "reference-location": "block",
+          "type": "markdown",
+          "variants": "markdown"
+        },
+        "pendingCommands": [
+          "exportFinished"
+        ],
+        "readyWasFalse": true,
+        "snapshot": "# QA_MARKDOWN_CURRENT\n\nword01 word02 word03 word04 word05 word06 word07 word08 word09 word10 word11 word12 word13 word14 word15 word16 word17 word18 word19 word20 word21 word22 word23 word24 word25 word26 word27 word28 word29 word30 word31 word32 word33 word34 word35 word36 word37 word38 word39 word40 word41 word42 word43 word44 word45 word46 word47 word48 word49 word50 word51 word52 word53 word54 word55 word56 word57 word58 word59 word60\n\n中文 é\n\n[qa-link](https://example.invalid/fixture)\n",
+        "sourceIdentityPreserved": true,
+        "target": "/Users/lkc/Code/typora-replica/.cache/export-settings-producers/override.md",
+        "tasksEmpty": true
+      },
+      {
+        "editorTextPreserved": true,
+        "name": "auto.html",
+        "options": {
+          "extraArguments": "",
+          "targetFormat": "",
+          "type": "pandoc"
+        },
+        "pendingCommands": [
+          "exportFinished"
+        ],
+        "readyWasFalse": true,
+        "snapshot": "---\ntitle: QA_AUTO_HTML\n---\n\n# QA_AUTO_DETECT_HTML 中文\n\nCURRENT_AUTO_SNAPSHOT 中文\n",
+        "sourceIdentityPreserved": true,
+        "target": "/Users/lkc/Code/typora-replica/.cache/export-settings-producers/auto.html",
+        "tasksEmpty": true
+      }
+    ],
+    "completed": true,
+    "error": null,
+    "errors": [],
+    "pid": 89996,
+    "visibleWindows": 0
+  },
+  "pandocSHA256": "287e725a56ed196e1820d25acaecc48b769f9489221bd86ad2d44932e98e9af7",
+  "nativeSourcesUnchanged": true,
+  "probeScriptSHA256": "083951989756298ca10b0163885504c97a63ea39c6531018953fd6cd7942a3da",
+  "compiledProbeSHA256": "d6ab30b272209260164ab29b373b10c4104503989f31d995b7a54f5ff1636314",
+  "runnerSHA256": "f23fb8b4b96c0d28e6c6aaff48caf0cf018dacf3964f8e9b86cece5394c65446",
+  "outputs": {
+    "override.epub": {
+      "bytes": 5579,
+      "sha256": "7c421581d56821ea4836f9965b803dfc2678098028ffcd866e2e38777ca0feff"
+    },
+    "override.md": {
+      "bytes": 547,
+      "sha256": "0797d3b91ff9647181aaeaaa7a0eb89befc87bd743de4ac120322f5cfd85964f"
+    },
+    "auto.html": {
+      "bytes": 4337,
+      "sha256": "164d87c9118c501d94ca75b4958592060369278810670dca14a4c7caf0400b10"
+    }
+  },
+  "temporaryCompileFilesRemoved": true
+}

@@ -1,0 +1,204 @@
+{
+  "checks": [
+    {
+      "detail": "",
+      "name": "initial snapshot arrives",
+      "ok": true
+    },
+    {
+      "detail": "ticks=308, largestGap=0.056497931480407715",
+      "name": "main loop remains responsive during initial enumeration",
+      "ok": true
+    },
+    {
+      "detail": "count=5107",
+      "name": "all 5107 Markdown files retained",
+      "ok": true
+    },
+    {
+      "detail": "assets,empty,nested,nested/deeper",
+      "name": "empty and resource-only directories included",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "existing file schema preserved",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "root add",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "root rename",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "root delete",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "nested add",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "nested rename including uppercase supported extension",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "nested delete",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "new nested directory and file",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "directory rename updates descendants",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "new directory remains monitored",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "directory removal updates descendants",
+      "ok": true
+    },
+    {
+      "detail": "before=11, after=11",
+      "name": "unchanged membership emits no repeated full payload",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "burst reaches complete snapshot",
+      "ok": true
+    },
+    {
+      "detail": "deliveries=1",
+      "name": "burst events coalesced",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "folder refresh preserves unsaved edits and true file identity",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "folder refresh never sends document load",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "recovery records unsaved copy without source file identity",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "recovery retains origin and selected folder",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "new recovery decoder preserves independent origin and folder",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "production restore preserves unsaved identity and text",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "restored copy saves to explicit new destination",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "legacy recovery accepts saved path with no new keys",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "legacy restoration still reads saved file baseline",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "legacy untitled defaults remain compatible",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "relative paths and URL strings cannot acquire native file identity",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "invalid recovery data is rejected",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "new recovery preserves UTF16 text and BOM",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "switch folder delivers its own initial snapshot",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "folder switch persists the selected folder for edited document",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "old folder cannot deliver after switch",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "document close cancels pending and future folder deliveries",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "close removes only isolated recovery",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "source document never overwritten",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "stop invalidates an already queued main delivery",
+      "ok": true
+    }
+  ],
+  "error": "",
+  "observationBackend": "fsevents",
+  "ok": true,
+  "productionSerializationAndDocumentLifecycleUsed": true,
+  "realFilesystemEvents": true,
+  "recoveryStorageRedirectedInTestCopy": true,
+  "testStorage": "temporary directory",
+  "uiFocusTested": false,
+  "compileSucceeded": true,
+  "elapsedSeconds": 85.75
+}

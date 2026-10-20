@@ -1,0 +1,176 @@
+{
+  "generatedAt": "2026-10-19T15:28:33.892Z",
+  "scope": "Focused TypeScript model counterexamples; no native/UI/format conversion claim",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Adding a PDF preset cannot reuse a fixed tab identity",
+      "passed": true
+    },
+    {
+      "name": "Imported/corrupt settings cannot collide with fixed tabs or another entry",
+      "passed": true,
+      "detail": [
+        "pdf1",
+        "docx",
+        "docx1"
+      ]
+    },
+    {
+      "name": "Current YAML overrides frozen base for one invocation",
+      "passed": true
+    },
+    {
+      "name": "Removing YAML Bar returns to frozen base Foo, not old effective Bar or new global",
+      "passed": true,
+      "detail": "Foo"
+    },
+    {
+      "name": "Frozen nested paper arrays cannot alias mutable settings",
+      "passed": true,
+      "detail": [
+        148,
+        210
+      ]
+    },
+    {
+      "name": "PDF removes only YAML append overlay and retains global appendBody",
+      "passed": true,
+      "detail": {
+        "paper": "",
+        "paper.custom": [
+          148,
+          210
+        ],
+        "paper.margin": "",
+        "paper.marginTop": 16,
+        "paper.marginBottom": 16,
+        "paper.marginLeft": 16,
+        "paper.marginRight": 16,
+        "exportTheme": "",
+        "splitPages": false,
+        "header": "Foo",
+        "footer": "",
+        "author": "",
+        "appendBody": "<p>GLOBAL_APPEND</p>",
+        "allowPerFileSetting": true,
+        "userAppendBody": true,
+        "type": "pdf",
+        "key": "pdf"
+      }
+    },
+    {
+      "name": "YAML toggle blocks extended keys while base metadata remains active",
+      "passed": true
+    },
+    {
+      "name": "Prefixed false follows original truthy fallback to ordinary true",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "Unset falls through to frozen base header",
+      "passed": true
+    },
+    {
+      "name": "Lowercase base truthy value precedes capitalized YAML fallback",
+      "passed": true,
+      "detail": "Foo"
+    },
+    {
+      "name": "Capitalized YAML applies when earlier base is empty",
+      "passed": true
+    },
+    {
+      "name": "Arbitrary uppercase YAML spelling is not silently casefolded",
+      "passed": true
+    },
+    {
+      "name": "Standard YAML handles aliases, flow lists and block scalars",
+      "passed": true
+    },
+    {
+      "name": "Custom executable YAML tags never become callable values",
+      "passed": true
+    },
+    {
+      "name": "Pandoc extras cannot bypass controlled target: -o/tmp/source.md",
+      "passed": true,
+      "detail": "PandocExtraRejectedError: Pandoc extra arguments cannot override the export source or destination: -o/tmp/source.md"
+    },
+    {
+      "name": "Pandoc extras cannot bypass controlled target: --output=/tmp/source.md",
+      "passed": true,
+      "detail": "PandocExtraRejectedError: Pandoc extra arguments cannot override the export source or destination: --output=/tmp/source.md"
+    },
+    {
+      "name": "Pandoc extras cannot bypass controlled target: -o /tmp/source.md",
+      "passed": true,
+      "detail": "PandocExtraRejectedError: Pandoc extra arguments cannot override the export source or destination: -o /tmp/source.md"
+    },
+    {
+      "name": "Pandoc extras cannot bypass controlled target: --log=/tmp/source.md",
+      "passed": true,
+      "detail": "PandocExtraRejectedError: Pandoc extra arguments cannot override the export source or destination: --log=/tmp/source.md"
+    },
+    {
+      "name": "Pandoc extras cannot bypass controlled target: --out=/tmp/source.md",
+      "passed": true,
+      "detail": "PandocExtraRejectedError: Pandoc extra arguments cannot override the export source or destination: --out=/tmp/source.md"
+    },
+    {
+      "name": "Pandoc extras cannot bypass controlled target: --lo=/tmp/source.md",
+      "passed": true,
+      "detail": "PandocExtraRejectedError: Pandoc extra arguments cannot override the export source or destination: --lo=/tmp/source.md"
+    },
+    {
+      "name": "Pandoc extras cannot bypass controlled target: --defaults=unsafe.yaml",
+      "passed": true,
+      "detail": "PandocExtraRejectedError: Pandoc extra arguments cannot override the export source or destination: --defaults=unsafe.yaml"
+    },
+    {
+      "name": "Quoted Unicode resource paths stay one argv element",
+      "passed": true
+    },
+    {
+      "name": "Unquoted escaped spaces retain one argv path",
+      "passed": true,
+      "detail": [
+        "--css",
+        "/tmp/a b.css"
+      ]
+    },
+    {
+      "name": "Backslash before ordinary character in double quotes is preserved",
+      "passed": true,
+      "detail": [
+        "--css",
+        "/tmp/a\\b.css"
+      ]
+    },
+    {
+      "name": "Unterminated argument quotes produce a clear error",
+      "passed": true
+    },
+    {
+      "name": "Generated custom IDs and menu ordering agree",
+      "passed": true
+    },
+    {
+      "name": "Entry options populate preferences before editing",
+      "passed": true
+    },
+    {
+      "name": "Explicit preferences edit overrides legacy entry options",
+      "passed": true
+    },
+    {
+      "name": "Absent per-format folder flag inherits General true",
+      "passed": true
+    },
+    {
+      "name": "Explicit per-format false overrides General true",
+      "passed": true
+    }
+  ]
+}

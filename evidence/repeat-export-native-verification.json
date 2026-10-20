@@ -1,0 +1,546 @@
+{
+  "generatedAt": "2026-10-19T13:20:35.018313+00:00",
+  "bundleIdentifier": "com.openai.typora-replica.repeat-export-verifier.59a5e106fcc24b6dacccb433bc7af3ad",
+  "verifierBundle": "/Users/lkc/Code/typora-replica/.cache/repeat-export-native/RepeatExportVerifier.app",
+  "compiler": {
+    "passed": true,
+    "target": "macOS13 / Swift5",
+    "diagnostics": ""
+  },
+  "rendererBuild": {
+    "passed": true,
+    "outputDirectory": "/Users/lkc/Code/typora-replica/.cache/repeat-export-native/renderer"
+  },
+  "adHocSignature": {
+    "passed": true,
+    "diagnostics": ""
+  },
+  "sourceSHA256": {
+    "native/App.swift": "f3dfc87ca5024a466d72e5beddadb2d69154d06a3a2cced4717c650c41188aad",
+    "native/Clipboard.swift": "069978ada014364b22007d7a271cd0af8ccf87ca8f9841a5abe6ea541a10c879",
+    "native/DocumentConversion.swift": "8feda6c31aad47ee3bfd5a3380f2ede07fbbd485c6c7ff0d0f2c22817e4c6341",
+    "native/ExportAssets.swift": "8c689c854b72431d08379d090ae71a189dcd8b14527bd5ff44e00a743660e9c5",
+    "native/FolderMonitor.swift": "ce107a134183a6fb5d7dca3c369ec060c561991155a16f3255318672dcf4a49a",
+    "native/ImageExport.swift": "ecf0b0c400de4df37140de0f742b9eb73d0560854b021701321b82df4b1b84b9",
+    "native/Localization.swift": "a0b62d4c5796a7df7080798c2299985cd51c2e3ce44d6d75720370c5df7a7c21",
+    "native/RepeatExport.swift": "55184f782cce32302627ad11d08e4e51944e82aa3530a8fc85f44c640681bfb0",
+    "src/bridge.ts": "4ed6f5e48ee711a52baf567e2fde4650262d368b4b5609f69856bf3f5cdfb733",
+    "src/commands.ts": "3fbd9ec01191e4d518804c82559e448d972b3be0afd748b96a3a82ddfc0a4c8d",
+    "src/editor/clipboard-gfm.d.ts": "e16d6233e10d55ed14326eb30be9534e36ad5ec2d58993fbcd78e13660ae7675",
+    "src/editor/clipboard.ts": "a21e6432dcf8828d89438ea2e5c9d9b82de11e9d7382823898a0526aa57af055",
+    "src/editor/format.ts": "3fe42c351e1e514adc1a5c7bb8e37a8119e107192fef511e3ca36beb4af35261",
+    "src/editor/livepreview.ts": "86799dd924805ae31cdb6643be2a1dc4cbaa3d8850eaf33d39102cb11b69e41d",
+    "src/editor/mathparser.ts": "6629a121bfa724101a34d120dec070ae1af55ea2f1a441cfb22fd95446c3fc50",
+    "src/editor/product-commands.ts": "ec21c635904a4f5a8896909b75089c6d23e5e524e0fa30b44bd43c2e686b54d6",
+    "src/editor/product-markdown.ts": "82a0e9f41859265fdbde1b9ad7f8a01455d44c5121d8b27eab1e22f5132db166",
+    "src/editor/searchpanel.ts": "9d946e180c8adcf65c749157527e79a917ba3a50253d6239ee4d658b4d2f193d",
+    "src/editor/setup.ts": "b75fc5b1023a27379729d849664853e3218c3ac8f044b961f06068fc75f8a4e3",
+    "src/editor/table-editor.ts": "e8e3a42621eefeb7044200966e5d7cdfdb4458112a70b3a1de53fc5fcc79ecaf",
+    "src/editor/widgets.ts": "ac8d6259759b45c3eb7f62b032810888513e7eb19f8e11c6475c8ba09b8fb994",
+    "src/export-formats.ts": "9087e812b768ae966171fbddd734149c8ba84a4a95a06defc1237aaa60ea9fe5",
+    "src/export.ts": "3a43b2c4cda60d0ee22f042d5cdd99ce0c1645350178c6b8be868ddc751d4c49",
+    "src/i18n.ts": "947d0f923a192f39824baa17db24c6c2587c69e525ffd3cf2b3e4830053440f4",
+    "src/main.ts": "c3bba8fdfa75d4acd430e84b94445d055130f1acfed8ccefb3941848456a1517",
+    "src/markdown-tables.ts": "b723d1a99cc3a69271b6abdbc6c1963da33f18e9f00be2d0766ebc1ec6c7348f",
+    "src/outline.ts": "41237e862a90429c99545131a6edb71c039774bcac2193ba11aae752b40ffb05",
+    "src/store.ts": "d03cd316c053eee1cd265bd43eef5554c7eab3953a81ac8fd751a68e518fd247",
+    "src/types.ts": "28c76d9f90e841d9fedd75d800fc4820c5e5d66e4dd81edfa79b4ced03489bfa",
+    "src/ui/dialogs.ts": "87b8ac82e991093eeba3e0b0ddb48a8e5c2991a3946f1ac2a9363fbe30db265f",
+    "src/ui/menubar.ts": "961a20d354d39674c1a9a6d47f3de5da2dc059139ceab80ebec4b7218315a3e7",
+    "src/ui/menuspec.ts": "15c53cbac936e00bdb73e34fc93f7d761915458bc9539fb7f7f1365dc718c2a6",
+    "src/ui/sidebar.ts": "a95019f8e0486dc51a347486f232f5852155a48e08e0e40cb0e4126853d55011",
+    "src/ui/statusbar.ts": "ff4c4f055a495737d6f231b6efd34eb5f4e93f3bbc7d8edb8abca3264629b645",
+    "src/wordcount.ts": "56abfce3c5a0e78c8ad64bee589bdc8ac6340aea88ed74dbb8608b5c290b044f",
+    "src/editor/product-markdown.css": "f0e9d3020bc104f5bbf28ae8d817fffad9038eff9fbe648f55004d05ecac60c4",
+    "src/editor/table-editor.css": "729f46ace5382928ba304743fab10ab463bf2d17e688ecc4ed1edea1c88539cf",
+    "src/styles/base.css": "3fdd32a99743d4b571e17169b16f6a922fef553519234a5a8cfdd0121053a215",
+    "src/themes/github.css": "9be6672a171679354f12c2de21e884926fae424502089bd1b590db80a62929c2",
+    "src/themes/gothic.css": "092df00dd103640d685729a40dc423f33330651f241110eb5cd6e6955602eac4",
+    "src/themes/newsprint.css": "1bab4749ff190eb6f32622ea75b53ddf465bf2f705e4bbb4567cc64b32336a84",
+    "src/themes/night.css": "73ef9e72cc3ce8f2d224dc4cc1d953574943afdb2676ca1f5416e69e6f47b33c",
+    "src/themes/pixyll.css": "15820390c91d3deb7a3b8d24ce5254dcde2db4538e38880875245582a41b09c7",
+    "src/themes/whitey.css": "14c49fef6b54d0d079c2a166507cd802ba6ae70a978376bb17df6818ca38e1d7",
+    "src/ui/sidebar-tree.css": "621104067ee3293647d62478e2f3d9e33a2c7b7212eac2fa1e03d2e7f3419bd9",
+    "src/ui/ui.css": "e14807ca4342f1f3fdde6da3d00738b785aa6f548bc7bae87fd45d75aeffe751"
+  },
+  "bundledPandocSHA256": "287e725a56ed196e1820d25acaecc48b769f9489221bd86ad2d44932e98e9af7",
+  "actualNative": {
+    "actualProductionNative": true,
+    "actualProductionRenderer": true,
+    "bundleIdentifier": "com.openai.typora-replica.repeat-export-verifier.59a5e106fcc24b6dacccb433bc7af3ad",
+    "checks": [
+      {
+        "detail": {},
+        "name": "No history disables both native repeat menu items",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Captured repeat shortcut is Control+Command+E; overwrite has none",
+        "passed": true
+      },
+      {
+        "detail": {
+          "actualName": "source-a.html",
+          "expectedName": "source-a.html"
+        },
+        "name": "Step 0: save panel default name and last directory",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Initial Save Cancel does not create history",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 0: source files and document identity preserved",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 0: export leaves current unsaved editor text unchanged",
+        "passed": true
+      },
+      {
+        "detail": {
+          "actualName": "source-a.html",
+          "expectedName": "source-a.html"
+        },
+        "name": "Step 1: save panel default name and last directory",
+        "passed": true
+      },
+      {
+        "detail": {
+          "bytes": 423,
+          "path": "/Users/lkc/Code/typora-replica/.cache/repeat-export-native/fixture 中文 #100%/chosen-output.html"
+        },
+        "name": "Step 1: real renderer exports current unsaved content",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 1: confirmed destination enables both repeat menus",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 1: source files and document identity preserved",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 1: export leaves current unsaved editor text unchanged",
+        "passed": true
+      },
+      {
+        "detail": {
+          "actualName": "chosen-output.html",
+          "expectedName": "chosen-output.html"
+        },
+        "name": "Step 2: save panel default name and last directory",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Previous Save Cancel preserves accepted export bytes/history",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 2: source files and document identity preserved",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 2: export leaves current unsaved editor text unchanged",
+        "passed": true
+      },
+      {
+        "detail": {
+          "actualName": "chosen-output.html",
+          "expectedName": "chosen-output.html"
+        },
+        "name": "Step 3: save panel default name and last directory",
+        "passed": true
+      },
+      {
+        "detail": {
+          "bytes": 423,
+          "path": "/Users/lkc/Code/typora-replica/.cache/repeat-export-native/fixture 中文 #100%/second-output.html"
+        },
+        "name": "Step 3: real renderer exports current unsaved content",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 3: confirmed destination enables both repeat menus",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 3: source files and document identity preserved",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 3: export leaves current unsaved editor text unchanged",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Overwrite warning Cancel preserves export bytes/history",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 4: source files and document identity preserved",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 4: export leaves current unsaved editor text unchanged",
+        "passed": true
+      },
+      {
+        "detail": {
+          "bytes": 423,
+          "path": "/Users/lkc/Code/typora-replica/.cache/repeat-export-native/fixture 中文 #100%/second-output.html"
+        },
+        "name": "Step 5: real renderer exports current unsaved content",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 5: confirmed destination enables both repeat menus",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Direct overwrite uses confirmation without NSSavePanel",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 5: source files and document identity preserved",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 5: export leaves current unsaved editor text unchanged",
+        "passed": true
+      },
+      {
+        "detail": {
+          "bytes": 423,
+          "path": "/Users/lkc/Code/typora-replica/.cache/repeat-export-native/fixture 中文 #100%/second-output.html"
+        },
+        "name": "Step 6: real renderer exports current unsaved content",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 6: confirmed destination enables both repeat menus",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "App-domain suppression skips overwrite warning/save panel",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 6: source files and document identity preserved",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 6: export leaves current unsaved editor text unchanged",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Switch keeps repeat format but disables direct overwrite",
+        "passed": true
+      },
+      {
+        "detail": {
+          "actualName": "source-b.html",
+          "expectedName": "source-b.html"
+        },
+        "name": "Step 7: save panel default name and last directory",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Switched Previous Cancel retains disabled overwrite",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 7: source files and document identity preserved",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 7: export leaves current unsaved editor text unchanged",
+        "passed": true
+      },
+      {
+        "detail": {
+          "actualName": "source-b.html",
+          "expectedName": "source-b.html"
+        },
+        "name": "Step 8: save panel default name and last directory",
+        "passed": true
+      },
+      {
+        "detail": {
+          "bytes": 423,
+          "path": "/Users/lkc/Code/typora-replica/.cache/repeat-export-native/fixture 中文 #100%/source-b.html"
+        },
+        "name": "Step 8: real renderer exports current unsaved content",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 8: confirmed destination enables both repeat menus",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 8: source files and document identity preserved",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 8: export leaves current unsaved editor text unchanged",
+        "passed": true
+      },
+      {
+        "detail": {
+          "actualName": "source-b.docx",
+          "expectedName": "source-b.docx"
+        },
+        "name": "Step 9: save panel default name and last directory",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Accepted destination remains repeatable after real Pandoc failure",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 9: source files and document identity preserved",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 9: export leaves current unsaved editor text unchanged",
+        "passed": true
+      },
+      {
+        "detail": {
+          "actualName": "source-b.docx",
+          "expectedName": "source-b.docx"
+        },
+        "name": "Step 10: save panel default name and last directory",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Failed export history survives Previous Cancel",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 10: source files and document identity preserved",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Step 10: export leaves current unsaved editor text unchanged",
+        "passed": true
+      }
+    ],
+    "fixture": "/Users/lkc/Code/typora-replica/.cache/repeat-export-native/fixture 中文 #100%",
+    "historyPersistence": "in-memory only",
+    "panels": [
+      {
+        "directory": "/Users/lkc/Code/typora-replica/.cache/repeat-export-native/fixture 中文 #100%",
+        "kind": "save",
+        "name": "source-a.html",
+        "step": 0
+      },
+      {
+        "directory": "/Users/lkc/Code/typora-replica/.cache/repeat-export-native/fixture 中文 #100%",
+        "kind": "save",
+        "name": "source-a.html",
+        "step": 1
+      },
+      {
+        "directory": "/Users/lkc/Code/typora-replica/.cache/repeat-export-native/fixture 中文 #100%",
+        "kind": "save",
+        "name": "chosen-output.html",
+        "step": 2
+      },
+      {
+        "directory": "/Users/lkc/Code/typora-replica/.cache/repeat-export-native/fixture 中文 #100%",
+        "kind": "save",
+        "name": "chosen-output.html",
+        "step": 3
+      },
+      {
+        "kind": "alert",
+        "step": 4,
+        "title": ""
+      },
+      {
+        "kind": "alert",
+        "step": 5,
+        "title": ""
+      },
+      {
+        "directory": "/Users/lkc/Code/typora-replica/.cache/repeat-export-native/fixture 中文 #100%",
+        "kind": "save",
+        "name": "source-b.html",
+        "step": 7
+      },
+      {
+        "directory": "/Users/lkc/Code/typora-replica/.cache/repeat-export-native/fixture 中文 #100%",
+        "kind": "save",
+        "name": "source-b.html",
+        "step": 8
+      },
+      {
+        "directory": "/Users/lkc/Code/typora-replica/.cache/repeat-export-native/fixture 中文 #100%",
+        "kind": "save",
+        "name": "source-b.docx",
+        "step": 9
+      },
+      {
+        "directory": "/Users/lkc/Code/typora-replica/.cache/repeat-export-native/fixture 中文 #100%",
+        "kind": "save",
+        "name": "source-b.docx",
+        "step": 10
+      }
+    ],
+    "pid": 69490,
+    "status": "passed",
+    "step": 10,
+    "warningPreferenceScope": "unique QA app domain",
+    "unchangedSources": {
+      "native/App.swift": true,
+      "native/Clipboard.swift": true,
+      "native/DocumentConversion.swift": true,
+      "native/ExportAssets.swift": true,
+      "native/FolderMonitor.swift": true,
+      "native/ImageExport.swift": true,
+      "native/Localization.swift": true,
+      "native/RepeatExport.swift": true,
+      "src/bridge.ts": true,
+      "src/commands.ts": true,
+      "src/editor/clipboard-gfm.d.ts": true,
+      "src/editor/clipboard.ts": true,
+      "src/editor/format.ts": true,
+      "src/editor/livepreview.ts": true,
+      "src/editor/mathparser.ts": true,
+      "src/editor/product-commands.ts": true,
+      "src/editor/product-markdown.ts": true,
+      "src/editor/searchpanel.ts": true,
+      "src/editor/setup.ts": true,
+      "src/editor/table-editor.ts": true,
+      "src/editor/widgets.ts": true,
+      "src/export-formats.ts": true,
+      "src/export.ts": true,
+      "src/i18n.ts": true,
+      "src/main.ts": true,
+      "src/markdown-tables.ts": true,
+      "src/outline.ts": true,
+      "src/store.ts": true,
+      "src/types.ts": true,
+      "src/ui/dialogs.ts": true,
+      "src/ui/menubar.ts": true,
+      "src/ui/menuspec.ts": true,
+      "src/ui/sidebar.ts": true,
+      "src/ui/statusbar.ts": true,
+      "src/wordcount.ts": true,
+      "src/editor/product-markdown.css": true,
+      "src/editor/table-editor.css": true,
+      "src/styles/base.css": true,
+      "src/themes/github.css": true,
+      "src/themes/gothic.css": true,
+      "src/themes/newsprint.css": true,
+      "src/themes/night.css": true,
+      "src/themes/pixyll.css": true,
+      "src/themes/whitey.css": true,
+      "src/ui/sidebar-tree.css": true,
+      "src/ui/ui.css": true
+    },
+    "independentOutputDecode": {
+      "chosen-output.html": {
+        "bytes": 423,
+        "html": true,
+        "embeddedPNG": true,
+        "noSourceDiskText": true,
+        "latestStep": 1,
+        "latestUnsavedSnapshot": true,
+        "passed": true
+      },
+      "second-output.html": {
+        "bytes": 423,
+        "html": true,
+        "embeddedPNG": true,
+        "noSourceDiskText": true,
+        "latestStep": 6,
+        "latestUnsavedSnapshot": true,
+        "passed": true
+      },
+      "source-b.html": {
+        "bytes": 423,
+        "html": true,
+        "embeddedPNG": true,
+        "noSourceDiskText": true,
+        "latestStep": 8,
+        "latestUnsavedSnapshot": true,
+        "passed": true
+      }
+    }
+  },
+  "scope": "Real production renderer/native repeat export; own app/UI only",
+  "passed": true,
+  "observedNativeUI": {
+    "tool": "mcp__open_computer_use",
+    "launch": "Own new Finder window; double-click exact project QA .app",
+    "scenarios": 11,
+    "finalWindowTitle": "PASS repeat export 51/51",
+    "initialSavePanel": "source-a.html in fixture 中文 #100%",
+    "repeatSavePanel": "chosen-output.html, then last accepted second-output.html",
+    "switchSavePanel": "source-b.html in stored destination directory",
+    "overwriteWarning": "Chinese target-path warning, Continue/Cancel and unchecked suppression checkbox",
+    "suppression": "Checked, Continue; next overwrite had no sheet",
+    "realFailure": "Pandoc exit64 for malformed YAML; dismissed actual error; next Previous default was source-b.docx",
+    "mainAppPID64335Touched": false,
+    "verifierCloseClicked": true,
+    "ownFinderWindowClosed": true
+  },
+  "temporaryVerifierRemoved": true,
+  "subsequentUnrelatedSourceChanges": {
+    "files": {
+      "src/themes/newsprint.css": {
+        "verifiedSHA256": "1bab4749ff190eb6f32622ea75b53ddf465bf2f705e4bbb4567cc64b32336a84",
+        "currentSHA256": "c1bc170dd7235a026f127b276991da616748020bbe8352e47537387c9a37dc3b"
+      },
+      "src/themes/pixyll.css": {
+        "verifiedSHA256": "15820390c91d3deb7a3b8d24ce5254dcde2db4538e38880875245582a41b09c7",
+        "currentSHA256": "f44bc253c137243a27832e008eb35d2a6c1db4f8cdd9a7200956d86a0d3ee169"
+      },
+      "src/themes/whitey.css": {
+        "verifiedSHA256": "14c49fef6b54d0d079c2a166507cd802ba6ae70a978376bb17df6818ca38e1d7",
+        "currentSHA256": "ca9d9736662f5023b93450d23eacb372b7bad47b7c3ddb2adc8fdb0fe9b527af"
+      }
+    },
+    "reason": "Coordinator subsequently adjusted pre margin-top in Newsprint/Pixyll/Whitey to match Typora UA 1em. These CSS-only changes do not alter the tested repeat-export behavior. Native/menu/bridge sources remain the verified version. No unrelated repeat of the native UI scenarios was performed."
+  }
+}

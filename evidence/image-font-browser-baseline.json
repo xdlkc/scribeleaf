@@ -1,0 +1,4393 @@
+{
+  "generatedAt": "2026-10-19T14:56:29.306Z",
+  "context": {
+    "url": "http://127.0.0.1:5182/",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36"
+  },
+  "referenceHashes": {
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/base.css": "930bfe65abd28df92c4b485940c337ac91947fff16bb68e790c8a4a05db4514d",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/github.css": "0225b3c456252023b46d71b05c7ae592ac247207d5e4aabd99a1f07ef70d02a0",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/github/open-sans-v17-latin-ext_latin-regular.woff2": "537d46273fe124bbced2f098f26222fa3155741e9d76f906c3c39e7fa09bf6a8",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/github/open-sans-v17-latin-ext_latin-italic.woff2": "8ddc89881ca5f355826d20b2229266c56a2c8d7be69ff9533b1891b55dc15825",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/github/open-sans-v17-latin-ext_latin-700.woff2": "59a3166f7bacce6a65bf901ad20f141b619bca39a1318ea5efbdaa587b48a800",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/github/open-sans-v17-latin-ext_latin-700italic.woff2": "a250cc9c90a94d628301cbeaca7d8aa6276cda73c8a32af07d3ede513447931a",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/gothic.css": "bfdc69b8ea083ca1e52c5be9cac658953d96617bbca1e9f92f630f3f96b4a758",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/gothic/texgyreadventor-regular.woff": "a05e1db555ee9870a8a59cd13599d3452fbba2fc2a7ec708c34503067734e410",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/gothic/texgyreadventor-bold.woff": "66ec1b68a5b9121a11e6e67914084bbba10698257a7efa5a22b4f6dcd29f5882",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/gothic/texgyreadventor-italic.woff": "5f9817cc442fa3a02872c297a074fd713dc7a2194e5d67b424b0dcf3ffb06860",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/gothic/texgyreadventor-bolditalic.woff": "95c7d7e03da6219a85e4a3ac1dc9ff327fdb8646fc18b889afacfd49a6947e8d",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/gothic/didact-gothic-c-ext.woff2": "4c3ce7d5fb8b7082e11d6ba6972cedd58875573387f32525630a25a78f32507e",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/gothic/didact-gothic-c.woff2": "bba9bd182bb9dc301b7fb8890ba108b38ab17ea94132253b6f344d3a4f4b86f5",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/night.css": "8a88f1e138d30240234cdfd50fe7e7efc393dda4de4ff4284e6fa2aedb6b5f25",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/night/mermaid.dark.css": "6a2571cceda6259f785383910be615ef2e4b05dde21bbe08ca64cc22115afc57",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/night/codeblock.dark.css": "35128e810df10cdb0913f4f094ed0d1fbe86a2ca9859a21ef58fd6cd29f1f9df",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/night/sourcemode.dark.css": "506a99d9e092d822da39c674a07216b17c945ac0cd9ab2cddc78834f4c8e6891",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/newsprint.css": "74f8e327abb48ac331dc1096c1e244d20ff9f5b05beb1204e9867b919cdecade",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/newsprint/pt-serif-v11-latin-regular.woff2": "ef391572f9fbb7bab7fef6ce2c4fc92ad68a8c148889a79cb9f9b1452d851fab",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/newsprint/pt-serif-v11-latin-italic.woff2": "be5daba1b69c2dad0eed50cc17bea9659ab23d79d8d412dc8e5c6013b41f39c3",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/newsprint/pt-serif-v11-latin-700.woff2": "e548abcd8734bfcf8b4ebbbca1af98f9e8ae1e0ff884c0971f29498a4fc108f4",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/newsprint/pt-serif-v11-latin-700italic.woff2": "e1bd3f9f50d4876fc67111ab41b60880f08b2eb89f8a0075c2ad3394a79c4063",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/pixyll.css": "90e27bc256d6ce61802e7f643bdc7bd9956b04013b3b36b00e1a4b191ff4fe8d",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/pixyll/merriweather-v19-latin-300.woff": "b218f71fe5aed94274e74900d26a23a2d1cb3f4ce996a91f8fcdc12225eec3ad",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/pixyll/merriweather-v19-latin-700.woff": "9f3beb1842e820a05015f6f441dfb98bb81172128d43b2397db83134c75c38f1",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/pixyll/merriweather-v19-latin-300italic.woff": "f913b4b7095e46a38b950817327530cb8408c72455d961540b19d56d4c955c5e",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/pixyll/merriweather-v19-latin-700italic.woff": "b86cf6cbe82990b92fc7657f24c2a05c9c07be31b97f560d6ea4772d99221f27",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/pixyll/lato-v14-latin-300.woff": "8084a57f30a2d3d730b5d25b8d2ccb18369d90d333144231704418d555c20c0f",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/pixyll/lato-v14-latin-900.woff": "2a6deb3135f92894e02fc63f6faa395e639fd44bfb3e7664608746715cd21bb7",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/pixyll/lato-v14-latin-300italic.woff": "cca6a06b797908e58ca2f61c3572dcc8c38ad954cfd5c4b28f054b5ab5722ff0",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/pixyll/lato-v14-latin-900italic.woff": "dc77515a1fa579cc5fd321b71ea6c86b7c87dc131fdff7793c8441cfd1ea96b4",
+    "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/whitey.css": "93b2c21baa15b08f6b355d0d2e422b7d1e75562f9f36dcf90d0796234d1202ab"
+  },
+  "buildHashes": {
+    ".cache/export-settings-dist/editor/assets/index-BfdYJ86G.js": "dc32af29ee565a497768945e7f38dc0a956b0e3aa1e31dd12e4ea37e835cf62f",
+    ".cache/export-settings-dist/editor/assets/style-C14Qv7q1.css": "6f537ac2554e9e83200990b303ccd4ce2e4b6d762f581ee6253933861edaa194"
+  },
+  "results": [
+    {
+      "checks": [
+        {
+          "actual": "16px",
+          "name": "p",
+          "passed": true,
+          "property": "font-size",
+          "reference": "16px"
+        },
+        {
+          "actual": "25.6px",
+          "name": "p",
+          "passed": true,
+          "property": "line-height",
+          "reference": "25.6px"
+        },
+        {
+          "actual": "12.8px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "12.8px"
+        },
+        {
+          "actual": "12.8px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "12.8px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "36px",
+          "name": "h1",
+          "passed": true,
+          "property": "font-size",
+          "reference": "36px"
+        },
+        {
+          "actual": "45px",
+          "name": "h1",
+          "passed": false,
+          "property": "line-height",
+          "reference": "43.2px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": false,
+          "property": "margin-top",
+          "reference": "16px"
+        },
+        {
+          "actual": "21.6px",
+          "name": "h1",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "16px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "14px",
+          "name": "pre",
+          "passed": false,
+          "property": "font-size",
+          "reference": "14.4px"
+        },
+        {
+          "actual": "21px",
+          "name": "pre",
+          "passed": false,
+          "property": "line-height",
+          "reference": "23.04px"
+        },
+        {
+          "actual": "14px",
+          "name": "pre",
+          "passed": false,
+          "property": "margin-top",
+          "reference": "15px"
+        },
+        {
+          "actual": "14px",
+          "name": "pre",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "15px"
+        },
+        {
+          "actual": "12px",
+          "name": "pre",
+          "passed": false,
+          "property": "padding-top",
+          "reference": "8px"
+        },
+        {
+          "actual": "12px",
+          "name": "pre",
+          "passed": false,
+          "property": "padding-bottom",
+          "reference": "6px"
+        },
+        {
+          "actual": "1px",
+          "name": "pre",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "14.4px",
+          "name": "code",
+          "passed": true,
+          "property": "font-size",
+          "reference": "14.4px"
+        },
+        {
+          "actual": "23.04px",
+          "name": "code",
+          "passed": true,
+          "property": "line-height",
+          "reference": "23.04px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "1px",
+          "name": "code",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "16px",
+          "name": "th",
+          "passed": true,
+          "property": "font-size",
+          "reference": "16px"
+        },
+        {
+          "actual": "25.6px",
+          "name": "th",
+          "passed": true,
+          "property": "line-height",
+          "reference": "25.6px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "6px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "6px"
+        },
+        {
+          "actual": "6px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "6px"
+        },
+        {
+          "actual": "1px",
+          "name": "th",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "16px",
+          "name": "td",
+          "passed": true,
+          "property": "font-size",
+          "reference": "16px"
+        },
+        {
+          "actual": "25.6px",
+          "name": "td",
+          "passed": true,
+          "property": "line-height",
+          "reference": "25.6px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "6px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "6px"
+        },
+        {
+          "actual": "6px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "6px"
+        },
+        {
+          "actual": "1px",
+          "name": "td",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "16px",
+          "name": "quote",
+          "passed": true,
+          "property": "font-size",
+          "reference": "16px"
+        },
+        {
+          "actual": "25.6px",
+          "name": "quote",
+          "passed": true,
+          "property": "line-height",
+          "reference": "25.6px"
+        },
+        {
+          "actual": "16px",
+          "name": "quote",
+          "passed": false,
+          "property": "margin-top",
+          "reference": "12.8px"
+        },
+        {
+          "actual": "16px",
+          "name": "quote",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "12.8px"
+        },
+        {
+          "actual": "3.2px",
+          "name": "quote",
+          "passed": false,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "3.2px",
+          "name": "quote",
+          "passed": false,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": 100,
+          "name": "img",
+          "passed": true,
+          "property": "fixed image width",
+          "reference": 100
+        }
+      ],
+      "custom": false,
+      "meta": {
+        "actualRoot": "16px",
+        "htmlHasScript": false,
+        "referenceRoot": "16px"
+      },
+      "passed": false,
+      "theme": "github"
+    },
+    {
+      "checks": [
+        {
+          "actual": "24px",
+          "name": "p",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "38.4px",
+          "name": "p",
+          "passed": true,
+          "property": "line-height",
+          "reference": "38.4px"
+        },
+        {
+          "actual": "19.2px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "19.2px"
+        },
+        {
+          "actual": "19.2px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "19.2px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "54px",
+          "name": "h1",
+          "passed": true,
+          "property": "font-size",
+          "reference": "54px"
+        },
+        {
+          "actual": "67.5px",
+          "name": "h1",
+          "passed": false,
+          "property": "line-height",
+          "reference": "64.8px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": false,
+          "property": "margin-top",
+          "reference": "24px"
+        },
+        {
+          "actual": "32.4px",
+          "name": "h1",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "24px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "21px",
+          "name": "pre",
+          "passed": false,
+          "property": "font-size",
+          "reference": "21.6px"
+        },
+        {
+          "actual": "31.5px",
+          "name": "pre",
+          "passed": false,
+          "property": "line-height",
+          "reference": "34.56px"
+        },
+        {
+          "actual": "21px",
+          "name": "pre",
+          "passed": false,
+          "property": "margin-top",
+          "reference": "15px"
+        },
+        {
+          "actual": "21px",
+          "name": "pre",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "15px"
+        },
+        {
+          "actual": "12px",
+          "name": "pre",
+          "passed": false,
+          "property": "padding-top",
+          "reference": "8px"
+        },
+        {
+          "actual": "12px",
+          "name": "pre",
+          "passed": false,
+          "property": "padding-bottom",
+          "reference": "6px"
+        },
+        {
+          "actual": "1px",
+          "name": "pre",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "21.6px",
+          "name": "code",
+          "passed": true,
+          "property": "font-size",
+          "reference": "21.6px"
+        },
+        {
+          "actual": "34.56px",
+          "name": "code",
+          "passed": true,
+          "property": "line-height",
+          "reference": "34.56px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "1px",
+          "name": "code",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "24px",
+          "name": "th",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "38.4px",
+          "name": "th",
+          "passed": true,
+          "property": "line-height",
+          "reference": "38.4px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "6px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "6px"
+        },
+        {
+          "actual": "6px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "6px"
+        },
+        {
+          "actual": "1px",
+          "name": "th",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "24px",
+          "name": "td",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "38.4px",
+          "name": "td",
+          "passed": true,
+          "property": "line-height",
+          "reference": "38.4px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "6px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "6px"
+        },
+        {
+          "actual": "6px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "6px"
+        },
+        {
+          "actual": "1px",
+          "name": "td",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "24px",
+          "name": "quote",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "38.4px",
+          "name": "quote",
+          "passed": true,
+          "property": "line-height",
+          "reference": "38.4px"
+        },
+        {
+          "actual": "24px",
+          "name": "quote",
+          "passed": false,
+          "property": "margin-top",
+          "reference": "19.2px"
+        },
+        {
+          "actual": "24px",
+          "name": "quote",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "19.2px"
+        },
+        {
+          "actual": "4.8px",
+          "name": "quote",
+          "passed": false,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "4.8px",
+          "name": "quote",
+          "passed": false,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": 100,
+          "name": "img",
+          "passed": true,
+          "property": "fixed image width",
+          "reference": 100
+        }
+      ],
+      "custom": true,
+      "meta": {
+        "actualRoot": "16px",
+        "htmlHasScript": true,
+        "referenceRoot": "24px"
+      },
+      "passed": false,
+      "theme": "github"
+    },
+    {
+      "checks": [
+        {
+          "actual": "16px",
+          "name": "p",
+          "passed": true,
+          "property": "font-size",
+          "reference": "16px"
+        },
+        {
+          "actual": "28px",
+          "name": "p",
+          "passed": true,
+          "property": "line-height",
+          "reference": "28px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "20px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "20px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "45.232px",
+          "name": "h1",
+          "passed": true,
+          "property": "font-size",
+          "reference": "45.232px"
+        },
+        {
+          "actual": "64px",
+          "name": "h1",
+          "passed": true,
+          "property": "line-height",
+          "reference": "64px"
+        },
+        {
+          "actual": "44px",
+          "name": "h1",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "44px"
+        },
+        {
+          "actual": "28px",
+          "name": "h1",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "28px"
+        },
+        {
+          "actual": "20px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "20px"
+        },
+        {
+          "actual": "20px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "20px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "16px",
+          "name": "pre",
+          "passed": true,
+          "property": "font-size",
+          "reference": "16px"
+        },
+        {
+          "actual": "22.8571px",
+          "name": "pre",
+          "passed": true,
+          "property": "line-height",
+          "reference": "22.8571px"
+        },
+        {
+          "actual": "0px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "20px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "20px"
+        },
+        {
+          "actual": "6.4px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "6.4px"
+        },
+        {
+          "actual": "4.8px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "4.8px"
+        },
+        {
+          "actual": "1px",
+          "name": "pre",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "14.4px",
+          "name": "code",
+          "passed": true,
+          "property": "font-size",
+          "reference": "14.4px"
+        },
+        {
+          "actual": "28px",
+          "name": "code",
+          "passed": true,
+          "property": "line-height",
+          "reference": "28px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "1.44px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "1.44px"
+        },
+        {
+          "actual": "1.44px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "1.44px"
+        },
+        {
+          "actual": "1px",
+          "name": "code",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "16px",
+          "name": "th",
+          "passed": true,
+          "property": "font-size",
+          "reference": "16px"
+        },
+        {
+          "actual": "20px",
+          "name": "th",
+          "passed": true,
+          "property": "line-height",
+          "reference": "20px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "8px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "8px"
+        },
+        {
+          "actual": "8px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "8px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "16px",
+          "name": "td",
+          "passed": true,
+          "property": "font-size",
+          "reference": "16px"
+        },
+        {
+          "actual": "20px",
+          "name": "td",
+          "passed": true,
+          "property": "line-height",
+          "reference": "20px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "8px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "8px"
+        },
+        {
+          "actual": "8px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "8px"
+        },
+        {
+          "actual": "1px",
+          "name": "td",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "16px",
+          "name": "quote",
+          "passed": true,
+          "property": "font-size",
+          "reference": "16px"
+        },
+        {
+          "actual": "25.6px",
+          "name": "quote",
+          "passed": true,
+          "property": "line-height",
+          "reference": "25.6px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "17.7778px",
+          "name": "quote",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "17.7778px"
+        },
+        {
+          "actual": "8px",
+          "name": "quote",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "8px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": 100,
+          "name": "img",
+          "passed": true,
+          "property": "fixed image width",
+          "reference": 100
+        }
+      ],
+      "custom": false,
+      "meta": {
+        "actualRoot": "16px",
+        "htmlHasScript": false,
+        "referenceRoot": "16px"
+      },
+      "passed": true,
+      "theme": "gothic"
+    },
+    {
+      "checks": [
+        {
+          "actual": "24px",
+          "name": "p",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "42px",
+          "name": "p",
+          "passed": true,
+          "property": "line-height",
+          "reference": "42px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "20px",
+          "name": "p",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "30px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "67.848px",
+          "name": "h1",
+          "passed": true,
+          "property": "font-size",
+          "reference": "67.848px"
+        },
+        {
+          "actual": "96px",
+          "name": "h1",
+          "passed": true,
+          "property": "line-height",
+          "reference": "96px"
+        },
+        {
+          "actual": "44px",
+          "name": "h1",
+          "passed": false,
+          "property": "margin-top",
+          "reference": "66px"
+        },
+        {
+          "actual": "28px",
+          "name": "h1",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "42px"
+        },
+        {
+          "actual": "20px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "20px"
+        },
+        {
+          "actual": "20px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "20px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "24px",
+          "name": "pre",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "34.2856px",
+          "name": "pre",
+          "passed": true,
+          "property": "line-height",
+          "reference": "34.2857px"
+        },
+        {
+          "actual": "0px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "20px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "20px"
+        },
+        {
+          "actual": "9.6px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "9.6px"
+        },
+        {
+          "actual": "7.2px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "7.2px"
+        },
+        {
+          "actual": "1px",
+          "name": "pre",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "21.6px",
+          "name": "code",
+          "passed": true,
+          "property": "font-size",
+          "reference": "21.6px"
+        },
+        {
+          "actual": "42px",
+          "name": "code",
+          "passed": true,
+          "property": "line-height",
+          "reference": "42px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "2.16px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "2.16px"
+        },
+        {
+          "actual": "2.16px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "2.16px"
+        },
+        {
+          "actual": "1px",
+          "name": "code",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "24px",
+          "name": "th",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "30px",
+          "name": "th",
+          "passed": true,
+          "property": "line-height",
+          "reference": "30px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "8px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "8px"
+        },
+        {
+          "actual": "8px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "8px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "24px",
+          "name": "td",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "30px",
+          "name": "td",
+          "passed": true,
+          "property": "line-height",
+          "reference": "30px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "8px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "8px"
+        },
+        {
+          "actual": "8px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "8px"
+        },
+        {
+          "actual": "1px",
+          "name": "td",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "24px",
+          "name": "quote",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "38.4px",
+          "name": "quote",
+          "passed": true,
+          "property": "line-height",
+          "reference": "38.4px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "17.7778px",
+          "name": "quote",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "26.6666px"
+        },
+        {
+          "actual": "8px",
+          "name": "quote",
+          "passed": false,
+          "property": "padding-top",
+          "reference": "12px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": 100,
+          "name": "img",
+          "passed": true,
+          "property": "fixed image width",
+          "reference": 100
+        }
+      ],
+      "custom": true,
+      "meta": {
+        "actualRoot": "16px",
+        "htmlHasScript": true,
+        "referenceRoot": "24px"
+      },
+      "passed": false,
+      "theme": "gothic"
+    },
+    {
+      "checks": [
+        {
+          "actual": "16px",
+          "name": "p",
+          "passed": true,
+          "property": "font-size",
+          "reference": "16px"
+        },
+        {
+          "actual": "26px",
+          "name": "p",
+          "passed": true,
+          "property": "line-height",
+          "reference": "26px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "24px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "24px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "40px",
+          "name": "h1",
+          "passed": true,
+          "property": "font-size",
+          "reference": "40px"
+        },
+        {
+          "actual": "44px",
+          "name": "h1",
+          "passed": true,
+          "property": "line-height",
+          "reference": "44px"
+        },
+        {
+          "actual": "80px",
+          "name": "h1",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "80px"
+        },
+        {
+          "actual": "24px",
+          "name": "h1",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "24px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "14.4px",
+          "name": "pre",
+          "passed": true,
+          "property": "font-size",
+          "reference": "14.4px"
+        },
+        {
+          "actual": "26px",
+          "name": "pre",
+          "passed": true,
+          "property": "line-height",
+          "reference": "26px"
+        },
+        {
+          "actual": "0px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "20px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "20px"
+        },
+        {
+          "actual": "10px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "10px"
+        },
+        {
+          "actual": "10px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "10px"
+        },
+        {
+          "actual": "0px",
+          "name": "pre",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "14px",
+          "name": "code",
+          "passed": true,
+          "property": "font-size",
+          "reference": "14px"
+        },
+        {
+          "actual": "26px",
+          "name": "code",
+          "passed": true,
+          "property": "line-height",
+          "reference": "26px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "2px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "2px"
+        },
+        {
+          "actual": "2px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "2px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "16px",
+          "name": "th",
+          "passed": true,
+          "property": "font-size",
+          "reference": "16px"
+        },
+        {
+          "actual": "26px",
+          "name": "th",
+          "passed": true,
+          "property": "line-height",
+          "reference": "26px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "5px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "5px"
+        },
+        {
+          "actual": "5px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "5px"
+        },
+        {
+          "actual": "1px",
+          "name": "th",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "16px",
+          "name": "td",
+          "passed": true,
+          "property": "font-size",
+          "reference": "16px"
+        },
+        {
+          "actual": "26px",
+          "name": "td",
+          "passed": true,
+          "property": "line-height",
+          "reference": "26px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "5px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "5px"
+        },
+        {
+          "actual": "5px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "5px"
+        },
+        {
+          "actual": "1px",
+          "name": "td",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "16px",
+          "name": "quote",
+          "passed": true,
+          "property": "font-size",
+          "reference": "16px"
+        },
+        {
+          "actual": "26px",
+          "name": "quote",
+          "passed": true,
+          "property": "line-height",
+          "reference": "26px"
+        },
+        {
+          "actual": "35px",
+          "name": "quote",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "35px"
+        },
+        {
+          "actual": "30px",
+          "name": "quote",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "30px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": 100,
+          "name": "img",
+          "passed": true,
+          "property": "fixed image width",
+          "reference": 100
+        }
+      ],
+      "custom": false,
+      "meta": {
+        "actualRoot": "16px",
+        "htmlHasScript": false,
+        "referenceRoot": "16px"
+      },
+      "passed": true,
+      "theme": "night"
+    },
+    {
+      "checks": [
+        {
+          "actual": "24px",
+          "name": "p",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "39px",
+          "name": "p",
+          "passed": true,
+          "property": "line-height",
+          "reference": "39px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "24px",
+          "name": "p",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "36px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "60px",
+          "name": "h1",
+          "passed": true,
+          "property": "font-size",
+          "reference": "60px"
+        },
+        {
+          "actual": "66px",
+          "name": "h1",
+          "passed": true,
+          "property": "line-height",
+          "reference": "66px"
+        },
+        {
+          "actual": "120px",
+          "name": "h1",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "120px"
+        },
+        {
+          "actual": "24px",
+          "name": "h1",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "36px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "21.6px",
+          "name": "pre",
+          "passed": true,
+          "property": "font-size",
+          "reference": "21.6px"
+        },
+        {
+          "actual": "39px",
+          "name": "pre",
+          "passed": true,
+          "property": "line-height",
+          "reference": "39px"
+        },
+        {
+          "actual": "0px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "20px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "20px"
+        },
+        {
+          "actual": "10px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "10px"
+        },
+        {
+          "actual": "10px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "10px"
+        },
+        {
+          "actual": "0px",
+          "name": "pre",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "21px",
+          "name": "code",
+          "passed": true,
+          "property": "font-size",
+          "reference": "21px"
+        },
+        {
+          "actual": "39px",
+          "name": "code",
+          "passed": true,
+          "property": "line-height",
+          "reference": "39px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "2px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "2px"
+        },
+        {
+          "actual": "2px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "2px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "24px",
+          "name": "th",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "39px",
+          "name": "th",
+          "passed": true,
+          "property": "line-height",
+          "reference": "39px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "5px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "5px"
+        },
+        {
+          "actual": "5px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "5px"
+        },
+        {
+          "actual": "1px",
+          "name": "th",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "24px",
+          "name": "td",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "39px",
+          "name": "td",
+          "passed": true,
+          "property": "line-height",
+          "reference": "39px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "5px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "5px"
+        },
+        {
+          "actual": "5px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "5px"
+        },
+        {
+          "actual": "1px",
+          "name": "td",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "24px",
+          "name": "quote",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "39px",
+          "name": "quote",
+          "passed": true,
+          "property": "line-height",
+          "reference": "39px"
+        },
+        {
+          "actual": "35px",
+          "name": "quote",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "35px"
+        },
+        {
+          "actual": "30px",
+          "name": "quote",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "45px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": 100,
+          "name": "img",
+          "passed": true,
+          "property": "fixed image width",
+          "reference": 100
+        }
+      ],
+      "custom": true,
+      "meta": {
+        "actualRoot": "16px",
+        "htmlHasScript": true,
+        "referenceRoot": "24px"
+      },
+      "passed": false,
+      "theme": "night"
+    },
+    {
+      "checks": [
+        {
+          "actual": "16px",
+          "name": "p",
+          "passed": true,
+          "property": "font-size",
+          "reference": "16px"
+        },
+        {
+          "actual": "24px",
+          "name": "p",
+          "passed": true,
+          "property": "line-height",
+          "reference": "24px"
+        },
+        {
+          "actual": "16px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "16px"
+        },
+        {
+          "actual": "24px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "24px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "30px",
+          "name": "h1",
+          "passed": true,
+          "property": "font-size",
+          "reference": "30px"
+        },
+        {
+          "actual": "39px",
+          "name": "h1",
+          "passed": true,
+          "property": "line-height",
+          "reference": "39px"
+        },
+        {
+          "actual": "60px",
+          "name": "h1",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "60px"
+        },
+        {
+          "actual": "15px",
+          "name": "h1",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "15px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "24.375px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "24.375px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "14.4px",
+          "name": "pre",
+          "passed": true,
+          "property": "font-size",
+          "reference": "14.4px"
+        },
+        {
+          "actual": "24.6857px",
+          "name": "pre",
+          "passed": true,
+          "property": "line-height",
+          "reference": "24.6857px"
+        },
+        {
+          "actual": "14.4px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "14.4px"
+        },
+        {
+          "actual": "43.2px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "43.2px"
+        },
+        {
+          "actual": "0px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "pre",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "14px",
+          "name": "code",
+          "passed": true,
+          "property": "font-size",
+          "reference": "14px"
+        },
+        {
+          "actual": "24px",
+          "name": "code",
+          "passed": true,
+          "property": "line-height",
+          "reference": "24px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "16px",
+          "name": "th",
+          "passed": true,
+          "property": "font-size",
+          "reference": "16px"
+        },
+        {
+          "actual": "24px",
+          "name": "th",
+          "passed": true,
+          "property": "line-height",
+          "reference": "24px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "4px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "4px"
+        },
+        {
+          "actual": "4px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "4px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "16px",
+          "name": "td",
+          "passed": true,
+          "property": "font-size",
+          "reference": "16px"
+        },
+        {
+          "actual": "24px",
+          "name": "td",
+          "passed": true,
+          "property": "line-height",
+          "reference": "24px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "4px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "4px"
+        },
+        {
+          "actual": "4px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "4px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "16px",
+          "name": "quote",
+          "passed": true,
+          "property": "font-size",
+          "reference": "16px"
+        },
+        {
+          "actual": "24px",
+          "name": "quote",
+          "passed": true,
+          "property": "line-height",
+          "reference": "24px"
+        },
+        {
+          "actual": "16px",
+          "name": "quote",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "16px"
+        },
+        {
+          "actual": "24px",
+          "name": "quote",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "24px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": 100,
+          "name": "img",
+          "passed": true,
+          "property": "fixed image width",
+          "reference": 100
+        }
+      ],
+      "custom": false,
+      "meta": {
+        "actualRoot": "16px",
+        "htmlHasScript": false,
+        "referenceRoot": "16px"
+      },
+      "passed": true,
+      "theme": "newsprint"
+    },
+    {
+      "checks": [
+        {
+          "actual": "24px",
+          "name": "p",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "36px",
+          "name": "p",
+          "passed": true,
+          "property": "line-height",
+          "reference": "36px"
+        },
+        {
+          "actual": "16px",
+          "name": "p",
+          "passed": false,
+          "property": "margin-top",
+          "reference": "24px"
+        },
+        {
+          "actual": "36px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "36px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "45px",
+          "name": "h1",
+          "passed": true,
+          "property": "font-size",
+          "reference": "45px"
+        },
+        {
+          "actual": "58.5px",
+          "name": "h1",
+          "passed": true,
+          "property": "line-height",
+          "reference": "58.5px"
+        },
+        {
+          "actual": "90px",
+          "name": "h1",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "90px"
+        },
+        {
+          "actual": "22.5px",
+          "name": "h1",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "22.5px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "36.5625px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "36.5625px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "21.6px",
+          "name": "pre",
+          "passed": true,
+          "property": "font-size",
+          "reference": "21.6px"
+        },
+        {
+          "actual": "37.0285px",
+          "name": "pre",
+          "passed": true,
+          "property": "line-height",
+          "reference": "37.0286px"
+        },
+        {
+          "actual": "21.6px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "21.6px"
+        },
+        {
+          "actual": "64.8px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "64.8px"
+        },
+        {
+          "actual": "0px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "pre",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "21px",
+          "name": "code",
+          "passed": true,
+          "property": "font-size",
+          "reference": "21px"
+        },
+        {
+          "actual": "36px",
+          "name": "code",
+          "passed": true,
+          "property": "line-height",
+          "reference": "36px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "24px",
+          "name": "th",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "36px",
+          "name": "th",
+          "passed": true,
+          "property": "line-height",
+          "reference": "36px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "6px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "6px"
+        },
+        {
+          "actual": "6px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "6px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "24px",
+          "name": "td",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "36px",
+          "name": "td",
+          "passed": true,
+          "property": "line-height",
+          "reference": "36px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "6px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "6px"
+        },
+        {
+          "actual": "6px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "6px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "24px",
+          "name": "quote",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "36px",
+          "name": "quote",
+          "passed": true,
+          "property": "line-height",
+          "reference": "36px"
+        },
+        {
+          "actual": "16px",
+          "name": "quote",
+          "passed": false,
+          "property": "margin-top",
+          "reference": "24px"
+        },
+        {
+          "actual": "36px",
+          "name": "quote",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "36px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": 100,
+          "name": "img",
+          "passed": true,
+          "property": "fixed image width",
+          "reference": 100
+        }
+      ],
+      "custom": true,
+      "meta": {
+        "actualRoot": "16px",
+        "htmlHasScript": true,
+        "referenceRoot": "24px"
+      },
+      "passed": false,
+      "theme": "newsprint"
+    },
+    {
+      "checks": [
+        {
+          "actual": "15.75px",
+          "name": "p",
+          "passed": true,
+          "property": "font-size",
+          "reference": "15.75px"
+        },
+        {
+          "actual": "23.625px",
+          "name": "p",
+          "passed": true,
+          "property": "line-height",
+          "reference": "23.625px"
+        },
+        {
+          "actual": "14px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "14px"
+        },
+        {
+          "actual": "14px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "14px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "39.578px",
+          "name": "h1",
+          "passed": true,
+          "property": "font-size",
+          "reference": "39.578px"
+        },
+        {
+          "actual": "47.4936px",
+          "name": "h1",
+          "passed": true,
+          "property": "line-height",
+          "reference": "47.4936px"
+        },
+        {
+          "actual": "39.578px",
+          "name": "h1",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "39.578px"
+        },
+        {
+          "actual": "19.789px",
+          "name": "h1",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "19.789px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "14px",
+          "name": "pre",
+          "passed": true,
+          "property": "font-size",
+          "reference": "14px"
+        },
+        {
+          "actual": "21px",
+          "name": "pre",
+          "passed": true,
+          "property": "line-height",
+          "reference": "21px"
+        },
+        {
+          "actual": "14px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "14px"
+        },
+        {
+          "actual": "12.32px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "12.32px"
+        },
+        {
+          "actual": "7px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "7px"
+        },
+        {
+          "actual": "7px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "7px"
+        },
+        {
+          "actual": "1px",
+          "name": "pre",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "15.75px",
+          "name": "code",
+          "passed": true,
+          "property": "font-size",
+          "reference": "15.75px"
+        },
+        {
+          "actual": "23.625px",
+          "name": "code",
+          "passed": true,
+          "property": "line-height",
+          "reference": "23.625px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "15.75px",
+          "name": "th",
+          "passed": true,
+          "property": "font-size",
+          "reference": "15.75px"
+        },
+        {
+          "actual": "18.9px",
+          "name": "th",
+          "passed": true,
+          "property": "line-height",
+          "reference": "18.9px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "12px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "12px"
+        },
+        {
+          "actual": "12px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "12px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "15.75px",
+          "name": "td",
+          "passed": true,
+          "property": "font-size",
+          "reference": "15.75px"
+        },
+        {
+          "actual": "18.9px",
+          "name": "td",
+          "passed": true,
+          "property": "line-height",
+          "reference": "18.9px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "12px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "12px"
+        },
+        {
+          "actual": "12px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "12px"
+        },
+        {
+          "actual": "1px",
+          "name": "td",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "21px",
+          "name": "quote",
+          "passed": true,
+          "property": "font-size",
+          "reference": "21px"
+        },
+        {
+          "actual": "21px",
+          "name": "quote",
+          "passed": true,
+          "property": "line-height",
+          "reference": "21px"
+        },
+        {
+          "actual": "14px",
+          "name": "quote",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "14px"
+        },
+        {
+          "actual": "14px",
+          "name": "quote",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "14px"
+        },
+        {
+          "actual": "10.5px",
+          "name": "quote",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "10.5px"
+        },
+        {
+          "actual": "10.5px",
+          "name": "quote",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "10.5px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": 100,
+          "name": "img",
+          "passed": true,
+          "property": "fixed image width",
+          "reference": 100
+        }
+      ],
+      "custom": false,
+      "meta": {
+        "actualRoot": "16px",
+        "htmlHasScript": false,
+        "referenceRoot": "14px"
+      },
+      "passed": true,
+      "theme": "pixyll"
+    },
+    {
+      "checks": [
+        {
+          "actual": "18px",
+          "name": "p",
+          "passed": false,
+          "property": "font-size",
+          "reference": "27px"
+        },
+        {
+          "actual": "27px",
+          "name": "p",
+          "passed": false,
+          "property": "line-height",
+          "reference": "40.5px"
+        },
+        {
+          "actual": "14px",
+          "name": "p",
+          "passed": false,
+          "property": "margin-top",
+          "reference": "24px"
+        },
+        {
+          "actual": "14px",
+          "name": "p",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "24px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "45.232px",
+          "name": "h1",
+          "passed": false,
+          "property": "font-size",
+          "reference": "67.848px"
+        },
+        {
+          "actual": "54.2784px",
+          "name": "h1",
+          "passed": false,
+          "property": "line-height",
+          "reference": "81.4176px"
+        },
+        {
+          "actual": "45.232px",
+          "name": "h1",
+          "passed": false,
+          "property": "margin-top",
+          "reference": "67.848px"
+        },
+        {
+          "actual": "22.616px",
+          "name": "h1",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "33.924px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "16px",
+          "name": "pre",
+          "passed": false,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "24px",
+          "name": "pre",
+          "passed": false,
+          "property": "line-height",
+          "reference": "36px"
+        },
+        {
+          "actual": "16px",
+          "name": "pre",
+          "passed": false,
+          "property": "margin-top",
+          "reference": "24px"
+        },
+        {
+          "actual": "14.08px",
+          "name": "pre",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "21.12px"
+        },
+        {
+          "actual": "7px",
+          "name": "pre",
+          "passed": false,
+          "property": "padding-top",
+          "reference": "12px"
+        },
+        {
+          "actual": "7px",
+          "name": "pre",
+          "passed": false,
+          "property": "padding-bottom",
+          "reference": "12px"
+        },
+        {
+          "actual": "1px",
+          "name": "pre",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "18px",
+          "name": "code",
+          "passed": false,
+          "property": "font-size",
+          "reference": "27px"
+        },
+        {
+          "actual": "27px",
+          "name": "code",
+          "passed": false,
+          "property": "line-height",
+          "reference": "40.5px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "18px",
+          "name": "th",
+          "passed": false,
+          "property": "font-size",
+          "reference": "27px"
+        },
+        {
+          "actual": "21.6px",
+          "name": "th",
+          "passed": false,
+          "property": "line-height",
+          "reference": "32.4px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "12px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "12px"
+        },
+        {
+          "actual": "12px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "12px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "18px",
+          "name": "td",
+          "passed": false,
+          "property": "font-size",
+          "reference": "27px"
+        },
+        {
+          "actual": "21.6px",
+          "name": "td",
+          "passed": false,
+          "property": "line-height",
+          "reference": "32.4px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "12px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "12px"
+        },
+        {
+          "actual": "12px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "12px"
+        },
+        {
+          "actual": "1px",
+          "name": "td",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "24px",
+          "name": "quote",
+          "passed": false,
+          "property": "font-size",
+          "reference": "36px"
+        },
+        {
+          "actual": "24px",
+          "name": "quote",
+          "passed": false,
+          "property": "line-height",
+          "reference": "36px"
+        },
+        {
+          "actual": "14px",
+          "name": "quote",
+          "passed": false,
+          "property": "margin-top",
+          "reference": "24px"
+        },
+        {
+          "actual": "14px",
+          "name": "quote",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "24px"
+        },
+        {
+          "actual": "12px",
+          "name": "quote",
+          "passed": false,
+          "property": "padding-top",
+          "reference": "18px"
+        },
+        {
+          "actual": "12px",
+          "name": "quote",
+          "passed": false,
+          "property": "padding-bottom",
+          "reference": "18px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": 100,
+          "name": "img",
+          "passed": true,
+          "property": "fixed image width",
+          "reference": 100
+        }
+      ],
+      "custom": true,
+      "meta": {
+        "actualRoot": "16px",
+        "htmlHasScript": true,
+        "referenceRoot": "24px"
+      },
+      "passed": false,
+      "theme": "pixyll"
+    },
+    {
+      "checks": [
+        {
+          "actual": "19px",
+          "name": "p",
+          "passed": true,
+          "property": "font-size",
+          "reference": "19px"
+        },
+        {
+          "actual": "29.07px",
+          "name": "p",
+          "passed": true,
+          "property": "line-height",
+          "reference": "29.07px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "19px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "19px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "57px",
+          "name": "h1",
+          "passed": true,
+          "property": "font-size",
+          "reference": "57px"
+        },
+        {
+          "actual": "87.21px",
+          "name": "h1",
+          "passed": true,
+          "property": "line-height",
+          "reference": "87.21px"
+        },
+        {
+          "actual": "91.2px",
+          "name": "h1",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "91.2px"
+        },
+        {
+          "actual": "19px",
+          "name": "h1",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "19px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "17.1px",
+          "name": "pre",
+          "passed": true,
+          "property": "font-size",
+          "reference": "17.1px"
+        },
+        {
+          "actual": "26.163px",
+          "name": "pre",
+          "passed": true,
+          "property": "line-height",
+          "reference": "26.163px"
+        },
+        {
+          "actual": "17.1px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "17.1px"
+        },
+        {
+          "actual": "25.65px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "25.65px"
+        },
+        {
+          "actual": "6px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "6px"
+        },
+        {
+          "actual": "8px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "8px"
+        },
+        {
+          "actual": "1px",
+          "name": "pre",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "17.1px",
+          "name": "code",
+          "passed": true,
+          "property": "font-size",
+          "reference": "17.1px"
+        },
+        {
+          "actual": "26.163px",
+          "name": "code",
+          "passed": true,
+          "property": "line-height",
+          "reference": "26.163px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "19px",
+          "name": "th",
+          "passed": true,
+          "property": "font-size",
+          "reference": "19px"
+        },
+        {
+          "actual": "25.3333px",
+          "name": "th",
+          "passed": true,
+          "property": "line-height",
+          "reference": "25.3333px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "8px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "8px"
+        },
+        {
+          "actual": "8px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "8px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "19px",
+          "name": "td",
+          "passed": true,
+          "property": "font-size",
+          "reference": "19px"
+        },
+        {
+          "actual": "25.3333px",
+          "name": "td",
+          "passed": true,
+          "property": "line-height",
+          "reference": "25.3333px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "8px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "8px"
+        },
+        {
+          "actual": "8px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "8px"
+        },
+        {
+          "actual": "1px",
+          "name": "td",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "19px",
+          "name": "quote",
+          "passed": true,
+          "property": "font-size",
+          "reference": "19px"
+        },
+        {
+          "actual": "29.07px",
+          "name": "quote",
+          "passed": true,
+          "property": "line-height",
+          "reference": "29.07px"
+        },
+        {
+          "actual": "19px",
+          "name": "quote",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "19px"
+        },
+        {
+          "actual": "19px",
+          "name": "quote",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "19px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": 100,
+          "name": "img",
+          "passed": true,
+          "property": "fixed image width",
+          "reference": 100
+        }
+      ],
+      "custom": false,
+      "meta": {
+        "actualRoot": "16px",
+        "htmlHasScript": false,
+        "referenceRoot": "19px"
+      },
+      "passed": true,
+      "theme": "whitey"
+    },
+    {
+      "checks": [
+        {
+          "actual": "24px",
+          "name": "p",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "36.72px",
+          "name": "p",
+          "passed": true,
+          "property": "line-height",
+          "reference": "36.72px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "19px",
+          "name": "p",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "24px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "p",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "72px",
+          "name": "h1",
+          "passed": true,
+          "property": "font-size",
+          "reference": "72px"
+        },
+        {
+          "actual": "110.16px",
+          "name": "h1",
+          "passed": true,
+          "property": "line-height",
+          "reference": "110.16px"
+        },
+        {
+          "actual": "115.2px",
+          "name": "h1",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "115.2px"
+        },
+        {
+          "actual": "19px",
+          "name": "h1",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "24px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "h1",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "21.6px",
+          "name": "pre",
+          "passed": true,
+          "property": "font-size",
+          "reference": "21.6px"
+        },
+        {
+          "actual": "33.048px",
+          "name": "pre",
+          "passed": true,
+          "property": "line-height",
+          "reference": "33.048px"
+        },
+        {
+          "actual": "21.6px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "21.6px"
+        },
+        {
+          "actual": "32.4px",
+          "name": "pre",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "32.4px"
+        },
+        {
+          "actual": "6px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "6px"
+        },
+        {
+          "actual": "8px",
+          "name": "pre",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "8px"
+        },
+        {
+          "actual": "1px",
+          "name": "pre",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "21.6px",
+          "name": "code",
+          "passed": true,
+          "property": "font-size",
+          "reference": "21.6px"
+        },
+        {
+          "actual": "33.048px",
+          "name": "code",
+          "passed": true,
+          "property": "line-height",
+          "reference": "33.048px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "code",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "24px",
+          "name": "th",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "32px",
+          "name": "th",
+          "passed": true,
+          "property": "line-height",
+          "reference": "32px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "8px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "8px"
+        },
+        {
+          "actual": "8px",
+          "name": "th",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "8px"
+        },
+        {
+          "actual": "0px",
+          "name": "th",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": "24px",
+          "name": "td",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "32px",
+          "name": "td",
+          "passed": true,
+          "property": "line-height",
+          "reference": "32px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "td",
+          "passed": true,
+          "property": "margin-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "8px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "8px"
+        },
+        {
+          "actual": "8px",
+          "name": "td",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "8px"
+        },
+        {
+          "actual": "1px",
+          "name": "td",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "1px"
+        },
+        {
+          "actual": "24px",
+          "name": "quote",
+          "passed": true,
+          "property": "font-size",
+          "reference": "24px"
+        },
+        {
+          "actual": "36.72px",
+          "name": "quote",
+          "passed": true,
+          "property": "line-height",
+          "reference": "36.72px"
+        },
+        {
+          "actual": "19px",
+          "name": "quote",
+          "passed": false,
+          "property": "margin-top",
+          "reference": "24px"
+        },
+        {
+          "actual": "19px",
+          "name": "quote",
+          "passed": false,
+          "property": "margin-bottom",
+          "reference": "24px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "padding-top",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "padding-bottom",
+          "reference": "0px"
+        },
+        {
+          "actual": "0px",
+          "name": "quote",
+          "passed": true,
+          "property": "border-top-width",
+          "reference": "0px"
+        },
+        {
+          "actual": 100,
+          "name": "img",
+          "passed": true,
+          "property": "fixed image width",
+          "reference": 100
+        }
+      ],
+      "custom": true,
+      "meta": {
+        "actualRoot": "16px",
+        "htmlHasScript": true,
+        "referenceRoot": "24px"
+      },
+      "passed": false,
+      "theme": "whitey"
+    }
+  ],
+  "passed": false,
+  "scope": "Actual exportPrepare renderer payload vs installed reference CSS, six themes in same Chromium at 640 CSS px. Screen media. Root-font and selected typography/spacing checks, fixed 100px image. Not native PNG pixels or full-editor pixel parity."
+}

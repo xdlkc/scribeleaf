@@ -1,0 +1,44 @@
+{
+  "error": "",
+  "ok": true,
+  "results": [
+    {
+      "bytesMatch": true,
+      "name": "raw",
+      "passed": true,
+      "path": "images/sample name.png"
+    },
+    {
+      "bytesMatch": true,
+      "name": "duplicate",
+      "passed": true,
+      "path": "images/sample name-1.png"
+    },
+    {
+      "bytesMatch": true,
+      "name": "copy",
+      "passed": true,
+      "path": "images/source image.png"
+    },
+    {
+      "bytesMatch": true,
+      "name": "reference",
+      "passed": true,
+      "path": "source image.png"
+    },
+    {
+      "bytesMatch": true,
+      "name": "filename",
+      "passed": true,
+      "path": "images/sneaky.png"
+    },
+    {
+      "bytesMatch": false,
+      "name": "unknown-config",
+      "passed": true,
+      "path": ""
+    }
+  ],
+  "saveDialogTested": false,
+  "systemClipboardUsed": false
+}

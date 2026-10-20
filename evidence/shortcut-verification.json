@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-19T03:45:22.453Z",
+  "results": [
+    {
+      "name": "Control backtick applies inline code",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Control Shift backtick applies strikethrough",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Command Option R inserts a footnote",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Command Option minus inserts a horizontal rule",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Command Option F opens replacement",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Command Option Shift S sends Save As",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    }
+  ]
+}

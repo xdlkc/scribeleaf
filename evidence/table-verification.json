@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-19T01:38:11.539Z",
+  "results": [
+    {
+      "name": "Module source exports required APIs",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "missing": []
+      }
+    },
+    {
+      "name": "Uses shared pipe helper and sanitizer",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "splitTableRow keeps escaped pipes and code-span pipes",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "a": [
+          "a \\| b",
+          "`c|d`",
+          "e"
+        ],
+        "b": [
+          "a \\| b",
+          "`c|d`",
+          "e"
+        ]
+      }
+    },
+    {
+      "name": "parse preserves alignment and raw cells",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "t": {
+          "header": [
+            "Default",
+            "Left",
+            "Right",
+            "Center"
+          ],
+          "alignments": [
+            "none",
+            "left",
+            "right",
+            "center"
+          ],
+          "rows": [
+            [
+              "cell1",
+              "cell2",
+              "cell3",
+              "cell4"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "cell edit patches only that cell; no-op same text",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "nextEqual": true,
+        "edited": "| Default | Left | Right | Center |\n| ------- | :---- | ----: | :----: |\n| cell1   | 改 | cell3 | cell4 |"
+      }
+    },
+    {
+      "name": "escaped/code pipes survive parse+cell replace of another cell",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "t": {
+          "header": [
+            "h1",
+            "h2"
+          ],
+          "alignments": [
+            "none",
+            "none"
+          ],
+          "rows": [
+            [
+              "a \\| b",
+              "`x|y`"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "structural row/column/align/reorder",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "text": "|     | Default | Left  | Right | Center |\n| :-- | ------- | :---- | ----: | :----: |\n|     | row2    |       |       |        |\n|     | cell1   | cell2 | cell3 | cell4  |",
+        "rows": [
+          [
+            "",
+            "row2",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "cell1",
+            "cell2",
+            "cell3",
+            "cell4"
+          ]
+        ],
+        "cols": 5
+      }
+    },
+    {
+      "name": "source outside the table is unchanged by find/patch",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "range": {
+          "from": 18,
+          "to": 126
+        },
+        "moved": {
+          "from": 19,
+          "to": 127
+        }
+      }
+    },
+    {
+      "name": "stale from is rejected when table text is gone",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "ambiguous duplicate tables are not patched by stale from",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "miss": null,
+        "unique": {
+          "from": 2,
+          "to": 110
+        }
+      }
+    },
+    {
+      "name": "handleTableCommand is idle without table focus",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    }
+  ]
+}

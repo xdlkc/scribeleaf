@@ -1,0 +1,330 @@
+/* Night core typography mapped from installed Typora 1.14.10.
+ * Independently authored for CM6 lines and standalone .md-render HTML.
+ * Every content rule is theme-scoped. Lists/quotes remain CM line structures. */
+
+body[data-theme="night"] {
+    --paper: #363b40;
+    --bg: #363b40;
+    --text: #b8bfc6;
+    --text-dim: #8c8e92;
+    --heading: #dedede;
+    --link: #e0e0e0;
+    --border: #474d54;
+    --code-bg: #333333;
+    --code-text: #b8bfc6;
+    --quote-text: #9da2a6;
+    --quote-border: #474d54;
+    --quote-bg: transparent;
+    --mark-bg: #d3d40e;
+    --selection: #4a89dc;
+    --sidebar-bg: #2e3033;
+    --sidebar-text: #b8bfc6;
+    --ui-text: #b7b7b7;
+    --ui-hover-bg: #70717d;
+    --table-stripe: transparent;
+    -webkit-font-smoothing: antialiased;
+    --font-body: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif;
+    --font-heading: "Lucida Grande", "Corbel", sans-serif;
+    --font-mono: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    line-height: 1.625rem;
+}
+
+body[data-theme="night"] .md-render:not(.lp-table),
+body[data-theme="night"] #editor .cm-content {
+    max-width: 914px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1400px) {
+    body[data-theme="night"] .md-render:not(.lp-table),
+    body[data-theme="night"] #editor .cm-content { max-width: 1024px; }
+}
+
+@media (min-width: 1800px) {
+    body[data-theme="night"] .md-render:not(.lp-table),
+    body[data-theme="night"] #editor .cm-content { max-width: 1200px; }
+}
+
+body[data-theme="night"] .md-render:not(.lp-table) {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: var(--text);
+}
+
+body[data-theme="night"] #editor .cm-scroller {
+    font-family: var(--font-body);
+    line-height: 1.625rem;
+}
+
+body[data-theme="night"] .md-render :is(h1, h2, h3, h4, h5, h6),
+body[data-theme="night"] #editor :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
+    font-family: var(--font-heading);
+    color: var(--heading);
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+    text-transform: none;
+    border: 0;
+    padding: 0;
+    letter-spacing: normal;
+}
+
+body[data-theme="night"] #editor .cm-content > :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6):first-child {
+    margin-top: var(--first-heading-margin, 1rem);
+}
+
+body[data-theme="night"] .md-render pre code {
+    font-family: var(--font-mono);
+    font-size: 1em;
+    line-height: inherit;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body[data-theme="night"] .md-render blockquote > :first-child {
+    margin-top: 0;
+}
+
+body[data-theme="night"] .md-render blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+body[data-theme="night"] .md-render li + li {
+    margin-top: 0;
+}
+
+body[data-theme="night"] #editor .cm-list-line {
+    margin: 0;
+}
+
+body[data-theme="night"] #editor .cm-fence-line {
+    background: var(--code-bg);
+    font-family: var(--font-mono);
+}
+
+body[data-theme="night"] .md-render a,
+body[data-theme="night"] #editor .cm-link {
+    color: var(--link);
+}
+
+body[data-theme="night"] .md-render table,
+body[data-theme="night"] #editor .lp-table table {
+    font-family: var(--font-body);
+    border-collapse: collapse;
+    display: table;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+}
+
+body[data-theme="night"] .md-render h1,
+body[data-theme="night"] #editor .cm-header-1 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    font-weight: 400;
+    color: #dedede;
+    margin: 2em 0 1.5rem;
+    letter-spacing: -1.5px;
+}
+
+body[data-theme="night"] .md-render h2,
+body[data-theme="night"] #editor .cm-header-2 {
+    font-size: 1.63rem;
+    line-height: 1.875rem;
+    font-weight: 700;
+    color: #dedede;
+    margin: 0 0 1.5rem;
+    letter-spacing: -1px;
+}
+
+body[data-theme="night"] .md-render h3,
+body[data-theme="night"] #editor .cm-header-3 {
+    font-size: 1.17rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: #dedede;
+    margin: 0 0 1.5rem;
+    letter-spacing: -1px;
+}
+
+body[data-theme="night"] .md-render h4,
+body[data-theme="night"] #editor .cm-header-4 {
+    font-size: 1.12rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 0 1.5rem;
+    letter-spacing: normal;
+}
+
+body[data-theme="night"] .md-render h5,
+body[data-theme="night"] #editor .cm-header-5 {
+    font-size: .97rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    color: #dedede;
+    margin: 0 0 1.5rem;
+    letter-spacing: normal;
+}
+
+body[data-theme="night"] .md-render h6,
+body[data-theme="night"] #editor .cm-header-6 {
+    font-size: .93rem;
+    line-height: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 0 .75rem;
+    letter-spacing: normal;
+}
+
+body[data-theme="night"] #editor .cm-content > .cm-header-1:first-child {
+    margin-top: 2em;
+}
+
+body[data-theme="night"] .md-render p,
+body[data-theme="night"] .md-render ul,
+body[data-theme="night"] .md-render ol {
+    margin: 0 0 1.5rem;
+}
+
+body[data-theme="night"] .md-render ul,
+body[data-theme="night"] .md-render ol {
+    padding: 0 0 0 1.875rem;
+}
+
+body[data-theme="night"] .md-render :is(ul, ol) :is(ul, ol) {
+    margin: 0;
+}
+
+body[data-theme="night"] #editor .cm-list-line {
+    padding-left: 1.875rem;
+}
+
+body[data-theme="night"] .md-render blockquote,
+body[data-theme="night"] #editor .cm-quote {
+    border-left: 2px solid #474d54;
+    padding: 0 0 0 30px;
+    margin: 35px 0 1.875rem 1.875rem;
+    background: transparent;
+    color: #9da2a6;
+    font-style: normal;
+    line-height: 1.625rem;
+}
+
+body[data-theme="night"] .md-render :not(pre) > code,
+body[data-theme="night"] #editor .cm-inline-code {
+    font-family: var(--font-mono);
+    font-size: .875em;
+    line-height: inherit;
+    background: rgba(0, 0, 0, .05);
+    color: var(--code-text);
+    border: 0;
+    border-radius: 0;
+    padding: 2px 5px;
+}
+
+body[data-theme="night"] #editor .cm-codeblock-line {
+    font-family: var(--font-mono);
+    font-size: .875em;
+    background: var(--code-bg);
+    color: var(--code-text);
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+body[data-theme="night"] #editor .cm-codeblock-first {
+    border-top: 0;
+    border-radius: 0;
+}
+
+body[data-theme="night"] #editor .cm-codeblock-last {
+    border-bottom: 0;
+    border-radius: 0;
+}
+
+body[data-theme="night"] .md-render pre {
+    font-family: var(--font-mono);
+    font-size: .875em;
+    line-height: 1.625rem;
+    color: var(--code-text);
+    padding: 10px 10px 10px 30px;
+    margin: 0 0 20px;
+    border: 0;
+    border-radius: 0;
+    background: #333333;
+}
+
+body[data-theme="night"] #editor .cm-codeblock-line {
+    line-height: 1.625rem;
+    padding: 0 10px 0 30px;
+}
+
+body[data-theme="night"] #editor .cm-codeblock-first {
+    padding-top: 10px;
+}
+
+body[data-theme="night"] #editor .cm-codeblock-last {
+    padding-bottom: 10px;
+}
+
+body[data-theme="night"] .md-render table,
+body[data-theme="night"] #editor .lp-table table {
+    font-size: 1rem;
+    margin: 0 0 1.5rem;
+}
+
+body[data-theme="night"] .md-render :is(th, td):not(:where(.lp-table-colhead, .lp-table-corner, .lp-row-handle)),
+body[data-theme="night"] #editor .lp-table table .lp-cell {
+    border: 1px solid #474d54;
+    padding: 5px 10px;
+    vertical-align: top;
+    background: transparent;
+    line-height: 1.625rem;
+}
+
+body[data-theme="night"] .md-render th:not(.lp-table-colhead):not(.lp-table-corner),
+body[data-theme="night"] .md-render strong,
+body[data-theme="night"] #editor .cm-strong {
+    font-weight: 700;
+    color: #dedede;
+}
+
+body[data-theme="night"] .md-render a,
+body[data-theme="night"] #editor .cm-link {
+    text-decoration: underline;
+}
+
+body[data-theme="night"] .md-render a:hover,
+body[data-theme="night"] #editor .cm-link:hover {
+    color: #ffffff;
+}
+
+
+/* First-line overrides cancel the shared GitHub editor rule. */
+body[data-theme="night"] #editor .cm-content > .cm-header-1:first-child { margin-top: 2em; }
+body[data-theme="night"] #editor .cm-content > .cm-header-2:first-child { margin-top: 0; }
+body[data-theme="night"] #editor .cm-content > .cm-header-3:first-child { margin-top: 0; }
+body[data-theme="night"] #editor .cm-content > .cm-header-4:first-child { margin-top: 0; }
+body[data-theme="night"] #editor .cm-content > .cm-header-5:first-child { margin-top: 0; }
+body[data-theme="night"] #editor .cm-content > .cm-header-6:first-child { margin-top: 0; }
+
+/* CM quotes are lines, so block margins must not repeat on each line. */
+body[data-theme="night"] #editor .cm-quote { margin-top: 0; margin-bottom: 0; }
+
+body[data-theme="night"] #editor .lp-table { line-height: 1.625rem; font-weight: 400; }
+body[data-theme="night"] .md-render pre,
+body[data-theme="night"] #editor .cm-codeblock-line { font-size: .9rem; }
+
+body[data-theme="night"] .md-render pre,
+body[data-theme="night"] .md-render code,
+body[data-theme="night"] #editor .cm-codeblock-line,
+body[data-theme="night"] #editor .cm-inline-code { text-align: left; }
+body[data-theme="night"] .md-render thead th:not(.lp-table-colhead):not(.lp-table-corner),
+body[data-theme="night"] #editor .lp-table thead th.lp-cell { border-bottom: 0; }
+body[data-theme="night"] #editor .cm-codeblock-last { margin-bottom: 20px; }

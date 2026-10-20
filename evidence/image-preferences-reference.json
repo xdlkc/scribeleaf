@@ -1,0 +1,516 @@
+{
+  "generatedAt": "2026-10-19T18:09:44.006623+00:00",
+  "purpose": "Typora1.14.10插图偏好消费语义；仅只读静态参考，不是复刻产品验收。",
+  "sources": {
+    "renderer": {
+      "path": "/Applications/Typora.app/Contents/Resources/TypeMark/appsrc/window/frame.js",
+      "sha256": "b08c94bab8e9994363fcf928a4ea927d7bbbcd1e84d70ac41eef55475089fae1",
+      "bytes": 1712126
+    },
+    "preferences": {
+      "path": "/Applications/Typora.app/Contents/Resources/TypeMark/page-dist/static/js/Preferences.962926a4.0b4e81f7.js",
+      "sha256": "8871c9599b875e23cbe80127450ad6222a1f5b40e6669231347444815507a7a0",
+      "bytes": 300588
+    },
+    "native": {
+      "path": "/Applications/Typora.app/Contents/MacOS/Typora",
+      "sha256": "71aebecaac7b21965c541113b6e0d9b792a095f44aa487a0a6366f224fcbb83a",
+      "bytes": 3328736
+    }
+  },
+  "method": {
+    "originalGUIUsed": false,
+    "userPreferencesRead": false,
+    "nativeSourceExecuted": false,
+    "harnessUsed": false,
+    "originalCodeCopiedIntoRuntime": false,
+    "tools": [
+      "Python UTF8/UTF16 span lookup",
+      "nm -nm",
+      "otool -tvV",
+      "readonly Mach-O x86_64 segment/CFString pointer decode"
+    ],
+    "nativeOffsets": "Fat binary absolute file byte offset + x86_64 VM address; current native app binary hash binds offsets.",
+    "nativeSliceOffset": 16384
+  },
+  "references": {
+    "yamlKey": {
+      "source": "renderer",
+      "anchor": "l=\"typora-copy-images-to\"",
+      "byteOffset": 134587,
+      "byteLength": 25,
+      "utf16Offset": 134547
+    },
+    "localSettingPrecedence": {
+      "source": "renderer",
+      "anchor": "i.prototype.getSetting=function(e)",
+      "byteOffset": 229305,
+      "byteLength": 680,
+      "utf16Offset": 229185
+    },
+    "targetResolution": {
+      "source": "renderer",
+      "anchor": "getTargetImageStorageFolder(e,t)",
+      "byteOffset": 165793,
+      "byteLength": 790,
+      "utf16Offset": 165701
+    },
+    "globalTargetResolution": {
+      "source": "renderer",
+      "anchor": "getTargetImageStorageFolderFromSetting(){",
+      "byteOffset": 166468,
+      "byteLength": 1400,
+      "utf16Offset": 166376
+    },
+    "shouldTriggerMove": {
+      "source": "renderer",
+      "anchor": "shouldTriggerMove(e,t){",
+      "byteOffset": 157858,
+      "byteLength": 660,
+      "utf16Offset": 157766
+    },
+    "allowUploadGate": {
+      "source": "renderer",
+      "anchor": "checkAutoUploadIsAllowed(e,t){",
+      "byteOffset": 180530,
+      "byteLength": 1140,
+      "utf16Offset": 180426
+    },
+    "sourceInsert": {
+      "source": "renderer",
+      "anchor": "insertImageFromURL(r){",
+      "byteOffset": 161117,
+      "byteLength": 3000,
+      "utf16Offset": 161025
+    },
+    "resolveImagePath": {
+      "source": "renderer",
+      "anchor": "resolveImagePath(e){",
+      "byteOffset": 163396,
+      "byteLength": 1160,
+      "utf16Offset": 163304
+    },
+    "uploaderCommand": {
+      "source": "renderer",
+      "anchor": "getImageUploaderCommand(e){",
+      "byteOffset": 164387,
+      "byteLength": 810,
+      "utf16Offset": 164295
+    },
+    "uploaderChoice": {
+      "source": "renderer",
+      "anchor": "getImageUploader(){",
+      "byteOffset": 165072,
+      "byteLength": 320,
+      "utf16Offset": 164980
+    },
+    "parseOutput": {
+      "source": "renderer",
+      "anchor": "function A(e,t){if(\"picgo-app\"",
+      "byteOffset": 138656,
+      "byteLength": 580,
+      "utf16Offset": 138616
+    },
+    "singleMacBridge": {
+      "source": "renderer",
+      "anchor": "bridge.callHandler(\"images.upload\"",
+      "byteOffset": 139335,
+      "byteLength": 255,
+      "utf16Offset": 139295
+    },
+    "nodeUploadProtocol": {
+      "source": "renderer",
+      "anchor": "function L(o){",
+      "byteOffset": 139602,
+      "byteLength": 1802,
+      "utf16Offset": 139562
+    },
+    "uploadAllMac": {
+      "source": "renderer",
+      "anchor": "prepareUploadAllImagesOnMac(n){",
+      "byteOffset": 154916,
+      "byteLength": 700,
+      "utf16Offset": 154824
+    },
+    "parseUploadAllMac": {
+      "source": "renderer",
+      "anchor": "allImageUploadCallbackForMac(e,t,n,i,r){",
+      "byteOffset": 155556,
+      "byteLength": 375,
+      "utf16Offset": 155464
+    },
+    "syntaxPreferences": {
+      "source": "preferences",
+      "anchor": "keyName:\"use_relative_path_for_img\"",
+      "byteOffset": 195478,
+      "byteLength": 880,
+      "utf16Offset": 195405
+    },
+    "localGlobalSwitchUI": {
+      "source": "preferences",
+      "anchor": "keyName:\"no_image_move_for_local\"",
+      "byteOffset": 194757,
+      "byteLength": 565,
+      "utf16Offset": 194684
+    },
+    "uploaderOptions": {
+      "source": "preferences",
+      "anchor": "y={\"\":\"None\",ipic:",
+      "byteOffset": 196768,
+      "byteLength": 750,
+      "utf16Offset": 196695
+    },
+    "uploaderIntroLink": {
+      "source": "preferences",
+      "anchor": "\"picgo-intro\"==g&&window.Setting.openLink",
+      "byteOffset": 198116,
+      "byteLength": 120,
+      "utf16Offset": 198043
+    },
+    "uploaderTest": {
+      "source": "preferences",
+      "anchor": "testImageUploader:function(t,n,a,r){",
+      "byteOffset": 297359,
+      "byteLength": 3229,
+      "utf16Offset": 296855
+    },
+    "shellBuild": {
+      "source": "native",
+      "architecture": "x86_64",
+      "vmAddress": "0x10001eb95",
+      "absoluteFileByteOffset": 142229
+    },
+    "shellRun": {
+      "source": "native",
+      "architecture": "x86_64",
+      "vmAddress": "0x10001eedc",
+      "absoluteFileByteOffset": 143068
+    },
+    "shellTimeout": {
+      "source": "native",
+      "architecture": "x86_64",
+      "vmAddress": "0x10001f178",
+      "absoluteFileByteOffset": 143736
+    },
+    "picgoNativeHTTP": {
+      "source": "native",
+      "architecture": "x86_64",
+      "vmAddress": "0x10001f399",
+      "absoluteFileByteOffset": 144281
+    },
+    "picgoNativeLaunch": {
+      "source": "native",
+      "architecture": "x86_64",
+      "vmAddress": "0x10001f822",
+      "absoluteFileByteOffset": 145442
+    },
+    "picgoNativeRetry": {
+      "source": "native",
+      "architecture": "x86_64",
+      "vmAddress": "0x10001f70d",
+      "absoluteFileByteOffset": 145165
+    },
+    "ipicPasteboardInit": {
+      "source": "native",
+      "architecture": "x86_64",
+      "vmAddress": "0x100059adb",
+      "absoluteFileByteOffset": 383707
+    },
+    "ipicArchive": {
+      "source": "native",
+      "architecture": "x86_64",
+      "vmAddress": "0x100059c9c",
+      "absoluteFileByteOffset": 384156
+    },
+    "ipicParseResult": {
+      "source": "native",
+      "architecture": "x86_64",
+      "vmAddress": "0x100059f0b",
+      "absoluteFileByteOffset": 384779
+    },
+    "ipicVersionRequest": {
+      "source": "native",
+      "architecture": "x86_64",
+      "vmAddress": "0x100059e38",
+      "absoluteFileByteOffset": 384568
+    },
+    "ipicVersionResult": {
+      "source": "native",
+      "architecture": "x86_64",
+      "vmAddress": "0x10005a0f4",
+      "absoluteFileByteOffset": 385268
+    },
+    "ipicLaunch": {
+      "source": "native",
+      "architecture": "x86_64",
+      "vmAddress": "0x100085618",
+      "absoluteFileByteOffset": 562712
+    },
+    "ipicImageCoder": {
+      "source": "native",
+      "architecture": "x86_64",
+      "vmAddress": "0x10003b2f0",
+      "absoluteFileByteOffset": 258800
+    },
+    "ipicQueue": {
+      "source": "native",
+      "architecture": "x86_64",
+      "vmAddress": "0x10007598d",
+      "absoluteFileByteOffset": 498061
+    }
+  },
+  "rules": [
+    {
+      "id": "yaml-key",
+      "summary": "文件自动复制/上传使用 typora-copy-images-to。该 renderer 内 typora-auto-upload、auto-upload、auto_upload 均无匹配；不能凭名称增加一个独立 YAML 开关。",
+      "evidence": [
+        "yamlKey",
+        "targetResolution"
+      ],
+      "negativeSearches": {
+        "typora-auto-upload": 0,
+        "auto-upload": 0,
+        "auto_upload": 0
+      }
+    },
+    {
+      "id": "precedence",
+      "summary": "设置桥按 projectSetting 精确键或小写键取 truthy 值；不是 unset/undefined 就优先。否则取 fileSetting 精确键或小写键；unset/undefined 最后回退 File.option[key]。文件目标只在非 source mode 使用。TextBundle/TextPack 先于普通规则。",
+      "evidence": [
+        "localSettingPrecedence",
+        "targetResolution"
+      ],
+      "limitations": [
+        "getSetting 并非通用标准 YAML 优先级；不能自动把项目层已实现当作事实。这里仅证明消费者逻辑。"
+      ]
+    },
+    {
+      "id": "target",
+      "summary": "非空 YAML目标优先于 global。值 ipic/upload（忽略大小写）且 allowImageUpload 或显式 bypassAllow=true 时返回 upload。普通路径将文档目录与 YAML值拼接后normalize；每个 ${filename} 替换为当前文件名去掉最后扩展。没有文档目录则回退global；sourceMode忽略文件规则。",
+      "evidence": [
+        "targetResolution"
+      ],
+      "limitations": [
+        "YAML绝对路径在此函数中仍先拼接目录；未做原版真实交互验证，不能把它推定为与全局绝对目录相同。",
+        "文件YAML非字符串值会直接走字符串方法；本任务未运行原版验证错误表现。"
+      ]
+    },
+    {
+      "id": "global-target",
+      "summary": "global ipic/upload先直接返回upload，不受allowImageUpload控制。folder为文档目录，assert为assets子目录，per-file-assert为去扩展文件名.assets。自定义路径为绝对路径则直接normalize；否则相对文档目录。${filename}全局替换并去最后扩展；有该token且文件名为空时返回null。结果缓存于cachedFileImageStorage。",
+      "evidence": [
+        "globalTargetResolution"
+      ]
+    },
+    {
+      "id": "new-insert-gates",
+      "summary": "得到目标后仍需 shouldTriggerMove。HTTP/HTTPS/FTP图片受applyImageMoveForWeb控制。本地图片受applyImageMoveForLocal控制；data:不自动移动；已在目标目录且为直接子文件时不再移动。TextBundle/Pack越过local/web开关。YAML copy path不会越过local=false。YAML产生upload且global不是upload时，allowImageUpload=false会阻止上传。global上传模式不会因此被禁用。",
+      "evidence": [
+        "shouldTriggerMove",
+        "allowUploadGate",
+        "sourceInsert",
+        "localGlobalSwitchUI"
+      ]
+    },
+    {
+      "id": "no-rule-online",
+      "summary": "无目标或开关拒绝时，在线图片仍插入原地址。resolveImagePath 对 // 转 https://；对 data: 和任意 scheme:// 提前返回，不套autoEscape。故正常网络URL在无rule时直接保留。",
+      "evidence": [
+        "resolveImagePath",
+        "sourceInsert"
+      ]
+    },
+    {
+      "id": "relative-escape",
+      "summary": "无root-url时，仅当useRelativePathForImg且图片在当前文档目录前缀下才转换为相对路径；relativePathWithDot控制./。autoEscapeImageURL只作用未提前返回的本地路径。root-url有单独相对算法；该任务未完整验证root-url。",
+      "evidence": [
+        "resolveImagePath",
+        "syntaxPreferences"
+      ]
+    },
+    {
+      "id": "uploader-precedence",
+      "summary": "非sourceMode下 YAML typora-copy-images-to: ipic 强制使用iPic。值upload仅选择自动上传目标，上传器仍取global imageUploader。global custom时 uploader标识实际是展开后的命令字符串。",
+      "evidence": [
+        "uploaderChoice",
+        "uploaderCommand"
+      ]
+    },
+    {
+      "id": "custom-templates",
+      "summary": "customImageUploader的${filepath}是当前Markdown文档完整路径，${filename}是当前文档名去最后扩展。原版String.replace仅替换各token的首个匹配。图片路径不是这两个token，而由宿主在命令后逐项追加。",
+      "evidence": [
+        "uploaderCommand",
+        "shellBuild",
+        "shellRun"
+      ],
+      "implementationAdvice": "命令为用户明确配置的shell代码；附加图片参数应独立进行可靠shell引用，以保持含空格/$/反引号等文件名字面量。不要复制原版只处理反斜线和双引号的缺陷。"
+    },
+    {
+      "id": "stdout-parse",
+      "summary": "非PicGo/PicList输出按行从末尾向上扫描。空行忽略。接受以http:/、https:/、ftp:/、file:/开头的整行，或小写host + 2至5位小写TLD + /path（补http://）。扫描尚未找到URL前的非URL行忽略；找到URL后遇非URL即停止。保持原顺序返回最后一个连续URL组。",
+      "evidence": [
+        "parseOutput",
+        "uploaderTest"
+      ],
+      "regexes": {
+        "scheme": "^(https?|ftp|file):\\/",
+        "host": "^[a-z0-9]+([\\-\\.]{1}[a-z0-9]+)*\\.[a-z]{2,5}\\/.*$"
+      },
+      "singleInsert": "Mac单图使用解析组最后一个URL；iPic例外直接使用宿主msg。",
+      "batch": "批量需解析结果数严格等于图片路径数；按索引对应原路径。",
+      "test": "Preferences的非iPic测试严格需要2个URL。取消只忽略后续UI结果，不证明杀进程。"
+    },
+    {
+      "id": "native-shell",
+      "summary": "Mac原生使用/bin/bash -c。命令 = 用户命令 + 空格 + 图片路径组；每路径先将反斜线加倍、双引号转义，再包双引号；组间空格连接。timeout=max(60,20*图片数)秒。stdout/stderr按UTF-8解码并交回renderer。",
+      "evidence": [
+        "shellBuild",
+        "shellRun",
+        "shellTimeout"
+      ],
+      "limitations": [
+        "这不是安全路径引用的推荐实现。",
+        "未通过真实上传/失败进程验证exitStatus、stderr组合和后代清理；不能将静态API调用当作可靠清理证明。"
+      ]
+    },
+    {
+      "id": "uploader-test-tokens",
+      "summary": "Node测试先将custom命令各首个${filepath}/${filename}替换为空，再追加两张测试图。Mac测试把Preferences当前命令原样交宿主；该任务尚未证明Mac如何替换这些token。iPic测试仅检查宿主错误，不走2URL断言。",
+      "evidence": [
+        "uploaderTest"
+      ]
+    }
+  ],
+  "uploaderProtocols": {
+    "ipic": {
+      "kind": "native named pasteboard / keyed archive (not shell ipic CLI)",
+      "commandMarker": "ipic",
+      "validation": "images.iPicValidateBeforeUpload then native iPicUploader; image/file upload callbacks return direct imageLink or error.",
+      "nativeAppBundleID": "net.toolinbox.ipic",
+      "urlScheme": "ipic://",
+      "pasteboardName": "net.toolinbox.ipic.pasteboard",
+      "requestTypes": [
+        "net.toolinbox.ipic.pasteboard.iPicImage",
+        "net.toolinbox.ipic.pasteboard.iPicUploaderVersion"
+      ],
+      "resultTypes": [
+        "net.toolinbox.ipic.pasteboard.iPicUploadResult",
+        "net.toolinbox.ipic.pasteboard.iPicUploaderVersionResult"
+      ],
+      "archiveClassNames": [
+        "net.toolinbox.iPic.iPicImage",
+        "net.toolinbox.iPic.iPicUploadResult"
+      ],
+      "imageFields": [
+        "id",
+        "imageFilePath",
+        "imageData",
+        "version",
+        "json"
+      ],
+      "evidence": [
+        "singleMacBridge",
+        "ipicPasteboardInit",
+        "ipicArchive",
+        "ipicParseResult",
+        "ipicVersionRequest",
+        "ipicVersionResult",
+        "ipicLaunch",
+        "ipicImageCoder",
+        "ipicQueue"
+      ],
+      "verification": "Static binary + renderer only; no iPic installed state read or app launch, clipboard mutation, upload, timing, or round trip executed.",
+      "implementationAdvice": "没有真实独立IPC实现和验收时，不能用执行`ipic ...`宣称原生iPic兼容。需独立实现NSKeyedArchiver协议并验证，或明确报告不可用。"
+    },
+    "upic": {
+      "command": "/Applications/uPic.app/Contents/MacOS/uPic -o url -u",
+      "imageArgs": "append each source path as a separate literal shell argument",
+      "output": "generic last URL group parser",
+      "evidence": [
+        "uploaderCommand",
+        "parseOutput"
+      ],
+      "note": "prepareUploadAllImagesOnMac里的replace(-u,-s -u)未赋值；静态上不改变原命令。未运行第三方应用。"
+    },
+    "picsee": {
+      "command": "/Applications/Picsee.app/Contents/MacOS/Picsee -u",
+      "imageArgs": "append each source path as a separate literal shell argument",
+      "output": "generic last URL group parser",
+      "evidence": [
+        "uploaderCommand",
+        "parseOutput"
+      ],
+      "verification": "No app launch or upload performed."
+    },
+    "picgo-app": {
+      "marker": "picgo-app",
+      "macBundleID": "com.molunerfinn.picgo",
+      "macLaunch": "NSWorkspace finds bundle ID and opens with activates=false.",
+      "http": {
+        "url": "http://127.0.0.1:36677/upload",
+        "method": "POST",
+        "jsonBody": {
+          "list": [
+            "absolute image path 1",
+            "absolute image path 2"
+          ]
+        },
+        "success": "HTTP200, JSON success truthy, result array parsed by renderer; require result count match batch."
+      },
+      "retry": "No response on first native call: delay5s then retry once. HTTPresponse with non200 does not trigger no-response retry.",
+      "output": "JSON whole response; generic text parser is not used for actual insert/batch.",
+      "evidence": [
+        "picgoNativeHTTP",
+        "picgoNativeLaunch",
+        "picgoNativeRetry",
+        "parseOutput",
+        "nodeUploadProtocol"
+      ]
+    },
+    "piclist-app": {
+      "marker": "piclist-app",
+      "macBundleID": "com.kuingsmile.piclist",
+      "protocol": "Same native launch and 36677 /upload protocol asPicGo.",
+      "evidence": [
+        "picgoNativeHTTP",
+        "picgoNativeLaunch",
+        "parseOutput"
+      ],
+      "knownReferenceQuirk": "Mac Preferences test callback dispatches only picgo-app to JSON parser; piclist-app falls through generic text parser. This static difference is not proof PicList live upload itself fails."
+    },
+    "picgo-intro": {
+      "kind": "instructions-only selector entry",
+      "opens": "https://support.typora.io/Upload-Image/#option-2-config-via-cli",
+      "macExecutable": null,
+      "evidence": [
+        "uploaderOptions",
+        "uploaderIntroLink"
+      ],
+      "implementationAdvice": "macOS原版不暴露内置picgo-cli。要真实支持用户已安装PicGo-Core，使用Custom Command配置其真实可执行命令，如`/path/to/picgo u`并做上传/两URL解析验证；intro只打开说明，不能当上传命令。"
+    },
+    "picgo-cli": {
+      "availability": "renderer仅File.isNode时生成；native Mac菜单删除picgo-cli而保留picgo-intro。",
+      "nodeCommand": "quoted userDataPath/picgo/{win64|win32|linux}/picgo[.exe] + ` u`; Windows加`chcp 65001| `。",
+      "evidence": [
+        "uploaderCommand",
+        "uploaderOptions"
+      ],
+      "scope": "Not a macOS native bundled CLI guarantee."
+    }
+  },
+  "unproven": [
+    "第三方上传器真实安装/版本、账号、云端上传和失败语义。",
+    "iPic keyed archive完整互操作、版本/超时状态机。",
+    "原版native factory defaults；未读用户偏好值。",
+    "YAML绝对路径、项目设置加载和root-url所有交互。",
+    "原版PicList测试入口静态parser差异的真实表现。",
+    "剪贴板截图/raw bitmap具有独立 ClipboardCommands readImageWithOption:slient: @0x100017220；本轮未追完该宿主路径，所以不能依据insertImageFromURL推定raw是否受local开关限制。"
+  ],
+  "suggestedBehaviorInterface": {
+    "planImageInsertion": "input documentURL, sourceURL/data, sourceMode, YAMLcopyTarget, global storage/local/web/allowUpload + syntax preferences; output retain/copy/upload plus resolvedTarget,uploader,source-kind,syntax plan.",
+    "runImageUploader": "input expanded user command or known provider + ordered source file URLs; output ordered result URLs, bounded stdout/stderr, success/failure/cancel; validate exact count before replacing source.",
+    "formatInsertedImageURL": "input actual result URL + source document/rootURL + useRelativePath/relativeDot/escape; output independently escapedMarkdown destination.",
+    "rule": "自动操作应根据同一冻结偏好快照进行plan，再执行；不应因UI展示项存在就把未实现协议认作已完成。"
+  }
+}

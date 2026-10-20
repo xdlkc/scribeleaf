@@ -1,0 +1,750 @@
+{
+  "generatedAt": "2026-10-19T18:48:44.003Z",
+  "command": "node scripts/verify-file-preferences.mjs",
+  "scope": "Actual shared TS functions and live sidebar DOM/events in isolated JSDOM; real Swift parsing, temporary-directory enumeration and FolderMonitor filter update. No GUI geometry or native App startup/save/drop execution claim.",
+  "sourceHashes": {
+    "src/file-preferences.ts": "43a7991a66472019abb8a51ac284706d4d9987aab7059526bad5c71363583129",
+    "src/ui/sidebar.ts": "d8b532b85137ca9b392c0ca7dacad3b25383afccac9889d40836e088ac92436e",
+    "native/FilePreferences.swift": "0769b0bb375015e003dba4a7cf90140dc3088a2f65cdd3cc57a2e77627c2d014",
+    "native/FolderMonitor.swift": "d848eb59e826e51536be68df517fe136312522406da29966c56da1917970d172"
+  },
+  "passed": true,
+  "total": 151,
+  "passedCount": 151,
+  "js": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "glob-baseline-md",
+        "passed": true
+      },
+      {
+        "name": "glob-baseline-nontext",
+        "passed": true
+      },
+      {
+        "name": "glob-basename-any-depth",
+        "passed": true
+      },
+      {
+        "name": "glob-slash-relative",
+        "passed": true
+      },
+      {
+        "name": "glob-slash-does-not-match-other-root",
+        "passed": true
+      },
+      {
+        "name": "glob-single-star-no-slash",
+        "passed": true
+      },
+      {
+        "name": "glob-double-star-recursive",
+        "passed": true
+      },
+      {
+        "name": "glob-double-star-zero-depth",
+        "passed": true
+      },
+      {
+        "name": "glob-double-star-zero-inner-depth",
+        "passed": true
+      },
+      {
+        "name": "glob-exclude-supported",
+        "passed": true
+      },
+      {
+        "name": "glob-exclude-wins-first",
+        "passed": true
+      },
+      {
+        "name": "glob-exclude-wins-last",
+        "passed": true
+      },
+      {
+        "name": "glob-unmatched-include-keeps-supported",
+        "passed": true
+      },
+      {
+        "name": "glob-spaces-around-pattern",
+        "passed": true
+      },
+      {
+        "name": "glob-spaces-after-exclusion",
+        "passed": true
+      },
+      {
+        "name": "glob-empty-negation-ignored",
+        "passed": true
+      },
+      {
+        "name": "glob-mac-case-sensitive",
+        "passed": true
+      },
+      {
+        "name": "glob-question-one-character",
+        "passed": true
+      },
+      {
+        "name": "glob-question-not-two",
+        "passed": true
+      },
+      {
+        "name": "glob-character-range",
+        "passed": true
+      },
+      {
+        "name": "glob-negative-character-range",
+        "passed": true
+      },
+      {
+        "name": "glob-negative-range-excludes",
+        "passed": true
+      },
+      {
+        "name": "glob-braces-are-literal",
+        "passed": true
+      },
+      {
+        "name": "glob-braces-are-not-alternation",
+        "passed": true
+      },
+      {
+        "name": "glob-regex-punctuation-literal",
+        "passed": true
+      },
+      {
+        "name": "glob-unicode-basename",
+        "passed": true
+      },
+      {
+        "name": "glob-emoji-one-question-does-not-consume-surrogate-pair",
+        "passed": true
+      },
+      {
+        "name": "glob-emoji-two-questions-consume-surrogate-pair",
+        "passed": true
+      },
+      {
+        "name": "glob-emoji-exclusion-must-not-remove-supported",
+        "passed": true
+      },
+      {
+        "name": "glob-emoji-literal",
+        "passed": true
+      },
+      {
+        "name": "glob-combining-mark-two-units",
+        "passed": true
+      },
+      {
+        "name": "glob-double-star-cannot-consume-line-separator",
+        "passed": true
+      },
+      {
+        "name": "glob-single-star-can-consume-line-separator",
+        "passed": true
+      },
+      {
+        "name": "glob-backslash-relative-normalized",
+        "passed": true
+      },
+      {
+        "name": "glob-leading-slash-trimmed",
+        "passed": true
+      },
+      {
+        "name": "glob-invalid-pattern-ignored",
+        "passed": true
+      },
+      {
+        "name": "glob-extensionless-baseline",
+        "passed": true
+      },
+      {
+        "name": "custom-extension-normalized-prefix",
+        "passed": true
+      },
+      {
+        "name": "invalid-extension-normalized-empty",
+        "passed": true
+      },
+      {
+        "name": "extensionless-and-rmarkdown-supported",
+        "passed": true
+      },
+      {
+        "name": "custom-extension-added",
+        "passed": true
+      },
+      {
+        "name": "invalid-types-normalized",
+        "passed": true
+      },
+      {
+        "name": "default-pattern-arrays-not-shared",
+        "passed": true
+      },
+      {
+        "name": "all-still-hides-hidden-parents",
+        "passed": true
+      },
+      {
+        "name": "node-modules-directory-hidden",
+        "passed": true
+      },
+      {
+        "name": "node-modules-regular-file-supported",
+        "passed": true
+      },
+      {
+        "name": "node-modules-tree-all-only",
+        "passed": true
+      },
+      {
+        "name": "tree-supported-hides-csv-and-hidden",
+        "passed": true,
+        "actual": [
+          "",
+          "assets",
+          "deps",
+          "empty",
+          "nested",
+          "node_modules",
+          "note.md",
+          "README"
+        ]
+      },
+      {
+        "name": "tree-preserves-empty-assets-folders",
+        "passed": true
+      },
+      {
+        "name": "tree-all-refilters-without-files-event",
+        "passed": true,
+        "actual": [
+          "",
+          "assets",
+          "deps",
+          "empty",
+          "nested",
+          "data.csv",
+          "node_modules",
+          "note.md",
+          "README"
+        ]
+      },
+      {
+        "name": "hidden-preference-live",
+        "passed": true
+      },
+      {
+        "name": "custom-tree-adds-csv-excludes-supported",
+        "passed": true,
+        "actual": [
+          "",
+          "assets",
+          "deps",
+          "empty",
+          "nested",
+          "nested/data.csv",
+          "nested/notes.md",
+          "data.csv",
+          "node_modules",
+          "note.md",
+          "README"
+        ]
+      },
+      {
+        "name": "file-filter-retains-ancestors",
+        "passed": true,
+        "actual": [
+          "",
+          "nested",
+          "nested/data.csv"
+        ]
+      },
+      {
+        "name": "custom-file-identity-opens-exact-path",
+        "passed": true,
+        "actual": [
+          "/synthetic-files/nested/data.csv",
+          "/synthetic-files/README"
+        ]
+      },
+      {
+        "name": "library-independent-supported-filter",
+        "passed": true,
+        "actual": [
+          "nested/draft-a.md",
+          "node_modules",
+          "note.md",
+          "nested/notes.md",
+          "README"
+        ]
+      },
+      {
+        "name": "library-live-custom-filters",
+        "passed": true,
+        "actual": [
+          "assets/image.png",
+          "node_modules",
+          "note.md",
+          "nested/notes.md",
+          "README"
+        ]
+      },
+      {
+        "name": "new-default-extension-live-supported",
+        "passed": true
+      },
+      {
+        "name": "library-end-key-roving-focus",
+        "passed": true
+      },
+      {
+        "name": "library-enter-opens-focused-file",
+        "passed": true
+      },
+      {
+        "name": "implicit-directory-inferred",
+        "passed": true
+      },
+      {
+        "name": "implicit-nested-file-visible",
+        "passed": true
+      },
+      {
+        "name": "outline-multiple-roots-start-collapsed",
+        "passed": true,
+        "actual": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "name": "outline-disclosure-expands-only-direct-visible-children",
+        "passed": true,
+        "actual": [
+          "A",
+          "A1",
+          "A2",
+          "B"
+        ]
+      },
+      {
+        "name": "outline-right-expands-child",
+        "passed": true
+      },
+      {
+        "name": "outline-right-enters-child",
+        "passed": true
+      },
+      {
+        "name": "outline-left-to-parent",
+        "passed": true
+      },
+      {
+        "name": "outline-left-collapses-parent-keeps-focus",
+        "passed": true
+      },
+      {
+        "name": "outline-label-locates-and-expands",
+        "passed": true
+      },
+      {
+        "name": "outline-flat-preference-reveals-all-live",
+        "passed": true
+      },
+      {
+        "name": "outline-flat-preserves-heading-level-indent",
+        "passed": true
+      },
+      {
+        "name": "outline-flat-down-enter-locates",
+        "passed": true
+      },
+      {
+        "name": "outline-active-heading-updates",
+        "passed": true
+      },
+      {
+        "name": "outline-collapse-state-retained-through-flat",
+        "passed": true,
+        "actual": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "name": "outline-collapsed-active-child-highlights-visible-ancestor",
+        "passed": true
+      },
+      {
+        "name": "outline-single-root-start-open-descendant-collapsed",
+        "passed": true,
+        "actual": [
+          "Only",
+          "Child"
+        ]
+      },
+      {
+        "name": "outline-has-no-unproven-visible-filter",
+        "passed": true
+      }
+    ]
+  },
+  "native": {
+    "checks": [
+      {
+        "actual": true,
+        "name": "glob-baseline-md",
+        "passed": true
+      },
+      {
+        "actual": false,
+        "name": "glob-baseline-nontext",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-basename-any-depth",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-slash-relative",
+        "passed": true
+      },
+      {
+        "actual": false,
+        "name": "glob-slash-does-not-match-other-root",
+        "passed": true
+      },
+      {
+        "actual": false,
+        "name": "glob-single-star-no-slash",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-double-star-recursive",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-double-star-zero-depth",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-double-star-zero-inner-depth",
+        "passed": true
+      },
+      {
+        "actual": false,
+        "name": "glob-exclude-supported",
+        "passed": true
+      },
+      {
+        "actual": false,
+        "name": "glob-exclude-wins-first",
+        "passed": true
+      },
+      {
+        "actual": false,
+        "name": "glob-exclude-wins-last",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-unmatched-include-keeps-supported",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-spaces-around-pattern",
+        "passed": true
+      },
+      {
+        "actual": false,
+        "name": "glob-spaces-after-exclusion",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-empty-negation-ignored",
+        "passed": true
+      },
+      {
+        "actual": false,
+        "name": "glob-mac-case-sensitive",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-question-one-character",
+        "passed": true
+      },
+      {
+        "actual": false,
+        "name": "glob-question-not-two",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-character-range",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-negative-character-range",
+        "passed": true
+      },
+      {
+        "actual": false,
+        "name": "glob-negative-range-excludes",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-braces-are-literal",
+        "passed": true
+      },
+      {
+        "actual": false,
+        "name": "glob-braces-are-not-alternation",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-regex-punctuation-literal",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-unicode-basename",
+        "passed": true
+      },
+      {
+        "actual": false,
+        "name": "glob-emoji-one-question-does-not-consume-surrogate-pair",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-emoji-two-questions-consume-surrogate-pair",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-emoji-exclusion-must-not-remove-supported",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-emoji-literal",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-combining-mark-two-units",
+        "passed": true
+      },
+      {
+        "actual": false,
+        "name": "glob-double-star-cannot-consume-line-separator",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-single-star-can-consume-line-separator",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-backslash-relative-normalized",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-leading-slash-trimmed",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-invalid-pattern-ignored",
+        "passed": true
+      },
+      {
+        "actual": true,
+        "name": "glob-extensionless-baseline",
+        "passed": true
+      },
+      {
+        "name": "default-md",
+        "passed": true
+      },
+      {
+        "name": "supports-extensionless-and-rmarkdown",
+        "passed": true
+      },
+      {
+        "name": "custom-extension-normalization",
+        "passed": true
+      },
+      {
+        "name": "invalid-extension-prefix-cleared",
+        "passed": true
+      },
+      {
+        "name": "custom-extension-added-to-supported",
+        "passed": true
+      },
+      {
+        "name": "native-json-type-validation",
+        "passed": true
+      },
+      {
+        "name": "native-hidden-file-rejected-before-all",
+        "passed": true
+      },
+      {
+        "name": "node-modules-file-is-not-directory",
+        "passed": true
+      },
+      {
+        "name": "node-modules-directory-hidden-in-supported",
+        "passed": true
+      },
+      {
+        "name": "node-modules-directory-visible-only-in-tree-all",
+        "passed": true
+      },
+      {
+        "name": "drop-folder-policy",
+        "passed": true
+      },
+      {
+        "name": "drop-markdown-policy",
+        "passed": true
+      },
+      {
+        "name": "drop-import-policy",
+        "passed": true
+      },
+      {
+        "name": "drop-unsupported-fallback-link",
+        "passed": true
+      },
+      {
+        "name": "switch-save-system-override",
+        "passed": true
+      },
+      {
+        "name": "switch-save-setting",
+        "passed": true
+      },
+      {
+        "name": "launch-new-empty-plan",
+        "passed": true
+      },
+      {
+        "name": "launch-folders-only-deduplicated",
+        "passed": true
+      },
+      {
+        "name": "launch-files-and-folders",
+        "passed": true
+      },
+      {
+        "name": "launch-explicit-open-wins",
+        "passed": true
+      },
+      {
+        "name": "launch-system-close-wins",
+        "passed": true
+      },
+      {
+        "name": "launch-pinned-folder",
+        "passed": true
+      },
+      {
+        "name": "launch-pinned-folder-explicit-policy-survives-system-close",
+        "passed": true
+      },
+      {
+        "name": "launch-unset-pin-no-path",
+        "passed": true
+      },
+      {
+        "name": "disk-supported-selection",
+        "passed": true
+      },
+      {
+        "name": "disk-empty-and-assets-directories-preserved",
+        "passed": true
+      },
+      {
+        "name": "disk-hidden-directory-pruned",
+        "passed": true
+      },
+      {
+        "name": "disk-hidden-enabled",
+        "passed": true
+      },
+      {
+        "name": "disk-tree-all-adds-assets-and-node-modules",
+        "passed": true
+      },
+      {
+        "name": "disk-tree-all-still-hides-hidden",
+        "passed": true
+      },
+      {
+        "name": "disk-custom-union-and-exclusion",
+        "passed": true
+      },
+      {
+        "name": "disk-emoji-not-falsely-excluded-by-one-unit-glob",
+        "passed": true
+      },
+      {
+        "name": "disk-modes-enumerate-union",
+        "passed": true
+      },
+      {
+        "name": "disk-paths-retain-selected-root",
+        "passed": true
+      },
+      {
+        "name": "disk-natural-order",
+        "passed": true
+      },
+      {
+        "name": "monitor-initial-delivery",
+        "passed": true
+      },
+      {
+        "name": "monitor-live-preference-rescan",
+        "passed": true
+      },
+      {
+        "name": "monitor-stopped-no-extra-delivery",
+        "passed": true
+      }
+    ],
+    "observationBackend": "dispatch-sources",
+    "passed": true,
+    "scope": "Real Swift policy parsing, temporary-directory enumeration, and live monitor update. Session/drop/save plans are helper contracts; App.swift wiring is verified separately. No user session, files or settings used."
+  },
+  "reference": "evidence/file-preferences-source-reference.json",
+  "limitations": [
+    "Independent fallback values do not prove macOS factory defaults.",
+    "App.swift launch/save/drop and Recent Documents wiring is owned and verified by the coordinator.",
+    "JSDOM verifies real product DOM and keyboard handlers, not WebKit pixels, native focus, IME or original keyboard parity.",
+    "Malformed glob patterns are ignored safely; installed source can throw a RegExp error for malformed classes.",
+    "Symlink/package traversal behavior is unchanged and has not been compared to every original filesystem case."
+  ]
+}

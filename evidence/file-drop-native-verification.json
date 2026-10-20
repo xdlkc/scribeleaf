@@ -1,0 +1,53 @@
+{
+  "checks": [
+    {
+      "name": "real-drop-directory-is-empty-success",
+      "passed": true
+    },
+    {
+      "name": "drop-lookup-selects-drag-board",
+      "passed": true
+    },
+    {
+      "name": "drop-matched-image-resolves",
+      "passed": true
+    },
+    {
+      "name": "paste-lookup-selects-general-board",
+      "passed": true
+    },
+    {
+      "name": "mixed-native-snapshot-omits-directory",
+      "passed": true
+    },
+    {
+      "name": "native-original-markdown-preserved",
+      "passed": true
+    },
+    {
+      "name": "injected-snapshot-only-no-user-pasteboards-read",
+      "passed": true
+    }
+  ],
+  "generatedAt": "2026-10-19T18:46:21Z",
+  "passed": true,
+  "scope": "Actual production Clipboard queue with temporary directory/file and injected value-only pasteboard snapshots. No real NSPasteboard reads.",
+  "sourceHashes": {
+    "src/editor/file-drop.ts": "d6c5fb9628e82cffb7b2e705c9f3104420517ae6bd1f2115c6d59d48ff804ebb",
+    "src/editor/clipboard.ts": "233ab25b8accd84eef50779e47aadcff8482ac2d8a0bdbb4f44b0c651a8bd3c0",
+    "native/Clipboard.swift": "0b16a99f0d8ebcaea225f4c6350eb1bc2947bfb30b9209a095eeaad66235c6d7",
+    "native/ImagePreferences.swift": "8f5046f1094bb9fed3cef240fcaee3fb35768262d5624d8c6e31b4fb734aad8d",
+    "native/ExportSettings.swift": "f29a38d1dac18dd575193ee95431bbaf8e0d5016f8c892c93cd787c8367f96ff",
+    "native/DocumentConversion.swift": "927cc47716dd5cab06fcc042dfe4a0abb4725f209bc066591dbdad76c84c5d41",
+    "scripts/verify-file-drop.mjs": "20930c196c2767a06cfa34b8c9ad66eaf749106e73dfea157ce9f42c7e4f95c6"
+  },
+  "sourceMatchesCurrent": {
+    "src/editor/file-drop.ts": true,
+    "src/editor/clipboard.ts": true,
+    "native/Clipboard.swift": true,
+    "native/ImagePreferences.swift": true,
+    "native/ExportSettings.swift": true,
+    "native/DocumentConversion.swift": true,
+    "scripts/verify-file-drop.mjs": true
+  }
+}

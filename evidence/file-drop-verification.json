@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-10-19T18:47:20.178Z",
+  "passed": true,
+  "fullProductParity": false,
+  "sourceHashes": {
+    "src/editor/file-drop.ts": "d6c5fb9628e82cffb7b2e705c9f3104420517ae6bd1f2115c6d59d48ff804ebb",
+    "src/editor/clipboard.ts": "233ab25b8accd84eef50779e47aadcff8482ac2d8a0bdbb4f44b0c651a8bd3c0",
+    "native/Clipboard.swift": "0b16a99f0d8ebcaea225f4c6350eb1bc2947bfb30b9209a095eeaad66235c6d7"
+  },
+  "verification": {
+    "dom": {
+      "file": "file-drop-dom-verification.json",
+      "passed": 31,
+      "total": 31
+    },
+    "native": {
+      "file": "file-drop-native-verification.json",
+      "passed": 7,
+      "total": 7
+    },
+    "clipboardRegression": {
+      "exitCode": 0,
+      "totalChecks": 70,
+      "allJavaScriptPassed": true
+    },
+    "imageNative": {
+      "file": "image-preferences-native-verification.json",
+      "passed": 50,
+      "total": 50
+    },
+    "imageDOM": {
+      "file": "image-preferences-dom-verification.json",
+      "passed": 51,
+      "total": 51
+    },
+    "typecheck": {
+      "exitCode": 0,
+      "output": "> typora-replica-editor@0.1.0 typecheck\n> tsc --noEmit"
+    }
+  },
+  "fixes": [
+    "Capture native document ID, renderer generation, document path and base URL with the pending caret. Reject mismatched, duplicate, stale, destroyed or replaced-state results.",
+    "Resolve missing-path fallback by actual unmapped items; duplicate URI/file references no longer suppress the dragging-pasteboard request.",
+    "Directory entry metadata and URI trailing slash override image-looking names. Known directories are excluded from the image queue.",
+    "Unknown image-looking Finder entries reach both native classification and the existing image queue; native Clipboard silently consumes real drop directories with an empty successful result.",
+    "Mixed non-image URI paths are not enqueued as image requests.",
+    "File link destinations preserve literal Unicode, percent, hash, parentheses and brackets; a colon in a relative file name is escaped so it cannot become a URI scheme.",
+    "Failed native posting releases the pending request and leaves the original browser flow available.",
+    "Production pasteboard snapshot provider still chooses drag for drops and general for pastes; injected value fixtures prove the distinction without reading real system boards."
+  ],
+  "integration": {
+    "helperExports": [
+      "fileDropExtension",
+      "handleNonImageFileDrop",
+      "handleFileDropResult",
+      "isDirectoryDropFile",
+      "isDirectoryDropURI"
+    ],
+    "nativeResult": "Both document IDs must echo the request. links use absolute local POSIX paths, names and optional isDirectory.",
+    "missingPaths": "When useDraggingPasteboard is true, native must merge this drag snapshot with explicit paths; never use the general clipboard."
+  },
+  "scope": {
+    "actualCodeMirrorDOM": true,
+    "positionLayout": "Fixed JSDOM hit-test coordinates; actual CodeMirror edit mapping is verified.",
+    "systemPasteboardsRead": false,
+    "GUIStarted": false,
+    "cloudRequests": false,
+    "externalHarnessUsed": false
+  },
+  "limitations": [
+    "Native file-open/import/sidebar behavior is owned and verified by file_preferences; this evidence covers renderer routing and native Clipboard directory filtering.",
+    "Actual macOS Finder gesture geometry and system drag-board lifetime were not exercised."
+  ]
+}

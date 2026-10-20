@@ -1,0 +1,934 @@
+{
+  "scope": "Real production DocumentConverter + Pandoc 3.12.1; fixed-format and generic writer paths; no GUI",
+  "source": "https://pandoc.org/lua-filters.html",
+  "baseline": {
+    "sourceSHA256": "030b08c16d10dd6f1275e9c82e4b836708231fc3af1de4168de263cd700c2dcd",
+    "compiler": {
+      "passed": true,
+      "swiftVersion": "5",
+      "target": "x86_64-apple-macosx13.0",
+      "diagnostics": "2026-10-19 23:35:17.533 xcodebuild[86255:4026760]  DVTFilePathFSEvents: Failed to start fs event stream.\n2026-10-19 23:35:18.582 xcodebuild[86255:4026759] [MT] DVTDeveloperPaths: Failed to get length of DARWIN_USER_CACHE_DIR from confstr(3), error = Error Domain=NSPOSIXErrorDomain Code=5 \"Input/output error\". Using NSCachesDirectory instead.\n2026-10-19 23:35:20.519 xcodebuild[86263:4026855]  DVTFilePathFSEvents: Failed to start fs event stream.\n2026-10-19 23:35:21.152 xcodebuild[86263:4026854] [MT] DVTDeveloperPaths: Failed to get length of DARWIN_USER_CACHE_DIR from confstr(3), error = Error Domain=NSPOSIXErrorDomain Code=5 \"Input/output error\". Using NSCachesDirectory instead.\n"
+    },
+    "execution": {
+      "returnCode": 0,
+      "stderr": ""
+    },
+    "nativeChecks": [],
+    "checks": [
+      {
+        "name": "mediawiki-fixed-toc",
+        "passed": true
+      },
+      {
+        "name": "mediawiki-generic-toc",
+        "passed": true
+      },
+      {
+        "name": "mediawiki-fixed-toc-case-space",
+        "passed": false
+      },
+      {
+        "name": "mediawiki-generic-toc-case-space",
+        "passed": false
+      },
+      {
+        "name": "mediawiki-fixed-fenced",
+        "passed": false
+      },
+      {
+        "name": "mediawiki-generic-fenced",
+        "passed": false
+      },
+      {
+        "name": "mediawiki-fixed-indented",
+        "passed": true
+      },
+      {
+        "name": "mediawiki-generic-indented",
+        "passed": true
+      },
+      {
+        "name": "mediawiki-fixed-inline-code",
+        "passed": true
+      },
+      {
+        "name": "mediawiki-generic-inline-code",
+        "passed": true
+      },
+      {
+        "name": "mediawiki-fixed-prose",
+        "passed": true
+      },
+      {
+        "name": "mediawiki-generic-prose",
+        "passed": true
+      },
+      {
+        "name": "mediawiki-fixed-html-block",
+        "passed": false
+      },
+      {
+        "name": "mediawiki-generic-html-block",
+        "passed": false
+      },
+      {
+        "name": "mediawiki-fixed-html-inline",
+        "passed": true
+      },
+      {
+        "name": "mediawiki-generic-html-inline",
+        "passed": true
+      },
+      {
+        "name": "mediawiki-fixed-strong",
+        "passed": true
+      },
+      {
+        "name": "mediawiki-generic-strong",
+        "passed": true
+      },
+      {
+        "name": "mediawiki-fixed-link",
+        "passed": true
+      },
+      {
+        "name": "mediawiki-generic-link",
+        "passed": true
+      },
+      {
+        "name": "mediawiki-fixed-reference-link",
+        "passed": false
+      },
+      {
+        "name": "mediawiki-generic-reference-link",
+        "passed": false
+      },
+      {
+        "name": "mediawiki-fixed-paragraph-continuation",
+        "passed": false
+      },
+      {
+        "name": "mediawiki-generic-paragraph-continuation",
+        "passed": false
+      },
+      {
+        "name": "mediawiki-fixed-unicode",
+        "passed": true
+      },
+      {
+        "name": "mediawiki-generic-unicode",
+        "passed": true
+      },
+      {
+        "name": "mediawiki-fixed-escaped",
+        "passed": true
+      },
+      {
+        "name": "mediawiki-generic-escaped",
+        "passed": true
+      },
+      {
+        "name": "latex-fixed-toc",
+        "passed": false
+      },
+      {
+        "name": "latex-generic-toc",
+        "passed": false
+      },
+      {
+        "name": "latex-fixed-toc-case-space",
+        "passed": false
+      },
+      {
+        "name": "latex-generic-toc-case-space",
+        "passed": false
+      },
+      {
+        "name": "latex-fixed-fenced",
+        "passed": false
+      },
+      {
+        "name": "latex-generic-fenced",
+        "passed": false
+      },
+      {
+        "name": "latex-fixed-indented",
+        "passed": true
+      },
+      {
+        "name": "latex-generic-indented",
+        "passed": true
+      },
+      {
+        "name": "latex-fixed-inline-code",
+        "passed": true
+      },
+      {
+        "name": "latex-generic-inline-code",
+        "passed": true
+      },
+      {
+        "name": "latex-fixed-prose",
+        "passed": true
+      },
+      {
+        "name": "latex-generic-prose",
+        "passed": true
+      },
+      {
+        "name": "latex-fixed-html-block",
+        "passed": true
+      },
+      {
+        "name": "latex-generic-html-block",
+        "passed": true
+      },
+      {
+        "name": "latex-fixed-html-inline",
+        "passed": true
+      },
+      {
+        "name": "latex-generic-html-inline",
+        "passed": true
+      },
+      {
+        "name": "latex-fixed-strong",
+        "passed": true
+      },
+      {
+        "name": "latex-generic-strong",
+        "passed": true
+      },
+      {
+        "name": "latex-fixed-link",
+        "passed": true
+      },
+      {
+        "name": "latex-generic-link",
+        "passed": true
+      },
+      {
+        "name": "latex-fixed-reference-link",
+        "passed": false
+      },
+      {
+        "name": "latex-generic-reference-link",
+        "passed": false
+      },
+      {
+        "name": "latex-fixed-paragraph-continuation",
+        "passed": false
+      },
+      {
+        "name": "latex-generic-paragraph-continuation",
+        "passed": false
+      },
+      {
+        "name": "latex-fixed-unicode",
+        "passed": true
+      },
+      {
+        "name": "latex-generic-unicode",
+        "passed": true
+      },
+      {
+        "name": "latex-fixed-escaped",
+        "passed": true
+      },
+      {
+        "name": "latex-generic-escaped",
+        "passed": true
+      }
+    ],
+    "mismatches": [
+      {
+        "case": "mediawiki-fixed-toc-case-space",
+        "prepared": "  [tOc] \t\n",
+        "actualSHA256": "37f15b075f9ee8372c5bb873ad25859822ff9ed0a33631f5e7f63fe3cd98dc43",
+        "actualBody": "[tOc]\n",
+        "expectedSHA256": "e1d4189614c1279538b040d8a94c7ce7f38262885d235add209d47473758b333",
+        "expectedBody": "__TOC__\n"
+      },
+      {
+        "case": "mediawiki-generic-toc-case-space",
+        "prepared": "  [tOc] \t\n",
+        "actualSHA256": "37f15b075f9ee8372c5bb873ad25859822ff9ed0a33631f5e7f63fe3cd98dc43",
+        "actualBody": "[tOc]\n",
+        "expectedSHA256": "e1d4189614c1279538b040d8a94c7ce7f38262885d235add209d47473758b333",
+        "expectedBody": "__TOC__\n"
+      },
+      {
+        "case": "mediawiki-fixed-fenced",
+        "prepared": "```text\n```{=mediawiki}\n__TOC__\n```\n```\n",
+        "actualSHA256": "1c5f70e3317ce2e70caa645abb7824b4ec048fa37dc6642b5f0d8e0f6d74d675",
+        "actualBody": "<syntaxhighlight lang=\"text\">```{=mediawiki}\n__TOC__</syntaxhighlight>\n```\n",
+        "expectedSHA256": "997ce230fc90f22e5d4f20746b74d75d411c2acc574bcd2655dfcee29fa894bc",
+        "expectedBody": "<syntaxhighlight lang=\"text\">[TOC]</syntaxhighlight>\n"
+      },
+      {
+        "case": "mediawiki-generic-fenced",
+        "prepared": "```text\n```{=mediawiki}\n__TOC__\n```\n```\n",
+        "actualSHA256": "1c5f70e3317ce2e70caa645abb7824b4ec048fa37dc6642b5f0d8e0f6d74d675",
+        "actualBody": "<syntaxhighlight lang=\"text\">```{=mediawiki}\n__TOC__</syntaxhighlight>\n```\n",
+        "expectedSHA256": "997ce230fc90f22e5d4f20746b74d75d411c2acc574bcd2655dfcee29fa894bc",
+        "expectedBody": "<syntaxhighlight lang=\"text\">[TOC]</syntaxhighlight>\n"
+      },
+      {
+        "case": "mediawiki-fixed-html-block",
+        "prepared": "<pre>\n```{=mediawiki}\n__TOC__\n```\n</pre>\n",
+        "actualSHA256": "a8b55d5c88a26aeac497294aea708701fd2bdf36582c0269aaeca041cc41a716",
+        "actualBody": "<pre>\n```{=mediawiki}\n__TOC__\n```\n</pre>\n",
+        "expectedSHA256": "896f7d8ef0b617631aa843b2821661dee4c1006ef91f52b2db90bc9b11448060",
+        "expectedBody": "<pre>\n[TOC]\n</pre>\n"
+      },
+      {
+        "case": "mediawiki-generic-html-block",
+        "prepared": "<pre>\n```{=mediawiki}\n__TOC__\n```\n</pre>\n",
+        "actualSHA256": "a8b55d5c88a26aeac497294aea708701fd2bdf36582c0269aaeca041cc41a716",
+        "actualBody": "<pre>\n```{=mediawiki}\n__TOC__\n```\n</pre>\n",
+        "expectedSHA256": "896f7d8ef0b617631aa843b2821661dee4c1006ef91f52b2db90bc9b11448060",
+        "expectedBody": "<pre>\n[TOC]\n</pre>\n"
+      },
+      {
+        "case": "mediawiki-fixed-reference-link",
+        "prepared": "```{=mediawiki}\n__TOC__\n```\n\n[TOC]: https://example.test/toc\n",
+        "actualSHA256": "e1d4189614c1279538b040d8a94c7ce7f38262885d235add209d47473758b333",
+        "actualBody": "__TOC__\n",
+        "expectedSHA256": "da6337957750d61c65c00eb94ab163c42a97b1df163d9006e73ec0d7e14a68d0",
+        "expectedBody": "[https://example.test/toc TOC]\n"
+      },
+      {
+        "case": "mediawiki-generic-reference-link",
+        "prepared": "```{=mediawiki}\n__TOC__\n```\n\n[TOC]: https://example.test/toc\n",
+        "actualSHA256": "e1d4189614c1279538b040d8a94c7ce7f38262885d235add209d47473758b333",
+        "actualBody": "__TOC__\n",
+        "expectedSHA256": "da6337957750d61c65c00eb94ab163c42a97b1df163d9006e73ec0d7e14a68d0",
+        "expectedBody": "[https://example.test/toc TOC]\n"
+      },
+      {
+        "case": "mediawiki-fixed-paragraph-continuation",
+        "prepared": "```{=mediawiki}\n__TOC__\n```\nnext line\n",
+        "actualSHA256": "5518feea1df6ec27bea4cc0ae69877b85ce4d6b0674d95a3eecc80183ad82e7a",
+        "actualBody": "__TOC__\nnext line\n",
+        "expectedSHA256": "00d99d58783f9ae62d9e6778d6ce983929bc2a6a5826728ab6c89f08afeca90a",
+        "expectedBody": "[TOC] next line\n"
+      },
+      {
+        "case": "mediawiki-generic-paragraph-continuation",
+        "prepared": "```{=mediawiki}\n__TOC__\n```\nnext line\n",
+        "actualSHA256": "5518feea1df6ec27bea4cc0ae69877b85ce4d6b0674d95a3eecc80183ad82e7a",
+        "actualBody": "__TOC__\nnext line\n",
+        "expectedSHA256": "00d99d58783f9ae62d9e6778d6ce983929bc2a6a5826728ab6c89f08afeca90a",
+        "expectedBody": "[TOC] next line\n"
+      },
+      {
+        "case": "latex-fixed-toc",
+        "prepared": "```{=latex}\ntableofcontents\n```\n",
+        "actualSHA256": "0e0df4bf2552b1cafe75b7cdf7623f2e6e6edbb8879613392ff5b044cfb87cfc",
+        "actualBody": "tableofcontents\n\n\\end{document}",
+        "expectedSHA256": "28d0640c00223f615a4c5490a381c446f60fe12bbe2516ee319539acb1d457a8",
+        "expectedBody": "\\tableofcontents\n\n\\end{document}"
+      },
+      {
+        "case": "latex-generic-toc",
+        "prepared": "```{=latex}\ntableofcontents\n```\n",
+        "actualSHA256": "0e0df4bf2552b1cafe75b7cdf7623f2e6e6edbb8879613392ff5b044cfb87cfc",
+        "actualBody": "tableofcontents\n\n\\end{document}",
+        "expectedSHA256": "28d0640c00223f615a4c5490a381c446f60fe12bbe2516ee319539acb1d457a8",
+        "expectedBody": "\\tableofcontents\n\n\\end{document}"
+      },
+      {
+        "case": "latex-fixed-toc-case-space",
+        "prepared": "  [tOc] \t\n",
+        "actualSHA256": "cb67dc373b33be7f22a13cad059b33ded1ebce283d2662f98c35413693c523ed",
+        "actualBody": "{[}tOc{]}\n\n\\end{document}",
+        "expectedSHA256": "28d0640c00223f615a4c5490a381c446f60fe12bbe2516ee319539acb1d457a8",
+        "expectedBody": "\\tableofcontents\n\n\\end{document}"
+      },
+      {
+        "case": "latex-generic-toc-case-space",
+        "prepared": "  [tOc] \t\n",
+        "actualSHA256": "cb67dc373b33be7f22a13cad059b33ded1ebce283d2662f98c35413693c523ed",
+        "actualBody": "{[}tOc{]}\n\n\\end{document}",
+        "expectedSHA256": "28d0640c00223f615a4c5490a381c446f60fe12bbe2516ee319539acb1d457a8",
+        "expectedBody": "\\tableofcontents\n\n\\end{document}"
+      },
+      {
+        "case": "latex-fixed-fenced",
+        "prepared": "```text\n```{=latex}\ntableofcontents\n```\n```\n",
+        "actualSHA256": "d46c9ec1962bd0b6aa27e85be736cb9174637e578a7d6e223c79a034dad65385",
+        "actualBody": "\\begin{Shaded}\n\\begin{Highlighting}[]\n\\NormalTok{\\textasciigrave{}\\textasciigrave{}\\textasciigrave{}\\{=latex\\}}\n\\NormalTok{tableofcontents}\n\\end{Highlighting}\n\\end{Shaded}\n\n```\n\n\\end{document}",
+        "expectedSHA256": "7f16c0d0fc8f58897a6e90bedc77eb8e40bf5a2892ed340545d3dcc600ef41da",
+        "expectedBody": "\\begin{Shaded}\n\\begin{Highlighting}[]\n\\NormalTok{[TOC]}\n\\end{Highlighting}\n\\end{Shaded}\n\n\n\\end{document}"
+      },
+      {
+        "case": "latex-generic-fenced",
+        "prepared": "```text\n```{=latex}\ntableofcontents\n```\n```\n",
+        "actualSHA256": "d46c9ec1962bd0b6aa27e85be736cb9174637e578a7d6e223c79a034dad65385",
+        "actualBody": "\\begin{Shaded}\n\\begin{Highlighting}[]\n\\NormalTok{\\textasciigrave{}\\textasciigrave{}\\textasciigrave{}\\{=latex\\}}\n\\NormalTok{tableofcontents}\n\\end{Highlighting}\n\\end{Shaded}\n\n```\n\n\\end{document}",
+        "expectedSHA256": "7f16c0d0fc8f58897a6e90bedc77eb8e40bf5a2892ed340545d3dcc600ef41da",
+        "expectedBody": "\\begin{Shaded}\n\\begin{Highlighting}[]\n\\NormalTok{[TOC]}\n\\end{Highlighting}\n\\end{Shaded}\n\n\n\\end{document}"
+      },
+      {
+        "case": "latex-fixed-reference-link",
+        "prepared": "```{=latex}\ntableofcontents\n```\n\n[TOC]: https://example.test/toc\n",
+        "actualSHA256": "0e0df4bf2552b1cafe75b7cdf7623f2e6e6edbb8879613392ff5b044cfb87cfc",
+        "actualBody": "tableofcontents\n\n\\end{document}",
+        "expectedSHA256": "25e07585428ed352cfd5684a54f47e299681c8e4bbbe418924c3383e93b05cc4",
+        "expectedBody": "\\href{https://example.test/toc}{TOC}\n\n\\end{document}"
+      },
+      {
+        "case": "latex-generic-reference-link",
+        "prepared": "```{=latex}\ntableofcontents\n```\n\n[TOC]: https://example.test/toc\n",
+        "actualSHA256": "0e0df4bf2552b1cafe75b7cdf7623f2e6e6edbb8879613392ff5b044cfb87cfc",
+        "actualBody": "tableofcontents\n\n\\end{document}",
+        "expectedSHA256": "25e07585428ed352cfd5684a54f47e299681c8e4bbbe418924c3383e93b05cc4",
+        "expectedBody": "\\href{https://example.test/toc}{TOC}\n\n\\end{document}"
+      },
+      {
+        "case": "latex-fixed-paragraph-continuation",
+        "prepared": "```{=latex}\ntableofcontents\n```\nnext line\n",
+        "actualSHA256": "3ed3cec99e219df6bc90c1ac13fcbc085ac585f2018476baec71058be75f2c49",
+        "actualBody": "tableofcontents\n\nnext line\n\n\\end{document}",
+        "expectedSHA256": "167291c747e34ed31f1d9554a2bf32011cb34aa2e2db1aafb1207ad42ae135e2",
+        "expectedBody": "{[}TOC{]} next line\n\n\\end{document}"
+      },
+      {
+        "case": "latex-generic-paragraph-continuation",
+        "prepared": "```{=latex}\ntableofcontents\n```\nnext line\n",
+        "actualSHA256": "3ed3cec99e219df6bc90c1ac13fcbc085ac585f2018476baec71058be75f2c49",
+        "actualBody": "tableofcontents\n\nnext line\n\n\\end{document}",
+        "expectedSHA256": "167291c747e34ed31f1d9554a2bf32011cb34aa2e2db1aafb1207ad42ae135e2",
+        "expectedBody": "{[}TOC{]} next line\n\n\\end{document}"
+      }
+    ],
+    "prepareIdentity": false,
+    "escapedLiteralProof": [
+      {
+        "case": "mediawiki-fixed-escaped",
+        "actualSHA256": "cab0dfd8ee4c29354542d1231d1b20f471a6a08fd2480c702ed1c9d6c79b0cb7",
+        "actualBody": "[TOC]\n"
+      },
+      {
+        "case": "mediawiki-generic-escaped",
+        "actualSHA256": "cab0dfd8ee4c29354542d1231d1b20f471a6a08fd2480c702ed1c9d6c79b0cb7",
+        "actualBody": "[TOC]\n"
+      },
+      {
+        "case": "latex-fixed-escaped",
+        "actualSHA256": "b40e15bb6192a1c30b83a133a364c0be08a9eed80ad6d06bcb67ec837bee6953",
+        "actualBody": "{[}TOC{]}\n\n\\end{document}"
+      },
+      {
+        "case": "latex-generic-escaped",
+        "actualSHA256": "b40e15bb6192a1c30b83a133a364c0be08a9eed80ad6d06bcb67ec837bee6953",
+        "actualBody": "{[}TOC{]}\n\n\\end{document}"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "mediawiki-fixed-toc",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-toc",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-toc-case-space",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-toc-case-space",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-fenced",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-fenced",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-indented",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-indented",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-inline-code",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-inline-code",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-prose",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-prose",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-html-block",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-html-block",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-html-inline",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-html-inline",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-strong",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-strong",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-link",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-link",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-reference-link",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-reference-link",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-paragraph-continuation",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-paragraph-continuation",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-unicode",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-unicode",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-escaped",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-escaped",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-fenced-escaped",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-fenced-escaped",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-indented-escaped",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-indented-escaped",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-multiline-inline-code",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-multiline-inline-code",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-display-math",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-display-math",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-html-inline-multiline",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-html-inline-multiline",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-raw-block",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-raw-block",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-toc-strip-comments",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-toc-strip-comments",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-fixed-html-strip-comments",
+      "passed": true
+    },
+    {
+      "name": "mediawiki-generic-html-strip-comments",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-toc",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-toc",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-toc-case-space",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-toc-case-space",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-fenced",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-fenced",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-indented",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-indented",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-inline-code",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-inline-code",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-prose",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-prose",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-html-block",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-html-block",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-html-inline",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-html-inline",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-strong",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-strong",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-link",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-link",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-reference-link",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-reference-link",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-paragraph-continuation",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-paragraph-continuation",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-unicode",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-unicode",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-escaped",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-escaped",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-fenced-escaped",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-fenced-escaped",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-indented-escaped",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-indented-escaped",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-multiline-inline-code",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-multiline-inline-code",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-display-math",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-display-math",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-html-inline-multiline",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-html-inline-multiline",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-raw-block",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-raw-block",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-toc-strip-comments",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-toc-strip-comments",
+      "passed": true
+    },
+    {
+      "name": "latex-fixed-html-strip-comments",
+      "passed": true
+    },
+    {
+      "name": "latex-generic-html-strip-comments",
+      "passed": true
+    },
+    {
+      "name": "Empty writer autodetects .html and applies known Auto TOC semantics",
+      "passed": true,
+      "actualSHA256": "408c14e31c6d7918544ad9937fb359109c313c5a973041b559c3ed035e074a4a",
+      "expectedSHA256": "408c14e31c6d7918544ad9937fb359109c313c5a973041b559c3ed035e074a4a",
+      "body": "<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n  <meta charset=\"utf-8\" />\n  <meta name=\"generator\" content=\"pandoc 3.12.1\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=yes\" />\n  <title>snapshot</title>\n  <style>\n    /* Default styles provided by pandoc.\n    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.\n    */\n    html {\n      color: #1a1a1a;\n      color: light-dark(#1a1a1a, #fdfdfd);\n      background-color: #fdfdfd;\n      background-color: light-dark(#fdfdfd, #1a1a1a);\n      color-scheme: light dark;\n    }\n    body {\n      margin: 0 auto;\n      max-width: 36em;\n      padding-left: 50px;\n      padding-right: 50px;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      hyphens: auto;\n      overflow-wrap: break-word;\n      text-rendering: optimizeLegibility;\n      font-kerning: normal;\n    }\n    @media (max-width: 600px) {\n      body {\n        font-size: 0.9em;\n        padding: 12px;\n      }\n      h1 {\n        font-size: 1.8em;\n      }\n    }\n    @media print {\n      html {\n        color-scheme: light only;\n      }\n      html, body, pre, code {\n        background-color: transparent;\n      }\n      body, a, a:visited, blockquote {\n        color: black;\n      }\n      pre, code {\n        padding: 0;\n      }\n      p, h2, h3 {\n        orphans: 3;\n        widows: 3;\n      }\n      h2, h3, h4 {\n        page-break-after: avoid;\n      }\n    }\n    p {\n      margin: 1em 0;\n    }\n    a, a:visited {\n      color: inherit;\n    }\n    img {\n      max-width: 100%;\n    }\n    svg {\n      height: auto;\n      max-width: 100%;\n    }\n    h1, h2, h3, h4, h5, h6 {\n      margin-top: 1.4em;\n    }\n    h5, h6 {\n      font-size: 1em;\n      font-style: italic;\n    }\n    h6 {\n      font-weight: normal;\n    }\n    ol, ul {\n      padding-left: 1.7em;\n      margin-top: 1em;\n    }\n    li > ol, li > ul {\n      margin-top: 0;\n    }\n    blockquote {\n      margin: 1em 0 1em 1.7em;\n      padding-left: 1em;\n      border-left: 2px solid;\n      border-color: #e6e6e6;\n      border-color: light-dark(#e6e6e6, #4c4c4c);\n      color: #606060;\n      color: light-dark(#606060, #b6b6b6);\n    }\n    code {\n      white-space: pre-wrap;\n      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;\n      font-size: 85%;\n      margin: 0;\n      hyphens: manual;\n    }\n    pre {\n      margin: 1em 0;\n      overflow: auto;\n    }\n    pre code {\n      padding: 0;\n      overflow: visible;\n      overflow-wrap: normal;\n    }\n    .sourceCode {\n     background-color: transparent;\n     overflow: visible;\n    }\n    hr {\n      border: none;\n      border-top: 1px solid currentColor;\n      height: 1px;\n      margin: 1em 0;\n    }\n    table {\n      margin: 1em 0;\n      border-collapse: collapse;\n      width: 100%;\n      overflow-x: auto;\n      display: block;\n      font-variant-numeric: lining-nums tabular-nums;\n    }\n    table caption {\n      margin-bottom: 0.75em;\n    }\n    tbody {\n      margin-top: 0.5em;\n      border-top: 1px solid currentColor;\n      border-bottom: 1px solid currentColor;\n    }\n    th {\n      border-top: 1px solid currentColor;\n      padding: 0.25em 0.5em 0.25em 0.5em;\n    }\n    td {\n      padding: 0.125em 0.5em 0.25em 0.5em;\n    }\n    header {\n      margin-bottom: 4em;\n      text-align: center;\n    }\n    #TOC li {\n      list-style: none;\n    }\n    #TOC ul {\n      padding-left: 1.3em;\n    }\n    #TOC > ul {\n      padding-left: 0;\n    }\n    #TOC a:not(:hover) {\n      text-decoration: none;\n    }\n    span.smallcaps{font-variant: small-caps;}\n    div.columns{display: flex; gap: 1.5em;}\n    div.column{flex: auto;}\n    @media screen {\n    div.columns{gap: min(4vw, 1.5em);}\n    div.column{overflow-x: auto;}\n    }\n    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}\n    /* The extra [class] is a hack that increases specificity enough to\n       override a similar rule in reveal.js */\n    ul.task-list[class]{list-style: none;}\n    ul.task-list li input[type=\"checkbox\"] {\n      font-size: inherit;\n      width: 0.8em;\n      margin: 0 0.8em 0.2em -1.6em;\n      vertical-align: middle;\n    }\n  </style>\n</head>\n<body>\n<h1 id=\"自动-auto-café\">自动 Auto Café</h1>\n<p>[TOC]</p>\n<p>正文 Ω</p>\n</body>\n</html>\n"
+    },
+    {
+      "name": "Empty writer autodetects .tex and applies known Auto TOC semantics",
+      "passed": true,
+      "actualSHA256": "9a9c42e8d65ae2030a8c29ac507510dbb00843e32e21ae8f96714bf6c8fcadcf",
+      "expectedSHA256": "9a9c42e8d65ae2030a8c29ac507510dbb00843e32e21ae8f96714bf6c8fcadcf",
+      "body": "\\section{自动 Auto Café}\\label{ux81eaux52a8-auto-cafuxe9}\n\n\\tableofcontents\n\n正文 Ω\n\n\\end{document}"
+    },
+    {
+      "detail": "",
+      "name": "fixed: real Pandoc failure keeps old output/source",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "fixed: cancellation during real Lua filtering keeps old output/source",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "fixed: timeout during real Lua filtering keeps old output/source",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "generic: real Pandoc failure keeps old output/source",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "generic: cancellation during real Lua filtering keeps old output/source",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "generic: timeout during real Lua filtering keeps old output/source",
+      "passed": true
+    },
+    {
+      "detail": "output=[], input=[]",
+      "name": "Success/failure/cancel/timeout remove private snapshots, TOC filters and staged output",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Source bytes remain unchanged after every conversion",
+      "passed": true
+    },
+    {
+      "name": "prepareRawMarkdown preserves the original Markdown bytes",
+      "passed": true
+    }
+  ],
+  "sourceSHA256": "927cc47716dd5cab06fcc042dfe4a0abb4725f209bc066591dbdad76c84c5d41",
+  "compiler": {
+    "passed": true,
+    "swiftVersion": "5",
+    "target": "x86_64-apple-macosx13.0",
+    "diagnostics": ""
+  },
+  "execution": {
+    "returnCode": 0,
+    "stderr": ""
+  },
+  "nativeChecks": [
+    {
+      "detail": "",
+      "name": "fixed: real Pandoc failure keeps old output/source",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "fixed: cancellation during real Lua filtering keeps old output/source",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "fixed: timeout during real Lua filtering keeps old output/source",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "generic: real Pandoc failure keeps old output/source",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "generic: cancellation during real Lua filtering keeps old output/source",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "generic: timeout during real Lua filtering keeps old output/source",
+      "passed": true
+    },
+    {
+      "detail": "output=[], input=[]",
+      "name": "Success/failure/cancel/timeout remove private snapshots, TOC filters and staged output",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Source bytes remain unchanged after every conversion",
+      "passed": true
+    }
+  ],
+  "mismatches": [],
+  "prepareIdentity": true,
+  "limits": [
+    "Only original unescaped standalone [TOC] line candidates, case insensitive, that Pandoc parses as a plain paragraph become raw blocks. A unique temporary self-closing HTML tag marks candidates; the original token remains so reference links retain normal parsing. Using a tag keeps --strip-comments effective for user comments without removing the candidate.",
+    "The second AST pass removes the temporary tag from Code/CodeBlock/RawBlock/RawInline/Str/Math literals. Escaped markers remain literal. The normal Pandoc writer determines the final rendering of raw HTML. No custom Markdown container scanner is used."
+  ],
+  "nativeIntegrationCompile": {
+    "passed": true,
+    "diagnostics": "",
+    "sourceSHA256": {
+      "App.swift": "f08a41d69d6702c987cd6ea8ffff73013e90aefea230a5862bc6c8b38aa88a99",
+      "Clipboard.swift": "069978ada014364b22007d7a271cd0af8ccf87ca8f9841a5abe6ea541a10c879",
+      "DocumentConversion.swift": "927cc47716dd5cab06fcc042dfe4a0abb4725f209bc066591dbdad76c84c5d41",
+      "ExportAssets.swift": "8c689c854b72431d08379d090ae71a189dcd8b14527bd5ff44e00a743660e9c5",
+      "ExportSettings.swift": "f29a38d1dac18dd575193ee95431bbaf8e0d5016f8c892c93cd787c8367f96ff",
+      "FolderMonitor.swift": "ce107a134183a6fb5d7dca3c369ec060c561991155a16f3255318672dcf4a49a",
+      "ImageExport.swift": "b11106d85f4fc0af9aaf679eb5ef33e4fbb7903d878e59b46f12672d9ae6d03f",
+      "Localization.swift": "a0b62d4c5796a7df7080798c2299985cd51c2e3ce44d6d75720370c5df7a7c21",
+      "PDFExportOptions.swift": "5c48e7a7f3a2fe240af4d906a46192a47a1654726ce0f7f0155019ae0f1d9cc6",
+      "PreferencesController.swift": "0a7efd42008e5fdc79e1d8b05d11be2af14552972d69e8cc29d2dcd671a0ab35",
+      "RepeatExport.swift": "8aecaa922cdbd34064f9feb2f8f5061f4a1d09518e7c99676a20dc22594dc3a4"
+    }
+  },
+  "passed": true,
+  "autoWriterReferenceVerification": {
+    "passed": true,
+    "note": "The direct Pandoc reference uses the same snapshot.md input basename as the native consumer. Pandoc derives the default HTML page title from that basename; stdin previously used a different fallback title. No runtime code changed.",
+    "checks": [
+      {
+        "extension": "html",
+        "referenceInputFileName": "snapshot.md",
+        "matchedRecordedNativeOutputSHA256": "408c14e31c6d7918544ad9937fb359109c313c5a973041b559c3ed035e074a4a"
+      },
+      {
+        "extension": "tex",
+        "referenceInputFileName": "snapshot.md",
+        "matchedRecordedNativeOutputSHA256": "9a9c42e8d65ae2030a8c29ac507510dbb00843e32e21ae8f96714bf6c8fcadcf"
+      }
+    ]
+  }
+}

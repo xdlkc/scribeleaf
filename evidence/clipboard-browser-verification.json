@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-19T02:58:30.117Z",
+  "systemClipboardUsed": false,
+  "results": [
+    {
+      "name": "DOM paste converts rich HTML to Markdown",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "text": "## Rich\n\n**bold** [link](https://example.com)"
+      }
+    },
+    {
+      "name": "Browser plain-text menu preserves Markdown bytes",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Plain-text menu pastes into actual table cell",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "text": "# Table\n\nBEFORE\n\n| A | B |\n| --- | --- |\n| one | **literal**中文 |\n\nAFTER"
+      }
+    },
+    {
+      "name": "Rich-text menu pastes Markdown into actual table cell",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "text": "# Table\n\nBEFORE\n\n| A | B |\n| --- | --- |\n| one | **RichCell** |\n\nAFTER"
+      }
+    },
+    {
+      "name": "Image event maps insertion position and reaches native bridge",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "text": "TYPED Before\n\nTail![one](<images/a b.png>)\n"
+      }
+    },
+    {
+      "name": "Same-content document replacement cancels delayed image event",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Late native response cannot pollute a new document",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Image paths and labels preserve reserved filename characters",
+      "passed": true,
+      "detail": {
+        "alt": "photo [1]",
+        "ok": true,
+        "src": "file:///tmp/Folder%20%23100%25/photo%20100%25%23%3F%20(1).png"
+      }
+    }
+  ]
+}

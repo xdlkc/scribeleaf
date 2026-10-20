@@ -1,0 +1,106 @@
+/* Independently measured macOS Preferences layout. Icon glyphs are Font Awesome 4.1.0 (OFL). */
+@font-face{font-family:ReplicaPreferencesIcons;src:url('/fonts/ui/fontawesome-webfont.woff') format('woff');font-weight:normal;font-style:normal;font-display:block}
+html.preferences-route,body.preferences-route{margin:0;height:100%;overflow:hidden;background:#f5f5f5;color:#333;font:13px/1.6 -apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif}
+.preferences-route *{box-sizing:border-box}
+.preferences-route #preferences-root{height:100vh;display:flex;text-align:left}
+.preferences-route button,.preferences-route input,.preferences-route select,.preferences-route textarea{font:inherit;color:inherit;margin:0}
+.preferences-route button{cursor:default}
+.preferences-route input,.preferences-route textarea{user-select:text;-webkit-user-select:text;cursor:text}
+.preferences-route input[type=checkbox],.preferences-route input[type=radio]{cursor:default}
+.preferences-route .pref-toolbar{width:191px;flex:none;border-right:1px solid #ddd;background:#f5f5f4;padding:36px 0 12px;overflow:auto}
+.preferences-route .pref-search{display:block;width:154px;height:27px;margin:0 18px 24px;padding:5px 10px;border:1px solid #aaa;border-radius:4px;background:#fff;line-height:1.2;font-size:12px;appearance:textfield}
+.preferences-route .pref-categories{display:flex;flex-direction:column}
+.preferences-route .pref-cat{display:flex;align-items:center;gap:7px;min-height:32px;margin:4px 12px;padding:6px 8px;width:calc(100% - 24px);border:0;border-radius:6px;background:transparent;text-align:left;font-size:14px;line-height:20px;white-space:nowrap}
+.preferences-route .pref-cat.active{background:#dcdfe1}
+.preferences-route .pref-cat-icon{display:inline-flex;align-items:center;justify-content:center;width:19px;height:18px;color:#777;font-size:18px;flex:none}
+.preferences-route .pref-cat.active .pref-cat-icon{color:#4b4b4b}
+.preferences-route .pref-body{flex:1;min-width:0;min-height:0;background:#f5f5f5}
+.preferences-route .pref-pane{height:100%;overflow:auto;padding:32px 20px 16px 24px}
+.preferences-route .export-config{display:flex;height:100%;min-height:0;align-items:flex-start}
+.preferences-route .export-sidebar{display:flex;flex-direction:column;flex:none;width:158.5px;max-height:100%;padding:32px 0 8px 16px;overflow:hidden}
+.preferences-route .export-list{min-height:0;overflow:auto;flex:0 1 auto;padding-bottom:8px}
+.preferences-route .export-item{display:block;width:100%;min-height:23px;padding:2px 8px;border:0;background:transparent;text-align:left;font-size:12px;line-height:19px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.preferences-route .export-item.active{background:#eee;border-radius:2px;font-weight:700}
+.preferences-route .export-separator{height:1px;border-top:1px solid #ddd;margin:4px 8px}
+.preferences-route .export-detail{flex:1;min-width:0;height:100%;overflow:auto;padding:32px 4px 8px 0}
+.preferences-route .pref-card{margin:0 16px;background:#eee;border-radius:6px;padding:8px 16px}
+.preferences-route .pref-section{margin-top:18px}
+.preferences-route .pref-section>h3{font-size:13px;font-weight:400;line-height:1.1;margin:0 0 8px;padding:0}
+.preferences-route .pref-section-content{padding-left:16px;min-height:26px}
+.preferences-route .pref-row{min-height:26px;margin:0;display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.preferences-route .pref-row.stack{display:block}
+.preferences-route .pref-row>label{font-weight:400}
+.preferences-route .pref-pane>.pref-row{margin-bottom:12px}
+.preferences-route select{width:90%;min-width:80%;max-width:90%;height:23px;vertical-align:middle;cursor:default;line-height:normal}
+.preferences-route input[type=text],.preferences-route input[type=number],.preferences-route textarea{height:24px;max-width:90%;padding:2px 4px;border:1px solid rgba(136,136,136,.7);border-radius:0;background:#f5f5f5}
+.preferences-route input[type=text]{width:90%;min-width:0}
+.preferences-route input[type=number]{width:56px;flex:none}
+.preferences-route textarea{width:90%;min-height:64px;height:76px;resize:vertical;font:12px/1.5 Menlo,monospace}
+.preferences-route input[type=checkbox],.preferences-route input[type=radio]{width:auto;max-width:none;flex:none;margin:0 8px 0 0;vertical-align:middle}
+.preferences-route .pref-check,.preferences-route .pref-radio{display:flex;align-items:center;min-height:26px}
+.preferences-route .pref-check>label,.preferences-route .pref-radio>label{display:flex;align-items:center;line-height:1.6;font-weight:400}
+.preferences-route .pref-number-unit{display:flex;gap:4px;align-items:center;min-height:26px}
+.preferences-route .pref-unit{margin-right:20px}
+.preferences-route .pref-action,.preferences-route .pref-reset{min-height:23px;padding:0 8px;border:1px solid #bbb;border-radius:4px;background:linear-gradient(#fff,#f1f1f1);box-shadow:0 1px 1px #0002;font-size:12px;line-height:21px}
+.preferences-route .pref-action:active,.preferences-route .pref-reset:active{background:#ddd}
+.preferences-route .pref-input-group{display:flex;align-items:center;width:100%;gap:8px;min-height:26px}
+.preferences-route .pref-input-group>input{flex:0 1 90%;width:90%;min-width:0}
+.preferences-route .pref-input-group>.pref-action{border:0;background:transparent;box-shadow:none;padding:0;width:18px;flex:none}
+.preferences-route .pref-help-link{color:#656795;text-decoration:none;margin-left:12px;font-size:12px;white-space:nowrap}
+.preferences-route .pref-hint{color:#777;font-size:11px;margin:4px 0}
+.preferences-route .pref-paper-option{display:flex;align-items:center;min-height:32px;gap:12px}
+.preferences-route .pref-paper-option>label,.preferences-route .pref-paper-label{min-width:52px;flex:none}
+.preferences-route .pref-paper-option>select{min-width:0;width:calc(90% - 64px);flex:none}
+.preferences-route .pref-paper-dimensions{display:flex;align-items:center;min-height:32px;gap:12px;white-space:nowrap}
+.preferences-route .pref-paper-size-values{white-space:pre}
+.preferences-route .pref-paper-size-values input[readonly]{background:transparent}
+.preferences-route .pref-paper-dimensions .pref-unit{margin:0}
+.preferences-route .pref-dimension-separator{margin:0 1px}
+.preferences-route .pref-paper-margins{display:flex;flex-direction:column;align-items:stretch}
+.preferences-route .pref-paper-margins>.pref-row{min-height:32px;gap:12px}
+.preferences-route .pref-paper-margins>.pref-row>label{min-width:52px}
+.preferences-route .pref-paper-margins input{max-width:100%}
+.preferences-route .pref-font-options{margin-bottom:8px}
+.preferences-route .pref-command-options{margin-left:0}
+.preferences-route .export-tools{position:relative;display:flex;align-items:center;flex:none;min-height:25px;padding:0 4px;border-radius:4px;background:#eee}
+.preferences-route .export-tools>button{appearance:none;box-shadow:none;border-radius:0;border:0;background:transparent;color:#777;padding:0;width:18px;height:25px;font-size:16px;cursor:default;line-height:25px}
+.preferences-route .export-tools>button:disabled{opacity:.25}
+.preferences-route .export-tool-spacer{flex:1}
+.preferences-route .pref-icon{font-family:ReplicaPreferencesIcons!important;font-style:normal;font-weight:normal;line-height:1;text-rendering:auto;-webkit-font-smoothing:antialiased}
+.preferences-route .pref-icon-plus::before{content:'\f067'}
+.preferences-route .pref-icon-minus::before{content:'\f068'}
+.preferences-route .pref-icon-arrow-up::before{content:'\f062'}
+.preferences-route .pref-icon-arrow-down::before{content:'\f063'}
+.preferences-route .pref-icon-pencil::before{content:'\f040'}
+.preferences-route .pref-icon-folder-open::before{content:'\f07c'}
+.preferences-route .pref-icon-question-circle::before{content:'\f059'}
+.preferences-route .pref-icon-ellipsis-h::before{content:'\f141'}
+.preferences-route .pref-icon-print::before{content:'\f02f'}
+.preferences-route .pref-icon-th-large::before{content:'\f009'}
+.preferences-route .pref-icon-tint::before{content:'\f043'}
+.preferences-route .pref-icon-file-text::before{content:'\f15c'}
+.preferences-route .pref-popover{position:absolute;z-index:10;min-width:180px;max-height:240px;overflow:auto;border:1px solid #ccc;border-radius:5px;background:#fff;box-shadow:0 4px 12px #0003;padding:4px 0}
+.preferences-route .export-template-menu{bottom:100%;left:0;margin-bottom:4px}
+.preferences-route .pref-preset-menu{right:0;top:100%}
+.preferences-route .pref-menu-item{display:block;width:100%;background:transparent;border:0;text-align:left;padding:3px 12px;white-space:nowrap}
+.preferences-route .pref-menu-item:hover,.preferences-route .pref-menu-item:focus-visible{color:#fff;background:#1d74e9}
+.preferences-route .pref-search-results{padding:32px 20px;height:100%;overflow:auto}
+.preferences-route .pref-search-result{display:block;width:100%;padding:8px 10px;background:none;border:0;border-bottom:1px solid #ddd;text-align:left}
+.preferences-route .pref-search-result small{display:block;color:#777;font-size:11px}
+.preferences-route button:focus{outline:0}
+.preferences-route button:focus-visible{outline:2px solid #7ab4ff;outline-offset:1px}
+.preferences-route input:focus-visible,.preferences-route textarea:focus-visible{outline:1px solid #7aa7dd;box-shadow:0 0 0 1px #74b4ffb3}
+.preferences-route .pref-section.search-hit{outline:2px solid #e8c75f;outline-offset:4px}
+.preferences-route .command-output{white-space:pre-wrap;font:11px/1.5 Menlo,monospace;background:#111;color:#eee;padding:8px;max-height:180px;overflow:auto}
+@media(prefers-color-scheme:dark){
+ html.preferences-route,body.preferences-route,.preferences-route .pref-body{background:#333;color:#eee}
+ .preferences-route .pref-toolbar{background:#262626;border-color:#484848}
+ .preferences-route .pref-cat.active{background:#4b4b4b}
+ .preferences-route .pref-cat-icon,.preferences-route .pref-cat.active .pref-cat-icon{color:#bbb}
+ .preferences-route .pref-card,.preferences-route .export-item.active,.preferences-route .export-tools{background:#70717d}
+ .preferences-route .export-separator,.preferences-route .pref-search-result{border-color:#484848}
+ .preferences-route input[type=text],.preferences-route input[type=number],.preferences-route textarea,.preferences-route .pref-search{background:#555;border-color:#555;color:#eee}
+ .preferences-route .pref-popover{background:#333;border-color:#666}
+ .preferences-route .pref-help-link{color:#b3b4cc}
+ .preferences-route .pref-action,.preferences-route .pref-reset{background:#585858;color:#eee;border-color:#777}
+}

@@ -1,0 +1,358 @@
+{
+  "generated_at": "2026-10-19T04:55:17.240448+00:00",
+  "scope": "Swift Pandoc adapter; process transport checks are distinct from real format conversions",
+  "sources": [
+    "https://support.typora.io/Export/",
+    "https://support.typora.io/Install-and-Use-Pandoc/",
+    "https://pandoc.org/MANUAL.html",
+    "https://pandoc.org/lua-filters.html",
+    "https://pandoc.org/installing.html"
+  ],
+  "harness": {
+    "model": "grok-4.6",
+    "reasoning_effort": "low",
+    "attempted": true,
+    "executed": false,
+    "reason": "Automatic approval review failed: selected model is at capacity. No bypass or retry."
+  },
+  "transport_checks": [
+    {
+      "name": "Swift 5 / macOS native compiler",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Nine captured Typora Pandoc formats",
+      "passed": true
+    },
+    {
+      "name": "UTF-8 unsaved snapshot, literal arguments, special output path",
+      "passed": true
+    },
+    {
+      "name": "Resources resolved from source cwd including colon and Chinese",
+      "passed": true
+    },
+    {
+      "name": "Temporary snapshot outside source and removed after success",
+      "passed": true
+    },
+    {
+      "name": "Successful output commit removes same-directory staging",
+      "passed": true
+    },
+    {
+      "name": "Writer arguments: docx",
+      "passed": true
+    },
+    {
+      "name": "Writer arguments: odt",
+      "passed": true
+    },
+    {
+      "name": "Writer arguments: rtf",
+      "passed": true
+    },
+    {
+      "name": "Writer arguments: epub",
+      "passed": true
+    },
+    {
+      "name": "Writer arguments: latex",
+      "passed": true
+    },
+    {
+      "name": "Writer arguments: mediawiki",
+      "passed": true
+    },
+    {
+      "name": "Writer arguments: rst",
+      "passed": true
+    },
+    {
+      "name": "Writer arguments: textile",
+      "passed": true
+    },
+    {
+      "name": "Writer arguments: opml",
+      "passed": true
+    },
+    {
+      "name": "Nonzero exit drains both pipes and preserves prior destination",
+      "passed": true
+    },
+    {
+      "name": "Failure diagnostics are bounded",
+      "passed": true
+    },
+    {
+      "name": "Failure removes private snapshot/staging files",
+      "passed": true
+    },
+    {
+      "name": "Success without output is an error and preserves destination",
+      "passed": true
+    },
+    {
+      "name": "Large success diagnostics drain without deadlock and are bounded",
+      "passed": true
+    },
+    {
+      "name": "Unsaved duplicate without fileURL uses explicit resource root",
+      "passed": true
+    },
+    {
+      "name": "Untitled without resource origin uses private snapshot cwd",
+      "passed": true
+    },
+    {
+      "name": "Source destination rejected before conversion",
+      "passed": true
+    },
+    {
+      "name": "Symlink alias cannot overwrite source",
+      "passed": true
+    },
+    {
+      "name": "Unavailable resource origin produces actionable error",
+      "passed": true
+    },
+    {
+      "name": "Timeout terminates SIGTERM-resistant child and preserves destination",
+      "passed": true
+    },
+    {
+      "name": "Timed-out child is reaped",
+      "passed": true
+    },
+    {
+      "name": "Task cancellation kills child, preserves destination, completes promptly",
+      "passed": true
+    },
+    {
+      "name": "Cancellation before process launch preserves destination",
+      "passed": true
+    },
+    {
+      "name": "Invalid explicit executable fails without silent fallback",
+      "passed": true
+    },
+    {
+      "name": "Dependency discovery returns executable or installation instructions",
+      "passed": true
+    },
+    {
+      "name": "Concurrent conversions use six independent snapshots and outputs",
+      "passed": true
+    },
+    {
+      "name": "Source bytes remain unchanged after all transport operations",
+      "passed": true
+    },
+    {
+      "name": "All transport operations clean private staging directories",
+      "passed": true
+    },
+    {
+      "name": "All transport operations clean temporary input snapshots",
+      "passed": true
+    }
+  ],
+  "real_pandoc": {
+    "status": "passed",
+    "checks": [
+      {
+        "name": "docx actual format conversion",
+        "passed": true,
+        "bytes": 11452,
+        "warnings": "",
+        "transport": "real Pandoc",
+        "archive_entries": [
+          "[Content_Types].xml",
+          "_rels/.rels",
+          "word/document.xml",
+          "word/_rels/document.xml.rels",
+          "word/_rels/footnotes.xml.rels",
+          "word/numbering.xml",
+          "word/styles.xml",
+          "word/footnotes.xml",
+          "word/comments.xml",
+          "docProps/core.xml",
+          "docProps/custom.xml",
+          "word/settings.xml",
+          "word/media/rId10.png",
+          "docProps/app.xml",
+          "word/theme/theme1.xml",
+          "word/fontTable.xml",
+          "word/webSettings.xml"
+        ],
+        "embedded_source_png_sha256": "18da04f423c16816ab9227eaa616894f29e0768e7903d2c4fc3aef62b4772761"
+      },
+      {
+        "name": "odt actual format conversion",
+        "passed": true,
+        "bytes": 7943,
+        "warnings": "",
+        "transport": "real Pandoc",
+        "archive_entries": [
+          "mimetype",
+          "meta.xml",
+          "META-INF/manifest.xml",
+          "content.xml",
+          "Pictures/0.png",
+          "manifest.rdf",
+          "styles.xml"
+        ],
+        "embedded_source_png_sha256": "18da04f423c16816ab9227eaa616894f29e0768e7903d2c4fc3aef62b4772761"
+      },
+      {
+        "name": "rtf actual format conversion",
+        "passed": true,
+        "bytes": 1385,
+        "warnings": "",
+        "transport": "real Pandoc",
+        "signature": "{\\rtf",
+        "image_reference_behavior": "RTF embeds image"
+      },
+      {
+        "name": "epub actual format conversion",
+        "passed": true,
+        "bytes": 5898,
+        "warnings": "",
+        "transport": "real Pandoc",
+        "archive_entries": [
+          "mimetype",
+          "META-INF/container.xml",
+          "META-INF/com.apple.ibooks.display-options.xml",
+          "EPUB/content.opf",
+          "EPUB/toc.ncx",
+          "EPUB/nav.xhtml",
+          "EPUB/text/title_page.xhtml",
+          "EPUB/styles/stylesheet1.css",
+          "EPUB/media/file0.png",
+          "EPUB/text/ch001.xhtml"
+        ],
+        "embedded_source_png_sha256": "18da04f423c16816ab9227eaa616894f29e0768e7903d2c4fc3aef62b4772761"
+      },
+      {
+        "name": "latex actual format conversion",
+        "passed": true,
+        "bytes": 2790,
+        "warnings": "",
+        "transport": "real Pandoc",
+        "signature": "\\begin{document}",
+        "image_reference_behavior": "Readable local images use absolute source paths; source assets must remain available"
+      },
+      {
+        "name": "mediawiki actual format conversion",
+        "passed": true,
+        "bytes": 293,
+        "warnings": "",
+        "transport": "real Pandoc",
+        "signature": "中文标题",
+        "image_reference_behavior": "Readable local images use absolute source paths; source assets must remain available"
+      },
+      {
+        "name": "rst actual format conversion",
+        "passed": true,
+        "bytes": 330,
+        "warnings": "",
+        "transport": "real Pandoc",
+        "signature": "中文标题",
+        "image_reference_behavior": "Readable local images use absolute source paths; source assets must remain available"
+      },
+      {
+        "name": "textile actual format conversion",
+        "passed": true,
+        "bytes": 338,
+        "warnings": "",
+        "transport": "real Pandoc",
+        "signature": "h1(#中文标题).",
+        "image_reference_behavior": "Readable local images use absolute source paths; source assets must remain available"
+      },
+      {
+        "name": "opml actual format conversion",
+        "passed": true,
+        "bytes": 533,
+        "warnings": "",
+        "transport": "real Pandoc",
+        "signature": "<opml",
+        "image_reference_behavior": "Readable local images use absolute source paths; source assets must remain available"
+      }
+    ],
+    "executable": "/Users/lkc/Code/typora-replica/.cache/pandoc/pandoc-3.12.1-x86_64/bin/pandoc",
+    "version": "pandoc 3.12.1",
+    "executable_sha256": "287e725a56ed196e1820d25acaecc48b769f9489221bd86ad2d44932e98e9af7",
+    "scope_note": "Nine genuine conversions. DOCX/ODT/EPUB archives and embedded PNG bytes checked; text signatures/Chinese and OPML XML checked. Not full Typora visual/export preference parity.",
+    "official_download": {
+      "url": "https://github.com/jgm/pandoc/releases/download/3.12.1/pandoc-3.12.1-x86_64-macOS.zip",
+      "asset_listing": "https://github.com/jgm/pandoc/releases/expanded_assets/3.12.1",
+      "archive_sha256": "81ed3e2cfecf096df15d407152f89a684fd65221082b919963f738e977fad3bc",
+      "sha256_matches_official_asset": true,
+      "installation_scope": "project .cache only; no global install, PATH or user configuration changes",
+      "api_metadata_download": "GitHub API returned HTTP 403; official release asset direct download succeeded without escalation"
+    }
+  },
+  "formats": [
+    {
+      "extension": "docx",
+      "format": "docx",
+      "title": "Word (.docx)",
+      "uti": "dyn.ah62d4rv4ge80k55dta"
+    },
+    {
+      "extension": "odt",
+      "format": "odt",
+      "title": "OpenOffice",
+      "uti": "dyn.ah62d4rv4ge8083dy"
+    },
+    {
+      "extension": "rtf",
+      "format": "rtf",
+      "title": "RTF",
+      "uti": "public.rtf"
+    },
+    {
+      "extension": "epub",
+      "format": "epub",
+      "title": "Epub",
+      "uti": "dyn.ah62d4rv4ge80n6dzqk"
+    },
+    {
+      "extension": "tex",
+      "format": "latex",
+      "title": "LaTeX",
+      "uti": "dyn.ah62d4sb4ge81k3p2"
+    },
+    {
+      "extension": "wiki",
+      "format": "mediawiki",
+      "title": "Media Wiki",
+      "uti": "dyn.ah62d4sb4ge81s4ppre"
+    },
+    {
+      "extension": "rst",
+      "format": "rst",
+      "title": "reStructuredText",
+      "uti": "dyn.ah62d4sb4ge81e65y"
+    },
+    {
+      "extension": "textile",
+      "format": "textile",
+      "title": "Textile",
+      "uti": "dyn.ah62d4sb4ge81k3p2svy023k"
+    },
+    {
+      "extension": "opml",
+      "format": "opml",
+      "title": "OPML",
+      "uti": "dyn.ah62d46dzqm0gw23stb002svvhz11a5pq"
+    }
+  ],
+  "system_pandoc_detection": {
+    "error": "Pandoc is required for this export. Install it from https://pandoc.org/installing.html, then try again, or select a custom Pandoc executable."
+  },
+  "passed": true,
+  "transport_passed": 35,
+  "transport_total": 35
+}

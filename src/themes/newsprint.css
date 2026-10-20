@@ -1,0 +1,377 @@
+/* Newsprint core typography mapped from installed Typora 1.14.10.
+ * Independently authored for CM6 lines and standalone .md-render HTML.
+ * Every content rule is theme-scoped. Lists/quotes remain CM line structures. */
+
+@font-face {
+    font-family: "Replica Newsprint PT Serif";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../assets/fonts/newsprint/pt-serif-v11-latin-700.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Replica Newsprint PT Serif";
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../assets/fonts/newsprint/pt-serif-v11-latin-700italic.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Replica Newsprint PT Serif";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../assets/fonts/newsprint/pt-serif-v11-latin-italic.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Replica Newsprint PT Serif";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../assets/fonts/newsprint/pt-serif-v11-latin-regular.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body[data-theme="newsprint"] {
+    --paper: #f3f2ee;
+    --bg: #f3f2ee;
+    --text: #1f0909;
+    --text-dim: #999999;
+    --heading: #1f0909;
+    --link: #065588;
+    --border: #c5c5c5;
+    --code-bg: #dadada;
+    --code-text: #1f0909;
+    --quote-text: #656565;
+    --quote-border: #bababa;
+    --quote-bg: transparent;
+    --mark-bg: #ffff00;
+    --selection: rgba(32, 43, 51, .63);
+    --sidebar-bg: #f3f2ee;
+    --sidebar-text: #444444;
+    --ui-text: #444444;
+    --ui-hover-bg: #e8e7df;
+    --table-stripe: #e8e7e7;
+    -webkit-font-smoothing: antialiased;
+    --font-body: "Replica Newsprint PT Serif", "PT Serif", "Times New Roman", "SF Pro", Times, serif;
+    --font-heading: var(--font-body);
+    --font-mono: "Lucida Console", Consolas, "Courier", monospace;
+    line-height: 1.5em;
+}
+
+body[data-theme="newsprint"] .md-render:not(.lp-table),
+body[data-theme="newsprint"] #editor .cm-content {
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1400px) {
+    body[data-theme="newsprint"] .md-render:not(.lp-table),
+    body[data-theme="newsprint"] #editor .cm-content { max-width: 914px; }
+}
+
+@media (min-width: 1800px) {
+    body[data-theme="newsprint"] .md-render:not(.lp-table),
+    body[data-theme="newsprint"] #editor .cm-content { max-width: 914px; }
+}
+
+body[data-theme="newsprint"] .md-render:not(.lp-table) {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--text);
+}
+
+body[data-theme="newsprint"] #editor .cm-scroller {
+    font-family: var(--font-body);
+    line-height: 1.5rem;
+}
+
+body[data-theme="newsprint"] .md-render :is(h1, h2, h3, h4, h5, h6),
+body[data-theme="newsprint"] #editor :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
+    font-family: var(--font-heading);
+    color: var(--heading);
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+    text-transform: none;
+    border: 0;
+    padding: 0;
+    letter-spacing: normal;
+}
+
+body[data-theme="newsprint"] #editor .cm-content > :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6):first-child {
+    margin-top: var(--first-heading-margin, 1rem);
+}
+
+body[data-theme="newsprint"] .md-render pre code {
+    font-family: var(--font-mono);
+    font-size: 1em;
+    line-height: inherit;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body[data-theme="newsprint"] .md-render blockquote > :first-child {
+    margin-top: 0;
+}
+
+body[data-theme="newsprint"] .md-render blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+body[data-theme="newsprint"] .md-render li + li {
+    margin-top: 0;
+}
+
+body[data-theme="newsprint"] #editor .cm-list-line {
+    margin: 0;
+}
+
+body[data-theme="newsprint"] #editor .cm-fence-line {
+    background: var(--code-bg);
+    font-family: var(--font-mono);
+}
+
+body[data-theme="newsprint"] .md-render a,
+body[data-theme="newsprint"] #editor .cm-link {
+    color: var(--link);
+}
+
+body[data-theme="newsprint"] .md-render table,
+body[data-theme="newsprint"] #editor .lp-table table {
+    font-family: var(--font-body);
+    border-collapse: collapse;
+    display: table;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+}
+
+body[data-theme="newsprint"] .md-render h1,
+body[data-theme="newsprint"] #editor .cm-header-1 {
+    font-size: 1.875em;
+    line-height: 1.3em;
+    font-weight: 400;
+    margin: 2em 0 .5em;
+}
+
+body[data-theme="newsprint"] .md-render h2,
+body[data-theme="newsprint"] #editor .cm-header-2 {
+    font-size: 1.3125em;
+    line-height: 1.15;
+    font-weight: 700;
+    margin: 2.285714em 0 .75em;
+}
+
+body[data-theme="newsprint"] .md-render h3,
+body[data-theme="newsprint"] #editor .cm-header-3 {
+    font-size: 1.3125em;
+    line-height: 1.15;
+    font-weight: 400;
+    margin: 2.285714em 0 .75em;
+}
+
+body[data-theme="newsprint"] .md-render h4,
+body[data-theme="newsprint"] #editor .cm-header-4 {
+    font-size: 1.125em;
+    line-height: 1.5rem;
+    font-weight: 700;
+    margin: 2.67em 0 1.5em;
+}
+
+body[data-theme="newsprint"] .md-render h5,
+body[data-theme="newsprint"] #editor .cm-header-5 {
+    font-size: 1em;
+    line-height: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0 1.5em;
+}
+
+body[data-theme="newsprint"] .md-render h6,
+body[data-theme="newsprint"] #editor .cm-header-6 {
+    font-size: 1em;
+    line-height: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0 1.5em;
+}
+
+body[data-theme="newsprint"] .md-render h1,
+body[data-theme="newsprint"] #editor .cm-header-1 {
+    border-bottom: 1px solid #c5c5c5;
+    padding-bottom: .8125em;
+}
+
+body[data-theme="newsprint"] #editor .cm-content > .cm-header-1:first-child {
+    margin-top: 2em;
+}
+
+body[data-theme="newsprint"] .md-render p {
+    margin: 1rem 0 1.5em;
+}
+
+body[data-theme="newsprint"] .md-render ul,
+body[data-theme="newsprint"] .md-render ol {
+    margin: 0 0 1.5em 1.5em;
+    padding-left: 40px;
+}
+
+body[data-theme="newsprint"] .md-render li > :is(ul, ol) {
+    margin-top: inherit;
+    margin-bottom: 0;
+}
+
+body[data-theme="newsprint"] .md-render p + :is(ul, ol),
+body[data-theme="newsprint"] .md-render :is(h3, h4, h5, h6) + :is(ul, ol) {
+    margin-top: .5em;
+}
+
+body[data-theme="newsprint"] .md-render li ol > li {
+    list-style-type: lower-alpha;
+}
+
+body[data-theme="newsprint"] .md-render li li ol > li {
+    list-style-type: lower-roman;
+}
+
+body[data-theme="newsprint"] #editor .cm-list-line {
+    padding-left: 1.5em;
+}
+
+body[data-theme="newsprint"] .md-render blockquote,
+body[data-theme="newsprint"] #editor .cm-quote {
+    border-left: 5px solid #bababa;
+    padding: 0 0 0 1em;
+    margin: 1rem 0 1.5em 2em;
+    background: transparent;
+    color: #656565;
+    font-style: italic;
+    line-height: 1.5rem;
+}
+
+body[data-theme="newsprint"] .md-render :not(pre) > code,
+body[data-theme="newsprint"] #editor .cm-inline-code {
+    font-family: var(--font-mono);
+    font-size: .875em;
+    line-height: inherit;
+    background: #dadada;
+    color: var(--code-text);
+    border: 0;
+    border-radius: 0;
+    padding: 0 2px;
+}
+
+body[data-theme="newsprint"] #editor .cm-codeblock-line {
+    font-family: var(--font-mono);
+    font-size: .875em;
+    background: var(--code-bg);
+    color: var(--code-text);
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+body[data-theme="newsprint"] #editor .cm-codeblock-first {
+    border-top: 0;
+    border-radius: 0;
+}
+
+body[data-theme="newsprint"] #editor .cm-codeblock-last {
+    border-bottom: 0;
+    border-radius: 0;
+}
+
+body[data-theme="newsprint"] .md-render pre {
+    font-family: var(--font-mono);
+    font-size: .875em;
+    line-height: 1.714285em;
+    background: #dadada;
+    color: var(--code-text);
+    margin: 1em 0 3em 2em;
+    padding: 0 1ch;
+    border: 0;
+    border-radius: 0;
+}
+
+body[data-theme="newsprint"] #editor .cm-codeblock-line {
+    line-height: 1.714285em;
+    margin-left: 2em;
+    padding: 0 1ch;
+}
+
+body[data-theme="newsprint"] #editor .cm-codeblock-first {
+    padding-top: 0;
+}
+
+body[data-theme="newsprint"] #editor .cm-codeblock-last {
+    padding-bottom: 0;
+    margin-bottom: 3em;
+}
+
+body[data-theme="newsprint"] .md-render table,
+body[data-theme="newsprint"] #editor .lp-table table {
+    font-size: 1em;
+    margin: 0 0 1.5em;
+}
+
+body[data-theme="newsprint"] .md-render :is(th, td):not(:where(.lp-table-colhead, .lp-table-corner, .lp-row-handle)),
+body[data-theme="newsprint"] #editor .lp-table table .lp-cell {
+    border: 0;
+    padding: .25em .25em .25em .4em;
+    vertical-align: top;
+    line-height: 1.5rem;
+    background: transparent;
+}
+
+body[data-theme="newsprint"] .md-render thead th:not(.lp-table-colhead):not(.lp-table-corner),
+body[data-theme="newsprint"] #editor .lp-table thead th.lp-cell {
+    background: #dadada;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+body[data-theme="newsprint"] .md-render tbody tr:nth-child(even) td:not(.lp-row-handle),
+body[data-theme="newsprint"] #editor .lp-table tbody tr:nth-child(even) td.lp-cell {
+    background: #e8e7e7;
+}
+
+body[data-theme="newsprint"] .md-render a,
+body[data-theme="newsprint"] #editor .cm-link {
+    text-decoration: none;
+}
+
+body[data-theme="newsprint"] .md-render a:hover,
+body[data-theme="newsprint"] #editor .cm-link:hover {
+    text-decoration: underline;
+}
+
+
+/* First-line overrides cancel the shared GitHub editor rule. */
+body[data-theme="newsprint"] #editor .cm-content > .cm-header-1:first-child { margin-top: 2em; }
+body[data-theme="newsprint"] #editor .cm-content > .cm-header-2:first-child { margin-top: 2.285714em; }
+body[data-theme="newsprint"] #editor .cm-content > .cm-header-3:first-child { margin-top: 2.285714em; }
+body[data-theme="newsprint"] #editor .cm-content > .cm-header-4:first-child { margin-top: 2.67em; }
+body[data-theme="newsprint"] #editor .cm-content > .cm-header-5:first-child { margin-top: 1rem; }
+body[data-theme="newsprint"] #editor .cm-content > .cm-header-6:first-child { margin-top: 1rem; }
+
+/* CM quotes are lines, so block margins must not repeat on each line. */
+body[data-theme="newsprint"] #editor .cm-quote { margin-top: 0; margin-bottom: 0; }
+
+body[data-theme="newsprint"] #editor .lp-table { line-height: 1.5rem; font-weight: 400; }
+body[data-theme="newsprint"] .md-render pre,
+body[data-theme="newsprint"] #editor .cm-codeblock-line { font-size: .9rem; }
+
+body[data-theme="newsprint"] .md-render pre,
+body[data-theme="newsprint"] .md-render code,
+body[data-theme="newsprint"] #editor .cm-codeblock-line,
+body[data-theme="newsprint"] #editor .cm-inline-code { text-align: left; }

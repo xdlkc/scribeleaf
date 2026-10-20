@@ -1,0 +1,26 @@
+{
+  "bundleIdentifier": "com.typora-replica.export-settings-verifier.de49ba4df3864980b4dbeb77365d15fe",
+  "probes": [
+    {
+      "id": "focus",
+      "passed": true,
+      "evidence": "evidence/export-settings-focus-verification.json",
+      "evidenceSHA256": "dc36bb4ad89d2f99b92b835d6c72f7fe0377bf36ddf54e1216da439410780c2f",
+      "scope": "6 actual native Preferences focus/clipboard/background protection and rename checks. Separate QA bundle; clipboard restored."
+    },
+    {
+      "id": "fonts",
+      "passed": true,
+      "evidence": "evidence/image-font-browser-verification.json",
+      "evidenceSHA256": "6c87fdcc1e5a29aec30b9f4eb17643ab407823210f4eaf48583ea65eb20c77f8",
+      "scope": "2340 actual Chromium root-font/overflow selected-style checks; PNG fixed100px image also measured in geometry proof. No pixel parity claim."
+    },
+    {
+      "id": "pdfGeometry",
+      "passed": true,
+      "evidence": "evidence/export-settings-output-geometry-verification.json",
+      "evidenceSHA256": "f5e0fc77205b75b3527aec2178ca0068951468bb1645ef639a4765a6e2202c97",
+      "scope": "19 actual native-output independent PDF margins/landscape/header bands and PNG640/fixed200px checks for this de49 bundle."
+    }
+  ]
+}

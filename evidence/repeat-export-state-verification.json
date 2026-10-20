@@ -1,0 +1,130 @@
+{
+  "ok": true,
+  "history": {
+    "checks": [
+      {
+        "detail": {},
+        "name": "first no history disables previous and overwrite",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "unsaved identity differs from later file identity",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "invalid format rejected",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "history unchanged after invalid record",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "accepted destination records format and enables overwrite",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "same file identity refresh keeps overwrite",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "identity switch keeps format and disables overwrite",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "switched identity uses stored directory and current name",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "repeat of switched identity does not restore overwrite",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "same identity uses exact last path",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "all 13 formats accepted",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "window histories remain isolated",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "relative export target is rejected without changing history",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "empty source identity is rejected",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "repeat response must match request identifier",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "repeat response must match source identity",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "repeat response cannot change format or overwrite intent",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "matching current repeat response is accepted",
+        "passed": true
+      }
+    ],
+    "ok": true
+  },
+  "nativeCompile": true,
+  "nativeStderr": "",
+  "typecheck": true,
+  "typecheckStderr": "",
+  "nativeBinary": "/Users/lkc/Code/typora-replica/.cache/repeat-export-state/TyporaReplica",
+  "harness": {
+    "model": "grok-4.6",
+    "reasoningEffort": "low",
+    "executed": true,
+    "exitCode": 0,
+    "followedToTerminal": true,
+    "sessionId": "01a15445-d32a-75a0-b796-7d8d7720b8b6",
+    "numTurns": 22,
+    "usage": {
+      "input_tokens": 97746,
+      "cache_read_input_tokens": 1400192,
+      "cache_creation_input_tokens": 0,
+      "output_tokens": 20044,
+      "reasoning_tokens": 6791,
+      "total_tokens": 1517982
+    },
+    "promptFile": ".cache/repeat-export-implementation-grok-brief.md",
+    "streamFile": ".cache/repeat-export-implementation-grok.stream",
+    "scope": "Bounded initial implementation and state/compile checks; reviewed and corrected locally before final verification",
+    "temporaryPromptAndStreamRemoved": true
+  },
+  "limitations": [
+    "History stays in memory per NSDocument/window; no cross-relaunch history is implemented.",
+    "Native repeat options reuse current renderer preferences and export format. Full Typora export-setting customization remains outside this change.",
+    "Original behavior reference is static resource evidence; this run validates replica behavior, not a side-by-side original GUI comparison."
+  ],
+  "temporaryVerificationFilesRemoved": true
+}

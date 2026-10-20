@@ -1,0 +1,3696 @@
+{
+  "gaps": [],
+  "nodes": [
+    {
+      "actions": [
+        "AXRaise"
+      ],
+      "children_count": 7,
+      "path": [],
+      "role": "AXWindow",
+      "title": "acceptance.md",
+      "value": null
+    },
+    {
+      "actions": [],
+      "children_count": 1,
+      "path": [
+        0
+      ],
+      "role": "AXGroup",
+      "title": null,
+      "value": null
+    },
+    {
+      "actions": [],
+      "children_count": 1,
+      "path": [
+        0,
+        0
+      ],
+      "role": "AXGroup",
+      "title": null,
+      "value": null
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0
+      ],
+      "role": "AXScrollArea",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "AXWebArea",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 21,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "A place for your thoughts\nKeep your mind on the words. Typora brings reading and writing together in a clean, quiet space.\n\nWrite naturally\n\nUse bold, emphasis, strikethrough, and inline code. Follow a link or keep a thought in a footnote.[^note]\n\nThe details disappear. Your ideas stay in focus.\nMake a little progress\n\n\nFind a quiet place\n\n\nPut the first words on the page\n\n\nFollow the next idea\n\nStart with a question.\n\nExplore what you know.\n\nLeave room for discovery.\n\nBring structure to ideas\n\nFeature\tMarkdown\tResult\nHeadings\t##\tClear structure\nTasks\t- [ ]\tSmall steps\nTables\t|\tA simple comparison\nA small piece of code\n\n\nfunction welcome(name) {\n  return `A blank page, ${name}. A new beginning.`;\n}\nconsole.log(welcome('world'));\nMathematics\n\nThe relation $e^{i\\pi} + 1 = 0$ connects five familiar constants.\n\n\n(1)\t\n∫\n0\n1\nx\n2\ndx=\n1\n3\n \nConnected thoughts\n\nAn idea\nA first draft\nA clearer thought\n中文写作\n\n让文字保持清楚，让思路自然展开。中文输入、标点和换行都应保留。\n\nnote Some thoughts belong in the margin. ↩\n"
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "A place for your thoughts"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "A place for your thoughts"
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 3,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Keep your mind on the words. Typora brings reading and writing together in a clean, quiet space."
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Keep your mind on the words. "
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Typora"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": " brings reading and writing together in a clean, quiet space."
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Write naturally"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Write naturally"
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 12,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Use bold, emphasis, strikethrough, and inline code. Follow a link or keep a thought in a footnote.[^note]"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Use "
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        1
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "bold"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        2
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": ", "
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "emphasis"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        4
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": ", "
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        5
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        5,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "strikethrough"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        6
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": ", and "
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        7
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        7,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "inline code"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        8
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": ". Follow a "
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        9
+      ],
+      "role": "AXLink",
+      "title": "link",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        9,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "link"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        10
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": " or keep a thought in a footnote."
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 3,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        11
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        11,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "[^"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        11,
+        1
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "note"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        11,
+        2
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "]"
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "The details disappear. Your ideas stay in focus."
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "The details disappear. Your ideas stay in focus."
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Make a little progress"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Make a little progress"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 3,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 2,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        0
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0
+      ],
+      "role": "AXCheckBox",
+      "title": "",
+      "value": null
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        1
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Find a quiet place"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        1,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Find a quiet place"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 2,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        1
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        1,
+        0
+      ],
+      "role": "AXCheckBox",
+      "title": "",
+      "value": null
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        1,
+        1
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Put the first words on the page"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        1,
+        1,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Put the first words on the page"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 2,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        2
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        2,
+        0
+      ],
+      "role": "AXCheckBox",
+      "title": "",
+      "value": null
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        2,
+        1
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Follow the next idea"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        2,
+        1,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Follow the next idea"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 3,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7
+      ],
+      "role": "AXList",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 2,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        0
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": "Start with a question."
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        0,
+        0
+      ],
+      "role": "AXListMarker",
+      "title": "",
+      "value": "1"
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        0,
+        1
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Start with a question."
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        0,
+        1,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Start with a question."
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 2,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        1
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": "Explore what you know."
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        1,
+        0
+      ],
+      "role": "AXListMarker",
+      "title": "",
+      "value": "2"
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        1,
+        1
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Explore what you know."
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        1,
+        1,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Explore what you know."
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 2,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        2
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": "Leave room for discovery."
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        2,
+        0
+      ],
+      "role": "AXListMarker",
+      "title": "",
+      "value": "3"
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        2,
+        1
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Leave room for discovery."
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        2,
+        1,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Leave room for discovery."
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Bring structure to ideas"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Bring structure to ideas"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 8,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0
+      ],
+      "role": "AXTable",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 3,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        0
+      ],
+      "role": "AXRow",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        0,
+        0
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Feature"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Feature"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        0,
+        1
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        0,
+        1,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Markdown"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Markdown"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        0,
+        2
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        0,
+        2,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Result"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Result"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 3,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        1
+      ],
+      "role": "AXRow",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        1,
+        0
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        1,
+        0,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Headings"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Headings"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        1,
+        1
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        1,
+        1,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "##"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "##"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        1,
+        2
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        1,
+        2,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Clear structure"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        1,
+        2,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Clear structure"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 3,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        2
+      ],
+      "role": "AXRow",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        2,
+        0
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        2,
+        0,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Tasks"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Tasks"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        2,
+        1
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        2,
+        1,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "- [ ]"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        2,
+        1,
+        0,
+        0
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "- [ ]"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        2,
+        2
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        2,
+        2,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Small steps"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Small steps"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 3,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        3
+      ],
+      "role": "AXRow",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        3,
+        0
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        3,
+        0,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Tables"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Tables"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        3,
+        1
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        3,
+        1,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "|"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        3,
+        1,
+        0,
+        0
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        3,
+        1,
+        0,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "|"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        3,
+        2
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        3,
+        2,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "A simple comparison"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        3,
+        2,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "A simple comparison"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 4,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        4
+      ],
+      "role": "AXColumn",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        4,
+        0
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        4,
+        0,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Feature"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Feature"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        4,
+        1
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        4,
+        1,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Headings"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        4,
+        1,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Headings"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        4,
+        2
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        4,
+        2,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Tasks"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        4,
+        2,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Tasks"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        4,
+        3
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        4,
+        3,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Tables"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        4,
+        3,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Tables"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 4,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        5
+      ],
+      "role": "AXColumn",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        5,
+        0
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        5,
+        0,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Markdown"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Markdown"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        5,
+        1
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        5,
+        1,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "##"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        5,
+        1,
+        0,
+        0
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        5,
+        1,
+        0,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "##"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        5,
+        2
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        5,
+        2,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "- [ ]"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        5,
+        2,
+        0,
+        0
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        5,
+        2,
+        0,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "- [ ]"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        5,
+        3
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        5,
+        3,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "|"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        5,
+        3,
+        0,
+        0
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        5,
+        3,
+        0,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "|"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 4,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        6
+      ],
+      "role": "AXColumn",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        6,
+        0
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        6,
+        0,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Result"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        6,
+        0,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Result"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        6,
+        1
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        6,
+        1,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Clear structure"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        6,
+        1,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Clear structure"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        6,
+        2
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        6,
+        2,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Small steps"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        6,
+        2,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Small steps"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        6,
+        3
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        6,
+        3,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "A simple comparison"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        6,
+        3,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "A simple comparison"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 3,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        7
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        7,
+        0
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        7,
+        0,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Feature"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        7,
+        0,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Feature"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        7,
+        1
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        7,
+        1,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Markdown"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        7,
+        1,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Markdown"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        7,
+        2
+      ],
+      "role": "AXCell",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        7,
+        2,
+        0
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Result"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        7,
+        2,
+        0,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "Result"
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        10
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "A small piece of code"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 0,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      "role": "AXStaticText",
+      "title": "",
+      "value": "A small piece of code"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 2,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        11
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        12
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Mathematics"
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        13
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "The relation $e^{i\\pi} + 1 = 0$ connects five familiar constants."
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        14
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        15
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "Connected thoughts"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 3,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        16
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        17
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        18
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "中文写作"
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 1,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        19
+      ],
+      "role": "AXTextArea",
+      "title": "",
+      "value": "让文字保持清楚，让思路自然展开。中文输入、标点和换行都应保留。"
+    },
+    {
+      "actions": [
+        "AXShowMenu",
+        "AXScrollToVisible"
+      ],
+      "children_count": 4,
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        20
+      ],
+      "role": "AXGroup",
+      "title": "",
+      "value": ""
+    },
+    {
+      "actions": [
+        "AXPress"
+      ],
+      "children_count": 0,
+      "path": [
+        1
+      ],
+      "role": "AXButton",
+      "title": null,
+      "value": null
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXZoomWindow",
+        "AXShowMenu"
+      ],
+      "children_count": 1,
+      "path": [
+        2
+      ],
+      "role": "AXButton",
+      "title": null,
+      "value": null
+    },
+    {
+      "actions": [
+        "AXPress"
+      ],
+      "children_count": 0,
+      "path": [
+        3
+      ],
+      "role": "AXButton",
+      "title": null,
+      "value": null
+    },
+    {
+      "actions": [
+        "AXPress",
+        "AXShowMenu"
+      ],
+      "children_count": 0,
+      "path": [
+        4
+      ],
+      "role": "AXMenuButton",
+      "title": "",
+      "value": null
+    },
+    {
+      "actions": [],
+      "children_count": 0,
+      "path": [
+        5
+      ],
+      "role": "AXImage",
+      "title": "acceptance.md",
+      "value": null
+    },
+    {
+      "actions": [],
+      "children_count": 0,
+      "path": [
+        6
+      ],
+      "role": "AXStaticText",
+      "title": null,
+      "value": "acceptance.md"
+    }
+  ],
+  "truncated": true,
+  "window": {
+    "executable": "/Applications/Typora.app/Contents/MacOS/Typora",
+    "launch_time": 1792310993.41485,
+    "pid": 544,
+    "title": "acceptance.md",
+    "window_id": 2454
+  }
+}

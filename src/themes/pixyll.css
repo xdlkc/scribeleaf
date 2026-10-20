@@ -1,0 +1,438 @@
+/* Preserve the reference 14px root locally. Image export can override
+ * --content-rem without changing fixed-pixel images, borders or controls. */
+/* Pixyll core typography mapped from installed Typora 1.14.10.
+ * Independently authored for CM6 lines and standalone .md-render HTML.
+ * Every content rule is theme-scoped. Lists/quotes remain CM line structures. */
+
+@font-face {
+    font-family: "Replica Pixyll Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../assets/fonts/pixyll/lato-v14-latin-300.woff") format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Replica Pixyll Lato";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../assets/fonts/pixyll/lato-v14-latin-300italic.woff") format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Replica Pixyll Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../assets/fonts/pixyll/lato-v14-latin-900.woff") format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Replica Pixyll Lato";
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../assets/fonts/pixyll/lato-v14-latin-900italic.woff") format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Replica Pixyll Merriweather";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../assets/fonts/pixyll/merriweather-v19-latin-300.woff") format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Replica Pixyll Merriweather";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../assets/fonts/pixyll/merriweather-v19-latin-300italic.woff") format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Replica Pixyll Merriweather";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../assets/fonts/pixyll/merriweather-v19-latin-700.woff") format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Replica Pixyll Merriweather";
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../assets/fonts/pixyll/merriweather-v19-latin-700italic.woff") format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body[data-theme="pixyll"] {
+    --paper: #ffffff;
+    --bg: #ffffff;
+    --text: #333333;
+    --text-dim: #7a7a7a;
+    --heading: #333333;
+    --link: #463f5c;
+    --border: #333333;
+    --code-bg: transparent;
+    --code-text: #7a7a7a;
+    --quote-text: #555555;
+    --quote-border: #7a7a7a;
+    --quote-bg: transparent;
+    --mark-bg: #ffff00;
+    --selection: #b5d6fc;
+    --sidebar-bg: #ffffff;
+    --sidebar-text: #333333;
+    --ui-text: #777777;
+    --ui-hover-bg: #f3f3f3;
+    --table-stripe: transparent;
+    -webkit-font-smoothing: antialiased;
+    --font-body: "Replica Pixyll Merriweather", "Merriweather", "PT Serif", Georgia, "Times New Roman", "STSong", "Segoe UI Emoji", "SF Pro", serif;
+    --font-heading: "Replica Pixyll Lato", "Lato", "Helvetica Neue", Helvetica, sans-serif;
+    --font-mono: Menlo, Monaco, "Courier New", monospace;
+    font-weight: 400;
+    line-height: calc(var(--content-rem, 14px) * 1.5);
+}
+
+body[data-theme="pixyll"] .md-render:not(.lp-table),
+body[data-theme="pixyll"] #editor .cm-content {
+    max-width: 914px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1400px) {
+    body[data-theme="pixyll"] .md-render:not(.lp-table),
+    body[data-theme="pixyll"] #editor .cm-content { max-width: 1100px; }
+}
+
+@media (min-width: 1700px) {
+    body[data-theme="pixyll"] .md-render:not(.lp-table),
+    body[data-theme="pixyll"] #editor .cm-content { max-width: 1200px; }
+}
+
+@media (min-width: 1800px) {
+    body[data-theme="pixyll"] .md-render:not(.lp-table),
+    body[data-theme="pixyll"] #editor .cm-content { max-width: 1200px; }
+}
+
+body[data-theme="pixyll"] .md-render:not(.lp-table) {
+    font-family: var(--font-body);
+    font-size: calc(var(--content-rem, 14px) * 1.5);
+    line-height: calc(var(--content-rem, 14px) * 1.5);
+    color: var(--text);
+}
+
+body[data-theme="pixyll"] #editor .cm-scroller {
+    font-family: var(--font-body);
+    line-height: calc(var(--content-rem, 14px) * 1.5);
+}
+
+body[data-theme="pixyll"] .md-render :is(h1, h2, h3, h4, h5, h6),
+body[data-theme="pixyll"] #editor :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
+    font-family: var(--font-heading);
+    color: var(--heading);
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+    text-transform: none;
+    border: 0;
+    padding: 0;
+    letter-spacing: normal;
+}
+
+body[data-theme="pixyll"] #editor .cm-content > :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6):first-child {
+    margin-top: var(--first-heading-margin, var(--content-rem, 14px));
+}
+
+body[data-theme="pixyll"] .md-render pre code {
+    font-family: var(--font-mono);
+    font-size: 1em;
+    line-height: inherit;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body[data-theme="pixyll"] .md-render blockquote > :first-child {
+    margin-top: 0;
+}
+
+body[data-theme="pixyll"] .md-render blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+body[data-theme="pixyll"] .md-render li + li {
+    margin-top: 0;
+}
+
+body[data-theme="pixyll"] #editor .cm-list-line {
+    margin: 0;
+}
+
+body[data-theme="pixyll"] #editor .cm-fence-line {
+    background: var(--code-bg);
+    font-family: var(--font-mono);
+}
+
+body[data-theme="pixyll"] .md-render a,
+body[data-theme="pixyll"] #editor .cm-link {
+    color: var(--link);
+}
+
+body[data-theme="pixyll"] .md-render table,
+body[data-theme="pixyll"] #editor .lp-table table {
+    font-family: var(--font-body);
+    border-collapse: collapse;
+    display: table;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+}
+
+body[data-theme="pixyll"] #editor .cm-content {
+    font-size: calc(var(--editor-font-size) * .984375);
+    padding-top: calc(var(--content-rem, 14px) * 2);
+}
+
+body[data-theme="pixyll"] .md-render:not(.lp-table) {
+    padding-top: calc(var(--content-rem, 14px) * 2);
+}
+
+body[data-theme="pixyll"] .md-render h1,
+body[data-theme="pixyll"] #editor .cm-header-1 {
+    font-size: calc(var(--content-rem, 14px) * 2);
+    line-height: 1.2;
+    margin: 1em 0 .5em;
+}
+
+body[data-theme="pixyll"] .md-render h2,
+body[data-theme="pixyll"] #editor .cm-header-2 {
+    font-size: calc(var(--content-rem, 14px) * 1.5);
+    line-height: 1.2;
+    margin: 1em 0 .5em;
+}
+
+body[data-theme="pixyll"] .md-render h3,
+body[data-theme="pixyll"] #editor .cm-header-3 {
+    font-size: calc(var(--content-rem, 14px) * 1.25);
+    line-height: 1.2;
+    margin: 1em 0 .5em;
+}
+
+body[data-theme="pixyll"] .md-render h4,
+body[data-theme="pixyll"] #editor .cm-header-4 {
+    font-size: calc(var(--content-rem, 14px) * 1.13);
+    line-height: 1.2;
+    margin: 1em 0 .5em;
+}
+
+body[data-theme="pixyll"] .md-render h5,
+body[data-theme="pixyll"] #editor .cm-header-5 {
+    font-size: calc(var(--content-rem, 14px) * 1.125);
+    line-height: 1.2;
+    margin: 1em 0 .5em;
+}
+
+body[data-theme="pixyll"] .md-render h6,
+body[data-theme="pixyll"] #editor .cm-header-6 {
+    font-size: calc(var(--content-rem, 14px) * 1.125);
+    line-height: 1.2;
+    margin: 1em 0 .5em;
+}
+
+body[data-theme="pixyll"] #editor .cm-content > :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6):first-child {
+    margin-top: 1em;
+}
+
+body[data-theme="pixyll"] .md-render p {
+    font-size: calc(var(--content-rem, 14px) * 1.125);
+    font-weight: 300;
+    line-height: 1.5;
+    margin: var(--content-rem, 14px) 0;
+}
+
+body[data-theme="pixyll"] .md-render :is(ul, ol) {
+    font-size: calc(var(--content-rem, 14px) * 1.125);
+    line-height: calc(var(--content-rem, 14px) * 1.5);
+    padding-left: 40px;
+    margin: 1em 0;
+}
+
+body[data-theme="pixyll"] #editor .cm-list-line {
+    font-size: calc(var(--content-rem, 14px) * 1.125);
+    line-height: calc(var(--content-rem, 14px) * 1.5);
+    padding-left: 1.2em;
+}
+
+body[data-theme="pixyll"] .md-render blockquote,
+body[data-theme="pixyll"] #editor .cm-quote {
+    padding: 1.33em;
+    margin: var(--content-rem, 14px) 0;
+    border-left: 5px solid #7a7a7a;
+    background: transparent;
+    color: #555555;
+    font-style: italic;
+}
+
+body[data-theme="pixyll"] .md-render :not(pre) > code,
+body[data-theme="pixyll"] #editor .cm-inline-code {
+    font-family: var(--font-mono);
+    font-size: 1em;
+    line-height: inherit;
+    background: transparent;
+    color: var(--code-text);
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+body[data-theme="pixyll"] #editor .cm-codeblock-line {
+    font-family: var(--font-mono);
+    font-size: 1em;
+    background: var(--code-bg);
+    color: var(--code-text);
+    border-left: 1px solid #7a7a7a;
+    border-right: 1px solid #7a7a7a;
+    border-radius: 0;
+}
+
+body[data-theme="pixyll"] #editor .cm-codeblock-first {
+    border-top: 1px solid #7a7a7a;
+    border-radius: 0;
+}
+
+body[data-theme="pixyll"] #editor .cm-codeblock-last {
+    border-bottom: 1px solid #7a7a7a;
+    border-radius: 0;
+}
+
+body[data-theme="pixyll"] .md-render pre {
+    font-family: var(--font-mono);
+    font-size: calc(var(--content-rem, 14px) * 1);
+    line-height: calc(var(--content-rem, 14px) * 1.5);
+    background: transparent;
+    color: #7a7a7a;
+    padding: calc(var(--content-rem, 14px) * .5) 1.125em;
+    margin: 1em 0 .88em;
+    border: 1px solid #7a7a7a;
+    border-radius: 0;
+}
+
+body[data-theme="pixyll"] #editor .cm-codeblock-line {
+    font-size: calc(var(--content-rem, 14px) * 1);
+    line-height: calc(var(--content-rem, 14px) * 1.5);
+    padding: 0 1.125em;
+}
+
+body[data-theme="pixyll"] #editor .cm-codeblock-first {
+    padding-top: calc(var(--content-rem, 14px) * .5);
+}
+
+body[data-theme="pixyll"] #editor .cm-codeblock-last {
+    padding-bottom: calc(var(--content-rem, 14px) * .5);
+    margin-bottom: .88em;
+}
+
+body[data-theme="pixyll"] .md-render table,
+body[data-theme="pixyll"] #editor .lp-table table {
+    font-size: calc(var(--content-rem, 14px) * 1.125);
+    margin: 1em 0;
+}
+
+body[data-theme="pixyll"] .md-render :is(th, td):not(:where(.lp-table-colhead, .lp-table-corner, .lp-row-handle)),
+body[data-theme="pixyll"] #editor .lp-table table .lp-cell {
+    border: 0;
+    border-top: 1px solid #333333;
+    padding: 12px;
+    vertical-align: top;
+    line-height: 1.2;
+    background: transparent;
+}
+
+body[data-theme="pixyll"] .md-render thead th:not(.lp-table-colhead):not(.lp-table-corner),
+body[data-theme="pixyll"] #editor .lp-table thead th.lp-cell {
+    border-bottom: 2px solid #333333;
+    vertical-align: bottom;
+}
+
+body[data-theme="pixyll"] .md-render thead tr:first-child th:not(.lp-table-colhead):not(.lp-table-corner),
+body[data-theme="pixyll"] #editor .lp-table thead tr:not(.lp-table-handle-row) th.lp-cell {
+    border-top: 0;
+}
+
+body[data-theme="pixyll"] .md-render tbody + tbody {
+    border-top: 2px solid #333333;
+}
+
+body[data-theme="pixyll"] .md-render a,
+body[data-theme="pixyll"] #editor .cm-link {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 48em) {
+    body[data-theme="pixyll"] .md-render h1, body[data-theme="pixyll"] #editor .cm-header-1 { font-size: calc(var(--content-rem, 14px) * 3.25); }
+    body[data-theme="pixyll"] .md-render h2, body[data-theme="pixyll"] #editor .cm-header-2 { font-size: calc(var(--content-rem, 14px) * 2.298); }
+    body[data-theme="pixyll"] .md-render h3, body[data-theme="pixyll"] #editor .cm-header-3 { font-size: calc(var(--content-rem, 14px) * 1.625); }
+    body[data-theme="pixyll"] .md-render h4, body[data-theme="pixyll"] #editor .cm-header-4 { font-size: calc(var(--content-rem, 14px) * 1.3); }
+    body[data-theme="pixyll"] .md-render p, body[data-theme="pixyll"] .md-render li { font-size: calc(var(--content-rem, 14px) * 1.25); line-height: 1.8; }
+    body[data-theme="pixyll"] #editor .cm-content { font-size: calc(var(--editor-font-size) * 1.09375); line-height: 1.8; }
+    body[data-theme="pixyll"] #editor .cm-list-line { font-size: calc(var(--content-rem, 14px) * 1.25); line-height: 1.8; }
+    body[data-theme="pixyll"] .md-render table, body[data-theme="pixyll"] #editor .lp-table table { font-size: calc(var(--content-rem, 14px) * 1.25); }
+}
+
+@media (max-width: 48em) {
+    body[data-theme="pixyll"] .md-render h1, body[data-theme="pixyll"] #editor .cm-header-1 { font-size: calc(var(--content-rem, 14px) * 2.827); }
+    body[data-theme="pixyll"] .md-render h2, body[data-theme="pixyll"] #editor .cm-header-2 { font-size: calc(var(--content-rem, 14px) * 1.999); }
+    body[data-theme="pixyll"] .md-render h3, body[data-theme="pixyll"] #editor .cm-header-3 { font-size: calc(var(--content-rem, 14px) * 1.413); }
+    body[data-theme="pixyll"] .md-render h4, body[data-theme="pixyll"] #editor .cm-header-4 { font-size: calc(var(--content-rem, 14px) * 1.3); }
+    body[data-theme="pixyll"] .md-render blockquote, body[data-theme="pixyll"] #editor .cm-quote { margin-left: var(--content-rem, 14px); margin-right: 0; padding: .5em; }
+}
+
+@media screen and (min-width: 64em) {
+    body[data-theme="pixyll"] .md-render h1, body[data-theme="pixyll"] #editor .cm-header-1 { font-size: calc(var(--content-rem, 14px) * 4.498); }
+    body[data-theme="pixyll"] .md-render h2, body[data-theme="pixyll"] #editor .cm-header-2 { font-size: calc(var(--content-rem, 14px) * 2.29); }
+    body[data-theme="pixyll"] .md-render h3, body[data-theme="pixyll"] #editor .cm-header-3 { font-size: calc(var(--content-rem, 14px) * 1.9); }
+    body[data-theme="pixyll"] .md-render h4, body[data-theme="pixyll"] #editor .cm-header-4 { font-size: calc(var(--content-rem, 14px) * 1.591); }
+}
+
+/* First-line overrides cancel the shared GitHub editor rule. */
+body[data-theme="pixyll"] #editor .cm-content > .cm-header-1:first-child { margin-top: 1em; }
+body[data-theme="pixyll"] #editor .cm-content > .cm-header-2:first-child { margin-top: 1em; }
+body[data-theme="pixyll"] #editor .cm-content > .cm-header-3:first-child { margin-top: 1em; }
+body[data-theme="pixyll"] #editor .cm-content > .cm-header-4:first-child { margin-top: 1em; }
+body[data-theme="pixyll"] #editor .cm-content > .cm-header-5:first-child { margin-top: 1em; }
+body[data-theme="pixyll"] #editor .cm-content > .cm-header-6:first-child { margin-top: 1em; }
+
+/* CM quotes are lines, so block margins must not repeat on each line. */
+body[data-theme="pixyll"] #editor .cm-quote { margin-top: 0; margin-bottom: 0; }
+
+/* The editable paragraph is a CM line; lists and code keep their own weight. */
+body[data-theme="pixyll"] #editor .cm-content { line-height: 1.5; font-weight: 300; }
+body[data-theme="pixyll"] #editor .cm-list-line,
+body[data-theme="pixyll"] #editor .cm-codeblock-line { font-weight: 400; }
+@media screen and (min-width: 48em) {
+    body[data-theme="pixyll"] #editor .cm-content { line-height: 1.8; }
+}
+
+body[data-theme="pixyll"] #editor .lp-table { line-height: calc(var(--content-rem, 14px) * 1.5); font-weight: 400; }
+body[data-theme="pixyll"] .md-render thead th:not(.lp-table-colhead):not(.lp-table-corner) { font-weight: 700; }
+
+body[data-theme="pixyll"] .md-render pre,
+body[data-theme="pixyll"] .md-render code,
+body[data-theme="pixyll"] #editor .cm-codeblock-line,
+body[data-theme="pixyll"] #editor .cm-inline-code { text-align: left; }
+body[data-theme="pixyll"] .md-render table,
+body[data-theme="pixyll"] #editor .lp-table table { margin: 0; }

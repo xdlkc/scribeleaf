@@ -1,0 +1,128 @@
+{
+  "generatedAt": "2026-10-19T13:19:11.504Z",
+  "environment": "JSDOM actual application/CodeMirror/commands/native bridge; native UI verified separately",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Native history starts disabled; repeat items have dynamic enablement",
+      "passed": true
+    },
+    {
+      "name": "No history cannot request repeat through command or shortcut",
+      "passed": true
+    },
+    {
+      "name": "Window-local native state enables previous while blocking overwrite",
+      "passed": true
+    },
+    {
+      "name": "Renderer overwrite command asks native to resolve history",
+      "passed": true
+    },
+    {
+      "name": "Control+Command+E routes to native repeat request when enabled",
+      "passed": true
+    },
+    {
+      "name": "html: native request returns current unsaved snapshot and exact intent",
+      "passed": true
+    },
+    {
+      "name": "Repeated html gets complete styled HTML",
+      "passed": true
+    },
+    {
+      "name": "html-plain: native request returns current unsaved snapshot and exact intent",
+      "passed": true
+    },
+    {
+      "name": "Repeated unstyled HTML uses the plain production renderer",
+      "passed": true
+    },
+    {
+      "name": "pdf: native request returns current unsaved snapshot and exact intent",
+      "passed": true
+    },
+    {
+      "name": "Repeated pdf gets complete styled HTML",
+      "passed": true
+    },
+    {
+      "name": "png: native request returns current unsaved snapshot and exact intent",
+      "passed": true
+    },
+    {
+      "name": "Repeated png gets complete styled HTML",
+      "passed": true
+    },
+    {
+      "name": "docx: native request returns current unsaved snapshot and exact intent",
+      "passed": true
+    },
+    {
+      "name": "odt: native request returns current unsaved snapshot and exact intent",
+      "passed": true
+    },
+    {
+      "name": "rtf: native request returns current unsaved snapshot and exact intent",
+      "passed": true
+    },
+    {
+      "name": "epub: native request returns current unsaved snapshot and exact intent",
+      "passed": true
+    },
+    {
+      "name": "latex: native request returns current unsaved snapshot and exact intent",
+      "passed": true
+    },
+    {
+      "name": "mediawiki: native request returns current unsaved snapshot and exact intent",
+      "passed": true
+    },
+    {
+      "name": "rst: native request returns current unsaved snapshot and exact intent",
+      "passed": true
+    },
+    {
+      "name": "textile: native request returns current unsaved snapshot and exact intent",
+      "passed": true
+    },
+    {
+      "name": "opml: native request returns current unsaved snapshot and exact intent",
+      "passed": true
+    },
+    {
+      "name": "Repeat preparation preserves dirty source identity and current text",
+      "passed": true
+    },
+    {
+      "name": "Sending normal export cannot invent accepted native history",
+      "passed": true
+    },
+    {
+      "name": "Document switch discards delayed repeat HTML before native write",
+      "passed": true
+    },
+    {
+      "name": "Document switch also discards delayed normal HTML",
+      "passed": true
+    },
+    {
+      "name": "Unknown repeat format is rejected without fallback conversion",
+      "passed": true
+    },
+    {
+      "name": "Bridge availability accepts boolean state only",
+      "passed": true
+    },
+    {
+      "name": "Browser fallback cannot claim native repeat/overwrite history",
+      "passed": true
+    },
+    {
+      "name": "Repeat bridge and asynchronous editor layout have no uncaught errors",
+      "passed": true,
+      "detail": []
+    }
+  ]
+}

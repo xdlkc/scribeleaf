@@ -1,0 +1,558 @@
+/* UI chrome: menu bar, sidebar, status bar, dialogs, quick-open palette.
+   Consumes theme variables (--paper, --bg, --text, --text-dim, --border,
+   --sidebar-bg, --sidebar-text, --ui-text, --ui-hover-bg) defined by the
+   theme stylesheets; fallbacks below match the GitHub theme observations. */
+
+/* ---------- menu bar ---------- */
+
+#menubar {
+  flex: none;
+  display: flex;
+  align-items: stretch;
+  height: 28px;
+  padding: 0 6px;
+  font: 13px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  color: var(--text, #333);
+  background: var(--sidebar-bg, #fafafa);
+  border-bottom: 1px solid var(--border, #e2e2e2);
+  user-select: none;
+}
+
+#menubar .menu {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+#menubar .menu-label {
+  appearance: none;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  color: inherit;
+  padding: 0 11px;
+  border-radius: 4px;
+  cursor: default;
+}
+
+#menubar .menu-label:hover,
+#menubar .menu.open .menu-label {
+  background: var(--ui-hover-bg, rgba(0, 0, 0, 0.06));
+}
+
+#menubar .menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 230px;
+  padding: 5px;
+  background: var(--paper, #fff);
+  border: 1px solid var(--border, #e2e2e2);
+  border-radius: 6px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+  z-index: 100;
+}
+
+#menubar .menu.open .menu-dropdown {
+  display: block;
+}
+
+#menubar .menu-item {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 1px 8px 1px 2px;
+  border-radius: 4px;
+  white-space: nowrap;
+  cursor: default;
+}
+
+#menubar .menu-item:hover {
+  background: var(--ui-hover-bg, rgba(0, 0, 0, 0.06));
+}
+
+#menubar .menu-check {
+  flex: none;
+  width: 16px;
+  text-align: center;
+}
+
+#menubar .menu-label-text {
+  flex: 1 1 auto;
+}
+
+#menubar .menu-shortcut {
+  margin-left: 28px;
+  font-size: 12px;
+  color: var(--text-dim, #999);
+}
+
+#menubar .menu-separator {
+  height: 1px;
+  margin: 5px 10px;
+  background: var(--border, #e2e2e2);
+}
+
+/* ---------- sidebar ---------- */
+
+#sidebar {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  font: 13px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  color: var(--sidebar-text, #333);
+  background: var(--sidebar-bg, #fafafa);
+  border-right: 1px solid var(--border, #e2e2e2);
+  user-select: none;
+}
+
+body.sidebar-hidden #sidebar,
+body.sidebar-hidden #sidebar-resizer {
+  display: none;
+}
+
+#sidebar .sidebar-tabs {
+  flex: none;
+  display: flex;
+  margin: 8px 8px 6px;
+  border: 1px solid var(--border, #e2e2e2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#sidebar .sidebar-tab {
+  appearance: none;
+  flex: 1 1 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: inherit;
+  font-size: 12px;
+  padding: 3px 0;
+  cursor: default;
+}
+
+#sidebar .sidebar-tab + .sidebar-tab {
+  border-left: 1px solid var(--border, #e2e2e2);
+}
+
+#sidebar .sidebar-tab.active {
+  background: var(--paper, #fff);
+  font-weight: 600;
+}
+
+#sidebar-content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 8px;
+}
+
+#sidebar .sidebar-root-header {
+  padding: 4px 10px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#sidebar .sidebar-filter {
+  display: block;
+  box-sizing: border-box;
+  width: calc(100% - 16px);
+  margin: 0 8px 6px;
+  padding: 3px 6px;
+  font-size: 12px;
+  color: var(--text, #333);
+  background: var(--paper, #fff);
+  border: 1px solid var(--border, #e2e2e2);
+  border-radius: 5px;
+  outline: none;
+}
+
+#sidebar .sidebar-filter:focus {
+  border-color: #0a84ff;
+  box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.25);
+}
+
+#sidebar .sidebar-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  line-height: 26px;
+  padding: 0 10px;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: default;
+}
+
+#sidebar .sidebar-row:hover {
+  background: var(--ui-hover-bg, rgba(0, 0, 0, 0.06));
+}
+
+#sidebar .sidebar-row.active {
+  background: rgba(10, 132, 255, 0.16);
+}
+
+#sidebar .sidebar-file-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#sidebar .sidebar-file-path {
+  margin-left: auto;
+  padding-left: 8px;
+  font-size: 11px;
+  color: var(--text-dim, #999);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#sidebar .sidebar-outline-row {
+  display: block;
+  text-overflow: ellipsis;
+}
+
+#sidebar .sidebar-empty {
+  padding: 10px 12px;
+  font-size: 12px;
+  color: var(--text-dim, #999);
+}
+
+#sidebar .sidebar-footer {
+  flex: none;
+  padding: 4px 6px;
+  border-top: 1px solid var(--border, #e2e2e2);
+}
+
+#sidebar .sidebar-footer-btn {
+  appearance: none;
+  width: 22px;
+  height: 18px;
+  border: 0;
+  outline: none;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--ui-text, #777);
+  font-size: 14px;
+  line-height: 1;
+  padding: 0;
+  cursor: default;
+}
+
+#sidebar .sidebar-footer-btn:hover {
+  background: var(--ui-hover-bg, rgba(0, 0, 0, 0.06));
+}
+
+/* ---------- sidebar resizer ---------- */
+
+#sidebar-resizer {
+  flex: none;
+  width: 4px;
+  margin-left: -1px;
+  margin-right: -3px;
+  cursor: col-resize;
+  z-index: 5;
+}
+
+#sidebar-resizer:hover,
+body.sidebar-resizing #sidebar-resizer {
+  background: rgba(10, 132, 255, 0.35);
+}
+
+body.sidebar-resizing {
+  cursor: col-resize;
+  user-select: none;
+}
+
+/* ---------- status bar ---------- */
+
+#statusbar {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 22px;
+  padding: 0 6px;
+  font: 11px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  color: var(--ui-text, #777);
+  background: var(--sidebar-bg, #fafafa);
+  border-top: 1px solid var(--border, #e2e2e2);
+  user-select: none;
+}
+
+#statusbar .status-left,
+#statusbar .status-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+}
+
+#statusbar .status-btn {
+  appearance: none;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  color: inherit;
+  padding: 1px 5px;
+  border-radius: 3px;
+  cursor: default;
+}
+
+#statusbar .status-btn:hover {
+  background: var(--ui-hover-bg, rgba(0, 0, 0, 0.06));
+}
+
+#statusbar .status-filename {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#statusbar .status-sep {
+  opacity: 0.5;
+}
+
+/* ---------- dialogs ---------- */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.25);
+  font: 13px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+.dialog {
+  min-width: 340px;
+  max-width: 90vw;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 20px;
+  font-size: 13px;
+  color: var(--text, #333);
+  background: var(--paper, #fff);
+  border-radius: 10px;
+  box-shadow: 0 12px 44px rgba(0, 0, 0, 0.32);
+}
+
+.dialog-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 14px;
+}
+
+.dialog-message {
+  margin: -6px 0 6px;
+  color: var(--text-dim, #999);
+}
+
+.dialog-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.dialog-label {
+  flex: none;
+  width: 130px;
+  text-align: right;
+}
+
+.dialog-input,
+.dialog select {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 4px 6px;
+  font: inherit;
+  color: var(--text, #333);
+  background: var(--bg, #fff);
+  border: 1px solid var(--border, #e2e2e2);
+  border-radius: 5px;
+  outline: none;
+}
+
+.dialog-input:focus,
+.dialog select:focus {
+  border-color: #0a84ff;
+  box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.25);
+}
+
+.dialog-input-number {
+  flex: none;
+  max-width: 90px;
+}
+
+.dialog-check-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dialog-inline {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.dialog-inline .dialog-input {
+  flex: 1 1 auto;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.btn {
+  appearance: none;
+  font: 13px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  padding: 3px 14px;
+  color: var(--text, #333);
+  background: var(--paper, #fff);
+  border: 1px solid var(--border, #e2e2e2);
+  border-radius: 6px;
+  cursor: default;
+}
+
+.btn:hover {
+  background: var(--ui-hover-bg, rgba(0, 0, 0, 0.06));
+}
+
+.btn-primary,
+.btn-primary:hover {
+  background: #0a84ff;
+  border-color: #0a84ff;
+  color: #fff;
+}
+
+.btn-primary:active {
+  background: #0070dd;
+}
+
+.dialog-section {
+  font-weight: 600;
+  margin: 14px 0 8px;
+}
+
+/* about box */
+
+.dialog-about {
+  min-width: 300px;
+  text-align: center;
+}
+
+.about-name {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.about-version {
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--text-dim, #999);
+}
+
+.about-line {
+  margin: 12px 0 4px;
+  color: var(--text-dim, #999);
+}
+
+.dialog-about .dialog-buttons {
+  justify-content: center;
+}
+
+/* ---------- quick-open palette ---------- */
+
+.overlay.quick-open-overlay {
+  align-items: flex-start;
+  padding-top: 20vh;
+  box-sizing: border-box;
+}
+
+.dialog.quick-open {
+  width: 480px;
+  min-width: 0;
+  padding: 8px;
+}
+
+.quick-open-input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 6px 8px;
+  font-size: 14px;
+  color: var(--text, #333);
+  background: var(--bg, #fff);
+  border: 1px solid var(--border, #e2e2e2);
+  border-radius: 6px;
+  outline: none;
+}
+
+.quick-open-input:focus {
+  border-color: #0a84ff;
+  box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.25);
+}
+
+.quick-open-list {
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.quick-open-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: default;
+}
+
+.quick-open-row.selected {
+  background: #0a84ff;
+  color: #fff;
+}
+
+.quick-open-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.quick-open-path {
+  margin-left: auto;
+  padding-left: 8px;
+  font-size: 11px;
+  color: var(--text-dim, #999);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.quick-open-row.selected .quick-open-path {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.quick-open-hint {
+  padding: 12px;
+  text-align: center;
+  color: var(--text-dim, #999);
+}

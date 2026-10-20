@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-10-19T17:00:31.591422+00:00",
+  "preservedArtifacts": "evidence/export-settings-native-artifacts/manifest.json",
+  "removedReproducibleMaterial": [
+    ".cache/export-settings-native-verifier/ExportSettingsVerifier.app",
+    ".cache/export-settings-native-verifier/renderer",
+    ".cache/export-settings-native-verifier/swift-module",
+    ".cache/export-settings-restart-proof/RestartProof.app",
+    ".cache/export-settings-readonly-probe/ReadOnlyProbe.app",
+    ".cache/export-settings-swift",
+    ".cache/export-settings-dist",
+    ".cache/export-settings-audit-grok.stream",
+    ".cache/export-settings-implementation-grok.stream",
+    ".cache/export-settings-audit-finalize-grok.stream",
+    ".cache/export-settings-fix-grok.stream",
+    ".cache/export-settings-implementation-grok-brief.md",
+    ".cache/export-settings-audit-grok-brief.md",
+    ".cache/export-settings-fix-grok-brief.md",
+    ".cache/export-settings-audit-finalize-grok-brief.md",
+    ".cache/export-settings-native-attempt-44ee",
+    ".cache/export-settings-native-attempt-895c",
+    ".cache/export-settings-native-verifier/implementation-grok.stream",
+    ".cache/export-settings-native-verifier/implementation-brief.txt",
+    ".cache/export-settings-native-verifier/manual-probes.example.json"
+  ],
+  "kept": "Production app, Pandoc cache, test scripts, evidence, failed raw observations, source witnesses. QA defaults domains were already cleaned by actual native close.",
+  "updatedAt": "2026-10-19T17:02:25.106435+00:00"
+}

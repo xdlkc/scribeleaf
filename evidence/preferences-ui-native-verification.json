@@ -1,0 +1,142 @@
+{
+  "generatedAt": "2026-10-19T18:00:44.983433+00:00",
+  "bundleIdentifier": "local.typora-replica.editor",
+  "pid": 49103,
+  "sourceSHA256": {
+    "native/App.swift": "f08a41d69d6702c987cd6ea8ffff73013e90aefea230a5862bc6c8b38aa88a99",
+    "native/Clipboard.swift": "069978ada014364b22007d7a271cd0af8ccf87ca8f9841a5abe6ea541a10c879",
+    "native/DocumentConversion.swift": "927cc47716dd5cab06fcc042dfe4a0abb4725f209bc066591dbdad76c84c5d41",
+    "native/ExportAssets.swift": "8c689c854b72431d08379d090ae71a189dcd8b14527bd5ff44e00a743660e9c5",
+    "native/ExportSettings.swift": "f29a38d1dac18dd575193ee95431bbaf8e0d5016f8c892c93cd787c8367f96ff",
+    "native/FolderMonitor.swift": "ce107a134183a6fb5d7dca3c369ec060c561991155a16f3255318672dcf4a49a",
+    "native/ImageExport.swift": "b11106d85f4fc0af9aaf679eb5ef33e4fbb7903d878e59b46f12672d9ae6d03f",
+    "native/Localization.swift": "01b6278da4d8df4c9287dc161dc2ae4300ba5a55aa9777f8d635af99c3b4256a",
+    "native/PDFExportOptions.swift": "5c48e7a7f3a2fe240af4d906a46192a47a1654726ce0f7f0155019ae0f1d9cc6",
+    "native/PreferencesController.swift": "23e99972dd6c13c681393fe3932f8f891f2886c2b142fa835d0171f7dc3aa2f7",
+    "native/RepeatExport.swift": "8aecaa922cdbd34064f9feb2f8f5061f4a1d09518e7c99676a20dc22594dc3a4",
+    "src/bridge.ts": "d78d3063843c550b51c2bcdd38ce997a6c20e9751cb7f39842303911189bf94e",
+    "src/commands.ts": "3fbd9ec01191e4d518804c82559e448d972b3be0afd748b96a3a82ddfc0a4c8d",
+    "src/editor/clipboard-gfm.d.ts": "e16d6233e10d55ed14326eb30be9534e36ad5ec2d58993fbcd78e13660ae7675",
+    "src/editor/clipboard.ts": "4a85a4451d8006840204a370119f45b802b2c8eb6b4e0b08f22d07bc60e5013e",
+    "src/editor/emoji-data.ts": "a380dcc08373be4e6bd329282c653b5e241aba8b4950a81ff2643367f85ef1da",
+    "src/editor/format.ts": "4243b5e68de1c358b29042ef13a2b94c49066f42eff4e95e2ddd9be58a533321",
+    "src/editor/livepreview.ts": "dc2ac4dc8ac3651edf455d8c07a948b7caf76af25f805da4cb0ac124a2b7fffa",
+    "src/editor/mathparser.ts": "6629a121bfa724101a34d120dec070ae1af55ea2f1a441cfb22fd95446c3fc50",
+    "src/editor/preferences.ts": "a5a4516fb2ebb0a188e300fd5d1064b688af3a84c8a7f4a1e6b57e1a6925d566",
+    "src/editor/product-commands.ts": "ec21c635904a4f5a8896909b75089c6d23e5e524e0fa30b44bd43c2e686b54d6",
+    "src/editor/product-markdown.css": "f0e9d3020bc104f5bbf28ae8d817fffad9038eff9fbe648f55004d05ecac60c4",
+    "src/editor/product-markdown.ts": "82a0e9f41859265fdbde1b9ad7f8a01455d44c5121d8b27eab1e22f5132db166",
+    "src/editor/searchpanel.ts": "9d946e180c8adcf65c749157527e79a917ba3a50253d6239ee4d658b4d2f193d",
+    "src/editor/setup.ts": "b4ce8825f90e8f780969d1312d2bfb7fac20e1fffc0a20ea335b7ab165872ddf",
+    "src/editor/table-editor.css": "729f46ace5382928ba304743fab10ab463bf2d17e688ecc4ed1edea1c88539cf",
+    "src/editor/table-editor.ts": "e8e3a42621eefeb7044200966e5d7cdfdb4458112a70b3a1de53fc5fcc79ecaf",
+    "src/editor/widgets.ts": "ac8d6259759b45c3eb7f62b032810888513e7eb19f8e11c6475c8ba09b8fb994",
+    "src/export-formats.ts": "9087e812b768ae966171fbddd734149c8ba84a4a95a06defc1237aaa60ea9fe5",
+    "src/export-settings.ts": "7c7b443d298ebb2b14ce5f6c69957bcc4eb95463db4a98659be40ff1da201e12",
+    "src/export.ts": "c4796d67c106a88d57522414717e7042d27d73c6e8bf430ccf240023553da070",
+    "src/i18n.ts": "947d0f923a192f39824baa17db24c6c2587c69e525ffd3cf2b3e4830053440f4",
+    "src/main.ts": "e9a110cc933f63c68544a5d169af20f60804a609d7fe72d092f3f466066c27ed",
+    "src/markdown-tables.ts": "b723d1a99cc3a69271b6abdbc6c1963da33f18e9f00be2d0766ebc1ec6c7348f",
+    "src/outline.ts": "41237e862a90429c99545131a6edb71c039774bcac2193ba11aae752b40ffb05",
+    "src/store.ts": "fba5f1ce90d923f8a2433474767710d4484c9f5840324e5e22e96fd4c061a976",
+    "src/styles/base.css": "3fdd32a99743d4b571e17169b16f6a922fef553519234a5a8cfdd0121053a215",
+    "src/themes/github.css": "218624520efb461420e4c3100eefbe8181783512445b8aeb8e7a77377b3b5b3e",
+    "src/themes/gothic.css": "092df00dd103640d685729a40dc423f33330651f241110eb5cd6e6955602eac4",
+    "src/themes/newsprint.css": "c1bc170dd7235a026f127b276991da616748020bbe8352e47537387c9a37dc3b",
+    "src/themes/night.css": "73ef9e72cc3ce8f2d224dc4cc1d953574943afdb2676ca1f5416e69e6f47b33c",
+    "src/themes/pixyll.css": "e3a5e8a4aa2dd5466f08690abb0aa4eb385da379bf290fd15147a234786b02ed",
+    "src/themes/whitey.css": "a08b7656ac60187915e87dede9433ee4a6dc9113daddf575bce86bb268ed625e",
+    "src/types.ts": "e87062de8c4ad1b5573fb767b882b642f398fd07b8d07a83860ce6339adae74a",
+    "src/ui/dialogs.ts": "1180a6318ec3413184d8bf0d27be04b3c79c7f60a0fe3758eb4f0d43e500a84f",
+    "src/ui/menubar.ts": "1c9fce648216f8f728c6c59eaaf366cb1647ef0131b7557f95f1c80d8d378479",
+    "src/ui/menuspec.ts": "24268c6bb02f0999aacc500418c085fccb11b0d6708be6125eacf85bf68d9d1d",
+    "src/ui/preferences-i18n.ts": "2cb164d7f5600763997342454b8661b29fe779459c7f4f8eb1077244c382ba9f",
+    "src/ui/preferences.css": "95d8a3beae15c473cfa452e42479a5f4cbe352b912766020a0b72c1cd39e9eb2",
+    "src/ui/preferences.ts": "314304026cb16020481056893078529738ad1818fb986ff8ba3a221fce190a75",
+    "src/ui/sidebar-tree.css": "621104067ee3293647d62478e2f3d9e33a2c7b7212eac2fa1e03d2e7f3419bd9",
+    "src/ui/sidebar.ts": "a95019f8e0486dc51a347486f232f5852155a48e08e0e40cb0e4126853d55011",
+    "src/ui/statusbar.ts": "ff4c4f055a495737d6f231b6efd34eb5f4e93f3bbc7d8edb8abca3264629b645",
+    "src/ui/ui.css": "e14807ca4342f1f3fdde6da3d00738b785aa6f548bc7bae87fd45d75aeffe751",
+    "src/wordcount.ts": "56abfce3c5a0e78c8ad64bee589bdc8ac6340aea88ed74dbb8608b5c290b044f"
+  },
+  "passed": true,
+  "checks": [
+    {
+      "name": "Production app launched and loaded own saved fixture",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "Localized independent Preferences and disabled minimize",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "All nine Editor fields are exposed by real native AX",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "Native pairing dependency disables visual state and retains stored Markdown choice",
+      "passed": true,
+      "detail": {
+        "actions": "MD on → brackets off → brackets on → MD restored off",
+        "finalValues": {
+          "autoPairBrackets": true,
+          "autoPairMarkdown": false
+        }
+      }
+    },
+    {
+      "name": "Actual native Shift+9 inserts paired parentheses",
+      "passed": true,
+      "detail": {
+        "observedTail": "\"straight\" -- -- 'single'()"
+      }
+    },
+    {
+      "name": "Actual foreground Cmd+Z removes the test pair and clears Edited",
+      "passed": true,
+      "detail": {
+        "originalBackgroundKeyDelivery": "No change while app inactive; recorded as automation context, not a product Undo failure",
+        "foregroundActivation": true
+      }
+    },
+    {
+      "name": "Saved fixture bytes remain unchanged",
+      "passed": true,
+      "detail": {
+        "sha256": "aed58c6e925054d7ce8508c2d9a85af5c5ed069f2d1e67565d6a8b57c1468122"
+      }
+    },
+    {
+      "name": "Final native Default PDF preview shows 210 and 297 and minimize disabled",
+      "passed": true,
+      "detail": {
+        "AX": "evidence/preferences-layout-native-pdf.ax.txt",
+        "screenshotCaptured": false
+      }
+    },
+    {
+      "name": "Final main document displayed without Edited",
+      "passed": true,
+      "detail": {
+        "PID": 49103
+      }
+    }
+  ],
+  "total": 9,
+  "screenshots": [
+    "evidence/replica-editor-preferences-native.png",
+    "evidence/replica-export-settings-layout-general.png",
+    "evidence/replica-preferences-milestone-editor.png"
+  ],
+  "nativePDFCapture": "AX succeeded; screenshot interface returned no pixels twice. The pre-fix screenshot is retained under -before. No new PDF pixel claim.",
+  "limits": [
+    "Original macOS factory defaults remain unknown.",
+    "Native long-document centering was not rerun; the guard consumer is source-verified in main.ts.",
+    "Full native system clipboard contents were not changed or tested by these keyboard checks.",
+    "Preferences close via bounded public AX did not report a matched visible window; final main document was displayed using the normal open-file event. No assertion about hidden Preferences window lifetime.",
+    "This is functional integration evidence, not full product or pixel parity."
+  ]
+}

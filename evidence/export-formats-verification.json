@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-19T05:16:19.049Z",
+  "environment": "JSDOM real application boot/commands/bridge",
+  "browserVerified": false,
+  "results": [
+    {
+      "name": "Native docx receives the current unsaved CRLF snapshot",
+      "passed": true
+    },
+    {
+      "name": "Native odt receives the current unsaved CRLF snapshot",
+      "passed": true
+    },
+    {
+      "name": "Native rtf receives the current unsaved CRLF snapshot",
+      "passed": true
+    },
+    {
+      "name": "Native epub receives the current unsaved CRLF snapshot",
+      "passed": true
+    },
+    {
+      "name": "Native latex receives the current unsaved CRLF snapshot",
+      "passed": true
+    },
+    {
+      "name": "Native mediawiki receives the current unsaved CRLF snapshot",
+      "passed": true
+    },
+    {
+      "name": "Native rst receives the current unsaved CRLF snapshot",
+      "passed": true
+    },
+    {
+      "name": "Native textile receives the current unsaved CRLF snapshot",
+      "passed": true
+    },
+    {
+      "name": "Native opml receives the current unsaved CRLF snapshot",
+      "passed": true
+    },
+    {
+      "name": "Native html receives the current unsaved CRLF snapshot",
+      "passed": true
+    },
+    {
+      "name": "html uses a standalone styled document",
+      "passed": true
+    },
+    {
+      "name": "Native html-plain receives the current unsaved CRLF snapshot",
+      "passed": true
+    },
+    {
+      "name": "Unstyled HTML retains headings, TOC, task, math and footnote content",
+      "passed": true
+    },
+    {
+      "name": "Unstyled HTML excludes theme styles and font embedding",
+      "passed": true
+    },
+    {
+      "name": "Native pdf receives the current unsaved CRLF snapshot",
+      "passed": true
+    },
+    {
+      "name": "pdf uses a standalone styled document",
+      "passed": true
+    },
+    {
+      "name": "Native png receives the current unsaved CRLF snapshot",
+      "passed": true
+    },
+    {
+      "name": "png uses a standalone styled document",
+      "passed": true
+    },
+    {
+      "name": "Exporting every format preserves source identity, bytes and dirty state",
+      "passed": true
+    },
+    {
+      "name": "newsprint styled HTML carries its font license",
+      "passed": true
+    },
+    {
+      "name": "pixyll styled HTML carries its font license",
+      "passed": true
+    },
+    {
+      "name": "Unknown formats cannot silently export a different document type",
+      "passed": true
+    },
+    {
+      "name": "Native success feedback identifies the written file",
+      "passed": true
+    },
+    {
+      "name": "Async export and layout complete without uncaught editor errors",
+      "passed": true,
+      "errors": []
+    }
+  ]
+}

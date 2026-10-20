@@ -1,0 +1,244 @@
+{
+  "generatedAt": "2026-10-19T18:46:10.633Z",
+  "passed": true,
+  "checks": [
+    {
+      "name": "defaults-complete",
+      "passed": true
+    },
+    {
+      "name": "normalize-action-",
+      "passed": true
+    },
+    {
+      "name": "normalize-action-folder",
+      "passed": true
+    },
+    {
+      "name": "normalize-action-assert",
+      "passed": true
+    },
+    {
+      "name": "normalize-action-per-file-assert",
+      "passed": true
+    },
+    {
+      "name": "normalize-action-ipic",
+      "passed": true
+    },
+    {
+      "name": "normalize-action-custom",
+      "passed": true
+    },
+    {
+      "name": "normalize-uploader-",
+      "passed": true
+    },
+    {
+      "name": "normalize-uploader-ipic",
+      "passed": true
+    },
+    {
+      "name": "normalize-uploader-upic",
+      "passed": true
+    },
+    {
+      "name": "normalize-uploader-picsee",
+      "passed": true
+    },
+    {
+      "name": "normalize-uploader-picgo-app",
+      "passed": true
+    },
+    {
+      "name": "normalize-uploader-piclist-app",
+      "passed": true
+    },
+    {
+      "name": "normalize-uploader-custom",
+      "passed": true
+    },
+    {
+      "name": "intro-not-persisted-service",
+      "passed": true
+    },
+    {
+      "name": "invalid-fields-return-defaults",
+      "passed": true
+    },
+    {
+      "name": "normalize-boolean-imageCopyLocal",
+      "passed": true
+    },
+    {
+      "name": "normalize-boolean-imageCopyOnline",
+      "passed": true
+    },
+    {
+      "name": "normalize-boolean-allowImageUpload",
+      "passed": true
+    },
+    {
+      "name": "normalize-boolean-useRelativeImagePaths",
+      "passed": true
+    },
+    {
+      "name": "normalize-boolean-relativeImageDotPrefix",
+      "passed": true
+    },
+    {
+      "name": "normalize-boolean-escapeImageURLs",
+      "passed": true
+    },
+    {
+      "name": "yaml-current-path",
+      "passed": true
+    },
+    {
+      "name": "yaml-nested-other-fields-accepted",
+      "passed": true
+    },
+    {
+      "name": "yaml-source-mode-ignores",
+      "passed": true
+    },
+    {
+      "name": "yaml-bom-crlf",
+      "passed": true
+    },
+    {
+      "name": "yaml-duplicate-invalid",
+      "passed": true
+    },
+    {
+      "name": "yaml-no-fabricated-auto-upload-key",
+      "passed": true
+    },
+    {
+      "name": "yaml-unset-fallback",
+      "passed": true
+    },
+    {
+      "name": "yaml-invalid-typed-target",
+      "passed": true
+    },
+    {
+      "name": "readable-path-syntax",
+      "passed": true
+    },
+    {
+      "name": "escape-path-syntax",
+      "passed": true
+    },
+    {
+      "name": "literal-percent-escaped-even-readable",
+      "passed": true
+    },
+    {
+      "name": "online-url-kept",
+      "passed": true
+    },
+    {
+      "name": "markdown-roundtrip-false",
+      "passed": true,
+      "observed": "<p><img src=\"assets/%E5%9B%BE%20%23100%25%20(1).png\" alt=\"xy\"></p>\n"
+    },
+    {
+      "name": "markdown-roundtrip-true",
+      "passed": true,
+      "observed": "<p><img src=\"assets/%E5%9B%BE%20%23100%25%20(1).png\" alt=\"xy\"></p>\n"
+    },
+    {
+      "name": "local-request-current-yaml-snapshot",
+      "passed": true,
+      "observed": {
+        "type": "clipboardImage",
+        "requestId": "cb-mvfluxp9-1",
+        "name": "图 #100%.png",
+        "path": "/tmp/图 #100%.png",
+        "imagePolicy": {
+          "copyImagesTo": "./current.assets"
+        },
+        "source": "paste"
+      }
+    },
+    {
+      "name": "native-local-uri-utf8-decoded",
+      "passed": true
+    },
+    {
+      "name": "local-path-resolved-result-inserted",
+      "passed": true
+    },
+    {
+      "name": "native-failure-no-markdown-change",
+      "passed": true
+    },
+    {
+      "name": "native-failure-event-real-detail",
+      "passed": true
+    },
+    {
+      "name": "mixed-online-html-two-native-requests",
+      "passed": true,
+      "observed": [
+        {
+          "type": "clipboardImage",
+          "requestId": "cb-mvfluxsg-4",
+          "remoteURL": "https://images.test/one.png",
+          "imagePolicy": {},
+          "source": "paste"
+        },
+        {
+          "type": "clipboardImage",
+          "requestId": "cb-mvfluxsg-5",
+          "remoteURL": "https://images.test/two.png",
+          "imagePolicy": {},
+          "source": "paste"
+        }
+      ]
+    },
+    {
+      "name": "mixed-content-images-wait-for-real-result",
+      "passed": true
+    },
+    {
+      "name": "remote-order-held-before-prefix",
+      "passed": true
+    },
+    {
+      "name": "mixed-online-html-order-preserved",
+      "passed": true,
+      "observed": "HEAD\nbefore![one](<https://cdn.test/one.png>)\nmiddle![two](<https://cdn.test/two.png>)\nafter"
+    },
+    {
+      "name": "online-uri-drop-native-request",
+      "passed": true
+    },
+    {
+      "name": "online-uri-no-duplicate-plain-url",
+      "passed": true
+    },
+    {
+      "name": "reset-sends-native-cancel-for-sent-only",
+      "passed": true
+    },
+    {
+      "name": "late-url-after-reset-ignored",
+      "passed": true
+    },
+    {
+      "name": "destroy-sends-native-cancel",
+      "passed": true
+    },
+    {
+      "name": "menu-html-online-consumes-policy",
+      "passed": true
+    }
+  ],
+  "scope": "Actual CodeMirror DOM paste/menu and async result/cancel paths in JSDOM. Native is a message recorder, network and system clipboard are never accessed.",
+  "sourceHashes": {
+    "src/image-preferences.ts": "482d431efbe39adaf2feaa4693bd9b5ccc64cd05131c8d50b5f5119833cac547",
+    "src/editor/clipboard.ts": "233ab25b8accd84eef50779e47aadcff8482ac2d8a0bdbb4f44b0c651a8bd3c0"
+  }
+}

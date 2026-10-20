@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-10-19T16:47:55.818770+00:00",
+  "status": "functional-export-settings-verified",
+  "passed": true,
+  "functionalScope": {
+    "builtinFormats": [
+      "pdf",
+      "html",
+      "html-plain",
+      "image",
+      "docx",
+      "odt",
+      "rtf",
+      "epub",
+      "latex",
+      "wiki",
+      "rst",
+      "textile",
+      "opml"
+    ],
+    "preferences": "Independent 720x480 native window. General/View/Export are functional. Native App-domain persistence and document broadcasts.",
+    "exportOptions": "General directory/Pandoc path; HTML outline/theme/head/body; plain append; PNG width/root-font/theme/pixel scale; PDF paper/margins/metadata/header/footer; structured converter flags and extra argv.",
+    "customEntries": "Templates, custom shell command, add/rename/delete/reorder; saveFile/saveFolder/noDialog; managed output staging; source-directory cwd and documented path/metadata variables.",
+    "afterExport": "Inherited General folder flag, explicit per-format override, open-file callback, asynchronous command and bounded output UI.",
+    "repeat": "Freeze unmerged BASE/global parameters. Reapply current whitelisted YAML and resolve empty current-theme selection for every new request. Freeze each effective request. History is document/window-local.",
+    "transport": "One-shot request identity/format/overwrite validation, immutable current snapshots, cancellation propagation, managed file atomic replacement and folder per-item rollback."
+  },
+  "verification": [
+    {
+      "id": "model",
+      "evidence": "evidence/export-settings-boundaries-verification.json",
+      "passed": true,
+      "reportedChecks": 30,
+      "scope": "Immutable BASE, literal YAML precedence, argv controls, IDs and General inheritance"
+    },
+    {
+      "id": "nativeSettings",
+      "evidence": "evidence/native-export-settings-verification.json",
+      "passed": true,
+      "reportedChecks": 31,
+      "scope": "Actual native settings/commands/staging/process cancellation; no GUI claim"
+    },
+    {
+      "id": "rawAndAutoWriter",
+      "evidence": "evidence/raw-toc-conversion-verification.json",
+      "passed": true,
+      "reportedChecks": 99,
+      "scope": "Real pinned Pandoc TOC/literal protection, transport failures/cancel, automatic .html/.tex"
+    },
+    {
+      "id": "productionProducers",
+      "evidence": "evidence/export-settings-producers-verification.json",
+      "passed": true,
+      "reportedChecks": 4,
+      "scope": "Three real App.performExport cases: EPUB extra precedence, Markdown flags, automatic writer"
+    },
+    {
+      "id": "rendererRepeatTheme",
+      "evidence": "evidence/export-settings-renderer-verification.json",
+      "passed": true,
+      "reportedChecks": 4,
+      "scope": "Actual nonpersistent WebKit production renderer; current-vs-explicit theme, no native save claim"
+    },
+    {
+      "id": "preferencesFocusRename",
+      "evidence": "evidence/export-settings-focus-verification.json",
+      "passed": true,
+      "reportedChecks": 6,
+      "scope": "Real native Preferences input shortcuts, background protection and rename/menu update"
+    },
+    {
+      "id": "fontAndWrap",
+      "evidence": "evidence/image-font-browser-verification.json",
+      "passed": true,
+      "reportedChecks": 2340,
+      "scope": "36 actual Chromium theme/width/root-font scenarios; selected styles and overflow, no Preferences pixel parity"
+    },
+    {
+      "id": "outputGeometry",
+      "evidence": "evidence/export-settings-output-geometry-verification.json",
+      "passed": true,
+      "reportedChecks": 19,
+      "scope": "Actual PNG pixel dimensions/fixed image and PDF paper, margins and header/footer bands"
+    },
+    {
+      "id": "nativeUI",
+      "evidence": "evidence/export-settings-native-verification.json",
+      "passed": true,
+      "reportedChecks": 60,
+      "scope": "All 16 actual native UI stages, real Save/Cancel/Replace/Open/error dialogs, immutable snapshots, converter/custom outputs and repeat."
+    },
+    {
+      "id": "nativeRestart",
+      "evidence": "evidence/export-settings-native-verification.json",
+      "passed": true,
+      "reportedChecks": 2,
+      "scope": "Actual QA process termination/relaunch. Product export options and both Night renderer hydrations passed; raw artificial sentinel false retained."
+    },
+    {
+      "id": "productionStoreRestartProof",
+      "evidence": "evidence/export-settings-restart-proof.json",
+      "passed": true,
+      "reportedChecks": 9,
+      "scope": "Independent new read-only process compiled from identical production native sources. Sentinel, editor settings and exact General/Pandoc settings read through production Store."
+    }
+  ],
+  "nativeUI": {
+    "evidence": "evidence/export-settings-native-verification.json",
+    "status": "16-native-stages-and-effective-restart-verified",
+    "bundleIdentifier": "com.typora-replica.export-settings-verifier.de49ba4df3864980b4dbeb77365d15fe",
+    "pidAtLaunch": 13557,
+    "driverEvidence": "evidence/export-settings-driver-run.json",
+    "pidAfterActualRestart": 30807,
+    "originalRunnerPassedChecks": 62,
+    "originalRunnerTotalChecks": 63,
+    "rawRunnerAutomaticScopePassed": false,
+    "effectiveAutomaticScopePassed": true,
+    "rawRunnerEvidence": "evidence/export-settings-native-raw-runner.json",
+    "knownVerifierDefect": "The QA sentinel reader optional-chained a nil same-bundle UserDefaults suite. Production Store already falls back to standard. Original false remains unchanged.",
+    "independentRestartProof": "evidence/export-settings-restart-proof.json",
+    "independentProofPID": 31689,
+    "futureVerifierReadCorrected": true,
+    "futureVerifierReadScope": "Only future QA source now uses production Store fallback. The existing compiled Runner and raw failure remain unchanged."
+  },
+  "harness": {
+    "implementation": "Subscribed Grok4.6 low: first implementation completed; same-session repair terminated at eight turns with HTTP402 usage balance exhausted. Local corrections and actual verification followed. No repeated Grok retry.",
+    "nativeQAScript": "Independent bounded Grok task completed; reviewer removed false-positive predicates and fixed actual QA-only compilation/timing issues."
+  },
+  "failedAttempts": "Original QA results, source snapshots and generated outputs archived under .cache/export-settings-native-attempt-44ee and -895c as not-pass. Original bad PDF and geometry are separately retained in evidence. No failed checks were changed in live app memory. Final de49 original 62/63 result is preserved in evidence/export-settings-native-raw-runner.json; its sole verifier defect is supplemented by a separate actual production-Store proof, never changed to true in the raw checks.",
+  "limitations": [
+    "Preferences visual appearance is not 1:1: only three implemented primary panes; text, controls, spacing and column boundaries differ from original.",
+    "Header/footer layout is independently implemented and has no original-app pixel comparison.",
+    "Original macOS native AST/argv and factory defaults are not proven. Converters use a UTF-8 Markdown snapshot with verified Pandoc options. Raw-type evidence proves the listed TOC/literal cases, not complete original AST parity.",
+    "Repeat-export history is intentionally not persisted across application restart; original restart behavior is unknown.",
+    "Managed files use atomic commit; directory output commits per item with rollback and is not a single atomic directory transaction.",
+    "Arbitrary user shell commands can write other paths; those explicit side effects are not guaranteed reversible. QA executes only controlled project fixtures.",
+    "Project-setting injection outside supported global preferences and current-file YAML has not been established from original behavior."
+  ],
+  "runtimeSHA256": {
+    "native/App.swift": "f08a41d69d6702c987cd6ea8ffff73013e90aefea230a5862bc6c8b38aa88a99",
+    "native/DocumentConversion.swift": "927cc47716dd5cab06fcc042dfe4a0abb4725f209bc066591dbdad76c84c5d41",
+    "native/RepeatExport.swift": "8aecaa922cdbd34064f9feb2f8f5061f4a1d09518e7c99676a20dc22594dc3a4",
+    "native/ExportSettings.swift": "f29a38d1dac18dd575193ee95431bbaf8e0d5016f8c892c93cd787c8367f96ff",
+    "native/PreferencesController.swift": "0a7efd42008e5fdc79e1d8b05d11be2af14552972d69e8cc29d2dcd671a0ab35",
+    "src/export-settings.ts": "7c7b443d298ebb2b14ce5f6c69957bcc4eb95463db4a98659be40ff1da201e12",
+    "src/main.ts": "ff36b5c472b8d2267c3411d901a9e98280a028594a20090487af1de57ff04073",
+    "src/export.ts": "c4796d67c106a88d57522414717e7042d27d73c6e8bf430ccf240023553da070",
+    "src/bridge.ts": "d78d3063843c550b51c2bcdd38ce997a6c20e9751cb7f39842303911189bf94e",
+    "src/store.ts": "4029a9cad83cc60f130a9bc3a8fea9e1c7e49b808d3d13ccb855333b21f1eb44",
+    "src/types.ts": "df7ebc14b07c74903e79ea4dff0bea24e96ee5c76e1beb28dc9a67315161d7a2",
+    "src/ui/preferences.ts": "664e71c14336d5c5e8f62190080c066cce4a4787639f2d9c732275f71956a422",
+    "src/ui/preferences.css": "fa800fadf4bb97a4ed83d872762f579e333a6f6b29c9c142fe09c306c17ab36d",
+    "src/ui/menubar.ts": "1c9fce648216f8f728c6c59eaaf366cb1647ef0131b7557f95f1c80d8d378479",
+    "src/ui/menuspec.ts": "24268c6bb02f0999aacc500418c085fccb11b0d6708be6125eacf85bf68d9d1d"
+  },
+  "referenceEvidence": [
+    "evidence/export-settings-reference.json",
+    "evidence/export-settings-ui-reference.json",
+    "evidence/repeat-export-reference.json"
+  ],
+  "screenshots": [
+    "evidence/replica-export-settings-general.png",
+    "evidence/replica-export-settings-pdf.png"
+  ],
+  "primaryDocumentation": [
+    "https://support.typora.io/Export/#raw-type",
+    "https://support.typora.io/Markdown-Export/#line-wrap",
+    "https://pandoc.org/MANUAL.html",
+    "https://pandoc.org/lua-filters.html"
+  ],
+  "fullParity": false,
+  "collectorGuards": {
+    "passed": true,
+    "scope": "In-memory collector gates only; no native checks or source values changed.",
+    "checks": {
+      "secondFailureRejected": true,
+      "wrongBundleRejected": true,
+      "duplicateWitnessRejected": true,
+      "productFailureRejected": true
+    },
+    "collectorSHA256": "0612c11c40264c9a954e4b0951cd6ec002e51d3c6972acc9474d090066cbf213"
+  }
+}

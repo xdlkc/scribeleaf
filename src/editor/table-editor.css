@@ -1,0 +1,223 @@
+/* Compact table-only chrome. Colors follow theme CSS variables.
+   Inactive tables match ordinary rendered tables: reorder chrome and toolbar
+   overlay and do not reserve layout space. */
+
+.lp-table-editor {
+  position: relative;
+  margin: 0.8em 0;
+  font-family: var(--font-body);
+  color: var(--text);
+}
+
+/* The legacy .lp-table overflow:auto clips floating controls above the grid. */
+.lp-table.lp-table-editor {
+  overflow: visible;
+  width: calc(100% + 12px);
+  margin-left: -12px;
+  padding-left: 12px;
+}
+
+.lp-table-editor .lp-table-toolbar {
+  display: none;
+  position: absolute;
+  left: 12px;
+  bottom: 100%;
+  z-index: 6;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin: 0 0 4px;
+  padding: 3px 6px;
+  width: max-content;
+  max-width: 100%;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  font-size: 12px;
+  color: var(--ui-text);
+  pointer-events: auto;
+}
+
+.lp-table-editor.lp-table-active .lp-table-toolbar,
+.lp-table-editor:focus-within .lp-table-toolbar {
+  display: flex;
+}
+
+.lp-table-editor .lp-table-toolbar button,
+.lp-table-editor .lp-table-menu button {
+  appearance: none;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.2;
+  padding: 3px 7px;
+}
+
+.lp-table-editor .lp-table-toolbar button:hover,
+.lp-table-editor .lp-table-menu button:hover {
+  background: var(--ui-hover-bg);
+  border-color: var(--border);
+}
+
+.lp-table-editor .lp-table-toolbar button[aria-pressed="true"] {
+  background: var(--selection);
+  border-color: var(--link);
+}
+
+.lp-table-editor .lp-table-toolbar input[type="number"] {
+  width: 3.2em;
+  font: inherit;
+  font-size: 12px;
+  color: var(--text);
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+
+.lp-table-editor .lp-table-sep {
+  width: 1px;
+  align-self: stretch;
+  background: var(--border);
+  margin: 2px 4px;
+}
+
+.lp-table-editor .lp-table-scroll {
+  overflow: visible;
+}
+
+.lp-table-editor table.lp-table-grid {
+  border-collapse: collapse;
+  margin: 0;
+  font-size: 1em;
+  min-width: 8em;
+}
+
+.lp-table-editor .lp-table-handle-row {
+  height: 0;
+}
+
+.lp-table-editor .lp-table-colhead,
+.lp-table-editor .lp-table-corner {
+  height: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  line-height: 0;
+  overflow: visible;
+}
+
+.lp-table-editor .lp-table-corner {
+  width: 0;
+  min-width: 0;
+}
+
+.lp-table-editor .lp-col-handle {
+  display: block;
+  height: 8px;
+  margin: -10px 2px 0;
+  border-radius: 2px;
+  background: var(--border);
+  cursor: grab;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lp-table-editor .lp-col-handle:active {
+  cursor: grabbing;
+}
+
+.lp-table-editor .lp-row-handle {
+  width: 0;
+  min-width: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  vertical-align: middle;
+}
+
+.lp-table-editor .lp-row-grip {
+  display: block;
+  width: 8px;
+  height: 70%;
+  min-height: 14px;
+  margin-left: -12px;
+  border-radius: 2px;
+  background: var(--border);
+  cursor: grab;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lp-table-editor:hover .lp-col-handle,
+.lp-table-editor:hover .lp-row-grip,
+.lp-table-editor:focus-within .lp-col-handle,
+.lp-table-editor:focus-within .lp-row-grip,
+.lp-table-editor.lp-table-active .lp-col-handle,
+.lp-table-editor.lp-table-active .lp-row-grip,
+.lp-table-editor.lp-dragging .lp-col-handle,
+.lp-table-editor.lp-dragging .lp-row-grip {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lp-table-editor th.lp-cell,
+.lp-table-editor td.lp-cell {
+  border: 1px solid var(--border);
+  padding: 6px 13px;
+  min-width: 2.5em;
+  vertical-align: top;
+  background: var(--paper);
+}
+
+.lp-table-editor thead th.lp-cell {
+  font-weight: 700;
+}
+
+.lp-table-editor tbody tr:nth-child(even) td.lp-cell {
+  background: var(--table-stripe);
+}
+
+.lp-table-editor .lp-cell[contenteditable="true"] {
+  outline: 2px solid var(--link);
+  outline-offset: -1px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  caret-color: var(--text);
+}
+
+.lp-table-editor .lp-cell.lp-cell-raw {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+}
+
+.lp-table-editor .lp-cell a {
+  color: var(--link);
+}
+
+.lp-table-editor .lp-table-menu {
+  position: fixed;
+  z-index: 40;
+  min-width: 168px;
+  padding: 4px;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+.lp-table-editor .lp-table-menu button {
+  text-align: left;
+}
+
+.lp-table-editor.lp-dragging {
+  user-select: none;
+}

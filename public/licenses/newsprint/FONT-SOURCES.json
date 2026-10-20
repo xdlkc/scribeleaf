@@ -1,0 +1,41 @@
+{
+  "scope": "Unmodified Latin subset font files, copied read-only from installed Typora resources. CSS is independently authored.",
+  "licenses": [
+    {
+      "file": "PTSerif-OFL-1.1.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/ptserif/OFL.txt",
+      "copyright": "Copyright (c) 2010, ParaType Ltd. (http://www.paratype.com/public),\nwith Reserved Font Names \"PT Sans\", \"PT Serif\" and \"ParaType\".",
+      "verification": "Merriweather/Lato WOFF name tables identify original copyright and OFL URL; PT Serif family license confirmed in official Google Fonts repository."
+    }
+  ],
+  "fonts": [
+    {
+      "file": "src/assets/fonts/newsprint/pt-serif-v11-latin-700.woff2",
+      "sha256": "e548abcd8734bfcf8b4ebbbca1af98f9e8ae1e0ff884c0971f29498a4fc108f4",
+      "bytes": 29400,
+      "source": "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/newsprint/pt-serif-v11-latin-700.woff2",
+      "modified": false
+    },
+    {
+      "file": "src/assets/fonts/newsprint/pt-serif-v11-latin-700italic.woff2",
+      "sha256": "e1bd3f9f50d4876fc67111ab41b60880f08b2eb89f8a0075c2ad3394a79c4063",
+      "bytes": 28388,
+      "source": "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/newsprint/pt-serif-v11-latin-700italic.woff2",
+      "modified": false
+    },
+    {
+      "file": "src/assets/fonts/newsprint/pt-serif-v11-latin-italic.woff2",
+      "sha256": "be5daba1b69c2dad0eed50cc17bea9659ab23d79d8d412dc8e5c6013b41f39c3",
+      "bytes": 34732,
+      "source": "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/newsprint/pt-serif-v11-latin-italic.woff2",
+      "modified": false
+    },
+    {
+      "file": "src/assets/fonts/newsprint/pt-serif-v11-latin-regular.woff2",
+      "sha256": "ef391572f9fbb7bab7fef6ce2c4fc92ad68a8c148889a79cb9f9b1452d851fab",
+      "bytes": 32960,
+      "source": "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/newsprint/pt-serif-v11-latin-regular.woff2",
+      "modified": false
+    }
+  ]
+}

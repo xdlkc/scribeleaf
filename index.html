@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scribeleaf</title>
+</head>
+<body>
+  <div id="app">
+    <div id="menubar" class="menubar"></div>
+    <div id="main">
+      <aside id="sidebar" class="sidebar">
+        <div class="sidebar-tabs">
+          <button class="sidebar-tab" data-tab="files" title="Files">Files</button>
+          <button class="sidebar-tab active" data-tab="outline" title="Outline">Outline</button>
+        </div>
+        <div id="sidebar-content" class="sidebar-content"></div>
+        <div class="sidebar-footer">
+          <button id="sidebar-collapse" class="sidebar-footer-btn" title="Toggle Sidebar (⇧⌘L)">‹</button>
+        </div>
+      </aside>
+      <div id="sidebar-resizer" class="sidebar-resizer"></div>
+      <div id="editor-wrap" class="editor-wrap">
+        <div id="editor"></div>
+      </div>
+    </div>
+    <footer id="statusbar" class="statusbar">
+      <span id="status-left" class="status-left"></span>
+      <span id="status-right" class="status-right"></span>
+    </footer>
+  </div>
+  <div id="overlays"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

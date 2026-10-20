@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-19T02:58:23.918Z",
+  "results": [
+    {
+      "name": "Focus and blur do not rewrite the table",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Cell edit reaches source immediately and keeps other bytes",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "text": "# Tables\n\nOUTSIDE_BEFORE\n\n| Name | Value |\n| :--- | ---: |\n| **bold** | alpha中文 |\n| 中文 | `a|b` |\n\nOUTSIDE_AFTER\n"
+      }
+    },
+    {
+      "name": "Typing preserves the focused DOM cell",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Table focus intercepts block formatting",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Edits above table refresh its source position",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Undo refreshes source and visible cell together",
+      "passed": true,
+      "detail": {
+        "cell": "alpha中文",
+        "ok": true,
+        "text": "PREFIX\n\n# Tables\n\nOUTSIDE_BEFORE\n\n| Name | Value |\n| :--- | ---: |\n| **bold** | alpha中文 |\n| 中文 | `a|b` |\n\nOUTSIDE_AFTER\n"
+      }
+    },
+    {
+      "name": "Redo restores edited source and visible cell",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Last-cell Tab adds row and focuses its first cell",
+      "passed": true,
+      "detail": {
+        "col": "0",
+        "ok": true,
+        "row": "3"
+      }
+    },
+    {
+      "name": "Command Enter inserts a data row",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Command Shift Backspace removes one data row",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Structural edits preserve surrounding document",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Cell line break stays inside the Markdown table",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Alignment toolbar updates source and rendered column",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Resize control updates all rows and preserves outside text",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Dragging a row changes the actual table",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Dragging a column changes the actual table",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    }
+  ]
+}

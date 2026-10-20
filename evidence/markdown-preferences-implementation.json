@@ -1,0 +1,640 @@
+{
+  "generatedAt": "2026-10-19T18:36:41.826968+00:00",
+  "scope": "Independent Markdown preferences implementation; source/UI static references plus scoped runtime evidence. Full Typora 1:1 remains incomplete.",
+  "interface": {
+    "model": "src/markdown-preferences.ts",
+    "exports": [
+      "MarkdownPreferences",
+      "DEFAULT_MARKDOWN_PREFERENCES",
+      "normalizeMarkdownPreferences(value:unknown)",
+      "freezeMarkdownPreferences(value:unknown)",
+      "PARTIAL_MARKDOWN_PREFERENCES",
+      "UNSUPPORTED_MARKDOWN_PREFERENCES"
+    ],
+    "renderer": "src/markdown-renderer.ts",
+    "rendererExports": [
+      "createMarkdownRenderer(preferences,{forWriting?,mathSource?})->{md,mermaidSources}",
+      "renderClipboardMarkdown(source,preferences)->HTML"
+    ],
+    "asyncExport": "buildStandaloneHtml options.markdownPreferences; renderMarkdownToHtml third preferences arg; printMarkdown fourth preferences arg. All snapshot synchronously; renderer never imports store."
+  },
+  "defaults": {
+    "policy": "Compatibility defaults retain old replica syntax support. Native macOS factory defaults are not proven.",
+    "factoryDefaultsProven": false
+  },
+  "sourceHashes": {
+    "src/markdown-preferences.ts": "a6b3c00f653a3b547ae0157f1e037b1559247fbabc69c6e9ae5476d3c6a74f5f",
+    "src/markdown-renderer.ts": "9318cfc297d58de00fa12021e539661d05b72bf292d7904dbec9f80ebdef5dcb",
+    "src/editor/setup.ts": "19ccb15912cb44b2dbf793a2d48768f9fae63d78fce0a6897930cf90db7748c5",
+    "src/editor/preferences.ts": "9622b86fa39909dccc86ec4011f0fd38dc7474f1339ce82568a5baf2b4fe9e4d",
+    "src/editor/format.ts": "c61fc6eff72162bfbc2a2829b1d77bbcb6e1e3e39d5f210d643b802e31c17599",
+    "src/editor/mathparser.ts": "ec6784dee399140efe74ee22f9f22fd34321e19577432b9aff9614c35e7eac52",
+    "src/editor/widgets.ts": "9f4bebcafd4f75a1853d916da30ce2a65add47c288370535c4e508f9ad5111b1",
+    "src/editor/livepreview.ts": "dfdeb19da45e58309619ee2bfbb60777261e8836735886d473c38a289e85e470",
+    "src/editor/product-markdown.ts": "17e4871efca6bb0ce9d26a77075c749887090b209e222ef1ed9b95a5bad6cf89",
+    "src/editor/product-markdown.css": "45132698c81e9776abbf26c5bba28c62256a2c715e88a83a84f8eb46d91ddcc7",
+    "src/export.ts": "473a880c6c24f6b20d83aacfbf6e8900c1301609a33889256903e9378b4b1865"
+  },
+  "items": [
+    {
+      "key": "strictMarkdown",
+      "referenceKey": "strict_mode",
+      "labelChinese": "严格模式",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 248477,
+        "byteOffset": 248799,
+        "byteLength": 93
+      },
+      "status": "partial",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/mathparser.ts markdownInlineExtensions/LooseHeading",
+        "src/markdown-preferences.ts markdownPreferenceSource",
+        "src/editor/product-markdown.ts scanProductMarkdown"
+      ],
+      "limitation": "ATX无空格标题容错已切换；原版非严格列表续行使用固定2列、严格模式按marker宽度，当前CommonMark列表规则尚未覆盖其全部非严格差异。原版frame.js UTF16 1007938/1008869是相关消费者来源。"
+    },
+    {
+      "key": "headingStyle",
+      "referenceKey": "heading_style",
+      "labelChinese": "标题样式",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 248715,
+        "byteOffset": 249037,
+        "byteLength": 193
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/format.ts setHeading/changeHeadingLevel/headingSource"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "ulStyle",
+      "referenceKey": "ul_style",
+      "labelChinese": "无序列表",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 248949,
+        "byteOffset": 249273,
+        "byteLength": 108
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/format.ts toggleList"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "olStyle",
+      "referenceKey": "ol_style",
+      "labelChinese": "有序列表",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 249098,
+        "byteOffset": 249422,
+        "byteLength": 140
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/format.ts toggleList"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "noAutoLink",
+      "referenceKey": "noAutoLink",
+      "labelChinese": "自动识别链接 （例: https://typora.io）",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 249302,
+        "byteOffset": 249638,
+        "byteLength": 249
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/setup.ts GFM Autolink filtering",
+        "src/markdown-renderer.ts createMarkdownRenderer linkify"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "enableInlineMath",
+      "referenceKey": "enable_inline_math",
+      "labelChinese": "内联公式        （例： $\\LaTeX$）",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 249575,
+        "byteOffset": 249911,
+        "byteLength": 187
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/mathparser.ts markdownInlineExtensions",
+        "src/markdown-renderer.ts math_inline rule"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "enableSubscript",
+      "referenceKey": "enable_subscript",
+      "labelChinese": "下标               （例： H~2~O）",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 249786,
+        "byteOffset": 250122,
+        "byteLength": 117
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/mathparser.ts markdownInlineExtensions",
+        "src/markdown-renderer.ts sub rule"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "enableSuperscript",
+      "referenceKey": "enable_superscript",
+      "labelChinese": "上标               （例： X^2^）",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 249927,
+        "byteOffset": 250263,
+        "byteLength": 119
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/mathparser.ts markdownInlineExtensions",
+        "src/markdown-renderer.ts sup rule"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "enableHighlight",
+      "referenceKey": "enable_highlight",
+      "labelChinese": "高亮               （例： ==key==）",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 250070,
+        "byteOffset": 250406,
+        "byteLength": 120
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/mathparser.ts markdownInlineExtensions",
+        "src/markdown-renderer.ts mark rule"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "enableAlert",
+      "referenceKey": "enableAlert",
+      "labelChinese": "Github 风格警报框",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 250214,
+        "byteOffset": 250550,
+        "byteLength": 100
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/product-markdown.ts installProductMarkdown/scanProductMarkdown",
+        "src/editor/livepreview.ts cached scan signature"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "enableDiagram",
+      "referenceKey": "enable_diagram",
+      "labelChinese": "图表",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 250368,
+        "byteOffset": 250704,
+        "byteLength": 151
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/markdown-renderer.ts fence renderer/request-local queues",
+        "src/editor/livepreview.ts blockDecorations"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "convertSmartOnRender",
+      "referenceKey": "SmartyPantsOnRendering",
+      "labelChinese": "智能标点",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 250898,
+        "byteOffset": 251234,
+        "byteLength": 456
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/preferences.ts markdownInput",
+        "src/editor/livepreview.ts punctuation decorations",
+        "src/markdown-renderer.ts markdown_preference_smart"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "smartQuote",
+      "referenceKey": "smartQuote",
+      "labelChinese": "智能引号",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 251391,
+        "byteOffset": 251727,
+        "byteLength": 248
+      },
+      "status": "partial",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/preferences.ts markdownInput",
+        "src/editor/livepreview.ts punctuation decorations",
+        "src/markdown-renderer.ts markdown_preference_smart"
+      ],
+      "limitation": "输入与渲染的固定弯引号转换已生效；原生系统自定义引号样式尚未传入renderer。"
+    },
+    {
+      "key": "smartDash",
+      "referenceKey": "smartDash",
+      "labelChinese": "智能破折号",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 252837,
+        "byteOffset": 253301,
+        "byteLength": 107
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/preferences.ts markdownInput",
+        "src/editor/livepreview.ts punctuation decorations",
+        "src/markdown-renderer.ts markdown_preference_smart"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "remapPunctuation",
+      "referenceKey": "remapPunctuation",
+      "labelChinese": "解析 Markdown 时允许并转化 Unicode 标点",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 253240,
+        "byteOffset": 253710,
+        "byteLength": 433
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/mathparser.ts markdownPunctuationParser",
+        "src/markdown-preferences.ts remapMarkdownPunctuation",
+        "src/editor/livepreview.ts structural scanner"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "showLineNumbersForFence",
+      "referenceKey": "show_line_numbers_for_fence",
+      "labelChinese": "显示行号",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 253732,
+        "byteOffset": 254212,
+        "byteLength": 150
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/livepreview.ts TextMarkerWidget code gutter",
+        "src/markdown-renderer.ts md-code-gutter"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "noLineWrapping",
+      "referenceKey": "no_line_wrapping",
+      "labelChinese": "代码块自动换行",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 253906,
+        "byteOffset": 254386,
+        "byteLength": 122
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/preferences.ts content attributes",
+        "src/editor/product-markdown.css markdown-code-nowrap",
+        "src/markdown-preferences.ts markdownOutputCSS"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "shiftTabAutoIndent",
+      "referenceKey": "shiftTabAutoIndent",
+      "labelChinese": "使用 Shift+Tab 自动调整所选代码的缩进",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 254052,
+        "byteOffset": 254532,
+        "byteLength": 314
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/setup.ts Shift-Tab/temporary indentUnit and real CM indentSelection"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "codeIndentSize",
+      "referenceKey": "codeIndentSize",
+      "labelChinese": "代码缩进",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 254443,
+        "byteOffset": 254923,
+        "byteLength": 112
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/format.ts indentSelection/outdentSelection",
+        "src/editor/setup.ts Shift-Tab",
+        "src/markdown-preferences.ts markdownOutputCSS"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "defaultCodeLang",
+      "referenceKey": "defaultCodeLang",
+      "labelChinese": "默认的代码块语言",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 254605,
+        "byteOffset": 255085,
+        "byteLength": 1772
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/format.ts defaultCodeLanguage/insertCodeFence/insertCodeFenceLanguage"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "defaultCodeLangOption",
+      "referenceKey": "defaultCodeLangOption",
+      "labelChinese": "以下情况自动添加代码块语言",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 256438,
+        "byteOffset": 256918,
+        "byteLength": 236
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/format.ts defaultCodeLanguage origin bitmask"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "noLegacyMath",
+      "referenceKey": "noLegacyMath",
+      "labelChinese": "LaTeX Math Delimiter \\( \\) \\[ \\]",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 257074,
+        "byteOffset": 257554,
+        "byteLength": 192
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/mathparser.ts LegacyMath",
+        "src/editor/livepreview.ts display scanner",
+        "src/markdown-renderer.ts latex delimiters"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "gitlabMath",
+      "referenceKey": "gitlabMath",
+      "labelChinese": "Code Block Math  (```math 代码块)",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 257290,
+        "byteOffset": 257770,
+        "byteLength": 179
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/livepreview.ts math fence scanner",
+        "src/markdown-renderer.ts math fence renderer"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "allowPhysicsConflict",
+      "referenceKey": "allowPhysicsConflict",
+      "labelChinese": "启用 physics 包",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 257493,
+        "byteOffset": 257973,
+        "byteLength": 208
+      },
+      "status": "unsupported",
+      "uiAvailable": false,
+      "consumers": [],
+      "limitation": "当前KaTeX没有原版MathJax physics宏包，字段保留但不展示无消费者控件。"
+    },
+    {
+      "key": "legacyInlineMathParse",
+      "referenceKey": "legacyInlineMathParse",
+      "labelChinese": "使用旧版行内公式解析（兼容模式）",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 257725,
+        "byteOffset": 258205,
+        "byteLength": 193
+      },
+      "status": "unsupported",
+      "uiAvailable": false,
+      "consumers": [],
+      "limitation": "尚未实现和验证原版legacy_inline_math_pattern精确边界；字段保留但不展示无消费者控件。"
+    },
+    {
+      "key": "autoNumberingForMath",
+      "referenceKey": "auto_numbering_for_math",
+      "labelChinese": "自动添加序号",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 258053,
+        "byteOffset": 258533,
+        "byteLength": 175
+      },
+      "status": "partial",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/livepreview.ts blockDecorations equation counter",
+        "src/editor/widgets.ts MathBlockWidget",
+        "src/markdown-renderer.ts displayMath"
+      ],
+      "limitation": "普通display公式逐式编号、手动tag/notag和AMS普通display跳过已生效。实际align两行只生成一个整块编号；原版MathJax AMS逐行与跨式label/ref不等价，见verifier knownGaps.amsMultiline。"
+    },
+    {
+      "key": "mathFormatOnCopy",
+      "referenceKey": "mathFormatOnCopy",
+      "labelChinese": "当复制或导出为 无格式的HTML 时",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 258348,
+        "byteOffset": 258828,
+        "byteLength": 156
+      },
+      "status": "partial",
+      "uiAvailable": false,
+      "consumers": [
+        "src/markdown-renderer.ts renderClipboardMarkdown/mathSource",
+        "src/export.ts unstyled mathSource"
+      ],
+      "limitation": "LaTeX源输出已生效（共同clipboard renderer与unstyled HTML）；另一个SVG输出选项未实现，默认当前用KaTeX MathML。完整二选一控件暂不展示。"
+    },
+    {
+      "key": "indentFirstLine",
+      "referenceKey": "indentFirstLine",
+      "labelChinese": "首行缩进",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 259225,
+        "byteOffset": 259705,
+        "byteLength": 238
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/livepreview.ts paragraph-first decorations",
+        "src/editor/product-markdown.css",
+        "src/markdown-preferences.ts markdownOutputCSS"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "hideBrAndLineBreak",
+      "referenceKey": "hideBrAndLineBreak",
+      "labelChinese": "显示 <br/>",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 259601,
+        "byteOffset": 260083,
+        "byteLength": 158
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/livepreview.ts BreakMarkerWidget"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "ignoreLineBreak",
+      "referenceKey": "ignoreLineBreak",
+      "labelChinese": "编辑时",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 259783,
+        "byteOffset": 260265,
+        "byteLength": 235
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/editor/livepreview.ts paragraph whitespace/softbreak decorations",
+        "src/markdown-renderer.ts forWriting whitespace"
+      ],
+      "limitation": null
+    },
+    {
+      "key": "preLinebreakOnExport",
+      "referenceKey": "preLinebreakOnExport",
+      "labelChinese": "导出与打印",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 260062,
+        "byteOffset": 260544,
+        "byteLength": 245
+      },
+      "status": "implemented",
+      "uiAvailable": true,
+      "consumers": [
+        "src/markdown-renderer.ts export breaks",
+        "src/markdown-preferences.ts markdownOutputCSS"
+      ],
+      "limitation": null
+    }
+  ],
+  "counts": {
+    "implemented": 25,
+    "partial": 4,
+    "unsupported": 2
+  },
+  "verification": {
+    "markdown": "evidence/markdown-preferences-verification.json",
+    "markdownPassed": 127,
+    "editorRegression": "evidence/editor-preferences-verification.json",
+    "editorPassed": 138,
+    "existingExportRegression": "evidence/export-verification.json",
+    "exportPassed": 14,
+    "typecheck": {
+      "command": "npm run typecheck",
+      "exitCode": 0
+    }
+  },
+  "originalFirstLineIndentReference": {
+    "path": "/Applications/Typora.app/Contents/Resources/TypeMark/style/base.css",
+    "sha256": "930bfe65abd28df92c4b485940c337ac91947fff16bb68e790c8a4a05db4514d",
+    "byteOffset": 1004,
+    "behavior": "Paragraph first line 2em; nested inline elements/list paragraphs/SVG descendants 0; list margin-left 2em. Quotes are not excluded."
+  },
+  "knownGaps": {
+    "amsMultiline": {
+      "source": "$$\n\\begin{align}\na&=b\\\\\nc&=d\n\\end{align}\n$$",
+      "outputText": "a=bc=d(1)\\begin{align}\na&=b\\\\\nc&=d\n\\end{align}\\tag{1}\n",
+      "hasKatexError": false,
+      "scope": "Actual current pipeline witness; original Typora uses MathJax AMS tags. No equivalence claim."
+    }
+  },
+  "remaining": [
+    "Native system custom smart-quote patterns",
+    "Typora non-strict list continuation rules",
+    "MathJax AMS multiline equation numbers and cross-equation label/ref",
+    "Complete physics macros",
+    "Exact legacy inline-math regex behavior",
+    "SVG math output",
+    "Native GUI/geometry and original UI interaction verification remain coordinator work."
+  ],
+  "completion": {
+    "thisImplementationReturned": true,
+    "fullProductParity": false,
+    "originalUserStateUnchanged": true
+  }
+}

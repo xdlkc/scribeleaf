@@ -1,0 +1,260 @@
+{
+  "bundleIdentifier": "com.typora-replica.export-settings-verifier.de49ba4df3864980b4dbeb77365d15fe",
+  "initialPID": 13557,
+  "startedAt": "2026-10-19T16:27:13.559Z",
+  "status": "stopped",
+  "actions": [
+    {
+      "at": "2026-10-19T16:27:17.989Z",
+      "step": 1,
+      "action": "save",
+      "args": [
+        "styled.html"
+      ],
+      "result": "Save fixed QA filename styled.html"
+    },
+    {
+      "at": "2026-10-19T16:27:26.036Z",
+      "step": 1,
+      "action": "next",
+      "args": [],
+      "result": "Press 2 Plain HTML — Save plain.html"
+    },
+    {
+      "at": "2026-10-19T16:27:31.863Z",
+      "step": 2,
+      "action": "save",
+      "args": [
+        "plain.html"
+      ],
+      "result": "Save fixed QA filename plain.html"
+    },
+    {
+      "at": "2026-10-19T16:27:32.457Z",
+      "step": 2,
+      "action": "next",
+      "args": [],
+      "result": "Press 3 PNG width320 quality2 — Save image.png"
+    },
+    {
+      "at": "2026-10-19T16:27:37.415Z",
+      "step": 3,
+      "action": "save",
+      "args": [
+        "image.png"
+      ],
+      "result": "Save fixed QA filename image.png"
+    },
+    {
+      "at": "2026-10-19T16:27:40.557Z",
+      "step": 4,
+      "action": "next",
+      "args": [],
+      "result": "Press 4 PDF custom paper/margins/header — Save custom.pdf"
+    },
+    {
+      "at": "2026-10-19T16:27:43.815Z",
+      "step": 4,
+      "action": "save",
+      "args": [
+        "custom.pdf"
+      ],
+      "result": "Save fixed QA filename custom.pdf"
+    },
+    {
+      "at": "2026-10-19T16:27:46.434Z",
+      "step": 5,
+      "action": "next",
+      "args": [],
+      "result": "Press 5 DOCX reference style — Save custom.docx"
+    },
+    {
+      "at": "2026-10-19T16:27:49.417Z",
+      "step": 5,
+      "action": "save",
+      "args": [
+        "custom.docx"
+      ],
+      "result": "Save fixed QA filename custom.docx"
+    },
+    {
+      "at": "2026-10-19T16:27:55.877Z",
+      "step": 6,
+      "action": "next",
+      "args": [],
+      "result": "Press 6 ODT template + extra metadata — Save custom.odt"
+    },
+    {
+      "at": "2026-10-19T16:27:59.235Z",
+      "step": 6,
+      "action": "save",
+      "args": [
+        "custom.odt"
+      ],
+      "result": "Save fixed QA filename custom.odt"
+    },
+    {
+      "at": "2026-10-19T16:27:59.814Z",
+      "step": 7,
+      "action": "next",
+      "args": [],
+      "result": "Press 7 EPUB CSS toc-depth1 — Save custom.epub"
+    },
+    {
+      "at": "2026-10-19T16:28:03.698Z",
+      "step": 7,
+      "action": "save",
+      "args": [
+        "custom.epub"
+      ],
+      "result": "Save fixed QA filename custom.epub"
+    },
+    {
+      "at": "2026-10-19T16:28:06.322Z",
+      "step": 8,
+      "action": "next",
+      "args": [],
+      "result": "Press 8 Custom saveFile qa-copy.sh — Save custom.txt"
+    },
+    {
+      "at": "2026-10-19T16:28:09.122Z",
+      "step": 8,
+      "action": "save",
+      "args": [
+        "custom.txt"
+      ],
+      "result": "Save fixed QA filename custom.txt"
+    },
+    {
+      "at": "2026-10-19T16:28:12.352Z",
+      "step": 9,
+      "action": "next",
+      "args": [],
+      "result": "Press 9 Custom saveFolder fail — pick output/folder, expect rollback"
+    },
+    {
+      "at": "2026-10-19T16:28:17.213Z",
+      "step": 9,
+      "action": "folder",
+      "args": [],
+      "result": "Selected actual folder row; confirm output/folder"
+    },
+    {
+      "at": "2026-10-19T16:28:21.431Z",
+      "step": 9,
+      "action": "dismiss",
+      "args": [],
+      "result": "Press OK"
+    },
+    {
+      "at": "2026-10-19T16:28:22.096Z",
+      "step": 10,
+      "action": "next",
+      "args": [],
+      "result": "Press 10 Custom noDialog qa-nodialog.sh (no save panel)"
+    },
+    {
+      "at": "2026-10-19T16:28:24.540Z",
+      "step": 11,
+      "action": "next",
+      "args": [],
+      "result": "Press 11 Repeat Previous of noDialog (history, no overwrite dialog)"
+    },
+    {
+      "at": "2026-10-19T16:28:27.074Z",
+      "step": 12,
+      "action": "next",
+      "args": [],
+      "result": "Press 12 HTML Save Cancel — keep cancel-target.html"
+    },
+    {
+      "at": "2026-10-19T16:28:29.661Z",
+      "step": 12,
+      "action": "cancel",
+      "args": [],
+      "result": "Press Cancel"
+    },
+    {
+      "at": "2026-10-19T16:28:30.328Z",
+      "step": 13,
+      "action": "next",
+      "args": [],
+      "result": "Press 13 Command failure saveFile — Save, dismiss error"
+    },
+    {
+      "at": "2026-10-19T16:28:33.427Z",
+      "step": 13,
+      "action": "save",
+      "args": [
+        "failure-target.txt"
+      ],
+      "result": "Save fixed QA filename failure-target.txt"
+    },
+    {
+      "at": "2026-10-19T16:28:35.511Z",
+      "step": 13,
+      "action": "replace",
+      "args": [],
+      "result": "Press Replace"
+    },
+    {
+      "at": "2026-10-19T16:28:38.780Z",
+      "step": 13,
+      "action": "dismiss",
+      "args": [],
+      "result": "Press OK"
+    },
+    {
+      "at": "2026-10-19T16:28:39.362Z",
+      "step": 14,
+      "action": "next",
+      "args": [],
+      "result": "Press 14 PDF YAML headerBar first — Save repeat.pdf"
+    },
+    {
+      "at": "2026-10-19T16:28:41.777Z",
+      "step": 14,
+      "action": "save",
+      "args": [
+        "repeat.pdf"
+      ],
+      "result": "Save fixed QA filename repeat.pdf"
+    },
+    {
+      "at": "2026-10-19T16:28:43.919Z",
+      "step": 15,
+      "action": "next",
+      "args": [],
+      "result": "Press 15 Repeat PDF frozen BASE headerFoo — Save repeat-2.pdf then Restart"
+    },
+    {
+      "at": "2026-10-19T16:28:46.665Z",
+      "step": 15,
+      "action": "save",
+      "args": [
+        "repeat-2.pdf"
+      ],
+      "result": "Save fixed QA filename repeat-2.pdf"
+    },
+    {
+      "at": "2026-10-19T16:28:49.064Z",
+      "step": 15,
+      "action": "restart",
+      "args": [],
+      "result": "Press Restart verifier"
+    },
+    {
+      "at": "2026-10-19T16:32:12.438Z",
+      "step": 15,
+      "action": "discard",
+      "args": [],
+      "result": "Press Don’t Save"
+    }
+  ],
+  "finishedAt": "2026-10-19T16:34:16.767Z",
+  "previousDriverErrors": [
+    "Error: QA did not exit for restart\n    at file:///Users/lkc/Code/typora-replica/scripts/drive-export-settings-qa.mjs:68:33",
+    "Error: Command failed: /usr/bin/open /Users/lkc/Code/typora-replica/.cache/export-settings-native-verifier/ExportSettingsVerifier.app\n_LSOpenURLsWithCompletionHandler() failed with error -600.\n\n    at genericNodeError (node:internal/errors:983:15)\n    at wrappedFn (node:internal/errors:537:14)\n    at checkExecSyncError (node:child_process:916:11)\n    at execFileSync (node:child_process:952:15)\n    at file:///Users/lkc/Code/typora-replica/scripts/drive-export-settings-qa.mjs:80:3"
+  ],
+  "error": "Error: Verifier failed: restart sentinel persisted in QA domain\n    at state (file:///Users/lkc/Code/typora-replica/scripts/drive-export-settings-qa.mjs:28:26)\n    at file:///Users/lkc/Code/typora-replica/scripts/drive-export-settings-qa.mjs:83:45"
+}

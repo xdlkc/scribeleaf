@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2026-10-19T17:35:17.394384+00:00",
+  "scope": "Read-only installed 1.14.10 Preferences UI resources and saved native screenshots. No application implementation copied.",
+  "sources": {
+    "page-dist/static/css/Preferences.962926a4.e68254cc.css": {
+      "sha256": "99479ce6d00591bfd27434366e56afd89cc95a86c9f2da5a39983dfe6bd9c32a",
+      "bytes": 44142
+    },
+    "page-dist/cocoa.css": {
+      "sha256": "d258750c8064222d9bf84a550ff9176a56d32e6af6e7e6185bbf8a59c736e42a",
+      "bytes": 3449
+    },
+    "page-dist/static/js/Preferences.962926a4.0b4e81f7.js": {
+      "sha256": "8871c9599b875e23cbe80127450ad6222a1f5b40e6669231347444815507a7a0",
+      "bytes": 300588
+    },
+    "locales/zh-Hans.lproj/Panel.json": {
+      "sha256": "3c2574e7f05d9c2708feb4a8e4b4f4a506cb4900fc2a5acb4d057ae46250913a",
+      "bytes": 32639
+    }
+  },
+  "facts": {
+    "nativeWindowCSSSize": [
+      720,
+      480
+    ],
+    "mainSidebar": {
+      "contentWidth": 190,
+      "rightBorder": 1,
+      "background": "#f5f5f4"
+    },
+    "exportFormatList": {
+      "minWidth": 142,
+      "maxWidth": 160,
+      "fontSize": 12,
+      "padding": [
+        2,
+        8
+      ],
+      "separatorsAfter": [
+        "General",
+        "Image"
+      ]
+    },
+    "detail": {
+      "marginHorizontal": 16,
+      "padding": [
+        8,
+        16
+      ],
+      "radius": 6,
+      "sectionMarginTop": 18,
+      "sectionHeaderSize": 13,
+      "sectionHeaderWeight": "normal",
+      "contentIndent": 16
+    },
+    "paperPreview": {
+      "functionUTF16Offset": 230600,
+      "functionUTF8ByteOffset": 230687,
+      "behavior": "Named preset mm, else retained paper.custom, else [210,297]. Non-custom numbers are readOnly, not disabled; background is transparent. This is UI preview and does not prove system default paper.",
+      "presetMM": {
+        "A5": [
+          148,
+          210
+        ],
+        "A4": [
+          210,
+          297
+        ],
+        "A3": [
+          297,
+          420
+        ],
+        "Letter": [
+          216,
+          279
+        ],
+        "Legal": [
+          216,
+          356
+        ],
+        "Tabloid": [
+          279,
+          432
+        ]
+      }
+    },
+    "minimize": "Original captured Settings minimize AX button is disabled."
+  },
+  "originalScreenshots": [
+    "evidence/typora-export-settings-general.png",
+    "evidence/typora-export-settings-pdf.png",
+    "evidence/typora-export-settings-image.png"
+  ],
+  "fullParity": false
+}

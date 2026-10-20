@@ -1,0 +1,96 @@
+/* File navigation owns its row layout; outline rows keep the existing styles. */
+#sidebar .sidebar-files-tree .sidebar-tree {
+  outline: none;
+}
+
+#sidebar .sidebar-files-tree .sidebar-tree-item {
+  outline: none;
+}
+
+#sidebar .sidebar-files-tree .sidebar-tree-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 26px;
+  padding: 0 10px 0 calc(8px + var(--tree-depth, 0) * 14px);
+  font-size: 13px;
+  line-height: 26px;
+  cursor: pointer;
+  user-select: none;
+  color: var(--sidebar-text, #333);
+}
+
+#sidebar .sidebar-files-tree .sidebar-tree-row:hover {
+  background: var(--ui-hover-bg, #ececec);
+}
+
+#sidebar .sidebar-files-tree .sidebar-tree-item.active > .sidebar-tree-row {
+  background: #ededed;
+}
+
+#sidebar .sidebar-files-tree .sidebar-tree-item:focus > .sidebar-tree-row {
+  outline: 1px dotted #888;
+  outline-offset: -1px;
+}
+
+#sidebar .sidebar-files-tree .sidebar-tree-twistie {
+  width: 12px;
+  height: 12px;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 9px;
+  line-height: 1;
+}
+
+#sidebar .sidebar-files-tree .sidebar-tree-twistie::before {
+  content: '▸';
+}
+
+#sidebar .sidebar-files-tree .sidebar-tree-item[aria-expanded="true"] > .sidebar-tree-row > .sidebar-tree-twistie::before {
+  content: '▾';
+}
+
+#sidebar .sidebar-files-tree .sidebar-tree-twistie.is-leaf {
+  visibility: hidden;
+}
+
+#sidebar .sidebar-files-tree .sidebar-tree-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Relative paths identify duplicate document names in list mode, including in
+   the native shell whose baseline style hides generic file path subtitles. */
+#sidebar .sidebar-files-list .sidebar-file-row {
+  flex-wrap: wrap;
+  column-gap: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#sidebar .sidebar-files-list .sidebar-file-row .sidebar-file-path {
+  display: block;
+  flex: 0 0 calc(100% - 20px);
+  margin-left: 20px;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+#sidebar .sidebar-files-list .sidebar-file-row:focus {
+  outline: 1px dotted #888;
+  outline-offset: -1px;
+}
+
+body.native-app #sidebar .sidebar-files-tree .sidebar-tree-row {
+  font-size: 14px;
+  line-height: 30px;
+  min-height: 30px;
+}
+
+body[data-theme="night"] #sidebar .sidebar-files-tree .sidebar-tree-item.active > .sidebar-tree-row {
+  background: #42474c;
+}

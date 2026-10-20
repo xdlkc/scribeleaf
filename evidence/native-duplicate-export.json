@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "nativePid": 93195,
+  "workflow": "Native Command Shift S duplicate, visually confirmed retained source-directory image, native File Export HTML, saved through NSSavePanel outside source directory. Export relocated to project cache after path field treated slash as filename colon.",
+  "sourceImageSHA256": "349720a7818d2bb9035663308c09d14300d1a09b3eda7e5d2e70d4f20a4ad952",
+  "embeddedImageCount": 1,
+  "html": "/Users/lkc/Code/typora-replica/.cache/portable-image.html",
+  "duplicateScreenshot": "replica-duplicate-image.png",
+  "systemClipboardTouched": false
+}

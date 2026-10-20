@@ -1,0 +1,14 @@
+{
+  "reference": "Installed Typora 1.14.10; read-only static source inspection",
+  "generatedAt": "2026-10-19T15:03:01.858560+00:00",
+  "consumer": {
+    "file": "/Applications/Typora.app/Contents/Resources/TypeMark/appsrc/window/frame.js",
+    "sha256": "b08c94bab8e9994363fcf928a4ea927d7bbbcd1e84d70ac41eef55475089fae1",
+    "offsetConvention": "Python Unicode character offset, zero based",
+    "offset": 769593,
+    "snippet": "(s=h.fontSize||document.body.parentElement.style.fontSize||\"\")&&(\"number\"==typeof s&&(h.fontSize=s+=\"px\"),s=\" style='font-size:\"+s+\" !important'\"),p&&File.isMac&&(o+=\"<script>(\"+function(){for(var e=document."
+  },
+  "conclusion": "Custom image fontSize changes the html root with important priority. rem/em typography and spacing follow CSS units, while fixed px images and borders remain fixed. At 640px viewport, Pixyll body is 1.5rem and paragraph uses its responsive 1.125rem rule.",
+  "evidence": "image-font-browser-verification.json",
+  "scope": "CSS consumer and actual replica renderer output compared in Chromium; not original Typora export pixels."
+}

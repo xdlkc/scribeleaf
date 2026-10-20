@@ -1,0 +1,5288 @@
+{
+  "generatedAt": "2026-10-19T17:08:54.278Z",
+  "purpose": "Typora 1.14.10 六类非导出 Preferences 的只读行为/文案参考；供独立实现，非完成验收。",
+  "productVersion": "1.14.10",
+  "method": {
+    "guiStarted": false,
+    "userPreferencesRead": false,
+    "externalHarnessUsed": false,
+    "sourceExecution": false,
+    "sourceCopiedIntoRuntime": false,
+    "parser": "TypeScript AST of installed read-only resources",
+    "offsetUnits": "byteOffset UTF-8; utf16Offset JavaScript UTF-16 index. Offsets refer to full file with recorded SHA-256.",
+    "limitations": [
+      "当前资源包含跨平台实现，本文件主要列原生 macOS 显示项，其他平台字段单独列出。",
+      "DEFAULT_OPTIONS 只是 renderer baseline。readOption 随后用宿主 _options 覆盖；macOS 工厂默认仍需独立原生来源证明。",
+      "源资源与静态文案能证明字段/依赖/调用意图，不能代替真实交互与所有消费点的运行验收。",
+      "未读当前用户偏好值；没有从截图选中状态推导默认值。"
+    ]
+  },
+  "sources": {
+    "preferences": {
+      "path": "/Applications/Typora.app/Contents/Resources/TypeMark/page-dist/static/js/Preferences.962926a4.0b4e81f7.js",
+      "sha256": "8871c9599b875e23cbe80127450ad6222a1f5b40e6669231347444815507a7a0",
+      "bytes": 300588
+    },
+    "renderer": {
+      "path": "/Applications/Typora.app/Contents/Resources/TypeMark/appsrc/window/frame.js",
+      "sha256": "b08c94bab8e9994363fcf928a4ea927d7bbbcd1e84d70ac41eef55475089fae1",
+      "bytes": 1712126
+    },
+    "panelLocale": {
+      "path": "/Applications/Typora.app/Contents/Resources/TypeMark/locales/zh-Hans.lproj/Panel.json",
+      "sha256": "3c2574e7f05d9c2708feb4a8e4b4f4a506cb4900fc2a5acb4d057ae46250913a",
+      "bytes": 32639
+    },
+    "menuLocale": {
+      "path": "/Applications/Typora.app/Contents/Resources/TypeMark/locales/zh-Hans.lproj/Menu.json",
+      "sha256": "c620621cde84d00231ea35fdfc16bfcc1d7f3551a2e1a6cd52d4b33cc36df718",
+      "bytes": 10173
+    },
+    "frontLocale": {
+      "path": "/Applications/Typora.app/Contents/Resources/TypeMark/locales/zh-Hans.lproj/Front.json",
+      "sha256": "3e87d0eaf4b5e5f055498555ae7177f257d673558c6e0becf7ae2658a242c9bc",
+      "bytes": 9101
+    },
+    "preferencesHTML": {
+      "path": "/Applications/Typora.app/Contents/Resources/TypeMark/page-dist/setting.html",
+      "sha256": "a2857fa2d29e9fbb61e469cc02bd5568be42985dfabd6c84f7f8596b570f053b",
+      "bytes": 3627
+    }
+  },
+  "categoryOrder": [
+    {
+      "id": "files",
+      "label": "文件"
+    },
+    {
+      "id": "editor",
+      "label": "编辑器"
+    },
+    {
+      "id": "image",
+      "label": "图像"
+    },
+    {
+      "id": "markdown",
+      "label": "Markdown"
+    },
+    {
+      "id": "export",
+      "label": "导出"
+    },
+    {
+      "id": "appearance",
+      "label": "外观"
+    },
+    {
+      "id": "general",
+      "label": "通用"
+    }
+  ],
+  "categoryOrderReference": {
+    "source": "preferences",
+    "utf16Offset": 268301,
+    "byteOffset": 268789,
+    "byteLength": 76
+  },
+  "hostValueResolution": {
+    "reference": {
+      "source": "preferences",
+      "utf16Offset": 271702,
+      "byteOffset": 272190,
+      "byteLength": 29
+    },
+    "summary": "优先本地 state，再 props；props 来自宿主 _options。字段缺失时的 !!/|| 只控制显示回退，不直接代表原生出厂默认。",
+    "rendererOverrideReference": {
+      "source": "renderer",
+      "utf16Offset": 620656,
+      "byteOffset": 620953,
+      "byteLength": 38
+    }
+  },
+  "panels": [
+    {
+      "id": "image",
+      "label": {
+        "english": "Image",
+        "dictionaryKey": "Image",
+        "chinese": "图像",
+        "translated": true,
+        "localeGroup": "Menu",
+        "reference": {
+          "source": "menuLocale",
+          "utf16Offset": 2880,
+          "byteOffset": 3896,
+          "byteLength": 7
+        }
+      },
+      "fields": [
+        {
+          "key": "image_save_location",
+          "label": {
+            "english": "When Insert…",
+            "dictionaryKey": "When Insert",
+            "chinese": "插入图片时…",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 13619,
+              "byteOffset": 17957,
+              "byteLength": 13
+            }
+          },
+          "section": null,
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 192567,
+            "byteOffset": 192638,
+            "byteLength": 217
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "": "No special action",
+            "folder": "Copy image to current folder (./)",
+            "assert": "Copy image to ./assets",
+            "per-file-assert": "Copy image to ./${filename}.assets",
+            "ipic": "Upload image",
+            "custom": "Copy image to custom folder"
+          },
+          "rendererBaseline": {
+            "value": null,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619568,
+              "byteOffset": 619865,
+              "byteLength": 24
+            },
+            "rendererKey": "defaultImageStorage",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "optionsChinese": {
+            "": "无特殊操作",
+            "folder": "复制图片到当前文件夹（./）",
+            "assert": "复制图片到 ./assets 文件夹",
+            "per-file-assert": "复制图片到 ./${filename}.assets 文件夹",
+            "ipic": "上传图片",
+            "custom": "复制到指定路径"
+          },
+          "behavior": "插入图片时选择无动作、复制到当前目录/assets/每文件目录、自定义目录或上传。稳定版删除 TextBundle 选项。"
+        },
+        {
+          "key": "no_image_move_for_local",
+          "label": {
+            "english": "Apply above rules to local images",
+            "dictionaryKey": "Apply above rules to local images",
+            "chinese": "对本地位置的图片应用上述规则",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 8461,
+              "byteOffset": 11085,
+              "byteLength": 35
+            }
+          },
+          "section": {
+            "english": "When Insert…",
+            "dictionaryKey": "When Insert",
+            "chinese": "插入图片时…",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 13619,
+              "byteOffset": 17957,
+              "byteLength": 13
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 194659,
+            "byteOffset": 194732,
+            "byteLength": 179
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "reverseStorage": true,
+          "rendererBaseline": {
+            "value": false,
+            "rendererKey": "applyImageMoveForLocal",
+            "transform": "persisted flag is inverse of renderer flag",
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619617,
+              "byteOffset": 619914,
+              "byteLength": 25
+            },
+            "scope": "renderer baseline only; native factory value unproven"
+          },
+          "behavior": "反向开关：将上述插图规则应用到本地图片。"
+        },
+        {
+          "key": "apply_image_move_for_web",
+          "label": {
+            "english": "Apply above rules to online images",
+            "dictionaryKey": "Apply above rules to online images",
+            "chinese": "对网络位置的图片应用上述规则",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 8514,
+              "byteOffset": 11166,
+              "byteLength": 36
+            }
+          },
+          "section": {
+            "english": "When Insert…",
+            "dictionaryKey": "When Insert",
+            "chinese": "插入图片时…",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 13619,
+              "byteOffset": 17957,
+              "byteLength": 13
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 194862,
+            "byteOffset": 194935,
+            "byteLength": 148
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619593,
+              "byteOffset": 619890,
+              "byteLength": 23
+            },
+            "rendererKey": "applyImageMoveForWeb",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "将上述插图规则应用到网络图片。"
+        },
+        {
+          "key": "allow_image_upload",
+          "label": {
+            "english": "Allow upload images automatically based on YAML settings",
+            "dictionaryKey": "Allow upload images automatically based on YAML settings",
+            "chinese": "允许根据 YAML 设置自动上传图片",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 8568,
+              "byteOffset": 11248,
+              "byteLength": 58
+            }
+          },
+          "section": {
+            "english": "When Insert…",
+            "dictionaryKey": "When Insert",
+            "chinese": "插入图片时…",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 13619,
+              "byteOffset": 17957,
+              "byteLength": 13
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 195034,
+            "byteOffset": 195107,
+            "byteLength": 158
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": true,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619406,
+              "byteOffset": 619703,
+              "byteLength": 19
+            },
+            "rendererKey": "allowImageUpload",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "允许 YAML 配置自动上传图片；选定上传服务本身不代表已经上传。"
+        },
+        {
+          "key": "use_relative_path_for_img",
+          "label": {
+            "english": "Use relative path if possible",
+            "dictionaryKey": "Use relative path if possible",
+            "chinese": "优先使用相对路径",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 1430,
+              "byteOffset": 1942,
+              "byteLength": 31
+            }
+          },
+          "section": {
+            "english": "Preferred Image Syntax",
+            "dictionaryKey": "Preferred Image Syntax",
+            "chinese": "图片语法偏好",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 20212,
+              "byteOffset": 26796,
+              "byteLength": 24
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 195404,
+            "byteOffset": 195477,
+            "byteLength": 145
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619214,
+              "byteOffset": 619511,
+              "byteLength": 24
+            },
+            "rendererKey": "useRelativePathForImg",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "保存到宿主配置；具体消费点见同分类接入缺口与源位置。"
+        },
+        {
+          "key": "relativePathWithDot",
+          "label": {
+            "english": "Add ./ for relative path",
+            "dictionaryKey": "Add ./ for relative path",
+            "chinese": "为相对路径添加 ./",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 20246,
+              "byteOffset": 26842,
+              "byteLength": 26
+            }
+          },
+          "section": {
+            "english": "Preferred Image Syntax",
+            "dictionaryKey": "Preferred Image Syntax",
+            "chinese": "图片语法偏好",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 20212,
+              "byteOffset": 26796,
+              "byteLength": 24
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 195573,
+            "byteOffset": 195646,
+            "byteLength": 326
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "hint": {
+            "english": "When enabled, Typora will use pattern like ./assets/image.png instead of assets/image.png when generating relative path for inserted images.",
+            "dictionaryKey": "When enabled, Typora will use pattern like ./assets/image.png instead of assets/image.png when generating relative path for inserted images.",
+            "chinese": "当开启时，Typora 会使用类似 ./assets/image.png 而非 assets/image.png 的方式表示插入的图片的相对路径",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 20286,
+              "byteOffset": 26896,
+              "byteLength": 142
+            }
+          },
+          "hasConditionalEnabledState": true,
+          "behavior": "依赖 use_relative_path_for_img；生成相对路径时增加 ./。"
+        },
+        {
+          "key": "autoEscapeImageURL",
+          "label": {
+            "english": "Auto escape image URL when insert",
+            "dictionaryKey": "Auto escape image URL when insert",
+            "chinese": "插入时自动转义图片 URL",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 11952,
+              "byteOffset": 15804,
+              "byteLength": 35
+            }
+          },
+          "section": {
+            "english": "Preferred Image Syntax",
+            "dictionaryKey": "Preferred Image Syntax",
+            "chinese": "图片语法偏好",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 20212,
+              "byteOffset": 26796,
+              "byteLength": 24
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 195923,
+            "byteOffset": 195996,
+            "byteLength": 350
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "hint": {
+            "english": "For example, if you insert a file at 'img/example file.png', it will become 'img/example%20file.png'. Enable this for better compatibility with other Markdown engines, or disable this for better readability.",
+            "dictionaryKey": "For example, if you insert a file at 'img/example file.png', it will become 'img/example%20file.png'. Enable this for better compatibility with other Markdown engines, or disable this for better readability.",
+            "chinese": " 例如，当插入位于 'img/示例图片.png'时，图片路径会自动变为 'img/%E7%A4%BA%E4%BE%8B%E5%9B%BE%E7%89%87.png'。开启该选项可以获得与其他 Markdown引擎更好的兼容性，关闭该选项可以获得更高的可读性。",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 12004,
+              "byteOffset": 15874,
+              "byteLength": 209
+            }
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620117,
+              "byteOffset": 620414,
+              "byteLength": 21
+            },
+            "rendererKey": "autoEscapeImageURL",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "生成图片 URL 时转义空格等字符。"
+        },
+        {
+          "key": "image_uploader",
+          "label": {
+            "english": "Image Uploader",
+            "dictionaryKey": "Image Uploader",
+            "chinese": "上传服务",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 14086,
+              "byteOffset": 18612,
+              "byteLength": 16
+            }
+          },
+          "section": null,
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 197180,
+            "byteOffset": 197253,
+            "byteLength": 91
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "": "None",
+            "ipic": "iPic",
+            "upic": "uPic",
+            "picsee": "Picsee",
+            "picgo-intro": "PicGo-Core (command line)",
+            "picgo-app": "PicGo.app",
+            "piclist-app": "PicList",
+            "custom": "Custom Command"
+          },
+          "conditions": "原生 macOS 不提供 picgo-cli 实现；PicGo.app 仅简体中文 / debug / 当前已选条件保留。picgo-intro 打开说明而非持久化选项。",
+          "optionsChinese": {
+            "": "无",
+            "ipic": "iPic",
+            "upic": "uPic",
+            "picsee": "Picsee",
+            "picgo-intro": "PicGo-Core (command line)",
+            "picgo-app": "PicGo.app",
+            "piclist-app": "PicList",
+            "custom": "自定义命令"
+          },
+          "behavior": "调用系统应用或自定义上传命令；测试上传器使用应用图标，要求返回两张图片地址，并展示输出/错误。"
+        },
+        {
+          "key": "custom_image_save_location",
+          "label": {
+            "english": "Copy image to custom folder",
+            "dictionaryKey": "Copy image to custom folder",
+            "chinese": "复制到指定路径",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 10184,
+              "byteOffset": 13426,
+              "byteLength": 29
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 192702,
+            "byteOffset": 192773,
+            "byteLength": 50
+          },
+          "type": "text",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主值不由当前资源唯一确定。"
+          },
+          "explicitReset": {
+            "value": "./${filename}",
+            "reference": {
+              "source": "preferences",
+              "utf16Offset": 193672,
+              "byteOffset": 193743,
+              "byteLength": 47
+            }
+          },
+          "shownWhen": {
+            "key": "image_save_location",
+            "equals": "custom"
+          },
+          "behavior": "接受 ./ 或 ../ 开头相对路径或绝对目录；${filename} 表示当前文件名；拒绝根目录/缺失路径；重置值 ./${filename}。"
+        },
+        {
+          "key": "custom_image_uploader",
+          "label": {
+            "english": "Command",
+            "dictionaryKey": "Command",
+            "chinese": "命令",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 14347,
+              "byteOffset": 18963,
+              "byteLength": 9
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 199604,
+            "byteOffset": 199679,
+            "byteLength": 50
+          },
+          "type": "text",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主值不由当前资源唯一确定。"
+          },
+          "shownWhen": {
+            "key": "image_uploader",
+            "equals": "custom"
+          },
+          "behavior": "自定义可执行命令，实际插入/测试时附加图片路径。"
+        }
+      ],
+      "actions": [
+        {
+          "label": {
+            "english": "Test Uploader",
+            "dictionaryKey": "Test Uploader",
+            "chinese": "验证图片上传选项",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 13682,
+              "byteOffset": 18044,
+              "byteLength": 15
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 199092,
+            "byteOffset": 199165,
+            "byteLength": 34
+          },
+          "behavior": "实际调用选定上传器并展示命令输出及图片预览；取消停止界面结果处理。"
+        }
+      ]
+    },
+    {
+      "id": "appearance",
+      "label": {
+        "english": "Appearance",
+        "dictionaryKey": "Appearance",
+        "chinese": "外观",
+        "translated": true,
+        "localeGroup": "Panel",
+        "reference": {
+          "source": "panelLocale",
+          "utf16Offset": 4899,
+          "byteOffset": 6441,
+          "byteLength": 12
+        }
+      },
+      "fields": [
+        {
+          "key": "use_seamless_window",
+          "label": {
+            "english": "Window Style",
+            "dictionaryKey": "Window Style",
+            "chinese": "窗口样式",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 37,
+              "byteOffset": 49,
+              "byteLength": 14
+            }
+          },
+          "section": {
+            "english": "Window Style",
+            "dictionaryKey": "Window Style",
+            "chinese": "窗口样式",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 37,
+              "byteOffset": 49,
+              "byteLength": 14
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 204970,
+            "byteOffset": 205049,
+            "byteLength": 172
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "false": "Classic",
+            "true": "Seamless"
+          },
+          "optionsChinese": {
+            "false": "经典",
+            "true": "Seamless"
+          },
+          "behavior": "macOS<26 显示经典/无缝切换，立即改变窗口样式。"
+        },
+        {
+          "key": "zoomFactor",
+          "label": {
+            "english": "Zoom",
+            "dictionaryKey": "Zoom",
+            "chinese": "缩放",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 3499,
+              "byteOffset": 4747,
+              "byteLength": 6
+            }
+          },
+          "section": {
+            "english": "Zoom",
+            "dictionaryKey": "Zoom",
+            "chinese": "缩放",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 3499,
+              "byteOffset": 4747,
+              "byteLength": 6
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 205838,
+            "byteOffset": 205917,
+            "byteLength": 247
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": [
+            [
+              0.5,
+              "50%"
+            ],
+            [
+              0.67,
+              "67%"
+            ],
+            [
+              0.8,
+              "80%"
+            ],
+            [
+              0.9,
+              "90%"
+            ],
+            [
+              "_seperator"
+            ],
+            [
+              1,
+              "100%"
+            ],
+            [
+              "_seperator"
+            ],
+            [
+              1.1,
+              "110%"
+            ],
+            [
+              1.25,
+              "125%"
+            ],
+            [
+              1.5,
+              "150%"
+            ],
+            [
+              1.75,
+              "175%"
+            ],
+            [
+              2,
+              "200%"
+            ]
+          ],
+          "optionsChinese": [
+            [
+              0.5,
+              "50%"
+            ],
+            [
+              0.67,
+              "67%"
+            ],
+            [
+              0.8,
+              "80%"
+            ],
+            [
+              0.9,
+              "90%"
+            ],
+            [
+              "_seperator"
+            ],
+            [
+              1,
+              "100%"
+            ],
+            [
+              "_seperator"
+            ],
+            [
+              1.1,
+              "110%"
+            ],
+            [
+              1.25,
+              "125%"
+            ],
+            [
+              1.5,
+              "150%"
+            ],
+            [
+              1.75,
+              "175%"
+            ],
+            [
+              2,
+              "200%"
+            ]
+          ],
+          "behavior": "原生 Mac 设置50/67/80/90/100/110/125/150/175/200%，由宿主 setZoom 应用，重置1。"
+        },
+        {
+          "key": "zoomByMouse",
+          "label": {
+            "english": "Zoom when using mouse wheel and holding %@ key",
+            "dictionaryKey": "Zoom when using mouse wheel and holding %@ key",
+            "chinese": "按住 %@ 时使用鼠标滑轮缩放",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 22571,
+              "byteOffset": 29981,
+              "byteLength": 48
+            }
+          },
+          "section": {
+            "english": "Zoom",
+            "dictionaryKey": "Zoom",
+            "chinese": "缩放",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 3499,
+              "byteOffset": 4747,
+              "byteLength": 6
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 206646,
+            "byteOffset": 206725,
+            "byteLength": 197
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620486,
+              "byteOffset": 620783,
+              "byteLength": 14
+            },
+            "rendererKey": "zoomByMouse",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "按住 Command 滚轮缩放。"
+        },
+        {
+          "key": "always_show_wordcount",
+          "label": {
+            "english": "Always Show Word Count",
+            "dictionaryKey": "Always Show Word Count",
+            "chinese": "总是显示字数统计",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 441,
+              "byteOffset": 553,
+              "byteLength": 24
+            }
+          },
+          "section": {
+            "english": "Word Count",
+            "dictionaryKey": "Word Count",
+            "chinese": "字数统计",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 421,
+              "byteOffset": 525,
+              "byteLength": 12
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 206945,
+            "byteOffset": 207024,
+            "byteLength": 136
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "behavior": "macOS 字数常驻可见，通过宿主 API 即时更新。"
+        },
+        {
+          "key": "wordsPerMinute",
+          "label": {
+            "english": "Reading Speed",
+            "dictionaryKey": "Reading Speed",
+            "chinese": "阅读速度",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 11296,
+              "byteOffset": 14916,
+              "byteLength": 15
+            }
+          },
+          "section": {
+            "english": "Word Count",
+            "dictionaryKey": "Word Count",
+            "chinese": "字数统计",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 421,
+              "byteOffset": 525,
+              "byteLength": 12
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 207232,
+            "byteOffset": 207311,
+            "byteLength": 167
+          },
+          "type": "text",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": 382,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620098,
+              "byteOffset": 620395,
+              "byteLength": 18
+            },
+            "rendererKey": "wordsPerMinute",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "1–999；重置382，可选120/240/382；用于阅读时长估算，修改后记 customWordsPerMinute。"
+        },
+        {
+          "key": "showToolbar",
+          "label": {
+            "english": "Show editor toolbar",
+            "dictionaryKey": "Show editor toolbar",
+            "chinese": "显示编辑器工具栏",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 24444,
+              "byteOffset": 32590,
+              "byteLength": 21
+            }
+          },
+          "section": {
+            "english": "Toolbar",
+            "dictionaryKey": "Toolbar",
+            "chinese": "工具栏",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 24428,
+              "byteOffset": 32568,
+              "byteLength": 9
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 208700,
+            "byteOffset": 208781,
+            "byteLength": 113
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620501,
+              "byteOffset": 620798,
+              "byteLength": 14
+            },
+            "rendererKey": "showToolbar",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "显示编辑器工具栏。"
+        },
+        {
+          "key": "theme",
+          "label": {
+            "english": "Theme",
+            "dictionaryKey": "Theme",
+            "chinese": "主题",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 15128,
+              "byteOffset": 19994,
+              "byteLength": 7
+            }
+          },
+          "section": {
+            "english": "Themes",
+            "dictionaryKey": "Themes",
+            "chinese": "主题",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 187,
+              "byteOffset": 235,
+              "byteLength": 8
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 209346,
+            "byteOffset": 209427,
+            "byteLength": 73
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "behavior": "从当前 allThemes 目录选主题；宿主 applyTheme 即时应用。"
+        },
+        {
+          "key": "darkTheme",
+          "label": {
+            "english": "Dark Theme",
+            "dictionaryKey": "Dark Theme",
+            "chinese": "深色主题",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 15162,
+              "byteOffset": 20040,
+              "byteLength": 12
+            }
+          },
+          "section": {
+            "english": "Themes",
+            "dictionaryKey": "Themes",
+            "chinese": "主题",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 187,
+              "byteOffset": 235,
+              "byteLength": 8
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 209507,
+            "byteOffset": 209588,
+            "byteLength": 102
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "behavior": "单独深色主题，仅 useSeparateDarkTheme 开启显示；未指定回退普通主题。"
+        },
+        {
+          "key": "useSeparateDarkTheme",
+          "label": {
+            "english": "Use separate theme in dark mode",
+            "dictionaryKey": "Use separate theme in dark mode",
+            "chinese": "在深色模式下使用独立的主题",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 15182,
+              "byteOffset": 20068,
+              "byteLength": 33
+            }
+          },
+          "section": {
+            "english": "Themes",
+            "dictionaryKey": "Themes",
+            "chinese": "主题",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 187,
+              "byteOffset": 235,
+              "byteLength": 8
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 209705,
+            "byteOffset": 209786,
+            "byteLength": 161
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "hint": {
+            "english": "Supported on macOS ≥ 10.15 or Windows 10 ≥ 1903",
+            "dictionaryKey": "Supported on macOS ≥ 10.15 or Windows 10 ≥ 1903",
+            "chinese": "支持 macOS ≥ 10.15 或者 Windows 10 ≥ 1903",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 15232,
+              "byteOffset": 20144,
+              "byteLength": 53
+            }
+          },
+          "behavior": "支持暗色外观系统时显示；随系统主题切换浅色/深色主题。"
+        },
+        {
+          "key": "useCustomFontSize",
+          "label": {
+            "english": "Font Size",
+            "dictionaryKey": "Font Size",
+            "chinese": "字体大小",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 477,
+              "byteOffset": 605,
+              "byteLength": 11
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 12980,
+            "byteOffset": 13031,
+            "byteLength": 36
+          },
+          "type": "radio",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主值不由当前资源唯一确定。"
+          },
+          "options": {
+            "false": "Auto ( Recommended )",
+            "true": "Customized"
+          },
+          "optionsChinese": {
+            "false": "自动（推荐）",
+            "true": "自定义"
+          },
+          "behavior": "自动使用主题字体；自定义时应用 customFontSize 或14px回退。"
+        },
+        {
+          "key": "customFontSize",
+          "label": {
+            "english": "Customized",
+            "dictionaryKey": "Customized",
+            "chinese": "自定义",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 528,
+              "byteOffset": 676,
+              "byteLength": 12
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 13981,
+            "byteOffset": 14032,
+            "byteLength": 21
+          },
+          "type": "number",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主值不由当前资源唯一确定。"
+          },
+          "range": {
+            "min": 9,
+            "max": 24,
+            "step": 1
+          },
+          "explicitUIFallback": {
+            "value": 14,
+            "reference": {
+              "source": "preferences",
+              "utf16Offset": 12886,
+              "byteOffset": 12937,
+              "byteLength": 15
+            }
+          },
+          "behavior": "9–24整数，blur钳制；根 html 字体大小设为 px，主题使用 rem 自动缩放。"
+        }
+      ],
+      "actions": [
+        {
+          "label": {
+            "english": "Reset to Default",
+            "dictionaryKey": "Reset to Default",
+            "chinese": "重置",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 11352,
+              "byteOffset": 14992,
+              "byteLength": 18
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 206154,
+            "byteOffset": 206233,
+            "byteLength": 26
+          },
+          "behavior": "缩放重置100%。"
+        },
+        {
+          "label": {
+            "english": "Open Theme Folder",
+            "dictionaryKey": "Open Theme Folder",
+            "chinese": "打开主题文件夹",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 201,
+              "byteOffset": 253,
+              "byteLength": 19
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 210079,
+            "byteOffset": 210164,
+            "byteLength": 25
+          },
+          "behavior": "打开当前主题目录。"
+        },
+        {
+          "label": {
+            "english": "Get Themes",
+            "dictionaryKey": "Get Themes",
+            "chinese": "获取主题",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 10637,
+              "byteOffset": 14023,
+              "byteLength": 12
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 210211,
+            "byteOffset": 210296,
+            "byteLength": 18
+          },
+          "behavior": "打开主题站点。"
+        }
+      ]
+    },
+    {
+      "id": "general",
+      "label": {
+        "english": "General",
+        "dictionaryKey": "General",
+        "chinese": "通用",
+        "translated": true,
+        "localeGroup": "Panel",
+        "reference": {
+          "source": "panelLocale",
+          "utf16Offset": 22,
+          "byteOffset": 30,
+          "byteLength": 9
+        }
+      },
+      "fields": [
+        {
+          "key": "quitAfterWindowClose",
+          "label": {
+            "english": "Quit Typora when last window is closed",
+            "dictionaryKey": "Quit Typora when last window is closed",
+            "chinese": "所有窗口被关闭后自动退出 Typora",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 8898,
+              "byteOffset": 11688,
+              "byteLength": 40
+            }
+          },
+          "section": {
+            "english": "Quit",
+            "dictionaryKey": "Quit",
+            "chinese": "退出",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 8886,
+              "byteOffset": 11672,
+              "byteLength": 6
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 239757,
+            "byteOffset": 239846,
+            "byteLength": 150
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "behavior": "最后一个窗口关闭后退出 App。"
+        },
+        {
+          "key": "userLanguage",
+          "label": {
+            "english": "Language",
+            "dictionaryKey": "Language",
+            "chinese": "语言",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 1131,
+              "byteOffset": 1543,
+              "byteLength": 10
+            }
+          },
+          "section": {
+            "english": "Language",
+            "dictionaryKey": "Language",
+            "chinese": "语言",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 1131,
+              "byteOffset": 1543,
+              "byteLength": 10
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 240009,
+            "byteOffset": 240098,
+            "byteLength": 1009
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "": "System Language",
+            "id-ID": "Bahasa Indonesia",
+            "nb-NO": "Bokmål",
+            "cs-CZ": "Čeština",
+            "ca-ES": "Català",
+            "da-DK": "Dansk",
+            "de-DE": "Deutsch",
+            "Base": "English",
+            "es-ES": "Español",
+            "el-GR": "Ελληνικά",
+            "fr-FR": "Français",
+            "ga-IE": "Gaeilge",
+            "gl-ES": "Galego",
+            "hr-HR": "Hrvatski",
+            "it-IT": "Italiano",
+            "ro-RO": "Limba Română",
+            "nl-NL": "Nederlands",
+            "nn-NO": "Nynorsk",
+            "hu-HU": "Magyar",
+            "ms-MY": "Orang Melayu",
+            "pl-PL": "Polski",
+            "pt-BR": "Português (Brasil)",
+            "pt-PT": "Português (Portugal)",
+            "ru-RU": "Ру́сский Язы́к",
+            "de-CH": "Schweizerdeutsch",
+            "sk-SK": "Slovenčina",
+            "sl-SI": "Slovenščina",
+            "sv-SE": "Svenska",
+            "vi-VN": "Tiếng Việt",
+            "tr-TR": "Türkçe",
+            "uk-UA": "Українська мова",
+            "hi-IN": "हिन्दी",
+            "fa-IR": "فارسی",
+            "ar-SA": "العربية",
+            "zh-Hans": "简体中文",
+            "zh-Hant": "繁體中文",
+            "ja-JP": "日本語",
+            "ko-KR": "한국어",
+            "he-IL": "עִבְרִית",
+            "th-TH": "ภาษาไทย"
+          },
+          "optionsChinese": {
+            "": "系统语言",
+            "id-ID": "Bahasa Indonesia",
+            "nb-NO": "Bokmål",
+            "cs-CZ": "Čeština",
+            "ca-ES": "Català",
+            "da-DK": "Dansk",
+            "de-DE": "Deutsch",
+            "Base": "English",
+            "es-ES": "Español",
+            "el-GR": "Ελληνικά",
+            "fr-FR": "Français",
+            "ga-IE": "Gaeilge",
+            "gl-ES": "Galego",
+            "hr-HR": "Hrvatski",
+            "it-IT": "Italiano",
+            "ro-RO": "Limba Română",
+            "nl-NL": "Nederlands",
+            "nn-NO": "Nynorsk",
+            "hu-HU": "Magyar",
+            "ms-MY": "Orang Melayu",
+            "pl-PL": "Polski",
+            "pt-BR": "Português (Brasil)",
+            "pt-PT": "Português (Portugal)",
+            "ru-RU": "Ру́сский Язы́к",
+            "de-CH": "Schweizerdeutsch",
+            "sk-SK": "Slovenčina",
+            "sl-SI": "Slovenščina",
+            "sv-SE": "Svenska",
+            "vi-VN": "Tiếng Việt",
+            "tr-TR": "Türkçe",
+            "uk-UA": "Українська мова",
+            "hi-IN": "हिन्दी",
+            "fa-IR": "فارسی",
+            "ar-SA": "العربية",
+            "zh-Hans": "简体中文",
+            "zh-Hant": "繁體中文",
+            "ja-JP": "日本語",
+            "ko-KR": "한국어",
+            "he-IL": "עִבְרִית",
+            "th-TH": "ภาษาไทย"
+          },
+          "behavior": "空值跟随系统；语言变更重启后应用。"
+        },
+        {
+          "key": "enableAutoUpdate",
+          "label": {
+            "english": "Check updates automatically",
+            "dictionaryKey": "Check updates automatically",
+            "chinese": "自动检查更新",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 5436,
+              "byteOffset": 7164,
+              "byteLength": 29
+            }
+          },
+          "section": {
+            "english": "Update",
+            "dictionaryKey": "Update",
+            "chinese": "更新",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 5399,
+              "byteOffset": 7115,
+              "byteLength": 8
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 241133,
+            "byteOffset": 241350,
+            "byteLength": 206
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "hint": {
+            "english": "Typora activation is required to change this.",
+            "dictionaryKey": "Typora activation is required to change this.",
+            "chinese": "需要激活 Typora 后才能更改该选项",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 18994,
+              "byteOffset": 25104,
+              "byteLength": 47
+            }
+          },
+          "hasConditionalEnabledState": true,
+          "behavior": "缺省非false时显示开启；未激活时强制开启且不能修改。此为UI回退和许可依赖，不是原生默认证明。"
+        },
+        {
+          "key": "autoUpdateToDev",
+          "label": {
+            "english": "Update to dev version",
+            "dictionaryKey": "Update to dev version",
+            "chinese": "更新至开发版",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 19155,
+              "byteOffset": 25327,
+              "byteLength": 23
+            }
+          },
+          "section": {
+            "english": "Update",
+            "dictionaryKey": "Update",
+            "chinese": "更新",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 5399,
+              "byteOffset": 7115,
+              "byteLength": 8
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 241363,
+            "byteOffset": 241580,
+            "byteLength": 254
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "hint": {
+            "english": "You can reinstall the stable version and then disable this.",
+            "dictionaryKey": "You can reinstall the stable version and then disable this.",
+            "chinese": "您可以重新安装稳定版本（stable）以取消该选项",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 19065,
+              "byteOffset": 25199,
+              "byteLength": 61
+            }
+          },
+          "hasConditionalEnabledState": true,
+          "behavior": "开发版构建强制勾选禁用。"
+        },
+        {
+          "key": "WebKitDeveloperExtras",
+          "label": {
+            "english": "Enable Debug",
+            "dictionaryKey": "Enable Debug",
+            "chinese": "开启调试模式",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2787,
+              "byteOffset": 3725,
+              "byteLength": 14
+            }
+          },
+          "section": {
+            "english": "Advanced Settings",
+            "dictionaryKey": "Advanced Settings",
+            "chinese": "高级设置",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 5475,
+              "byteOffset": 7215,
+              "byteLength": 19
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 243012,
+            "byteOffset": 243229,
+            "byteLength": 168
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "behavior": "启用 WKWebView 调试，原生 updateDebugMode 即时更新。"
+        },
+        {
+          "key": "send_usage_info",
+          "label": {
+            "english": "Send Anonymous Usage Info",
+            "dictionaryKey": "Send Anonymous Usage Info",
+            "chinese": "发送匿名使用数据",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2811,
+              "byteOffset": 3761,
+              "byteLength": 27
+            }
+          },
+          "section": {
+            "english": "Advanced Settings",
+            "dictionaryKey": "Advanced Settings",
+            "chinese": "高级设置",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 5475,
+              "byteOffset": 7215,
+              "byteLength": 19
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 243204,
+            "byteOffset": 243421,
+            "byteLength": 127
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619903,
+              "byteOffset": 620200,
+              "byteLength": 21
+            },
+            "rendererKey": "sendAnonymousUsage",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "关闭后即时停止编辑器匿名统计开关。"
+        },
+        {
+          "key": "useMirrorInCN",
+          "label": {
+            "english": "Use Typora Server in China",
+            "dictionaryKey": "Use Typora Server in China",
+            "chinese": "Typora 服务使用国内服务器",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 19217,
+              "byteOffset": 25407,
+              "byteLength": 28
+            }
+          },
+          "section": {
+            "english": "Typora Server",
+            "dictionaryKey": "Typora Server",
+            "chinese": "Typora 服务器",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 19188,
+              "byteOffset": 25372,
+              "byteLength": 15
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 243837,
+            "byteOffset": 244054,
+            "byteLength": 124
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "behavior": "切换 support.typora.io 到 support.typoraio.cn；base/中英文或已有值时显示。"
+        }
+      ],
+      "actions": [
+        {
+          "label": {
+            "english": "Check Updates",
+            "dictionaryKey": "Check Updates",
+            "chinese": "检查更新",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 5413,
+              "byteOffset": 7133,
+              "byteLength": 15
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 241050,
+            "byteOffset": 241267,
+            "byteLength": 21
+          },
+          "behavior": "调用宿主更新检查。"
+        },
+        {
+          "label": {
+            "english": "Custom Shortcut Keys",
+            "dictionaryKey": "Custom Shortcut Keys",
+            "chinese": "自定义快捷键",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 15096,
+              "byteOffset": 19950,
+              "byteLength": 22
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 241769,
+            "byteOffset": 241986,
+            "byteLength": 28
+          },
+          "behavior": "打开修改快捷键的官方说明。"
+        },
+        {
+          "label": {
+            "english": "Reset All Dialog Warnings",
+            "dictionaryKey": "Reset All Dialog Warnings",
+            "chinese": "重置全部警告提示对话框",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 10886,
+              "byteOffset": 14356,
+              "byteLength": 27
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 284969,
+            "byteOffset": 285457,
+            "byteLength": 32
+          },
+          "behavior": "清除13个不再提示标志，包括导出覆盖、移动/删除文件/图片、上传、打开链接和模式提示。"
+        },
+        {
+          "label": {
+            "english": "Registration / Activation",
+            "dictionaryKey": "Registration / Activation",
+            "chinese": "许可证信息",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 6499,
+              "byteOffset": 8837,
+              "byteLength": 27
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 239357,
+            "byteOffset": 239446,
+            "byteLength": 53
+          },
+          "behavior": "显示真实产品许可状态/激活入口；独立副本不应伪造原版许可或连接其激活服务。"
+        }
+      ]
+    },
+    {
+      "id": "editor",
+      "label": {
+        "english": "Editor",
+        "dictionaryKey": "Editor",
+        "chinese": "编辑器",
+        "translated": true,
+        "localeGroup": "Panel",
+        "reference": {
+          "source": "panelLocale",
+          "utf16Offset": 1172,
+          "byteOffset": 1596,
+          "byteLength": 8
+        }
+      },
+      "fields": [
+        {
+          "key": "no_pairing_match",
+          "label": {
+            "english": "Auto pair brackets and quotes",
+            "dictionaryKey": "Auto pair brackets and quotes",
+            "chinese": "匹配括号和引号",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 1495,
+              "byteOffset": 2037,
+              "byteLength": 31
+            }
+          },
+          "section": {
+            "english": "Auto Pair",
+            "dictionaryKey": "Auto Pair",
+            "chinese": "使用成对的符号",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 1473,
+              "byteOffset": 2001,
+              "byteLength": 11
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 244430,
+            "byteOffset": 244647,
+            "byteLength": 143
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "reverseStorage": true,
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619262,
+              "byteOffset": 619559,
+              "byteLength": 17
+            },
+            "rendererKey": "noPairingMatch",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "反向开关：启用括号/引号自动配对；禁用后 Markdown 自动配对被禁用。"
+        },
+        {
+          "key": "match_pari_markdown",
+          "label": {
+            "english": "Auto pair common Markdown syntax",
+            "dictionaryKey": "Auto pair common Markdown syntax",
+            "chinese": "匹配 Markdown 字符",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 1537,
+              "byteOffset": 2093,
+              "byteLength": 34
+            }
+          },
+          "section": {
+            "english": "Auto Pair",
+            "dictionaryKey": "Auto Pair",
+            "chinese": "使用成对的符号",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 1473,
+              "byteOffset": 2001,
+              "byteLength": 11
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 244597,
+            "byteOffset": 244814,
+            "byteLength": 221
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "hasConditionalEnabledState": true,
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619280,
+              "byteOffset": 619577,
+              "byteLength": 23
+            },
+            "rendererKey": "autoPairExtendSymbol",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "仅括号/引号配对开启时可用；即时更新 Markdown 扩展符号自动配对。"
+        },
+        {
+          "key": "noEmojiAutoComplete",
+          "label": {
+            "english": "Enable autocomplete for Emojis",
+            "dictionaryKey": "Enable autocomplete for Emojis",
+            "chinese": "开启 Emoji 自动补全",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 22978,
+              "byteOffset": 30522,
+              "byteLength": 32
+            }
+          },
+          "section": {
+            "english": "Auto Complete",
+            "dictionaryKey": "Auto Complete",
+            "chinese": "自动补全",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 22955,
+              "byteOffset": 30491,
+              "byteLength": 15
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 244889,
+            "byteOffset": 245106,
+            "byteLength": 150
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "reverseStorage": true,
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620463,
+              "byteOffset": 620760,
+              "byteLength": 22
+            },
+            "rendererKey": "noEmojiAutoComplete",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "反向开关：启用 emoji 自动补全。"
+        },
+        {
+          "key": "auto_expand_block",
+          "label": {
+            "english": "Display source for simple blocks\\n(including headings, etc.) on focus",
+            "dictionaryKey": "Display source for simple blocks\n(including headings, etc.) on focus",
+            "chinese": "显示当前块元素的 Markdown 源码 （支持标题等块元素）",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 1613,
+              "byteOffset": 2185,
+              "byteLength": 71
+            }
+          },
+          "section": {
+            "english": "Live Rendering",
+            "dictionaryKey": "Live Rendering",
+            "chinese": "即时渲染",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 1589,
+              "byteOffset": 2153,
+              "byteLength": 16
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 245111,
+            "byteOffset": 245328,
+            "byteLength": 176
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619367,
+              "byteOffset": 619664,
+              "byteLength": 20
+            },
+            "rendererKey": "expandSimpleBlock",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "焦点进入标题等简单块时显示源文本。"
+        },
+        {
+          "key": "copy_markdown_by_default",
+          "label": {
+            "english": "Copy Markdown source as plain text",
+            "dictionaryKey": "Copy Markdown source as plain text",
+            "chinese": "当复制纯文本时复制 Markdown 源码",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 1753,
+              "byteOffset": 2377,
+              "byteLength": 36
+            }
+          },
+          "section": {
+            "english": "Default Copy Behavior",
+            "dictionaryKey": "Default Copy Behavior",
+            "chinese": "默认复制行为",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 1720,
+              "byteOffset": 2332,
+              "byteLength": 23
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 245404,
+            "byteOffset": 245623,
+            "byteLength": 154
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619162,
+              "byteOffset": 619459,
+              "byteLength": 24
+            },
+            "rendererKey": "copyMarkdownByDefault",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "更改默认 Cmd+C 的纯文本内容为 Markdown 源文本。"
+        },
+        {
+          "key": "lineWiseCopyCut",
+          "label": {
+            "english": "Copy or cut the whole lines that have cursors on them, if there is no selection when doing copy / cut.",
+            "dictionaryKey": "Copy or cut the whole lines that have cursors on them, if there is no selection when doing copy / cut.",
+            "chinese": "复制或剪切时，若没有文字被选中，则复制或剪切光标所在的一整行",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 19412,
+              "byteOffset": 25674,
+              "byteLength": 104
+            }
+          },
+          "section": {
+            "english": "Default Copy Behavior",
+            "dictionaryKey": "Default Copy Behavior",
+            "chinese": "默认复制行为",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 1720,
+              "byteOffset": 2332,
+              "byteLength": 23
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 245582,
+            "byteOffset": 245801,
+            "byteLength": 204
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620268,
+              "byteOffset": 620565,
+              "byteLength": 18
+            },
+            "rendererKey": "lineWiseCopyCut",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "无选区时复制/剪切光标所在整行；同时刷新代码块编辑器。"
+        },
+        {
+          "key": "no_mid_caret",
+          "label": {
+            "english": "Always keep caret in middle of screen\\nwhen typewriter mode is enabled",
+            "dictionaryKey": "Always keep caret in middle of screen\nwhen typewriter mode is enabled",
+            "chinese": "在打字机模式下， 始终保证光标在屏幕中间",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 1840,
+              "byteOffset": 2496,
+              "byteLength": 72
+            }
+          },
+          "section": {
+            "english": "Typewriter Mode",
+            "dictionaryKey": "Typewriter Mode",
+            "chinese": "打字机模式",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 1814,
+              "byteOffset": 2460,
+              "byteLength": 17
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 247097,
+            "byteOffset": 247419,
+            "byteLength": 177
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "reverseStorage": true,
+          "rendererBaseline": {
+            "value": true,
+            "rendererKey": "scrollWithCursor",
+            "transform": "persisted flag is inverse of renderer flag",
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619347,
+              "byteOffset": 619644,
+              "byteLength": 19
+            },
+            "scope": "renderer baseline only; native factory value unproven"
+          },
+          "behavior": "反向开关；启用打字机模式时将光标保持屏幕中间。"
+        },
+        {
+          "key": "indentSize",
+          "label": {
+            "english": "Indent Size on Save",
+            "dictionaryKey": "Indent Size on Save",
+            "chinese": "默认缩进",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 1187,
+              "byteOffset": 1617,
+              "byteLength": 21
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 15104,
+            "byteOffset": 15155,
+            "byteLength": 20
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主值不由当前资源唯一确定。"
+          },
+          "options": {
+            "0": "Auto",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "-1": "Tab"
+          },
+          "rendererBaseline": {
+            "value": 2,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 618997,
+              "byteOffset": 619294,
+              "byteLength": 12
+            },
+            "rendererKey": "indentSize",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "optionsChinese": {
+            "0": "自动",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "-1": "Tab"
+          },
+          "behavior": "0自动、-1 Tab、2–5空格；用于菜单/实时编辑生成的列表和引用，独立于代码缩进。"
+        },
+        {
+          "key": "prettyIndent",
+          "label": {
+            "english": "Pretty indentation",
+            "dictionaryKey": "Pretty indentation",
+            "chinese": "对齐缩进",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 8170,
+              "byteOffset": 10700,
+              "byteLength": 20
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 15327,
+            "byteOffset": 15378,
+            "byteLength": 22
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主值不由当前资源唯一确定。"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619552,
+              "byteOffset": 619849,
+              "byteLength": 15
+            },
+            "rendererKey": "prettyIndent",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "改变列表/引用源文本缩进排版；选项旁有即时样例。"
+        }
+      ],
+      "actions": [
+        {
+          "label": {
+            "english": "Turn off Typewriter / Focus Mode",
+            "dictionaryKey": "Turn off Typewriter / Focus Mode",
+            "chinese": "关闭 打字机模式 / 专注模式",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 11174,
+              "byteOffset": 14744,
+              "byteLength": 34
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 247429,
+            "byteOffset": 247751,
+            "byteLength": 40
+          },
+          "behavior": "同时关闭两模式并显示已关闭提示。"
+        }
+      ]
+    },
+    {
+      "id": "markdown",
+      "label": {
+        "english": "Markdown",
+        "dictionaryKey": "Markdown",
+        "chinese": "Markdown",
+        "translated": true,
+        "localeGroup": "Panel",
+        "reference": {
+          "source": "panelLocale",
+          "utf16Offset": 1937,
+          "byteOffset": 2631,
+          "byteLength": 10
+        }
+      },
+      "fields": [
+        {
+          "key": "strict_mode",
+          "label": {
+            "english": "Strict Mode",
+            "dictionaryKey": "Strict Mode",
+            "chinese": "严格模式",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2507,
+              "byteOffset": 3355,
+              "byteLength": 13
+            }
+          },
+          "section": {
+            "english": "Syntax Preference",
+            "dictionaryKey": "Syntax Preference",
+            "chinese": "Markdown 语法偏好",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2386,
+              "byteOffset": 3188,
+              "byteLength": 19
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 248477,
+            "byteOffset": 248799,
+            "byteLength": 93
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619461,
+              "byteOffset": 619758,
+              "byteLength": 17
+            },
+            "rendererKey": "strictMarkdown",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "改变解析严格程度；更新后请求编辑器 reload。"
+        },
+        {
+          "key": "heading_style",
+          "label": {
+            "english": "Heading Style",
+            "dictionaryKey": "Heading Style",
+            "chinese": "标题样式",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2574,
+              "byteOffset": 3450,
+              "byteLength": 15
+            }
+          },
+          "section": {
+            "english": "Syntax Preference",
+            "dictionaryKey": "Syntax Preference",
+            "chinese": "Markdown 语法偏好",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2386,
+              "byteOffset": 3188,
+              "byteLength": 19
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 248715,
+            "byteOffset": 249037,
+            "byteLength": 193
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "0": "atx (#)",
+            "1": "setext (===)",
+            "2": "atx with suffix (# ⋯ #)",
+            "3": "variable-width setext (=====)"
+          },
+          "rendererBaseline": {
+            "value": 0,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619426,
+              "byteOffset": 619723,
+              "byteLength": 14
+            },
+            "rendererKey": "headingStyle",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "optionsChinese": {
+            "0": "atx (#)",
+            "1": "setext (===)",
+            "2": "atx with suffix (# ⋯ #)",
+            "3": "variable-width setext (=====)"
+          },
+          "behavior": "保存到宿主配置并刷新/重载编辑器对应解析或渲染行为。"
+        },
+        {
+          "key": "ul_style",
+          "label": {
+            "english": "Unordered List",
+            "dictionaryKey": "Unordered List",
+            "chinese": "无序列表",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2597,
+              "byteOffset": 3481,
+              "byteLength": 16
+            }
+          },
+          "section": {
+            "english": "Syntax Preference",
+            "dictionaryKey": "Syntax Preference",
+            "chinese": "Markdown 语法偏好",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2386,
+              "byteOffset": 3188,
+              "byteLength": 19
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 248949,
+            "byteOffset": 249273,
+            "byteLength": 108
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "0": "-",
+            "1": "+",
+            "2": "*"
+          },
+          "rendererBaseline": {
+            "value": 0,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619441,
+              "byteOffset": 619738,
+              "byteLength": 9
+            },
+            "rendererKey": "ulStyle",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "optionsChinese": {
+            "0": "-",
+            "1": "+",
+            "2": "*"
+          },
+          "behavior": "保存到宿主配置并刷新/重载编辑器对应解析或渲染行为。"
+        },
+        {
+          "key": "ol_style",
+          "label": {
+            "english": "Ordered List",
+            "dictionaryKey": "Ordered List",
+            "chinese": "有序列表",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2621,
+              "byteOffset": 3513,
+              "byteLength": 14
+            }
+          },
+          "section": {
+            "english": "Syntax Preference",
+            "dictionaryKey": "Syntax Preference",
+            "chinese": "Markdown 语法偏好",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2386,
+              "byteOffset": 3188,
+              "byteLength": 19
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 249098,
+            "byteOffset": 249422,
+            "byteLength": 140
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "0": "1. ⋯ 2. ⋯ 3. ⋯",
+            "1": "1. ⋯ 1. ⋯ 1. ⋯"
+          },
+          "rendererBaseline": {
+            "value": 0,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619451,
+              "byteOffset": 619748,
+              "byteLength": 9
+            },
+            "rendererKey": "olStyle",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "optionsChinese": {
+            "0": "1. ⋯ 2. ⋯ 3. ⋯",
+            "1": "1. ⋯ 1. ⋯ 1. ⋯"
+          },
+          "behavior": "保存到宿主配置并刷新/重载编辑器对应解析或渲染行为。"
+        },
+        {
+          "key": "noAutoLink",
+          "label": {
+            "english": "Auto Links (e.g: https://typora.io)",
+            "dictionaryKey": "Auto Links (e.g: https://typora.io)",
+            "chinese": "自动识别链接 （例: https://typora.io）",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 20873,
+              "byteOffset": 27663,
+              "byteLength": 37
+            }
+          },
+          "section": {
+            "english": "Syntax Support",
+            "dictionaryKey": "Syntax Support",
+            "chinese": "Markdown 扩展语法",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2040,
+              "byteOffset": 2760,
+              "byteLength": 16
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 249302,
+            "byteOffset": 249638,
+            "byteLength": 249
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "hint": {
+            "english": "When enabled, Typora will auto recognize and highlight URLs (e.g: https://typora.io or mailto:hi@typora.io) in text.",
+            "dictionaryKey": "When enabled, Typora will auto recognize and highlight URLs (e.g: https://typora.io or mailto:hi@typora.io) in text.",
+            "chinese": "启用时 Typora 会自动识别并高亮文本中的 URL 链接 (例如: https://typora.io 或者 mailto:hi@typora.io)。",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 20943,
+              "byteOffset": 27751,
+              "byteLength": 118
+            }
+          },
+          "reverseStorage": true,
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620287,
+              "byteOffset": 620584,
+              "byteLength": 13
+            },
+            "rendererKey": "noAutoLink",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "保存到宿主配置并刷新/重载编辑器对应解析或渲染行为。"
+        },
+        {
+          "key": "enable_inline_math",
+          "label": {
+            "english": "Inline Math  (e.g: $\\LaTeX$)",
+            "dictionaryKey": "Inline Math  (e.g: $\\LaTeX$)",
+            "chinese": "内联公式        （例： $\\LaTeX$）",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2073,
+              "byteOffset": 2801,
+              "byteLength": 31
+            }
+          },
+          "section": {
+            "english": "Syntax Support",
+            "dictionaryKey": "Syntax Support",
+            "chinese": "Markdown 扩展语法",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2040,
+              "byteOffset": 2760,
+              "byteLength": 16
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 249575,
+            "byteOffset": 249911,
+            "byteLength": 187
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": true,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619027,
+              "byteOffset": 619324,
+              "byteLength": 19
+            },
+            "rendererKey": "enableInlineMath",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "保存到宿主配置；具体消费点见同分类接入缺口与源位置。"
+        },
+        {
+          "key": "enable_subscript",
+          "label": {
+            "english": "Subscript    (e.g: H~2~O)",
+            "dictionaryKey": "Subscript    (e.g: H~2~O)",
+            "chinese": "下标               （例： H~2~O）",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2134,
+              "byteOffset": 2878,
+              "byteLength": 27
+            }
+          },
+          "section": {
+            "english": "Syntax Support",
+            "dictionaryKey": "Syntax Support",
+            "chinese": "Markdown 扩展语法",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2040,
+              "byteOffset": 2760,
+              "byteLength": 16
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 249786,
+            "byteOffset": 250122,
+            "byteLength": 117
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619090,
+              "byteOffset": 619387,
+              "byteLength": 18
+            },
+            "rendererKey": "enableSubscript",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "保存到宿主配置；具体消费点见同分类接入缺口与源位置。"
+        },
+        {
+          "key": "enable_superscript",
+          "label": {
+            "english": "Superscript (e.g: X^2^)",
+            "dictionaryKey": "Superscript (e.g: X^2^)",
+            "chinese": "上标               （例： X^2^）",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2192,
+              "byteOffset": 2948,
+              "byteLength": 25
+            }
+          },
+          "section": {
+            "english": "Syntax Support",
+            "dictionaryKey": "Syntax Support",
+            "chinese": "Markdown 扩展语法",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2040,
+              "byteOffset": 2760,
+              "byteLength": 16
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 249927,
+            "byteOffset": 250263,
+            "byteLength": 119
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619109,
+              "byteOffset": 619406,
+              "byteLength": 20
+            },
+            "rendererKey": "enableSuperscript",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "保存到宿主配置；具体消费点见同分类接入缺口与源位置。"
+        },
+        {
+          "key": "enable_highlight",
+          "label": {
+            "english": "Highlight     (e.g: ==key==)",
+            "dictionaryKey": "Highlight     (e.g: ==key==)",
+            "chinese": "高亮               （例： ==key==）",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2247,
+              "byteOffset": 3015,
+              "byteLength": 30
+            }
+          },
+          "section": {
+            "english": "Syntax Support",
+            "dictionaryKey": "Syntax Support",
+            "chinese": "Markdown 扩展语法",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2040,
+              "byteOffset": 2760,
+              "byteLength": 16
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 250070,
+            "byteOffset": 250406,
+            "byteLength": 120
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619071,
+              "byteOffset": 619368,
+              "byteLength": 18
+            },
+            "rendererKey": "enableHighlight",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "保存到宿主配置；具体消费点见同分类接入缺口与源位置。"
+        },
+        {
+          "key": "enableAlert",
+          "label": {
+            "english": "Github Style Alert",
+            "dictionaryKey": "Github Style Alert",
+            "chinese": "Github 风格警报框",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 22535,
+              "byteOffset": 29935,
+              "byteLength": 20
+            }
+          },
+          "section": {
+            "english": "Syntax Support",
+            "dictionaryKey": "Syntax Support",
+            "chinese": "Markdown 扩展语法",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2040,
+              "byteOffset": 2760,
+              "byteLength": 16
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 250214,
+            "byteOffset": 250550,
+            "byteLength": 100
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": true,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619147,
+              "byteOffset": 619444,
+              "byteLength": 14
+            },
+            "rendererKey": "enableAlert",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "保存到宿主配置并刷新/重载编辑器对应解析或渲染行为。"
+        },
+        {
+          "key": "enable_diagram",
+          "label": {
+            "english": "Diagrams",
+            "dictionaryKey": "Diagrams",
+            "chinese": "图表",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2310,
+              "byteOffset": 3090,
+              "byteLength": 10
+            }
+          },
+          "section": {
+            "english": "Syntax Support",
+            "dictionaryKey": "Syntax Support",
+            "chinese": "Markdown 扩展语法",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2040,
+              "byteOffset": 2760,
+              "byteLength": 16
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 250368,
+            "byteOffset": 250704,
+            "byteLength": 151
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "hint": {
+            "english": "(Sequence, Flowchart and Mermaid)",
+            "dictionaryKey": "(Sequence, Flowchart and Mermaid)",
+            "chinese": "(序列图、流程图 和 Mermaid 图)",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2326,
+              "byteOffset": 3110,
+              "byteLength": 35
+            }
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619130,
+              "byteOffset": 619427,
+              "byteLength": 16
+            },
+            "rendererKey": "enableDiagram",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "保存到宿主配置；具体消费点见同分类接入缺口与源位置。"
+        },
+        {
+          "key": "SmartyPantsOnRendering",
+          "label": {
+            "english": "Smart Punctuation",
+            "dictionaryKey": "Smart Punctuation",
+            "chinese": "智能标点",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 5099,
+              "byteOffset": 6933,
+              "byteLength": 19
+            }
+          },
+          "section": {
+            "english": "Smart Punctuation",
+            "dictionaryKey": "Smart Punctuation",
+            "chinese": "智能标点",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 5099,
+              "byteOffset": 6933,
+              "byteLength": 19
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 250898,
+            "byteOffset": 251234,
+            "byteLength": 456
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "false": "Convert on Input",
+            "true": "Convert on Rendering"
+          },
+          "hint": {
+            "english": "<div><strong>Convert on Input</strong>: Input ASCII dashes or quotes, converted and saved as curly quotes or unicode dashes.<br/><strong>Convert on Rendering</strong>: Input and saved as ASCII dashes or quotes, render as curly quotes or unicode dashes.</div>",
+            "dictionaryKey": "<div><strong>Convert on Input</strong>: Input ASCII dashes or quotes, converted and saved as curly quotes or unicode dashes.<br/><strong>Convert on Rendering</strong>: Input and saved as ASCII dashes or quotes, render as curly quotes or unicode dashes.</div>",
+            "chinese": "<div><strong>输入时转换</strong>: 输入 ASCII 的引号/破折号，转化并保存为英式或 Unicode 的引号/破折号。<br/><strong>渲染时转化</strong>: 输入并保存 ASCII 的引号/破折号，但渲染为英式或 Unicode 的引号/破折号</div>",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 9355,
+              "byteOffset": 12323,
+              "byteLength": 260
+            }
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619771,
+              "byteOffset": 620068,
+              "byteLength": 23
+            },
+            "rendererKey": "convertSmartOnRender",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "optionsChinese": {
+            "false": "输入时转换",
+            "true": "渲染时转换"
+          },
+          "behavior": "false输入时转换且保存 Unicode；true保持 ASCII 源文本，渲染时转换。"
+        },
+        {
+          "key": "smartQuote",
+          "label": {
+            "english": "Smart Quotes",
+            "dictionaryKey": "Smart Quotes",
+            "chinese": "智能引号",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 1921,
+              "byteOffset": 2615,
+              "byteLength": 14
+            }
+          },
+          "section": {
+            "english": "Smart Punctuation",
+            "dictionaryKey": "Smart Punctuation",
+            "chinese": "智能标点",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 5099,
+              "byteOffset": 6933,
+              "byteLength": 19
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 251391,
+            "byteOffset": 251727,
+            "byteLength": 248
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "hint": {
+            "english": "You could set quote patterns in System Preferences → Keyboard → Text. If it is changed, Typora will need a restart to apply it.",
+            "dictionaryKey": "You could set quote patterns in System Preferences → Keyboard → Text. If it is changed, Typora will need a restart to apply it.",
+            "chinese": "你可以在 系统偏好设置 → 键盘 → 文本 中设置引号格式。Typora 会在重启后应用新的设置。",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 15486,
+              "byteOffset": 20454,
+              "byteLength": 133
+            }
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619835,
+              "byteOffset": 620132,
+              "byteLength": 13
+            },
+            "rendererKey": "smartQuote",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "原生 macOS 引号样式由系统键盘文本设置决定，变更样式需重启。"
+        },
+        {
+          "key": "smartDash",
+          "label": {
+            "english": "Smart Dashes",
+            "dictionaryKey": "Smart Dashes",
+            "chinese": "智能破折号",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 1943,
+              "byteOffset": 2645,
+              "byteLength": 14
+            }
+          },
+          "section": {
+            "english": "Smart Punctuation",
+            "dictionaryKey": "Smart Punctuation",
+            "chinese": "智能标点",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 5099,
+              "byteOffset": 6933,
+              "byteLength": 19
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 252837,
+            "byteOffset": 253301,
+            "byteLength": 107
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619822,
+              "byteOffset": 620119,
+              "byteLength": 12
+            },
+            "rendererKey": "smartDash",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "保存到宿主配置并刷新/重载编辑器对应解析或渲染行为。"
+        },
+        {
+          "key": "remapPunctuation",
+          "label": {
+            "english": "Remap Unicode Punctuation on Parse",
+            "dictionaryKey": "Remap Unicode Punctuation on Parse",
+            "chinese": "解析 Markdown 时允许并转化 Unicode 标点",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 5184,
+              "byteOffset": 7046,
+              "byteLength": 36
+            }
+          },
+          "section": {
+            "english": "Smart Punctuation",
+            "dictionaryKey": "Smart Punctuation",
+            "chinese": "智能标点",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 5099,
+              "byteOffset": 6933,
+              "byteLength": 19
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 253240,
+            "byteOffset": 253710,
+            "byteLength": 433
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "hint": {
+            "english": "<div>Recognize unicode punctuations as ASCII ones when parse markdown, e.g:<br/> <pre> 》 blockquote → > blockquote <br/> [link](src ’title’) → [link](src 'title')</pre>It will be turned on automatically if smart quotes/dashes will be converted on input.<div>",
+            "dictionaryKey": "<div>Recognize unicode punctuations as ASCII ones when parse markdown, e.g:<br/> <pre> 》 blockquote → > blockquote <br/> [link](src ’title’) → [link](src 'title')</pre>It will be turned on automatically if smart quotes/dashes will be converted on input.<div>",
+            "chinese": "<div>解析 Markdown 符号时，允许并转化 Unicode 标点，例：<br/> <pre> 》 引用 → > 引用 <br/> [链接](src ’标题’) → [链接](src '标题')</pre>当选中“输入时转换“，并开启“智能引号“或者”智能破折号”时，该选项会默认开启<div>",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 9769,
+              "byteOffset": 12857,
+              "byteLength": 270
+            }
+          },
+          "hasConditionalEnabledState": true,
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619795,
+              "byteOffset": 620092,
+              "byteLength": 26
+            },
+            "rendererKey": "remapUnicodePunctuation",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "若输入时智能引号或破折号开启，强制开启且禁用该开关；将 Unicode 标点映射为 Markdown 解析符号。"
+        },
+        {
+          "key": "show_line_numbers_for_fence",
+          "label": {
+            "english": "Display line numbers for code fences",
+            "dictionaryKey": "Display line numbers for code fences",
+            "chinese": "显示行号",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2663,
+              "byteOffset": 3569,
+              "byteLength": 38
+            }
+          },
+          "section": {
+            "english": "Code Fences",
+            "dictionaryKey": "Code Fences",
+            "chinese": "代码块",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2643,
+              "byteOffset": 3543,
+              "byteLength": 13
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 253732,
+            "byteOffset": 254212,
+            "byteLength": 150
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619187,
+              "byteOffset": 619484,
+              "byteLength": 26
+            },
+            "rendererKey": "showLineNumbersForFence",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "保存到宿主配置并刷新/重载编辑器对应解析或渲染行为。"
+        },
+        {
+          "key": "no_line_wrapping",
+          "label": {
+            "english": "Auto wrap long lines",
+            "dictionaryKey": "Auto wrap long lines",
+            "chinese": "代码块自动换行",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 7895,
+              "byteOffset": 10345,
+              "byteLength": 22
+            }
+          },
+          "section": {
+            "english": "Code Fences",
+            "dictionaryKey": "Code Fences",
+            "chinese": "代码块",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2643,
+              "byteOffset": 3543,
+              "byteLength": 13
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 253906,
+            "byteOffset": 254386,
+            "byteLength": 122
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "reverseStorage": true,
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619534,
+              "byteOffset": 619831,
+              "byteLength": 17
+            },
+            "rendererKey": "noLineWrapping",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "反向开关控制代码块长行换行。"
+        },
+        {
+          "key": "shiftTabAutoIndent",
+          "label": {
+            "english": "Use Shift+Tab to auto indent selected code",
+            "dictionaryKey": "Use Shift+Tab to auto indent selected code",
+            "chinese": "使用 Shift+Tab 自动调整所选代码的缩进",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 20564,
+              "byteOffset": 27246,
+              "byteLength": 44
+            }
+          },
+          "section": {
+            "english": "Code Fences",
+            "dictionaryKey": "Code Fences",
+            "chinese": "代码块",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2643,
+              "byteOffset": 3543,
+              "byteLength": 13
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 254052,
+            "byteOffset": 254532,
+            "byteLength": 314
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "hint": {
+            "english": "When disabled, Shift+Tab will outdent selected code or current line. When enabled, Shift+Tab will auto apply indentation for selected code or current line in code blocks.",
+            "dictionaryKey": "When disabled, Shift+Tab will outdent selected code or current line. When enabled, Shift+Tab will auto apply indentation for selected code or current line in code blocks.",
+            "chinese": "当该选项未启用时，Shift+Tab 将减少所选内容的缩进。当该选项启用时，Shift+Tab 将自动调整所选代码的缩进。",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 20636,
+              "byteOffset": 27344,
+              "byteLength": 172
+            }
+          },
+          "behavior": "开启时 Shift+Tab 对所选代码/当前行自动缩进；关闭时减少缩进。"
+        },
+        {
+          "key": "codeIndentSize",
+          "label": {
+            "english": "Indent Size for Code",
+            "dictionaryKey": "Indent Size for Code",
+            "chinese": "代码缩进",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 7865,
+              "byteOffset": 10307,
+              "byteLength": 22
+            }
+          },
+          "section": {
+            "english": "Code Fences",
+            "dictionaryKey": "Code Fences",
+            "chinese": "代码块",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2643,
+              "byteOffset": 3543,
+              "byteLength": 13
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 254443,
+            "byteOffset": 254923,
+            "byteLength": 112
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5"
+          },
+          "rendererBaseline": {
+            "value": 4,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619010,
+              "byteOffset": 619307,
+              "byteLength": 16
+            },
+            "rendererKey": "codeIndentSize",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "optionsChinese": {
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5"
+          },
+          "behavior": "保存到宿主配置并刷新/重载编辑器对应解析或渲染行为。"
+        },
+        {
+          "key": "defaultCodeLang",
+          "label": {
+            "english": "Default Code Language",
+            "dictionaryKey": "Default Code Language",
+            "chinese": "默认的代码块语言",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 21615,
+              "byteOffset": 28643,
+              "byteLength": 23
+            }
+          },
+          "section": {
+            "english": "Code Fences",
+            "dictionaryKey": "Code Fences",
+            "chinese": "代码块",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2643,
+              "byteOffset": 3543,
+              "byteLength": 13
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 254605,
+            "byteOffset": 255085,
+            "byteLength": 1772
+          },
+          "type": "text",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": "",
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620323,
+              "byteOffset": 620620,
+              "byteLength": 18
+            },
+            "rendererKey": "defaultCodeLang",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "可为空、具体语言或 __LAST。"
+        },
+        {
+          "key": "defaultCodeLangOption",
+          "label": {
+            "english": "Apply Default Code Language When",
+            "dictionaryKey": "Apply Default Code Language When",
+            "chinese": "以下情况自动添加代码块语言",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 21685,
+              "byteOffset": 28741,
+              "byteLength": 34
+            }
+          },
+          "section": {
+            "english": "Code Fences",
+            "dictionaryKey": "Code Fences",
+            "chinese": "代码块",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2643,
+              "byteOffset": 3543,
+              "byteLength": 13
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 256438,
+            "byteOffset": 256918,
+            "byteLength": 236
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "1": "When add code fences via Markdown",
+            "2": "When add code fences via Menubar",
+            "3": "Both"
+          },
+          "rendererBaseline": {
+            "value": 1,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620342,
+              "byteOffset": 620639,
+              "byteLength": 23
+            },
+            "rendererKey": "defaultCodeLangOption",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "optionsChinese": {
+            "1": "当通过Markdown代码插入代码块",
+            "2": "当通过菜单栏代码插入代码块",
+            "3": "两者皆是"
+          },
+          "behavior": "位掩码：1通过 Markdown 创建、2通过菜单创建、3两者；默认语言只用于匹配路径。"
+        },
+        {
+          "key": "noLegacyMath",
+          "label": {
+            "english": "LaTeX Math Delimiter \\( \\) \\[ \\]",
+            "chinese": "LaTeX Math Delimiter \\( \\) \\[ \\]",
+            "translated": false
+          },
+          "section": {
+            "english": "Math",
+            "dictionaryKey": "Math",
+            "chinese": "公式",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 4427,
+              "byteOffset": 6023,
+              "byteLength": 6
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 257074,
+            "byteOffset": 257554,
+            "byteLength": 192
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "reverseStorage": true,
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620422,
+              "byteOffset": 620719,
+              "byteLength": 15
+            },
+            "rendererKey": "noLegacyMath",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "反向开关控制 \\( \\) \\[ \\] 公式分隔符。"
+        },
+        {
+          "key": "gitlabMath",
+          "label": {
+            "english": "Code Block Math  (```math code block)",
+            "dictionaryKey": "Code Block Math  (```math code block)",
+            "chinese": "Code Block Math  (```math 代码块)",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 22854,
+              "byteOffset": 30380,
+              "byteLength": 39
+            }
+          },
+          "section": {
+            "english": "Math",
+            "dictionaryKey": "Math",
+            "chinese": "公式",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 4427,
+              "byteOffset": 6023,
+              "byteLength": 6
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 257290,
+            "byteOffset": 257770,
+            "byteLength": 179
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": true,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620162,
+              "byteOffset": 620459,
+              "byteLength": 13
+            },
+            "rendererKey": "gitlabMath",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "把 math fenced code block 作为公式处理。"
+        },
+        {
+          "key": "allowPhysicsConflict",
+          "label": {
+            "english": "Enable physics package",
+            "dictionaryKey": "Enable physics package",
+            "chinese": "启用 physics 包",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 19550,
+              "byteOffset": 25872,
+              "byteLength": 24
+            }
+          },
+          "section": {
+            "english": "Math",
+            "dictionaryKey": "Math",
+            "chinese": "公式",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 4427,
+              "byteOffset": 6023,
+              "byteLength": 6
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 257493,
+            "byteOffset": 257973,
+            "byteLength": 208
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "hint": {
+            "english": "Physics package will redefine some latex macros, such as \\\\div, \\\\Re, etc.",
+            "dictionaryKey": "Physics package will redefine some latex macros, such as \\\\div, \\\\Re, etc.",
+            "chinese": "Physics 包启用后会重定义一些 LaTeX 宏",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 19590,
+              "byteOffset": 25918,
+              "byteLength": 80
+            }
+          },
+          "behavior": "允许 physics 包；只有支持物理宏的公式解析器接线才会生效。"
+        },
+        {
+          "key": "legacyInlineMathParse",
+          "label": {
+            "english": "Use legacy inline math parsing (compatible mode)",
+            "dictionaryKey": "Use legacy inline math parsing (compatible mode)",
+            "chinese": "使用旧版行内公式解析（兼容模式）",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 23145,
+              "byteOffset": 30749,
+              "byteLength": 50
+            }
+          },
+          "section": {
+            "english": "Math",
+            "dictionaryKey": "Math",
+            "chinese": "公式",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 4427,
+              "byteOffset": 6023,
+              "byteLength": 6
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 257725,
+            "byteOffset": 258205,
+            "byteLength": 193
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "hint": {
+            "english": "Use legacy inline math parsing hint",
+            "dictionaryKey": "Use legacy inline math parsing hint",
+            "chinese": "<div><b>关闭（默认）</b>：行内公式规则接近 <a href=\"https://pandoc.org/MANUAL.html#math\">Pandoc</a>：开头的 <code>$</code> 右侧不能是空白；结尾的 <code>$</code> 左侧不能是空白（且其前一个字符不能是反斜杠）；结尾的 <code>$</code> 后不能直接跟数字。</div><div><b>开启（兼容模式）</b>：使用旧版规则：从 <code>$</code> 到下一个 <code>$</code> 只要结尾 <code>$</code> 前一个字符不是 <code>\\\\</code> 即视为公式（会识别更多美元分隔片段）。</div><div>详见 <a href=\"https://support.typora.io/Math/#inline-math-compatible-mode\">support.typora.io/Math</a>。</div>",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 23215,
+              "byteOffset": 30851,
+              "byteLength": 37
+            }
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620438,
+              "byteOffset": 620735,
+              "byteLength": 24
+            },
+            "rendererKey": "legacyInlineMathParse",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "保存到宿主配置并刷新/重载编辑器对应解析或渲染行为。"
+        },
+        {
+          "key": "auto_numbering_for_math",
+          "label": {
+            "english": "Auto Numbering Math Equations",
+            "dictionaryKey": "Auto Numbering Math Equations",
+            "chinese": "自动添加序号",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 2730,
+              "byteOffset": 3652,
+              "byteLength": 31
+            }
+          },
+          "section": {
+            "english": "Math",
+            "dictionaryKey": "Math",
+            "chinese": "公式",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 4427,
+              "byteOffset": 6023,
+              "byteLength": 6
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 258053,
+            "byteOffset": 258533,
+            "byteLength": 175
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "": "No Automatic Equation Numbering",
+            "ams": "Use AMS Numbering Rules",
+            "all": "Auto Numbering for All Math Equations"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619047,
+              "byteOffset": 619344,
+              "byteLength": 23
+            },
+            "rendererKey": "autoNumberingForMath",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "optionsChinese": {
+            "": "不启用公式的自动编号",
+            "ams": "根据 AMS 规则对公式使用自动编号",
+            "all": "对所有公式使用自动编号"
+          },
+          "behavior": "空字符串关闭、ams规则、all全部；旧数值1显示为all。"
+        },
+        {
+          "key": "mathFormatOnCopy",
+          "label": {
+            "english": "When copy / export as HTML (without style)",
+            "dictionaryKey": "When copy / export as HTML (without style)",
+            "chinese": "当复制或导出为 无格式的HTML 时",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 12460,
+              "byteOffset": 16494,
+              "byteLength": 44
+            }
+          },
+          "section": {
+            "english": "Math",
+            "dictionaryKey": "Math",
+            "chinese": "公式",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 4427,
+              "byteOffset": 6023,
+              "byteLength": 6
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 258348,
+            "byteOffset": 258828,
+            "byteLength": 156
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "svg": "Use Rendered SVG",
+            "latex": "Use LaTeX Source"
+          },
+          "rendererBaseline": {
+            "value": "svg",
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620139,
+              "byteOffset": 620436,
+              "byteLength": 22
+            },
+            "rendererKey": "mathFormatOnCopy",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "optionsChinese": {
+            "svg": "使用 SVG",
+            "latex": "使用 LaTeX 代码"
+          },
+          "behavior": "无样式 HTML 复制/导出时在 SVG 与 LaTeX 源之间选择。"
+        },
+        {
+          "key": "indentFirstLine",
+          "label": {
+            "english": "Indent first line of paragraphs",
+            "dictionaryKey": "Indent first line of paragraphs",
+            "chinese": "首行缩进",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 4884,
+              "byteOffset": 6638,
+              "byteLength": 33
+            }
+          },
+          "section": {
+            "english": "Whitespace / Line Break",
+            "dictionaryKey": "Whitespace / Line Break",
+            "chinese": "空格与换行",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 8668,
+              "byteOffset": 11380,
+              "byteLength": 25
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 259225,
+            "byteOffset": 259705,
+            "byteLength": 238
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "hint": {
+            "english": "These options can also be changed under \"Edit→Whitespace and Line Breaks\" menu",
+            "dictionaryKey": "These options can also be changed under \"Edit→Whitespace and Line Breaks\" menu",
+            "chinese": "以下选项也可在菜单中的 \"编辑→空格与换行\" 中更改",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 11838,
+              "byteOffset": 15644,
+              "byteLength": 84
+            }
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619708,
+              "byteOffset": 620005,
+              "byteLength": 18
+            },
+            "rendererKey": "indentFirstLine",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "保存到宿主配置并刷新/重载编辑器对应解析或渲染行为。"
+        },
+        {
+          "key": "hideBrAndLineBreak",
+          "label": {
+            "english": "Visible <br/>",
+            "dictionaryKey": "Visible <br/>",
+            "chinese": "显示 <br/>",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 4963,
+              "byteOffset": 6737,
+              "byteLength": 15
+            }
+          },
+          "section": {
+            "english": "Whitespace / Line Break",
+            "dictionaryKey": "Whitespace / Line Break",
+            "chinese": "空格与换行",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 8668,
+              "byteOffset": 11380,
+              "byteLength": 25
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 259601,
+            "byteOffset": 260083,
+            "byteLength": 158
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "reverseStorage": true,
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619686,
+              "byteOffset": 619983,
+              "byteLength": 21
+            },
+            "rendererKey": "hideBrAndLineBreak",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "反向开关控制编辑中可见 br 标记。"
+        },
+        {
+          "key": "ignoreLineBreak",
+          "label": {
+            "english": "When Writing",
+            "dictionaryKey": "When Writing",
+            "chinese": "编辑时",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 8702,
+              "byteOffset": 11424,
+              "byteLength": 14
+            }
+          },
+          "section": {
+            "english": "Whitespace / Line Break",
+            "dictionaryKey": "Whitespace / Line Break",
+            "chinese": "空格与换行",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 8668,
+              "byteOffset": 11380,
+              "byteLength": 25
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 259783,
+            "byteOffset": 260265,
+            "byteLength": 235
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "false": "Preserve sequential whitespace and single line break",
+            "true": "Ignore sequential whitespace and single line break"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619643,
+              "byteOffset": 619940,
+              "byteLength": 18
+            },
+            "rendererKey": "ignoreLineBreak",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "optionsChinese": {
+            "false": "保留连续的空格与单个换行",
+            "true": "忽略连续的空格与单个换行"
+          },
+          "behavior": "编辑视图是否忽略连续空白和单个换行。"
+        },
+        {
+          "key": "preLinebreakOnExport",
+          "label": {
+            "english": "Export / Print",
+            "dictionaryKey": "Export / Print",
+            "chinese": "导出与打印",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 8723,
+              "byteOffset": 11451,
+              "byteLength": 16
+            }
+          },
+          "section": {
+            "english": "Whitespace / Line Break",
+            "dictionaryKey": "Whitespace / Line Break",
+            "chinese": "空格与换行",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 8668,
+              "byteOffset": 11380,
+              "byteLength": 25
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 260062,
+            "byteOffset": 260544,
+            "byteLength": 245
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "true": "Preserve sequential whitespace and single line break",
+            "false": "Ignore sequential whitespace and single line break"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 619662,
+              "byteOffset": 619959,
+              "byteLength": 23
+            },
+            "rendererKey": "preLinebreakOnExport",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "optionsChinese": {
+            "true": "保留连续的空格与单个换行",
+            "false": "忽略连续的空格与单个换行"
+          },
+          "behavior": "独立控制打印/导出中的连续空白和单个换行保留。"
+        }
+      ],
+      "actions": [
+        {
+          "label": {
+            "english": "Diagram Options",
+            "dictionaryKey": "Diagram Options",
+            "chinese": "图表选项",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 21590,
+              "byteOffset": 28610,
+              "byteLength": 17
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 250544,
+            "byteOffset": 250880,
+            "byteLength": 23
+          },
+          "behavior": "打开原版图表选项说明链接。"
+        },
+        {
+          "label": {
+            "english": "Enable inline math or code block math",
+            "dictionaryKey": "Enable inline math or code block math",
+            "chinese": "开启内联公式和代码块公式",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 22799,
+              "byteOffset": 30301,
+              "byteLength": 39
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 258916,
+            "byteOffset": 259396,
+            "byteLength": 45
+          },
+          "behavior": "滚到页面顶部并高亮 math-syntax-toggle-group；该按钮只导航到语法开关，本身不修改设置。"
+        }
+      ]
+    },
+    {
+      "id": "files",
+      "label": {
+        "english": "Files",
+        "dictionaryKey": "Files",
+        "chinese": "文件",
+        "translated": true,
+        "localeGroup": "Panel",
+        "reference": {
+          "source": "panelLocale",
+          "utf16Offset": 21143,
+          "byteOffset": 27995,
+          "byteLength": 7
+        }
+      },
+      "fields": [
+        {
+          "key": "defaultExtension",
+          "label": {
+            "english": "Default File Type / Extension",
+            "dictionaryKey": "Default File Type / Extension",
+            "chinese": "默认文件类型 / 扩展名",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 21156,
+              "byteOffset": 28012,
+              "byteLength": 31
+            }
+          },
+          "section": null,
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 263623,
+            "byteOffset": 264107,
+            "byteLength": 174
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "": "Markdown (.md)",
+            "markdown": "Markdown (.markdown)",
+            "text": "Text File (.text)",
+            "custom": "Custom"
+          },
+          "rendererBaseline": {
+            "value": "md",
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620301,
+              "byteOffset": 620598,
+              "byteLength": 21
+            },
+            "rendererKey": "defaultExtension",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "optionsChinese": {
+            "": "Markdown (.md)",
+            "markdown": "Markdown (.markdown)",
+            "text": "Text File (.text)",
+            "custom": "自定义"
+          },
+          "behavior": "md/markdown/text/custom；自定义在 blur 时转小写并按允许的扩展名格式截取，去前导点。"
+        },
+        {
+          "key": "restoreWhenLaunch",
+          "label": {
+            "english": "On Launch",
+            "dictionaryKey": "On Launch",
+            "chinese": "启动选项",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 8961,
+              "byteOffset": 11775,
+              "byteLength": 11
+            }
+          },
+          "section": {
+            "english": "On Launch",
+            "dictionaryKey": "On Launch",
+            "chinese": "启动选项",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 8961,
+              "byteOffset": 11775,
+              "byteLength": 11
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 264032,
+            "byteOffset": 264516,
+            "byteLength": 355
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "0": "Open new file",
+            "1": "Restore last closed folders",
+            "2": "Restore last closed files and folders",
+            "3": "Open custom folder"
+          },
+          "hint": {
+            "english": "This option may be overridden by \"Close windows when quitting an application\" in System Preferences",
+            "dictionaryKey": "This option may be overridden by \"Close windows when quitting an application\" in System Preferences",
+            "chinese": "该选项可能会被系统设置中的 \"退出 App 时关闭窗口\" 所覆盖",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 9166,
+              "byteOffset": 12070,
+              "byteLength": 103
+            }
+          },
+          "optionsChinese": {
+            "0": "打开新文件",
+            "1": "重新打开上次使用的目录",
+            "2": "重新打开上次使用的文件和目录",
+            "3": "打开指定目录"
+          },
+          "behavior": "0新文件、1恢复最近文件夹、2恢复最近文件和文件夹、3打开自定义文件夹。选择3且没有 pinFolder 时先弹文件夹选择器；取消不提交。系统关闭时恢复选项可覆盖本设置。"
+        },
+        {
+          "key": "pinFolder",
+          "label": {
+            "english": "Open custom folder",
+            "dictionaryKey": "Open custom folder",
+            "chinese": "打开指定目录",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 9105,
+              "byteOffset": 11987,
+              "byteLength": 20
+            }
+          },
+          "section": {
+            "english": "On Launch",
+            "dictionaryKey": "On Launch",
+            "chinese": "启动选项",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 8961,
+              "byteOffset": 11775,
+              "byteLength": 11
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 264411,
+            "byteOffset": 264895,
+            "byteLength": 127
+          },
+          "type": "text",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "behavior": "仅启动模式3显示；目录选择器回写保存路径。"
+        },
+        {
+          "key": "can_collapse_outline_panel",
+          "label": {
+            "english": "Collapsible Outline on Left Panel",
+            "dictionaryKey": "Collapsible Outline on Left Panel",
+            "chinese": "允许折叠和展开侧边栏的大纲视图",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 747,
+              "byteOffset": 985,
+              "byteLength": 35
+            }
+          },
+          "section": {
+            "english": "Outline",
+            "dictionaryKey": "Outline",
+            "chinese": "大纲",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 3069,
+              "byteOffset": 4163,
+              "byteLength": 9
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 264623,
+            "byteOffset": 265107,
+            "byteLength": 229
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "behavior": "即时更改左侧固定大纲的可折叠状态。"
+        },
+        {
+          "key": "save_file_on_switch",
+          "label": {
+            "english": "Save without asking when\\nswitch files on side panel",
+            "dictionaryKey": "Save without asking when\nswitch files on side panel",
+            "chinese": "切换文件时自动保存对上个文件的更改",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 801,
+              "byteOffset": 1069,
+              "byteLength": 54
+            }
+          },
+          "section": {
+            "english": "Save & Recover",
+            "dictionaryKey": "Save & Recover",
+            "chinese": "保存 & 恢复",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 5045,
+              "byteOffset": 6635,
+              "byteLength": 16
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 265230,
+            "byteOffset": 265714,
+            "byteLength": 607
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "hint": {
+            "english": "Edited files will be saved without asking when switch files in left panel. \nWhen \"Ask to keep changes when closing documents\" is disabled in System Preference, this is always enabled.",
+            "dictionaryKey": "Edited files will be saved without asking when switch files in left panel. \nWhen \"Ask to keep changes when closing documents\" is disabled in System Preference, this is always enabled.",
+            "chinese": "在侧边栏切换文件时自动保存对上个文件的更改。  当在系统设置中，\"关闭文稿时要求保存更改\" 被关闭时，该选项被默认启用。",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 876,
+              "byteOffset": 1178,
+              "byteLength": 188
+            }
+          },
+          "hasConditionalEnabledState": true,
+          "behavior": "系统 NSCloseAlwaysConfirmsChanges 关闭时强制勾选且禁用，切换侧栏文件自动保存。"
+        },
+        {
+          "key": "noRecentFiles",
+          "label": {
+            "english": "Record recent files and folders",
+            "dictionaryKey": "Record recent files and folders",
+            "chinese": "记录历史文件和文件夹",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 22179,
+              "byteOffset": 29449,
+              "byteLength": 33
+            }
+          },
+          "section": {
+            "english": "Recent Locations",
+            "dictionaryKey": "Recent Locations",
+            "chinese": "最近使用的目录",
+            "translated": true,
+            "localeGroup": "Menu",
+            "reference": {
+              "source": "menuLocale",
+              "utf16Offset": 324,
+              "byteOffset": 440,
+              "byteLength": 18
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 266108,
+            "byteOffset": 266592,
+            "byteLength": 215
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "reverseStorage": true,
+          "behavior": "反向存储；关闭时停止记录最近文件/文件夹。"
+        },
+        {
+          "key": "actionWhenDropFolder",
+          "label": {
+            "english": "When drop folder",
+            "dictionaryKey": "When drop folder",
+            "chinese": "当拖入文件夹时",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 21351,
+              "byteOffset": 28281,
+              "byteLength": 18
+            }
+          },
+          "section": {
+            "english": "When drop file / folder into Typora",
+            "dictionaryKey": "When drop file / folder into Typora",
+            "chinese": "当拖入文件/文件夹至 Typora 窗口时",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 21289,
+              "byteOffset": 28195,
+              "byteLength": 37
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 266637,
+            "byteOffset": 267121,
+            "byteLength": 172
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "": "Open in Typora",
+            "link": "Insert Folder Link"
+          },
+          "optionsChinese": {
+            "": "在 Typora 中打开",
+            "link": "插入文件夹链接"
+          },
+          "behavior": "保存到宿主配置；具体消费点见同分类接入缺口与源位置。"
+        },
+        {
+          "key": "actionWhenDropFile",
+          "label": {
+            "english": "When drop markdown file",
+            "dictionaryKey": "When drop markdown file",
+            "chinese": "当拖入 Markdown 文件时",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 21380,
+              "byteOffset": 28324,
+              "byteLength": 25
+            }
+          },
+          "section": {
+            "english": "When drop file / folder into Typora",
+            "dictionaryKey": "When drop file / folder into Typora",
+            "chinese": "当拖入文件/文件夹至 Typora 窗口时",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 21289,
+              "byteOffset": 28195,
+              "byteLength": 37
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 266861,
+            "byteOffset": 267345,
+            "byteLength": 166
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "": "Open in Typora",
+            "link": "Insert File Link"
+          },
+          "optionsChinese": {
+            "": "在 Typora 中打开",
+            "link": "插入文件链接"
+          },
+          "behavior": "保存到宿主配置；具体消费点见同分类接入缺口与源位置。"
+        },
+        {
+          "key": "actionWhenDropImport",
+          "label": {
+            "english": "When drop files that can be imported",
+            "dictionaryKey": "When drop files that can be imported",
+            "chinese": "当拖入可被导入的文件时",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 21425,
+              "byteOffset": 28381,
+              "byteLength": 38
+            }
+          },
+          "section": {
+            "english": "When drop file / folder into Typora",
+            "dictionaryKey": "When drop file / folder into Typora",
+            "chinese": "当拖入文件/文件夹至 Typora 窗口时",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 21289,
+              "byteOffset": 28195,
+              "byteLength": 37
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 267092,
+            "byteOffset": 267576,
+            "byteLength": 167
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "options": {
+            "": "Import File",
+            "link": "Insert File Link"
+          },
+          "optionsChinese": {
+            "": "导入文件",
+            "link": "插入文件链接"
+          },
+          "behavior": "保存到宿主配置；具体消费点见同分类接入缺口与源位置。"
+        },
+        {
+          "key": "showHiddenFiles",
+          "label": {
+            "english": "Show hidden folders / files",
+            "dictionaryKey": "Show hidden folders / files",
+            "chinese": "显示隐藏的文件夹 / 文件",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 23812,
+              "byteOffset": 31732,
+              "byteLength": 29
+            }
+          },
+          "section": {
+            "english": "File Tree / Library",
+            "dictionaryKey": "File Tree / Library",
+            "chinese": "文件树 / 文件库",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 23695,
+              "byteOffset": 31569,
+              "byteLength": 21
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 267421,
+            "byteOffset": 267905,
+            "byteLength": 129
+          },
+          "type": "checkbox",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主通过 _options/props 提供值；未读取用户偏好，未将 renderer baseline 或控件回退认作 macOS 出厂默认。"
+          },
+          "rendererBaseline": {
+            "value": false,
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620516,
+              "byteOffset": 620813,
+              "byteLength": 18
+            },
+            "rendererKey": "showHiddenFiles",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "即时向编辑器 library 触发文件筛选刷新。"
+        },
+        {
+          "key": "treeFileFilterMode",
+          "label": {
+            "english": "File Tree",
+            "dictionaryKey": "File Tree",
+            "chinese": "文件树",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 23858,
+              "byteOffset": 31798,
+              "byteLength": 11
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 260389,
+            "byteOffset": 260871,
+            "byteLength": 57
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主值不由当前资源唯一确定。"
+          },
+          "options": {
+            "supported": "Supported Files (Markdown & Plain Text)",
+            "custom": "Custom",
+            "all": "All Files"
+          },
+          "explicitUIFallback": {
+            "value": "supported",
+            "reference": {
+              "source": "preferences",
+              "utf16Offset": 260757,
+              "byteOffset": 261239,
+              "byteLength": 30
+            }
+          },
+          "rendererBaseline": {
+            "value": "supported",
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620535,
+              "byteOffset": 620832,
+              "byteLength": 30
+            },
+            "rendererKey": "treeFileFilterMode",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "optionsChinese": {
+            "supported": "支持的文件（Markdown 和纯文本）",
+            "custom": "自定义",
+            "all": "所有文件"
+          },
+          "behavior": "保存到宿主配置；具体消费点见同分类接入缺口与源位置。"
+        },
+        {
+          "key": "libraryFileFilterMode",
+          "label": {
+            "english": "File Library",
+            "dictionaryKey": "File Library",
+            "chinese": "文件库",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 23876,
+              "byteOffset": 31822,
+              "byteLength": 14
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 260389,
+            "byteOffset": 260871,
+            "byteLength": 57
+          },
+          "type": "select",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主值不由当前资源唯一确定。"
+          },
+          "options": {
+            "supported": "Supported Files (Markdown & Plain Text)",
+            "custom": "Custom"
+          },
+          "explicitUIFallback": {
+            "value": "supported",
+            "reference": {
+              "source": "preferences",
+              "utf16Offset": 260757,
+              "byteOffset": 261239,
+              "byteLength": 30
+            }
+          },
+          "rendererBaseline": {
+            "value": "supported",
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620592,
+              "byteOffset": 620889,
+              "byteLength": 33
+            },
+            "rendererKey": "libraryFileFilterMode",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "optionsChinese": {
+            "supported": "支持的文件（Markdown 和纯文本）",
+            "custom": "自定义"
+          },
+          "behavior": "保存到宿主配置；具体消费点见同分类接入缺口与源位置。"
+        },
+        {
+          "key": "treeFileFilterPatterns",
+          "label": {
+            "english": "File Tree — Custom Patterns",
+            "dictionaryKey": "File Tree — Custom Patterns",
+            "chinese": "文件树 — 自定义规则",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 23979,
+              "byteOffset": 31957,
+              "byteLength": 31
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 267738,
+            "byteOffset": 268222,
+            "byteLength": 39
+          },
+          "type": "string[]",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主值不由当前资源唯一确定。"
+          },
+          "semantics": "默认包含 Markdown 与文本文件；自定义 glob 支持 ! 排除。弹窗保存后广播重新筛选。",
+          "rendererBaseline": {
+            "value": [],
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620566,
+              "byteOffset": 620863,
+              "byteLength": 25
+            },
+            "rendererKey": "treeFileFilterPatterns",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "保存到宿主配置；具体消费点见同分类接入缺口与源位置。"
+        },
+        {
+          "key": "libraryFileFilterPatterns",
+          "label": {
+            "english": "File Library — Custom Patterns",
+            "dictionaryKey": "File Library — Custom Patterns",
+            "chinese": "文件库 — 自定义规则",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 24023,
+              "byteOffset": 32021,
+              "byteLength": 34
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 267950,
+            "byteOffset": 268434,
+            "byteLength": 42
+          },
+          "type": "string[]",
+          "macFactoryDefault": {
+            "status": "not-proven",
+            "reason": "原生宿主值不由当前资源唯一确定。"
+          },
+          "semantics": "默认包含 Markdown 与文本文件；自定义 glob 支持 ! 排除。弹窗保存后广播重新筛选。",
+          "rendererBaseline": {
+            "value": [],
+            "reference": {
+              "source": "renderer",
+              "utf16Offset": 620626,
+              "byteOffset": 620923,
+              "byteLength": 28
+            },
+            "rendererKey": "libraryFileFilterPatterns",
+            "scope": "仅独立渲染器 DEFAULT_OPTIONS；原生 readOption 用宿主 _options 覆盖，不能证明 macOS 出厂值。"
+          },
+          "behavior": "保存到宿主配置；具体消费点见同分类接入缺口与源位置。"
+        }
+      ],
+      "actions": [
+        {
+          "label": {
+            "english": "Clear Recent Folders and Files",
+            "dictionaryKey": "Clear Recent Folders and Files",
+            "chinese": "清除历史文件记录",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 21931,
+              "byteOffset": 29091,
+              "byteLength": 32
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 266456,
+            "byteOffset": 266940,
+            "byteLength": 34
+          },
+          "behavior": "先请求确认，然后清空最近文档。"
+        },
+        {
+          "label": {
+            "english": "Configure…",
+            "dictionaryKey": "Configure",
+            "chinese": "配置…",
+            "translated": true,
+            "localeGroup": "Panel",
+            "reference": {
+              "source": "panelLocale",
+              "utf16Offset": 23962,
+              "byteOffset": 31936,
+              "byteLength": 11
+            }
+          },
+          "reference": {
+            "source": "preferences",
+            "utf16Offset": 260847,
+            "byteOffset": 261329,
+            "byteLength": 20
+          },
+          "behavior": "编辑所选 Tree/Library 的 glob pattern 数组；支持添加、删除、取消、保存。"
+        }
+      ]
+    }
+  ],
+  "crossPlatformOnly": [
+    {
+      "panel": "image",
+      "key": "picgo_app_path",
+      "reason": "此 installed bundle 的跨平台分支；原生 macOS Preferences 不显示该字段。",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 199888,
+        "byteOffset": 199963,
+        "byteLength": 344
+      }
+    },
+    {
+      "panel": "image",
+      "key": "piclistAppPath",
+      "reason": "此 installed bundle 的跨平台分支；原生 macOS Preferences 不显示该字段。",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 200337,
+        "byteOffset": 200412,
+        "byteLength": 354
+      }
+    },
+    {
+      "panel": "appearance",
+      "key": "framelessWindow",
+      "reason": "此 installed bundle 的跨平台分支；原生 macOS Preferences 不显示该字段。",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 205353,
+        "byteOffset": 205432,
+        "byteLength": 163
+      }
+    },
+    {
+      "panel": "appearance",
+      "key": "zoomLevel",
+      "reason": "此 installed bundle 的跨平台分支；原生 macOS Preferences 不显示该字段。",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 206287,
+        "byteOffset": 206366,
+        "byteLength": 234
+      }
+    },
+    {
+      "panel": "appearance",
+      "key": "showStatusBar",
+      "reason": "此 installed bundle 的跨平台分支；原生 macOS Preferences 不显示该字段。",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 207847,
+        "byteOffset": 207926,
+        "byteLength": 113
+      }
+    },
+    {
+      "panel": "editor",
+      "key": "line_ending_crlf",
+      "reason": "此 installed bundle 的跨平台分支；原生 macOS Preferences 不显示该字段。",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 245932,
+        "byteOffset": 246151,
+        "byteLength": 170
+      }
+    },
+    {
+      "panel": "editor",
+      "key": "preset_spell_check",
+      "reason": "此 installed bundle 的跨平台分支；原生 macOS Preferences 不显示该字段。",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 246293,
+        "byteOffset": 246512,
+        "byteLength": 833
+      }
+    },
+    {
+      "panel": "markdown",
+      "key": "userQuotesArray",
+      "reason": "此 installed bundle 的跨平台分支；原生 macOS Preferences 不显示该字段。",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 251924,
+        "byteOffset": 252264,
+        "byteLength": 477
+      }
+    },
+    {
+      "panel": "markdown",
+      "key": "userQuotesArray",
+      "reason": "此 installed bundle 的跨平台分支；原生 macOS Preferences 不显示该字段。",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 252369,
+        "byteOffset": 252765,
+        "byteLength": 511
+      }
+    },
+    {
+      "panel": "markdown",
+      "key": "twoHyphensToEm",
+      "reason": "此 installed bundle 的跨平台分支；原生 macOS Preferences 不显示该字段。",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 253010,
+        "byteOffset": 253474,
+        "byteLength": 207
+      }
+    },
+    {
+      "panel": "files",
+      "key": "enableAutoSave",
+      "reason": "此 installed bundle 的跨平台分支；原生 macOS Preferences 不显示该字段。",
+      "reference": {
+        "source": "preferences",
+        "utf16Offset": 265092,
+        "byteOffset": 265576,
+        "byteLength": 109
+      }
+    }
+  ],
+  "replicaSnapshot": {
+    "scope": "只读检查当时运行源码；不声称之后实现仍缺失。",
+    "sources": {
+      "src/types.ts": {
+        "path": "/Users/lkc/Code/typora-replica/src/types.ts",
+        "sha256": "df7ebc14b07c74903e79ea4dff0bea24e96ee5c76e1beb28dc9a67315161d7a2",
+        "bytes": 3045
+      },
+      "src/store.ts": {
+        "path": "/Users/lkc/Code/typora-replica/src/store.ts",
+        "sha256": "4029a9cad83cc60f130a9bc3a8fea9e1c7e49b808d3d13ccb855333b21f1eb44",
+        "bytes": 5930
+      },
+      "src/main.ts": {
+        "path": "/Users/lkc/Code/typora-replica/src/main.ts",
+        "sha256": "ff36b5c472b8d2267c3411d901a9e98280a028594a20090487af1de57ff04073",
+        "bytes": 26706
+      },
+      "src/ui/preferences.ts": {
+        "path": "/Users/lkc/Code/typora-replica/src/ui/preferences.ts",
+        "sha256": "664e71c14336d5c5e8f62190080c066cce4a4787639f2d9c732275f71956a422",
+        "bytes": 20293
+      },
+      "src/editor/setup.ts": {
+        "path": "/Users/lkc/Code/typora-replica/src/editor/setup.ts",
+        "sha256": "b75fc5b1023a27379729d849664853e3218c3ac8f044b961f06068fc75f8a4e3",
+        "bytes": 12281
+      },
+      "src/editor/mathparser.ts": {
+        "path": "/Users/lkc/Code/typora-replica/src/editor/mathparser.ts",
+        "sha256": "6629a121bfa724101a34d120dec070ae1af55ea2f1a441cfb22fd95446c3fc50",
+        "bytes": 3337
+      },
+      "src/editor/livepreview.ts": {
+        "path": "/Users/lkc/Code/typora-replica/src/editor/livepreview.ts",
+        "sha256": "86799dd924805ae31cdb6643be2a1dc4cbaa3d8850eaf33d39102cb11b69e41d",
+        "bytes": 28870
+      },
+      "src/editor/clipboard.ts": {
+        "path": "/Users/lkc/Code/typora-replica/src/editor/clipboard.ts",
+        "sha256": "a21e6432dcf8828d89438ea2e5c9d9b82de11e9d7382823898a0526aa57af055",
+        "bytes": 23135
+      },
+      "src/editor/product-markdown.ts": {
+        "path": "/Users/lkc/Code/typora-replica/src/editor/product-markdown.ts",
+        "sha256": "82a0e9f41859265fdbde1b9ad7f8a01455d44c5121d8b27eab1e22f5132db166",
+        "bytes": 11740
+      },
+      "native/App.swift": {
+        "path": "/Users/lkc/Code/typora-replica/native/App.swift",
+        "sha256": "f08a41d69d6702c987cd6ea8ffff73013e90aefea230a5862bc6c8b38aa88a99",
+        "bytes": 72180
+      },
+      "native/PreferencesController.swift": {
+        "path": "/Users/lkc/Code/typora-replica/native/PreferencesController.swift",
+        "sha256": "0a7efd42008e5fdc79e1d8b05d11be2af14552972d69e8cc29d2dcd671a0ab35",
+        "bytes": 6962
+      },
+      "native/ExportSettings.swift": {
+        "path": "/Users/lkc/Code/typora-replica/native/ExportSettings.swift",
+        "sha256": "f29a38d1dac18dd575193ee95431bbaf8e0d5016f8c892c93cd787c8367f96ff",
+        "bytes": 40883
+      },
+      "native/Clipboard.swift": {
+        "path": "/Users/lkc/Code/typora-replica/native/Clipboard.swift",
+        "sha256": "069978ada014364b22007d7a271cd0af8ccf87ca8f9841a5abe6ea541a10c879",
+        "bytes": 19021
+      },
+      "native/FolderMonitor.swift": {
+        "path": "/Users/lkc/Code/typora-replica/native/FolderMonitor.swift",
+        "sha256": "ce107a134183a6fb5d7dca3c369ec060c561991155a16f3255318672dcf4a49a",
+        "bytes": 11446
+      }
+    },
+    "existingPrefKeys": [
+      "theme",
+      "autoSave",
+      "autoSaveDelayMs",
+      "typewriterMode",
+      "focusMode",
+      "sourceMode",
+      "sidebarVisible",
+      "sidebarTab",
+      "filesView",
+      "sidebarWidth",
+      "zoom",
+      "wordCountUnit",
+      "spellcheck"
+    ],
+    "persistence": "store.setPrefs -> native prefsChanged -> AppPreferencesStore editorPrefs.v1 -> PreferencesController.broadcastEditor；可复用但当前只规范化 filesView。",
+    "gaps": [
+      {
+        "panel": "files",
+        "available": "已有 NSDocument 打开/保存/恢复、系统最近文件、文件树/文件库、大纲折叠、文件夹监测、文件拖入与导入基础路径。",
+        "missing": "缺启动恢复策略/固定文件夹、默认扩展名、侧栏切换保存策略、最近记录开关、文件/目录/可导入文件三种拖入行为、隐藏文件与两类 glob 筛选。现有大纲折叠需设置开关约束。",
+        "integration": [
+          "src/types.ts Prefs 扩展并给缺省策略",
+          "src/store.ts 现有 prefs 持久化/广播可复用",
+          "native/App.swift 原生启动/打开/最近记录",
+          "native/FolderMonitor.swift 扫描筛选",
+          "src/ui/sidebar.ts 大纲及文件视图"
+        ],
+        "priority": "优先接通默认扩展、最近记录、筛选，再实现恢复语义。"
+      },
+      {
+        "panel": "editor",
+        "available": "已有 source/live 切换、spellcheck、focus/typewriter 模式、clipboard 自定义与 CM6 键映射。",
+        "missing": "缺保存缩进/prettyIndent、自动配对和 emoji 开关、简单块展开、默认复制源文本、无选区整行复制/剪切、打字机居中开关；现有功能多为固定行为。原版 macOS pane 无独立 spellcheck 下拉。",
+        "integration": [
+          "src/editor/setup.ts 用 Compartment 切换编辑扩展",
+          "src/editor/clipboard.ts 复制路径",
+          "src/main.ts 应用 prefs 与 typewriter scroll",
+          "src/editor/format.ts 生成列表/引用源文本"
+        ],
+        "priority": "设置值必须改变行为，不能仅保存勾选。"
+      },
+      {
+        "panel": "image",
+        "available": "原生 clipboard 支持图片、文件 URL、粘贴/拖入、保存目标及 YAML typora-copy-images-to；displayPath 目前总尝试相对路径。",
+        "missing": "缺全局插图策略、规则适用本地/网络、${filename}目录策略、相对/./与转义开关、上传器/自定义命令/验证；应明确全局与文档 YAML 优先级。",
+        "integration": [
+          "native/Clipboard.swift copyImagesTarget/displayPath",
+          "src/editor/clipboard.ts 生成图片标记",
+          "native/PreferencesController.swift 通用文件夹选择器",
+          "native/ExportSettings.swift AppPreferencesStore 字典复用"
+        ],
+        "priority": "先做本地规则/路径；外部上传调用需真实处理错误与取消，不能假成功。"
+      },
+      {
+        "panel": "markdown",
+        "available": "已有 GFM、math/highlight/sub/sup 自定义扩展、代码块/图表/公式渲染、智能标点相关菜单和渲染基础；当前 setup 把 GFM/extraInlineExtensions 与 lineWrapping 固定启用。",
+        "missing": "缺各语法开关接线、严格模式、生成语法风格、输入/渲染智能标点时机、代码行号/换行/缩进/默认语言、公式兼容/physics/编号/复制格式、空白与导出换行独立语义。",
+        "integration": [
+          "src/editor/setup.ts language/lineWrapping compartments",
+          "src/editor/mathparser.ts 动态语言扩展",
+          "src/editor/livepreview.ts 解析渲染",
+          "src/editor/product-markdown.ts 统一渲染入口",
+          "src/export.ts 输出空白/公式复制策略"
+        ],
+        "priority": "先做已存在能力的语法/代码显示开关；编辑器和导出必须读取同一套有效选项。"
+      },
+      {
+        "panel": "appearance",
+        "available": "已有六主题、zoom、focus/typewriter、字数/统计、全局 prefs 广播。",
+        "missing": "缺原版 root 字体自定义、mac缩放选项/滚轮缩放、常驻字数、阅读速度、工具栏、自动浅深主题/主题目录入口、无缝窗口切换；当前 zoom 通过--editor-font-size 改字大小，与原版宿主 zoomFactor 不等价。",
+        "integration": [
+          "src/main.ts applyPrefs",
+          "src/types.ts",
+          "src/ui/statusbar.ts 统计显示",
+          "native/App.swift WKWebView/窗口样式",
+          "native/PreferencesController.swift 操作分派"
+        ],
+        "priority": "先统一 font-size 与 zoom 的独立语义，再做系统外观联动。"
+      },
+      {
+        "panel": "general",
+        "available": "已有原生退出生命周期、系统语言菜单本地化、WKWebView、NSAlert 与导出覆盖提示存储；通用 prefs 字典可扩展。",
+        "missing": "缺最后窗口退出、语言选择全局一致、调试开关、重置全部提示。原版更新/许可/遥测/服务切换属于其自有服务；独立实现不能伪造可用或把副本接到原版许可/遥测。",
+        "integration": [
+          "native/App.swift NSApplicationDelegate 生命周期",
+          "native/Localization.swift 明确语言解析",
+          "native/PreferencesController.swift 宿主动作",
+          "native/ExportSettings.swift defaults 警告标志"
+        ],
+        "priority": "先完整实现副本可控的本地行为；自有服务功能必须如实呈现能力状态。"
+      }
+    ]
+  },
+  "counts": {
+    "panels": 6,
+    "macFields": 82,
+    "fieldsPerPanel": {
+      "image": 10,
+      "appearance": 11,
+      "general": 7,
+      "editor": 9,
+      "markdown": 31,
+      "files": 14
+    },
+    "nativeFactoryDefaultsProven": 0,
+    "rendererBaselines": 54
+  },
+  "completion": {
+    "requestedStaticInventory": true,
+    "fullProductParity": false,
+    "originalUserStateUnchanged": true
+  }
+}

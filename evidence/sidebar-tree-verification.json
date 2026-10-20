@@ -1,0 +1,247 @@
+{
+  "date": "2026-10-19T03:45:02.941Z",
+  "session": "sidebar-qa",
+  "appUrl": "http://127.0.0.1:5174",
+  "fixture": {
+    "root": "/qa-sidebar",
+    "files": [
+      {
+        "name": "same.md",
+        "path": "/qa-sidebar/Beta/same.md",
+        "relativePath": "Beta/same.md"
+      },
+      {
+        "name": "file10.md",
+        "path": "/qa-sidebar/file10.md",
+        "relativePath": "file10.md"
+      },
+      {
+        "name": "deep.md",
+        "path": "/qa-sidebar/Alpha/Sub/deep.md",
+        "relativePath": "Alpha/Sub/deep.md"
+      },
+      {
+        "name": "z.md",
+        "path": "/qa-sidebar/10 Notes/z.md",
+        "relativePath": "10 Notes/z.md"
+      },
+      {
+        "name": "file2.md",
+        "path": "/qa-sidebar/file2.md",
+        "relativePath": "file2.md"
+      },
+      {
+        "name": "same.md",
+        "path": "/qa-sidebar/Alpha/same.md",
+        "relativePath": "Alpha/same.md"
+      },
+      {
+        "name": "a.md",
+        "path": "/qa-sidebar/2 Notes/a.md",
+        "relativePath": "2 Notes/a.md"
+      },
+      {
+        "name": "item10.md",
+        "path": "/qa-sidebar/Alpha/item10.md",
+        "relativePath": "Alpha/item10.md"
+      },
+      {
+        "name": "item2.md",
+        "path": "/qa-sidebar/Alpha/item2.md",
+        "relativePath": "Alpha/item2.md"
+      }
+    ]
+  },
+  "results": [
+    {
+      "name": "Legacy preferences default to file tree",
+      "passed": true,
+      "detail": {
+        "filesView": "tree",
+        "ok": true
+      }
+    },
+    {
+      "name": "Root is first and expanded; folders precede naturally sorted files",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "root": "qa-sidebar2 Notes10 NotesAlphaBetafile2.mdfile10.md",
+        "top": [
+          "2 Notes",
+          "10 Notes",
+          "Alpha",
+          "Beta",
+          "file2.md",
+          "file10.md"
+        ]
+      }
+    },
+    {
+      "name": "Disclosure expands nested children in natural order",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "rows": [
+          "Alpha/Sub",
+          "Alpha/item2.md",
+          "Alpha/item10.md",
+          "Alpha/same.md"
+        ]
+      }
+    },
+    {
+      "name": "Disclosure collapses descendants",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Equal names open distinct absolute paths and active file updates",
+      "passed": true,
+      "detail": {
+        "active": [
+          "/qa-sidebar/Beta/same.md"
+        ],
+        "ok": true,
+        "paths": [
+          "/qa-sidebar/Alpha/same.md",
+          "/qa-sidebar/Beta/same.md"
+        ]
+      }
+    },
+    {
+      "name": "Opening a nested file expands every ancestor",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Dirty changes do not reopen a manually collapsed active ancestor",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Full relative path filter shows matching file and its ancestors",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "rows": [
+          "",
+          "Alpha",
+          "Alpha/Sub",
+          "Alpha/Sub/deep.md"
+        ]
+      }
+    },
+    {
+      "name": "Clearing filter restores normal collapsed state",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "List command retains all files and visible distinguishing paths",
+      "passed": true,
+      "detail": {
+        "count": 9,
+        "ok": true,
+        "same": [
+          "same.mdAlpha/same.md",
+          "same.mdBeta/same.md"
+        ]
+      }
+    },
+    {
+      "name": "List mode filter also matches relative paths",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "paths": [
+          "/qa-sidebar/Beta/same.md"
+        ]
+      }
+    },
+    {
+      "name": "ArrowDown moves the roving tree focus",
+      "passed": true,
+      "detail": {
+        "focused": "2 Notes",
+        "ok": true
+      }
+    },
+    {
+      "name": "ArrowRight expands directory then focuses first child",
+      "passed": true,
+      "detail": {
+        "focused": "/qa-sidebar/2 Notes/a.md",
+        "ok": true
+      }
+    },
+    {
+      "name": "ArrowLeft returns to parent then collapses it",
+      "passed": true,
+      "detail": {
+        "focused": "2 Notes",
+        "ok": true
+      }
+    },
+    {
+      "name": "End and Enter open the last visible file",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "path": "/qa-sidebar/file10.md"
+      }
+    },
+    {
+      "name": "Home returns focus to root and groups expose accessible hierarchy",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Mode changes preserve focused filter and its value",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Invalid view preference normalizes to tree",
+      "passed": true,
+      "detail": {
+        "filesView": "tree",
+        "ok": true
+      }
+    },
+    {
+      "name": "Legacy sidebarFiles command selects tree",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Native list style keeps relative path subtitles visible",
+      "passed": true,
+      "detail": {
+        "count": 9,
+        "ok": true
+      }
+    },
+    {
+      "name": "Tree shows one root row and no permanent extra toolbar",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    }
+  ]
+}

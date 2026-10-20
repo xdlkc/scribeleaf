@@ -1,0 +1,297 @@
+{
+  "generatedAt": "2026-10-19T17:38:41.670Z",
+  "scope": "Real CodeMirror 6 state/view/input handlers, autocomplete, DOM clipboard events, history and live-preview DOM in jsdom. No native GUI, system clipboard, geometry, IME candidate UI or full Typora parity claim.",
+  "command": "node scripts/verify-editor-preferences.mjs",
+  "sourceHashes": {
+    "src/types.ts": "e87062de8c4ad1b5573fb767b882b642f398fd07b8d07a83860ce6339adae74a",
+    "src/store.ts": "fba5f1ce90d923f8a2433474767710d4484c9f5840324e5e22e96fd4c061a976",
+    "src/editor/preferences.ts": "a5a4516fb2ebb0a188e300fd5d1064b688af3a84c8a7f4a1e6b57e1a6925d566",
+    "src/editor/setup.ts": "b4ce8825f90e8f780969d1312d2bfb7fac20e1fffc0a20ea335b7ab165872ddf",
+    "src/editor/format.ts": "4243b5e68de1c358b29042ef13a2b94c49066f42eff4e95e2ddd9be58a533321",
+    "src/editor/livepreview.ts": "dc2ac4dc8ac3651edf455d8c07a948b7caf76af25f805da4cb0ac124a2b7fffa",
+    "src/editor/clipboard.ts": "fa422b18024cce8f350794a68b7cb2b466ac6efbf158766b8b63d610c90a8465",
+    "src/editor/emoji-data.ts": "a380dcc08373be4e6bd329282c653b5e241aba8b4950a81ff2643367f85ef1da"
+  },
+  "passed": false,
+  "checks": [
+    {
+      "name": "legacy-prefs-theme-preserved",
+      "passed": true,
+      "actual": "night"
+    },
+    {
+      "name": "legacy-prefs-zoom-preserved",
+      "passed": true,
+      "actual": 125
+    },
+    {
+      "name": "legacy-prefs-new-flags-filled",
+      "passed": true
+    },
+    {
+      "name": "invalid-indent-normalized",
+      "passed": true
+    },
+    {
+      "name": "invalid-boolean-not-truthy",
+      "passed": true
+    },
+    {
+      "name": "bracket-input-produces-pair",
+      "passed": true
+    },
+    {
+      "name": "closer-skips-existing-pair",
+      "passed": true
+    },
+    {
+      "name": "pair-undo",
+      "passed": true
+    },
+    {
+      "name": "backspace-deletes-pair-before-markup",
+      "passed": true
+    },
+    {
+      "name": "bracket-surrounds-selection",
+      "passed": true
+    },
+    {
+      "name": "cjk-brackets-pair",
+      "passed": true
+    },
+    {
+      "name": "pair-setting-reconfigures-live-editor",
+      "passed": true
+    },
+    {
+      "name": "pair-setting-can-reenable",
+      "passed": true
+    },
+    {
+      "name": "markdown-pair-off-leaves-single-symbol",
+      "passed": true
+    },
+    {
+      "name": "markdown-pair-on-42",
+      "passed": true,
+      "actual": "**"
+    },
+    {
+      "name": "markdown-pair-on-95",
+      "passed": true,
+      "actual": "__"
+    },
+    {
+      "name": "markdown-pair-on-126",
+      "passed": true,
+      "actual": "~~"
+    },
+    {
+      "name": "markdown-pair-on-96",
+      "passed": true,
+      "actual": "``"
+    },
+    {
+      "name": "markdown-pair-on-36",
+      "passed": true,
+      "actual": "$$"
+    },
+    {
+      "name": "markdown-pair-depends-on-brackets",
+      "passed": true
+    },
+    {
+      "name": "markdown-symbol-not-paired-in-code",
+      "passed": true,
+      "actual": "```js\n*\n```"
+    },
+    {
+      "name": "emoji-open-data-vocabulary",
+      "passed": true,
+      "actual": 1903
+    },
+    {
+      "name": "emoji-real-completion-popup",
+      "passed": true,
+      "actual": [
+        ":small_airplane:",
+        ":small_blue_diamond:",
+        ":small_orange_diamond:",
+        ":small_red_triangle_down:",
+        ":small_red_triangle:"
+      ]
+    },
+    {
+      "name": "emoji-real-accept",
+      "passed": true
+    },
+    {
+      "name": "emoji-inserts-unicode",
+      "passed": true,
+      "actual": "😄"
+    },
+    {
+      "name": "emoji-insertion-undo",
+      "passed": true
+    },
+    {
+      "name": "emoji-disable-removes-completions",
+      "passed": true
+    },
+    {
+      "name": "emoji-source-honors-disable",
+      "passed": true
+    },
+    {
+      "name": "emoji-not-offered-in-code",
+      "passed": true
+    },
+    {
+      "name": "emoji-not-triggered-in-url",
+      "passed": true
+    },
+    {
+      "name": "list-indent-2",
+      "passed": true,
+      "actual": "  - item"
+    },
+    {
+      "name": "list-outdent-2",
+      "passed": true
+    },
+    {
+      "name": "list-indent-3",
+      "passed": true,
+      "actual": "   - item"
+    },
+    {
+      "name": "list-outdent-3",
+      "passed": true
+    },
+    {
+      "name": "list-indent-4",
+      "passed": true,
+      "actual": "    - item"
+    },
+    {
+      "name": "list-outdent-4",
+      "passed": true
+    },
+    {
+      "name": "list-indent-5",
+      "passed": true,
+      "actual": "     - item"
+    },
+    {
+      "name": "list-outdent-5",
+      "passed": true
+    },
+    {
+      "name": "list-indent--1",
+      "passed": true,
+      "actual": "\t- item"
+    },
+    {
+      "name": "list-outdent--1",
+      "passed": true
+    },
+    {
+      "name": "tab-uses-list-indent-setting",
+      "passed": true
+    },
+    {
+      "name": "shift-tab-outdents-list",
+      "passed": true
+    },
+    {
+      "name": "auto-indent-detects-four-spaces",
+      "passed": true
+    },
+    {
+      "name": "auto-indent-detects-tab",
+      "passed": true
+    },
+    {
+      "name": "auto-indent-ignores-fenced-list",
+      "passed": true
+    },
+    {
+      "name": "pretty-bullet-marker-padding",
+      "passed": true,
+      "actual": "-   one\n-   two"
+    },
+    {
+      "name": "pretty-ordered-marker-padding",
+      "passed": true
+    },
+    {
+      "name": "pretty-quote-marker-padding",
+      "passed": true
+    },
+    {
+      "name": "pretty-quote-toggle-roundtrip",
+      "passed": true
+    },
+    {
+      "name": "plain-quote-padding",
+      "passed": true
+    },
+    {
+      "name": "rendered-copy-plain-removes-markup",
+      "passed": true,
+      "actual": "Title\n\nbold link"
+    },
+    {
+      "name": "rendered-copy-html-keeps-format",
+      "passed": true
+    },
+    {
+      "name": "markdown-copy-source-exact",
+      "passed": true
+    },
+    {
+      "name": "source-mode-copy-stays-source",
+      "passed": true
+    },
+    {
+      "name": "no-selection-copy-disabled",
+      "passed": true
+    },
+    {
+      "name": "no-selection-cut-disabled-preserves-document",
+      "passed": true
+    },
+    {
+      "name": "no-selection-line-copy-enabled",
+      "passed": true,
+      "actual": {
+        "text/plain": "first\n",
+        "text/html": "<p>first</p>\n"
+      }
+    },
+    {
+      "name": "no-selection-line-cut-enabled",
+      "passed": true
+    },
+    {
+      "name": "line-cut-real-undo",
+      "passed": true
+    },
+    {
+      "name": "multi-line-copy-no-added-newline-lf-unterminated-1-2",
+      "passed": false,
+      "actual": "first\n\nsecond\n"
+    }
+  ],
+  "error": "Error: multi-line-copy-no-added-newline-lf-unterminated-1-2: \"first\\n\\nsecond\\n\"\n    at check (/Users/lkc/Code/typora-replica/.cache/editor-preferences-check.cjs:286023:25)\n    at run5 (/Users/lkc/Code/typora-replica/.cache/editor-preferences-check.cjs:286235:9)",
+  "total": 60,
+  "passedCount": 59,
+  "externalData": "evidence/emoji-data-source.json",
+  "limitations": [
+    "Typora native factory defaults are not proven by renderer baselines.",
+    "Emoji aliases come from MIT markdown-it-emoji 3.0.0, not Typora; exact vocabulary parity remains unproven.",
+    "Clipboard HTML uses independent MarkdownIt/product rendering; math/diagram/style clipboard fidelity remains unproven.",
+    "typewriterAlwaysCenter consumer in main.ts is coordinated and verified separately."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "source": "evidence/export-settings-pdf-margin-before.pdf",
+  "sha256": "b2c9977ffa4e2eff8b61c772582f5696694158273c3b1413edd5aa25cf5084b0",
+  "passed": false,
+  "expectedMarginsMM": {
+    "top": 11,
+    "bottom": 12,
+    "left": 13,
+    "right": 14
+  },
+  "pages": [
+    {
+      "mediaBox": [
+        0.0,
+        0.0,
+        595.0,
+        420.0
+      ],
+      "firstBodyClip": [
+        56.69292,
+        56.69292,
+        481.0,
+        329.0
+      ],
+      "leftMM": 20.000002333333335,
+      "bottomMM": 20.000002333333335,
+      "text": "QA_PDF_TOP 中⽂\nSEC_1\nparagraph 1 QA_SECTION 中⽂。\nSEC_2\nparagraph 2 QA_SECTION 中⽂。\nQA_PDF_HEADER QA_AUTHOR\nQA_PDF_FOOTER 1"
+    },
+    {
+      "mediaBox": [
+        0.0,
+        0.0,
+        595.0,
+        420.0
+      ],
+      "firstBodyClip": [
+        56.69292,
+        56.69292,
+        481.0,
+        329.0
+      ],
+      "leftMM": 20.000002333333335,
+      "bottomMM": 20.000002333333335,
+      "text": "SEC_3\nparagraph 3 QA_SECTION 中⽂。\nSEC_4\nparagraph 4 QA_SECTION 中⽂。\nSEC_5\nparagraph 5 QA_SECTION 中⽂。\nQA_PDF_HEADER QA_AUTHOR\nQA_PDF_FOOTER 2"
+    },
+    {
+      "mediaBox": [
+        0.0,
+        0.0,
+        595.0,
+        420.0
+      ],
+      "firstBodyClip": [
+        56.69292,
+        56.69292,
+        481.0,
+        329.0
+      ],
+      "leftMM": 20.000002333333335,
+      "bottomMM": 20.000002333333335,
+      "text": "SEC_6\nparagraph 6 QA_SECTION 中⽂。\nSEC_7\nparagraph 7 QA_SECTION 中⽂。\nSEC_8\nparagraph 8 QA_SECTION 中⽂。\nQA_PDF_HEADER QA_AUTHOR\nQA_PDF_FOOTER 3"
+    },
+    {
+      "mediaBox": [
+        0.0,
+        0.0,
+        595.0,
+        420.0
+      ],
+      "firstBodyClip": [
+        56.69292,
+        56.69292,
+        481.0,
+        329.0
+      ],
+      "leftMM": 20.000002333333335,
+      "bottomMM": 20.000002333333335,
+      "text": "SEC_9\nparagraph 9 QA_SECTION 中⽂。\nSEC_10\nparagraph 10 QA_SECTION 中⽂。\nQA_PDF_BOTTOM 中⽂\nQA_PDF_HEADER QA_AUTHOR\nQA_PDF_FOOTER 4"
+    }
+  ],
+  "diagnosis": "The common exported @page margin:2cm rule overrides native print margins. Preserve this failing production output before removing that policy only for native printing."
+}

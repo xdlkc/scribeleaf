@@ -1,0 +1,55 @@
+{
+  "reader": "markdown",
+  "writer": "markdown",
+  "commonArguments": [
+    "--from",
+    "markdown",
+    "--standalone",
+    "--to",
+    "markdown",
+    "--markdown-headings",
+    "atx",
+    "--reference-links",
+    "--reference-location",
+    "block"
+  ],
+  "variants": {
+    "auto": [
+      "--wrap",
+      "auto",
+      "--columns",
+      "40",
+      "--eol",
+      "lf"
+    ],
+    "none": [
+      "--wrap",
+      "none",
+      "--columns",
+      "40",
+      "--eol",
+      "lf"
+    ],
+    "preserve": [
+      "--wrap",
+      "preserve",
+      "--eol",
+      "lf"
+    ],
+    "crlf": [
+      "--wrap",
+      "none",
+      "--eol",
+      "crlf"
+    ],
+    "ascii": [
+      "--wrap",
+      "none",
+      "--ascii",
+      "--eol",
+      "lf"
+    ]
+  },
+  "source": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/markdown-options-source.md",
+  "note": "CLI argument samples, not the App's setting schema. Map hardLineWrap/columns/eol/reference-links/reference-location/markdown-headings/ascii to these proven CLI behaviors."
+}

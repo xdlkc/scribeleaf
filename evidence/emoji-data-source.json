@@ -1,0 +1,14 @@
+{
+  "package": "markdown-it-emoji",
+  "version": "3.0.0",
+  "url": "https://registry.npmjs.org/markdown-it-emoji/-/markdown-it-emoji-3.0.0.tgz",
+  "tarballSHA256": "9a4a4c2a7095e102a483cee528faf9fb9ac623e25f3be7af4fec9a685776c764",
+  "sourceMember": "package/lib/data/full.mjs",
+  "sourceSHA256": "19b92a67d6b184732a7ff305902aa4624c715d39d3447d871c38ef9dd725fcf4",
+  "dataOnly": true,
+  "typoraSourceCopied": false,
+  "licenseSPDX": "MIT",
+  "licensePath": "public/licenses/markdown-it-emoji-MIT.txt",
+  "vendoredSHA256": "a380dcc08373be4e6bd329282c653b5e241aba8b4950a81ff2643367f85ef1da",
+  "aliasCount": 1903
+}

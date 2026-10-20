@@ -1,0 +1,91 @@
+{
+  "generatedAt": "2026-10-19T18:50:09.446460+00:00",
+  "passed": true,
+  "fullTyporaParity": false,
+  "scope": "Files preferences consumers and native App workflow integration. Real headless AppKit probes use generated documents and an isolated defaults suite. This is not full UI, original factory-default, or whole-product parity proof.",
+  "sourceHashes": {
+    "native/App.swift": "250b1a1ff8486333dd6852ea3d16d75b96b2e504dc460ef2c18122f79abd81c5",
+    "native/FileWorkflow.swift": "a00b00bc98d397eed20b044e3cc35e871757b50e8030c8fb772718f0e367c3bb",
+    "native/FilePreferences.swift": "0769b0bb375015e003dba4a7cf90140dc3088a2f65cdd3cc57a2e77627c2d014",
+    "native/FolderMonitor.swift": "d848eb59e826e51536be68df517fe136312522406da29966c56da1917970d172",
+    "src/file-preferences.ts": "43a7991a66472019abb8a51ac284706d4d9987aab7059526bad5c71363583129",
+    "src/ui/sidebar.ts": "d8b532b85137ca9b392c0ca7dacad3b25383afccac9889d40836e088ac92436e"
+  },
+  "verification": {
+    "nativeWorkflow": {
+      "path": "evidence/file-workflow-verification.json",
+      "passedCount": 83,
+      "total": 83,
+      "allSourceHashesMatchCurrent": true
+    },
+    "modelSidebarAndEnumeration": {
+      "path": "evidence/file-preferences-verification.json",
+      "passedCount": 151,
+      "total": 151
+    },
+    "existingNativeFiles": {
+      "path": "evidence/native-files-verification.json",
+      "passedCount": 38,
+      "total": 38,
+      "scope": "Existing real FSEvents, 5107-file tree, Recovery and encoding regression passed before final drop classification/merge, clear-recent and ready hydration changes. FolderMonitor and Recovery implementations were not changed afterward."
+    },
+    "swiftTypecheck": {
+      "command": "xcrun swiftc -swift-version 5 -parse-as-library -typecheck -module-cache-path .cache/swift native/*.swift -framework AppKit -framework WebKit -framework UniformTypeIdentifiers",
+      "exitCode": 0,
+      "diagnostics": "Only existing posix_spawn_file_actions_addchdir_np deprecation warning."
+    }
+  },
+  "integration": [
+    "ReplicaDocumentController is initialized before the application delegate runs. It resolves configured extensions, handles automatic NSDocument recent-entry methods, and uses an app-domain recent list.",
+    "New-document NSSavePanel suggestions use effectiveDefaultExtension. Existing document suffixes are retained.",
+    "Same-document sidebar switching decodes the target first, uses real NSDocument saving or close review, preserves encoding/BOM and root, clears only old recovery after approval, retains repeat format and disables overwrite.",
+    "FileSessionStore persists saved file and folder associations in a separate app-domain snapshot. Restore targets respect explicit opens and recovered documents. Registered file/folder documents are reused.",
+    "editorPrefsDidChange triggers a real FolderMonitor preference rescan. Global General flags control close-after-last-window and WebKit inspection.",
+    "fileDrop validates native identity and source path, echoes renderer identity, merges supplied paths with only the drag board when requested, classifies real directories before image suffixes, and opens/imports or returns links.",
+    "FileImporter creates independent edited Markdown documents; source resources remain read-only and imported media uses its separate persistent lifecycle.",
+    "exportPrepare carries an independent invocation Markdown preference snapshot. Renderer beginExport snapshots are preferred, native menu and repeat calls read current native settings. Repeat BASE schema is unchanged.",
+    "Initial native hydration precedes document load so recordRecentFiles=false applies before Store.setFile.",
+    "FileRecentLocations.clear() clears native recent storage and emits the exact renderer clearRecent command to active document renderers; session snapshots remain separate."
+  ],
+  "publicInterfaces": {
+    "FileRuntimeSystemPolicy.payload": [
+      "saveOnFileSwitchForced",
+      "systemAlwaysConfirmsChanges"
+    ],
+    "FileRecentLocations.clear()": "Used by File menu and PreferencesController.",
+    "MarkdownDocument.beginPreparedExport(_:markdownPreferences:)": "Optional [String:Any] invocation snapshot; nil uses current AppPreferencesStore.",
+    "MarkdownDocument.switchDocument(to:review:systemAlwaysConfirmsChanges:completion:)": "Default uses real NSDocument close review. Isolated probes inject modal answers without showing sheets.",
+    "NativeFileDropRequest": "requestId/documentId/documentPath/rendererDocumentId/paths/useDraggingPasteboard; drag reads never use general."
+  },
+  "independentChoices": [
+    "System close-windows-on-quit policy suppresses restore modes 1 and 2. Mode 3 remains an explicit custom-folder open. Original macOS host behavior for this exact boundary is unproven.",
+    "Native Controller recognizes the complete configured multi-dot suffix and still validates text bytes. TS/Swift sidebar filtering retains the statically proven renderer last-extension rule; original macOS multi-dot behavior is unproven."
+  ],
+  "limitations": [
+    "Installed Typora macOS factory defaults remain unproven.",
+    "Modal Save/Don't Save/Cancel choices in the headless workflow probe are injected. Real saving, failures, document identity, file bytes, recovery and branch commits are exercised. Sheet presentation and native focus need GUI verification.",
+    "Original native session restoration order and all close-window interactions are not established by the static preference resource. Current independent session behavior is documented and tested.",
+    "The native recent list is app-domain storage behind NSDocumentController virtual methods. Existing previous-build system SharedFileList entries are not migrated.",
+    "Markdown import uses managed persistent absolute file URIs for embedded media. Full original import syntax and portable asset relocation remain separate parity work.",
+    "Original pixel geometry, sidebar context menus, every shortcut and hidden outline filter remain outside this verification."
+  ],
+  "cleanup": {
+    "temporaryNativeFixtures": "Removed by TemporaryDirectory after probes exit.",
+    "temporaryModelCompilerCache": "Removed after final verification.",
+    "ownedDefaultsDomains": [
+      {
+        "domain": "local.typora-replica.file-workflow-qa.34503ca047fd47c2848d989115cf2a8e",
+        "fileAbsent": true
+      },
+      {
+        "domain": "local.typora-replica.file-workflow-qa.34503ca047fd47c2848d989115cf2a8e.bundle",
+        "fileAbsent": true
+      },
+      {
+        "domain": "local.typora-replica.file-workflow-qa.34503ca047fd47c2848d989115cf2a8e.system-policy",
+        "fileAbsent": true
+      }
+    ]
+  },
+  "sourceReference": "evidence/file-preferences-source-reference.json"
+}

@@ -1,0 +1,71 @@
+/* Theme: GitHub
+ * Light theme reproducing Typora 1.14 "Github" metrics.
+ * Color/font values match the installed reference; rules authored independently.
+ * Palette: paper #ffffff, text #333333, link #4183c4. */
+
+body[data-theme="github"] {
+    --paper: #ffffff;
+    --bg: #ffffff;
+    --text: #333333;
+    --text-dim: #777777;
+    --heading: #333333;
+    --link: #4183c4;
+    --border: #dfe2e5;
+    --code-bg: #f3f4f4;
+    --code-text: #333333;
+    --quote-text: #777777;
+    --quote-border: #dfe2e5;
+    --quote-bg: transparent;
+    --mark-bg: #fff8c5;
+    --selection: #b1d7fe;
+    --sidebar-bg: #fafafa;
+    --sidebar-text: #333333;
+    --ui-text: #777777;
+    --ui-hover-bg: #f0f0f0;
+    --font-body: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-heading: var(--font-body);
+    --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    --table-stripe: #f8f8f8;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+body[data-theme="github"] .md-render h1,
+body[data-theme="github"] .md-render h2 {
+    border-bottom: 1px solid #eeeeee;
+}
+
+body[data-theme="github"] .md-render h6 {
+    color: #777777;
+}
+
+body[data-theme="github"] .md-render pre {
+    background-color: #f8f8f8;
+}
+
+body[data-theme="github"] .md-render :not(pre) > code {
+    background-color: #f3f4f4;
+    border: 1px solid #e7eaed;
+    border-radius: 3px;
+    padding: 0 2px;
+}
+
+/* Standalone content follows the reference block metrics. Editor lines have
+ * their own layout rules and do not use these block selectors. */
+body[data-theme="github"] .md-render h1 {
+    line-height: 1.2;
+    margin: 1rem 0;
+}
+
+body[data-theme="github"] .md-render pre {
+    font-size: .9em;
+    line-height: 1.6;
+    margin: 15px 0;
+    padding: 8px 4px 6px;
+}
+
+body[data-theme="github"] .md-render blockquote {
+    margin: .8em 0;
+    padding: 0 15px;
+    border-left-width: 4px;
+}

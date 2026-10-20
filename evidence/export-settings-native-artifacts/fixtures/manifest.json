@@ -1,0 +1,191 @@
+{
+  "scope": "CLI fixture baseline only. No new application consumer, renderer bridge, native UI, or Typora parity verification.",
+  "source": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/source.md",
+  "sourceCRLF": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/source-crlf.md",
+  "yamlWhitelistSource": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/yaml-whitelist.md",
+  "longDocumentSource": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/long-document.md",
+  "image": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/assets 特殊 # % ' $(fixture-literal); [qa]/image 图 #%.png",
+  "imageDimensions": [
+    28,
+    18
+  ],
+  "referenceDocx": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/reference.docx",
+  "opendocumentTemplate": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/custom.opendocument",
+  "epubCss": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/epub 样式 #%.css",
+  "markdownOptions": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/markdown-options.json",
+  "markers": {
+    "docxStyleName": "QA Fixture Style",
+    "docxStyleId": "QAFixtureStyle",
+    "docxStyleColor": "1B6F5A",
+    "odtTemplate": "QA_ODT_TEMPLATE_APPLIED",
+    "extraMetadata": "QA_EXTRA_METADATA 中文 ; $(fixture-literal)",
+    "epubCss": "QA_EPUB_CSS_APPLIED",
+    "headings": [
+      "QA_H1_ALPHA",
+      "QA_H2_ALPHA",
+      "QA_H3_ALPHA",
+      "QA_H1_BETA",
+      "QA_H2_BETA"
+    ],
+    "longTop": "QA_LONG_TOP",
+    "longBottom": "QA_LONG_BOTTOM"
+  },
+  "files": [
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/source.md",
+      "relativePath": "source.md",
+      "bytes": 609,
+      "sha256": "94a49a28d3bce5c0f178d91c6de14ba1c33d82a872211d747b302c79554db6e6"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/source-crlf.md",
+      "relativePath": "source-crlf.md",
+      "bytes": 640,
+      "sha256": "da52ded3613b68c98771fdfabccb7d079431a3dd70c89e34aff28d8df4f2ea0a"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/yaml-whitelist.md",
+      "relativePath": "yaml-whitelist.md",
+      "bytes": 647,
+      "sha256": "991bd29253f94aaa8159827d0cc11dfb2aca4b4dccc012c785627974eaee0e41"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/long-document.md",
+      "relativePath": "long-document.md",
+      "bytes": 56724,
+      "sha256": "e7d673b9962e2d137f31d55e309ffbfc25e842d3ac1221ff3c41d3cf7995ae43"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/markdown-options-source.md",
+      "relativePath": "markdown-options-source.md",
+      "bytes": 538,
+      "sha256": "05f896e7aaf27ddc117d77329c20ca84d91fa395a3935430938628a46df98276"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/assets 特殊 # % ' $(fixture-literal); [qa]/image 图 #%.png",
+      "relativePath": "assets 特殊 # % ' $(fixture-literal); [qa]/image 图 #%.png",
+      "bytes": 102,
+      "sha256": "b6dcaee0bfa64588623820029667d9398585b6c8a8a311a1ed2aff9d1734f2f4"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/epub 样式 #%.css",
+      "relativePath": "epub 样式 #%.css",
+      "bytes": 92,
+      "sha256": "f00ac4826ff1903b4526329a36eca0d57eb62d573a66ac821cae58b98b99981e"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/reference.docx",
+      "relativePath": "reference.docx",
+      "bytes": 11007,
+      "sha256": "d162fcf57213e0bc1b6eaeccee7ec427b8ab2d4eec4a8f972770722436af0876"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/custom.opendocument",
+      "relativePath": "custom.opendocument",
+      "bytes": 8086,
+      "sha256": "5f8f71b58b4ab5abd50a11ba24d6c130d1b9d183e00ca8be71cc06c1806af0ac"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/markdown-options.json",
+      "relativePath": "markdown-options.json",
+      "bytes": 1044,
+      "sha256": "51e3e622d7a2a443f64aa5f32da35904fdb12a0620f932c5a09f9fb527859390"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/pandoc-help.txt",
+      "relativePath": "pandoc-help.txt",
+      "bytes": 5359,
+      "sha256": "c769623c1e9fe5845f1b17b08cb9511f4b8ab0b53a0e53452e761ad9778d17f8"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/pandoc-version.txt",
+      "relativePath": "pandoc-version.txt",
+      "bytes": 331,
+      "sha256": "44716b1559866c5db06c178075506f8120bb5fa39c98261cf20c5f3effd496ef"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/baseline-output/docx-default.docx",
+      "relativePath": "baseline-output/docx-default.docx",
+      "bytes": 11837,
+      "sha256": "8d644da133ec12b52386fea65e4531d6f601d59fd19b8288b3348406bbbd51db"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/baseline-output/docx-reference.docx",
+      "relativePath": "baseline-output/docx-reference.docx",
+      "bytes": 11846,
+      "sha256": "84159c9150ac1aa72b8c0319e3535042bddf1ec13830ae714a3df01d047484d8"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/baseline-output/epub-depth1-split1.epub",
+      "relativePath": "baseline-output/epub-depth1-split1.epub",
+      "bytes": 4960,
+      "sha256": "cfdfa17bb6f8ba6ecb5ccd7b87fbcb82c3008c490773e430f1787779acf275e8"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/baseline-output/epub-depth2-split2.epub",
+      "relativePath": "baseline-output/epub-depth2-split2.epub",
+      "bytes": 5905,
+      "sha256": "ab2db3e82fd3377194ae1497b39fda9ead191ad20e309893ed7fb124b8129948"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/baseline-output/long-document.html",
+      "relativePath": "baseline-output/long-document.html",
+      "bytes": 63729,
+      "sha256": "339d510fd72c4062c2efdff5dea7a9780f46fcbc79fd21afa80f0439139456b8"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/baseline-output/markdown-ascii.md",
+      "relativePath": "baseline-output/markdown-ascii.md",
+      "bytes": 567,
+      "sha256": "4ad5f35aae6f3e314759451cc37e60fdc93b14e1efe5cb86f5966681315dafdc"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/baseline-output/markdown-auto.md",
+      "relativePath": "baseline-output/markdown-auto.md",
+      "bytes": 551,
+      "sha256": "bf0655917f19adee3af14a7db48789806840dd49336cf3865dd8b6080a1feebe"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/baseline-output/markdown-crlf.md",
+      "relativePath": "baseline-output/markdown-crlf.md",
+      "bytes": 562,
+      "sha256": "f8aa8f163f70c116e632a23e5445abb8b4d25d689069a076749f2636309d5294"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/baseline-output/markdown-none.md",
+      "relativePath": "baseline-output/markdown-none.md",
+      "bytes": 551,
+      "sha256": "14c5eda3cd6dc77c98dc4119f6b8fa784197269b40c46bb45f6e6c890283ead0"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/baseline-output/markdown-preserve.md",
+      "relativePath": "baseline-output/markdown-preserve.md",
+      "bytes": 551,
+      "sha256": "93dcba0a010d726a4da20b9228ff2187a616fd8bb03b1bde600a1e3488b48342"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/baseline-output/source-crlf.json",
+      "relativePath": "baseline-output/source-crlf.json",
+      "bytes": 1959,
+      "sha256": "c42e7a63da8dfce28b467ae4b06871f7de84672fad181d7111e0b837996671c3"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/baseline-output/source-lf.json",
+      "relativePath": "baseline-output/source-lf.json",
+      "bytes": 1959,
+      "sha256": "c42e7a63da8dfce28b467ae4b06871f7de84672fad181d7111e0b837996671c3"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/baseline-output/template-and-metadata.odt",
+      "relativePath": "baseline-output/template-and-metadata.odt",
+      "bytes": 8413,
+      "sha256": "36bd088d30c2f6f5aaa4710a56fc9d23667f0230c4486cee76a5d8668ae3d352"
+    },
+    {
+      "path": "/Users/lkc/Code/typora-replica/.cache/export-settings-fixtures/baseline-output/yaml-whitelist.json",
+      "relativePath": "baseline-output/yaml-whitelist.json",
+      "bytes": 1984,
+      "sha256": "7676bcfbc32cf40320b4772ff1598e020a45754d9a2b9836b8487a4152c3bbe9"
+    }
+  ]
+}

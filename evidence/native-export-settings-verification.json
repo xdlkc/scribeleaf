@@ -1,0 +1,252 @@
+{
+  "scope": "Production native ExportSettings helpers against actual DocumentConversion declarations, real fixture shells/Pandoc/files; no GUI or user preference/command execution",
+  "limits": [
+    "User commands retain source cwd; arbitrary command side effects cannot be rolled back.",
+    "Folder commit is a rollback-capable batch, not a directory-wide atomic replacement. Conflicting file/directory types fail without deleting unrelated contents."
+  ],
+  "sources": [
+    "https://support.typora.io/Export/#variables",
+    "https://support.typora.io/Export/#other-formats-using-custom-commands",
+    "https://pandoc.org/MANUAL.html#math-rendering"
+  ],
+  "checks": [
+    {
+      "detail": {
+        "stderrBytes": 16383,
+        "stdoutBytes": 16383
+      },
+      "name": "Concurrent stdout/stderr bursts complete, are bounded and valid UTF-8",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "Child stdin is the null device",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "Real nonzero child status and stderr are propagated",
+      "passed": true
+    },
+    {
+      "detail": {
+        "after": 4,
+        "before": 4
+      },
+      "name": "Failed spawn closes pipe descriptors",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "NUL arguments and environment values fail before spawn",
+      "passed": true
+    },
+    {
+      "detail": {
+        "lateSideEffect": false,
+        "leaderReaped": true,
+        "seconds": 0.41490447500837035
+      },
+      "name": "timeout: group descendants stop and the leader is reaped once",
+      "passed": true
+    },
+    {
+      "detail": {
+        "lateSideEffect": false,
+        "leaderReaped": true,
+        "seconds": 0.3752703410136746
+      },
+      "name": "cancel: group descendants stop and the leader is reaped once",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "Successful background descendant does not hold capture open on pipe EOF",
+      "passed": true
+    },
+    {
+      "detail": {
+        "args": [
+          "/var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-cmd-F6AE6F2D-1C7F-41A3-97AA-CF935033979C/snapshot.md",
+          "/var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-cmd-F6AE6F2D-1C7F-41A3-97AA-CF935033979C/snapshot.md",
+          "/var/folders/yl/hrd826h10vgbd05jhs9yjvhr0000gn/T/typora-cmd-F6AE6F2D-1C7F-41A3-97AA-CF935033979C/snapshot.md",
+          "pre标题 '\"; $(touch INJECTED) `touch ALSO_INJECTED`\n第二行post",
+          "标题 '\"; $(touch INJECTED) `touch ALSO_INJECTED`\n第二行",
+          "标题 '\"; $(touch INJECTED) `touch ALSO_INJECTED`\n第二行",
+          "nested ' \" value",
+          "/Users/lkc/Code/typora-replica/.cache/native-export-settings-33oadsy4/源 folder '\" #$/原稿 ' \" $(literal) #.md",
+          "原稿 ' \" $(literal) #",
+          "原稿 ' \" $(literal) #.md",
+          "/Users/lkc/Code/typora-replica/.cache/native-export-settings-33oadsy4/源 folder '\" #$",
+          "/Users/lkc/Code/typora-replica/.cache/native-export-settings-33oadsy4/output ' \" #.txt",
+          "output ' \" #",
+          "output ' \" #.txt",
+          "2026-10-20",
+          "${title}"
+        ],
+        "cwd": "/Users/lkc/Code/typora-replica/.cache/native-export-settings-33oadsy4/源 folder '\" #$"
+      },
+      "name": "Official path/name macros and source cwd reach the actual shell consumer",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "Macros preserve single/double quotes, literal escapes and nested metadata without evaluation",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "Snapshot input is current UTF-8, private and removed while original remains exact",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "No-dialog commands have empty output macros rather than a source destination",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "Custom command NUL cannot silently truncate executable text",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "Folder commit replaces produced names and recursively retains unrelated files/source",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "A later folder conflict rolls back replaced and newly created entries",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "Folder source collision is rejected without changing original bytes",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "File commit is atomic and a missing output preserves its prior target",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "An intentionally empty regular command output remains valid",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "Folder transaction recovery materials are cleaned after success and rollback",
+      "passed": true
+    },
+    {
+      "detail": {
+        "parsed": [
+          "--css",
+          "/tmp/a b.css",
+          "--metadata",
+          "empty=",
+          "--css",
+          "",
+          "--template",
+          "/tmp/a b.tex",
+          "--metadata",
+          "a\\b"
+        ]
+      },
+      "name": "Pandoc argv splitting retains empty quoted args, spaces and literal backslashes",
+      "passed": true
+    },
+    {
+      "detail": {
+        "blocked": 7
+      },
+      "name": "Exact, compact, clustered and abbreviated transport/default flags are rejected",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "Ordinary Pandoc resources and extra input paths retain argv semantics",
+      "passed": true
+    },
+    {
+      "detail": {
+        "pngFlags": [
+          "--webtex"
+        ],
+        "svgFlags": [
+          "--webtex=https://latex.codecogs.com/svg.latex?",
+          "--metadata",
+          "title=META_TITLE",
+          "--metadata",
+          "author=META_AUTHOR"
+        ]
+      },
+      "name": "Real Pandoc receives valid PNG/default and SVG WebTeX URLs",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "Structured global title/author become real Pandoc metadata",
+      "passed": true
+    },
+    {
+      "detail": {
+        "keys": [
+          "pdf1",
+          "docx",
+          "docx1"
+        ]
+      },
+      "name": "Native normalization avoids reserved/duplicate IDs and freeze rejects removed entries",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "Native PDF/Markdown defaults and boolean JSON values agree with consumers",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "Actual JSON roundtrip keeps toggles boolean and dimensions/quality numeric",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "UI format options override legacy custom entry extras",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "Post folder inheritance honors absent/explicit false and opens on MainActor",
+      "passed": true
+    },
+    {
+      "detail": {
+        "mainActorTickSeconds": 0.03344980700057931
+      },
+      "name": "Post shell runs asynchronously, receives metadata and presents on MainActor",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "Post Task cancellation reaches process group and suppresses late UI",
+      "passed": true
+    }
+  ],
+  "sourceSHA256": {
+    "ExportSettings.swift": "f29a38d1dac18dd575193ee95431bbaf8e0d5016f8c892c93cd787c8367f96ff",
+    "DocumentConversion.swift": "030b08c16d10dd6f1275e9c82e4b836708231fc3af1de4168de263cd700c2dcd"
+  },
+  "compiler": {
+    "passed": true,
+    "languageVersion": "5",
+    "target": "x86_64-apple-macosx13.0",
+    "diagnostics": ""
+  },
+  "execution": {
+    "returnCode": 0,
+    "stderr": ""
+  },
+  "passed": true
+}

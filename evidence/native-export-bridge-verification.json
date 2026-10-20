@@ -1,0 +1,301 @@
+{
+  "generatedAt": "2026-10-19T05:11:20.463989+00:00",
+  "scope": "Real production native save sheet, snapshot/Task/completion path; three representative export producers",
+  "compiler": {
+    "passed": true,
+    "target": "macOS 13 / Swift 5",
+    "diagnostics": ""
+  },
+  "adHocSignature": {
+    "passed": true,
+    "diagnostics": ""
+  },
+  "verifierBundle": "/Users/lkc/Code/typora-replica/.cache/native-export-bridge-verifier/NativeExportVerifier.app",
+  "bundleIdentifier": "com.openai.typora-replica.native-export-bridge-verifier.bc8b521e34774d8d842fc5809233e8c7",
+  "productionSourceSHA256": {
+    "App.swift": "8b8d2f48d7907d70989045494c4660740a36dfb3278599b80dd60be1c1aef0ab",
+    "Clipboard.swift": "069978ada014364b22007d7a271cd0af8ccf87ca8f9841a5abe6ea541a10c879",
+    "DocumentConversion.swift": "8feda6c31aad47ee3bfd5a3380f2ede07fbbd485c6c7ff0d0f2c22817e4c6341",
+    "ExportAssets.swift": "8c689c854b72431d08379d090ae71a189dcd8b14527bd5ff44e00a743660e9c5",
+    "FolderMonitor.swift": "ce107a134183a6fb5d7dca3c369ec060c561991155a16f3255318672dcf4a49a",
+    "ImageExport.swift": "2716d1932e996d630815a45f868a254b9ec8a66192ea05c36e0c468c4758dd7b",
+    "Localization.swift": "f771d263edf44fa411f94211acddcedc5b6de53fbdb70cf53f7954f711cf7c16"
+  },
+  "bundledPandocSHA256": "287e725a56ed196e1820d25acaecc48b769f9489221bd86ad2d44932e98e9af7",
+  "fixtureSourceSHA256": "8d7d2689116715a1c9c5e6e336769016ef78e16626d02cad4e9b6ec2c5baa72f",
+  "fixturePNG_SHA256": "18da04f423c16816ab9227eaa616894f29e0768e7903d2c4fc3aef62b4772761",
+  "actualNativeBridge": {
+    "bundleIdentifier": "com.openai.typora-replica.native-export-bridge-verifier.bc8b521e34774d8d842fc5809233e8c7",
+    "checks": [
+      {
+        "detail": {},
+        "name": "Bundled verified Pandoc discovered by production preflight",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "Fixture image decoded by AppKit",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "docx: exportFinished contains saved filename",
+        "passed": true
+      },
+      {
+        "detail": {
+          "bytes": 11134,
+          "path": "/Users/lkc/Code/typora-replica/.cache/native-export-bridge-verifier/fixture 中文 #100%/bridge-fixture.docx"
+        },
+        "name": "docx: native save created complete file in source folder",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "docx: Task removed before completion notification",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "docx: source identity and later unsaved editor state preserved",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "docx: original UTF-8 Markdown and PNG bytes unchanged",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "docx: atomic export staging removed",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "epub: exportFinished contains saved filename",
+        "passed": true
+      },
+      {
+        "detail": {
+          "bytes": 5831,
+          "path": "/Users/lkc/Code/typora-replica/.cache/native-export-bridge-verifier/fixture 中文 #100%/bridge-fixture.epub"
+        },
+        "name": "epub: native save created complete file in source folder",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "epub: Task removed before completion notification",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "epub: source identity and later unsaved editor state preserved",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "epub: original UTF-8 Markdown and PNG bytes unchanged",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "epub: atomic export staging removed",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "html-plain: exportFinished contains saved filename",
+        "passed": true
+      },
+      {
+        "detail": {
+          "bytes": 334,
+          "path": "/Users/lkc/Code/typora-replica/.cache/native-export-bridge-verifier/fixture 中文 #100%/bridge-fixture.html"
+        },
+        "name": "html-plain: native save created complete file in source folder",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "html-plain: Task removed before completion notification",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "html-plain: source identity and later unsaved editor state preserved",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "html-plain: original UTF-8 Markdown and PNG bytes unchanged",
+        "passed": true
+      },
+      {
+        "detail": {},
+        "name": "html-plain: atomic export staging removed",
+        "passed": true
+      }
+    ],
+    "exports": [
+      {
+        "bytes": 11134,
+        "format": "docx",
+        "notification": {
+          "name": "bridge-fixture.docx",
+          "warnings": ""
+        },
+        "path": "/Users/lkc/Code/typora-replica/.cache/native-export-bridge-verifier/fixture 中文 #100%/bridge-fixture.docx",
+        "snapshotMarker": "BRIDGE_SNAPSHOT_docx"
+      },
+      {
+        "bytes": 5831,
+        "format": "epub",
+        "notification": {
+          "name": "bridge-fixture.epub",
+          "warnings": ""
+        },
+        "path": "/Users/lkc/Code/typora-replica/.cache/native-export-bridge-verifier/fixture 中文 #100%/bridge-fixture.epub",
+        "snapshotMarker": "BRIDGE_SNAPSHOT_epub"
+      },
+      {
+        "bytes": 334,
+        "format": "html-plain",
+        "notification": {
+          "name": "bridge-fixture.html"
+        },
+        "path": "/Users/lkc/Code/typora-replica/.cache/native-export-bridge-verifier/fixture 中文 #100%/bridge-fixture.html",
+        "snapshotMarker": "BRIDGE_SNAPSHOT_html-plain"
+      }
+    ],
+    "fixture": "/Users/lkc/Code/typora-replica/.cache/native-export-bridge-verifier/fixture 中文 #100%",
+    "pid": 54677,
+    "producer": "unmodified production MarkdownDocument.exportDocument",
+    "rendererStarted": false,
+    "savePanel": "real NSSavePanel with visible user-driven Save",
+    "source": "/Users/lkc/Code/typora-replica/.cache/native-export-bridge-verifier/fixture 中文 #100%/bridge-fixture.md",
+    "sourceDiskUTF8": "# SOURCE_DISK_ONLY 中文原稿\n\nDo not export this stale disk snapshot.\n",
+    "status": "passed",
+    "independentFormatDecode": [
+      {
+        "format": "docx",
+        "path": "/Users/lkc/Code/typora-replica/.cache/native-export-bridge-verifier/fixture 中文 #100%/bridge-fixture.docx",
+        "bytes": 11134,
+        "sha256": "43482a467731402d888a377360a8b3cd29c57604e3db92c022f89684e3fb6b45",
+        "snapshotMarker": true,
+        "snapshotBody": true,
+        "noStaleMemory": true,
+        "exactPNG": true,
+        "archiveEntries": [
+          "[Content_Types].xml",
+          "_rels/.rels",
+          "word/document.xml",
+          "word/_rels/document.xml.rels",
+          "word/_rels/footnotes.xml.rels",
+          "word/numbering.xml",
+          "word/styles.xml",
+          "word/footnotes.xml",
+          "word/comments.xml",
+          "docProps/core.xml",
+          "docProps/custom.xml",
+          "word/settings.xml",
+          "word/media/rId10.png",
+          "docProps/app.xml",
+          "word/theme/theme1.xml",
+          "word/fontTable.xml",
+          "word/webSettings.xml"
+        ],
+        "passed": true
+      },
+      {
+        "format": "epub",
+        "path": "/Users/lkc/Code/typora-replica/.cache/native-export-bridge-verifier/fixture 中文 #100%/bridge-fixture.epub",
+        "bytes": 5831,
+        "sha256": "49331aaeb0b2c2b77940daccde528ab5657aeb95c2ce3326bc4eff1848d5b832",
+        "snapshotMarker": true,
+        "snapshotBody": true,
+        "noStaleMemory": true,
+        "exactPNG": true,
+        "archiveEntries": [
+          "mimetype",
+          "META-INF/container.xml",
+          "META-INF/com.apple.ibooks.display-options.xml",
+          "EPUB/content.opf",
+          "EPUB/toc.ncx",
+          "EPUB/nav.xhtml",
+          "EPUB/text/title_page.xhtml",
+          "EPUB/styles/stylesheet1.css",
+          "EPUB/media/file0.png",
+          "EPUB/text/ch001.xhtml"
+        ],
+        "epubMimetype": true,
+        "passed": true
+      },
+      {
+        "format": "html-plain",
+        "path": "/Users/lkc/Code/typora-replica/.cache/native-export-bridge-verifier/fixture 中文 #100%/bridge-fixture.html",
+        "bytes": 334,
+        "sha256": "cad601457539c20a3500bbc3bf1ed96f0c551dca869117a36c4b20d15f18493a",
+        "snapshotMarker": true,
+        "snapshotBody": true,
+        "noStaleMemory": true,
+        "exactPNG": true,
+        "plainHTML": true,
+        "passed": true
+      }
+    ],
+    "fixtureSourceUnchanged": true,
+    "fixturePNGUnchanged": true,
+    "productionSourceUnchangedSinceBuild": {
+      "App.swift": true,
+      "Clipboard.swift": true,
+      "DocumentConversion.swift": true,
+      "ExportAssets.swift": true,
+      "FolderMonitor.swift": true,
+      "ImageExport.swift": true,
+      "Localization.swift": true
+    }
+  },
+  "launchMethod": "Native computer-use tools; Finder may open the exact QA app bundle. No shell GUI launch or permission change.",
+  "productionSourceCurrentMatchesVerifiedCopy": false,
+  "passed": true,
+  "observedNativeUI": {
+    "tool": "mcp__open_computer_use",
+    "launch": "New Finder window, Go to project .cache verifier directory, double-click exact NativeExportVerifier.app",
+    "buttonSequence": [
+      "Export Word",
+      "Save",
+      "Export EPUB",
+      "Save",
+      "Export HTML plain",
+      "Save"
+    ],
+    "saveSheet": {
+      "role": "sheet",
+      "description": "save",
+      "identifier": "save-panel",
+      "defaultNameWithoutHiddenExtension": "bridge-fixture",
+      "where": "fixture 中文 #100%"
+    },
+    "finalWindowTitle": "PASS native export bridge 20/20",
+    "verifierCloseButtonClicked": true,
+    "ownFinderWindowClosed": true,
+    "noShellGUILaunchOrPermissionChanges": true
+  },
+  "temporaryVerifierRemoved": true,
+  "sourceChangesAfterVerification": {
+    "App.swift": {
+      "verified": "8b8d2f48d7907d70989045494c4660740a36dfb3278599b80dd60be1c1aef0ab",
+      "current": "f3dfc87ca5024a466d72e5beddadb2d69154d06a3a2cced4717c650c41188aad"
+    },
+    "ImageExport.swift": {
+      "verified": "2716d1932e996d630815a45f868a254b9ec8a66192ea05c36e0c468c4758dd7b",
+      "current": "ecf0b0c400de4df37140de0f742b9eb73d0560854b021701321b82df4b1b84b9"
+    },
+    "Localization.swift": {
+      "verified": "f771d263edf44fa411f94211acddcedc5b6de53fbdb70cf53f7954f711cf7c16",
+      "current": "a0b62d4c5796a7df7080798c2299985cd51c2e3ce44d6d75720370c5df7a7c21"
+    }
+  },
+  "postVerificationScopeNote": "Historical three-format native export run before repeat-export bridge refactoring. Current production bridge has separate 51-check real-native evidence in repeat-export-native-verification.json; unchanged converter and image producers have their own real-format/WebKit evidence."
+}

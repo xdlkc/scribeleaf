@@ -1,0 +1,23 @@
+import {execFileSync} from 'node:child_process';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {resolve} from 'node:path';
+const cli=process.env.AGENT_BROWSER||'/Users/lkc/.npm/_npx/ad6c181e5b604bdb/node_modules/.bin/agent-browser';
+const run=(...args)=>execFileSync(cli,['--session','typora-qa',...args],{encoding:'utf8'});
+run('set','viewport','1792','1049');
+const markdown=readFileSync('fixtures/acceptance.md','utf8');
+const code=`(async()=>{
+ const {store}=await import('/src/store.ts');
+ store.setPrefs({sidebarVisible:true,sidebarWidth:390,sidebarTab:'files',sourceMode:false,autoSave:false});
+ document.body.classList.add('native-app');
+ document.getElementById('menubar').style.display='none';
+ window.typora.command('files',{root:'fixtures',files:[{name:'acceptance.md',path:'fixtures/acceptance.md',relativePath:'acceptance.md'}]});
+ window.typora.command('load',{markdown:${JSON.stringify(markdown)},path:'fixtures/acceptance.md',name:'acceptance.md'});
+ const v=window.typora.editor;v.dispatch({selection:{anchor:v.state.doc.length}});v.contentDOM.blur();
+ await document.fonts.ready;await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));
+ document.querySelector('.cm-scroller').scrollTop=0;
+ await new Promise(r=>requestAnimationFrame(r));
+ return [...document.querySelectorAll('.cm-header-1,.cm-header-2,.cm-header-3,.cm-list-line,.cm-quote,.lp-table')].map(e=>({text:e.textContent.slice(0,40),x:e.getBoundingClientRect().x,y:e.getBoundingClientRect().y,height:e.getBoundingClientRect().height}));
+})()`;
+const result=execFileSync(cli,['--session','typora-qa','eval','--stdin'],{input:code,encoding:'utf8'});
+writeFileSync('evidence/aligned-geometry.json',JSON.stringify({kind:'Browser with native CSS, not a native window capture',geometry:JSON.parse(result)},null,2));
+console.log(run('screenshot',resolve('evidence/replica-aligned.png')));

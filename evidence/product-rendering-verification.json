@@ -1,0 +1,230 @@
+{
+  "date": "2026-10-19T17:56:25.547Z",
+  "fixture": "---\ntitle: META_PRIVATE\nnot_body: secret\n---\n\n[TOC]\n\n# **中文** *标题* `code`\n\n## Child [link](https://example.com)\n\n# **中文** *标题* `code`\n\n> [!NOTE]\n> NOTE body **bold**\n>\n> > [!TIP]\n> > Nested body\n\n> [!TIP]\n> TIP body **bold**\n\n> [!IMPORTANT]\n> IMPORTANT body **bold**\n\n> [!WARNING]\n> WARNING body **bold**\n\n> [!CAUTION]\n> CAUTION body **bold**\n\n```md\n# Fake heading\n[TOC]\n> [!NOTE]\n<!-- literal-code-comment -->\n```\n\n    > [!WARNING]\n\n<!-- COMMENT_PRIVATE\n<script>window.__commentExecuted=true</script>\n# Invisible heading\n-->\n\nBefore <!-- INLINE_PRIVATE --> after. `<!-- CODE_COMMENT -->`\n\n[Reference][ref] and [Collapsed][] and [Shortcut].\n\n[ref]: https://example.com/ref \"Reference title\"\n[Collapsed]: #中文-标题-code-1\n[Shortcut]: https://example.com/shortcut\n\n---\n\nTAIL",
+  "reference": {
+    "docs": "/Applications/Typora.app/Contents/Resources/TypeMark/Docs/Markdown Reference.md",
+    "css": "/Applications/Typora.app/Contents/Resources/TypeMark/style/base.css"
+  },
+  "browserStatus": "not-run",
+  "results": [
+    {
+      "name": "TOC keeps heading levels, formatted Chinese labels, unique anchors, and excludes code/comments/metadata",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "headings": [
+          {
+            "from": 53,
+            "to": 73,
+            "level": 1,
+            "text": "中文 标题 code",
+            "id": "中文-标题-code"
+          },
+          {
+            "from": 75,
+            "to": 111,
+            "level": 2,
+            "text": "Child link",
+            "id": "child-link"
+          },
+          {
+            "from": 113,
+            "to": 133,
+            "level": 1,
+            "text": "中文 标题 code",
+            "id": "中文-标题-code-1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Export TOC links all resolve to the corresponding heading",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "ids": [
+          "中文-标题-code",
+          "child-link",
+          "中文-标题-code-1"
+        ]
+      }
+    },
+    {
+      "name": "Five alert kinds and nested quote structure render outside code",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "count": 6
+      }
+    },
+    {
+      "name": "Metadata is omitted from exported body and does not become a heading or rule",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "HTML comments are absent and inert; literal comments in code remain",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Reference, collapsed and shortcut links resolve with titles",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "CRLF scan offsets refer to original source bytes",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Unclosed/noninitial --- is ordinary Markdown",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Editing a heading rebuilds TOC labels and matching anchors",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Multiline inline comments crossing blank lines stay hidden and inert",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Existing table, task list, math and footnote export remain functional",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Extended inline formatting and footnotes keep live/export TOC identities equal",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "live": {
+          "from": 7,
+          "to": 43,
+          "level": 1,
+          "text": "Mark H2O X2 x^2 note",
+          "id": "mark-h2o-x2-x2-note"
+        },
+        "exported": "Mark H2O X2 x^2 note"
+      }
+    },
+    {
+      "name": "CodeMirror creates product widgets and editable quote decorations (JSDOM)",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "CodeMirror TOC widget dispatch targets the exact duplicate heading (JSDOM)",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "CodeMirror mode reconfiguration preserves all source bytes (JSDOM)",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "CodeMirror loads full welcome and completes 50 caret updates (JSDOM)",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "elapsedMs": 1357,
+        "sourceLength": 4342
+      }
+    },
+    {
+      "name": "Character input and Enter preserve nested-quote ranges and caret order (state, JSDOM)",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "errors": [],
+        "source": "---\ntitle: Native QA\n---\n\n[TOC]\n\n# QA Head\n\n> [!NOTE]\n> > Note body\n> >\n> > > [!TIP]\n> > > > Tip body\n> > > >\n> > > > - [ ] Task\n> > > >\n> > > > - [ ] <!-- hidden -->\n> > > >\n> > > > TAIL",
+        "tailProgress": [
+          {
+            "char": "T",
+            "head": 184
+          },
+          {
+            "char": "A",
+            "head": 185
+          },
+          {
+            "char": "I",
+            "head": 186
+          },
+          {
+            "char": "L",
+            "head": 187
+          }
+        ],
+        "inputCharacters": 121
+      }
+    },
+    {
+      "name": "Character input and Enter preserve nested-quote ranges and caret order (dom, JSDOM)",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "errors": [],
+        "source": "---\ntitle: Native QA\n---\n\n[TOC]\n\n# QA Head\n\n> [!NOTE]\n> > Note body\n> >\n> > > [!TIP]\n> > > > Tip body\n> > > >\n> > > > - [ ] Task\n> > > >\n> > > > - [ ] <!-- hidden -->\n> > > >\n> > > > TAIL",
+        "tailProgress": [
+          {
+            "char": "T",
+            "head": 184
+          },
+          {
+            "char": "A",
+            "head": 185
+          },
+          {
+            "char": "I",
+            "head": 186
+          },
+          {
+            "char": "L",
+            "head": 187
+          }
+        ],
+        "inputCharacters": 121
+      }
+    },
+    {
+      "name": "DOM input and state input produce the same Markdown continuation result (JSDOM)",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "note": "Enter intentionally continues Markdown quote/list prefixes; this is keyboard entry, not byte-exact document load."
+      }
+    }
+  ],
+  "limitations": [
+    "No complete Typora pixel comparison",
+    "Native PDF generation not rerun; PDF shares tested standalone HTML pipeline"
+  ]
+}

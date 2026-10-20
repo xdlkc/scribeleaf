@@ -1,0 +1,108 @@
+App=local.typora-replica.editor (pid 49103)
+Window: "偏好设置", App: Typora Replica.
+	0 标准窗口 偏好设置 ID: preferences, Secondary Actions: Raise
+		1 滚动区 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+			2 html内容 (selectable, collapsed) Description: Typora Replica, Help:  Secondary Actions: Scroll To Visible
+				3 搜索文本栏 (selectable, collapsed, settable, string) 查找…, Help: , Secondary Actions: Scroll To Visible
+					4 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+						5 文本 (selectable, collapsed) Description:  查找… Secondary Actions: Scroll To Visible
+				6 导览 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+					7 按钮 (selectable, collapsed) 编辑器 Description: , Secondary Actions: Scroll To Visible
+					8 按钮 (selectable, collapsed) 导出 Description: , Secondary Actions: Scroll To Visible
+					9 按钮 (selectable, collapsed) 外观 Description: , Secondary Actions: Scroll To Visible
+					10 按钮 (selectable, collapsed) 通用 Description: , Secondary Actions: Scroll To Visible
+				11 按钮 (selectable, collapsed) 通用 Description: , Secondary Actions: Scroll To Visible
+				12 按钮 (selectable, collapsed) PDF Description: , Secondary Actions: Scroll To Visible
+				13 按钮 (selectable, collapsed) HTML Description: , Secondary Actions: Scroll To Visible
+				14 按钮 (selectable, collapsed) HTML (without Styles) Description: , Secondary Actions: Scroll To Visible
+				15 按钮 (selectable, collapsed) Image Description: , Secondary Actions: Scroll To Visible
+				16 按钮 (selectable, collapsed) Word (.docx) Description: , Secondary Actions: Scroll To Visible
+				17 按钮 (selectable, collapsed) OpenOffice Description: , Secondary Actions: Scroll To Visible
+				18 按钮 (selectable, collapsed) RTF Description: , Secondary Actions: Scroll To Visible
+				19 按钮 (selectable, collapsed) Epub Description: , Secondary Actions: Scroll To Visible
+				20 按钮 (selectable, collapsed) LaTeX Description: , Secondary Actions: Scroll To Visible
+				21 按钮 (selectable, collapsed) Media Wiki Description: , Secondary Actions: Scroll To Visible
+				22 按钮 (selectable, collapsed) reStructuredText Description: , Secondary Actions: Scroll To Visible
+				23 按钮 (selectable, collapsed) Textile Description: , Secondary Actions: Scroll To Visible
+				24 按钮 (selectable, collapsed) OPML Description: , Secondary Actions: Scroll To Visible
+				25 弹出式按钮 (selectable, collapsed) 添加…, Secondary Actions: Scroll To Visible
+				26 按钮 (selectable, collapsed, disabled) 删除, Secondary Actions: Scroll To Visible
+				27 按钮 (selectable, collapsed, disabled) 上移, Secondary Actions: Scroll To Visible
+				28 按钮 (selectable, collapsed, disabled) 下移, Secondary Actions: Scroll To Visible
+				29 按钮 (selectable, collapsed, disabled) 重命名, Secondary Actions: Scroll To Visible
+				30 标题 (selectable, collapsed) 页面大小 Description:  Value: 3, Secondary Actions: Scroll To Visible
+				31 弹出式按钮 (selectable, collapsed) 页面大小, Help:  Value: 默认, Secondary Actions: Scroll To Visible
+				32 文本 (selectable, collapsed) Description:  页边距 Secondary Actions: Scroll To Visible
+					33 文本 (selectable, collapsed) Description:  页边距 Secondary Actions: Scroll To Visible
+				34 弹出式按钮 (selectable, collapsed) 页边距, Help:  Value: 默认, Secondary Actions: Scroll To Visible
+				35 文本 (selectable, collapsed) Description:  宽 x 高 Secondary Actions: Scroll To Visible
+				36 数字栏 (selectable, collapsed) Paper width (mm), Help:  Value: 210, Secondary Actions: Scroll To Visible
+					37 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+					38 步进器 (selectable, collapsed) Description:  Value: 0 Secondary Actions: Scroll To Visible
+						39 未知 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+						40 未知 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+				41 文本 (selectable, collapsed) Description:  mm x Secondary Actions: Scroll To Visible
+				42 数字栏 (selectable, collapsed) Paper height (mm), Help:  Value: 297, Secondary Actions: Scroll To Visible
+					43 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+					44 步进器 (selectable, collapsed) Description:  Value: 0 Secondary Actions: Scroll To Visible
+						45 未知 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+						46 未知 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+				47 文本 (selectable, collapsed) Description:  mm Secondary Actions: Scroll To Visible
+				48 标题 (selectable, collapsed) 主题 Description:  Value: 3, Secondary Actions: Scroll To Visible
+					49 文本 (selectable, collapsed) Description:  主题 Secondary Actions: Scroll To Visible
+				50 弹出式按钮 (selectable, collapsed) 主题, Help:  Value: 自动使用当前主题, Secondary Actions: Scroll To Visible
+				51 按钮 (selectable, collapsed) 更改此选项以在导出时使用独立的主题。, Secondary Actions: Scroll To Visible
+				52 标题 (selectable, collapsed) 分页 Description:  Value: 3, Secondary Actions: Scroll To Visible
+					53 文本 (selectable, collapsed) Description:  分页 Secondary Actions: Scroll To Visible
+				54 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+					55 复选框 (selectable, collapsed) 分页, Help:  Value: 0, Secondary Actions: Scroll To Visible
+					56 文本 (selectable, collapsed) Description:  按一级标题分页 Secondary Actions: Scroll To Visible
+				57 标题 (selectable, collapsed) 页首了解更多… Description:  Value: 3, Secondary Actions: Scroll To Visible
+					58 文本 (selectable, collapsed) Description:  页首 Secondary Actions: Scroll To Visible
+					59 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible
+						60 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible
+				61 文本栏 (selectable, collapsed, settable, string) 页首, Help: , Secondary Actions: Scroll To Visible
+					62 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+				63 弹出式按钮 (selectable, collapsed) 预设, Secondary Actions: Scroll To Visible
+				64 标题 (selectable, collapsed) 页尾了解更多… Description:  Value: 3, Secondary Actions: Scroll To Visible
+					65 文本 (selectable, collapsed) Description:  页尾 Secondary Actions: Scroll To Visible
+					66 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible
+						67 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible
+				68 文本栏 (selectable, collapsed, settable, string) 页尾, Help: , Secondary Actions: Scroll To Visible
+					69 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+				70 弹出式按钮 (selectable, collapsed) 预设, Secondary Actions: Scroll To Visible
+				71 标题 (selectable, collapsed) 作者了解更多… Description:  Value: 3, Secondary Actions: Scroll To Visible
+					72 文本 (selectable, collapsed) Description:  作者 Secondary Actions: Scroll To Visible
+					73 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible
+						74 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible
+				75 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+					76 文本栏 (selectable, collapsed, settable, string) 作者, Help: , Secondary Actions: Scroll To Visible
+						77 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+				78 标题 (selectable, collapsed) 插入额外内容 (HTML)了解更多… Description:  Value: 3, Secondary Actions: Scroll To Visible
+					79 文本 (selectable, collapsed) Description:  插入额外内容 (HTML) Secondary Actions: Scroll To Visible
+					80 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible
+						81 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible
+				82 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+					83 文本输入区 (selectable, collapsed, settable, string) 在 <body /> 中添加, Help: , Secondary Actions: Scroll To Visible
+				84 标题 (selectable, collapsed) 通用了解更多… Description:  Value: 3, Secondary Actions: Scroll To Visible
+					85 文本 (selectable, collapsed) Description:  通用 Secondary Actions: Scroll To Visible
+					86 链接 (selectable, collapsed) 了解更多… Description: , Secondary Actions: Scroll To Visible
+						87 文本 (selectable, collapsed) Description:  了解更多… Secondary Actions: Scroll To Visible
+				88 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+					89 复选框 (selectable, collapsed) 通用, Help:  Value: 0, Secondary Actions: Scroll To Visible
+					90 文本 (selectable, collapsed) Description:  允许 YAML front matters 覆盖当前设置 Secondary Actions: Scroll To Visible
+				91 标题 (selectable, collapsed) 导出后 Description:  Value: 3, Secondary Actions: Scroll To Visible
+					92 文本 (selectable, collapsed) Description:  导出后 Secondary Actions: Scroll To Visible
+				93 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+					94 复选框 (selectable, collapsed) 打开导出文件所在目录, Help:  Value: 0, Secondary Actions: Scroll To Visible
+					95 文本 (selectable, collapsed) Description:  打开导出文件所在目录 Secondary Actions: Scroll To Visible
+				96 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+					97 复选框 (selectable, collapsed) 打开导出文件, Help:  Value: 0, Secondary Actions: Scroll To Visible
+					98 文本 (selectable, collapsed) Description:  打开导出文件 Secondary Actions: Scroll To Visible
+				99 组 (selectable, collapsed) Description:  Secondary Actions: Scroll To Visible
+					100 复选框 (selectable, collapsed) 运行自定义命令, Help:  Value: 0, Secondary Actions: Scroll To Visible
+					101 文本 (selectable, collapsed) Description:  运行自定义命令 Secondary Actions: Scroll To Visible
+		102 关闭按钮
+		103 缩放按钮 (disabled)
+			104 组
+		105 最小化按钮 (disabled)

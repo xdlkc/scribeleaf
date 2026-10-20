@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-10-19T18:21:39.632Z",
+  "passed": true,
+  "fullProductParity": false,
+  "sourceHashes": {
+    "native/Clipboard.swift": "d657ef85e155159ba399d4e4eba3678b807ee9307607c470f3a8da87962d098d",
+    "native/ImagePreferences.swift": "8f5046f1094bb9fed3cef240fcaee3fb35768262d5624d8c6e31b4fb734aad8d",
+    "src/image-preferences.ts": "482d431efbe39adaf2feaa4693bd9b5ccc64cd05131c8d50b5f5119833cac547",
+    "src/editor/clipboard.ts": "f9c00b2b11921ff8ce8395cb423ccbf44067bf5b30b5b3bfd61bfeebc6842733",
+    "scripts/verify-clipboard.mjs": "6bcad9e7ce67a6b0fadca5a7cda792774617e8c18611c462473f6e1644aa4e21",
+    "scripts/verify-image-preferences.mjs": "74d0f3a6f994736ea1fa605d074dcf31ffff12498973c9d61daf0046ee7099ec",
+    "scripts/verify-image-preferences.swift": "6e9f5ff97c559f3c685ec27a3231d1021d3f57c6f7cb23627dcd98ed59643fc5",
+    "scripts/verify-image-preferences-dom.mjs": "033eb1446d69345a0bb46da89d05bfa6cae1e1e6da3dbbfcc09dded9e36cccec"
+  },
+  "checks": {
+    "native": {
+      "file": "image-preferences-native-verification.json",
+      "passed": 50,
+      "total": 50,
+      "sourceMatchesCurrent": {
+        "native/Clipboard.swift": true,
+        "native/ImagePreferences.swift": true,
+        "native/ExportSettings.swift": true,
+        "native/DocumentConversion.swift": true,
+        "scripts/verify-image-preferences.swift": true
+      }
+    },
+    "dom": {
+      "file": "image-preferences-dom-verification.json",
+      "passed": 51,
+      "total": 51
+    },
+    "clipboardRegression": 70,
+    "typecheck": {
+      "exitCode": 0,
+      "output": "> typora-replica-editor@0.1.0 typecheck\n> tsc --noEmit"
+    }
+  },
+  "reference": "image-preferences-reference.json",
+  "consumers": {
+    "imageInsertAction": "Native plan executes current/assets/per-file/custom copy, upload, or normal save/reference.",
+    "imageCopyLocal": "Existing local-file/YAML operations use the local gate.",
+    "imageCopyOnline": "Online HTML/URI paste invokes native download/copy/upload when the online rule is active.",
+    "allowImageUpload": "YAML upload/ipic permission is checked; global upload remains independent.",
+    "useRelativeImagePaths": "Native display paths are relative only below the document folder.",
+    "relativeImageDotPrefix": "Native generated relative paths optionally include ./ including hidden-file names.",
+    "escapeImageURLs": "Renderer formats readable or escaped local image destinations; network URLs retain URI semantics.",
+    "imageUploader": "Custom, uPic, Picsee, PicGo/PicList call real providers; missing or unsupported providers return real errors.",
+    "customImageFolder": "Native folder plan expands each filename token without its final extension.",
+    "customImageUploadCommand": "Native Bash command receives document macros via environment and images as separate literal argv. Process groups enforce cancellation/timeouts."
+  },
+  "integration": {
+    "copyRenderer": "Uses shared renderClipboardMarkdown(source, store.prefs).",
+    "fileDrop": "Calls root-owned handleNonImageFileDrop(event,view) before normal image flow.",
+    "cancellation": "Renderer reset/destroy cancels sent requests; root wired native fileURL change/close to cancelAllClipboardImages.",
+    "uploaderTest": "ImageUploaderTester.start(requestId:values:completion:) and cancel(requestId:) execute two temporary own PNGs; no system clipboard."
+  },
+  "safety": {
+    "systemClipboardReadByTests": false,
+    "systemClipboardWrittenByTests": false,
+    "cloudUploadByTests": false,
+    "originalTyporaMutated": false,
+    "originalFixtureAndImageBytePreservationVerified": true,
+    "externalHarnessUsed": false
+  },
+  "limitations": [
+    "iPic named-pasteboard/keyed-archive integration is not implemented; its selection reports unavailable.",
+    "Live third-party uploader apps/accounts/cloud round trips were not tested. uPic/Picsee protocols and PicGo/PicList loopback are source-backed implementations.",
+    "Original raw screenshot gate is not proven. Replica preserves its established raw screenshot copy/save behavior.",
+    "YAML upload refusal retains the source; the original enable-permission dialog is not yet implemented.",
+    "Project image settings, typora-root-url, FTP download, and original YAML absolute-path corner cases remain unverified or unfinished.",
+    "Actual native user save/copy panels were not opened in this helper suite; pending UI integration belongs to the coordinator.",
+    "Default relative/escape settings preserve prior replica behavior and are not verified macOS factory defaults."
+  ]
+}

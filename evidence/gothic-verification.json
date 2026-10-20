@@ -1,0 +1,98 @@
+{
+  "scope": "HTML sample computed styles and font loading, not full editor pixel parity",
+  "results": [
+    {
+      "width": 700,
+      "passed": true,
+      "differences": [],
+      "fonts": [
+        {
+          "family": "TeXGyreAdventor",
+          "status": "loaded"
+        },
+        {
+          "family": "TeXGyreAdventor",
+          "status": "loaded"
+        },
+        {
+          "family": "TeXGyreAdventor",
+          "status": "loaded"
+        },
+        {
+          "family": "TeXGyreAdventor",
+          "status": "loaded"
+        },
+        {
+          "family": "Didact Gothic",
+          "status": "loaded"
+        },
+        {
+          "family": "Didact Gothic",
+          "status": "loaded"
+        }
+      ]
+    },
+    {
+      "width": 1200,
+      "passed": true,
+      "differences": [],
+      "fonts": [
+        {
+          "family": "TeXGyreAdventor",
+          "status": "loaded"
+        },
+        {
+          "family": "TeXGyreAdventor",
+          "status": "loaded"
+        },
+        {
+          "family": "TeXGyreAdventor",
+          "status": "loaded"
+        },
+        {
+          "family": "TeXGyreAdventor",
+          "status": "loaded"
+        },
+        {
+          "family": "Didact Gothic",
+          "status": "loaded"
+        },
+        {
+          "family": "Didact Gothic",
+          "status": "loaded"
+        }
+      ]
+    },
+    {
+      "width": 1900,
+      "passed": true,
+      "differences": [],
+      "fonts": [
+        {
+          "family": "TeXGyreAdventor",
+          "status": "loaded"
+        },
+        {
+          "family": "TeXGyreAdventor",
+          "status": "loaded"
+        },
+        {
+          "family": "TeXGyreAdventor",
+          "status": "loaded"
+        },
+        {
+          "family": "TeXGyreAdventor",
+          "status": "loaded"
+        },
+        {
+          "family": "Didact Gothic",
+          "status": "loaded"
+        },
+        {
+          "family": "Didact Gothic",
+          "status": "loaded"
+        }
+      ]
+    }
+  ]
+}

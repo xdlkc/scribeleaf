@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-19T03:51:25.479Z",
+  "results": [
+    {
+      "name": "Load Markdown without changes",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Repeated live/source switches preserve all bytes",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Chinese and unknown syntax survive mode switches",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "CRLF line endings survive mode switches",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Code fence keeps first content line decoration",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Unclosed code fence keeps its final line visible",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Restore acceptance document",
+      "passed": true,
+      "detail": {
+        "editable": true,
+        "ok": true
+      }
+    },
+    {
+      "name": "Footnote reference renders label and preserves source",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Clicking footnote reaches its definition",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Keyboard insertion changes document",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Loaded document sends edits to native bridge",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Undo removes edit",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Redo restores edit",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Native close command reaches NSDocument bridge",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Restore fixture for visual evidence",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    }
+  ]
+}

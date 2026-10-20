@@ -1,0 +1,205 @@
+{
+  "date": "2026-10-19T15:05:39.568Z",
+  "environment": "Real isolated Chromium via agent-browser CDP",
+  "browserVerified": true,
+  "context": {
+    "loadedAssets": [
+      "http://127.0.0.1:5182/assets/index-C87Y-uBV.js",
+      "http://127.0.0.1:5182/assets/style-BvWFNwI7.css"
+    ],
+    "url": "http://127.0.0.1:5182/",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      633
+    ]
+  },
+  "frozenBuildDirectory": ".cache/export-settings-dist/editor",
+  "frozenBuildHashes": {
+    "index-C87Y-uBV.js": "6e7ea99ac343af02841835f5a6c9c2783905e712583e58c512a000d4b31be445",
+    "style-BvWFNwI7.css": "e29772ed2d4a1e4c27d48e8eb87a40ab6c7a8fd3f4877193123b8b685adf2d0c"
+  },
+  "sharedCaseSource": "scripts/verify-nested-editing.mjs",
+  "limitations": [
+    "Programmatic state/DOM checks use the actual application and browser, but only the explicit click/keyboard cases use CDP input.",
+    "No native IME candidate UI or system clipboard was exercised.",
+    "Editing checks only. Export and preferences have separate verification."
+  ],
+  "results": [
+    {
+      "detail": {
+        "bullets": 1,
+        "checkboxes": [
+          true,
+          false,
+          true,
+          false
+        ],
+        "numbers": [
+          "13."
+        ]
+      },
+      "name": "Nested quote task/list widgets use parsed marker positions and hide task numbers (Chromium)",
+      "passed": true
+    },
+    {
+      "detail": {
+        "changedUnitsPerClick": 1,
+        "clicked": 4
+      },
+      "name": "Nested checkbox clicks edit one exact state character and support undo/redo (Chromium)",
+      "passed": true
+    },
+    {
+      "detail": {
+        "fakeTaskWidgets": 0
+      },
+      "name": "Quoted/list-contained fences, indented code and HTML never create fake task widgets (Chromium)",
+      "passed": true
+    },
+    {
+      "detail": {
+        "selection": {
+          "main": 0,
+          "ranges": [
+            {
+              "anchor": 52,
+              "head": 52
+            }
+          ]
+        },
+        "sourceLength": 243,
+        "switches": 16
+      },
+      "name": "Repeated live/source switches retain exact nested source and selection (Chromium)",
+      "passed": true
+    },
+    {
+      "detail": {
+        "cases": 4
+      },
+      "name": "Task continuation caret modifies its owner, including nested ordered tasks (Chromium)",
+      "passed": true
+    },
+    {
+      "detail": {
+        "unchangedCarets": 4
+      },
+      "name": "Plain text, fake tasks and adjacent unowned paragraphs remain unchanged (Chromium)",
+      "passed": true
+    },
+    {
+      "detail": {
+        "quotedCodeUnchanged": true,
+        "realTaskWidgets": 1
+      },
+      "name": "Unclosed nested fences end with their quote/list container and do not mask later tasks (Chromium)",
+      "passed": true
+    },
+    {
+      "detail": {
+        "excludedFinalTask": true,
+        "forwardAndReverseSelections": true
+      },
+      "name": "Selection starting on a continuation uses its owner state for all selected tasks (Chromium)",
+      "passed": true
+    },
+    {
+      "detail": {
+        "edits": 1
+      },
+      "name": "Multiple carets on one task deduplicate its state edit (Chromium)",
+      "passed": true
+    },
+    {
+      "detail": {
+        "bomRetained": true,
+        "serializedCRLF": true
+      },
+      "name": "CRLF serialization and unknown source survive nested task commands and modes (Chromium)",
+      "passed": true
+    },
+    {
+      "detail": {
+        "generated": "ref-4"
+      },
+      "name": "Reference allocation sees nested quote/list definitions, case and parsed labels (Chromium)",
+      "passed": true
+    },
+    {
+      "detail": {
+        "excludedScopes": [
+          "metadata",
+          "quote fence",
+          "list fence",
+          "indented code",
+          "comment",
+          "escaped bracket",
+          "invalid definition"
+        ],
+        "generated": "ref"
+      },
+      "name": "Reference allocation ignores code, comments, metadata, escaped brackets and invalid definitions (Chromium)",
+      "passed": true
+    },
+    {
+      "detail": {
+        "generated": "ref-2"
+      },
+      "name": "Reference definition command avoids quoted names and selects only URL (Chromium)",
+      "passed": true
+    },
+    {
+      "detail": [],
+      "name": "No browser runtime exceptions",
+      "passed": true
+    },
+    {
+      "name": "Actual browser click changes a quoted task",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "source": "> > - [ ] checked\n> > - [ ] unchecked\n\nTAIL"
+      }
+    },
+    {
+      "name": "Actual keyboard undo restores quoted task",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Actual keyboard redo changes only quoted task",
+      "passed": true,
+      "detail": {
+        "ok": true
+      }
+    },
+    {
+      "name": "Actual text input and Enter retain nested quote markers and tail",
+      "passed": true,
+      "detail": {
+        "errors": [],
+        "ok": true,
+        "source": "> > - [ ] task\n> > - [ ] child\n> > TAIL"
+      }
+    },
+    {
+      "name": "Actual Unicode and literal punctuation input survive source switches",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "source": "> > - [ ] task\n> > - [ ] child\n> > TAIL 中文 🐈 \"straight\" --"
+      }
+    },
+    {
+      "name": "Browser remains free of runtime exceptions after actual input",
+      "passed": true,
+      "detail": {
+        "errors": [],
+        "ok": true
+      }
+    }
+  ]
+}

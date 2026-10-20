@@ -1,0 +1,75 @@
+{
+  "scope": "Unmodified Latin subset font files, copied read-only from installed Typora resources. CSS is independently authored.",
+  "licenses": [
+    {
+      "file": "Merriweather-OFL-1.1.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/merriweather/OFL.txt",
+      "copyright": "Copyright 2016 The Merriweather Project Authors (https://github.com/EbenSorkin/Merriweather), with Reserved Font Name \"Merriweather\".",
+      "verification": "Merriweather/Lato WOFF name tables identify original copyright and OFL URL; PT Serif family license confirmed in official Google Fonts repository."
+    },
+    {
+      "file": "Lato-OFL-1.1.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/lato/OFL.txt",
+      "copyright": "Copyright (c) 2010-2011 by tyPoland Lukasz Dziedzic with Reserved Font Name \"Lato\". Licensed under the SIL Open Font License, Version 1.1.",
+      "verification": "Merriweather/Lato WOFF name tables identify original copyright and OFL URL; PT Serif family license confirmed in official Google Fonts repository."
+    }
+  ],
+  "fonts": [
+    {
+      "file": "src/assets/fonts/pixyll/lato-v14-latin-300.woff",
+      "sha256": "8084a57f30a2d3d730b5d25b8d2ccb18369d90d333144231704418d555c20c0f",
+      "bytes": 29852,
+      "source": "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/pixyll/lato-v14-latin-300.woff",
+      "modified": false
+    },
+    {
+      "file": "src/assets/fonts/pixyll/lato-v14-latin-300italic.woff",
+      "sha256": "cca6a06b797908e58ca2f61c3572dcc8c38ad954cfd5c4b28f054b5ab5722ff0",
+      "bytes": 22312,
+      "source": "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/pixyll/lato-v14-latin-300italic.woff",
+      "modified": false
+    },
+    {
+      "file": "src/assets/fonts/pixyll/lato-v14-latin-900.woff",
+      "sha256": "2a6deb3135f92894e02fc63f6faa395e639fd44bfb3e7664608746715cd21bb7",
+      "bytes": 27260,
+      "source": "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/pixyll/lato-v14-latin-900.woff",
+      "modified": false
+    },
+    {
+      "file": "src/assets/fonts/pixyll/lato-v14-latin-900italic.woff",
+      "sha256": "dc77515a1fa579cc5fd321b71ea6c86b7c87dc131fdff7793c8441cfd1ea96b4",
+      "bytes": 28688,
+      "source": "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/pixyll/lato-v14-latin-900italic.woff",
+      "modified": false
+    },
+    {
+      "file": "src/assets/fonts/pixyll/merriweather-v19-latin-300.woff",
+      "sha256": "b218f71fe5aed94274e74900d26a23a2d1cb3f4ce996a91f8fcdc12225eec3ad",
+      "bytes": 22872,
+      "source": "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/pixyll/merriweather-v19-latin-300.woff",
+      "modified": false
+    },
+    {
+      "file": "src/assets/fonts/pixyll/merriweather-v19-latin-300italic.woff",
+      "sha256": "f913b4b7095e46a38b950817327530cb8408c72455d961540b19d56d4c955c5e",
+      "bytes": 22884,
+      "source": "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/pixyll/merriweather-v19-latin-300italic.woff",
+      "modified": false
+    },
+    {
+      "file": "src/assets/fonts/pixyll/merriweather-v19-latin-700.woff",
+      "sha256": "9f3beb1842e820a05015f6f441dfb98bb81172128d43b2397db83134c75c38f1",
+      "bytes": 22696,
+      "source": "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/pixyll/merriweather-v19-latin-700.woff",
+      "modified": false
+    },
+    {
+      "file": "src/assets/fonts/pixyll/merriweather-v19-latin-700italic.woff",
+      "sha256": "b86cf6cbe82990b92fc7657f24c2a05c9c07be31b97f560d6ea4772d99221f27",
+      "bytes": 23024,
+      "source": "/Applications/Typora.app/Contents/Resources/TypeMark/style/themes/pixyll/merriweather-v19-latin-700italic.woff",
+      "modified": false
+    }
+  ]
+}

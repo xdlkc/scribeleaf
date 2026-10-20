@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-19T04:42:58.768Z",
+  "nativePid": 8164,
+  "interaction": "Native keyboard input with Enter-driven Markdown continuation, native Save panel, TOC click, Command Option L and Undo.",
+  "sourceInput": "---\ntitle: NATIVE_META\n---\n\n[TOC]\n\n# 原生验收\n\n## 第二节\n\n> [!NOTE]\n> 提醒正文\n\n> [!WARNING]\n> 警告正文\n\n- [x] 已完成\n- [ ] 待完成\n\n<!-- HIDDEN_NATIVE_COMMENT -->\n\n[内部链接][ref]\n\n[ref]: #第二节\n\nTAIL\n\n\"straight\" -- -- 'single'",
+  "checks": {
+    "tocVisible": true,
+    "tocSelectedSecondHeading": true,
+    "commentsInertAndHidden": true,
+    "referenceCommandSelectsURL": true,
+    "undoClearsDirtyTitle": true,
+    "tailSurvivesNativeSave": true,
+    "literalCommentSurvivesNativeSave": true,
+    "literalPunctuationSurvivesNativeSave": true
+  },
+  "screenshot": "replica-product-native.png",
+  "limitations": [
+    "Typed Enter continues Markdown prefixes, so typed multi-line input is not equivalent to pasting or loading a file.",
+    "Does not verify full native menu parity, folder UI events or complete pixel alignment."
+  ],
+  "scriptsUsedSystemClipboard": false,
+  "ok": true,
+  "savedFixture": "fixtures/image paths #100%/typing-repro-final.md"
+}

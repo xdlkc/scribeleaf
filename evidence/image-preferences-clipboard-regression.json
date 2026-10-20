@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-10-19T18:21:39.628Z",
+  "passed": true,
+  "exitCode": 0,
+  "totalChecks": 70,
+  "javascriptPassed": true,
+  "swiftParserChecks": 13,
+  "scope": "Existing clipboard suite unchanged assertions; only production Swift dependencies were added to the standalone compiler input.",
+  "sourceHashes": {
+    "native/Clipboard.swift": "d657ef85e155159ba399d4e4eba3678b807ee9307607c470f3a8da87962d098d",
+    "native/ImagePreferences.swift": "8f5046f1094bb9fed3cef240fcaee3fb35768262d5624d8c6e31b4fb734aad8d",
+    "src/image-preferences.ts": "482d431efbe39adaf2feaa4693bd9b5ccc64cd05131c8d50b5f5119833cac547",
+    "src/editor/clipboard.ts": "f9c00b2b11921ff8ce8395cb423ccbf44067bf5b30b5b3bfd61bfeebc6842733",
+    "scripts/verify-clipboard.mjs": "6bcad9e7ce67a6b0fadca5a7cda792774617e8c18611c462473f6e1644aa4e21",
+    "scripts/verify-image-preferences.mjs": "74d0f3a6f994736ea1fa605d074dcf31ffff12498973c9d61daf0046ee7099ec",
+    "scripts/verify-image-preferences.swift": "6e9f5ff97c559f3c685ec27a3231d1021d3f57c6f7cb23627dcd98ed59643fc5",
+    "scripts/verify-image-preferences-dom.mjs": "033eb1446d69345a0bb46da89d05bfa6cae1e1e6da3dbbfcc09dded9e36cccec"
+  }
+}

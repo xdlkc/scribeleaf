@@ -1,0 +1,1367 @@
+{
+  "task": "export-settings-reference",
+  "method": "Read-only TypeMark JS/locale/schema inspection. No GUI, no user prefs, no native runtime argv observation. Repeat-export facts reused from evidence/repeat-export-reference.json without re-audit.",
+  "scopeNote": "Independent export-preferences panel later. Do not copy original implementation. Original default Pandoc argv uses native AST (-f native); that string is evidence of original wiring, not a replica Markdown-snapshot command.",
+  "sourceCatalog": {
+    "app": "Typora 1.14.10",
+    "typeMark": "/Applications/Typora.app/Contents/Resources/TypeMark",
+    "files": {
+      "Preferences.962926a4.0b4e81f7.js": {
+        "path": "page-dist/static/js/Preferences.962926a4.0b4e81f7.js",
+        "bytes": 300588,
+        "sha256": "8871c9599b875e23cbe80127450ad6222a1f5b40e6669231347444815507a7a0"
+      },
+      "localSettingIndex.a2c75cbd.068b97ef.js": {
+        "path": "page-dist/static/js/localSettingIndex.a2c75cbd.068b97ef.js",
+        "bytes": 271860,
+        "sha256": "d5622820a567340bc10f0a6a52fc4ac9732764539d13d5138e1a3dc96c0d95bb",
+        "note": "Inventoried; no typora-/allowPerFile export schema hits. localSettingUI not the export-preferences store."
+      },
+      "setting.html": {
+        "path": "page-dist/setting.html",
+        "bytes": 3627,
+        "sha256": "a2857fa2d29e9fbb61e469cc02bd5568be42985dfabd6c84f7f8596b570f053b"
+      },
+      "local-setting.html": {
+        "path": "page-dist/local-setting.html",
+        "bytes": 3249,
+        "sha256": "755074b33ded3947e488ed326f2a588b3809e355f2fbfdb0f70d4aeea2eb1505"
+      },
+      "frame.js": {
+        "path": "appsrc/window/frame.js",
+        "bytes": 1712126,
+        "sha256": "b08c94bab8e9994363fcf928a4ea927d7bbbcd1e84d70ac41eef55475089fae1"
+      },
+      "config.json": {
+        "path": "lib/bootstrape/config.json",
+        "bytes": 17002,
+        "sha256": "c62aebc97a746f1211c29027f218ce665bc118d89374c0b2a538608d37b25d27",
+        "note": "Top keys vars/css/js/customizerUrl only; no export defaults."
+      }
+    },
+    "localesUsed": [
+      "locales/Base.lproj/Panel.json",
+      "locales/Base.lproj/Menu.json"
+    ]
+  },
+  "offsetConvention": "character offsets in UTF-8 decoded JS (Python str.find), not bytes.",
+  "evidence": {
+    "E_schemaMap": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "Y=function(e){switch(e)",
+      "characterOffset": 222933,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "Y=function(e){switch(e){case\"pdf\":return j;case\"latex-pdf\":return z;case\"html\":return F;case\"html-plain\":return L;case\"image\":return M;case\"docx\":return V;case\"odt\":return W;case\"rtf\":return U;case\"epub\":return B;case\"latex\":return H;case\"wiki\":return $;case\"rst\":return q;case\"textile\":return G;case\"opml\":return Q;case\"markdown\":return J;case\"native\":return I;case\"pandoc\":return R;case\"custom\":return A}}",
+      "anchor": "Y=function(e){switch(e)",
+      "snippet": "Y=function(e){switch(e){case\"pdf\":return j;case\"latex-pdf\":return z;case\"html\":return F;case\"html-plain\":return L;case\"image\":return M;case\"docx\":return V;case\"odt\":return W;case\"rtf\":return U;case\"epub\":return B;case\"latex\":return H;case\"wiki\":return $;case\"rst\":return q;case\"textile\":return G;case\"opml\":return Q;case\"markdown\":return J;case\"native\":return I;case\"pandoc\":return R;case\"custom\":return A}},X=[{name:\"Word (.docx)\",type:\"docx\",key:\"docx\"},{name:\"OpenOffice\",type:",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_builtinTabs": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "v=[\"general\",\"pdf\",\"html\",\"html-plain\",\"image\"]",
+      "characterOffset": 234496,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "ce=[{\"name\":\"PDF (Typora / Webkit)\",\"type\":\"pdf\"},{\"name\":\"PDF (LaTeX / Pandoc)\",\"type\":\"latex-pdf\"},{\"name\":\"HTML\",\"type\":\"html\"},{\"name\":\"HTML (without Styles)\",\"type\":\"html-plain\"},{\"name\":\"Image\",\"type\":\"image\"}].concat(X,[{\"name\":\"Markdown (Other Spec)\",\"type\":\"markdown\"},{\"name\":\"Native (Pandoc)\",\"type\":\"native\"},{\"name\":\"Pandoc\",\"type\":\"pandoc\"},{\"name\":\"Custom\",\"type\":\"custom\"}])",
+      "anchor": "v=[\"general\",\"pdf\",\"html\",\"html-plain\",\"image\"]",
+      "snippet": "v=[\"general\",\"pdf\",\"html\",\"html-plain\",\"image\"],k=v.indexOf(r)>-1,E=(t.getValue(\"customExport\")||X).filter((function(e){return!!e})),x=function(){var e,n=ce[f],a=v.indexOf(n.type)>-1?1:0;for(E=S(E);e=n.type+(a||\"\"),E.find((function(t){return t.key===e}));)a++;var r={key:e,name:n.name+(a?\"-\"+a:\"\"),type:n.type};E.push(r),t.onChange(\"customExport\",E),h(null),o(e),s(!0)},C=function(e,n){(E=S(E)).find((function(t){return t.key===e})).name=n,t.onChange(\"customExport\",E),s(!1)},T=fu",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_convertersX": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "X=[...9 converters]",
+      "characterOffset": 223341,
+      "confidence": "direct literal",
+      "note": "Original type/key is wiki, not mediawiki. Replica png/mediawiki names differ.",
+      "summaryNotVerbatim": "X=[{name:\"Word (.docx)\",type:\"docx\",key:\"docx\"},{name:\"OpenOffice\",type:\"odt\",key:\"odt\"},{name:\"RTF\",type:\"rtf\",key:\"rtf\"},{name:\"Epub\",type:\"epub\",key:\"epub\"},{name:\"LaTeX\",type:\"latex\",key:\"latex\"},{name:\"Media Wiki\",type:\"wiki\",key:\"wiki\"},{name:\"reStructuredText\",type:\"rst\",key:\"rst\"},{name:\"Textile\",type:\"textile\",key:\"textile\"},{name:\"OPML\",type:\"opml\",key:\"opml\"}]",
+      "anchor": "X=[{name:\"Word (.docx)\"",
+      "snippet": "X=[{name:\"Word (.docx)\",type:\"docx\",key:\"docx\"},{name:\"OpenOffice\",type:\"odt\",key:\"odt\"},{name:\"RTF\",type:\"rtf\",key:\"rtf\"},{name:\"Epub\",type:\"epub\",key:\"epub\"},{name:\"LaTeX\",type:\"latex\",key:\"latex\"},{name:\"Media Wiki\",type:\"wiki\",key:\"wiki\"},{name:\"reStructuredText\",type:\"rst\",key:\"rst\"},{name:\"Textile\",type:\"textile\",key:\"textile\"},{name:\"OPML\",type:\"opml\",key:\"opml\"}],Z=function(e){var t=e.label,n=e.active,a=e.onClick,r=e.onRename,o=e.rename,i=e.tab,l=m.a.useContext(y.a),u",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_persistKeys": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "te / getValue export.",
+      "characterOffset": 225255,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "te=function(e,t){return function(n,a){var r=e.getValue(\"export.\"+t)||{},o=Object.assign({},r);o[n]=a,e.onChange(\"export.\"+t,o)}}",
+      "anchor": "te=function(e,t){return function(n,a)",
+      "snippet": "te=function(e,t){return function(n,a){var r=e.getValue(\"export.\"+t)||{},o=Object.assign({},r);o[n]=a,e.onChange(\"export.\"+t,o)}},ne=function(e){var t=e.app,n=t.getValue(\"export.general\")||{};return m.a.createElement(\"div\",null,m.a.createElement(w.k,{title:\"Default Folder for Exported File\"},m.a.createElement(w.r,{keyName:\"exportFolder\",value:n.exportFolder||\"\",onChange:te(t,\"general\"),options:{\"\":\"Auto\",same:\"Same folder with current file\",custom:\"Custom location\"}}),\"custom\"",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_generalUI": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "ne / export.general",
+      "characterOffset": 225384,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "n=t.getValue(\"export.general\")||{}; ... keyName:\"exportFolder\",value:n.exportFolder||\"\", ... options:{\"\":\"Auto\",same:\"Same folder with current file\",custom:\"Custom location\"} ... keyName:\"customExportPath\" ... keyName:\"pandocPath\",value:t.getValue(\"pandocPath\"),placeholder:Object(b.a)(\"(Auto Detect)\") ... title:\"After Export\" ... label:\"Open exported file location\",keyName:\"openExportLocation\",checked:!!n.openExportLocation",
+      "anchor": "ne=function(e){var t=e.app",
+      "snippet": "ne=function(e){var t=e.app,n=t.getValue(\"export.general\")||{};return m.a.createElement(\"div\",null,m.a.createElement(w.k,{title:\"Default Folder for Exported File\"},m.a.createElement(w.r,{keyName:\"exportFolder\",value:n.exportFolder||\"\",onChange:te(t,\"general\"),options:{\"\":\"Auto\",same:\"Same folder with current file\",custom:\"Custom location\"}}),\"custom\"===n.exportFolder?m.a.createElement(ee,{keyName:\"customExportPath\",value:n.customExportPath,defaultValue:window.Setting.documentP",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_pdfSchemaJ": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "j={paper,...}",
+      "characterOffset": 211143,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "j={paper:{type:\"paper\",label:\"Paper Size\",default:window.isMac?\"\":\"A4\"},exportTheme:{type:\"themeSelect\",excludeDark:!1,label:\"Theme\",hint:\"Change this option to specify a separated theme for export.\"},splitPages:{type:\"checkbox\",label:\"Page Break\",checkboxLabel:\"Page Break Between Top Headings\"},header:{type:\"string\",label:\"Header\",default:\"\",placeholder:\"None\",presetOptions:[\"${title}\",\"${author}\",\"${pageNo}\",\"${today}\"]},footer:{type:\"string\",label:\"Footer\",default:\"\",placeholder:\"None\",...},author:{type:\"string\",label:\"Author\",placeholder:\"Empty\"},appendBody:{type:\"textarea\",label:\"Append Extra Content (HTML)\"},allowPerFileSetting:{type:\"checkbox\",label:\"General\",checkboxLabel:\"Read and overwrite export settings from YAML front matters\"}}",
+      "anchor": "j={paper:",
+      "snippet": "j={paper:{type:\"paper\",label:\"Paper Size\",default:window.isMac?\"\":\"A4\"},exportTheme:{type:\"themeSelect\",excludeDark:!1,label:\"Theme\",hint:\"Change this option to specify a separated theme for export.\"},splitPages:{type:\"checkbox\",label:\"Page Break\",checkboxLabel:\"Page Break Between Top Headings\"},header:{type:\"string\",label:\"Header\",default:\"\",placeholder:\"None\",presetOptions:[\"${title}\",\"${author}\",\"${pageNo}\",\"${today}\"],hintLink:\"https://support.typora.io/Export/#header--fo",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_htmlPlainL": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "L={appendHead,...}",
+      "characterOffset": 212300,
+      "confidence": "direct literal",
+      "note": "openExportLocation:!0 is a schema object flag, not proven persisted default. See E_ae.",
+      "summaryNotVerbatim": "L={appendHead:{type:\"textarea\",label:\"Append in <head />\"},appendBody:{type:\"textarea\",label:\"Append in <body />\"},allowPerFileSetting:{type:\"checkbox\",label:\"General\",checkboxLabel:\"Read and overwrite export settings from YAML front matters\"},openExportLocation:!0}",
+      "anchor": "L={appendHead:",
+      "snippet": "L={appendHead:{type:\"textarea\",label:\"Append in <head />\",hintLink:\"https://support.typora.io/Export/#add-custom-contents\"},appendBody:{type:\"textarea\",label:\"Append in <body />\",hintLink:\"https://support.typora.io/Export/#add-custom-contents\"},allowPerFileSetting:{type:\"checkbox\",label:\"General\",checkboxLabel:\"Read and overwrite export settings from YAML front matters\",hintLink:\"https://support.typora.io/Export/#per-file-configurations\"},openExportLocation:!0},F=Object(i.a)(",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_htmlF": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "F=Object(i.a)({sidebar,exportTheme},L)",
+      "characterOffset": 212766,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "F=Object(i.a)({sidebar:{type:\"checkbox\",checkboxLabel:\"Include Outline Sidebar\",label:\"Outline\",dictGroup:\"Menu\"},exportTheme:{type:\"themeSelect\",label:\"Theme\",hint:\"Change this option to specify a separated theme for export.\"}},L)",
+      "anchor": "F=Object(i.a)({sidebar:",
+      "snippet": "F=Object(i.a)({sidebar:{type:\"checkbox\",checkboxLabel:\"Include Outline Sidebar\",label:\"Outline\",dictGroup:\"Menu\"},exportTheme:{type:\"themeSelect\",label:\"Theme\",hint:\"Change this option to specify a separated theme for export.\"}},L),M={imageWidth:{label:\"Width\",type:\"number\",unit:\"px\",default:640,withReset:!0},quality:{label:\"Image Quality\",valueType:\"number\",type:\"select\",default:0,options:{0:\"Auto\",1:\"Medium\",2:\"High\",3:\"Best\"},hintLink:\"https://support.typora.io/Export/#ima",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_imageM": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "M={imageWidth,...}",
+      "characterOffset": 212998,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "M={imageWidth:{label:\"Width\",type:\"number\",unit:\"px\",default:640,withReset:!0},quality:{label:\"Image Quality\",valueType:\"number\",type:\"select\",default:0,options:{0:\"Auto\",1:\"Medium\",2:\"High\",3:\"Best\"}},fontSize:{label:\"Font Size\",type:\"group\",content:[{key:\"useThemeFontSize\",type:\"radio\",valueType:\"number\",options:{0:\"Use custom font size\",1:\"Use theme font size\"},default:0},{key:\"imageFontSize\",type:\"number\",unit:\"px\",default:24,withReset:!0,visible:function(e){return!e.useThemeFontSize}}]},exportTheme:{type:\"themeSelect\",label:\"Theme\",...}}",
+      "anchor": "M={imageWidth:",
+      "snippet": "M={imageWidth:{label:\"Width\",type:\"number\",unit:\"px\",default:640,withReset:!0},quality:{label:\"Image Quality\",valueType:\"number\",type:\"select\",default:0,options:{0:\"Auto\",1:\"Medium\",2:\"High\",3:\"Best\"},hintLink:\"https://support.typora.io/Export/#image-quality\"},fontSize:{label:\"Font Size\",type:\"group\",content:[{key:\"useThemeFontSize\",type:\"radio\",valueType:\"number\",options:{0:\"Use custom font size\",1:\"Use theme font size\"},default:0},{key:\"imageFontSize\",type:\"number\",style:wi",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_customA": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "A={command,saveDialog,extensions}",
+      "characterOffset": 213710,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "A={command:{type:\"string\",label:\"Command\",placeholder:\"e.g: git commit -am 'save'; git push;\"},\"command-warning\":{type:\"dom\",...},saveDialog:{type:\"select\",label:\"Show Save File Dialog\",options:{\"\":\"Do not popup save file dialog\",saveFile:\"Select file path to save\",saveFolder:\"Select folder path to save\"}},extensions:{type:\"string\",label:\"Target File Extensions (separate by whitespace)\",visible:function(e){return\"saveFile\"==e.saveDialog}}}",
+      "anchor": "A={command:",
+      "snippet": "A={command:{type:\"string\",label:\"Command\",placeholder:\"e.g: git commit -am 'save'; git push;\",hintLink:\"https://support.typora.io/Export/#other-formats-using-custom-commands\"},\"command-warning\":{type:\"dom\",render:function(e){var t=e.app;return m.a.createElement(w.w,{text:\"You are using the Snap version, it may have limited access to your local executables.\",link:\"Snap\",app:t})},label:\" \",visible:function(e){return window.process&&\"typora\"==window.process.env.SNAP_NAME&&(e.com",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_extraArgsD": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "D={extraArguments}",
+      "characterOffset": 214530,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "D={extraArguments:{default:\"\",type:\"string\",label:\"Extra Arguments\",hintLink:\"https://support.typora.io/Export/#other-pandoc-options\"}}",
+      "anchor": "D={extraArguments:",
+      "snippet": "D={extraArguments:{default:\"\",type:\"string\",label:\"Extra Arguments\",hintLink:\"https://support.typora.io/Export/#other-pandoc-options\"}},I={targetFormat:{label:\"Target Format\",type:\"string\",placeholder:\"\",suggest:[\"asciidoc\",\"asciidoctor\",\"beamer\",\"bibtex\",\"biblatex\",\"commonmark\",\"commonmark_x\",\"context\",\"csljson\",\"docbook\",\"docbook4\",\"docbook5\",\"docx\",\"dokuwiki\",\"epub\",\"epub2\",\"epub3\",\"fb2\",\"gfm\",\"markdown_github\",\"haddock\",\"html\",\"html4\",\"html5\",\"icml\",\"ipynb\",\"jats_archivin",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_pandocR": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "R=Object(i.a)({arg,targetFormat,extensions,raw},D)",
+      "characterOffset": 215406,
+      "confidence": "direct literal",
+      "note": "-f native is original AST input, not replica markdown snapshot.",
+      "summaryNotVerbatim": "arg:{default:\"-f native -s -o ${outputPath}\",type:\"string\",label:\"Arguments\",disabled:!0},targetFormat:{label:\"Target Format\",type:\"string\",placeholder:\"auto detect based on target file path\",...onChange:function(e,t){e&&e.trim()?t(\"arg\",\"-f native -s -o ${outputPath} -t \"+e):t(\"arg\",\"-f native -s -o ${outputPath}\")}},extensions:{label:\"Target File Extensions (separate by whitespace)\",type:\"string\",placeholder:\"e.g: .text .asciidoc or leave this empty\"},raw:{label:\"Raw Type\",type:\"select\",options:{\"\":\"Auto\",html:\"html\",mediawiki:\"mediawiki\",rst:\"rst\",textile:\"textile\",latex:\"latex\",docx:\"docx\",opml:\"opml\"}}",
+      "anchor": "R=Object(i.a)({arg:",
+      "snippet": "R=Object(i.a)({arg:{default:\"-f native -s -o ${outputPath}\",type:\"string\",label:\"Arguments\",disabled:!0},targetFormat:{label:\"Target Format\",type:\"string\",placeholder:\"auto detect based on target file path\",suggest:[\"pdf\",\"docx\",\"odt\",\"rtf\",\"epub\",\"latex\",\"mediawiki\",\"rst\",\"textile\",\"opml\"],onChange:function(e,t){e&&e.trim()?t(\"arg\",\"-f native -s -o ${outputPath} -t \"+e):t(\"arg\",\"-f native -s -o ${outputPath}\")},hintLink:\"https://support.typora.io/Export/#target-format\"},exte",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_nativeI": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "I={targetFormat}",
+      "characterOffset": 214666,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "I={targetFormat:{label:\"Target Format\",type:\"string\",placeholder:\"\",suggest:[\"asciidoc\",...\"zimwiki\"]},hintLink:\"https://support.typora.io/Export/#target-format\"}",
+      "anchor": "I={targetFormat:",
+      "snippet": "I={targetFormat:{label:\"Target Format\",type:\"string\",placeholder:\"\",suggest:[\"asciidoc\",\"asciidoctor\",\"beamer\",\"bibtex\",\"biblatex\",\"commonmark\",\"commonmark_x\",\"context\",\"csljson\",\"docbook\",\"docbook4\",\"docbook5\",\"docx\",\"dokuwiki\",\"epub\",\"epub2\",\"epub3\",\"fb2\",\"gfm\",\"markdown_github\",\"haddock\",\"html\",\"html4\",\"html5\",\"icml\",\"ipynb\",\"jats_archiving\",\"jats_articleauthoring\",\"jats_publishing\",\"jats\",\"jira\",\"json\",\"latex\",\"man\",\"markdown\",\"markdown_mmd\",\"markdown_phpextra\",\"markdown_",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_docxV": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "V docx schema",
+      "characterOffset": 217223,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "arg:{default:\"-f native -s -o ${outputPath} -t docx\",disabled:!0} + D extraArguments + \"reference-doc\":{type:\"file\",extension:\"docx\",label:\"Style Reference\",arg:\"--reference-doc\"}",
+      "anchor": "V=Object(i.a)(Object(i.a)({arg:",
+      "snippet": "V=Object(i.a)(Object(i.a)({arg:{default:\"-f native -s -o ${outputPath} -t docx\",type:\"string\",label:\"Arguments\",disabled:!0}},D),{},{\"reference-doc\":{type:\"file\",extension:\"docx\",label:\"Style Reference\",arg:\"--reference-doc\",onChange:function(e,t,n){t(\"arg\",\"-f native -s -o ${outputPath} -t docx\"+((e||\"\").trim()?\" --reference-doc \".concat(JSON.stringify(e)):\"\"))},hintLink:\"https://support.typora.io/Export/#style-reference\"}}),W=Object(i.a)(Object(i.a)({arg:{default:\"-f native",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_odtW": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "W odt schema",
+      "characterOffset": 217653,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "arg:{default:\"-f native -s -o ${outputPath} -t odt\"} + D + template:{type:\"file\",extension:\"opendocument\",label:\"Template\"}",
+      "anchor": "W=Object(i.a)(Object(i.a)({arg:",
+      "snippet": "W=Object(i.a)(Object(i.a)({arg:{default:\"-f native -s -o ${outputPath} -t odt\",type:\"string\",label:\"Arguments\",disabled:!0}},D),{},{template:{type:\"file\",extension:\"opendocument\",label:\"Template\",onChange:function(e,t,n){t(\"arg\",\"-f native -s -o ${outputPath} -t odt\"+((e||\"\").trim()?\" --template \".concat(JSON.stringify(e)):\"\"))},hintLink:\"https://support.typora.io/Export/#template-1\"}}),U=Object(i.a)({arg:{default:\"-f native -s -o ${outputPath} -t rtf\",type:\"string\",label:\"Ar",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_rtfU": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "U rtf",
+      "characterOffset": 218043,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "U=Object(i.a)({arg:{default:\"-f native -s -o ${outputPath} -t rtf\",type:\"string\",label:\"Arguments\",disabled:!0}},D)",
+      "anchor": "U=Object(i.a)({arg:",
+      "snippet": "U=Object(i.a)({arg:{default:\"-f native -s -o ${outputPath} -t rtf\",type:\"string\",label:\"Arguments\",disabled:!0}},D),B=Object(i.a)(Object(i.a)({arg:{default:\"-f native -s -o ${outputPath} -t epub\",type:\"string\",label:\"Arguments\",disabled:!0}},D),{},{css:{type:\"file\",extension:\"css\",label:\"Custom CSS\",onChange:function(e,t,n){t(\"arg\",\"-f native -s -o ${outputPath} -t epub\"+((n.css||\"\").trim()?\" --css \".concat(JSON.stringify(n.css)):\"\")+((n[\"toc-depth\"]||\"\").trim()?\" --toc-depth",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_epubB": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "B epub",
+      "characterOffset": 218159,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "arg default -t epub; css:{type:\"file\",extension:\"css\",label:\"Custom CSS\"}; toc-depth:{label:\"Chapter Level in Outline\",type:\"select\",options:{1:\"1\",2:\"2\",3:\"3\",4:\"4\",5:\"5\",6:\"6\"},default:3}",
+      "anchor": "B=Object(i.a)(Object(i.a)({arg:",
+      "snippet": "B=Object(i.a)(Object(i.a)({arg:{default:\"-f native -s -o ${outputPath} -t epub\",type:\"string\",label:\"Arguments\",disabled:!0}},D),{},{css:{type:\"file\",extension:\"css\",label:\"Custom CSS\",onChange:function(e,t,n){t(\"arg\",\"-f native -s -o ${outputPath} -t epub\"+((n.css||\"\").trim()?\" --css \".concat(JSON.stringify(n.css)):\"\")+((n[\"toc-depth\"]||\"\").trim()?\" --toc-depth=\".concat(n[\"toc-depth\"]):\"\"))},hintLink:\"https://support.typora.io/Export/#custom-css\"},\"toc-depth\":{label:\"Chapter",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_simplePandocConverters": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "H $ q G Q",
+      "characterOffset": 219012,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "latex H / wiki $ / rst q / textile G / opml Q: each {arg default \"-f native -s -o ${outputPath} -t <fmt>\"} merged with D extraArguments. wiki uses -t mediawiki in arg string.",
+      "anchor": "H=Object(i.a)({arg:",
+      "snippet": "H=Object(i.a)({arg:{default:\"-f native -s -o ${outputPath} -t latex\",type:\"string\",label:\"Arguments\",disabled:!0}},D),$=Object(i.a)({arg:{default:\"-f native -s -o ${outputPath} -t mediawiki\",type:\"string\",label:\"Arguments\",disabled:!0}},D),q=Object(i.a)({arg:{default:\"-f native -s -o ${outputPath} -t rst\",type:\"string\",label:\"Arguments\",disabled:!0}},D),G=Object(i.a)({arg:{default:\"-f native -s -o ${outputPath} -t textile\",type:\"string\",label:\"Arguments\",disabled:!0}},D),Q=Ob",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_latexPdfZ": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "z latex-pdf",
+      "characterOffset": 216235,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "arg default -f native -s -o ${outputPath}; pdf-engine:{label:\"PDF Engine\",arg:\"--pdf-engine\",suggest:[\"pdflatex\",\"lualatex\",\"xelatex\",\"latexmk\",\"tectonic\",\"wkhtmltopdf\",\"weasyprint\",\"prince\",\"context\",\"pdfroff\"]}; template:{type:\"file\",extension:\"tex latex context ms html\",arg:\"--template\"}; plus D; author:{type:\"string\",label:\"Author\",placeholder:\"Empty\"}",
+      "anchor": "z=Object(i.a)(Object(i.a)({arg:",
+      "snippet": "z=Object(i.a)(Object(i.a)({arg:{default:\"-f native -s -o ${outputPath}\",type:\"string\",label:\"Arguments\",disabled:!0},\"pdf-engine\":{label:\"PDF Engine\",type:\"string\",arg:\"--pdf-engine\",suggest:[\"pdflatex\",\"lualatex\",\"xelatex\",\"latexmk\",\"tectonic\",\"wkhtmltopdf\",\"weasyprint\",\"prince\",\"context\",\"pdfroff\"],onChange:function(e,t,n){t(\"arg\",\"-f native -s -o ${outputPath}\"+((n.engine||\"\").trim()?\" --pdf-engine=\".concat(JSON.stringify(n[\"pdf-engine\"])):\"\")+((n.template||\"\").trim()?\" --",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_markdownJ": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "J markdown",
+      "characterOffset": 220866,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "variants, hardLineWrap default false, columns default 130, eol, tab, ascii, reference-links, reference-location, markdown-headings, webtex, webtex-format default png; arg builder K(). Not one of the requested 13 built-in export types for this panel (templates for Add).",
+      "anchor": "hardLineWrap:{",
+      "snippet": "hardLineWrap:{default:!1,type:\"checkbox\",label:\"Line Wrap\",checkboxLabel:\"Hard line wrap\",hintLink:\"https://support.typora.io/Markdown-Export#line-wrap\"},columns:{default:130,type:\"number\",label:\"Text Column Width\",onChange:function(e,t,n){t(\"arg\",K(n))},visible:function(e){return e.hardLineWrap}},eol:{default:\"\",type:\"select\",label:\"Line Endings\",dictGroup:\"Menu\",options:{\"\":\"Auto (based on current OS)\",crlf:\"Windows Line Endings (CRLF)\",lf:\"Unix Line Endings (LF)\"},optionsD",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_paperControl": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "le paper control",
+      "characterOffset": 230600,
+      "confidence": "direct literal",
+      "note": "Control fallbacks only. Not proof of native print engine defaults.",
+      "summaryNotVerbatim": "var t=e.keyName,n=e.value,a=e.conf,r=e.onChange,o=n,i=(T.a[o]||{}).mm||a[t+\".custom\"]; ... window.isMac&&(l[\"\"]=\"Default\") ... i=i||[210,297] ... a[t+\".margin\"]||\"\" ... \"\"===i||void 0===i?o:i with o=16 for margin Top/Bottom/Left/Right",
+      "anchor": "le=function(e)",
+      "snippet": "le=function(e){var t=e.keyName,n=e.value,a=e.conf,r=e.onChange,o=n,i=(T.a[o]||{}).mm||a[t+\".custom\"],l={};window.isMac&&(l[\"\"]=\"Default\"),Object.keys(T.a).forEach((function(e){return l[e]=T.a[e].name}));var u=\"custom\"!=n,c={};u&&(c.background=\"transparent\"),l.custom=Object(b.a)(\"Custom\"),i=i||[210,297];var s=function(e){var t=e-0;return isNaN(t)&&(t=0),t},d=[],p=a[t+\".margin\"]||\"\";return d.push([\"Margin\",m.a.createElement(w.r,{keyName:t+\".margin\",value:p,onChange:r,options:{\"",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_ae": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "ae=function(e,t)",
+      "characterOffset": 226594,
+      "confidence": "direct literal",
+      "note": "ae takes two args; third schema flag is ignored by this helper.",
+      "summaryNotVerbatim": "ae=function(e,t){return void 0===e?t:e} ... checked:!!ae(r.openExportLocation,a.openExportLocation,l.openExportLocation)",
+      "anchor": "ae=function(e,t)",
+      "snippet": "ae=function(e,t){return void 0===e?t:e},re=function(e){var t=e.app,n=e.groupId,a=t.getValue(\"export.general\")||{},r=t.getValue(\"export.\"+n)||{},o=t.getValue(\"customExport\")||X,i=((o=o.filter((function(e){return!!e}))).find((function(e){return e.key===n}))||{}).type||n,l=Y(r.schema||i);if(!l)return null;var u=window.process&&\"typora\"==window.process.env.SNAP_NAME,c=u&&m.a.createElement(w.w,{text:\"You are using the Snap version, it may have limited access to your local executab",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_afterExportPerType": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "re after-export block",
+      "characterOffset": 227684,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "custom==i: Show command output showOutput; if saveDialog: Open exported file location openExportLocation via ae(r,a,l); if saveFile: Open exported file openExportFile. Else: openExportLocation, openExportFile, runCommand + runCommandStr, showOutput.",
+      "anchor": "\"Show command output\",keyName:\"showOutput\"",
+      "snippet": "\"Show command output\",keyName:\"showOutput\",checked:!!ae(r.showOutput),onChange:te(t,n)}),r.saveDialog?m.a.createElement(w.c,{label:\"Open exported file location\",keyName:\"openExportLocation\",checked:!!ae(r.openExportLocation,a.openExportLocation,l.openExportLocation),onChange:te(t,n)}):null,\"saveFile\"==r.saveDialog?m.a.createElement(w.c,{label:\"Open exported file\",keyName:\"openExportFile\",checked:!!r.openExportFile,onChange:te(t,n)}):null):m.a.createElement(w.k,{title:\"After E",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_customListCRUD": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "se export-config UI",
+      "characterOffset": 234819,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "customExport||X; Add from ce templates with unique key type+(a||\"\"); Delete disabled for v tabs general/pdf/html/html-plain/image; Rename/Move up/down only customExport entries; on delete also onChange(\"export.\"+key, {}).",
+      "anchor": "onChange(\"customExport\",E)",
+      "snippet": "onChange(\"customExport\",E),h(null),o(e),s(!0)},C=function(e,n){(E=S(E)).find((function(t){return t.key===e})).name=n,t.onChange(\"customExport\",E),s(!1)},T=function(){s(!1)},_=E.map((function(e){return e.key})),P=_.indexOf(r)<=0,N=_.indexOf(r)>=_.length-1;return m.a.createElement(\"div\",{className:\"export-config\"},m.a.createElement(\"div\",{style:{overflow:\"hidden\",display:\"flex\",flexDirection:\"column\",maxHeight:\"100%\",padding:window.isMac?\"32px 0 8px 16px\":\"0\"}},m.a.createElemen",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_loadExportOption": {
+      "file": "frame.js",
+      "symbol": "loadExportOption",
+      "characterOffset": 229602,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "i.prototype.loadExportOption=function(e){var t=e.allowPerFileSetting?a:r,n={},i=(t.forEach(e=>{var t=this.getSetting(\"typora-\"+e)||this.getSetting(e)||this.getSetting(f.capitalize(e));void 0!==t&&(n[f.camelize(e)]=t)}),\"true\"===n.sidebar&&(n.sidebar=!0),\"false\"===n.sidebar&&(n.sidebar=!1),\"pdf\"!=e.type&&\"epub\"!=e.type||(n.appendHead&&(n.userAppendHead=!0),n.appendBody&&(n.userAppendBody=!0),delete n.appendHead,delete n.appendBody,delete n.appendHeadExtra,delete n.appendBodyExtra),Object.assign({},e,n));return Object.keys(i).map(e=>{i[e]=\"unset\"==i[e]?\"\":i[e]}),i}",
+      "anchor": "i.prototype.loadExportOption=function(e)",
+      "snippet": "i.prototype.loadExportOption=function(e){var t=e.allowPerFileSetting?a:r,n={},i=(t.forEach(e=>{var t=this.getSetting(\"typora-\"+e)||this.getSetting(e)||this.getSetting(f.capitalize(e));void 0!==t&&(n[f.camelize(e)]=t)}),\"true\"===n.sidebar&&(n.sidebar=!0),\"false\"===n.sidebar&&(n.sidebar=!1),\"pdf\"!=e.type&&\"epub\"!=e.type||(n.appendHead&&(n.userAppendHead=!0),n.appendBody&&(n.userAppendBody=!0),delete n.appendHead,delete n.appendBody,delete n.appendHeadExtra,delete n.appendBodyEx",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_whitelist": {
+      "file": "frame.js",
+      "symbol": "var r=[...], a=[...].concat(r)",
+      "characterOffset": 229418,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "var r=[\"title\",\"author\",\"subject\",\"creator\",\"split-level\",\"toc-depth\"],a=[\"header\",\"footer\",\"sidebar\",\"append-head\",\"append-head-extra\",\"append-body\",\"append-body-extra\"].concat(r)",
+      "anchor": "var r=[\"title\",\"author\",\"subject\",\"creator\",\"split-level\",\"toc-depth\"]",
+      "snippet": "var r=[\"title\",\"author\",\"subject\",\"creator\",\"split-level\",\"toc-depth\"],a=[\"header\",\"footer\",\"sidebar\",\"append-head\",\"append-head-extra\",\"append-body\",\"append-body-extra\"].concat(r),s=(i.prototype.loadExportOption=function(e){var t=e.allowPerFileSetting?a:r,n={},i=(t.forEach(e=>{var t=this.getSetting(\"typora-\"+e)||this.getSetting(e)||this.getSetting(f.capitalize(e));void 0!==t&&(n[f.camelize(e)]=t)}),\"true\"===n.sidebar&&(n.sidebar=!0),\"false\"===n.sidebar&&(n.sidebar=!1),\"pdf\"!",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_getSetting": {
+      "file": "frame.js",
+      "symbol": "getSetting",
+      "characterOffset": 229185,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "getSetting=function(e){var t=this.projectSetting[e]||this.projectSetting[e.toLowerCase()];return\"unset\"===(t=\"unset\"!==t&&void 0!==t?t:this.fileSetting[e]||this.fileSetting[e.toLowerCase()])||void 0===t?File.option[e]:t}",
+      "anchor": "i.prototype.getSetting=function(e)",
+      "snippet": "i.prototype.getSetting=function(e){var t=this.projectSetting[e]||this.projectSetting[e.toLowerCase()];return\"unset\"===(t=\"unset\"!==t&&void 0!==t?t:this.fileSetting[e]||this.fileSetting[e.toLowerCase()])||void 0===t?File.option[e]:t};var r=[\"title\",\"author\",\"subject\",\"creator\",\"split-level\",\"toc-depth\"],a=[\"header\",\"footer\",\"sidebar\",\"append-head\",\"append-head-extra\",\"append-body\",\"append-body-extra\"].concat(r),s=(i.prototype.loadExportOption=function(e){var t=e.allowPerFileSe",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_metaKeysO": {
+      "file": "frame.js",
+      "symbol": "o concat m root-url copy-images",
+      "characterOffset": 228163,
+      "confidence": "direct literal",
+      "note": "Document/project meta map keys (not the loadExportOption whitelist).",
+      "summaryNotVerbatim": "const m=[\"typora-root-url\",\"typora-copy-images-to\"],o=[\"title\",\"author\",\"defaultCodeLang\",\"end-of-line\",\"papersize\",\"margin\",\"margin-left\",\"margin-right\",\"margin-top\",\"margin-bottom\",\"append-head\",\"append-body\"].concat(m)",
+      "anchor": "const m=[\"typora-root-url\",\"typora-copy-images-to\"]",
+      "snippet": "const m=[\"typora-root-url\",\"typora-copy-images-to\"],o=[\"title\",\"author\",\"defaultCodeLang\",\"end-of-line\",\"papersize\",\"margin\",\"margin-left\",\"margin-right\",\"margin-top\",\"margin-bottom\",\"append-head\",\"append-body\"].concat(m);function i(e){this.editor=e,this.levels=[],this.fileSetting={},this.projectSetting={},this.isLoadingProjectSetting=!1,this.prevFilePath=null,File.bundle.path&&this.loadFromProject()}function g(n){var i={};function r(e){var t=n(e);return t||(t=e.replace(/-/g,",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_clientExport": {
+      "file": "frame.js",
+      "symbol": "c.export",
+      "characterOffset": 785922,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "e=i.editor.localSettingBridge.loadExportOption(e),\"html\"==t?i.editor.export.exportAndSaveHTML(e):\"html-plain\"==t?(Object.assign(e,{noStyle:!0}),i.editor.export.exportAndSaveHTML(e)):\"image\"==t?i.editor.export.exportToImage(e):\"pdf\"==t?s.exportPDF(e):\"custom\"==t?i.editor.export.exportWithCommand(e):l.export(t,e)",
+      "anchor": "c.export=function(e)",
+      "snippet": "c.export=function(e){var t;i.bundle.unsupported||(t=e.type,i.editor.export.beforeExport(),i.editor.export.showExportNotification(),i.editor.localSettingBridge.loadFromFile(),e=i.editor.localSettingBridge.loadExportOption(e),\"html\"==t?i.editor.export.exportAndSaveHTML(e):\"html-plain\"==t?(Object.assign(e,{noStyle:!0}),i.editor.export.exportAndSaveHTML(e)):\"image\"==t?i.editor.export.exportToImage(e):\"pdf\"==t?s.exportPDF(e):\"custom\"==t?i.editor.export.exportWithCommand(e):l.expor",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_suggestedName": {
+      "file": "frame.js",
+      "symbol": "getSuggestedFileName",
+      "characterOffset": 634130,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "getSuggestedFileName:function(e){if(File.bundle.fileName)return File.bundle.fileName.replace(/\\.[^.]+$/,\"\"); ... meta title+date ... else first h1-h3 / first content; 120 char cap; empty => localize Untitled; r.removeInvalidPathCh",
+      "anchor": "getSuggestedFileName:function(e)",
+      "snippet": "getSuggestedFileName:function(e){if(File.bundle.fileName)return File.bundle.fileName.replace(/\\.[^.]+$/,\"\");if(e){e=File.getFileName();if(e)return e.replace(/\\.[^.]+$/,\"\")}var t,n,e=\"\",i=\"\";try{(n=File.editor.docMenu.getMetaNode())&&(i=File.editor.docMenu.getValueInMeta(\"date\",n)||\"\",i=(/\\d+-\\d+-\\d+/g.exec(i)||/\\d+\\/\\d+\\/\\d+/g.exec(i)||[\"\"])[0],e=(e=File.editor.docMenu.getValueInMeta(\"title\",n)||\"\").replace(/(^\\s*(\"|'))|((\"|')\\s*)/gi,\"\").replace(/\\s+(.)/gi,\"-$1\").toLocaleStri",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_defaultPath": {
+      "file": "frame.js",
+      "symbol": "showExportDialog defaultPath",
+      "characterOffset": 1314160,
+      "confidence": "direct literal",
+      "reuse": "repeat-export-reference.json save_panel.defaultPath_rules",
+      "summaryNotVerbatim": "e=...File.getSuggestedFileName()+\".\"+e... t.path ? (!lastExport||lastExportNoOverwrite ? dirname+name : t.path) : lastSaveLocation : exportFolder==='same' : customExportPath||documentsPath : mountFolder_ : name only",
+      "anchor": "File.getSuggestedFileName()+\".\"+e",
+      "snippet": "File.getSuggestedFileName()+\".\"+e:File.getSuggestedFileName();return(t=t||{}).path?!File.option.lastExport||File.option.lastExportNoOverwrite?r.pathByDeleteLastComponent(t.path)+i+e:t.path:File.option.lastSaveLocation?File.option.lastSaveLocation+i+e:\"same\"===t.exportFolder?l()+i+e:\"custom\"===t.exportFolder?(t.customExportPath=t.customExportPath||window._options.documentsPath,t.customExportPath+i+e):File.mountFolder_?File.mountFolder_+i+e:(n&&n(e),e)}),l=function(){return Fil",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_pandocSpawn": {
+      "file": "frame.js",
+      "symbol": "u=()=>File.option.pandocPath||\"pandoc\"",
+      "characterOffset": 1433414,
+      "confidence": "direct literal",
+      "note": "Node/child_process branch. Mac native backend argv unknown.",
+      "summaryNotVerbatim": "u=()=>File.option.pandocPath||\"pandoc\",h=function(e,i,r,t){... d=s(u(),e,t) ...}",
+      "anchor": "u=()=>File.option.pandocPath||\"pandoc\"",
+      "snippet": "u=()=>File.option.pandocPath||\"pandoc\",h=function(e,i,r,t){p(),(t||{}).cwd||(n=c.getCurrentFileFolderPath())&&(t=Object.assign({cwd:n},t)),e.join(\" \"),d=s(u(),e,t);var n,o=[],a=[];return d.on(\"close\",function(e){var t=Buffer.concat(o),n=Buffer.concat(a).toString();i(r,t,n,e),d=null}),d.stdout.on(\"data\",function(e){o.push(e)}),d.stderr.on(\"data\",function(e){a.push(e)}),d},p=function(){d&&d.kill&&(d.removeAllListeners(\"close\"),d.kill()),d=null},i=(...o)=>new Promise(function(t,",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_pandocArgvX": {
+      "file": "frame.js",
+      "symbol": "x=function(e,t,n)",
+      "characterOffset": 1438296,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "x=function(e,t,n){var t=[\"-f\",\"native\",\"-s\",\"-o\",t,\"-t\",e],i=!1,e=(\"wiki\"==e&&(t.pop(),t.push(\"mediawiki\")),\"latex-pdf\"==e&&(t.pop(),t.push(\"pdf\")),\"pandoc\"==e&&(i=!0,t.pop(),n.targetFormat?t.push(n.targetFormat):t.pop()), ... extraArguments concat, w() for reference-doc,template,css,split-level,toc-depth,toc,pdf-engine)",
+      "anchor": "x=function(e,t,n){var t=[\"-f\",\"native\"",
+      "snippet": "x=function(e,t,n){var t=[\"-f\",\"native\",\"-s\",\"-o\",t,\"-t\",e],i=!1,e=(\"wiki\"==e&&(t.pop(),t.push(\"mediawiki\")),\"latex-pdf\"==e&&(t.pop(),t.push(\"pdf\")),\"pandoc\"==e&&(i=!0,t.pop(),n.targetFormat?t.push(n.targetFormat):t.pop()),\"markdown\"==e&&(i=!0,t.pop(),t.push(n.variants||\"markdown\"),n.hardLineWrap&&t.push(\"--columns=\"+(n.columns||130)),n.eol&&t.push(\"--eol=\"+(n.eol||\"native\")),\"tab\"==n.tab?t.push(\"--preserve-tabs\"):n.tab&&t.push(\"--tab-stop=\"+(n.tab||4)),n.ascii&&t.push(\"--asci",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_imageConsumer": {
+      "file": "frame.js",
+      "symbol": "exportToImage",
+      "characterOffset": 781983,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "Object.assign({imageWidth:640,imageFontSize:\"24px\"},o||{},{forPrint:!0,forImage:!0}).fontSize=o.imageFontSize,o.useThemeFontSize&&(o.fontSize=void 0) ... quality:+(o.quality||0)",
+      "anchor": "Object.assign({imageWidth:640,imageFontSize:\"24px\"}",
+      "snippet": "Object.assign({imageWidth:640,imageFontSize:\"24px\"},o||{},{forPrint:!0,forImage:!0})).fontSize=o.imageFontSize,o.useThemeFontSize&&(o.fontSize=void 0);var a,s=o.imageWidth,l=0;function c(e){console.sendError(e.stack||e,\"warning\"),F&&d.showErrorDialog(\"Export Failed\",e.stack||e),null===S&&(S=e.stack||e),_(!0)}_(!0),S=null,File.editor.store(!0),File.editor.export.showExportNotification();var e=await File.editor.export.exportToHTML(o);(p=new Worker((window.debugMode?\"lib\":\"lib.a",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_pdfCssConsumer": {
+      "file": "frame.js",
+      "symbol": "splitPages / exportTheme / paper.margin",
+      "characterOffset": 766166,
+      "confidence": "consumer inference",
+      "summaryNotVerbatim": "h.splitPages page-break CSS; h.exportTheme css files; paper.margin custom uses paper.marginLeft/Right fallback d(...,\"16\")",
+      "anchor": "h.splitPages",
+      "snippet": "h.splitPages&&y.push(\"<style type='text/css'>@media print {[data-breakpage]{page-break-before: %@;}#write>[data-breakpage]:first-child {page-break-before: avoid}}</style>\".replace(\"%@\",h.splitPages?\"always\":\"avoid\"))}if(p)return document.querySelectorAll(\"link[css-include]\").forEach(function(e){b(_(e.href))}),h.exportTheme?[(t=h.exportTheme)+\".css\",\"base.user.css\",t+\".user.css\"].map(e=>{\"base.user.css\"==e&&r(),b(S(e))}):[\"theme_css\",\"base_user_css\",\"theme_user_css\"].map(funct",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_afterExportConsumer": {
+      "file": "frame.js",
+      "symbol": "openExportLocation/File",
+      "characterOffset": 746824,
+      "confidence": "direct literal",
+      "summaryNotVerbatim": "n.openExportLocation&&JSBridge.showInFinder(t); n.openExportFile&&JSBridge.openFile(t); n.runCommand processes runCommandStr",
+      "anchor": "n.openExportLocation&&(",
+      "snippet": "n.openExportLocation&&(JSBridge.showInFinder(t),r||setTimeout(h.hideNotification,2e3)),n.openExportFile&&(JSBridge.openFile(t),r||setTimeout(h.hideNotification,2e3)),File.isMac&&File.editor.export.cleanUpTempFiles()}function O(e,s,l,c,d){l=l||{};var u=(s=s||{}).outputPath||l.outputPath||\"\";function h(e){return\"string\"==typeof e?\"unset\"==e?\"\":e.replace(/\\n(.|\\n\\r)+/g,\"\"):e instanceof Array?e.join(\", \"):null==e?e:e+\"\"}function p(...e){for(var t of e)if(void 0!==t)return t}retur",
+      "snippetKind": "verbatim source slice; summaryNotVerbatim is a separate synthesis"
+    },
+    "E_simple_latex": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "H=Object(i.a)({arg:",
+      "anchor": "H=Object(i.a)({arg:",
+      "characterOffset": 219012,
+      "snippet": "H=Object(i.a)({arg:{default:\"-f native -s -o ${outputPath} -t latex\",type:\"string\",label:\"Arguments\",disabled:!0}},D),$=Objec",
+      "snippetKind": "verbatim source slice",
+      "confidence": "direct literal"
+    },
+    "E_simple_wiki": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "$=Object(i.a)({arg:",
+      "anchor": "$=Object(i.a)({arg:",
+      "characterOffset": 219130,
+      "snippet": "$=Object(i.a)({arg:{default:\"-f native -s -o ${outputPath} -t mediawiki\",type:\"string\",label:\"Arguments\",disabled:!0}},D),q=O",
+      "snippetKind": "verbatim source slice",
+      "confidence": "direct literal"
+    },
+    "E_simple_rst": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "q=Object(i.a)({arg:",
+      "anchor": "q=Object(i.a)({arg:",
+      "characterOffset": 219252,
+      "snippet": "q=Object(i.a)({arg:{default:\"-f native -s -o ${outputPath} -t rst\",type:\"string\",label:\"Arguments\",disabled:!0}},D),G=Object(",
+      "snippetKind": "verbatim source slice",
+      "confidence": "direct literal"
+    },
+    "E_simple_textile": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "G=Object(i.a)({arg:",
+      "anchor": "G=Object(i.a)({arg:",
+      "characterOffset": 219368,
+      "snippet": "G=Object(i.a)({arg:{default:\"-f native -s -o ${outputPath} -t textile\",type:\"string\",label:\"Arguments\",disabled:!0}},D),Q=Obj",
+      "snippetKind": "verbatim source slice",
+      "confidence": "direct literal"
+    },
+    "E_simple_opml": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "Q=Object(i.a)({arg:",
+      "anchor": "Q=Object(i.a)({arg:",
+      "characterOffset": 219488,
+      "snippet": "Q=Object(i.a)({arg:{default:\"-f native -s -o ${outputPath} -t opml\",type:\"string\",label:\"Arguments\",disabled:!0}},D),K=functi",
+      "snippetKind": "verbatim source slice",
+      "confidence": "direct literal"
+    },
+    "E_headerFooterOptions": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "header:{type:\"string\",label:\"Header\"",
+      "anchor": "header:{type:\"string\",label:\"Header\"",
+      "characterOffset": 211440,
+      "snippet": "header:{type:\"string\",label:\"Header\",default:\"\",placeholder:\"None\",presetOptions:[\"${title}\",\"${author}\",\"${pageNo}\",\"${today}\"],hintLink:\"https://support.typora.io/Export/#header--footer\"},footer:{type:\"string\",label:\"Footer\",default:\"\",placeholder:\"None\",presetOptions:[\"${title}\",\"No. ${pageNo} / ${totalPages}\",\"Written in Typora\",\"CONFIDENTIAL\"],hintLink:\"https://support.typora.io/Export/#header--footer\"},author:{type:\"string\",label:\"Author\",placeholder:\"Empty\",hintLink:\"https://support.typora.io/Export/#pdf-metadata\"},appendBody:{type:\"textarea\",label:\"Append Extra Content (HTML)\",hintLink:\"https://support.typora.io/Ex",
+      "snippetKind": "verbatim source slice",
+      "confidence": "direct literal"
+    },
+    "E_allowPerFileSchema": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "allowPerFileSetting:{type:\"checkbox\"",
+      "anchor": "allowPerFileSetting:{type:\"checkbox\"",
+      "characterOffset": 212101,
+      "snippet": "allowPerFileSetting:{type:\"checkbox\",label:\"General\",checkboxLabel:\"Read and overwrite export settings from YAML front matters\",hintLink:\"https://support.typora.io/Export/#per-file-configurations\"}},L={appendHead:{type:\"textarea\",label:\"Append in <head />\",hin",
+      "snippetKind": "verbatim source slice",
+      "confidence": "direct literal"
+    },
+    "E_imageFontControls": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "fontSize:{label:\"Font Size\",type:\"group\"",
+      "anchor": "fontSize:{label:\"Font Size\",type:\"group\"",
+      "characterOffset": 213259,
+      "snippet": "fontSize:{label:\"Font Size\",type:\"group\",content:[{key:\"useThemeFontSize\",type:\"radio\",valueType:\"number\",options:{0:\"Use custom font size\",1:\"Use theme font size\"},default:0},{key:\"imageFontSize\",type:\"number\",style:window.webkit?{marginTop:8}:void 0,unit:\"px\",default:24,withReset:!0,visible:function(e){return!e.useThemeFontSize}}]},exportTheme:{type:\"themeSelect\",label:\"Theme\",hint:\"Change this option to specify a separated theme for export.\"}},A={command:{type:\"string\",label:\"Command\",placeholder:\"e.g: git commit -am 'save'; git push;\",hintLink:\"https",
+      "snippetKind": "verbatim source slice",
+      "confidence": "direct literal"
+    },
+    "E_paperCustomSize": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "r(t+\".custom\",[s(e.target.value),i[1]])",
+      "anchor": "r(t+\".custom\",[s(e.target.value),i[1]])",
+      "characterOffset": 231663,
+      "snippet": "r(t+\".custom\",[s(e.target.value),i[1]])}}),\" mm x \",\" \",m.a.createElement(\"input\",{type:\"number\",value:i[1],readOnly:u,style:c,onChange:function(e){return r(t+\".custom\",[i[0],s(e.target.value)])}}),\" mm\")]),m.a",
+      "snippetKind": "verbatim source slice",
+      "confidence": "direct literal"
+    },
+    "E_paperMargins": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "p=a[t+\".margin\"]||\"\"",
+      "anchor": "p=a[t+\".margin\"]||\"\"",
+      "characterOffset": 230963,
+      "snippet": "p=a[t+\".margin\"]||\"\";return d.push([\"Margin\",m.a.createElement(w.r,{keyName:t+\".margin\",value:p,onChange:r,options:{\"\":Object(b.a)(\"Default\"),custom:Object(b.a)(\"Custom\")}})]),\"custom\"==p&&[\"Top\",\"Bottom\",\"Left\",\"Right\"].forEach((function(e){var n,o,i;d.push([m.a.createElement(w.t,{label:\"Margin \"+e,style:void 0}),m.a.createElement(\"span\",{style:void 0},m.a.createElement(\"input\",{type:\"number\",value:(n=t+\".margin\"+e,o=16,i=a[n],\"\"===i||void 0===i?o:i),onChange:function(n){return r(t+\".margin\"+e,s(n.target.value))},disabled:!1}),\" mm\")])})),d.push([\"Width x Height\",m.a.createElement(\"span\",null,m.a.createElement(\"input\",{type:\"number\",value:i[0],readOnly:u,style:",
+      "snippetKind": "verbatim source slice",
+      "confidence": "direct literal"
+    },
+    "E_themeOptions": {
+      "file": "Preferences.962926a4.0b4e81f7.js",
+      "symbol": "_={\"\":\"Current Theme\"}",
+      "anchor": "_={\"\":\"Current Theme\"}",
+      "characterOffset": 210712,
+      "snippet": "_={\"\":\"Current Theme\"},P=_,N=function(e){var t={\"\":Object(b.a)(\"Current Theme\")},n=this.getValue(\"allThemes\")||[];return window.isNode||window.webkit||(n=[\"themeA\",\"themeB\"]),n.length?(n.forEach((function(n){e&&(n.indexOf(\"night\")>-1||n.indexOf(\"dark\")>-1)||(t[n.replace(/\\.css$/,",
+      "snippetKind": "verbatim source slice",
+      "confidence": "direct literal"
+    },
+    "E_themeConsumer": {
+      "file": "frame.js",
+      "symbol": "h.exportTheme?",
+      "anchor": "h.exportTheme?",
+      "characterOffset": 766477,
+      "snippet": "h.exportTheme?[(t=h.exportTheme)+\".css\",\"base.user.css\",t+\".user.css\"].map(e=>{\"base.user.css\"==e&&r(),b(S(e))}):[\"theme_css\",\"base_user_css\",\"theme_user_css\"].map(function(e){\"base_user_css\"==e&&r(),File.isMac?b(R(\"#\"+e).attr(\"href\").replace(/^wkfile:/,\"file:\")):b(_(R(\"#\"+e).attr(\"href\")))}),\"\";var o=[];t=[\"theme_css\",\"base_user_css\",\"theme_user_css\"].map(function(e){return i=(h.exportTheme&&\"theme_css\"==e?S(h.expor",
+      "snippetKind": "verbatim source slice",
+      "confidence": "direct literal"
+    },
+    "E_pandocStructuredFlags": {
+      "file": "frame.js",
+      "symbol": "n.extraArguments&&(t=t.concat(n.extraArguments))",
+      "anchor": "n.extraArguments&&(t=t.concat(n.extraArguments))",
+      "characterOffset": 1439125,
+      "snippet": "n.extraArguments&&(t=t.concat(n.extraArguments)),w(n,\"reference-doc\",t,!0),w(n,\"template\",t,!0),w(n,\"css\",t,!0),w(n,\"split-level\",t),w(n,\"toc-depth\",t),w(n,\"toc\",t)&&t.pop(),w(n,\"pdf-engine\",t),[t,i||e!==t.length]},(C={prepImport:async function(){m=!1,await f()&&(m=File.changeCounter.isDiscardableUntitled(),JSBridge.invoke(\"pandoc.import\",m))},impo",
+      "snippetKind": "verbatim source slice",
+      "confidence": "direct literal"
+    }
+  },
+  "persistence": {
+    "exportGroup": "export.<groupId> object via Preferences onChange. groupId is general | pdf | html | html-plain | image | customExport[].key",
+    "topLevel": [
+      "pandocPath",
+      "customExport"
+    ],
+    "customExport": "Array of {key,name,type} defaulting in UI to X (9 converters) when getValue empty. Not proven as native first-run store contents.",
+    "nestedKeys": "Field names inside export.<group> match schema keys (exportFolder, openExportLocation, paper, paper.margin, paper.custom, paper.marginTop, etc.).",
+    "installedUserState": "Not read. Absent default vs false/empty distinguished below."
+  },
+  "general": {
+    "exportFolder": {
+      "uiLabel": "Default Folder for Exported File",
+      "storageKey": "export.general.exportFolder",
+      "controlValues": {
+        "": "Auto",
+        "same": "Same folder with current file",
+        "custom": "Custom location"
+      },
+      "rawDefaultInUI": "",
+      "computedFallbackWhenEmpty": "Auto path: lastSaveLocation else mountFolder_ else suggested name only (Mac empty defaultPath possible). See E_defaultPath / repeat-export.",
+      "confidence": "direct literal"
+    },
+    "customExportPath": {
+      "uiLabel": "custom folder path (shown when exportFolder===custom)",
+      "storageKey": "export.general.customExportPath",
+      "uiPlaceholderComputed": "window.Setting.documentPath() / window._options.documentsPath",
+      "rawDefault": "absent vs empty unknown in store; UI displays documentPath when value empty",
+      "confidence": "direct literal"
+    },
+    "pandocPath": {
+      "uiLabel": "Pandoc Path",
+      "storageKey": "pandocPath",
+      "uiPlaceholder": "(Auto Detect)",
+      "winDefaultPathHint": "C:\\Program Files\\Pandoc\\pandoc.exe (file-picker defaultPath hint only; not macOS stored default)",
+      "runtimeFallbackNode": "File.option.pandocPath || \"pandoc\"",
+      "discovery": "Auto-detect implementation is native; JS only empty-string + spawn name pandoc. Unknown how PATH/app-bundle search works on macOS.",
+      "confidence": "direct literal / unknown native discovery"
+    },
+    "openExportLocation": {
+      "uiLabel": "Open exported file location",
+      "storageKey": "export.general.openExportLocation",
+      "generalUIChecked": "!!n.openExportLocation so missing is false in General tab",
+      "perTypeChecked": "!!ae(perType, general) — missing per-type inherits general; missing both is false (schema third arg unused)",
+      "rawDefault": "absent treated as false in General checkbox",
+      "confidence": "direct literal"
+    },
+    "suggestedName": {
+      "noPreferenceField": true,
+      "rules": "See E_suggestedName. No export-settings toggle found.",
+      "confidence": "direct literal"
+    },
+    "notification": {
+      "noPreferenceField": true,
+      "runtime": "showExportNotification('Exporting in progress...'); success/fail dialogs from Panel.json. No export-settings notification toggle found.",
+      "confidence": "direct literal"
+    },
+    "exportedYamlPolicy": {
+      "ui": "allowPerFileSetting checkbox per format schema (not a separate YAML-export-on/off besides that)",
+      "label": "Read and overwrite export settings from YAML front matters",
+      "confidence": "direct literal"
+    },
+    "globalExtraArgsEnv": {
+      "globalEnv": "not found in inspected JS",
+      "perFormat": "extraArguments on Pandoc schemas (D)"
+    }
+  },
+  "afterExportCommon": {
+    "openExportLocation": {
+      "storageKeyRelative": "openExportLocation",
+      "type": "checkbox"
+    },
+    "openExportFile": {
+      "storageKeyRelative": "openExportFile",
+      "type": "checkbox",
+      "rawDefault": "absent => false via !!r.openExportFile"
+    },
+    "runCommand": {
+      "storageKeyRelative": "runCommand",
+      "type": "checkbox"
+    },
+    "runCommandStr": {
+      "storageKeyRelative": "runCommandStr",
+      "type": "string",
+      "presetsMac": "pbcopy < \"${outputPath}\""
+    },
+    "showOutput": {
+      "storageKeyRelative": "showOutput",
+      "type": "checkbox"
+    },
+    "customTypeDiffers": "custom uses showOutput always; openExportLocation only if saveDialog set; openExportFile only if saveFile; no runCommand block in custom after-export UI (command field is the export command)."
+  },
+  "types": {
+    "pdf": {
+      "id": "pdf",
+      "storage": "export.pdf",
+      "fixedTab": true,
+      "schemaRef": [
+        "E_pdfSchemaJ",
+        "E_paperControl",
+        "E_headerFooterOptions",
+        "E_paperCustomSize",
+        "E_paperMargins",
+        "E_allowPerFileSchema"
+      ],
+      "fields": [
+        {
+          "key": "paper",
+          "ui": "Paper Size",
+          "schemaDefault": "Mac '' (Default); non-Mac 'A4'",
+          "note": "schema default not native print default"
+        },
+        {
+          "key": "paper.custom",
+          "ui": "Width x Height mm",
+          "controlFallback": [
+            210,
+            297
+          ]
+        },
+        {
+          "key": "paper.margin",
+          "ui": "Margin",
+          "values": [
+            "",
+            "custom"
+          ],
+          "emptyLabel": "Default"
+        },
+        {
+          "key": "paper.marginTop",
+          "controlFallbackMm": 16
+        },
+        {
+          "key": "paper.marginBottom",
+          "controlFallbackMm": 16
+        },
+        {
+          "key": "paper.marginLeft",
+          "controlFallbackMm": 16
+        },
+        {
+          "key": "paper.marginRight",
+          "controlFallbackMm": 16
+        },
+        {
+          "key": "exportTheme",
+          "ui": "Theme",
+          "schemaDefault": "absent in j besides type; UI uses a[r]||o.default"
+        },
+        {
+          "key": "splitPages",
+          "ui": "Page Break Between Top Headings",
+          "checkboxDefaultInRenderer": "!!(a[r]||o.default) with no schema default => false if absent"
+        },
+        {
+          "key": "header",
+          "schemaDefault": "",
+          "presetOptions": [
+            "${title}",
+            "${author}",
+            "${pageNo}",
+            "${today}"
+          ]
+        },
+        {
+          "key": "footer",
+          "schemaDefault": "",
+          "presetOptions": [
+            "${title}",
+            "No. ${pageNo} / ${totalPages}",
+            "Written in Typora",
+            "CONFIDENTIAL"
+          ]
+        },
+        {
+          "key": "author",
+          "placeholder": "Empty"
+        },
+        {
+          "key": "appendBody",
+          "ui": "Append Extra Content (HTML)"
+        },
+        {
+          "key": "allowPerFileSetting",
+          "type": "checkbox"
+        }
+      ],
+      "consumer": "exportPDF -> exportToHTML forPrint; CSS from splitPages/exportTheme/paper.margin. Native WebKit PDF flags unknown.",
+      "themeEmptyOption": {
+        "value": "",
+        "label": "Current Theme",
+        "evidence": [
+          "E_themeOptions",
+          "E_themeConsumer"
+        ],
+        "note": "Empty selection falls back to current theme CSS in export consumer; exact native-injected stored default not read."
+      }
+    },
+    "html": {
+      "id": "html",
+      "storage": "export.html",
+      "fixedTab": true,
+      "schemaRef": [
+        "E_htmlF",
+        "E_htmlPlainL"
+      ],
+      "fields": [
+        "sidebar",
+        "exportTheme",
+        "appendHead",
+        "appendBody",
+        "allowPerFileSetting"
+      ],
+      "htmlPlainAdds": "noStyle forced at dispatch",
+      "themeEmptyOption": {
+        "value": "",
+        "label": "Current Theme",
+        "evidence": [
+          "E_themeOptions",
+          "E_themeConsumer"
+        ],
+        "note": "Empty selection falls back to current theme CSS in export consumer; exact native-injected stored default not read."
+      }
+    },
+    "html-plain": {
+      "id": "html-plain",
+      "storage": "export.html-plain",
+      "fixedTab": true,
+      "schemaRef": [
+        "E_htmlPlainL"
+      ],
+      "fields": [
+        "appendHead",
+        "appendBody",
+        "allowPerFileSetting"
+      ],
+      "dispatch": "Object.assign(e,{noStyle:!0}) then exportAndSaveHTML"
+    },
+    "image": {
+      "id": "image",
+      "storage": "export.image",
+      "fixedTab": true,
+      "replicaNameDiff": "replica uses png; original type/storage image",
+      "schemaRef": [
+        "E_imageM",
+        "E_imageConsumer",
+        "E_imageFontControls"
+      ],
+      "fields": [
+        {
+          "key": "imageWidth",
+          "schemaDefault": 640,
+          "consumerDefault": 640
+        },
+        {
+          "key": "quality",
+          "schemaDefault": 0,
+          "options": {
+            "0": "Auto",
+            "1": "Medium",
+            "2": "High",
+            "3": "Best"
+          },
+          "consumer": "+(o.quality||0)"
+        },
+        {
+          "key": "useThemeFontSize",
+          "schemaDefault": 0
+        },
+        {
+          "key": "imageFontSize",
+          "schemaDefault": 24,
+          "consumerAssign": "imageFontSize:\"24px\" then fontSize"
+        },
+        {
+          "key": "exportTheme"
+        }
+      ],
+      "themeEmptyOption": {
+        "value": "",
+        "label": "Current Theme",
+        "evidence": [
+          "E_themeOptions",
+          "E_themeConsumer"
+        ],
+        "note": "Empty selection falls back to current theme CSS in export consumer; exact native-injected stored default not read."
+      }
+    },
+    "docx": {
+      "id": "docx",
+      "storage": "export.docx unless custom key",
+      "defaultCustomKey": "docx",
+      "schemaRef": [
+        "E_docxV",
+        "E_extraArgsD"
+      ],
+      "fields": [
+        "arg",
+        "extraArguments",
+        "reference-doc"
+      ],
+      "argDefault": "-f native -s -o ${outputPath} -t docx"
+    },
+    "odt": {
+      "id": "odt",
+      "defaultCustomKey": "odt",
+      "schemaRef": [
+        "E_odtW"
+      ],
+      "fields": [
+        "arg",
+        "extraArguments",
+        "template"
+      ],
+      "argDefault": "-f native -s -o ${outputPath} -t odt"
+    },
+    "rtf": {
+      "id": "rtf",
+      "defaultCustomKey": "rtf",
+      "schemaRef": [
+        "E_rtfU"
+      ],
+      "fields": [
+        "arg",
+        "extraArguments"
+      ],
+      "argDefault": "-f native -s -o ${outputPath} -t rtf"
+    },
+    "epub": {
+      "id": "epub",
+      "defaultCustomKey": "epub",
+      "schemaRef": [
+        "E_epubB"
+      ],
+      "fields": [
+        "arg",
+        "extraArguments",
+        "css",
+        "toc-depth"
+      ],
+      "toc-depthSchemaDefault": 3,
+      "argDefault": "-f native -s -o ${outputPath} -t epub"
+    },
+    "latex": {
+      "id": "latex",
+      "defaultCustomKey": "latex",
+      "schemaRef": [
+        "E_simplePandocConverters",
+        "E_simple_latex"
+      ],
+      "fields": [
+        "arg",
+        "extraArguments"
+      ],
+      "argDefault": "-f native -s -o ${outputPath} -t latex"
+    },
+    "wiki": {
+      "id": "wiki",
+      "defaultCustomKey": "wiki",
+      "replicaNameDiff": "replica mediawiki; original type wiki, argv -t mediawiki",
+      "schemaRef": [
+        "E_simplePandocConverters",
+        "E_pandocArgvX",
+        "E_simple_wiki"
+      ],
+      "fields": [
+        "arg",
+        "extraArguments"
+      ],
+      "argDefault": "-f native -s -o ${outputPath} -t mediawiki"
+    },
+    "rst": {
+      "id": "rst",
+      "defaultCustomKey": "rst",
+      "schemaRef": [
+        "E_simplePandocConverters",
+        "E_simple_rst"
+      ],
+      "fields": [
+        "arg",
+        "extraArguments"
+      ],
+      "argDefault": "-f native -s -o ${outputPath} -t rst"
+    },
+    "textile": {
+      "id": "textile",
+      "defaultCustomKey": "textile",
+      "schemaRef": [
+        "E_simplePandocConverters",
+        "E_simple_textile"
+      ],
+      "fields": [
+        "arg",
+        "extraArguments"
+      ],
+      "argDefault": "-f native -s -o ${outputPath} -t textile"
+    },
+    "opml": {
+      "id": "opml",
+      "defaultCustomKey": "opml",
+      "schemaRef": [
+        "E_simplePandocConverters",
+        "E_simple_opml"
+      ],
+      "fields": [
+        "arg",
+        "extraArguments"
+      ],
+      "argDefault": "-f native -s -o ${outputPath} -t opml"
+    }
+  },
+  "addTemplatesNotFixedTabs": {
+    "latex-pdf": {
+      "schemaRef": "E_latexPdfZ"
+    },
+    "markdown": {
+      "schemaRef": "E_markdownJ"
+    },
+    "native": {
+      "schemaRef": "E_nativeI"
+    },
+    "pandoc": {
+      "schemaRef": "E_pandocR"
+    },
+    "custom": {
+      "schemaRef": "E_customA"
+    }
+  },
+  "customExportRules": {
+    "defaultListUI": "X nine converters",
+    "add": "Modal Add From a Template (ce). New key=type or type+N if collision; name=template name or name-N.",
+    "reorder": "Move Up/Down on customExport array only; disabled for fixed tabs.",
+    "rename": "inline; disabled for fixed tabs.",
+    "remove": "confirm 'Delete this export option ?'; splice customExport; export.<key>={}; jump general. Disabled for general/pdf/html/html-plain/image.",
+    "schemaOverride": "r.schema || entry.type selects Y()"
+  },
+  "yamlMapping": {
+    "allowPerFileSetting": "on the export option object e (from export.<type>). True => whitelist a else r.",
+    "lookup": "getSetting('typora-'+key) || getSetting(key) || getSetting(capitalize(key)); store n[camelize(key)]",
+    "sidebar": "string true/false coerced to boolean",
+    "pdfEpubOverlay": "If overlay n has appendHead/Body, set userAppendHead/Body true then delete appendHead/Body/Extra from n only. Global e.append* not deleted.",
+    "unset": "any assigned 'unset' becomes '' after merge",
+    "getSettingOrder": "projectSetting exact/lower unless unset/undefined, else fileSetting, else File.option[e]",
+    "notInExportWhitelist": "typora-root-url, typora-copy-images-to, papersize, margin* used by document meta/export resources separately (E_metaKeysO). Exact export-time copy-images behavior not fully expanded here.",
+    "localSettingUI": "local-setting.html / localSettingIndex: no export field schema found; not the export.general store.",
+    "baseAlwaysAllowed": [
+      "title",
+      "author",
+      "subject",
+      "creator",
+      "split-level",
+      "toc-depth"
+    ],
+    "additionalWhenAllowPerFileSetting": [
+      "header",
+      "footer",
+      "sidebar",
+      "append-head",
+      "append-head-extra",
+      "append-body",
+      "append-body-extra"
+    ],
+    "overlayKeyMapping": {
+      "title": "title",
+      "author": "author",
+      "subject": "subject",
+      "creator": "creator",
+      "split-level": "splitLevel",
+      "toc-depth": "tocDepth",
+      "header": "header",
+      "footer": "footer",
+      "sidebar": "sidebar",
+      "append-head": "appendHead",
+      "append-head-extra": "appendHeadExtra",
+      "append-body": "appendBody",
+      "append-body-extra": "appendBodyExtra"
+    },
+    "truthyLookupCaveat": "The source uses || in getSetting and in prefixed/unprefixed/capitalized lookup. Falsy values can fall through. This is a literal lookup contract, not proof that every downstream converter consumes every camelized overlay key.",
+    "nativeOptionInjection": "Native macOS construction/injection of export options remains outside the inspected JS evidence."
+  },
+  "pandocCli": {
+    "jsNodeArgv": "E_pandocArgvX: always starts -f native -s -o <path> -t <fmt> with wiki->mediawiki, latex-pdf->pdf. extraArguments concatenated. Flags via w(): --reference-doc, --template, --css, --split-level, --toc-depth, --toc, --pdf-engine. Markdown-specific flags when type markdown.",
+    "macNativeBackend": "File.isMac exportToNative / bridge export.exportToNative. Final argv and defaults unknown. Do not infer from generic Pandoc docs.",
+    "env": "not found in inspected snippets",
+    "argUI": "disabled computed string; not independently persisted as source of truth vs structured fields",
+    "computedArgPersistence": "Structured field onChange handlers compute arg via t(\"arg\", ...); Preferences te() persists that key inside export.<group>. The inspected Node x() builds argv from structured values, not from arg. How macOS native uses arg remains unknown."
+  },
+  "reusedRepeatExport": {
+    "file": "evidence/repeat-export-reference.json",
+    "used": [
+      "lastExport/lastExportNoOverwrite",
+      "showExportDialog defaultPath",
+      "recordLastExport",
+      "overwrite warning",
+      "exportFolder/customExportPath path selection"
+    ],
+    "notRepeated": true
+  },
+  "unknowns": [
+    "Native macOS PDF/WebKit print defaults (page size, margins, header/footer engine) vs JS paper control fallbacks.",
+    "How native injects export.<group> into ClientCommand.export payload / File.option flattening.",
+    "Whether customExport first-run equals X in native defaults store.",
+    "Pandoc auto-detect search paths on macOS; bundled vs PATH.",
+    "Final native Pandoc argv (WK/ObjC) vs Node x() builder.",
+    "Whether allowPerFileSetting schema checkbox has a stored true default (no schema default on j/L; checkbox renderer treats missing as false).",
+    "Cover image / epub-cover: not found as schema field.",
+    "split-level / title / outline YAML keys exist in whitelist but PDF Typora/Webkit schema has no split-level control (epub has toc-depth). Native consumption of YAML split-level for PDF unknown.",
+    "Global extra env for Pandoc.",
+    "Whether export.general.openExportLocation is written true by native first launch (General UI treats missing as false).",
+    "GUI never observed; coordinator GUI audit independent."
+  ],
+  "coordinatorVerification": {
+    "timestamp": "2026-10-19T13:54:17.774553+00:00",
+    "method": "Read-only exact source anchor/slice and SHA256 validation; independently reviewed YAML whitelist, getSetting order, paper controls, schema defaults, header/footer tokens, custom persistence and Node/native split. No GUI or user prefs accessed.",
+    "verbatimSnippetChecks": [
+      {
+        "evidence": "E_schemaMap",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_builtinTabs",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_convertersX",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_persistKeys",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_generalUI",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_pdfSchemaJ",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_htmlPlainL",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_htmlF",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_imageM",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_customA",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_extraArgsD",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_pandocR",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_nativeI",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_docxV",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_odtW",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_rtfU",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_epubB",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_simplePandocConverters",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_latexPdfZ",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_markdownJ",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_paperControl",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_ae",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_afterExportPerType",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_customListCRUD",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_loadExportOption",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_whitelist",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_getSetting",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_metaKeysO",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_clientExport",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_suggestedName",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_defaultPath",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_pandocSpawn",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_pandocArgvX",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_imageConsumer",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_pdfCssConsumer",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_afterExportConsumer",
+        "passed": true,
+        "characters": 480
+      },
+      {
+        "evidence": "E_simple_latex",
+        "passed": true,
+        "characters": 125
+      },
+      {
+        "evidence": "E_simple_wiki",
+        "passed": true,
+        "characters": 125
+      },
+      {
+        "evidence": "E_simple_rst",
+        "passed": true,
+        "characters": 125
+      },
+      {
+        "evidence": "E_simple_textile",
+        "passed": true,
+        "characters": 125
+      },
+      {
+        "evidence": "E_simple_opml",
+        "passed": true,
+        "characters": 125
+      },
+      {
+        "evidence": "E_headerFooterOptions",
+        "passed": true,
+        "characters": 630
+      },
+      {
+        "evidence": "E_allowPerFileSchema",
+        "passed": true,
+        "characters": 260
+      },
+      {
+        "evidence": "E_imageFontControls",
+        "passed": true,
+        "characters": 560
+      },
+      {
+        "evidence": "E_paperCustomSize",
+        "passed": true,
+        "characters": 210
+      },
+      {
+        "evidence": "E_paperMargins",
+        "passed": true,
+        "characters": 670
+      },
+      {
+        "evidence": "E_themeOptions",
+        "passed": true,
+        "characters": 280
+      },
+      {
+        "evidence": "E_themeConsumer",
+        "passed": true,
+        "characters": 420
+      },
+      {
+        "evidence": "E_pandocStructuredFlags",
+        "passed": true,
+        "characters": 350
+      }
+    ],
+    "sourceHashChecks": [
+      {
+        "file": "Preferences.962926a4.0b4e81f7.js",
+        "passed": true
+      },
+      {
+        "file": "localSettingIndex.a2c75cbd.068b97ef.js",
+        "passed": true
+      },
+      {
+        "file": "setting.html",
+        "passed": true
+      },
+      {
+        "file": "local-setting.html",
+        "passed": true
+      },
+      {
+        "file": "frame.js",
+        "passed": true
+      },
+      {
+        "file": "config.json",
+        "passed": true
+      }
+    ],
+    "reviewCorrection": "Original harness summary-style snippets and approximate offsets were retained as summaryNotVerbatim; snippet and characterOffset now identify actual bounded source slices.",
+    "nativeRuntimeDefaultsVerified": false
+  },
+  "harness": {
+    "model": "grok-4.6",
+    "reasoningEffort": "low",
+    "readOnly": true,
+    "runs": [
+      {
+        "streamFile": ".cache/export-settings-audit-grok.stream",
+        "sessionId": "01a15465-fc8e-71b2-9df7-6e1cfecb12ee",
+        "stopReason": "max_turn_requests",
+        "turns": 24,
+        "usage": {
+          "input_tokens": 105679,
+          "cache_read_input_tokens": 937856,
+          "cache_creation_input_tokens": 0,
+          "output_tokens": 7740,
+          "reasoning_tokens": 1077,
+          "total_tokens": 1051275
+        },
+        "exitCode": 1
+      },
+      {
+        "streamFile": ".cache/export-settings-audit-finalize-grok.stream",
+        "sessionId": "01a15465-fc8e-71b2-9df7-6e1cfecb12ee",
+        "stopReason": "end_turn",
+        "turns": 3,
+        "usage": {
+          "input_tokens": 12047,
+          "cache_read_input_tokens": 193024,
+          "cache_creation_input_tokens": 0,
+          "output_tokens": 10817,
+          "reasoning_tokens": 67,
+          "total_tokens": 215888
+        },
+        "exitCode": 0
+      }
+    ],
+    "totalTurns": 27,
+    "followedToTerminal": true,
+    "activeProcess": false,
+    "note": "Initial24-turn audit gathered facts but hit limit; same session resumed for3 turns solely to write/validate synthesis."
+  }
+}

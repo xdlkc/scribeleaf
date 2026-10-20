@@ -1,0 +1,48 @@
+{
+  "observedAt": "2026-10-19T16:40:48.000601+00:00",
+  "scope": "read-only Foundation Probe.app; no NSApplication, no GUI, no defaults writes",
+  "bundleIdentifier": "com.typora-replica.export-settings-verifier.de49ba4df3864980b4dbeb77365d15fe",
+  "bundlePath": "/Users/lkc/Code/typora-replica/.cache/export-settings-readonly-probe/ReadOnlyProbe.app",
+  "pid": 31526,
+  "exitCode": 0,
+  "suiteInitReturnedNil": true,
+  "suite": {
+    "available": false
+  },
+  "standard": {
+    "available": true,
+    "hasExportData": true,
+    "qaPersist": "1",
+    "sentinel": "QA_RESTART_SENTINEL",
+    "sentinelType": "__NSCFString",
+    "theme": "night"
+  },
+  "fallbackBoundary": {
+    "available": true,
+    "hasExportData": true,
+    "qaPersist": "1",
+    "sentinel": "QA_RESTART_SENTINEL",
+    "sentinelType": "__NSCFString",
+    "theme": "night"
+  },
+  "persistentDomain": {
+    "present": true,
+    "qaPersist": "1",
+    "sentinel": "QA_RESTART_SENTINEL",
+    "theme": "night"
+  },
+  "nativeDiagnostic": "Using your own bundle identifier as an NSUserDefaults suite name does not make sense and will not work.",
+  "rootCause": "QA restart writer uses suite ?? standard, but QA reader optional-chains nil suite. Production AppPreferencesStore already uses suite ?? standard.",
+  "oldFailurePreserved": true,
+  "sourceSHA256": "2b32e182a0631a1fbc9f0b32c299dfe76129f1f6a84501c53fdfc23679ba78c2",
+  "binarySHA256": "3c856fa6558fb678239683b9e4579fb17d72105dbd456927630debb932e488c2",
+  "passed": true,
+  "originalFailedAttempt": {
+    "result": ".cache/export-settings-native-verifier/result.json",
+    "bundleIdentifier": "com.typora-replica.export-settings-verifier.de49ba4df3864980b4dbeb77365d15fe",
+    "automaticPassed": 62,
+    "automaticTotal": 63,
+    "failedCheck": "restart sentinel persisted in QA domain",
+    "mustNotRewrite": true
+  }
+}

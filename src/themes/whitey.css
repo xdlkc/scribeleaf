@@ -1,0 +1,374 @@
+/* Whitey core typography mapped from installed Typora 1.14.10.
+ * Independently authored for CM6 lines and standalone .md-render HTML.
+ * Every content rule is theme-scoped. Lists/quotes remain CM line structures. */
+
+body[data-theme="whitey"] {
+    --paper: #fefefe;
+    --bg: #fefefe;
+    --text: #333333;
+    --text-dim: #999999;
+    --heading: #333333;
+    --link: #2484c1;
+    --border: #dddddd;
+    --code-bg: #ffffff;
+    --code-text: #333333;
+    --quote-text: #333333;
+    --quote-border: #dddddd;
+    --quote-bg: transparent;
+    --mark-bg: #ffff00;
+    --selection: #b5d6fc;
+    --sidebar-bg: #fefefe;
+    --sidebar-text: #333333;
+    --ui-text: #777777;
+    --ui-hover-bg: #f3f3f3;
+    --table-stripe: transparent;
+    -webkit-font-smoothing: antialiased;
+    --font-body: "Vollkorn", Palatino, Times;
+    --font-heading: var(--font-body);
+    --font-mono: "Consolas", "Menlo", "Monaco", monospace, serif;
+    line-height: 1.4;
+}
+
+body[data-theme="whitey"] .md-render:not(.lp-table),
+body[data-theme="whitey"] #editor .cm-content {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1400px) {
+    body[data-theme="whitey"] .md-render:not(.lp-table),
+    body[data-theme="whitey"] #editor .cm-content { max-width: 1100px; }
+}
+
+@media (min-width: 1800px) {
+    body[data-theme="whitey"] .md-render:not(.lp-table),
+    body[data-theme="whitey"] #editor .cm-content { max-width: 1100px; }
+}
+
+body[data-theme="whitey"] .md-render:not(.lp-table) {
+    font-family: var(--font-body);
+    font-size: var(--content-rem, 19px);
+    line-height: 1.53;
+    color: var(--text);
+}
+
+body[data-theme="whitey"] #editor .cm-scroller {
+    font-family: var(--font-body);
+    line-height: 1.53;
+}
+
+body[data-theme="whitey"] .md-render :is(h1, h2, h3, h4, h5, h6),
+body[data-theme="whitey"] #editor :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
+    font-family: var(--font-heading);
+    color: var(--heading);
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+    text-transform: none;
+    border: 0;
+    padding: 0;
+    letter-spacing: normal;
+}
+
+body[data-theme="whitey"] #editor .cm-content > :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6):first-child {
+    margin-top: var(--first-heading-margin, 1rem);
+}
+
+body[data-theme="whitey"] .md-render pre code {
+    font-family: var(--font-mono);
+    font-size: 1em;
+    line-height: inherit;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body[data-theme="whitey"] .md-render blockquote > :first-child {
+    margin-top: 0;
+}
+
+body[data-theme="whitey"] .md-render blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+body[data-theme="whitey"] .md-render li + li {
+    margin-top: 0;
+}
+
+body[data-theme="whitey"] #editor .cm-list-line {
+    margin: 0;
+}
+
+body[data-theme="whitey"] #editor .cm-fence-line {
+    background: var(--code-bg);
+    font-family: var(--font-mono);
+}
+
+body[data-theme="whitey"] .md-render a,
+body[data-theme="whitey"] #editor .cm-link {
+    color: var(--link);
+}
+
+body[data-theme="whitey"] .md-render table,
+body[data-theme="whitey"] #editor .lp-table table {
+    font-family: var(--font-body);
+    border-collapse: collapse;
+    display: table;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+}
+
+body[data-theme="whitey"] #editor .cm-content {
+    font-size: calc(var(--editor-font-size) * 1.1875);
+    padding-top: 40px;
+    text-align: justify;
+}
+
+body[data-theme="whitey"] .md-render:not(.lp-table) {
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
+body[data-theme="whitey"] .md-render h1,
+body[data-theme="whitey"] #editor .cm-header-1 {
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1.53;
+    margin: 1.6em 0 var(--content-rem, 19px);
+    text-align: center;
+}
+
+body[data-theme="whitey"] .md-render h2,
+body[data-theme="whitey"] #editor .cm-header-2 {
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1.53;
+    margin: 2em 0 var(--content-rem, 19px);
+    text-align: center;
+}
+
+body[data-theme="whitey"] .md-render h3,
+body[data-theme="whitey"] #editor .cm-header-3 {
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.53;
+    margin: 3em 0 var(--content-rem, 19px);
+    text-align: center;
+}
+
+body[data-theme="whitey"] .md-render h4,
+body[data-theme="whitey"] #editor .cm-header-4 {
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 1.53;
+    margin: var(--content-rem, 19px) 0;
+    text-align: justify;
+}
+
+body[data-theme="whitey"] .md-render h5,
+body[data-theme="whitey"] #editor .cm-header-5 {
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.53;
+    margin: var(--content-rem, 19px) 0;
+    text-align: justify;
+}
+
+body[data-theme="whitey"] .md-render h6,
+body[data-theme="whitey"] #editor .cm-header-6 {
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.53;
+    margin: var(--content-rem, 19px) 0;
+    text-align: justify;
+}
+
+body[data-theme="whitey"] .md-render h3,
+body[data-theme="whitey"] #editor .cm-header-3 {
+    font-style: italic;
+}
+
+body[data-theme="whitey"] #editor .cm-content > .cm-header-1:first-child {
+    margin-top: 1.6em;
+}
+
+body[data-theme="whitey"] .md-render h1 + h2,
+body[data-theme="whitey"] .md-render h2 + h3,
+body[data-theme="whitey"] #editor .cm-header-1 + .cm-header-2,
+body[data-theme="whitey"] #editor .cm-header-2 + .cm-header-3 {
+    margin-top: .83em;
+}
+
+body[data-theme="whitey"] .md-render h2::after,
+body[data-theme="whitey"] #editor .cm-header-2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    margin: 0 auto;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+body[data-theme="whitey"] .md-render p {
+    margin: 0 0 var(--content-rem, 19px);
+    text-align: justify;
+    hyphens: auto;
+}
+
+body[data-theme="whitey"] .md-render :is(ul, ol) {
+    padding-left: 1.2em;
+    margin: 1em 0;
+}
+
+body[data-theme="whitey"] .md-render ul {
+    list-style-type: square;
+}
+
+body[data-theme="whitey"] #editor .cm-list-line {
+    padding-left: 1.2em;
+}
+
+body[data-theme="whitey"] .md-render blockquote,
+body[data-theme="whitey"] #editor .cm-quote {
+    border-left: 1px solid #dddddd;
+    margin: var(--content-rem, 19px) 0 var(--content-rem, 19px) 1em;
+    padding: 0 0 0 1em;
+    color: #333333;
+    background: transparent;
+}
+
+body[data-theme="whitey"] .md-render :not(pre) > code,
+body[data-theme="whitey"] #editor .cm-inline-code {
+    font-family: var(--font-mono);
+    font-size: .9em;
+    line-height: inherit;
+    background: #ffffff;
+    color: var(--code-text);
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+body[data-theme="whitey"] #editor .cm-codeblock-line {
+    font-family: var(--font-mono);
+    font-size: .9em;
+    background: var(--code-bg);
+    color: var(--code-text);
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-radius: 0;
+}
+
+body[data-theme="whitey"] #editor .cm-codeblock-first {
+    border-top: 1px solid #dddddd;
+    border-radius: 0;
+}
+
+body[data-theme="whitey"] #editor .cm-codeblock-last {
+    border-bottom: 1px solid #dddddd;
+    border-radius: 0;
+}
+
+body[data-theme="whitey"] .md-render pre {
+    font-family: var(--font-mono);
+    font-size: .9em;
+    line-height: 1.53;
+    background: #ffffff;
+    color: #333333;
+    margin: 1em 0 1.5em 1em;
+    padding: 6px 0 8px 1em;
+    border: 1px solid #dddddd;
+    border-radius: 0;
+}
+
+body[data-theme="whitey"] #editor .cm-codeblock-line {
+    line-height: 1.53;
+    margin-left: 1em;
+    padding: 0 0 0 1em;
+}
+
+body[data-theme="whitey"] #editor .cm-codeblock-first {
+    padding-top: 6px;
+}
+
+body[data-theme="whitey"] #editor .cm-codeblock-last {
+    padding-bottom: 8px;
+    margin-bottom: 1.5em;
+}
+
+body[data-theme="whitey"] .md-render table,
+body[data-theme="whitey"] #editor .lp-table table {
+    font-size: var(--content-rem, 19px);
+    margin: 0 0 calc(var(--content-rem, 19px) * 1.333333);
+}
+
+body[data-theme="whitey"] .md-render :is(th, td):not(:where(.lp-table-colhead, .lp-table-corner, .lp-row-handle)),
+body[data-theme="whitey"] #editor .lp-table table .lp-cell {
+    border: 0;
+    border-top: 1px solid #dddddd;
+    padding: 8px;
+    line-height: calc(var(--content-rem, 19px) * 1.333333);
+    vertical-align: top;
+    background: transparent;
+}
+
+body[data-theme="whitey"] .md-render thead th:not(.lp-table-colhead):not(.lp-table-corner),
+body[data-theme="whitey"] #editor .lp-table thead th.lp-cell {
+    vertical-align: bottom;
+    font-weight: 700;
+}
+
+body[data-theme="whitey"] .md-render thead tr:first-child th:not(.lp-table-colhead):not(.lp-table-corner),
+body[data-theme="whitey"] #editor .lp-table thead tr:not(.lp-table-handle-row) th.lp-cell {
+    border-top: 0;
+}
+
+body[data-theme="whitey"] .md-render tbody + tbody {
+    border-top: 2px solid #dddddd;
+}
+
+body[data-theme="whitey"] .md-render a,
+body[data-theme="whitey"] #editor .cm-link {
+    text-decoration: none;
+}
+
+body[data-theme="whitey"] .md-render a:hover,
+body[data-theme="whitey"] #editor .cm-link:hover {
+    text-decoration: underline;
+}
+
+body[data-theme="whitey"] .md-render h1 a,
+body[data-theme="whitey"] .md-render h1 a:hover {
+    color: #333333;
+    text-decoration: none;
+}
+
+@media print {
+    body[data-theme="whitey"] .md-render:not(.lp-table) { font-size: var(--content-rem, 13px); }
+    body[data-theme="whitey"] .md-render table { font-size: var(--content-rem, 13px); margin-bottom: calc(var(--content-rem, 13px) * 1.333333); }
+    body[data-theme="whitey"] .md-render :is(th, td) { line-height: calc(var(--content-rem, 13px) * 1.333333); }
+}
+
+/* First-line overrides cancel the shared GitHub editor rule. */
+body[data-theme="whitey"] #editor .cm-content > .cm-header-1:first-child { margin-top: 1.6em; }
+body[data-theme="whitey"] #editor .cm-content > .cm-header-2:first-child { margin-top: 2em; }
+body[data-theme="whitey"] #editor .cm-content > .cm-header-3:first-child { margin-top: 3em; }
+body[data-theme="whitey"] #editor .cm-content > .cm-header-4:first-child { margin-top: var(--content-rem, 19px); }
+body[data-theme="whitey"] #editor .cm-content > .cm-header-5:first-child { margin-top: var(--content-rem, 19px); }
+body[data-theme="whitey"] #editor .cm-content > .cm-header-6:first-child { margin-top: var(--content-rem, 19px); }
+
+/* CM quotes are lines, so block margins must not repeat on each line. */
+body[data-theme="whitey"] #editor .cm-quote { margin-top: 0; margin-bottom: 0; }
+
+body[data-theme="whitey"] #editor .lp-table { line-height: 1.53; font-weight: 400; }
+
+body[data-theme="whitey"] .md-render pre,
+body[data-theme="whitey"] .md-render code,
+body[data-theme="whitey"] #editor .cm-codeblock-line,
+body[data-theme="whitey"] #editor .cm-inline-code { text-align: left; }
+body[data-theme="whitey"] .md-render pre,
+body[data-theme="whitey"] #editor .cm-codeblock-line { background: transparent; }

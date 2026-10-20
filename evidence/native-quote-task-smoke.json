@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-10-19T05:25:51.168Z",
+  "scope": "Actual current production app accessibility: checkbox inside blockquote and keyboard undo",
+  "bundleIdentifier": "local.typora-replica.editor",
+  "pid": 56368,
+  "fixture": "fixtures/image paths #100%/typing-repro-final.md",
+  "actions": [
+    "Click AX47 checked quote task",
+    "Cmd+Z"
+  ],
+  "checks": [
+    {
+      "name": "Click changes first quoted checkbox from 1 to 0",
+      "passed": true
+    },
+    {
+      "name": "Click marks document edited",
+      "passed": true
+    },
+    {
+      "name": "Undo restores first task checked and second task unchecked",
+      "passed": true
+    },
+    {
+      "name": "Undo restores clean document state",
+      "passed": true
+    },
+    {
+      "name": "Source file bytes unchanged from pre-click theme smoke",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Only existing quoted task sample; full nested-source correctness is covered separately by local CodeMirror checks.",
+    "No source save was issued."
+  ],
+  "fixtureSHA256": "aed58c6e925054d7ce8508c2d9a85af5c5ed069f2d1e67565d6a8b57c1468122"
+}
