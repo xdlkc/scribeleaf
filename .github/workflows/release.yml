@@ -1,0 +1,78 @@
+name: Release packages
+on:
+  pull_request:
+  push:
+    branches: [main, 'release/**']
+    tags: ['v*']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref_type != 'tag' }}
+jobs:
+  package:
+    runs-on: macos-15
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+      - name: Check version
+        env:
+          RELEASE_TAG: ${{ github.ref_type == 'tag' && github.ref_name || '' }}
+        run: bash scripts/check-release-version.sh
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: bash scripts/package-macos.sh
+      - uses: actions/upload-artifact@v5
+        with:
+          name: release-packages
+          path: |
+            dist/*.zip
+            dist/*.dmg
+            dist/SHA256SUMS
+          if-no-files-found: error
+  native-launch:
+    needs: package
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: macos-15
+            arch: arm64
+          - runner: macos-15-intel
+            arch: x86_64
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/download-artifact@v5
+        with:
+          name: release-packages
+          path: dist
+      - name: Verify downloaded package and native startup
+        env:
+          EXPECTED_ARCH: ${{ matrix.arch }}
+        run: bash scripts/smoke-release.sh
+  release:
+    if: github.ref_type == 'tag'
+    needs: [package, native-launch]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v5
+        with:
+          name: release-packages
+          path: dist
+      - name: Create draft Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          cd dist
+          sha256sum -c SHA256SUMS
+          gh release create "$TAG" --verify-tag --draft --title "$TAG" --notes 'Universal macOS 13+ ZIP and DMG (arm64 + x86_64). Ad-hoc signed; not Apple notarized. Gatekeeper warnings may appear. Verify downloads with SHA256SUMS.' ./*.zip ./*.dmg SHA256SUMS
