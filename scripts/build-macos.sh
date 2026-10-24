@@ -17,7 +17,7 @@ cp native/Info.plist "$app_path/Contents/Info.plist"
 rsync -a --delete "$renderer_dir/" "$app_path/Contents/Resources/editor/"
 bash scripts/fetch-pandoc.sh
 mkdir -p "$app_path/Contents/Resources/Converters"
-lipo -create .cache/pandoc/arm64/pandoc-3.12.1-arm64/bin/pandoc .cache/pandoc/x86_64/pandoc-3.12.1-x86_64/bin/pandoc -output "$app_path/Contents/Resources/Converters/pandoc"
+lipo -create .cache/pandoc/arm64/pandoc-3.1.11.1-arm64/bin/pandoc .cache/pandoc/x86_64/pandoc-3.1.11.1-x86_64/bin/pandoc -output "$app_path/Contents/Resources/Converters/pandoc"
 cp public/licenses/pandoc/{COPYING,SOURCE}.md "$app_path/Contents/Resources/Converters/"
 codesign --force --sign - --timestamp=none "$app_path/Contents/Resources/Converters/pandoc"
 codesign --force --sign - --timestamp=none "$app_path"

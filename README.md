@@ -26,7 +26,7 @@ open 'build/Scribeleaf.app'
 ```
 
 应用支持 HTML、无样式 HTML、PDF、全长 PNG，以及 Pandoc 的九种转换格式。
-构建脚本固定下载官方 Pandoc 3.12.1 的 arm64 / x86_64 ZIP，验证预置 SHA256，
+构建脚本固定下载官方 Pandoc 3.1.11.1 的 arm64 / x86_64 ZIP，验证预置 SHA256，
 合并并嵌入 Universal 转换器及 GPL 许可证。缺少依赖或校验失败会终止构建。
 首次构建需要网络；后续构建会重新校验缓存的压缩包。
 

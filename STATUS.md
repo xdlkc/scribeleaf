@@ -149,3 +149,13 @@ Markdown偏好为25项已实现、4项部分实现、2项未实现；iPic专有I
 - 更早一次额外签名/清理提权被自动审批容量故障拦住；本轮普通工作区严格签名复核已成功。两份过期临时文件 `typora-paragraph-grok-brief.md` 与 `typora-paragraph-grok.log` 已用正常沙箱命令清理，没有修改权限或绕过审批。
 - 只管理本任务的 typora-qa、gothic-qa 等 QA 浏览器会话，不关闭用户其它 Chrome。
 - 原 Typora 中的 `fixtures/acceptance.md` 是本任务参照窗口；关闭前核实身份与未编辑状态。
+
+## Release packaging (2026-10-24)
+
+Added Universal app/ZIP/DMG generation, pinned compatible Pandoc 3.1.11.1,
+SHA256SUMS, tag/version checks and draft-only GitHub Release automation.
+Every bundled Mach-O is checked for arm64/x86_64, deployment target <=13,
+system-only dylib dependencies and valid ad-hoc signatures. CI launches the
+same ZIP on native Apple Silicon and Intel runners. No Developer ID signing
+or notarization is configured; macOS 13 hardware execution remains unverified.
+This release work does not revalidate historical product parity evidence.

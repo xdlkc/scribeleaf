@@ -2,11 +2,11 @@
 # Official immutable-version downloads; verify even cached archives before extraction.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-version=3.12.1
+version=3.1.11.1
 for arch in arm64 x86_64; do
   case "$arch" in
-    arm64) sha=c2146cf33a583f3ac93eccddf1bb662371d5cfcce1aad1c87ad860cca1435d46 ;;
-    x86_64) sha=81ed3e2cfecf096df15d407152f89a684fd65221082b919963f738e977fad3bc ;;
+    arm64) sha=fa38ad91d8f1f09549ae16830ade3a26650b03cb9a29c68b41b55ea7fab0aa2d ;;
+    x86_64) sha=0018eddd489389ac4e6cf6f4711c1ad49574361c04282e075400fad2c0050084 ;;
   esac
   archive="$PWD/.cache/pandoc/pandoc-$version-$arch-macOS.zip"
   mkdir -p .cache/pandoc
