@@ -11,7 +11,8 @@ in `STATUS.md`. Never claim complete parity without evidence.
 
 Current ownership: all previous implementation workers returned. Coordinator owns
 integration, branding and publication. Product name: Scribeleaf. Build output:
-`build/Scribeleaf.app`, executable Scribeleaf. The internal bundle identifier
+`build/Scribeleaf.app` (Full, default) or `build/Lite/Scribeleaf.app`, executable Scribeleaf.
+Lite and Full share the existing bundle identity and are mutually exclusive install choices. The internal bundle identifier
 `local.typora-replica.editor`, bridge names and storage keys remain for compatibility.
 Do not rename these without a migration plan. Historical evidence uses the old
 product name and is preserved as captured, including original screenshot labels.

@@ -26,9 +26,9 @@ open 'build/Scribeleaf.app'
 ```
 
 应用支持 HTML、无样式 HTML、PDF、全长 PNG，以及 Pandoc 的九种转换格式。
-构建脚本固定下载官方 Pandoc 3.1.11.1 的 arm64 / x86_64 ZIP，验证预置 SHA256，
+Full 构建固定下载官方 Pandoc 3.1.11.1 的 arm64 / x86_64 ZIP，验证预置 SHA256，
 合并并嵌入 Universal 转换器及 GPL 许可证。缺少依赖或校验失败会终止构建。
-首次构建需要网络；后续构建会重新校验缓存的压缩包。
+Full 首次构建需要网络；后续构建会重新校验缓存的压缩包。Lite 不下载或内置 Pandoc。
 
 原生“导出”菜单支持使用上次格式/目标再导出（Ctrl+Cmd+E）和覆盖上次输出。
 覆盖前会确认。切换文稿后保留格式，并要求重新选择目标。历史保存在当前窗口内，
@@ -66,13 +66,57 @@ node scripts/verify-export.mjs
 `scripts/verify-image-export.py`、`scripts/verify-native-export-bridge.py` 会生成
 独立的原生验收应用；真实 WebKit 和保存面板结果见 `STATUS.md`。
 
-## GitHub Release 包
+## Lite / Full 安装包（0.1.1，尚未发布）
 
-最低 macOS 13，Universal ZIP / DMG 均包含 arm64 与 x86_64。
-`Release packages` 在 PR、main、release/** 分支和手动运行时生成经过校验的 Actions 产物；
-两种原生运行器下载同一份包，校验 SHA256、架构、部署目标、签名与原生启动。
-推送与应用版本完全相同的 `v<major>.<minor>.<patch>` tag 后，所有检查通过才创建 **draft Release**。
-在 GitHub 审阅后手动发布；工作流不会自动对外发布正式版本，也不会合并 PR。
-下载 ZIP、DMG 和 SHA256SUMS 后，在同一目录运行 `shasum -a 256 -c SHA256SUMS`。
-当前分发包仅 ad-hoc 签名，没有 Developer ID 签名或 Apple 公证，可能出现 Gatekeeper 提示。
-CI 使用 macOS 15；最低系统由 plist 与每个 Mach-O 切片的部署目标检查，未替代 macOS 13 真机测试。
+| 版本 | 内置 Pandoc | 功能与依赖 |
+| --- | --- | --- |
+| Lite | 无 | Markdown 编辑/保存与原生 HTML、PDF、PNG 导出；文档转换需要可信的已有 Pandoc |
+| Full | 官方 3.1.11.1 Universal | 同样的编辑器，内置经 SHA256 校验的转换器与对应许可证 |
+
+两版均最低 macOS 13、Universal arm64 + x86_64。Lite 调用 Word、EPUB 等需要 Pandoc 的
+导入/导出时，如果找不到转换器，会显示明确错误，说明可改装 Full，或在
+「文件 → 导出 → Export Settings…」配置可信的已有 Pandoc。应用不会自动联网下载或安装依赖。
+
+两版安装内容均名为 **Scribeleaf.app**，共用 `local.typora-replica.editor`、偏好和文档身份，
+属于**互斥安装选项**，不支持并排安装。选择其中一版；手动替换已安装版本前先保存文档并退出应用。
+安装包本身不会改变默认文档应用；本开发流程不会修改用户安装、偏好或文档。
+`CFBundleDisplayName` 和 `ScribeleafEdition` 分别标记 Lite / Full。
+
+```sh
+# 默认 Full，兼容原构建路径 build/Scribeleaf.app
+bash scripts/build-macos.sh
+# 只构建 Lite，不获取 Pandoc：build/Lite/Scribeleaf.app
+SCRIBELEAF_EDITION=Lite bash scripts/build-macos.sh
+# 一次构建公共编辑器，再打包两版
+bash scripts/package-macos.sh
+```
+
+`dist/packages/` 必须恰有以下四个不同名资产和一个覆盖四文件的 `SHA256SUMS`：
+
+- `Scribeleaf-Lite-0.1.1-universal.zip` / `.dmg`
+- `Scribeleaf-Full-0.1.1-universal.zip` / `.dmg`
+
+运行 `shasum -a 256 -c SHA256SUMS` 验证下载完整性。约 8 MB 是此前临时副本的估算，
+实际大小以当前构建产物为准。
+
+## GitHub Release 验证
+
+`Release packages` 在 PR、main 和手动运行时生成两版 Actions 产物。
+CI 验证缺依赖行为、前端导出接线、ZIP/DMG 内容、四文件校验和、每个 Mach-O 的双架构与最低系统、
+动态依赖及签名；确认 Lite 不含转换器、Full 包含许可，且两版的编辑器代码/数据段和前端资源一致（版本元数据与签名不同）。
+两个原生运行器下载同一份产物，分别启动 Lite / Full，并验证 Full 的 Pandoc 转换。
+
+推送与应用版本一致的 `v<major>.<minor>.<patch>` tag 后，全部检查通过才创建 **draft Release**，
+之后仍需人工审阅发布；工作流不合并 PR。现有正式 `v0.1.0` 的 tag、Release 和资产保持不变。
+当前仅 ad-hoc 签名，没有 Developer ID 签名或 Apple 公证，macOS 可能显示安全提示。
+CI 使用 macOS 15；部署目标检查未替代 macOS 13 真机验收，原生启动冒烟未替代完整功能验收。
+
+## 应用图标
+
+Lite / Full 使用同一个原创书页＋叶片图标：深墨绿圆角底、暖白纸页与青绿叶片，
+图标本体没有文字或外部品牌素材。可编辑矢量几何位于 `assets/icon/draw-icon.swift`。
+运行 `bash scripts/build-icon.sh` 可重建透明 PNG、标准十项 iconset 和 `Scribeleaf.icns`。
+PNG 覆盖 16/32/64/128/256/512/1024 像素；生成器检查透明角与内容边距，
+`verify-icon.py` 检查 ICNS 的所有标准尺寸。已导出的素材与尺寸预览见 `assets/icon/`。
+打包时仅内置一个 ICNS，不复制 PNG/预览/生成器，因此不会把整套设计素材放入安装包。
+CI 另提供 `icon-assets` 供审阅。当前安装的 0.1.0 不会被本分支自动替换或刷新图标缓存。
