@@ -36,6 +36,14 @@ jobs:
             dist/packages/*.dmg
             dist/packages/SHA256SUMS
           if-no-files-found: error
+      - uses: actions/upload-artifact@v5
+        with:
+          name: icon-assets
+          path: |
+            build/icon/Scribeleaf.icns
+            build/icon/png/*.png
+            build/icon/png/verification.json
+          if-no-files-found: error
   native-launch:
     needs: package
     strategy:

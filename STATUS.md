@@ -194,3 +194,10 @@ The two editions' native runtime code/data sections match for both architectures
 and all 21 renderer files match; edition plist/code-signature metadata intentionally
 differs. ZIP/DMG and final-commit CI remain the delivery gate, rather than treating
 these intermediate bundle checks as package success.
+
+Icon addition: original page/leaf geometry is editable in assets/icon/draw-icon.swift.
+The 16/32/64/128/256/512/1024 PNG exports and 1024 master were visually inspected;
+transparent corners and content padding pass per-size checks. Standard ICNS round-trip
+contains the ten required entries. A single shared ICNS is embedded in Lite/Full via
+CFBundleIconFile; the PNG contact preview is not included in either app. Final-commit
+package/native CI must be rerun after this icon integration. Installed apps remain untouched.

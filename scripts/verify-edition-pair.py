@@ -31,6 +31,8 @@ with tempfile.TemporaryDirectory(prefix='scribeleaf-section-check-') as work:
         second = runtime_sections(full / 'Contents/MacOS/Scribeleaf', arch, pathlib.Path(work) / 'full')
         assert first == second, arch
         print(f'PASS: {arch} native runtime code/data sections identical (edition signatures differ)')
+assert digest(lite / 'Contents/Resources/Scribeleaf.icns') == digest(full / 'Contents/Resources/Scribeleaf.icns')
+print('PASS: Lite/Full share exactly the same brand icon')
 infos = [plistlib.loads((app / 'Contents/Info.plist').read_bytes()) for app in (lite, full)]
 for key in ('CFBundleIdentifier', 'CFBundleName', 'CFBundleExecutable', 'CFBundleShortVersionString', 'CFBundleDocumentTypes'):
     assert infos[0][key] == infos[1][key], key

@@ -7,6 +7,7 @@ npm run typecheck
 renderer_dir="${TYPORA_RENDERER_OUT_DIR:-.cache/native-dist}"
 npm run build -- --outDir "$renderer_dir"
 node scripts/verify-bundle.mjs "$renderer_dir"
+bash scripts/build-icon.sh
 mkdir -p build .cache/swift
 for arch in arm64 x86_64; do
   xcrun swiftc -swift-version 5 -parse-as-library -O -target "$arch-apple-macosx13.0" -module-name Scribeleaf -module-cache-path "$PWD/.cache/swift" native/*.swift -o "$PWD/build/Scribeleaf-$arch" -framework AppKit -framework WebKit -framework UniformTypeIdentifiers
@@ -20,6 +21,7 @@ for current in "${editions[@]}"; do
   mkdir -p "$app_path/Contents/MacOS" "$app_path/Contents/Resources/editor"
   lipo -create build/Scribeleaf-arm64 build/Scribeleaf-x86_64 -output "$app_path/Contents/MacOS/Scribeleaf"
   cp native/Info.plist "$app_path/Contents/Info.plist"
+  cp build/icon/Scribeleaf.icns "$app_path/Contents/Resources/Scribeleaf.icns"
   /usr/libexec/PlistBuddy -c "Add :ScribeleafEdition string $current" "$app_path/Contents/Info.plist"
   /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName Scribeleaf $current" "$app_path/Contents/Info.plist"
   rsync -a --delete "$renderer_dir/" "$app_path/Contents/Resources/editor/"

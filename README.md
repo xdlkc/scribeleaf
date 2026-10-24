@@ -110,3 +110,13 @@ CI 验证缺依赖行为、前端导出接线、ZIP/DMG 内容、四文件校验
 之后仍需人工审阅发布；工作流不合并 PR。现有正式 `v0.1.0` 的 tag、Release 和资产保持不变。
 当前仅 ad-hoc 签名，没有 Developer ID 签名或 Apple 公证，macOS 可能显示安全提示。
 CI 使用 macOS 15；部署目标检查未替代 macOS 13 真机验收，原生启动冒烟未替代完整功能验收。
+
+## 应用图标
+
+Lite / Full 使用同一个原创书页＋叶片图标：深墨绿圆角底、暖白纸页与青绿叶片，
+图标本体没有文字或外部品牌素材。可编辑矢量几何位于 `assets/icon/draw-icon.swift`。
+运行 `bash scripts/build-icon.sh` 可重建透明 PNG、标准十项 iconset 和 `Scribeleaf.icns`。
+PNG 覆盖 16/32/64/128/256/512/1024 像素；生成器检查透明角与内容边距，
+`verify-icon.py` 检查 ICNS 的所有标准尺寸。已导出的素材与尺寸预览见 `assets/icon/`。
+打包时仅内置一个 ICNS，不复制 PNG/预览/生成器，因此不会把整套设计素材放入安装包。
+CI 另提供 `icon-assets` 供审阅。当前安装的 0.1.0 不会被本分支自动替换或刷新图标缓存。

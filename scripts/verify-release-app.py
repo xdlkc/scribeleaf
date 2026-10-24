@@ -11,6 +11,8 @@ assert edition in ('Lite', 'Full'), edition
 assert info.get('ScribeleafEdition') == edition
 assert info['CFBundleIdentifier'] == 'local.typora-replica.editor'
 assert info['CFBundleExecutable'] == 'Scribeleaf'
+assert info['CFBundleIconFile'] == 'Scribeleaf.icns'
+subprocess.run([sys.executable, str(pathlib.Path(__file__).with_name('verify-icon.py')), str(app / 'Contents/Resources/Scribeleaf.icns')], check=True)
 assert info['CFBundleDisplayName'] == f'Scribeleaf {edition}'
 assert (app / 'Contents/Resources/editor/index.html').is_file()
 converter = app / 'Contents/Resources/Converters'
