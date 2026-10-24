@@ -159,3 +159,11 @@ system-only dylib dependencies and valid ad-hoc signatures. CI launches the
 same ZIP on native Apple Silicon and Intel runners. No Developer ID signing
 or notarization is configured; macOS 13 hardware execution remains unverified.
 This release work does not revalidate historical product parity evidence.
+
+Release validation evidence: local npm typecheck, Vite build and native renderer
+bundle verification passed. Both native Swift slices compiled with macOS 13 targets.
+The package job in https://github.com/xdlkc/scribeleaf/actions/runs/40060033587
+passed on dc665a5, including actual ZIP extraction and read-only DMG verification.
+The earlier run 40059882676 correctly failed on Pandoc 3.12.1 arm64 minos=15.0;
+selected 3.1.11.1 official slices report arm64=12.0 and x86_64=11.0.
+Final-commit CI and native launch results are linked in the release PR.
