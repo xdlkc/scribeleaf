@@ -1,7 +1,9 @@
 # Pandoc
 
-The optional bundled executable is the unmodified official Pandoc 3.12.1
-macOS x86_64 release, tested by this project without a global installation.
+The bundled executable combines the official Pandoc 3.12.1 macOS arm64 and
+x86_64 executables with lipo, then applies an ad-hoc signature. No Pandoc
+source is modified. Both official ZIP archives are pinned by SHA256 in
+scripts/fetch-pandoc.sh (digests verified against the upstream release API).
 
 - Upstream: https://github.com/jgm/pandoc
 - Release and binary: https://github.com/jgm/pandoc/releases/tag/3.12.1

@@ -26,9 +26,9 @@ open 'build/Scribeleaf.app'
 ```
 
 应用支持 HTML、无样式 HTML、PDF、全长 PNG，以及 Pandoc 的九种转换格式。
-构建脚本会在 `.cache/pandoc/pandoc-3.12.1-$(uname -m)/bin/pandoc` 存在时打包
-该可执行文件和许可。也可用 `TYPORA_PANDOC_PATH` 指定二进制文件。没有打包时，
-应用会查找常用安装位置。当前构建已包含经校验的官方 Pandoc 3.12.1。
+构建脚本固定下载官方 Pandoc 3.12.1 的 arm64 / x86_64 ZIP，验证预置 SHA256，
+合并并嵌入 Universal 转换器及 GPL 许可证。缺少依赖或校验失败会终止构建。
+首次构建需要网络；后续构建会重新校验缓存的压缩包。
 
 原生“导出”菜单支持使用上次格式/目标再导出（Ctrl+Cmd+E）和覆盖上次输出。
 覆盖前会确认。切换文稿后保留格式，并要求重新选择目标。历史保存在当前窗口内，
@@ -65,3 +65,14 @@ node scripts/verify-export.mjs
 `scripts/verify-nested-editing.mjs`。它们使用 JSDOM，不能替代真实浏览器验收。
 `scripts/verify-image-export.py`、`scripts/verify-native-export-bridge.py` 会生成
 独立的原生验收应用；真实 WebKit 和保存面板结果见 `STATUS.md`。
+
+## GitHub Release 包
+
+最低 macOS 13，Universal ZIP / DMG 均包含 arm64 与 x86_64。
+`Release packages` 在 PR、main、release/** 分支和手动运行时生成经过校验的 Actions 产物；
+两种原生运行器下载同一份包，校验 SHA256、架构、部署目标、签名与原生启动。
+推送与应用版本完全相同的 `v<major>.<minor>.<patch>` tag 后，所有检查通过才创建 **draft Release**。
+在 GitHub 审阅后手动发布；工作流不会自动对外发布正式版本，也不会合并 PR。
+下载 ZIP、DMG 和 SHA256SUMS 后，在同一目录运行 `shasum -a 256 -c SHA256SUMS`。
+当前分发包仅 ad-hoc 签名，没有 Developer ID 签名或 Apple 公证，可能出现 Gatekeeper 提示。
+CI 使用 macOS 15；最低系统由 plist 与每个 Mach-O 切片的部署目标检查，未替代 macOS 13 真机测试。
