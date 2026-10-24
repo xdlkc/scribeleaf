@@ -6,9 +6,20 @@ def run(*args):
     return subprocess.check_output(args, text=True, stderr=subprocess.STDOUT)
 info = plistlib.loads((app / 'Contents/Info.plist').read_bytes())
 assert info['LSMinimumSystemVersion'] == '13.0', info
-if info['CFBundleExecutable'] == 'Scribeleaf':
-    for relative in ('Contents/Resources/editor/index.html', 'Contents/Resources/Converters/pandoc', 'Contents/Resources/Converters/COPYING.md', 'Contents/Resources/Converters/SOURCE.md'):
-        assert (app / relative).is_file(), relative
+edition = sys.argv[2] if len(sys.argv) > 2 else info.get('ScribeleafEdition')
+assert edition in ('Lite', 'Full'), edition
+assert info.get('ScribeleafEdition') == edition
+assert info['CFBundleIdentifier'] == 'local.typora-replica.editor'
+assert info['CFBundleExecutable'] == 'Scribeleaf'
+assert info['CFBundleDisplayName'] == f'Scribeleaf {edition}'
+assert (app / 'Contents/Resources/editor/index.html').is_file()
+converter = app / 'Contents/Resources/Converters'
+if edition == 'Full':
+    for name in ('pandoc', 'COPYING.md', 'SOURCE.md'):
+        assert (converter / name).is_file(), name
+else:
+    assert not converter.exists(), 'Lite must not contain a converter directory'
+    assert not any(p.name.lower() == 'pandoc' and p.is_file() for p in app.rglob('*')), 'Lite contains Pandoc'
 count = 0
 for p in app.rglob('*'):
     if not p.is_file() or 'Mach-O' not in run('file', '-b', str(p)):
@@ -29,6 +40,6 @@ for p in app.rglob('*'):
                 assert dep.startswith(('/System/Library/', '/usr/lib/')), (p, arch, dep)
     run('codesign', '--verify', '--strict', str(p))
     print(run('lipo', '-info', str(p)).strip())
-assert count, 'No Mach-O found'
+assert count == (2 if edition == 'Full' else 1), (edition, count)
 run('codesign', '--verify', '--deep', '--strict', str(app))
-print(f'PASS: {count} universal Mach-O files; macOS <=13; system dependencies; signatures')
+print(f'PASS {edition}: {count} universal Mach-O files; macOS <=13; system dependencies; signatures')

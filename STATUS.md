@@ -167,3 +167,30 @@ passed on dc665a5, including actual ZIP extraction and read-only DMG verificatio
 The earlier run 40059882676 correctly failed on Pandoc 3.12.1 arm64 minos=15.0;
 selected 3.1.11.1 official slices report arm64=12.0 and x86_64=11.0.
 Final-commit CI and native launch results are linked in the release PR.
+
+## Lite / Full packaging (unreleased 0.1.1)
+
+Both editions remain Universal arm64/x86_64 with a macOS 13 deployment floor.
+Lite omits the converter; Full retains SHA256-pinned official Pandoc 3.1.11.1
+and corresponding licenses/source reference. The two choices install the same
+Scribeleaf.app/bundle ID, share preferences/document identity and are mutually
+exclusive. Asset filenames and bundle edition metadata explicitly distinguish them.
+Missing-dependency errors explain Full or a trusted existing configured Pandoc;
+there is no runtime dependency download/install path.
+
+Local dependency resolver/remedy behavior: 7 checks passed. The renderer export
+regression harness was updated to the current beginExport/exportPrepare protocol
+and supplies browser location in JSDOM; 37 checks passed, including native bridge
+preparation for HTML/PDF/PNG and document conversions, unsaved snapshot handling
+and source identity preservation. Historical evidence files were preserved.
+TypeScript/Vite/native bundle validation passed. Final package/architecture/native
+startup CI results and artifact sizes will be linked in the draft PR.
+No claim of full native export UI acceptance, macOS 13 hardware acceptance,
+Developer ID signing or Apple notarization is made. Existing installed applications
+and formal v0.1.0 release/tag/assets are outside this change.
+Local edition verification also passed: both signed bundles have Universal slices,
+macOS <=13 deployment commands, system-only dylib dependencies and strict signatures.
+The two editions' native runtime code/data sections match for both architectures,
+and all 21 renderer files match; edition plist/code-signature metadata intentionally
+differs. ZIP/DMG and final-commit CI remain the delivery gate, rather than treating
+these intermediate bundle checks as package success.

@@ -4,7 +4,7 @@ import Foundation
 /// never opened for writing. Embedded media lives in this app's managed storage,
 /// not in a temporary folder that disappears when conversion returns.
 enum FileImporter {
-    /// These readers are present in the bundled Pandoc 3.12.1. Existing Markdown
+    /// These formats use the configured or bundled Pandoc converter. Existing Markdown
     /// and plain text belong to the normal document-opening path.
     static let readers: [String: String] = [
         "docx":"docx", "odt":"odt", "epub":"epub", "rtf":"rtf",
