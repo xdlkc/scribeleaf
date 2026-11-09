@@ -2,7 +2,7 @@ name: Release packages
 on:
   pull_request:
   push:
-    branches: [main, 'release/**']
+    branches: [main]
     tags: ['v*']
   workflow_dispatch:
 permissions:
@@ -25,14 +25,24 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci
+      - run: bash scripts/verify-pandoc-dependency.sh
+      - run: SCRIBELEAF_TEST_REPORT=.cache/lite-full-export-verification.json node scripts/verify-export-formats.mjs
       - run: bash scripts/package-macos.sh
       - uses: actions/upload-artifact@v5
         with:
           name: release-packages
           path: |
-            dist/*.zip
-            dist/*.dmg
-            dist/SHA256SUMS
+            dist/packages/*.zip
+            dist/packages/*.dmg
+            dist/packages/SHA256SUMS
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v5
+        with:
+          name: icon-assets
+          path: |
+            build/icon/Scribeleaf.icns
+            build/icon/png/*.png
+            build/icon/png/verification.json
           if-no-files-found: error
   native-launch:
     needs: package
@@ -51,7 +61,7 @@ jobs:
       - uses: actions/download-artifact@v5
         with:
           name: release-packages
-          path: dist
+          path: dist/packages
       - name: Verify downloaded package and native startup
         env:
           EXPECTED_ARCH: ${{ matrix.arch }}
@@ -66,13 +76,13 @@ jobs:
       - uses: actions/download-artifact@v5
         with:
           name: release-packages
-          path: dist
+          path: dist/packages
       - name: Create draft Release
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
           TAG: ${{ github.ref_name }}
         run: |
-          cd dist
+          cd dist/packages
           sha256sum -c SHA256SUMS
-          gh release create "$TAG" --verify-tag --draft --title "$TAG" --notes 'Universal macOS 13+ ZIP and DMG (arm64 + x86_64). Ad-hoc signed; not Apple notarized. Gatekeeper warnings may appear. Verify downloads with SHA256SUMS.' ./*.zip ./*.dmg SHA256SUMS
+          gh release create "$TAG" --verify-tag --draft --title "$TAG" --notes 'Scribeleaf Lite and Full: Universal macOS 13+ ZIP/DMG (arm64 + x86_64). Choose one edition: both install Scribeleaf.app with shared identity/preferences. Lite has no bundled Pandoc; use Full or configure a trusted existing converter for document conversions. No runtime dependency downloads. Ad-hoc signed, not Apple notarized. Verify downloads with SHA256SUMS.' ./*.zip ./*.dmg SHA256SUMS

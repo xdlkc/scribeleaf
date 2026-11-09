@@ -56,10 +56,17 @@ enum DocumentConversionError: LocalizedError {
     case processFailed(Int32, String)
     case missingOutput
 
+    static func missingDependencyMessage(language: String) -> String {
+        if language.lowercased().hasPrefix("zh") {
+            return "此功能需要 Pandoc。Scribeleaf Lite 不内置转换器；请安装 Scribeleaf Full 完整版，或在「文件 → 导出 → Export Settings…」中配置可信的已有 Pandoc。应用不会自动下载或安装依赖。"
+        }
+        return "This feature requires Pandoc. Scribeleaf Lite does not bundle the converter. Install Scribeleaf Full, or configure a trusted existing Pandoc in File > Export > Export Settings… . No dependency is downloaded or installed automatically."
+    }
+
     var errorDescription: String? {
         switch self {
         case .missingDependency:
-            return "Pandoc is required for this export. Install it from https://pandoc.org/installing.html, then try again, or select a custom Pandoc executable."
+            return Self.missingDependencyMessage(language: Locale.preferredLanguages.first ?? "en")
         case .invalidExecutable(let path):
             return "The selected Pandoc executable cannot be run: \(path)"
         case .invalidDestination(let reason):
@@ -96,15 +103,6 @@ enum DocumentConverter {
 
     static func executableURL(customURL: URL? = nil) throws -> URL {
         let manager = FileManager.default
-        func executable(_ url: URL) -> Bool {
-            var isDirectory: ObjCBool = false
-            return url.isFileURL && manager.fileExists(atPath: url.path, isDirectory: &isDirectory)
-                && !isDirectory.boolValue && manager.isExecutableFile(atPath: url.path)
-        }
-        if let customURL {
-            guard executable(customURL) else { throw DocumentConversionError.invalidExecutable(customURL.path) }
-            return customURL.standardizedFileURL
-        }
         let home = manager.homeDirectoryForCurrentUser
         // GUI applications do not necessarily inherit a login shell's PATH.
         let standard = ["/opt/homebrew/bin/pandoc", "/usr/local/bin/pandoc", "/opt/local/bin/pandoc", "/usr/bin/pandoc"]
@@ -114,6 +112,21 @@ enum DocumentConverter {
         let candidates = [bundled].compactMap { $0 } + standard.map { URL(fileURLWithPath: $0) }
             + [home.appendingPathComponent(".local/bin/pandoc"), home.appendingPathComponent(".cabal/bin/pandoc")]
             + paths.map { URL(fileURLWithPath: $0) }
+        return try resolveExecutable(customURL: customURL, candidates: candidates)
+    }
+
+    /// A deterministic filesystem boundary shared by bundled and externally configured converters.
+    static func resolveExecutable(customURL: URL?, candidates: [URL]) throws -> URL {
+        let manager = FileManager.default
+        func executable(_ url: URL) -> Bool {
+            var isDirectory: ObjCBool = false
+            return url.isFileURL && manager.fileExists(atPath: url.path, isDirectory: &isDirectory)
+                && !isDirectory.boolValue && manager.isExecutableFile(atPath: url.path)
+        }
+        if let customURL {
+            guard executable(customURL) else { throw DocumentConversionError.invalidExecutable(customURL.path) }
+            return customURL.standardizedFileURL
+        }
         if let found = candidates.first(where: executable) { return found.standardizedFileURL }
         throw DocumentConversionError.missingDependency
     }

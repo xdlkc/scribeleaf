@@ -1,0 +1,72 @@
+[
+  {
+    "alphaOver10Bounds" : [
+      1,
+      1,
+      14,
+      14
+    ],
+    "pixels" : 16,
+    "transparentCorners" : true
+  },
+  {
+    "alphaOver10Bounds" : [
+      2,
+      2,
+      29,
+      29
+    ],
+    "pixels" : 32,
+    "transparentCorners" : true
+  },
+  {
+    "alphaOver10Bounds" : [
+      4,
+      4,
+      59,
+      59
+    ],
+    "pixels" : 64,
+    "transparentCorners" : true
+  },
+  {
+    "alphaOver10Bounds" : [
+      8,
+      8,
+      119,
+      120
+    ],
+    "pixels" : 128,
+    "transparentCorners" : true
+  },
+  {
+    "alphaOver10Bounds" : [
+      14,
+      16,
+      241,
+      242
+    ],
+    "pixels" : 256,
+    "transparentCorners" : true
+  },
+  {
+    "alphaOver10Bounds" : [
+      28,
+      32,
+      483,
+      486
+    ],
+    "pixels" : 512,
+    "transparentCorners" : true
+  },
+  {
+    "alphaOver10Bounds" : [
+      56,
+      63,
+      967,
+      974
+    ],
+    "pixels" : 1024,
+    "transparentCorners" : true
+  }
+]
