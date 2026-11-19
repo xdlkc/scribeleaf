@@ -377,7 +377,7 @@ body[data-theme="github"] #editor .cm-codeblock-line { background: #f8f8f8; }
 
 #editor .lp-table table { display: table; width: 100%; max-width: 100%; margin: 0; }
 
-/* WKWebView extends beneath the transparent 28px AppKit titlebar. */
+/* Keep the blank strip aligned with DocumentWebView's titlebar hit testing. */
 body.native-app { background: linear-gradient(to right, var(--sidebar-bg) 0, var(--sidebar-bg) var(--native-sidebar-width, 0px), var(--paper) var(--native-sidebar-width, 0px)); }
 body.native-app #app { padding-top: 28px; }
 body.native-app #sidebar .sidebar-tabs { border: 0; border-radius: 0; margin: 0 8px 14px; height: 28px; }

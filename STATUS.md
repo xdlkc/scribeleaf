@@ -3,7 +3,13 @@
 目标：完整复刻本机 macOS Typora 1.14.10。**仍在开发，未证明完整 1:1。**
 本文件的通过项不能替代全产品的功能、视觉和系统行为对照。
 
-本地应用：`build/Scribeleaf.app`；源码：本目录。当前宿主为 Intel macOS，部署目标 macOS 13。应用与原 Typora 共存。
+本地构建产物为 `build/Scribeleaf.app`，部署目标为 macOS 13。应用与原 Typora 共存。
+
+## 文档窗口标题栏拖动（#3）
+
+- `bash scripts/verify-window-titlebar.sh` 在 arm64 macOS 27.2.1 上通过 7 项 AppKit 命中检查。修复前标题栏两处均命中 WebKit。修复后，两处均命中可拖动的 AppKit 视图，正文、侧栏标签顶部和三个窗口按钮也通过检查。
+- 隔离测试窗口已启动。界面工具返回 `cgWindowNotFound`，实际拖动后的窗口位移待验证。
+- TypeScript、Vite、原生资源包和两个 Swift 架构均通过构建。`scripts/verify-release-app.py` 的 `lipo <binary> -verify_arch arm64 x86_64` 调用在本机报参数错误。改用 `lipo -archs <binary>` 等价检查，两个产物的架构、部署版本、依赖和严格签名均通过。
 
 ## 2026-10-20 命名与提交快照
 

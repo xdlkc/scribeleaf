@@ -47,6 +47,19 @@ func configureMarkdownPunctuation(_ web: WKWebView) -> Bool {
     return true
 }
 
+private final class DocumentWebView: WKWebView {
+    override func hitTest(_ point: NSPoint) -> NSView? {
+        if let window, let superview {
+            let windowPoint = superview.convert(point, to: nil)
+            let top = convert(bounds, to: nil).maxY
+            // Match the 28pt top padding in base.css so the sidebar tabs stay clickable.
+            let titlebarBottom = max(window.contentLayoutRect.maxY, top - 28)
+            if windowPoint.y >= titlebarBottom { return nil }
+        }
+        return super.hitTest(point)
+    }
+}
+
 /// Recovery keeps resource lookup separate from NSDocument file identity.
 /// The dictionary format also accepts records written before schema version 2.
 struct RecoveryRecord {
@@ -257,7 +270,7 @@ final class MarkdownDocument: NSDocument, WKScriptMessageHandler, WKNavigationDe
         if(document.body){new MutationObserver(update).observe(document.body,{attributes:true,attributeFilter:['data-theme']});update();} })();
         """, injectionTime: .atDocumentEnd, forMainFrameOnly: true))
         config.preferences.javaScriptCanOpenWindowsAutomatically = false
-        web = WKWebView(frame: .zero, configuration: config)
+        web = DocumentWebView(frame: .zero, configuration: config)
         if !configureMarkdownPunctuation(web) { NSLog("Could not configure Markdown punctuation substitutions") }
         web.navigationDelegate = self
         web.uiDelegate = self
